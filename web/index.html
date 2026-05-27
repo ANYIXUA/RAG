@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAG Query Tester</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <section class="query-pane" aria-labelledby="page-title">
+      <div class="topbar">
+        <div>
+          <p class="eyebrow">Ops RAG</p>
+          <h1 id="page-title">查询接口测试</h1>
+        </div>
+        <div class="status-strip" aria-live="polite">
+          <span id="healthBadge" class="badge neutral">health 未检查</span>
+          <span id="readyBadge" class="badge neutral">ready 未检查</span>
+        </div>
+      </div>
+
+      <form id="queryForm" class="form-grid">
+        <label class="field wide">
+          <span>API 地址</span>
+          <input id="apiBase" type="url" value="http://127.0.0.1:18080" spellcheck="false">
+        </label>
+
+        <label class="field">
+          <span>Top K</span>
+          <input id="topK" type="number" min="1" max="20" value="3">
+        </label>
+
+        <label class="field">
+          <span>Tenant</span>
+          <input id="tenantId" type="text" value="default" spellcheck="false">
+        </label>
+
+        <label class="field">
+          <span>权限标签</span>
+          <input id="permissionTags" type="text" value="public" spellcheck="false">
+        </label>
+
+        <label class="field">
+          <span>Session</span>
+          <input id="sessionId" type="text" placeholder="可选" spellcheck="false">
+        </label>
+
+        <label class="field">
+          <span>User</span>
+          <input id="userId" type="text" placeholder="可选" spellcheck="false">
+        </label>
+
+        <label class="field wide">
+          <span>问题</span>
+          <textarea id="question" rows="5">全光组网装维有什么要求？</textarea>
+        </label>
+
+        <div class="actions wide">
+          <button id="queryButton" class="primary" type="submit">发送查询</button>
+          <button id="healthButton" type="button">检查 health</button>
+          <button id="readyButton" type="button">检查 ready</button>
+          <button id="clearButton" type="button">清空结果</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="result-pane" aria-live="polite">
+      <div class="result-header">
+        <div>
+          <p class="eyebrow">Response</p>
+          <h2>接口返回</h2>
+        </div>
+        <span id="latency" class="metric">0 ms</span>
+      </div>
+
+      <div id="errorBox" class="error-box hidden"></div>
+
+      <article class="answer-block">
+        <div class="section-title">
+          <h3>回答</h3>
+          <button id="copyAnswerButton" type="button">复制</button>
+        </div>
+        <div id="answerText" class="answer-text empty">等待查询结果</div>
+      </article>
+
+      <div class="split">
+        <article class="panel">
+          <div class="section-title">
+            <h3>来源</h3>
+            <span id="sourceCount" class="count">0</span>
+          </div>
+          <div id="sources" class="source-list"></div>
+        </article>
+
+        <article class="panel">
+          <div class="section-title">
+            <h3>Trace</h3>
+            <span id="requestId" class="request-id">无 request_id</span>
+          </div>
+          <dl id="traceSummary" class="trace-list"></dl>
+        </article>
+      </div>
+
+      <details class="raw-json">
+        <summary>原始 JSON</summary>
+        <pre id="rawJson">{}</pre>
+      </details>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>

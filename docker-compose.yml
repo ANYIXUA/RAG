@@ -1,0 +1,87 @@
+services:
+  postgres:
+    image: ${POSTGRES_IMAGE:-pgvector/pgvector:pg16}
+    container_name: rag-postgres
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-rag}
+      POSTGRES_USER: ${POSTGRES_USER:-rag}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-rag_password}
+    ports:
+      - "${POSTGRES_PORT:-5432}:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U rag -d rag
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  rag-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ops-rag:prod
+    container_name: rag-api
+    env_file:
+      - .env
+    ports:
+      - "${RAG_API_PORT:-8000}:8000"
+    volumes:
+      - ./data:/app/data
+      - ./storage:/app/storage
+      - ./logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      RAG_OPS_STORE_PROVIDER: postgresql
+      RAG_OPS_POSTGRES_DSN: postgresql://${POSTGRES_USER:-rag}:${POSTGRES_PASSWORD:-rag_password}@postgres:5432/${POSTGRES_DB:-rag}
+      RAG_ORDER_STATUS_POSTGRES_DSN: postgresql://${POSTGRES_USER:-rag}:${POSTGRES_PASSWORD:-rag_password}@postgres:5432/${POSTGRES_DB:-rag}
+      RAG_VECTOR_STORE_PROVIDER: postgresql
+    healthcheck:
+      test:
+        - CMD
+        - python
+        - -c
+        - "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3).read()"
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+    restart: unless-stopped
+
+  rag-refresh:
+    image: ops-rag:prod
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    volumes:
+      - ./data:/app/data
+      - ./storage:/app/storage
+      - ./logs:/app/logs
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      RAG_OPS_STORE_PROVIDER: postgresql
+      RAG_OPS_POSTGRES_DSN: postgresql://${POSTGRES_USER:-rag}:${POSTGRES_PASSWORD:-rag_password}@postgres:5432/${POSTGRES_DB:-rag}
+      RAG_ORDER_STATUS_POSTGRES_DSN: postgresql://${POSTGRES_USER:-rag}:${POSTGRES_PASSWORD:-rag_password}@postgres:5432/${POSTGRES_DB:-rag}
+      RAG_VECTOR_STORE_PROVIDER: postgresql
+    command:
+      - python
+      - -m
+      - rag_app.cli
+      - offline-refresh
+      - --source
+      - data
+      - --reset
+    profiles:
+      - tools
+
+volumes:
+  pg_data:

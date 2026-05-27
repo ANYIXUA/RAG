@@ -1,0 +1,69 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ops-rag"
+version = "0.1.0"
+description = "A production-oriented Retrieval-Augmented Generation system for operations knowledge."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Ops RAG" }]
+dependencies = []
+
+[project.optional-dependencies]
+api = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0"
+]
+openai = [
+  "openai>=1.50.0"
+]
+pgsql = [
+  "psycopg[binary]>=3.2.0"
+]
+prod = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "openai>=1.50.0",
+  "psycopg[binary]>=3.2.0"
+]
+rerank = [
+  "sentence-transformers>=3.0.0",
+  "torch>=2.0.0"
+]
+multimodal = [
+  "PyMuPDF>=1.24.0",
+  "python-pptx>=1.0.0"
+]
+ocr = [
+  "PyMuPDF>=1.24.0",
+  "pytesseract>=0.3.13",
+  "Pillow>=10.0.0"
+]
+office = [
+  "python-docx>=1.1.0",
+  "openpyxl>=3.1.0"
+]
+commercial = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "openai>=1.50.0",
+  "psycopg[binary]>=3.2.0",
+  "PyMuPDF>=1.24.0",
+  "python-pptx>=1.0.0",
+  "pytesseract>=0.3.13",
+  "Pillow>=10.0.0",
+  "python-docx>=1.1.0",
+  "openpyxl>=3.1.0"
+]
+dev = [
+  "pytest>=8.0.0"
+]
+
+[project.scripts]
+rag = "rag_app.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["rag_app"]
