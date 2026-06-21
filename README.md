@@ -1,4 +1,4 @@
-# Ops RAG
+# 运维 RAG
 
 生产向 RAG 服务，默认链路直接连接 PostgreSQL/pgvector、PostgreSQL 业务表和 OpenAI 兼容模型服务。
 
@@ -6,9 +6,9 @@
 
 - 知识向量：PostgreSQL + pgvector，表 `rag_documents`、`rag_knowledge_chunks`。
 - 在线业务查询：PostgreSQL 业务表，当前工具为 `query_order_status`。
-- 运行日志/反馈/trace：PostgreSQL。
-- Embedding：OpenAI 兼容 Embedding API。
-- 回答生成：OpenAI 兼容 Chat Completions API。
+- 运行日志/反馈/处理轨迹：PostgreSQL。
+- 查询和文档向量化：OpenAI 兼容向量化接口。
+- 回答生成：OpenAI 兼容聊天补全接口。
 - 热更新版本指针：PostgreSQL。
 
 仓库只保留生产运行链路，所有运行时存储、检索、日志和业务工具调用都通过 PostgreSQL 或 OpenAI 兼容模型服务完成。
@@ -69,7 +69,7 @@ python -m rag_app.cli evaluate-retrieval --dataset <生产评测集.jsonl> --top
 .\scripts\release_check.ps1 -Dataset <生产评测集.jsonl>
 ```
 
-## API
+## 接口列表
 
 - `GET /health`
 - `GET /ready`
@@ -110,7 +110,7 @@ python -m compileall rag_app tests
 python -m unittest discover
 ```
 
-API 集成测试需要真实 PostgreSQL DSN：
+接口集成测试需要真实 PostgreSQL DSN：
 
 ```powershell
 $env:RAG_TEST_POSTGRES_DSN="postgresql://rag:rag_password@127.0.0.1:15432/rag"

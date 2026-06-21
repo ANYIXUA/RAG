@@ -8,6 +8,7 @@ import math
 from dataclasses import dataclass
 from typing import Any, Protocol
 
+from rag_app.core.error_codes import normalize_error_code
 from rag_app.core.config import Settings
 from rag_app.core.models import Chunk, RetrievalResult
 from rag_app.core.text_utils import tokenize_for_keyword_search
@@ -61,6 +62,15 @@ class VectorStore(Protocol):
         keyword_weight: float = 0.3,
         bm25_weight: float | None = None,
         candidate_k: int | None = None,
+        tenant_id: str | None = None,
+        permission_tags: tuple[str, ...] | list[str] | None = None,
+    ) -> list[RetrievalResult]:
+        ...
+
+    def search_by_error_code(
+        self,
+        error_code: str,
+        top_k: int = 4,
         tenant_id: str | None = None,
         permission_tags: tuple[str, ...] | list[str] | None = None,
     ) -> list[RetrievalResult]:
@@ -201,6 +211,50 @@ class PostgresVectorStore:
             bm25_weight=bm25_weight,
             candidate_k=actual_candidate_k,
             semantic_scores=semantic_scores,
+            tenant_id=tenant_id,
+            permission_tags=permission_tags,
+        )
+
+    def search_by_error_code(
+        self,
+        error_code: str,
+        top_k: int = 4,
+        tenant_id: str | None = None,
+        permission_tags: tuple[str, ...] | list[str] | None = None,
+    ) -> list[RetrievalResult]:
+        if top_k <= 0:
+            return []
+        normalized_code = normalize_error_code(error_code)
+        psycopg, dict_row, _ = _import_psycopg()
+        with psycopg.connect(self.dsn, row_factory=dict_row) as connection:
+            with connection.cursor() as cursor:
+                cursor.execute(
+                    """
+                    SELECT
+                        chunk_id, document_id, chunk_text, metadata,
+                        embedding::text AS embedding_text
+                    FROM rag_knowledge_chunks
+                    WHERE collection_name = %s
+                      AND status = 'active'
+                      AND (
+                          UPPER(error_code) = %s
+                          OR metadata->'error_codes' ? %s
+                      )
+                    ORDER BY priority DESC, updated_at DESC
+                    LIMIT %s
+                    """,
+                    (
+                        self.collection_name,
+                        normalized_code,
+                        normalized_code,
+                        max(top_k * 5, top_k),
+                    ),
+                )
+                rows = cursor.fetchall()
+        return _search_records_by_error_code(
+            records=[_postgres_chunk_row_to_record(row) for row in rows],
+            error_code=normalized_code,
+            top_k=top_k,
             tenant_id=tenant_id,
             permission_tags=permission_tags,
         )
@@ -415,6 +469,9 @@ class PostgresVectorStore:
                     "ALTER TABLE rag_knowledge_chunks ADD COLUMN IF NOT EXISTS collection_name TEXT NOT NULL DEFAULT 'default'"
                 )
                 cursor.execute(
+                    "ALTER TABLE rag_knowledge_chunks ADD COLUMN IF NOT EXISTS error_code TEXT"
+                )
+                cursor.execute(
                     "CREATE UNIQUE INDEX IF NOT EXISTS idx_rag_documents_collection_document "
                     "ON rag_documents(collection_name, document_id)"
                 )
@@ -425,6 +482,11 @@ class PostgresVectorStore:
                 cursor.execute(
                     "CREATE INDEX IF NOT EXISTS idx_rag_chunks_collection_status "
                     "ON rag_knowledge_chunks(collection_name, status, priority DESC)"
+                )
+                cursor.execute(
+                    "CREATE INDEX IF NOT EXISTS idx_rag_chunks_error_code "
+                    "ON rag_knowledge_chunks(collection_name, error_code) "
+                    "WHERE error_code IS NOT NULL"
                 )
                 cursor.execute(
                     "CREATE INDEX IF NOT EXISTS idx_rag_chunks_metadata "
@@ -565,6 +627,52 @@ def _filter_authorized_records(
         for record in records
         if _record_allowed(record, requested_tenant, requested_tags)
     ]
+
+
+def _search_records_by_error_code(
+    records: list[VectorRecord],
+    error_code: str,
+    top_k: int = 4,
+    tenant_id: str | None = None,
+    permission_tags: tuple[str, ...] | list[str] | None = None,
+) -> list[RetrievalResult]:
+    if top_k <= 0:
+        return []
+    normalized_code = normalize_error_code(error_code)
+    authorized = _filter_authorized_records(records, tenant_id, permission_tags)
+    matched = [
+        record
+        for record in authorized
+        if normalized_code in _metadata_error_codes(record.chunk.metadata)
+    ]
+    return [
+        RetrievalResult(
+            chunk=record.chunk,
+            score=1.0,
+            retrieval_score=1.0,
+            keyword_score=1.0,
+        )
+        for record in matched[:top_k]
+    ]
+
+
+def _metadata_error_codes(metadata: dict[str, Any]) -> set[str]:
+    values: list[str] = []
+    direct = metadata.get("error_code")
+    if direct not in (None, ""):
+        values.append(str(direct))
+    raw_codes = metadata.get("error_codes")
+    if isinstance(raw_codes, str):
+        values.extend(raw_codes.replace("，", ",").replace("；", ",").replace(";", ",").split(","))
+    elif isinstance(raw_codes, (list, tuple, set)):
+        values.extend(str(item) for item in raw_codes)
+    elif raw_codes not in (None, ""):
+        values.append(str(raw_codes))
+    return {
+        normalize_error_code(value)
+        for value in values
+        if value and value.strip()
+    }
 
 
 def _record_allowed(

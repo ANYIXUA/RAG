@@ -5,10 +5,10 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
+from rag_app.core.error_codes import ERROR_CODE_RE, normalize_error_code
 from rag_app.core.models import IntentRecognitionResult, QueryRewriteResult
 
 
-ERROR_CODE_RE = re.compile(r"\b[A-Za-z]\d{2,6}\b")
 WORK_ORDER_RE = re.compile(r"\b(?:WO|GD|ORDER)[-_]?\d{4,}\b", re.IGNORECASE)
 
 
@@ -128,10 +128,11 @@ def recognize_intent(query: str) -> IntentRecognitionResult:
 
     error_code_match = ERROR_CODE_RE.search(normalized_query)
     if error_code_match: #用正则匹配异常码。
+        error_code = normalize_error_code(error_code_match.group(0))
         return IntentRecognitionResult(
             intent_label="explain_error",
             confidence=0.92,
-            matched_keywords=[error_code_match.group(0)],
+            matched_keywords=[error_code],
             reason="问题中包含疑似异常码，优先识别为异常解释意图。",
         )
 
@@ -248,7 +249,7 @@ def _collect_synonym_expansions(query: str) -> list[str]:
 
 
 def _normalize_error_codes(query: str) -> str:
-    return ERROR_CODE_RE.sub(lambda match: match.group(0).upper(), query)
+    return ERROR_CODE_RE.sub(lambda match: normalize_error_code(match.group(0)), query)
 
 
 def _normalize_work_orders(query: str) -> str:

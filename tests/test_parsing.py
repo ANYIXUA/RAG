@@ -18,6 +18,7 @@ from rag_app.ingestion.parsing import (
     clean_text,
     parse_document_file,
 )
+from rag_app.indexing.chunking import WhitespaceChunker
 
 
 class ParsingTest(unittest.TestCase):
@@ -139,6 +140,30 @@ class ParsingTest(unittest.TestCase):
             self.assertIn("# 异常码说明", document.text)
             self.assertIn("## E203", document.text)
             self.assertIn("- advice: 核对标准地址", document.text)
+
+    def test_error_code_records_keep_exact_match_metadata_on_chunks(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            source_dir = Path(temp_dir)
+            path = source_dir / "error_codes.json"
+            path.write_text(
+                (
+                    '{"title":"异常码说明","errors":['
+                    '{"error_code":"e203","message":"地址不存在","advice":"核对标准地址"}'
+                    ']}'
+                ),
+                encoding="utf-8",
+            )
+
+            document = parse_document_file(path, source_dir=source_dir)
+            chunks = WhitespaceChunker(chunk_size=200, chunk_overlap=20).split_documents(
+                [document]
+            )
+
+            self.assertIsNotNone(document)
+            self.assertEqual(document.metadata["error_codes"], ["E203"])
+            self.assertEqual(chunks[0].metadata["error_code"], "E203")
+            self.assertEqual(chunks[0].metadata["error_codes"], ["E203"])
+            self.assertIn("explain_error", chunks[0].metadata["intent_labels"])
 
     def test_directory_loader_uses_parser(self) -> None:
         with TemporaryDirectory() as temp_dir:

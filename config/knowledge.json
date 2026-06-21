@@ -1,0 +1,14 @@
+{
+  "knowledge_registry_path": "data/knowledge_registry.json",
+  "knowledge_default_status": "approved",
+  "require_approval_for_crawled": true,
+  "knowledge_upload_dir": "storage/uploads",
+  "knowledge_build_dir": "storage/knowledge_builds",
+  "default_tenant_id": "default",
+  "default_permission_tags": ["public"],
+  "parse_quality_gate_enabled": true,
+  "allowed_parse_quality_statuses": [
+    "parsed_success",
+    "parsed_with_warning"
+  ]
+}

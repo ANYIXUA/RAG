@@ -1,0 +1,23 @@
+{
+  "top_k": 4,
+  "retrieval_mode": "hybrid",
+  "retrieval_candidate_k": 20,
+  "semantic_weight": 0.7,
+  "bm25_weight": 0.3,
+  "min_similarity_score": 0.05,
+  "relative_score_threshold": 0.35,
+  "rerank_provider": "none",
+  "rerank_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+  "rerank_candidate_k": 20,
+  "rerank_trigger": "always",
+  "rerank_intents": [
+    "recommend_solution",
+    "explain_error",
+    "query_rule",
+    "similar_case",
+    "need_human"
+  ],
+  "rerank_min_intent_confidence": 0.75,
+  "query_embedding_cache_enabled": true,
+  "query_embedding_cache_size": 128
+}

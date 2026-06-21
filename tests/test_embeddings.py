@@ -18,13 +18,21 @@ class EmbeddingsTest(unittest.TestCase):
                 base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
                 dimensions=1024,
                 batch_size=10,
+                timeout_seconds=3.0,
+                max_retries=0,
             )
             embeddings = embedder.embed(texts)
 
         self.assertEqual(len(embeddings), 45)
+        self.assertEqual(embedder.client.timeout, 3.0)
+        self.assertEqual(embedder.client.max_retries, 0)
         self.assertEqual(
             [len(call["input"]) for call in embedder.client.embeddings.calls],
             [10, 10, 10, 10, 5],
+        )
+        self.assertEqual(
+            [call["timeout"] for call in embedder.client.embeddings.calls],
+            [3.0, 3.0, 3.0, 3.0, 3.0],
         )
         self.assertEqual(
             [call["dimensions"] for call in embedder.client.embeddings.calls],
@@ -58,9 +66,17 @@ class _FakeEmbeddings:
 
 
 class _FakeOpenAI:
-    def __init__(self, api_key=None, base_url=None) -> None:
+    def __init__(
+        self,
+        api_key=None,
+        base_url=None,
+        timeout=None,
+        max_retries=None,
+    ) -> None:
         self.api_key = api_key
         self.base_url = base_url
+        self.timeout = timeout
+        self.max_retries = max_retries
         self.embeddings = _FakeEmbeddings()
 
 

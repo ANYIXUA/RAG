@@ -1,0 +1,5 @@
+{
+  "query_logging_enabled": true,
+  "api_admin_token": "${RAG_API_ADMIN_TOKEN:-}",
+  "api_cors_origins": ["*"]
+}

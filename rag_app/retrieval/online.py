@@ -2,11 +2,16 @@
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from collections import OrderedDict
 from dataclasses import asdict, replace
+from queue import Queue
+from threading import Thread
 import time
 from pathlib import Path
+from typing import Any
 
+from rag_app.core.error_codes import extract_error_code
 from rag_app.core.config import Settings
 from rag_app.retrieval.dialogue import (
     ConversationMemory,
@@ -105,6 +110,32 @@ class OnlineQueryProcessor:
         )
 
         actual_top_k = self.settings.top_k if top_k is None else top_k
+        exact_error_code = (
+            extract_error_code(rewrite.retrieval_query)
+            if intent.intent_label == "explain_error"
+            else None
+        )
+        if exact_error_code:
+            return self._process_exact_error_code(
+                request_id=request_id,
+                created_at=created_at,
+                total_start=total_start,
+                original_query=original_query,
+                normalized_query=normalized_query,
+                contextual_query=contextual_query,
+                is_follow_up=is_follow_up,
+                context_terms=context_terms,
+                rewrite=rewrite,
+                intent=intent,
+                top_k=actual_top_k,
+                session_id=session_id,
+                user_context=user_context,
+                tool_calls=tool_calls,
+                error_code=exact_error_code,
+                context_latency_ms=context_latency_ms,
+                intent_latency_ms=intent_latency_ms,
+                rewrite_latency_ms=rewrite_latency_ms,
+            )
         #本次是否跳过重排序
         rerank_skip_reason = _precheck_rerank_skip_reason(
             settings=self.settings,
@@ -118,12 +149,23 @@ class OnlineQueryProcessor:
         if rerank_skip_reason is None: #如果要走重排序，就需要扩大检索范围
             search_top_k = max(actual_top_k, self.settings.rerank_candidate_k)
         search_candidate_k = max(search_top_k, self.settings.retrieval_candidate_k)
+        degradation_reason: str | None = None #记录降级原因。
 
         # 4. 在线阶段只对查询向量化，不做文档解析和知识库构建。
         retrieval_start = time.perf_counter()
         embedding_start = time.perf_counter()
         #如果同一个 query 之前已经算过 embedding，就可以直接从缓存拿。
-        query_embedding, cache_hit = self._embed_query(rewrite.retrieval_query)
+        actual_retrieval_mode = self.settings.retrieval_mode
+        try:
+            query_embedding, cache_hit = self._embed_query(rewrite.retrieval_query)
+        except Exception as exc:
+            query_embedding = []
+            cache_hit = False
+            actual_retrieval_mode = "bm25"
+            degradation_reason = _append_degradation(
+                degradation_reason,
+                f"embedding_failed: {exc}",
+            )
         embedding_latency_ms = (time.perf_counter() - embedding_start) * 1000
 
         # 5. 每次检索前 reload，确保能读到离线刷新或 active 版本切换后的最新知识。
@@ -136,7 +178,7 @@ class OnlineQueryProcessor:
             top_k=search_top_k,
             min_score=self.settings.min_similarity_score,
             relative_score_threshold=self.settings.relative_score_threshold,#相对分数过滤
-            mode=self.settings.retrieval_mode,#决定检索模式
+            mode=actual_retrieval_mode,#决定检索模式
             semantic_weight=self.settings.semantic_weight,
             keyword_weight=self.settings.bm25_weight,
             bm25_weight=self.settings.bm25_weight,
@@ -149,7 +191,6 @@ class OnlineQueryProcessor:
 
         rerank_latency_ms = 0.0
         rerank_applied = False
-        degradation_reason: str | None = None #记录降级原因。
         #候选数量不足跳过rerank
         if rerank_skip_reason is None and len(retrieved_sources) <= actual_top_k:
             rerank_skip_reason = "not_enough_candidates"
@@ -246,7 +287,7 @@ class OnlineQueryProcessor:
             top_k=actual_top_k,
             min_similarity_score=self.settings.min_similarity_score,
             relative_score_threshold=self.settings.relative_score_threshold,
-            retrieval_mode=self.settings.retrieval_mode,
+            retrieval_mode=actual_retrieval_mode,
             semantic_weight=self.settings.semantic_weight,
             bm25_weight=self.settings.bm25_weight,
             keyword_weight=self.settings.keyword_weight,
@@ -285,6 +326,217 @@ class OnlineQueryProcessor:
         )
         if self.settings.query_logging_enabled:
             # 10. 结构化日志落库后，/ops/trace/{request_id} 和人工反馈可以按 request_id 串联。
+            self.query_log_store.append(
+                build_query_log_record(
+                    request_id=request_id,
+                    answer=rag_answer,
+                    latency_ms=latency_ms,
+                    retrieval_latency_ms=retrieval_latency_ms,
+                    generation_latency_ms=generation_latency_ms,
+                )
+            )
+        return rag_answer
+
+    def stream_process(
+        self,
+        question: str,
+        top_k: int | None = None,
+        session_id: str | None = None,
+        user_context: UserContext | None = None,
+    ) -> Iterator[dict[str, Any]]:
+        """复用同步处理链路，并把生成阶段转成事件流。"""
+
+        events: Queue[dict[str, Any] | object] = Queue()
+        proxy = _StreamingAnswerProxy(self.answer_generator, events)
+        worker = OnlineQueryProcessor(
+            settings=self.settings,
+            embedder=self.embedder,
+            answer_generator=proxy,
+            vector_store=self.vector_store,
+            reranker=self.reranker,
+            order_status_tool=self.order_status_tool,
+            conversation_memory=self.conversation_memory,
+            query_log_store=self.query_log_store,
+        )
+        worker._query_embedding_cache = self._query_embedding_cache
+
+        def run_query() -> None:
+            try:
+                answer = worker.process(
+                    question,
+                    top_k=top_k,
+                    session_id=session_id,
+                    user_context=user_context,
+                )
+                payload = asdict(answer)
+                payload["request_id"] = answer.trace.request_id if answer.trace else None
+                events.put({"event": "complete", "data": payload})
+            except Exception as exc:
+                events.put(
+                    {
+                        "event": "error",
+                        "data": {
+                            "code": "STREAM_QUERY_ERROR",
+                            "message": str(exc),
+                        },
+                    }
+                )
+            finally:
+                events.put(_STREAM_DONE)
+
+        thread = Thread(target=run_query, daemon=True)
+        thread.start()
+        while True:
+            item = events.get()
+            if item is _STREAM_DONE:
+                break
+            yield item
+        thread.join()
+
+    def _process_exact_error_code(
+        self,
+        *,
+        request_id: str,
+        created_at: str,
+        total_start: float,
+        original_query: str,
+        normalized_query: str,
+        contextual_query: str,
+        is_follow_up: bool,
+        context_terms: list[str],
+        rewrite,
+        intent,
+        top_k: int,
+        session_id: str | None,
+        user_context: UserContext,
+        tool_calls: list,
+        error_code: str,
+        context_latency_ms: float,
+        intent_latency_ms: float,
+        rewrite_latency_ms: float,
+    ) -> RAGAnswer:
+        """异常码意图走结构化精确匹配，避免语义召回误命中相近错误码。"""
+
+        retrieval_start = time.perf_counter()
+        vector_search_start = time.perf_counter()
+        self.vector_store.reload()
+        sources = self.vector_store.search_by_error_code(
+            error_code=error_code,
+            top_k=top_k,
+            tenant_id=user_context.tenant_id,
+            permission_tags=user_context.permission_tags,
+        )
+        vector_search_latency_ms = (time.perf_counter() - vector_search_start) * 1000
+        retrieval_latency_ms = (time.perf_counter() - retrieval_start) * 1000
+
+        augmented_context = build_augmented_context(
+            request_id=request_id,
+            session_id=session_id,
+            original_query=original_query,
+            normalized_query=normalized_query,
+            contextual_query=contextual_query,
+            is_follow_up=is_follow_up,
+            context_terms=context_terms,
+            rewritten_query=rewrite.rewritten_query,
+            retrieval_query=rewrite.retrieval_query,
+            synonym_expansions=rewrite.synonym_expansions,
+            semantic_expansions=rewrite.semantic_expansions,
+            intent_label=intent.intent_label,
+            sources=sources,
+            user_context=user_context,
+            tool_calls=tool_calls,
+        )
+        generation_start = time.perf_counter()
+        degradation_reason: str | None = None
+        try:
+            answer = self.answer_generator.answer(
+                question=original_query,
+                sources=sources,
+                augmented_context=augmented_context,
+            )
+        except Exception as exc:
+            answer = _fallback_answer_for_generation_error(sources)
+            degradation_reason = f"generation_failed: {exc}"
+        generation_latency_ms = (time.perf_counter() - generation_start) * 1000
+
+        retrieved_titles = [
+            str(
+                result.chunk.metadata.get("section_title")
+                or result.chunk.metadata.get("title")
+                or result.chunk.metadata.get("filename")
+                or result.chunk.metadata.get("source", "unknown")
+            )
+            for result in sources[:3]
+        ]
+        self.conversation_memory.append_turn(
+            session_id=session_id,
+            turn=ConversationTurn(
+                question=original_query,
+                rewritten_query=rewrite.rewritten_query,
+                intent_label=intent.intent_label,
+                retrieved_titles=retrieved_titles,
+                answer_summary=summarize_answer(answer),
+            ),
+        )
+        latency_ms = (time.perf_counter() - total_start) * 1000
+        trace = OnlineProcessingTrace(
+            request_id=request_id,
+            created_at=created_at,
+            session_id=session_id,
+            is_follow_up=is_follow_up,
+            original_query=original_query,
+            normalized_query=normalized_query,
+            contextual_query=contextual_query,
+            context_terms=context_terms,
+            rewritten_query=rewrite.rewritten_query,
+            retrieval_query=rewrite.retrieval_query,
+            synonym_expansions=rewrite.synonym_expansions,
+            semantic_expansions=rewrite.semantic_expansions,
+            query_rewrite_rules=rewrite.applied_rules,
+            intent_label=intent.intent_label,
+            intent_confidence=intent.confidence,
+            intent_reason=intent.reason,
+            top_k=top_k,
+            min_similarity_score=self.settings.min_similarity_score,
+            relative_score_threshold=self.settings.relative_score_threshold,
+            retrieval_mode="exact_error_code",
+            semantic_weight=self.settings.semantic_weight,
+            bm25_weight=self.settings.bm25_weight,
+            keyword_weight=self.settings.keyword_weight,
+            retrieval_candidate_k=self.settings.retrieval_candidate_k,
+            rerank_provider=getattr(self.reranker, "provider_name", "none"),
+            rerank_model=getattr(self.reranker, "model_name", "none"),
+            rerank_candidate_k=self.settings.rerank_candidate_k,
+            reranked_count=len(sources),
+            query_embedding_dimensions=0,
+            retrieved_count=len(sources),
+            latency_ms=round(latency_ms, 3),
+            retrieval_latency_ms=round(retrieval_latency_ms, 3),
+            generation_latency_ms=round(generation_latency_ms, 3),
+            augmented_context=augmented_context,
+            context_latency_ms=round(context_latency_ms, 3),
+            intent_latency_ms=round(intent_latency_ms, 3),
+            rewrite_latency_ms=round(rewrite_latency_ms, 3),
+            embedding_latency_ms=0.0,
+            vector_search_latency_ms=round(vector_search_latency_ms, 3),
+            rerank_latency_ms=0.0,
+            rerank_applied=False,
+            rerank_skip_reason="exact_error_code",
+            degradation_reason=degradation_reason,
+            query_embedding_cache_hit=False,
+            user_id=user_context.user_id,
+            tenant_id=user_context.tenant_id,
+            permission_tags=user_context.permission_tags,
+            authorized_source_count=len(sources),
+            tool_calls=tool_calls,
+        )
+        rag_answer = RAGAnswer(
+            question=original_query,
+            answer=answer,
+            sources=sources,
+            trace=trace,
+        )
+        if self.settings.query_logging_enabled:
             self.query_log_store.append(
                 build_query_log_record(
                     request_id=request_id,
@@ -439,6 +691,134 @@ def build_augmented_context(
 
 def _normalize_query(question: str) -> str:
     return " ".join(question.split())
+
+
+_STREAM_DONE = object()
+
+
+class _StreamingAnswerProxy:
+    def __init__(
+        self,
+        answer_generator: AnswerGenerator,
+        events: Queue[dict[str, Any] | object],
+    ) -> None:
+        self.answer_generator = answer_generator
+        self.events = events
+        self._retrieval_emitted = False
+
+    def answer(
+        self,
+        question: str,
+        sources: list[RetrievalResult],
+        augmented_context: str | None = None,
+    ) -> str:
+        request_id = _request_id_from_augmented_context(augmented_context)
+        self._emit_retrieval(request_id=request_id, sources=sources)
+        chunks: list[str] = []
+        stream_answer = getattr(self.answer_generator, "stream_answer", None)
+        if callable(stream_answer):
+            for chunk in stream_answer(
+                question=question,
+                sources=sources,
+                augmented_context=augmented_context,
+            ):
+                if not chunk:
+                    continue
+                chunks.append(chunk)
+                self.events.put(
+                    {
+                        "event": "answer_delta",
+                        "data": {
+                            "request_id": request_id,
+                            "delta": chunk,
+                        },
+                    }
+                )
+            return "".join(chunks)
+
+        answer = self.answer_generator.answer(
+            question=question,
+            sources=sources,
+            augmented_context=augmented_context,
+        )
+        if answer:
+            self.events.put(
+                {
+                    "event": "answer_delta",
+                    "data": {
+                        "request_id": request_id,
+                        "delta": answer,
+                    },
+                }
+            )
+        return answer
+
+    def _emit_retrieval(
+        self,
+        *,
+        request_id: str | None,
+        sources: list[RetrievalResult],
+    ) -> None:
+        if self._retrieval_emitted:
+            return
+        self._retrieval_emitted = True
+        self.events.put(
+            {
+                "event": "retrieval",
+                "data": {
+                    "request_id": request_id,
+                    "retrieved_count": len(sources),
+                    "reranked_count": len(sources),
+                    "sources": [_stream_source_snapshot(source) for source in sources],
+                },
+            }
+        )
+
+
+def _request_id_from_augmented_context(context: str | None) -> str | None:
+    if not context:
+        return None
+    for line in context.splitlines():
+        if line.startswith("请求ID："):
+            return line.split("：", 1)[1].strip() or None
+    return None
+
+
+def _stream_source_snapshot(result: RetrievalResult) -> dict[str, Any]:
+    return {
+        "chunk": {
+            "id": result.chunk.id,
+            "document_id": result.chunk.document_id,
+            "text": result.chunk.text,
+            "metadata": _stream_source_metadata(result.chunk.metadata),
+        },
+        "score": result.score,
+        "semantic_score": result.semantic_score,
+        "bm25_score": result.bm25_score,
+        "normalized_bm25_score": result.normalized_bm25_score,
+        "keyword_score": result.keyword_score,
+        "retrieval_score": result.retrieval_score,
+        "rerank_score": result.rerank_score,
+    }
+
+
+def _stream_source_metadata(metadata: dict[str, Any]) -> dict[str, Any]:
+    keys = (
+        "source",
+        "section_title",
+        "title",
+        "filename",
+        "page_number",
+        "slide_number",
+        "time_range",
+        "timestamp_range",
+        "business_module",
+    )
+    return {
+        key: metadata[key]
+        for key in keys
+        if metadata.get(key) not in (None, "")
+    }
 
 
 def _precheck_rerank_skip_reason(

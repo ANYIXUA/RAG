@@ -7,6 +7,7 @@ from dataclasses import asdict
 from rag_app.core.config import Settings
 from rag_app.core.models import RetrievalResult
 from rag_app.indexing.vector_store import VectorRecord, _rank_vector_records
+from rag_app.indexing.vector_store import _search_records_by_error_code
 from rag_app.operations.ops import (
     QueryLogRecord,
     FeedbackRecord,
@@ -91,6 +92,21 @@ class MemoryVectorStore:
             keyword_weight=keyword_weight,
             bm25_weight=bm25_weight,
             candidate_k=candidate_k,
+            tenant_id=tenant_id,
+            permission_tags=permission_tags,
+        )
+
+    def search_by_error_code(
+        self,
+        error_code: str,
+        top_k: int = 4,
+        tenant_id: str | None = None,
+        permission_tags: tuple[str, ...] | list[str] | None = None,
+    ) -> list[RetrievalResult]:
+        return _search_records_by_error_code(
+            records=self.records,
+            error_code=error_code,
+            top_k=top_k,
             tenant_id=tenant_id,
             permission_tags=permission_tags,
         )

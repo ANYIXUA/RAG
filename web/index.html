@@ -52,6 +52,11 @@
         </label>
 
         <label class="field wide">
+          <span>管理 Token</span>
+          <input id="adminToken" type="password" placeholder="可选；用于拉取 /ops/trace" spellcheck="false">
+        </label>
+
+        <label class="field wide">
           <span>问题</span>
           <textarea id="question" rows="5">全光组网装维有什么要求？</textarea>
         </label>
@@ -75,6 +80,20 @@
       </div>
 
       <div id="errorBox" class="error-box hidden"></div>
+
+      <article class="process-board">
+        <div class="section-title">
+          <div>
+            <h3>在线检索过程</h3>
+            <p id="processHint" class="hint">等待查询结果</p>
+          </div>
+          <button id="traceFetchButton" type="button" disabled>拉取后台 trace</button>
+        </div>
+        <div id="traceMetrics" class="metric-grid"></div>
+        <div id="processSteps" class="process-steps"></div>
+        <div id="queryFlow" class="query-flow"></div>
+        <div id="opsTraceBox" class="ops-trace hidden"></div>
+      </article>
 
       <article class="answer-block">
         <div class="section-title">
@@ -109,6 +128,8 @@
     </section>
   </main>
 
+  <script src="./traceModel.js"></script>
+  <script src="./streamClient.js"></script>
   <script src="./app.js"></script>
 </body>
 </html>

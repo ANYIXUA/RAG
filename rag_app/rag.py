@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from pathlib import Path
+from typing import Any
 
 from rag_app.core.config import Settings
 from rag_app.indexing.embeddings import Embedder, create_embedder
@@ -46,6 +48,20 @@ class RAGPipeline:
         user_context: UserContext | None = None,
     ) -> RAGAnswer:
         return self.online_processor.process(
+            question,
+            top_k=top_k,
+            session_id=session_id,
+            user_context=user_context,
+        )
+
+    def stream_query(
+        self,
+        question: str,
+        top_k: int | None = None,
+        session_id: str | None = None,
+        user_context: UserContext | None = None,
+    ) -> Iterator[dict[str, Any]]:
+        return self.online_processor.stream_process(
             question,
             top_k=top_k,
             session_id=session_id,

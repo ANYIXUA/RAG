@@ -33,6 +33,7 @@ services:
       - ./data:/app/data
       - ./storage:/app/storage
       - ./logs:/app/logs
+      - ./config:/app/config
     depends_on:
       postgres:
         condition: service_healthy
@@ -64,6 +65,7 @@ services:
       - ./data:/app/data
       - ./storage:/app/storage
       - ./logs:/app/logs
+      - ./config:/app/config
     depends_on:
       postgres:
         condition: service_healthy

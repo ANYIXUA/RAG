@@ -27,7 +27,7 @@ python -m rag_app.cli ops-trace <request_id>
 .\scripts\release_check.ps1 -Dataset <生产评测集.jsonl>
 ```
 
-API 集成测试需要真实 PostgreSQL：
+接口集成测试需要真实 PostgreSQL：
 
 ```powershell
 $env:RAG_TEST_POSTGRES_DSN="postgresql://rag:rag_password@127.0.0.1:15432/rag"

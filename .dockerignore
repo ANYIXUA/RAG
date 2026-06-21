@@ -20,5 +20,4 @@ models/
 reports/
 training/
 query_result.json
-data/
 *.log

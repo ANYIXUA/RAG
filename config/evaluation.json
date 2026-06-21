@@ -1,0 +1,11 @@
+{
+  "dataset": "data/evaluation/retrieval_eval.jsonl",
+  "top_k": 3,
+  "with_rerank_provider": "none",
+  "min_hit_at_k": 0.8,
+  "min_mrr": 0.7,
+  "max_no_result_rate": 0.2,
+  "max_hit_at_k_drop": 0.05,
+  "max_mrr_drop": 0.05,
+  "max_no_result_rate_increase": 0.05
+}

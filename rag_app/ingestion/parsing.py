@@ -15,6 +15,7 @@ from json import JSONDecodeError
 from pathlib import Path
 from typing import Any
 
+from rag_app.core.error_codes import extract_error_codes, normalize_error_code
 from rag_app.core.models import Document, ParsedBlock
 
 
@@ -107,6 +108,7 @@ def parse_document_file(path: Path, source_dir: Path | None = None) -> Document 
     business_module = _infer_business_module(path, parsed.text)
     tenant_id = _normalize_tenant_id(parsed.metadata)
     permission_tags = _normalize_permission_tags(parsed.metadata)
+    error_codes = extract_error_codes(parsed.text)
     #构造medatada数据
     metadata = {
         "source": relative_source,
@@ -125,6 +127,7 @@ def parse_document_file(path: Path, source_dir: Path | None = None) -> Document 
         "parse_quality_status": parsed.metadata.get("parse_quality_status", "parsed_success"),
         "parse_warnings": parsed.metadata.get("parse_warnings", []),
         "ocr_required": bool(parsed.metadata.get("ocr_required", False)),
+        "error_codes": error_codes,
         **parsed.metadata, #如果 parsed.metadata 里也有同名字段，它会覆盖前面已经设置的字段。
     }
     metadata["parser_version"] = PARSER_VERSION
@@ -133,6 +136,11 @@ def parse_document_file(path: Path, source_dir: Path | None = None) -> Document 
     metadata["parse_quality_status"] = metadata.get("parse_quality_status") or "parsed_success"
     metadata["parse_warnings"] = list(metadata.get("parse_warnings") or [])
     metadata["ocr_required"] = bool(metadata.get("ocr_required", False))
+    metadata["error_codes"] = _normalize_error_code_list(
+        metadata.get("error_codes") or error_codes
+    )
+    if len(metadata["error_codes"]) == 1:
+        metadata["error_code"] = metadata["error_codes"][0]
     #完整文档构造为结构化block
     parsed_blocks = _build_parsed_blocks(
         document_id=document_id,
@@ -1177,6 +1185,11 @@ def _build_parsed_blocks(
                 "metadata": {
                     **_common_block_metadata(document_metadata),
                     **location,
+                    **_error_code_block_metadata(
+                        body,
+                        section_path,
+                        document_metadata,
+                    ),
                 },
             }
         )
@@ -1210,6 +1223,11 @@ def _build_parsed_blocks(
                     **_common_block_metadata(document_metadata),
                     "heading_level": level,
                     **location,
+                    **_error_code_block_metadata(
+                        title,
+                        section_path,
+                        document_metadata,
+                    ),
                 },
             }
         )
@@ -1294,6 +1312,48 @@ def _common_block_metadata(document_metadata: dict[str, Any]) -> dict[str, Any]:
         "source_type": document_metadata.get("source_type"),
         "business_module": document_metadata.get("business_module"),
     }
+
+
+def _error_code_block_metadata(
+    text: str,
+    section_path: list[str],
+    document_metadata: dict[str, Any],
+) -> dict[str, Any]:
+    local_text = " ".join([*section_path, text])
+    codes = extract_error_codes(local_text)
+    if not codes:
+        document_codes = _normalize_error_code_list(document_metadata.get("error_codes"))
+        if len(document_codes) == 1:
+            codes = document_codes
+    metadata: dict[str, Any] = {"error_codes": codes}
+    if not codes:
+        return metadata
+    metadata["error_code"] = codes[0]
+    metadata["intent_labels"] = ["explain_error"]
+    metadata["keywords"] = codes
+    return metadata
+
+
+def _normalize_error_code_list(value: Any) -> list[str]:
+    if value in (None, ""):
+        return []
+    if isinstance(value, str):
+        raw_values = re.split(r"[,，;；\s]+", value)
+    elif isinstance(value, (list, tuple, set)):
+        raw_values = [str(item) for item in value]
+    else:
+        raw_values = [str(value)]
+    result: list[str] = []
+    seen: set[str] = set()
+    for item in raw_values:
+        if not item or not item.strip():
+            continue
+        code = normalize_error_code(item)
+        if code in seen:
+            continue
+        seen.add(code)
+        result.append(code)
+    return result
 
 
 def _extract_block_location(section_path: list[str]) -> dict[str, str | int]:

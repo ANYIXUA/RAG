@@ -1,0 +1,11 @@
+{
+  "data_dir": "data",
+  "storage_dir": "storage",
+  "collection_name": "default",
+  "chunk_size": 800,
+  "chunk_overlap": 120,
+  "ops_store_provider": "postgresql",
+  "ops_postgres_dsn": "${RAG_OPS_POSTGRES_DSN}",
+  "vector_store_provider": "postgresql",
+  "order_status_tool_enabled": true
+}

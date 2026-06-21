@@ -6,9 +6,9 @@
 
 RAG 项目发布时至少要区分三类版本：
 
-- 代码版本：应用代码、API、CLI、检索策略和脚本。
-- 模型版本：Embedding 模型、Cross-Encoder 模型、LLM 配置。
-- 知识库版本：知识文档、审核清单、向量库记录和 manifest。
+- 代码版本：应用代码、接口、命令行、检索策略和脚本。
+- 模型版本：向量化模型、交叉编码器模型、大语言模型配置。
+- 知识库版本：知识文档、审核清单、向量库记录和处理清单。
 
 当前应用版本可以查看：
 
@@ -26,7 +26,7 @@ $env:RAG_IMAGE_TAG="rag-api:0.1.0"
 $env:RAG_KNOWLEDGE_VERSION="knowledge-v1"
 ```
 
-API `/health` 会返回 `build` 字段，方便发布后核对当前服务版本。
+接口 `/health` 会返回 `build` 字段，方便发布后核对当前服务版本。
 
 ## 发布前检查
 
@@ -94,8 +94,8 @@ python -m rag_app.cli ops-summary --limit 200
 如果发布后发现问题，按问题来源回滚：
 
 - 代码问题：回退应用镜像或代码版本。
-- 知识问题：通过 `knowledge_active_versions` 切回上一版 active collection，必要时重新执行离线刷新。
-- 模型问题：恢复 `OPENAI_EMBEDDING_MODEL`、`RAG_EMBEDDING_DIMENSION`、`RAG_RERANK_MODEL` 或 LLM 配置。
+- 知识问题：通过 `knowledge_active_versions` 切回上一版生效知识集合，必要时重新执行离线刷新。
+- 模型问题：恢复 `OPENAI_EMBEDDING_MODEL`、`RAG_EMBEDDING_DIMENSION`、`RAG_RERANK_MODEL` 或大语言模型配置。
 - 配置问题：恢复 `.env` 或部署环境变量。
 - 数据库问题：优先保留查询日志和反馈表，避免丢失排查线索。
 
@@ -106,11 +106,11 @@ python -m rag_app.cli ops-summary --limit 200
 发布人：
 代码版本：
 镜像标签：
-Embedding 模型：
-Rerank 模型：
+向量化模型：
+重排模型：
 知识库版本：
 评测报告：
-Hit@K：
+命中率 Hit@K：
 MRR：
 无结果率：
 P95 延迟：

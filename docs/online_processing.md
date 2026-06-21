@@ -13,9 +13,9 @@
 2. 意图识别
    对用户问题做规则识别，判断是业务规则查询、异常原因解释、工单状态查询、处理建议、相似案例还是转人工兜底。
 
-3. Query 改写 / 扩写
+3. 查询改写 / 扩写
    将口语化、不完整的用户查询改写成更标准的业务表达，同时补充同义词扩展和语义扩展。例如“光猫红灯咋办”会扩展出“LOS 红灯、光路异常、ONU、排查步骤、现场处理建议”等检索词。
-   对于“这个/它/那”这类跟进问句，会结合会话历史做上下文 Query Rewriting，把上轮关键术语拼入当前查询，再进入检索。
+   对于“这个/它/那”这类跟进问句，会结合会话历史做上下文查询改写，把上轮关键术语拼入当前查询，再进入检索。
 
 4. 工具调用
    当意图识别为 `query_order_status` 且问题中包含工单号时，在线链路会调用 `query_order_status` 工具查询工单主状态、最近流转和派单信息。工具结果会进入增强上下文、trace 和查询日志。
@@ -26,8 +26,8 @@
 6. 混合检索
    在线处理器会在每次查询前重新读取向量库，确保使用离线刷新后的最新知识数据；随后根据用户的 `tenant_id` 和 `permission_tags` 过滤可访问知识，再分别执行向量相似度召回和 BM25 关键词召回，各自获取候选结果，按 chunk_id 合并去重，再对 BM25 分数做归一化并按权重合成综合分。最后通过固定阈值和相对阈值过滤低分结果，得到候选文档集合。
 
-7. Cross-Encoder 重排（可选）
-   当 `RAG_RERANK_PROVIDER=cross-encoder` 时，系统会对候选集合执行二阶段重排。重排模型逐条评估 `query + chunk` 相关性，重新排序并截断到 top_k，减少弱相关文档进入增强上下文。
+7. 交叉编码器重排（可选）
+   当 `RAG_RERANK_PROVIDER=cross-encoder` 时，系统会对候选集合执行二阶段重排。重排模型逐条评估“查询 + 切片”的相关性，重新排序并截断到 `top_k`，减少弱相关文档进入增强上下文。
    可通过 `RAG_RERANK_TRIGGER=auto` 按意图、跟进问题和低置信度场景按需触发，降低低风险问题的在线成本。
 
 8. 增强上下文生成
@@ -63,7 +63,7 @@ OnlineQueryProcessor
 recognize_intent(query: str)
 ```
 
-Query 改写和扩展方法：
+查询改写和扩展方法：
 
 ```python
 rewrite_query(query: str, intent: IntentRecognitionResult | None = None)
@@ -88,7 +88,7 @@ python -m rag_app.cli evaluate-retrieval --dataset <生产评测集.jsonl> --top
 python -m rag_app.cli evaluate-retrieval --dataset <生产评测集.jsonl> --top-k 3 --show-failures
 ```
 
-API 调用：
+接口调用：
 
 ```text
 POST /query
@@ -116,11 +116,11 @@ POST /query
 - 将口语化查询改写成标准业务表达。
 - 进行同义词扩展和语义扩展。
 - 使用扩展后的检索查询生成查询向量。
-- 每次查询前使用 active collection 查询 PostgreSQL/pgvector。
+- 每次查询前使用生效知识集合查询 PostgreSQL/pgvector。
 - 从向量库做混合检索，并过滤低于 `RAG_MIN_SIMILARITY_SCORE` 的结果。
 - 按租户和权限标签过滤用户无权访问的 chunk。
 - 使用 `RAG_RELATIVE_SCORE_THRESHOLD` 过滤明显弱于首条结果的候选。
-- 可选执行 Cross-Encoder 重排，把候选集合精排后再截断到 top_k。
+- 可选执行交叉编码器重排，把候选集合精排后再截断到 `top_k`。
 - 记录各阶段耗时、重排触发状态、查询向量缓存命中状态和降级原因。
 - 构造增强上下文。
 - 调用回答生成器。
@@ -132,7 +132,7 @@ POST /query
 - 文档切片。
 - 文档向量化。
 - 刷新向量库。
-- 更新 manifest。
+- 更新处理清单。
 
 ## 返回结果
 
@@ -208,7 +208,7 @@ python -m rag_app.cli feedback --request-id <request_id> --rating 2 --useful fal
 $env:RAG_RERANK_PROVIDER="none"
 ```
 
-启用 Cross-Encoder 重排：
+启用交叉编码器重排：
 
 ```powershell
 pip install -e ".[rerank]"

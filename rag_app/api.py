@@ -11,7 +11,7 @@ try:
     from fastapi import BackgroundTasks, Depends, FastAPI, Header, HTTPException, Request, status
     from fastapi.exceptions import RequestValidationError
     from fastapi.middleware.cors import CORSMiddleware
-    from fastapi.responses import JSONResponse
+    from fastapi.responses import JSONResponse, StreamingResponse
     from pydantic import BaseModel, Field
 except ModuleNotFoundError as exc:
     raise RuntimeError("Install API support with: pip install -e \".[api]\"") from exc
@@ -33,6 +33,7 @@ from rag_app.operations.ops import (
     create_query_log_store,
 )
 from rag_app.rag import RAGPipeline
+from rag_app.streaming import format_sse_event
 from rag_app.version import APP_VERSION, get_build_info
 from rag_app.indexing.vector_store import create_vector_store
 
@@ -107,17 +108,20 @@ def _get_pipeline() -> RAGPipeline:
     global _PIPELINE, _PIPELINE_KNOWLEDGE_KEY
     settings = Settings.from_env()
     knowledge_context = get_active_knowledge_context(settings)
+    pipeline_cache_key = (
+        f"{knowledge_context.cache_key}:{knowledge_context.settings.config_fingerprint}"
+    )
     # 在线服务缓存 pipeline，避免每个请求重复初始化模型和向量库连接。
-    # active knowledge 变化时 cache_key 会变化，下一次请求自动切到新版本。
+    # active knowledge 或配置文件变化时 cache_key 会变化，下一次请求自动切到新版本。
     if (
         _PIPELINE is None
-        or _PIPELINE_KNOWLEDGE_KEY != knowledge_context.cache_key
+        or _PIPELINE_KNOWLEDGE_KEY != pipeline_cache_key
     ):
         _PIPELINE = RAGPipeline(
-            settings=settings,
+            settings=knowledge_context.settings,
             vector_store=create_vector_store(knowledge_context.settings),
         )
-        _PIPELINE_KNOWLEDGE_KEY = knowledge_context.cache_key
+        _PIPELINE_KNOWLEDGE_KEY = pipeline_cache_key
     return _PIPELINE
 
 
@@ -158,11 +162,27 @@ def _settings_summary(settings: Settings) -> dict[str, Any]:
         "openai_base_url": settings.openai_base_url,
         "openai_chat_model": settings.openai_chat_model,
         "openai_max_tokens": settings.openai_max_tokens,
+        "openai_timeout_seconds": settings.openai_timeout_seconds,
+        "openai_max_retries": settings.openai_max_retries,
         "openai_embedding_model": settings.openai_embedding_model,
         "embedding_dimension": settings.embedding_dimension,
         "embedding_batch_size": settings.embedding_batch_size,
+        "embedding_timeout_seconds": settings.embedding_timeout_seconds,
+        "embedding_max_retries": settings.embedding_max_retries,
+        "generation_context_max_chars": settings.generation_context_max_chars,
+        "top_k": settings.top_k,
         "retrieval_mode": settings.retrieval_mode,
+        "retrieval_candidate_k": settings.retrieval_candidate_k,
+        "semantic_weight": settings.semantic_weight,
+        "bm25_weight": settings.bm25_weight,
+        "min_similarity_score": settings.min_similarity_score,
+        "relative_score_threshold": settings.relative_score_threshold,
         "rerank_provider": settings.rerank_provider,
+        "rerank_candidate_k": settings.rerank_candidate_k,
+        "rerank_trigger": settings.rerank_trigger,
+        "rerank_min_intent_confidence": settings.rerank_min_intent_confidence,
+        "query_embedding_cache_enabled": settings.query_embedding_cache_enabled,
+        "query_embedding_cache_size": settings.query_embedding_cache_size,
         "vector_store_provider": settings.vector_store_provider,
         "query_logging_enabled": settings.query_logging_enabled,
         "ops_store_provider": settings.ops_store_provider,
@@ -175,6 +195,8 @@ def _settings_summary(settings: Settings) -> dict[str, Any]:
         "order_status_tool_enabled": settings.order_status_tool_enabled,
         "order_status_postgres_configured": settings.order_status_postgres_dsn is not None,
         "admin_auth_enabled": settings.api_admin_token is not None,
+        "config_sources": list(settings.config_sources),
+        "config_fingerprint": settings.config_fingerprint,
     }
 
 
@@ -503,6 +525,33 @@ def query(request: QueryRequest) -> dict:
     # request_id 提升到响应顶层，方便前端直接提交反馈或查询 trace。
     payload["request_id"] = answer.trace.request_id if answer.trace else None
     return payload
+
+
+@app.post("/query/stream")
+def query_stream(request: QueryRequest) -> StreamingResponse:
+    def event_source():
+        pipeline = _get_pipeline()
+        user_context = UserContext(
+            user_id=request.user_id,
+            tenant_id=request.tenant_id,
+            permission_tags=tuple(request.permission_tags),
+        )
+        for item in pipeline.stream_query(
+            request.question,
+            top_k=request.top_k,
+            session_id=request.session_id,
+            user_context=user_context,
+        ):
+            yield format_sse_event(item["event"], item["data"])
+
+    return StreamingResponse(
+        event_source(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "X-Accel-Buffering": "no",
+        },
+    )
 
 
 @app.post("/feedback")

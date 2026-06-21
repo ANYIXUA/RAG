@@ -274,6 +274,29 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertIn("回答生成失败", result.answer)
             self.assertIn("generation_failed", result.trace.degradation_reason)
 
+    def test_embedding_failure_falls_back_to_bm25_retrieval(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            data_dir = base_dir / "data"
+            storage_dir = base_dir / "storage"
+            data_dir.mkdir()
+            (data_dir / "fault.md").write_text(
+                "# 故障案例\n\n## 光猫 LOS 红灯\n\n光猫 LOS 红灯处理建议。",
+                encoding="utf-8",
+            )
+            settings = _settings(base_dir, data_dir, storage_dir)
+            OfflineKnowledgeBuilder(settings).refresh(reset=True)
+
+            result = OnlineQueryProcessor(
+                settings,
+                embedder=_FailingEmbedder(),
+            ).process("光猫 LOS 红灯怎么办", top_k=1)
+
+            self.assertEqual(len(result.sources), 1)
+            self.assertEqual(result.trace.retrieval_mode, "bm25")
+            self.assertEqual(result.trace.query_embedding_dimensions, 0)
+            self.assertIn("embedding_failed", result.trace.degradation_reason)
+
     def test_order_status_query_calls_tool(self) -> None:
         with TemporaryDirectory() as temp_dir:
             base_dir = Path(temp_dir)
@@ -298,6 +321,83 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertIn("处理中", result.answer)
             self.assertIn("工具调用结果", result.trace.augmented_context)
             self.assertTrue(self.query_log_store.records[-1]["tool_calls"])
+
+    def test_error_code_query_uses_exact_match(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            data_dir = base_dir / "data"
+            storage_dir = base_dir / "storage"
+            data_dir.mkdir()
+            (data_dir / "error_codes.json").write_text(
+                (
+                    '{"title":"异常码说明","errors":['
+                    '{"error_code":"E203","message":"地址不存在","advice":"核对标准地址"},'
+                    '{"error_code":"E204","message":"账号冻结","advice":"联系管理员"}'
+                    ']}'
+                ),
+                encoding="utf-8",
+            )
+            settings = production_settings(
+                base_dir,
+                data_dir=data_dir,
+                storage_dir=storage_dir,
+                chunk_size=200,
+                chunk_overlap=20,
+            )
+            OfflineKnowledgeBuilder(settings).refresh(reset=True)
+
+            result = OnlineQueryProcessor(settings).process(
+                "接口返回 e203 是什么意思？",
+                top_k=2,
+            )
+
+            self.assertEqual(result.trace.intent_label, "explain_error")
+            self.assertEqual(result.trace.retrieval_mode, "exact_error_code")
+            self.assertEqual(result.trace.query_embedding_dimensions, 0)
+            self.assertEqual(result.trace.rerank_skip_reason, "exact_error_code")
+            self.assertEqual([item.chunk.metadata.get("error_code") for item in result.sources], ["E203"])
+            self.assertIn("地址不存在", result.trace.augmented_context)
+            self.assertNotIn("账号冻结", result.trace.augmented_context)
+
+    def test_stream_processing_emits_retrieval_deltas_and_complete_event(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            data_dir = base_dir / "data"
+            storage_dir = base_dir / "storage"
+            data_dir.mkdir()
+            (data_dir / "fault.md").write_text(
+                "# 故障案例\n\n## 光猫 LOS 红灯\n\n光猫 LOS 红灯需要检查尾纤。",
+                encoding="utf-8",
+            )
+            settings = _settings(base_dir, data_dir, storage_dir)
+            OfflineKnowledgeBuilder(settings).refresh(reset=True)
+            for record in self.vector_store.records:
+                record.chunk.metadata["pdf_page_reports"] = [{"page_number": 1}]
+
+            events = list(
+                OnlineQueryProcessor(
+                    settings,
+                    answer_generator=_StreamingAnswerGenerator(),
+                ).stream_process("光猫红灯咋办", top_k=1)
+            )
+
+            self.assertEqual(
+                [event["event"] for event in events],
+                ["retrieval", "answer_delta", "answer_delta", "complete"],
+            )
+            retrieval = events[0]["data"]
+            self.assertTrue(retrieval["request_id"])
+            self.assertEqual(retrieval["retrieved_count"], 1)
+            self.assertEqual(retrieval["reranked_count"], 1)
+            self.assertEqual(len(retrieval["sources"]), 1)
+            self.assertNotIn("pdf_page_reports", retrieval["sources"][0]["chunk"]["metadata"])
+            self.assertEqual(events[1]["data"]["delta"], "第一段")
+            self.assertEqual(events[2]["data"]["delta"], "第二段")
+            complete = events[-1]["data"]
+            self.assertEqual(complete["answer"], "第一段第二段")
+            self.assertEqual(complete["request_id"], retrieval["request_id"])
+            self.assertEqual(complete["trace"]["request_id"], retrieval["request_id"])
+            self.assertEqual(len(self.query_log_store.records), 1)
 
 
 def _settings(base_dir: Path, data_dir: Path, storage_dir: Path) -> Settings:
@@ -346,6 +446,23 @@ class _FailingAnswerGenerator:
     def answer(self, question: str, sources, augmented_context: str | None = None) -> str:
         del question, sources, augmented_context
         raise RuntimeError("llm timeout")
+
+
+class _StreamingAnswerGenerator:
+    def answer(self, question: str, sources, augmented_context: str | None = None) -> str:
+        del question, sources, augmented_context
+        return "同步回答"
+
+    def stream_answer(self, question: str, sources, augmented_context: str | None = None):
+        del question, sources, augmented_context
+        yield "第一段"
+        yield "第二段"
+
+
+class _FailingEmbedder:
+    def embed(self, texts: list[str]) -> list[list[float]]:
+        del texts
+        raise RuntimeError("embedding timeout")
 
 
 class _StaticOrderStatusTool:

@@ -1,27 +1,93 @@
 # PostgreSQL/pgvector 存储设计
 
-当前项目将结构化业务数据、RAG 运行数据、知识版本状态和知识向量统一放在 PostgreSQL 中。
+当前项目把结构化业务数据、RAG 运行数据、知识版本状态和知识向量统一放在 PostgreSQL 中，向量列由 pgvector 提供。
 
-## 存储职责
+## 在哪里查看
 
-- `work_orders`、`work_order_flow_logs`、`dispatch_records`：真实业务表，供在线工具直接查询。
-- `rag_documents`：进入知识库的文档元数据。
-- `rag_knowledge_chunks`：知识切片、metadata 和 pgvector embedding。
-- `query_logs`、`feedback`：在线问答日志和人工反馈。
-- `rag_tool_call_logs`：工具调用审计。
-- `knowledge_uploads`、`knowledge_build_jobs`、`knowledge_versions`、`knowledge_active_versions`：热上传、构建任务和 active 指针。
-
-## 配置
+本机 Docker 容器名是 `rag-postgres`。如果用 DBeaver、pgAdmin 或 DataGrip 查看，连接信息如下：
 
 ```text
-RAG_OPS_STORE_PROVIDER=postgresql
-RAG_OPS_POSTGRES_DSN=postgresql://rag:rag_password@postgres:5432/rag
-RAG_ORDER_STATUS_POSTGRES_DSN=postgresql://rag:rag_password@postgres:5432/rag
-RAG_VECTOR_STORE_PROVIDER=postgresql
+Host: 127.0.0.1
+Port: 15432
+Database: rag
+User: rag
+Password: rag_password
 ```
 
-## 检索策略
+如果在 Docker Compose 服务内部连接，主机名用 `postgres`，端口用 `5432`。
 
-在线检索先用 pgvector cosine 距离召回语义候选，再用应用层 BM25 分数补充关键词候选并融合排序。租户和权限标签在召回结果进入增强上下文前统一过滤。
+命令行查看：
 
-如果后续需要更强的倒排索引能力，可以在 PostgreSQL 外接企业搜索服务；默认生产链路以 PostgreSQL/pgvector 为唯一知识向量存储。
+```powershell
+docker exec -it rag-postgres psql -U rag -d rag
+\dt
+\d rag_knowledge_chunks
+```
+
+## 核心表
+
+- `rag_documents`：进入知识库的文档元数据。
+- `rag_knowledge_chunks`：知识切片、正文、元数据、权限标签和 pgvector 向量。
+- `knowledge_uploads`：热上传文件记录。
+- `knowledge_build_jobs`：知识构建任务记录。
+- `knowledge_versions`：构建完成的知识版本。
+- `knowledge_active_versions`：当前生效的知识版本指针。
+- `query_logs`：在线问答结构化日志。
+- `feedback`：人工反馈。
+- `rag_tool_call_logs`：工具调用审计日志。
+
+`rag_knowledge_chunks.embedding` 当前是 `vector(1024)`，必须与 `config/model.json` 中的 `embedding_dimension` 一致。
+
+## 常用 SQL
+
+查看当前 collection 记录数：
+
+```sql
+SELECT collection_name, status, COUNT(*) AS records
+FROM rag_knowledge_chunks
+GROUP BY collection_name, status
+ORDER BY collection_name, status;
+```
+
+查看最新切片：
+
+```sql
+SELECT
+  chunk_id,
+  document_id,
+  metadata->>'source' AS source,
+  metadata->>'section_title' AS section_title,
+  left(chunk_text, 120) AS preview,
+  updated_at
+FROM rag_knowledge_chunks
+WHERE collection_name = 'default'
+  AND status = 'active'
+ORDER BY updated_at DESC
+LIMIT 20;
+```
+
+查看当前激活的知识版本：
+
+```sql
+SELECT *
+FROM knowledge_active_versions
+ORDER BY updated_at DESC;
+```
+
+按来源文件统计切片数：
+
+```sql
+SELECT
+  metadata->>'source' AS source,
+  COUNT(*) AS chunks
+FROM rag_knowledge_chunks
+WHERE collection_name = 'default'
+GROUP BY metadata->>'source'
+ORDER BY chunks DESC;
+```
+
+## 修改原则
+
+不要手工改 `embedding` 或 `chunk_text` 来修知识库。知识内容应从 `data/` 或上传接口进入，然后执行离线刷新或知识构建任务，让切片、向量、版本指针和审计信息保持一致。
+
+调召回参数时优先改 `config/retrieval.json`；只有切片策略、向量模型或 embedding 维度变化时，才需要重建向量库。

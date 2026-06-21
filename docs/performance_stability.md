@@ -8,18 +8,18 @@
 
 - `context_latency_ms`：多轮上下文读取和跟进问句改写耗时。
 - `intent_latency_ms`：意图识别耗时。
-- `rewrite_latency_ms`：Query 标准化、同义词扩展和语义扩展耗时。
+- `rewrite_latency_ms`：查询标准化、同义词扩展和语义扩展耗时。
 - `embedding_latency_ms`：查询向量化耗时。
 - `vector_search_latency_ms`：向量库和 BM25 混合召回耗时。
-- `rerank_latency_ms`：Cross-Encoder 或其他重排器耗时。
+- `rerank_latency_ms`：交叉编码器或其他重排器耗时。
 - `generation_latency_ms`：回答生成耗时。
 - `latency_ms`：端到端总耗时。
 
-这样排查慢请求时，可以判断瓶颈来自 Embedding、向量库、重排还是生成。
+这样排查慢请求时，可以判断瓶颈来自向量化、向量库、重排还是生成。
 
 ## 查询向量缓存
 
-默认开启查询 Embedding 缓存：
+默认开启查询向量缓存：
 
 ```powershell
 RAG_QUERY_EMBEDDING_CACHE_ENABLED=true
@@ -61,7 +61,38 @@ RAG_RERANK_MIN_INTENT_CONFIDENCE=0.75
 trace.degradation_reason
 ```
 
-这样线上即使 Cross-Encoder 或 LLM 暂时异常，也不会让整个问答链路直接中断。
+这样线上即使交叉编码器或大语言模型暂时异常，也不会让整个问答链路直接中断。
+
+## 生成超时优化
+
+如果 `trace.generation_latency_ms` 明显高于 `trace.retrieval_latency_ms`，瓶颈在回答生成阶段。优先调整：
+
+```json
+{
+  "openai_max_tokens": 360,
+  "openai_timeout_seconds": 8.0,
+  "openai_max_retries": 0,
+  "generation_context_max_chars": 2800
+}
+```
+
+- `openai_timeout_seconds`：限制 OpenAI 兼容接口等待时间，超时后返回降级答案和召回来源。
+- `openai_max_retries`：交互式问答建议设为 0，避免 SDK 默认重试把一次慢生成拖成多次等待。
+- `generation_context_max_chars`：限制传给大模型的增强上下文长度，避免把过多切片正文塞进生成请求。
+- `openai_max_tokens`：限制最大输出长度。当前系统提示要求 5 条以内要点回答，通常不需要 800 token。
+
+如果调小这些值后仍然慢，再降低前端或 `config/retrieval.json` 中的 `top_k`，或提高 `min_similarity_score` / `relative_score_threshold` 减少弱相关片段进入生成上下文。
+
+如果 `trace.retrieval_latency_ms` 偶发升高，同时 `trace.embedding_latency_ms` 接近检索总耗时，瓶颈通常是查询向量化接口。可以调整：
+
+```json
+{
+  "embedding_timeout_seconds": 3.0,
+  "embedding_max_retries": 0
+}
+```
+
+查询向量化失败时，在线链路会退回 BM25 关键词检索，并在 `trace.degradation_reason` 中记录 `embedding_failed`，避免一次外部 embedding 超时直接打断 `/query`。
 
 ## 简单压测
 
@@ -89,13 +120,13 @@ trace.degradation_reason
 .\scripts\load_test.ps1 -Mode api -Requests 50 -Concurrency 5 -Question "光猫红灯咋办"
 ```
 
-API 模式要求本地服务已启动：
+接口模式要求本地服务已启动：
 
 ```powershell
 .\scripts\start_api.ps1 -Port 8000 -Background
 ```
 
-如果不想启动 API，也可以压 CLI：
+如果不想启动接口服务，也可以压测命令行入口：
 
 ```powershell
 .\scripts\load_test.ps1 -Mode cli -Requests 20 -Concurrency 4 -Question "光猫红灯咋办"

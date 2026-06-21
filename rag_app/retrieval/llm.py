@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from collections.abc import Iterator
 from typing import Protocol
 
 from rag_app.core.config import Settings
@@ -20,6 +21,18 @@ class AnswerGenerator(Protocol):
         ...
 
 
+class StreamingAnswerGenerator(Protocol):
+    """可以逐块返回回答 token 的生成器。"""
+
+    def stream_answer(
+        self,
+        question: str,
+        sources: list[RetrievalResult],
+        augmented_context: str | None = None,
+    ) -> Iterator[str]:
+        ...
+
+
 class OpenAIAnswerGenerator:
     """OpenAI 兼容对话生成适配器。"""
 
@@ -29,6 +42,9 @@ class OpenAIAnswerGenerator:
         model: str,
         base_url: str | None = None,
         max_tokens: int | None = 800,
+        timeout_seconds: float | None = 8.0,
+        max_retries: int = 0,
+        context_max_chars: int = 3200,
     ) -> None:
         try:
             from openai import OpenAI
@@ -36,9 +52,16 @@ class OpenAIAnswerGenerator:
             raise RuntimeError(
                 "Install OpenAI support with: pip install -e \".[openai]\""
             ) from exc
-        self.client = OpenAI(api_key=api_key, base_url=base_url)
+        self.client = OpenAI(
+            api_key=api_key,
+            base_url=base_url,
+            timeout=timeout_seconds,
+            max_retries=max_retries,
+        )
         self.model = model
         self.max_tokens = max_tokens
+        self.timeout_seconds = timeout_seconds
+        self.context_max_chars = context_max_chars
 
     def answer(
         self,
@@ -46,7 +69,47 @@ class OpenAIAnswerGenerator:
         sources: list[RetrievalResult],
         augmented_context: str | None = None,
     ) -> str:
-        context = augmented_context or _build_source_context(sources)
+        kwargs = self._chat_completion_kwargs(
+            question=question,
+            sources=sources,
+            augmented_context=augmented_context,
+        )
+        response = self.client.chat.completions.create(**kwargs)
+        return response.choices[0].message.content or ""
+
+    def stream_answer(
+        self,
+        question: str,
+        sources: list[RetrievalResult],
+        augmented_context: str | None = None,
+    ) -> Iterator[str]:
+        kwargs = self._chat_completion_kwargs(
+            question=question,
+            sources=sources,
+            augmented_context=augmented_context,
+        )
+        kwargs["stream"] = True
+        response = self.client.chat.completions.create(**kwargs)
+        for chunk in response:
+            choices = getattr(chunk, "choices", None) or []
+            if not choices:
+                continue
+            delta = getattr(choices[0], "delta", None)
+            content = getattr(delta, "content", None)
+            if content:
+                yield content
+
+    def _chat_completion_kwargs(
+        self,
+        *,
+        question: str,
+        sources: list[RetrievalResult],
+        augmented_context: str | None,
+    ) -> dict:
+        context = _trim_context(
+            augmented_context or _build_source_context(sources),
+            max_chars=self.context_max_chars,
+        )
         kwargs = {
             "model": self.model,
             "messages": [
@@ -70,8 +133,9 @@ class OpenAIAnswerGenerator:
         }
         if self.max_tokens is not None:
             kwargs["max_tokens"] = self.max_tokens
-        response = self.client.chat.completions.create(**kwargs)
-        return response.choices[0].message.content or ""
+        if self.timeout_seconds is not None:
+            kwargs["timeout"] = self.timeout_seconds
+        return kwargs
 
 
 def create_answer_generator(settings: Settings) -> AnswerGenerator:
@@ -82,6 +146,9 @@ def create_answer_generator(settings: Settings) -> AnswerGenerator:
             model=settings.openai_chat_model,
             base_url=settings.openai_base_url,
             max_tokens=settings.openai_max_tokens,
+            timeout_seconds=settings.openai_timeout_seconds,
+            max_retries=settings.openai_max_retries,
+            context_max_chars=settings.generation_context_max_chars,
         )
     raise ValueError(f"Unsupported LLM provider: {settings.llm_provider}")
 
@@ -112,3 +179,11 @@ def _build_source_context(sources: list[RetrievalResult]) -> str:
             )
         )
     return "\n\n".join(sections)
+
+
+def _trim_context(context: str, max_chars: int | None) -> str:
+    if max_chars is None or len(context) <= max_chars:
+        return context
+    suffix = "\n\n[上下文已截断，请优先依据已保留片段回答。]"
+    budget = max(0, max_chars - len(suffix))
+    return context[:budget].rstrip() + suffix

@@ -63,8 +63,8 @@
 RAG 核心层保存知识文档、切片、召回日志、工具调用日志和人工反馈。
 
 - `rag_documents`：原始资料表，记录进入知识库的业务手册、接口说明、故障案例和异常码资料。
-- `rag_knowledge_chunks`：知识切片表，保存可检索知识单元、Embedding、业务标签和版本信息。
-- `rag_query_logs`：用户问题日志，记录意图识别、Query 改写、回答结果和兜底类型。
+- `rag_knowledge_chunks`：知识切片表，保存可检索知识单元、向量、业务标签和版本信息。
+- `rag_query_logs`：用户问题日志，记录意图识别、查询改写、回答结果和兜底类型。
 - `rag_retrieval_logs`：召回明细日志，记录每次查询命中的知识切片和分数。
 - `rag_tool_call_logs`：工具调用日志，记录 `query_order_status` 等在线工具的入参、出参、状态和错误。
 - `rag_feedback`：人工反馈表，用于评估回答准确性和建议可执行性。
