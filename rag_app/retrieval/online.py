@@ -29,6 +29,7 @@ from rag_app.operations.ops import (
     new_request_id,
     utc_now,
 )
+from rag_app.prompt_templates import load_prompt_template, render_prompt_template
 from rag_app.retrieval.query import recognize_intent, rewrite_query
 from rag_app.retrieval.rerank import Reranker, create_reranker
 from rag_app.indexing.vector_store import VectorStore, create_vector_store
@@ -615,53 +616,63 @@ def build_augmented_context(
     """把用户原始问题和召回文档拼成大模型输入上下文。"""
 
     user_context = user_context or UserContext()
-    lines = [
-        f"请求ID：{request_id}",
-        f"会话ID：{session_id or '无'}",
-        f"租户ID：{user_context.tenant_id or '未指定'}",
-        f"用户ID：{user_context.user_id or '未指定'}",
-        f"权限标签：{', '.join(user_context.permission_tags) if user_context.permission_tags else '未指定'}",
-        f"用户原始问题：{original_query}",
-        f"归一化查询：{normalized_query}",
-        f"是否跟进问答：{'是' if is_follow_up else '否'}",
-        f"上下文改写查询：{contextual_query}",
-        f"上下文关键术语：{', '.join(context_terms) if context_terms else '无'}",
-        f"改写查询：{rewritten_query}",
-        f"检索查询：{retrieval_query}",
-        f"同义词扩展：{', '.join(synonym_expansions) if synonym_expansions else '无'}",
-        f"语义扩展：{', '.join(semantic_expansions) if semantic_expansions else '无'}",
-        f"识别意图：{intent_label}",
-        "",
-        "工具调用结果：",
-    ]
-    actual_tool_calls = tool_calls or []
-    if actual_tool_calls:
-        for index, call in enumerate(actual_tool_calls, start=1):
-            payload = _tool_call_to_dict(call)
-            output = payload.get("output") or {}
-            lines.extend(
-                [
-                    f"[tool-{index}] 工具：{payload.get('tool_name')}",
-                    f"状态：{payload.get('status')}",
-                    f"耗时：{payload.get('latency_ms')}ms",
-                    f"入参：{payload.get('input')}",
-                    f"结果摘要：{output.get('summary', '无')}",
-                ]
-            )
-            if payload.get("error"):
-                lines.append(f"错误：{payload['error']}")
-    else:
-        lines.append("无")
-    lines.extend(
-        [
-            "",
-            "检索到的相关文档：",
-        ]
-    )
-    if not sources:
-        lines.append("未召回到相关文档。")
-        return "\n".join(lines)
+    return render_prompt_template(
+        "answer_generation/augmented_context.md",
+        request_id=request_id,
+        session_id=session_id or "无",
+        tenant_id=user_context.tenant_id or "未指定",
+        user_id=user_context.user_id or "未指定",
+        permission_tags=", ".join(user_context.permission_tags)
+        if user_context.permission_tags
+        else "未指定",
+        original_query=original_query,
+        normalized_query=normalized_query,
+        is_follow_up="是" if is_follow_up else "否",
+        contextual_query=contextual_query,
+        context_terms=", ".join(context_terms) if context_terms else "无",
+        rewritten_query=rewritten_query,
+        retrieval_query=retrieval_query,
+        synonym_expansions=", ".join(synonym_expansions)
+        if synonym_expansions
+        else "无",
+        semantic_expansions=", ".join(semantic_expansions)
+        if semantic_expansions
+        else "无",
+        intent_label=intent_label,
+        tool_calls_block=_build_tool_calls_block(tool_calls or []),
+        sources_block=_build_sources_block(sources),
+    ).strip()
 
+
+def _build_tool_calls_block(tool_calls: list) -> str:
+    if not tool_calls:
+        return load_prompt_template("answer_generation/augmented_tool_calls_empty.md")
+
+    blocks: list[str] = []
+    for index, call in enumerate(tool_calls, start=1):
+        payload = _tool_call_to_dict(call)
+        output = payload.get("output") or {}
+        error_line = f"\n错误：{payload['error']}" if payload.get("error") else ""
+        blocks.append(
+            render_prompt_template(
+                "answer_generation/augmented_tool_call.md",
+                index=index,
+                tool_name=payload.get("tool_name"),
+                status=payload.get("status"),
+                latency_ms=payload.get("latency_ms"),
+                input=payload.get("input"),
+                summary=output.get("summary", "无"),
+                error_line=error_line,
+            )
+        )
+    return "\n".join(blocks)
+
+
+def _build_sources_block(sources: list[RetrievalResult]) -> str:
+    if not sources:
+        return load_prompt_template("answer_generation/augmented_sources_empty.md")
+
+    blocks: list[str] = []
     for index, result in enumerate(sources, start=1):
         source = result.chunk.metadata.get("source", "unknown")
         title = (
@@ -670,23 +681,23 @@ def build_augmented_context(
             or result.chunk.metadata.get("filename")
             or source
         )
-        lines.extend(
-            [
-                f"[{index}] 来源：{source}",
-                f"引用标签：[{index}]",
-                f"标题：{title}",
-                f"定位信息：{_format_location(result)}",
-                f"综合分：{result.score:.6f}",
-                f"召回综合分：{_format_score(result.retrieval_score)}",
-                f"重排分：{_format_score(result.rerank_score)}",
-                f"语义分：{_format_score(result.semantic_score)}",
-                f"BM25 原始分：{_format_score(result.bm25_score)}",
-                f"BM25 归一化分：{_format_score(result.normalized_bm25_score)}",
-                f"内容：{result.chunk.text}",
-                "",
-            ]
+        blocks.append(
+            render_prompt_template(
+                "answer_generation/augmented_source.md",
+                index=index,
+                source=source,
+                title=title,
+                location=_format_location(result),
+                score=f"{result.score:.6f}",
+                retrieval_score=_format_score(result.retrieval_score),
+                rerank_score=_format_score(result.rerank_score),
+                semantic_score=_format_score(result.semantic_score),
+                bm25_score=_format_score(result.bm25_score),
+                normalized_bm25_score=_format_score(result.normalized_bm25_score),
+                content=result.chunk.text,
+            )
         )
-    return "\n".join(lines).strip()
+    return "\n\n".join(blocks)
 
 
 def _normalize_query(question: str) -> str:

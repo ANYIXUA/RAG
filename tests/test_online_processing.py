@@ -4,10 +4,11 @@ import unittest
 from dataclasses import replace
 from unittest.mock import patch
 
+from rag_app import prompt_templates
 from rag_app.core.config import Settings
-from rag_app.core.models import ToolCallTrace
+from rag_app.core.models import ToolCallTrace, UserContext
 from rag_app.indexing.offline import OfflineKnowledgeBuilder
-from rag_app.retrieval.online import OnlineQueryProcessor
+from rag_app.retrieval.online import OnlineQueryProcessor, build_augmented_context
 from tests.helpers import (
     DeterministicEmbedder,
     MemoryQueryLogStore,
@@ -107,6 +108,50 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertIn("检索到的相关文档", result.trace.augmented_context)
             self.assertIn("光猫 LOS 红灯", result.trace.augmented_context)
             self.assertEqual(len(self.query_log_store.records), 2)
+
+    def test_augmented_context_uses_external_prompt_templates(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            prompt_root = Path(temp_dir) / "prompts"
+            prompt_dir = prompt_root / "answer_generation"
+            prompt_dir.mkdir(parents=True)
+            (prompt_dir / "augmented_context.md").write_text(
+                "REQ={request_id}\nTOOLS={tool_calls_block}\nSOURCES={sources_block}",
+                encoding="utf-8",
+            )
+            (prompt_dir / "augmented_tool_calls_empty.md").write_text(
+                "NO TOOLS",
+                encoding="utf-8",
+            )
+            (prompt_dir / "augmented_sources_empty.md").write_text(
+                "NO SOURCES",
+                encoding="utf-8",
+            )
+
+            with patch.object(prompt_templates, "PROMPT_ROOT", prompt_root):
+                prompt_templates.load_prompt_template.cache_clear()
+                context = build_augmented_context(
+                    request_id="req-1",
+                    session_id=None,
+                    original_query="光猫红灯怎么处理？",
+                    normalized_query="光猫红灯怎么处理？",
+                    contextual_query="光猫红灯怎么处理？",
+                    is_follow_up=False,
+                    context_terms=[],
+                    rewritten_query="光猫 LOS 红灯怎么处理？",
+                    retrieval_query="光猫 LOS 红灯怎么处理？ ONU",
+                    synonym_expansions=["ONU"],
+                    semantic_expansions=["现场处理建议"],
+                    intent_label="recommend_solution",
+                    sources=[],
+                    user_context=UserContext(),
+                    tool_calls=[],
+                )
+
+        prompt_templates.load_prompt_template.cache_clear()
+        self.assertEqual(
+            context,
+            "REQ=req-1\nTOOLS=NO TOOLS\nSOURCES=NO SOURCES",
+        )
 
     def test_online_processing_reads_latest_vector_store_each_query(self) -> None:
         with TemporaryDirectory() as temp_dir:

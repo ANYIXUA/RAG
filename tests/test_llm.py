@@ -1,8 +1,11 @@
 import sys
+import tempfile
 import types
 import unittest
+from pathlib import Path
 from unittest.mock import patch
 
+from rag_app import prompt_templates
 from rag_app.core.models import Chunk, RetrievalResult
 from rag_app.retrieval.llm import OpenAIAnswerGenerator
 
@@ -90,6 +93,45 @@ class LLMTest(unittest.TestCase):
         completion_kwargs = generator.client.chat.completions.last_kwargs
         self.assertTrue(completion_kwargs["stream"])
         self.assertEqual(completion_kwargs["timeout"], 5.0)
+
+    def test_openai_answer_generator_uses_external_prompt_templates(self) -> None:
+        fake_module = types.SimpleNamespace(OpenAI=_FakeOpenAI)
+
+        with tempfile.TemporaryDirectory() as tmp_dir:
+            prompt_root = Path(tmp_dir) / "prompts"
+            prompt_dir = prompt_root / "answer_generation"
+            prompt_dir.mkdir(parents=True)
+            (prompt_dir / "system.md").write_text("SYSTEM FROM TEMPLATE", encoding="utf-8")
+            (prompt_dir / "user.md").write_text(
+                "QUESTION={question}\nCONTEXT={context}",
+                encoding="utf-8",
+            )
+
+            with (
+                patch.object(prompt_templates, "PROMPT_ROOT", prompt_root),
+                patch.dict(sys.modules, {"openai": fake_module}),
+            ):
+                prompt_templates.load_prompt_template.cache_clear()
+                generator = OpenAIAnswerGenerator(
+                    api_key="test-key",
+                    model="test-chat",
+                )
+                generator.answer(
+                    "How to handle LOS red light?",
+                    sources=[],
+                    augmented_context="retrieved context",
+                )
+
+        prompt_templates.load_prompt_template.cache_clear()
+        completion_kwargs = generator.client.chat.completions.last_kwargs
+        self.assertEqual(
+            completion_kwargs["messages"][0]["content"],
+            "SYSTEM FROM TEMPLATE",
+        )
+        self.assertEqual(
+            completion_kwargs["messages"][1]["content"],
+            "QUESTION=How to handle LOS red light?\nCONTEXT=retrieved context",
+        )
 
 
 class _FakeCompletions:

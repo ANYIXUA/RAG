@@ -15,6 +15,7 @@ RUN python -m pip install --retries 10 --timeout 120 -e ".[commercial]"
 
 COPY data ./data
 COPY docs ./docs
+COPY prompts ./prompts
 
 RUN mkdir -p /app/storage /app/logs
 

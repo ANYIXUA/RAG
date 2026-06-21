@@ -7,6 +7,7 @@ from typing import Protocol
 
 from rag_app.core.config import Settings
 from rag_app.core.models import RetrievalResult
+from rag_app.prompt_templates import load_prompt_template, render_prompt_template
 
 
 class AnswerGenerator(Protocol):
@@ -115,18 +116,15 @@ class OpenAIAnswerGenerator:
             "messages": [
                 {
                     "role": "system",
-                    "content": (
-                        "你是装维业务知识问答助手。"
-                        "只能基于提供的检索上下文回答问题，不得编造。"
-                        "回答中的每个关键结论都需要使用 [1]、[2] 这样的编号引用来源。"
-                        "引用编号只能来自提供的上下文片段。"
-                        "如果上下文中没有答案，要明确说明不知道，并提示补充信息或转人工。"
-                        "请用 5 条以内要点回答，每条不超过 40 字；只基于检索上下文回答。"
-                    ),
+                    "content": load_prompt_template("answer_generation/system.md"),
                 },
                 {
                     "role": "user",
-                    "content": f"用户原始问题：\n{question}\n\n增强上下文：\n{context}",
+                    "content": render_prompt_template(
+                        "answer_generation/user.md",
+                        question=question,
+                        context=context,
+                    ),
                 },
             ],
             "temperature": 0.2,
@@ -153,29 +151,17 @@ def create_answer_generator(settings: Settings) -> AnswerGenerator:
     raise ValueError(f"Unsupported LLM provider: {settings.llm_provider}")
 
 
-def _format_reference_line(index: int, result: RetrievalResult) -> str:
-    metadata = result.chunk.metadata
-    source = metadata.get("source", "unknown")
-    section = metadata.get("section_title") or metadata.get("title") or source
-    location = (
-        metadata.get("page_number")
-        or metadata.get("slide_number")
-        or metadata.get("time_range")
-        or metadata.get("timestamp_range")
-        or section
-    )
-    return f"- [{index}] {source} | {location}"
-
-
 def _build_source_context(sources: list[RetrievalResult]) -> str:
     sections: list[str] = []
     for index, result in enumerate(sources, start=1):
+        metadata = result.chunk.metadata
         sections.append(
-            "\n".join(
-                [
-                    _format_reference_line(index, result),
-                    result.chunk.text,
-                ]
+            render_prompt_template(
+                "answer_generation/source_context_item.md",
+                index=index,
+                source=metadata.get("source", "unknown"),
+                location=_format_reference_location(result),
+                content=result.chunk.text,
             )
         )
     return "\n\n".join(sections)
@@ -184,6 +170,20 @@ def _build_source_context(sources: list[RetrievalResult]) -> str:
 def _trim_context(context: str, max_chars: int | None) -> str:
     if max_chars is None or len(context) <= max_chars:
         return context
-    suffix = "\n\n[上下文已截断，请优先依据已保留片段回答。]"
+    suffix = "\n\n" + load_prompt_template(
+        "answer_generation/context_truncation_suffix.md"
+    )
     budget = max(0, max_chars - len(suffix))
     return context[:budget].rstrip() + suffix
+
+
+def _format_reference_location(result: RetrievalResult) -> str:
+    metadata = result.chunk.metadata
+    section = metadata.get("section_title") or metadata.get("title") or "unknown"
+    return (
+        metadata.get("page_number")
+        or metadata.get("slide_number")
+        or metadata.get("time_range")
+        or metadata.get("timestamp_range")
+        or section
+    )
