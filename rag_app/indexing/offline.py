@@ -2,7 +2,9 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
+import os
 from dataclasses import asdict
 from datetime import datetime, timezone
 from pathlib import Path
@@ -62,6 +64,10 @@ class OfflineKnowledgeBuilder:
         load_report = DirectoryDocumentLoader(
             actual_source_dir,
             governance_policy=governance_policy,
+            pdf_complex_parser=self.settings.pdf_complex_parser,
+            pdf_bordered_table_parser=self.settings.pdf_bordered_table_parser,
+            pdf_borderless_table_parser=self.settings.pdf_borderless_table_parser,
+            pdf_semistructured_table_parser=self.settings.pdf_semistructured_table_parser,
         ).load_with_report()
         documents, quality_skipped = _apply_parse_quality_gate(
             documents=load_report.documents,
@@ -90,6 +96,7 @@ class OfflineKnowledgeBuilder:
         skipped = 0#本次不用重新处理的文档
 
         #重新遍历当前通过治理和质量检查后的文档
+        parser_config_fingerprint = _parser_config_fingerprint(self.settings)
         for source_path, document in documents_by_source.items():
             previous = manifest_files.get(source_path)#不为空则说明上次处理过
             content_hash = str(document.metadata["content_hash"])#文档内容有更新hash值就会发生改变
@@ -102,6 +109,11 @@ class OfflineKnowledgeBuilder:
                 or previous is None
                 or previous.get("content_hash") != content_hash
                 or previous.get("parser_version") != parser_version
+                or _document_parser_config_changed(
+                    previous,
+                    document,
+                    parser_config_fingerprint,
+                )
                 or previous.get("chunker_version") != chunker_version
                 or previous.get("embedding_model") != embedding_model
             ):
@@ -124,8 +136,16 @@ class OfflineKnowledgeBuilder:
         #    这能降低刷新成本，也减少灰度发布前构建窗口里的不确定性。
         chunks = self.chunker.split_documents(changed_documents)#切片
         embeddings = self.embedder.embed([chunk.text for chunk in chunks])#向量化
+        document_metadata_by_id = {
+            document.id: document.metadata
+            for document in changed_documents
+        }
         records = [#构造写入向量库的记录
-            VectorRecord(chunk=chunk, embedding=embedding)
+            VectorRecord(
+                chunk=chunk,
+                embedding=embedding,
+                document_metadata=document_metadata_by_id.get(chunk.document_id),
+            )
             for chunk, embedding in zip(chunks, embeddings)
         ]
         stored_records = self.vector_store.upsert(records) if records else self.vector_store.count()
@@ -160,6 +180,10 @@ class OfflineKnowledgeBuilder:
                 "governance_source": document.metadata.get("governance_source"),
                 "parser_name": document.metadata.get("parser_name"),
                 "parser_version": document.metadata.get("parser_version"),
+                "parser_config_fingerprint": _document_parser_config_fingerprint(
+                    document,
+                    parser_config_fingerprint,
+                ),
                 "parse_quality_status": document.metadata.get("parse_quality_status"),
                 "parse_warnings": document.metadata.get("parse_warnings"),
                 "ocr_required": document.metadata.get("ocr_required"),
@@ -260,6 +284,70 @@ def _embedding_fingerprint(settings: Settings) -> str:
     if settings.embedding_provider == "openai":
         return f"openai:{settings.openai_embedding_model}:{settings.embedding_dimension}"
     return f"{settings.embedding_provider}:{settings.embedding_dimension}"
+
+
+def _document_parser_config_changed(
+    previous: dict[str, Any],
+    document: Document,
+    parser_config_fingerprint: str,
+) -> bool:
+    if not _is_pdf_document(document):
+        return False
+    return previous.get("parser_config_fingerprint") != parser_config_fingerprint
+
+
+def _document_parser_config_fingerprint(
+    document: Document,
+    parser_config_fingerprint: str,
+) -> str | None:
+    return parser_config_fingerprint if _is_pdf_document(document) else None
+
+
+def _is_pdf_document(document: Document) -> bool:
+    extension = str(document.metadata.get("extension") or "").strip().lower()
+    media_type = str(document.metadata.get("media_type") or "").strip().lower()
+    parser_name = str(document.metadata.get("parser_name") or "").strip().lower()
+    filename = str(document.metadata.get("filename") or document.metadata.get("source") or "")
+    return (
+        extension == ".pdf"
+        or media_type == "pdf"
+        or parser_name == "pdf"
+        or filename.lower().endswith(".pdf")
+    )
+
+
+def _parser_config_fingerprint(settings: Settings) -> str:
+    payload = {
+        "pdf_complex_parser": settings.pdf_complex_parser,
+        "pdf_bordered_table_parser": settings.pdf_bordered_table_parser,
+        "pdf_borderless_table_parser": settings.pdf_borderless_table_parser,
+        "pdf_semistructured_table_parser": settings.pdf_semistructured_table_parser,
+        "pdf_ocr_enabled": _env_config_value("RAG_PDF_OCR_ENABLED"),
+        "pdf_ocr_lang": _env_config_value("RAG_PDF_OCR_LANG"),
+        "tesseract_cmd": _env_config_value("RAG_TESSERACT_CMD"),
+        "mineru_online_enabled": _env_config_value("RAG_MINERU_ONLINE_ENABLED"),
+        "mineru_online_api_base": _env_config_value("RAG_MINERU_ONLINE_API_BASE"),
+        "mineru_online_language": _env_config_value("RAG_MINERU_ONLINE_LANGUAGE"),
+        "mineru_online_enable_table": _env_config_value("RAG_MINERU_ONLINE_ENABLE_TABLE"),
+        "mineru_online_enable_ocr": _env_config_value("RAG_MINERU_ONLINE_ENABLE_OCR"),
+        "mineru_online_enable_formula": _env_config_value("RAG_MINERU_ONLINE_ENABLE_FORMULA"),
+        "mineru_online_page_range": _env_config_value("RAG_MINERU_ONLINE_PAGE_RANGE"),
+        "mineru_online_token_hash": _secret_config_fingerprint(
+            os.getenv("RAG_MINERU_ONLINE_TOKEN") or os.getenv("MINERU_API_TOKEN")
+        ),
+    }
+    encoded = json.dumps(payload, ensure_ascii=False, sort_keys=True).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()[:16]
+
+
+def _env_config_value(name: str) -> str:
+    return str(os.getenv(name, "")).strip()
+
+
+def _secret_config_fingerprint(value: str | None) -> str:
+    if not value:
+        return ""
+    return hashlib.sha256(value.encode("utf-8")).hexdigest()[:8]
 
 
 def _apply_parse_quality_gate(

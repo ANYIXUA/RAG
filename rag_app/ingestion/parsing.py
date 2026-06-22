@@ -15,11 +15,15 @@ from json import JSONDecodeError
 from pathlib import Path
 from typing import Any
 
-from rag_app.core.error_codes import extract_error_codes, normalize_error_code
+from rag_app.core.error_codes import (
+    extract_detected_codes,
+    extract_error_codes,
+    normalize_error_code,
+)
 from rag_app.core.models import Document, ParsedBlock
 
 
-PARSER_VERSION = "document-parser-v6"
+PARSER_VERSION = "document-parser-v7"
 
 TITLE_RE = re.compile(r"^#{1,6}\s+(.+?)\s*$", re.MULTILINE)
 HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
@@ -63,6 +67,8 @@ class PdfPageReport:
     table_like_lines: int = 0
     extraction_method: str = "text"
     ocr_confidence: float | None = None
+    bordered_table_lines: int = 0
+    semistructured_table_markers: int = 0
 
 
 @dataclass(frozen=True)
@@ -75,6 +81,8 @@ class PdfPageContent:
     table_like_lines: int
     extraction_method: str = "text"
     ocr_confidence: float | None = None
+    bordered_table_lines: int = 0
+    semistructured_table_markers: int = 0
 
 
 @dataclass(frozen=True)
@@ -86,12 +94,25 @@ class PdfOcrPageResult:
     confidence: float | None = None
 
 
-def parse_document_file(path: Path, source_dir: Path | None = None) -> Document | None:
+def parse_document_file(
+    path: Path,
+    source_dir: Path | None = None,
+    pdf_complex_parser: str = "local",
+    pdf_bordered_table_parser: str = "deepdoc",
+    pdf_borderless_table_parser: str = "mineru",
+    pdf_semistructured_table_parser: str = "rules_ml",
+) -> Document | None:
     """解析单个知识文件，返回可进入离线切片流程的文档。"""
 
     # 统一入口：各种文件先转成 ParsedFile，再补齐可追溯元数据。
     # 后续切片、召回引用、灰度问题排查都依赖这些 metadata。
-    parsed = _parse_file(path)
+    parsed = _parse_file(
+        path,
+        pdf_complex_parser=pdf_complex_parser,
+        pdf_bordered_table_parser=pdf_bordered_table_parser,
+        pdf_borderless_table_parser=pdf_borderless_table_parser,
+        pdf_semistructured_table_parser=pdf_semistructured_table_parser,
+    )
     if parsed is None or not parsed.text.strip(): #空文档不会进入解析流程
         return None
     #生成来源路径
@@ -108,6 +129,7 @@ def parse_document_file(path: Path, source_dir: Path | None = None) -> Document 
     business_module = _infer_business_module(path, parsed.text)
     tenant_id = _normalize_tenant_id(parsed.metadata)
     permission_tags = _normalize_permission_tags(parsed.metadata)
+    detected_codes = extract_detected_codes(parsed.text)
     error_codes = extract_error_codes(parsed.text)
     #构造medatada数据
     metadata = {
@@ -127,6 +149,7 @@ def parse_document_file(path: Path, source_dir: Path | None = None) -> Document 
         "parse_quality_status": parsed.metadata.get("parse_quality_status", "parsed_success"),
         "parse_warnings": parsed.metadata.get("parse_warnings", []),
         "ocr_required": bool(parsed.metadata.get("ocr_required", False)),
+        "detected_codes": detected_codes,
         "error_codes": error_codes,
         **parsed.metadata, #如果 parsed.metadata 里也有同名字段，它会覆盖前面已经设置的字段。
     }
@@ -136,6 +159,9 @@ def parse_document_file(path: Path, source_dir: Path | None = None) -> Document 
     metadata["parse_quality_status"] = metadata.get("parse_quality_status") or "parsed_success"
     metadata["parse_warnings"] = list(metadata.get("parse_warnings") or [])
     metadata["ocr_required"] = bool(metadata.get("ocr_required", False))
+    metadata["detected_codes"] = _normalize_code_list(
+        metadata.get("detected_codes") or detected_codes
+    )
     metadata["error_codes"] = _normalize_error_code_list(
         metadata.get("error_codes") or error_codes
     )
@@ -169,7 +195,13 @@ def clean_text(text: str) -> str:
     return re.sub(r"\n{3,}", "\n\n", text)
 
 
-def _parse_file(path: Path) -> ParsedFile | None:
+def _parse_file(
+    path: Path,
+    pdf_complex_parser: str = "local",
+    pdf_bordered_table_parser: str = "deepdoc",
+    pdf_borderless_table_parser: str = "mineru",
+    pdf_semistructured_table_parser: str = "rules_ml",
+) -> ParsedFile | None:
     suffix = path.suffix.lower()
     if suffix in {".html", ".htm"}:
         return _parse_html(path)
@@ -182,7 +214,13 @@ def _parse_file(path: Path) -> ParsedFile | None:
     if suffix == ".xlsx":
         return _parse_xlsx(path)
     if suffix == ".pdf":
-        return _parse_pdf(path)
+        return _parse_pdf(
+            path,
+            pdf_complex_parser=pdf_complex_parser,
+            pdf_bordered_table_parser=pdf_bordered_table_parser,
+            pdf_borderless_table_parser=pdf_borderless_table_parser,
+            pdf_semistructured_table_parser=pdf_semistructured_table_parser,
+        )
     if suffix == ".pptx":
         return _parse_pptx(path)
     if suffix == ".srt":
@@ -410,7 +448,13 @@ def _parse_json(path: Path) -> ParsedFile | None:
     )
 
 
-def _parse_pdf(path: Path) -> ParsedFile | None:
+def _parse_pdf(
+    path: Path,
+    pdf_complex_parser: str = "local",
+    pdf_bordered_table_parser: str = "deepdoc",
+    pdf_borderless_table_parser: str = "mineru",
+    pdf_semistructured_table_parser: str = "rules_ml",
+) -> ParsedFile | None:
     try:
         import fitz
     except ModuleNotFoundError as exc:
@@ -429,12 +473,15 @@ def _parse_pdf(path: Path) -> ParsedFile | None:
             page = document.load_page(page_index)
             raw_text = page.get_text("text") or ""
             text, table_like_lines = _normalize_pdf_page_text(raw_text)
+            bordered_table_lines = _count_pdf_table_border_lines(page)
             page_contents.append(
                 PdfPageContent(
                     page_number=page_number,
                     raw_text=raw_text,
                     text=text,
                     table_like_lines=table_like_lines,
+                    bordered_table_lines=bordered_table_lines,
+                    semistructured_table_markers=_count_semistructured_table_markers(text),
                 )
             )
     finally:
@@ -448,6 +495,8 @@ def _parse_pdf(path: Path) -> ParsedFile | None:
             table_like_lines=content.table_like_lines,
             extraction_method=content.extraction_method,
             ocr_confidence=content.ocr_confidence,
+            bordered_table_lines=content.bordered_table_lines,
+            semistructured_table_markers=content.semistructured_table_markers,
         )
         for content in page_contents
     ]
@@ -455,6 +504,30 @@ def _parse_pdf(path: Path) -> ParsedFile | None:
         page_reports=text_page_reports,
         page_count=page_count,
     )
+    table_route = _select_pdf_table_parser_route(
+        text_page_reports,
+        bordered_table_parser=pdf_bordered_table_parser,
+        borderless_table_parser=pdf_borderless_table_parser,
+        semistructured_table_parser=pdf_semistructured_table_parser,
+    )
+    complex_route = "deepdoc" if _should_use_deepdoc_for_pdf(
+        pdf_complex_parser,
+        {"table_route": table_route},
+    ) else None
+    parser_route = table_route or complex_route
+    external_parser_attempted = parser_route is not None
+    if parser_route == "deepdoc":
+        deepdoc_parsed = _try_parse_pdf_with_deepdoc(path, text_quality)
+        if deepdoc_parsed is not None:
+            return deepdoc_parsed
+    if parser_route == "mineru":
+        mineru_parsed = _try_parse_pdf_with_mineru(path, text_quality)
+        if mineru_parsed is not None:
+            return mineru_parsed
+    if parser_route == "rules_ml":
+        rules_ml_parsed = _try_parse_pdf_with_rules_ml(path, page_contents, text_quality)
+        if rules_ml_parsed is not None:
+            return rules_ml_parsed
     ocr_candidate_pages = _pdf_pages_requiring_ocr(text_page_reports)
     ocr_applied = False
     ocr_unavailable_reason: str | None = None
@@ -479,11 +552,15 @@ def _parse_pdf(path: Path) -> ParsedFile | None:
             table_like_lines=content.table_like_lines,
             extraction_method=content.extraction_method,
             ocr_confidence=content.ocr_confidence,
+            bordered_table_lines=content.bordered_table_lines,
+            semistructured_table_markers=content.semistructured_table_markers,
         )
         for content in page_contents
     ]
     quality = _pdf_quality_summary(page_reports=page_reports, page_count=page_count)
     warnings = list(quality["warnings"])
+    if external_parser_attempted:
+        warnings = _dedupe([*warnings, f"{parser_route}_fallback_unavailable"])
     if ocr_candidate_pages and not _pdf_ocr_enabled():
         warnings = _dedupe([*warnings, "ocr_disabled"])
     if ocr_unavailable_reason:
@@ -531,6 +608,15 @@ def _parse_pdf(path: Path) -> ParsedFile | None:
             "ocr_pages": ocr_pages,
             "ocr_confidence_avg": _average_ocr_confidence(page_contents),
             "ocr_unavailable_reason": ocr_unavailable_reason,
+            "table_parser_route": table_route,
+            "external_parser_attempted": external_parser_attempted,
+            "external_parser_used": False,
+            "deepdoc_attempted": parser_route == "deepdoc",
+            "deepdoc_used": False,
+            "mineru_attempted": parser_route == "mineru",
+            "mineru_used": False,
+            "rules_ml_attempted": parser_route == "rules_ml",
+            "rules_ml_used": False,
             "pdf_page_reports": [report.__dict__ for report in page_reports],
         },
     )
@@ -778,6 +864,43 @@ def _normalize_pdf_page_text(raw_text: str) -> tuple[str, int]:
     return clean_text("\n".join(normalized_lines)), table_like_lines
 
 
+def _count_pdf_table_border_lines(page: Any) -> int:
+    try:
+        drawings = page.get_drawings()
+    except Exception:
+        return 0
+    count = 0
+    for drawing in drawings or []:
+        if not isinstance(drawing, dict):
+            continue
+        for item in drawing.get("items", []):
+            if not item:
+                continue
+            operator = str(item[0]).lower()
+            if operator in {"l", "re", "qu"}:
+                count += 1
+    return count
+
+
+def _count_semistructured_table_markers(text: str) -> int:
+    return sum(
+        1
+        for line in text.splitlines()
+        if _looks_like_semistructured_field(line)
+    )
+
+
+def _looks_like_semistructured_field(line: str) -> bool:
+    normalized = line.strip()
+    if not normalized:
+        return False
+    if re.search(r"^[^：:]{1,24}[：:]\s*\S+", normalized):
+        return True
+    if re.search(r"^[A-Za-z0-9_\-/ ]{2,32}\s{2,}\S+", normalized):
+        return True
+    return False
+
+
 def _normalize_pdf_table_line(
     line: str,
     table_headers: list[str] | None,
@@ -813,6 +936,8 @@ def _pdf_page_report(
     table_like_lines: int,
     extraction_method: str = "text",
     ocr_confidence: float | None = None,
+    bordered_table_lines: int = 0,
+    semistructured_table_markers: int = 0,
 ) -> PdfPageReport:
     warning_codes: list[str] = []
     clean_length = len(clean_text_value)
@@ -833,6 +958,14 @@ def _pdf_page_report(
 
     if table_like_lines > 0:
         warning_codes.append("table_like_text_detected")
+    if bordered_table_lines >= 8:
+        warning_codes.append("bordered_table_detected")
+        if status == "parsed":
+            status = "parsed_with_warning"
+    if semistructured_table_markers >= 3:
+        warning_codes.append("semi_structured_table_detected")
+        if status == "parsed":
+            status = "parsed_with_warning"
     if extraction_method == "ocr":
         warning_codes.append("ocr_applied")
         if ocr_confidence is not None and ocr_confidence < PDF_OCR_CONFIDENCE_WARNING:
@@ -849,6 +982,8 @@ def _pdf_page_report(
         table_like_lines=table_like_lines,
         extraction_method=extraction_method,
         ocr_confidence=ocr_confidence,
+        bordered_table_lines=bordered_table_lines,
+        semistructured_table_markers=semistructured_table_markers,
     )
 
 
@@ -888,6 +1023,119 @@ def _pdf_quality_summary(
         "table_like_page_count": table_like_page_count,
         "ocr_required": status in {"parse_failed", "needs_review"},
     }
+
+
+def _select_pdf_table_parser_route(
+    page_reports: list[PdfPageReport],
+    *,
+    bordered_table_parser: str,
+    borderless_table_parser: str,
+    semistructured_table_parser: str,
+) -> str | None:
+    if any(report.bordered_table_lines >= 8 for report in page_reports):
+        return _route_or_none(bordered_table_parser)
+    if any(report.semistructured_table_markers >= 3 for report in page_reports):
+        return _route_or_none(semistructured_table_parser)
+    if any(report.table_like_lines >= 2 for report in page_reports):
+        return _route_or_none(borderless_table_parser)
+    return None
+
+
+def _route_or_none(value: str) -> str | None:
+    route = value.strip().lower()
+    return None if route in {"", "local"} else route
+
+
+def _should_use_deepdoc_for_pdf(
+    pdf_complex_parser: str,
+    text_quality: dict[str, Any],
+) -> bool:
+    if pdf_complex_parser.strip().lower() != "deepdoc":
+        return False
+    return text_quality.get("table_route") == "deepdoc"
+
+
+def _try_parse_pdf_with_deepdoc(
+    path: Path,
+    text_quality: dict[str, Any],
+) -> ParsedFile | None:
+    try:
+        from rag_app.ingestion.deepdoc_adapter import parse_pdf_with_deepdoc
+
+        parsed = parse_pdf_with_deepdoc(path)
+    except Exception:
+        return None
+    metadata = {
+        "deepdoc_attempted": True,
+        "deepdoc_trigger_status": text_quality.get("status"),
+        "deepdoc_trigger_warnings": list(text_quality.get("warnings") or []),
+        **parsed.metadata,
+    }
+    return ParsedFile(text=clean_text(parsed.text), metadata=metadata)
+
+
+def _try_parse_pdf_with_mineru(
+    path: Path,
+    text_quality: dict[str, Any],
+) -> ParsedFile | None:
+    try:
+        from rag_app.ingestion.mineru_adapter import parse_pdf_with_mineru
+
+        parsed = parse_pdf_with_mineru(path)
+    except Exception:
+        return None
+    metadata = {
+        "mineru_attempted": True,
+        "mineru_trigger_status": text_quality.get("status"),
+        "mineru_trigger_warnings": list(text_quality.get("warnings") or []),
+        **parsed.metadata,
+    }
+    return ParsedFile(text=clean_text(parsed.text), metadata=metadata)
+
+
+def _try_parse_pdf_with_rules_ml(
+    path: Path,
+    page_contents: list[PdfPageContent],
+    text_quality: dict[str, Any],
+) -> ParsedFile | None:
+    text = _build_rules_ml_semistructured_table_text(path, page_contents)
+    if not text:
+        return None
+    return ParsedFile(
+        text=text,
+        metadata={
+            "parser_name": "pdf",
+            "media_type": "pdf",
+            "title": path.stem,
+            "parser_strategy": "rules_ml_semistructured_table",
+            "pdf_document_class": "semistructured_table_pdf",
+            "parse_quality_status": "parsed_with_warning",
+            "parse_warnings": _dedupe(
+                [
+                    *list(text_quality.get("warnings") or []),
+                    "rules_ml_semistructured_table",
+                ]
+            ),
+            "ocr_required": False,
+            "rules_ml_used": True,
+        },
+    )
+
+
+def _build_rules_ml_semistructured_table_text(
+    path: Path,
+    page_contents: list[PdfPageContent],
+) -> str | None:
+    lines = [f"# {path.stem}", "", "## 半结构化表格"]
+    matched = 0
+    for content in page_contents:
+        for line in content.text.splitlines():
+            normalized = clean_text(line)
+            if not _looks_like_semistructured_field(normalized):
+                continue
+            matched += 1
+            lines.append(f"- 第{content.page_number}页：{normalized}")
+    return clean_text("\n".join(lines)) if matched else None
 
 
 def _pdf_pages_requiring_ocr(page_reports: list[PdfPageReport]) -> list[int]:
@@ -1175,6 +1423,7 @@ def _build_parsed_blocks(
             return
         section_path = current_section_path()
         location = _extract_block_location(section_path)
+        page_warning_codes = _page_warning_codes(location.get("page_number"), document_metadata)
         block_specs.append(
             {
                 "block_type": _infer_block_type(body),
@@ -1182,9 +1431,15 @@ def _build_parsed_blocks(
                 "section_path": section_path,
                 "parent_block_id": current_parent_id(),
                 "page_number": location.get("page_number"),
+                "quality_status": _block_quality_status(
+                    document_metadata,
+                    page_warning_codes,
+                ),
                 "metadata": {
                     **_common_block_metadata(document_metadata),
                     **location,
+                    "page_warning_codes": page_warning_codes,
+                    "chunk_parse_warning_codes": page_warning_codes,
                     **_error_code_block_metadata(
                         body,
                         section_path,
@@ -1211,6 +1466,7 @@ def _build_parsed_blocks(
         heading_block_id = _parsed_block_id(document_id, len(block_specs), title)
         section_path = [title for _, title, _ in heading_stack] + [title]
         location = _extract_block_location(section_path)
+        page_warning_codes = _page_warning_codes(location.get("page_number"), document_metadata)
         block_specs.append(
             {
                 "block_id": heading_block_id,
@@ -1219,10 +1475,16 @@ def _build_parsed_blocks(
                 "section_path": section_path,
                 "parent_block_id": heading_stack[-1][2] if heading_stack else None,
                 "page_number": location.get("page_number"),
+                "quality_status": _block_quality_status(
+                    document_metadata,
+                    page_warning_codes,
+                ),
                 "metadata": {
                     **_common_block_metadata(document_metadata),
                     "heading_level": level,
                     **location,
+                    "page_warning_codes": page_warning_codes,
+                    "chunk_parse_warning_codes": page_warning_codes,
                     **_error_code_block_metadata(
                         title,
                         section_path,
@@ -1243,6 +1505,9 @@ def _build_parsed_blocks(
                 "section_path": [],
                 "parent_block_id": None,
                 "page_number": None,
+                "quality_status": str(
+                    document_metadata.get("parse_quality_status", "parsed_success")
+                ),
                 "metadata": _common_block_metadata(document_metadata),
             }
         )
@@ -1269,7 +1534,8 @@ def _build_parsed_blocks(
                 previous_block_id=blocks[-1].block_id if blocks else None,
                 metadata=dict(spec.get("metadata") or {}),
                 quality_status=str(
-                    document_metadata.get("parse_quality_status", "parsed_success")
+                    spec.get("quality_status")
+                    or document_metadata.get("parse_quality_status", "parsed_success")
                 ),
             )
         )
@@ -1320,18 +1586,50 @@ def _error_code_block_metadata(
     document_metadata: dict[str, Any],
 ) -> dict[str, Any]:
     local_text = " ".join([*section_path, text])
+    detected_codes = extract_detected_codes(local_text)
     codes = extract_error_codes(local_text)
     if not codes:
         document_codes = _normalize_error_code_list(document_metadata.get("error_codes"))
         if len(document_codes) == 1:
             codes = document_codes
-    metadata: dict[str, Any] = {"error_codes": codes}
+    metadata: dict[str, Any] = {
+        "detected_codes": _normalize_code_list(detected_codes),
+        "error_codes": _normalize_error_code_list(codes),
+    }
     if not codes:
         return metadata
     metadata["error_code"] = codes[0]
     metadata["intent_labels"] = ["explain_error"]
     metadata["keywords"] = codes
     return metadata
+
+
+def _page_warning_codes(
+    page_number: int | None,
+    document_metadata: dict[str, Any],
+) -> list[str]:
+    if page_number is None:
+        return []
+    for report in document_metadata.get("pdf_page_reports") or []:
+        if not isinstance(report, dict):
+            continue
+        if int(report.get("page_number") or 0) != page_number:
+            continue
+        return _dedupe([str(code) for code in report.get("warning_codes") or []])
+    return []
+
+
+def _block_quality_status(
+    document_metadata: dict[str, Any],
+    page_warning_codes: list[str],
+) -> str:
+    if page_warning_codes:
+        return "parsed_with_warning"
+    return str(document_metadata.get("parse_quality_status") or "parsed_success")
+
+
+def _normalize_code_list(value: Any) -> list[str]:
+    return _normalize_error_code_list(value)
 
 
 def _normalize_error_code_list(value: Any) -> list[str]:

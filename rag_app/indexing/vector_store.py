@@ -22,6 +22,7 @@ BM25_B = 0.75
 class VectorRecord:
     chunk: Chunk
     embedding: list[float]
+    document_metadata: dict[str, Any] | None = None
 
 
 @dataclass(frozen=True)
@@ -260,7 +261,7 @@ class PostgresVectorStore:
         )
 
     def _upsert_document(self, cursor, jsonb, record: VectorRecord) -> None:
-        metadata = record.chunk.metadata
+        metadata = record.document_metadata or record.chunk.metadata
         cursor.execute(
             """
             INSERT INTO rag_documents (

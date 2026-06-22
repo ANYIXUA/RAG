@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass
 
-from rag_app.core.error_codes import ERROR_CODE_RE, normalize_error_code
+from rag_app.core.error_codes import ERROR_CODE_RE, extract_error_code, normalize_error_code
 from rag_app.core.models import IntentRecognitionResult, QueryRewriteResult
 
 
@@ -126,9 +126,8 @@ def recognize_intent(query: str) -> IntentRecognitionResult:
             reason="用户查询为空，无法识别意图。",
         )
 
-    error_code_match = ERROR_CODE_RE.search(normalized_query)
-    if error_code_match: #用正则匹配异常码。
-        error_code = normalize_error_code(error_code_match.group(0))
+    error_code = extract_error_code(normalized_query)
+    if error_code: #用严格规则匹配异常码。
         return IntentRecognitionResult(
             intent_label="explain_error",
             confidence=0.92,

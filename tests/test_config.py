@@ -184,6 +184,41 @@ class SettingsConfigTest(unittest.TestCase):
             self.assertEqual(settings.embedding_timeout_seconds, 3.0)
             self.assertEqual(settings.embedding_max_retries, 0)
 
+    def test_from_env_reads_complex_pdf_parser_provider(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            with patch.dict(
+                os.environ,
+                {
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "RAG_PDF_BORDERED_TABLE_PARSER": "DeepDoc",
+                    "RAG_PDF_BORDERLESS_TABLE_PARSER": "MinerU",
+                    "RAG_PDF_SEMISTRUCTURED_TABLE_PARSER": "Rules_ML",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=Path(temp_dir))
+
+            self.assertEqual(settings.pdf_bordered_table_parser, "deepdoc")
+            self.assertEqual(settings.pdf_borderless_table_parser, "mineru")
+            self.assertEqual(settings.pdf_semistructured_table_parser, "rules_ml")
+
+    def test_rejects_invalid_complex_pdf_parser_provider(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            with patch.dict(
+                os.environ,
+                {
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "RAG_PDF_BORDERLESS_TABLE_PARSER": "deepdoc",
+                },
+                clear=True,
+            ):
+                with self.assertRaisesRegex(ValueError, "RAG_PDF_BORDERLESS_TABLE_PARSER"):
+                    Settings.from_env(base_dir=Path(temp_dir))
+
     def test_rejects_invalid_chunk_overlap(self) -> None:
         base_dir = Path(".").resolve()
 
