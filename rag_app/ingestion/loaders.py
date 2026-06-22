@@ -41,12 +41,20 @@ class DirectoryDocumentLoader:
         source_dir: Path,
         extensions: set[str] | None = None,
         governance_policy: KnowledgeGovernancePolicy | None = None,
+        pdf_complex_parser: str = "local",
+        pdf_bordered_table_parser: str = "deepdoc",
+        pdf_borderless_table_parser: str = "mineru",
+        pdf_semistructured_table_parser: str = "rules_ml",
     ) -> None:
         self.source_dir = source_dir
         self.extensions = extensions or SUPPORTED_EXTENSIONS #确认支持的文件后缀
         self.governance_policy = governance_policy or KnowledgeGovernancePolicy(#绑定治理策略
             source_dir=source_dir
         )
+        self.pdf_complex_parser = pdf_complex_parser
+        self.pdf_bordered_table_parser = pdf_bordered_table_parser
+        self.pdf_borderless_table_parser = pdf_borderless_table_parser
+        self.pdf_semistructured_table_parser = pdf_semistructured_table_parser
 
     def load(self) -> list[Document]:
         """兼容旧调用：只返回允许入库的文档列表。"""
@@ -74,7 +82,14 @@ class DirectoryDocumentLoader:
                 skipped.append(_skipped_file(path, self.governance_policy, precheck))
                 continue
             try:#调用解析器解析文档
-                document = parse_document_file(path, source_dir=self.source_dir)
+                document = parse_document_file(
+                    path,
+                    source_dir=self.source_dir,
+                    pdf_complex_parser=self.pdf_complex_parser,
+                    pdf_bordered_table_parser=self.pdf_bordered_table_parser,
+                    pdf_borderless_table_parser=self.pdf_borderless_table_parser,
+                    pdf_semistructured_table_parser=self.pdf_semistructured_table_parser,
+                )
             except Exception as exc:  # noqa: BLE001 - 离线刷新需要报告失败明细后继续处理其他文件。
                 failed.append(
                     FailedFile(

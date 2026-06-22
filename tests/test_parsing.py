@@ -1,7 +1,9 @@
 ﻿from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
+from unittest.mock import patch
 
+from rag_app.core.models import Document
 from rag_app.ingestion.loaders import DirectoryDocumentLoader
 from rag_app.ingestion.parsing import (
     PARSER_VERSION,
@@ -15,9 +17,13 @@ from rag_app.ingestion.parsing import (
     _pdf_page_report,
     _pdf_pages_requiring_ocr,
     _pdf_quality_summary,
+    _select_pdf_table_parser_route,
+    _should_use_deepdoc_for_pdf,
+    _try_parse_pdf_with_deepdoc,
     clean_text,
     parse_document_file,
 )
+from rag_app.ingestion.deepdoc_adapter import DeepDocParsedPdf
 from rag_app.indexing.chunking import WhitespaceChunker
 
 
@@ -165,6 +171,27 @@ class ParsingTest(unittest.TestCase):
             self.assertEqual(chunks[0].metadata["error_codes"], ["E203"])
             self.assertIn("explain_error", chunks[0].metadata["intent_labels"])
 
+    def test_plain_document_codes_are_detected_but_not_error_codes(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            source_dir = Path(temp_dir)
+            path = source_dir / "manual.md"
+            path.write_text(
+                "# 维护规程\n\nI6540、T16、J949 是资料条目编号，不是异常码。",
+                encoding="utf-8",
+            )
+
+            document = parse_document_file(path, source_dir=source_dir)
+            chunks = WhitespaceChunker(chunk_size=200, chunk_overlap=20).split_documents(
+                [document]
+            )
+
+            self.assertIsNotNone(document)
+            self.assertEqual(document.metadata["detected_codes"], ["I6540", "T16", "J949"])
+            self.assertEqual(document.metadata["error_codes"], [])
+            self.assertEqual(chunks[0].metadata["detected_codes"], ["I6540", "T16", "J949"])
+            self.assertEqual(chunks[0].metadata["error_codes"], [])
+            self.assertNotIn("error_code", chunks[0].metadata)
+
     def test_directory_loader_uses_parser(self) -> None:
         with TemporaryDirectory() as temp_dir:
             source_dir = Path(temp_dir)
@@ -174,6 +201,41 @@ class ParsingTest(unittest.TestCase):
 
             self.assertEqual(len(documents), 1)
             self.assertEqual(documents[0].metadata["title"], "标题")
+
+    def test_directory_loader_passes_complex_pdf_parser_to_parser(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            source_dir = Path(temp_dir)
+            path = source_dir / "complex.pdf"
+            path.write_bytes(b"%PDF-1.4\n")
+            parsed = Document(
+                id="doc-1",
+                text="parsed",
+                metadata={
+                    "source": "complex.pdf",
+                    "source_path": str(path),
+                    "title": "complex",
+                },
+            )
+
+            with patch(
+                "rag_app.ingestion.loaders.parse_document_file",
+                return_value=parsed,
+            ) as parser:
+                documents = DirectoryDocumentLoader(
+                    source_dir,
+                    pdf_complex_parser="deepdoc",
+                ).load()
+
+            self.assertEqual(len(documents), 1)
+            self.assertEqual(documents[0].id, "doc-1")
+            parser.assert_called_once_with(
+                path,
+                source_dir=source_dir,
+                pdf_complex_parser="deepdoc",
+                pdf_bordered_table_parser="deepdoc",
+                pdf_borderless_table_parser="mineru",
+                pdf_semistructured_table_parser="rules_ml",
+            )
 
     def test_parse_srt_builds_transcript_sections(self) -> None:
         with TemporaryDirectory() as temp_dir:
@@ -265,6 +327,101 @@ class ParsingTest(unittest.TestCase):
         )
 
         self.assertEqual(pages, [1, 3])
+
+    def test_deepdoc_pdf_parser_is_selected_only_for_complex_pdf(self) -> None:
+        bordered_report = PdfPageReport(
+            page_number=1,
+            raw_text_length=20,
+            clean_text_length=20,
+            status="parsed_with_warning",
+            warning_codes=["bordered_table_detected"],
+            bordered_table_lines=12,
+        )
+        borderless_report = PdfPageReport(
+            page_number=1,
+            raw_text_length=80,
+            clean_text_length=80,
+            status="parsed_with_warning",
+            warning_codes=["table_like_text_detected"],
+            table_like_lines=4,
+        )
+        semistructured_report = PdfPageReport(
+            page_number=1,
+            raw_text_length=80,
+            clean_text_length=80,
+            status="parsed_with_warning",
+            warning_codes=["semi_structured_table_detected"],
+            semistructured_table_markers=4,
+        )
+        simple_report = PdfPageReport(
+            page_number=1,
+            raw_text_length=80,
+            clean_text_length=80,
+            status="parsed",
+            warning_codes=[],
+        )
+
+        self.assertEqual(
+            _select_pdf_table_parser_route(
+                [bordered_report],
+                bordered_table_parser="deepdoc",
+                borderless_table_parser="mineru",
+                semistructured_table_parser="rules_ml",
+            ),
+            "deepdoc",
+        )
+        self.assertEqual(
+            _select_pdf_table_parser_route(
+                [borderless_report],
+                bordered_table_parser="deepdoc",
+                borderless_table_parser="mineru",
+                semistructured_table_parser="rules_ml",
+            ),
+            "mineru",
+        )
+        self.assertEqual(
+            _select_pdf_table_parser_route(
+                [semistructured_report],
+                bordered_table_parser="deepdoc",
+                borderless_table_parser="mineru",
+                semistructured_table_parser="rules_ml",
+            ),
+            "rules_ml",
+        )
+        self.assertIsNone(
+            _select_pdf_table_parser_route(
+                [simple_report],
+                bordered_table_parser="deepdoc",
+                borderless_table_parser="mineru",
+                semistructured_table_parser="rules_ml",
+            )
+        )
+        self.assertTrue(_should_use_deepdoc_for_pdf("deepdoc", {"table_route": "deepdoc"}))
+
+    def test_try_parse_pdf_with_deepdoc_wraps_adapter_result(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "complex.pdf"
+            path.write_bytes(b"%PDF-1.4\n")
+            with patch(
+                "rag_app.ingestion.deepdoc_adapter.parse_pdf_with_deepdoc",
+                return_value=DeepDocParsedPdf(
+                    text="# complex\n\n## 第1页\nDeepDoc 文本",
+                    metadata={
+                        "parser_name": "pdf",
+                        "parser_strategy": "deepdoc_complex_pdf",
+                        "deepdoc_used": True,
+                    },
+                ),
+            ):
+                parsed = _try_parse_pdf_with_deepdoc(
+                    path,
+                    {"status": "needs_review", "warnings": ["low_text_page"]},
+                )
+
+        self.assertIsNotNone(parsed)
+        self.assertIn("DeepDoc 文本", parsed.text)
+        self.assertEqual(parsed.metadata["parser_strategy"], "deepdoc_complex_pdf")
+        self.assertEqual(parsed.metadata["deepdoc_used"], True)
 
     def test_pdf_ocr_results_replace_low_quality_page_text(self) -> None:
         merged = _merge_pdf_ocr_results(

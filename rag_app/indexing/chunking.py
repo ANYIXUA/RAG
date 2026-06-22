@@ -13,7 +13,50 @@ HEADING_RE = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 PAGE_TITLE_RE = re.compile(r"^第\s*(\d+)\s*页$")
 SLIDE_TITLE_RE = re.compile(r"^第\s*(\d+)\s*页幻灯片$")
 SEGMENT_TITLE_RE = re.compile(r"^片段\s+\d+\s+\[(.+)\]$")
-CHUNKER_VERSION = "block-aware-v4"
+CHUNKER_VERSION = "block-aware-v6"
+
+_CHUNK_METADATA_EXCLUDED_KEYS = {
+    "block_count",
+    "pdf_document_class",
+    "page_count",
+    "extracted_page_count",
+    "empty_page_count",
+    "low_text_page_count",
+    "scanned_page_candidates",
+    "table_like_page_count",
+    "parse_quality_status",
+    "parse_warnings",
+    "ocr_required",
+    "ocr_candidate_pages",
+    "ocr_applied",
+    "ocr_provider",
+    "ocr_page_count",
+    "ocr_pages",
+    "ocr_confidence_avg",
+    "ocr_unavailable_reason",
+    "pdf_page_reports",
+    "external_parser_attempted",
+    "external_parser_used",
+    "deepdoc_attempted",
+    "deepdoc_used",
+    "deepdoc_trigger_warnings",
+    "mineru_attempted",
+    "mineru_used",
+    "mineru_online_api_base",
+    "mineru_online_state",
+    "mineru_online_task_id",
+    "mineru_online_used",
+    "mineru_trigger_warnings",
+    "rules_ml_attempted",
+    "rules_ml_used",
+    "rules_ml_trigger_warnings",
+}
+_PRESERVE_EMPTY_CHUNK_KEYS = {
+    "chunk_parse_warning_codes",
+    "detected_codes",
+    "error_codes",
+    "page_warning_codes",
+}
 
 
 @dataclass(frozen=True)
@@ -42,8 +85,15 @@ class WhitespaceChunker:
     def split_documents(self, documents: list[Document]) -> list[Chunk]:
         chunks: list[Chunk] = []
         for document in documents:
+            document_metadata = _chunk_document_metadata(document.metadata)
             if document.parsed_blocks:
-                chunks.extend(self._split_parsed_blocks(document, start_index=0))
+                chunks.extend(
+                    self._split_parsed_blocks(
+                        document,
+                        document_metadata=document_metadata,
+                        start_index=0,
+                    )
+                )
                 continue
 
             # 优先复用解析阶段生成的 Markdown 结构，把标题路径保留下来。
@@ -59,7 +109,7 @@ class WhitespaceChunker:
                             document_id=document.id,
                             text=chunk_text,
                             metadata={
-                                **document.metadata,
+                                **document_metadata,
                                 "business_module": _infer_section_business_module(
                                     section.text,
                                     str(document.metadata.get("business_module", "通用知识")),
@@ -82,6 +132,7 @@ class WhitespaceChunker:
     def _split_parsed_blocks(
         self,
         document: Document,
+        document_metadata: dict,
         start_index: int = 0,
     ) -> list[Chunk]:
         """按解析 block 切片，保留来源结构和权限信息。"""
@@ -101,14 +152,22 @@ class WhitespaceChunker:
             for split_index, chunk_text, start, end in self._split_section_text(chunk_source_text):
                 section_title = block.section_path[-1] if block.section_path else None
                 location_metadata = _block_location_metadata(block)
+                block_metadata = _chunk_block_metadata(block.metadata)
+                page_warning_codes = _page_warning_codes(
+                    document.metadata,
+                    block.page_number,
+                )
+                block_metadata.setdefault("page_warning_codes", page_warning_codes)
+                block_metadata.setdefault("chunk_parse_warning_codes", page_warning_codes)
+                table_metadata = _table_parse_metadata(document.metadata, block)
                 chunks.append(
                     Chunk(
                         id=self._chunk_id(document.id, chunk_index, chunk_text),
                         document_id=document.id,
                         text=chunk_text,
                         metadata={
-                            **document.metadata,
-                            **block.metadata,
+                            **document_metadata,
+                            **block_metadata,
                             "business_module": _infer_section_business_module(
                                 chunk_text,
                                 str(document.metadata.get("business_module", "通用知识")),
@@ -127,7 +186,8 @@ class WhitespaceChunker:
                             "split_index": split_index,
                             "start_unit": start,
                             "end_unit": end,
-                            "parse_quality_status": block.quality_status,
+                            "chunk_parse_quality_status": block.quality_status,
+                            **table_metadata,
                             **location_metadata,
                         },
                     )
@@ -244,6 +304,135 @@ def _infer_section_business_module(text: str, default: str) -> str:
 
 def _contains_any(text: str, keywords: tuple[str, ...]) -> bool:
     return any(keyword.lower() in text for keyword in keywords)
+
+
+def _chunk_document_metadata(document_metadata: dict) -> dict:
+    metadata = _compact_chunk_metadata(document_metadata)
+    document_status = str(
+        document_metadata.get("parse_quality_status") or "parsed_success"
+    )
+    metadata["document_parse_quality_status"] = document_status
+    metadata["chunk_parse_quality_status"] = document_status
+    metadata["document_ocr_status"] = _document_ocr_status(document_metadata)
+
+    ocr_provider = document_metadata.get("ocr_provider")
+    if ocr_provider not in (None, ""):
+        metadata["document_ocr_provider"] = ocr_provider
+
+    ocr_page_count = _document_ocr_page_count(document_metadata)
+    if ocr_page_count is not None:
+        metadata["document_ocr_page_count"] = ocr_page_count
+
+    warnings = document_metadata.get("parse_warnings") or []
+    if warnings:
+        metadata["document_parse_warning_count"] = len(warnings)
+
+    metadata.setdefault("permission_tags", ["public"])
+    return metadata
+
+
+def _chunk_block_metadata(block_metadata: dict) -> dict:
+    return _compact_chunk_metadata(block_metadata)
+
+
+def _compact_chunk_metadata(metadata: dict) -> dict:
+    return {
+        key: value
+        for key, value in metadata.items()
+        if key not in _CHUNK_METADATA_EXCLUDED_KEYS
+        and (
+            key in _PRESERVE_EMPTY_CHUNK_KEYS
+            or not _is_empty_metadata_value(value)
+        )
+    }
+
+
+def _is_empty_metadata_value(value) -> bool:
+    return value is None or value == "" or value == [] or value == {}
+
+
+def _document_ocr_status(document_metadata: dict) -> str:
+    warnings = set(document_metadata.get("parse_warnings") or [])
+    if bool(document_metadata.get("ocr_applied", False)):
+        return "applied"
+    if not bool(document_metadata.get("ocr_required", False)):
+        return "not_required"
+    if "ocr_disabled" in warnings:
+        return "required_disabled"
+    if document_metadata.get("ocr_unavailable_reason") or "ocr_fallback_unavailable" in warnings:
+        return "required_failed"
+    return "required_not_applied"
+
+
+def _document_ocr_page_count(document_metadata: dict) -> int | None:
+    raw_count = document_metadata.get("ocr_page_count")
+    if isinstance(raw_count, int):
+        return raw_count
+    raw_pages = document_metadata.get("ocr_pages")
+    if isinstance(raw_pages, list):
+        return len(raw_pages)
+    return None
+
+
+def _table_parse_metadata(document_metadata: dict, block: ParsedBlock) -> dict:
+    route = str(document_metadata.get("table_parser_route") or "").strip().lower()
+    if not route:
+        return {}
+
+    if block.block_type != "table":
+        return {
+            "table_parse_applied": False,
+            "table_parse_status": "skipped",
+            "table_parse_skip_reason": f"block_type_is_{block.block_type}",
+        }
+
+    if _table_route_was_applied(document_metadata, route):
+        return {
+            "table_parse_applied": True,
+            "table_parse_status": "applied",
+        }
+
+    return {
+        "table_parse_applied": False,
+        "table_parse_status": "fallback",
+        "table_parse_skip_reason": _table_parse_fallback_reason(
+            document_metadata,
+            route,
+        ),
+    }
+
+
+def _table_route_was_applied(document_metadata: dict, route: str) -> bool:
+    route_key = f"{route}_used"
+    return bool(document_metadata.get(route_key) or document_metadata.get("external_parser_used"))
+
+
+def _table_parse_fallback_reason(document_metadata: dict, route: str) -> str:
+    warnings = set(document_metadata.get("parse_warnings") or [])
+    fallback_warning = f"{route}_fallback_unavailable"
+    if fallback_warning in warnings:
+        return fallback_warning
+    if bool(document_metadata.get(f"{route}_attempted")):
+        return f"{route}_not_applied"
+    return "table_parser_not_attempted"
+
+
+def _page_warning_codes(
+    document_metadata: dict,
+    page_number: int | None,
+) -> list[str]:
+    if page_number is None:
+        return []
+    for report in document_metadata.get("pdf_page_reports") or []:
+        if not isinstance(report, dict):
+            continue
+        if int(report.get("page_number") or 0) != page_number:
+            continue
+        return [
+            str(code)
+            for code in report.get("warning_codes") or []
+        ]
+    return []
 
 
 def _extract_section_location(section_title: str | None) -> dict[str, str | int]:

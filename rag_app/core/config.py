@@ -18,6 +18,12 @@ _RERANK_PROVIDERS = {"none", "off", "disabled", "cross-encoder"}
 _RERANK_TRIGGERS = {"always", "auto"}
 _OPS_STORE_PROVIDERS = {"postgresql", "postgres", "pgsql"}
 _VECTOR_STORE_PROVIDERS = {"postgresql", "postgres", "pgsql", "pgvector"}
+_PDF_COMPLEX_PARSERS = {"local", "deepdoc"}
+_PDF_TABLE_PARSER_CHOICES = {
+    "RAG_PDF_BORDERED_TABLE_PARSER": {"local", "deepdoc"},
+    "RAG_PDF_BORDERLESS_TABLE_PARSER": {"local", "mineru"},
+    "RAG_PDF_SEMISTRUCTURED_TABLE_PARSER": {"local", "rules_ml"},
+}
 _CONFIG_ENV_PATTERN = re.compile(r"\$\{([A-Za-z_][A-Za-z0-9_]*)(?::-(.*?))?\}")
 _CONFIG_SKIP_FILENAMES = {"evaluation.json"}
 _CONFIG_SECTION_KEYS = {
@@ -423,6 +429,10 @@ class Settings:
         "parsed_success",
         "parsed_with_warning",
     )
+    pdf_complex_parser: str = "local"
+    pdf_bordered_table_parser: str = "deepdoc"
+    pdf_borderless_table_parser: str = "mineru"
+    pdf_semistructured_table_parser: str = "rules_ml"
     order_status_tool_enabled: bool = True
     order_status_postgres_dsn: str | None = None
     config_sources: tuple[str, ...] = ()
@@ -684,6 +694,28 @@ class Settings:
             "allowed_parse_quality_statuses",
             allowed_parse_quality_statuses,
         )
+        pdf_complex_parser = self.pdf_complex_parser.strip().lower()
+        if pdf_complex_parser not in _PDF_COMPLEX_PARSERS:
+            raise ValueError(
+                "RAG_PDF_COMPLEX_PARSER must be one of: "
+                + ", ".join(sorted(_PDF_COMPLEX_PARSERS))
+            )
+        object.__setattr__(self, "pdf_complex_parser", pdf_complex_parser)
+        _set_validated_choice(
+            self,
+            "pdf_bordered_table_parser",
+            "RAG_PDF_BORDERED_TABLE_PARSER",
+        )
+        _set_validated_choice(
+            self,
+            "pdf_borderless_table_parser",
+            "RAG_PDF_BORDERLESS_TABLE_PARSER",
+        )
+        _set_validated_choice(
+            self,
+            "pdf_semistructured_table_parser",
+            "RAG_PDF_SEMISTRUCTURED_TABLE_PARSER",
+        )
         config_sources = tuple(
             str(Path(source).resolve())
             for source in self.config_sources
@@ -802,6 +834,19 @@ class Settings:
                 "RAG_ALLOWED_PARSE_QUALITY_STATUSES",
                 ("parsed_success", "parsed_with_warning"),
             ),
+            "pdf_complex_parser": os.getenv("RAG_PDF_COMPLEX_PARSER", "local"),
+            "pdf_bordered_table_parser": os.getenv(
+                "RAG_PDF_BORDERED_TABLE_PARSER",
+                "deepdoc",
+            ),
+            "pdf_borderless_table_parser": os.getenv(
+                "RAG_PDF_BORDERLESS_TABLE_PARSER",
+                "mineru",
+            ),
+            "pdf_semistructured_table_parser": os.getenv(
+                "RAG_PDF_SEMISTRUCTURED_TABLE_PARSER",
+                "rules_ml",
+            ),
             "order_status_tool_enabled": _env_bool(
                 "RAG_ORDER_STATUS_TOOL_ENABLED",
                 True,
@@ -879,6 +924,16 @@ def _require_positive_int(name: str, value: int) -> None:
 def _require_non_negative_int(name: str, value: int) -> None:
     if value < 0:
         raise ValueError(f"{name} cannot be negative")
+
+
+def _set_validated_choice(settings: Settings, field_name: str, env_name: str) -> None:
+    value = str(getattr(settings, field_name)).strip().lower()
+    choices = _PDF_TABLE_PARSER_CHOICES[env_name]
+    if value not in choices:
+        raise ValueError(
+            f"{env_name} must be one of: " + ", ".join(sorted(choices))
+        )
+    object.__setattr__(settings, field_name, value)
 
 
 def _redact_dsn(dsn: str) -> str:

@@ -64,6 +64,20 @@
 - `rag_documents`：进入知识库的文档元数据、治理状态和解析质量。
 - `rag_knowledge_chunks`：知识切片、权限元数据、关键词字段和 pgvector 向量。
 
+### metadata 边界
+
+`rag_documents.metadata` 保留文档级解析诊断，适合运维排查和灰度验收，例如 `pdf_page_reports`、`parse_warnings`、OCR 候选页、OCR 失败原因和外部解析器回退信息。
+
+`rag_knowledge_chunks.metadata` 只保留检索、过滤和引用所需的轻量字段，例如 `source`、`filename`、`section_path`、`page_number`、`tenant_id`、`permission_tags`、`parser_name`、`table_parser_route`、`source_block_ids`、`error_codes` 等。切片不再复制 `pdf_page_reports`、`parse_warnings`、`ocr_candidate_pages`、`ocr_pages`、`ocr_confidence_avg`、`ocr_unavailable_reason` 等文档级报告，避免 metadata 过重。
+
+解析质量状态拆成两个字段：`document_parse_quality_status` 表示整篇文档的解析质量，`chunk_parse_quality_status` 表示当前切片/来源 block 的质量。OCR 也统一使用 `document_ocr_status` 表达结果，常见值包括 `not_required`、`applied`、`required_disabled`、`required_failed` 和 `required_not_applied`，避免只看 `ocr_required` 时误判“是否真的启用了 OCR”。
+
+解析告警拆成文档级和切片级：`document_parse_warning_count` 只记录整篇文档的告警数量，`page_warning_codes` 记录当前页的页级告警，`chunk_parse_warning_codes` 记录当前切片继承或产生的告警码。
+
+编码字段拆成两类：`detected_codes` 保存正文中检测到的普通编码，例如规范号、表号、章节号或条目号；`error_codes` 只保存可触发异常码精确召回的严格异常码。这样 `I6540`、`T16`、`J949` 这类普通资料编码不会污染异常码索引，`E203` 或明确写在“错误码/异常码”语境里的编码才会进入 `error_codes`。
+
+表格解析路由也有明确执行状态：`table_parser_route` 表示计划采用的路线，`table_parse_applied` 表示当前 chunk 是否真正应用该路线，`table_parse_status` 常见值包括 `applied`、`skipped`、`fallback`，`table_parse_skip_reason` 记录未应用原因，例如 `block_type_is_paragraph` 或 `<route>_fallback_unavailable`。
+
 刷新过程还会保留运维清单：
 
 - `storage/<collection>_manifest.json`：离线处理清单，记录每个源文件的内容哈希、文档 ID、切片数量、解析质量摘要和刷新时间。
@@ -76,6 +90,7 @@
 - 文件修改：删除旧文档对应切片，重新切片和向量化。
 - 文件删除：删除旧文档对应切片。
 - 解析器或切片器版本变化：自动识别为需要刷新，避免旧切片结构继续留在向量库中。
+- PDF 解析配置变化：表格解析路由、OCR 配置、MinerU 在线开关/API/页码范围/token 指纹变化时，旧 PDF 会自动重建，避免开启云端兜底后旧 manifest 继续跳过。
 
 ## 知识治理
 
@@ -125,7 +140,8 @@
 - JSON：支持数组、对象，以及对象中的 `records`、`items`、`data`、`rows`、`cases`、`orders`、`errors` 列表；每条记录会转成适合切片和召回的 Markdown 文本。
 - SRT / VTT：按时间戳切分为“片段”小节，保留 `[开始-结束]` 时间范围元信息。
 - PDF：按页提取文本，生成 `## 第N页` 小节；同时生成页级解析质量报告，记录空白页、低文本页、疑似扫描页、疑似表格页和是否需要 OCR 复核。对于 PDF 中由多空格或制表符分隔的疑似表格行，会转成“表格列 / 表格行”的行级文本，尽量保留列关系，避免表格内容被完全打平。
-- PDF OCR：OCR 是保底机制。系统会先用 PyMuPDF 做文字解析，普通文字 PDF 不走 OCR；当页级报告发现空页、低文本页或疑似扫描页时，再用 PyMuPDF 渲染页面并调用 `pytesseract` 做 OCR。OCR 后会记录 `ocr_applied`、`ocr_pages`、`ocr_confidence_avg` 和 `ocr_provider`，便于灰度排查。
+- PDF 表格解析路由：系统会先用 PyMuPDF 做轻量文本解析和页级特征判断。普通文字 PDF 保持本地快速路径；有边框表格走 `RAG_PDF_BORDERED_TABLE_PARSER=deepdoc`，优先使用 DeepDoc 原生表格解析；无边框表格走 `RAG_PDF_BORDERLESS_TABLE_PARSER=mineru`，用于 MinerU2.5 这类 VLM 表格识别；半结构化表格走 `RAG_PDF_SEMISTRUCTURED_TABLE_PARSER=rules_ml`，使用规则+轻量 ML 风格的字段抽取。外部解析器不可用或解析失败时会回落本地解析，并记录 `<route>_fallback_unavailable`，避免离线刷新被单个解析器阻断。MinerU 在线解析是显式云端兜底：只有设置 `RAG_MINERU_ONLINE_ENABLED=true` 后，才会在本地 MinerU 不可用或解析失败时把目标 PDF 上传到 MinerU Agent API，拉回 Markdown 后继续在本地清洗、切片和入库。
+- PDF OCR：OCR 是保底机制。系统会先用 PyMuPDF 做文字解析，普通文字 PDF 不走 OCR；当页级报告发现空页、低文本页或疑似扫描页且 DeepDoc 未接管时，再用 PyMuPDF 渲染页面并调用 `pytesseract` 做 OCR。OCR 后会记录 `ocr_applied`、`ocr_pages`、`ocr_confidence_avg` 和 `ocr_provider`，便于灰度排查。
 - PPTX：按幻灯片提取文本，生成 `## 第N页幻灯片` 小节。
 
 解析后的元数据会记录标题、来源类型、业务模块、解析器名称、解析器版本、内容哈希、文档版本、租户、权限标签和解析质量状态。PDF 文档还会记录 `parse_quality_status`、`parse_warnings`、`ocr_required`、`scanned_page_candidates` 等字段，供灰度发布前排查低质量资料。
@@ -179,6 +195,34 @@ python -m rag_app.cli offline-refresh --source data --force
 ```powershell
 pip install -e ".[multimodal]"
 ```
+
+如果需要启用表格类 PDF 的分流解析：
+
+```powershell
+$env:RAG_PDF_BORDERED_TABLE_PARSER="deepdoc"
+$env:RAG_PDF_BORDERLESS_TABLE_PARSER="mineru"
+$env:RAG_PDF_SEMISTRUCTURED_TABLE_PARSER="rules_ml"
+# DeepDoc / MinerU 是可选外部解析器，未安装时系统会回落 PyMuPDF / pytesseract 路径。
+```
+
+如果合规允许把无边框表格 PDF 传到 MinerU 在线服务，可显式开启云端兜底：
+
+```powershell
+$env:RAG_MINERU_ONLINE_ENABLED="true"
+$env:RAG_MINERU_ONLINE_API_BASE="https://mineru.net/api/v1/agent"
+$env:RAG_MINERU_ONLINE_LANGUAGE="ch"
+$env:RAG_MINERU_ONLINE_ENABLE_TABLE="true"
+$env:RAG_MINERU_ONLINE_ENABLE_OCR="false"
+$env:RAG_MINERU_ONLINE_ENABLE_FORMULA="true"
+$env:RAG_MINERU_ONLINE_TIMEOUT_SECONDS="300"
+$env:RAG_MINERU_ONLINE_POLL_INTERVAL_SECONDS="3"
+$env:RAG_MINERU_ONLINE_HTTP_RETRIES="3"
+$env:RAG_MINERU_ONLINE_RETRY_BACKOFF_SECONDS="1"
+# 如使用需要鉴权的 MinerU 网关，可配置：
+# $env:RAG_MINERU_ONLINE_TOKEN="<token>"
+```
+
+在线 MinerU 返回的签名上传地址和 Markdown 下载地址不会写入 chunk metadata；文档级 metadata 只保留 `mineru_online_task_id`、状态和 API base，便于追踪解析结果。
 
 如果需要解析 DOCX / XLSX：
 
