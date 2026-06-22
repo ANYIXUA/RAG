@@ -1,6 +1,7 @@
 import os
 import sys
 import types
+import urllib.request
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -171,6 +172,36 @@ class MinerUAdapterTest(unittest.TestCase):
                 self.assertRaisesRegex(RuntimeError, "parse failed"),
             ):
                 mineru_adapter.parse_pdf_with_mineru(path)
+
+    def test_online_upload_does_not_force_content_type_for_signed_url(self) -> None:
+        from rag_app.ingestion.mineru_adapter import _http_put_file
+
+        captured: dict[str, urllib.request.Request] = {}
+
+        class FakeResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, traceback):
+                return None
+
+            def read(self) -> bytes:
+                return b""
+
+        def fake_urlopen(request: urllib.request.Request, timeout: float):
+            captured["request"] = request
+            return FakeResponse()
+
+        with TemporaryDirectory() as temp_dir:
+            path = Path(temp_dir) / "borderless.pdf"
+            path.write_bytes(b"%PDF-1.4\n")
+            with patch("urllib.request.urlopen", side_effect=fake_urlopen):
+                _http_put_file("https://upload.example/signed-url", path)
+
+        request = captured["request"]
+        self.assertEqual(request.get_method(), "PUT")
+        self.assertIsNone(request.headers.get("Content-type"))
+        self.assertIsNone(request.headers.get("Content-Type"))
 
 
 if __name__ == "__main__":

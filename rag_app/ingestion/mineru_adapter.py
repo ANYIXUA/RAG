@@ -208,7 +208,6 @@ def _http_put_file(url: str, path: Path, timeout_seconds: float = 30.0) -> None:
     request = urllib.request.Request(
         url,
         data=path.read_bytes(),
-        headers={"Content-Type": "application/pdf"},
         method="PUT",
     )
     try:
