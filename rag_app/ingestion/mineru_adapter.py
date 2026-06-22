@@ -13,6 +13,7 @@ from typing import Any
 
 
 _DEFAULT_ONLINE_API_BASE = "https://mineru.net/api/v1/agent"
+_DEFAULT_HTTP_RETRIES = 3
 _ONLINE_TRUE_VALUES = {"1", "true", "yes", "on"}
 _ONLINE_RUNNING_STATES = {"waiting-file", "uploading", "pending", "running"}
 _ONLINE_FAILED_STATES = {"failed", "error"}
@@ -197,7 +198,7 @@ def _http_json(
         headers["Authorization"] = f"Bearer {token}"
     request = urllib.request.Request(url, data=data, headers=headers, method=method)
     try:
-        with urllib.request.urlopen(request, timeout=timeout_seconds) as response:
+        with _urlopen_with_retries(request, timeout_seconds=timeout_seconds) as response:
             body = response.read().decode("utf-8")
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
@@ -220,7 +221,7 @@ def _http_put_file(url: str, path: Path, timeout_seconds: float = 30.0) -> None:
         method="PUT",
     )
     try:
-        with urllib.request.urlopen(request, timeout=timeout_seconds) as response:
+        with _urlopen_with_retries(request, timeout_seconds=timeout_seconds) as response:
             response.read()
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
@@ -232,13 +233,40 @@ def _http_put_file(url: str, path: Path, timeout_seconds: float = 30.0) -> None:
 def _http_text(url: str, timeout_seconds: float = 30.0) -> str:
     request = urllib.request.Request(url, headers={"Accept": "text/markdown,text/plain,*/*"})
     try:
-        with urllib.request.urlopen(request, timeout=timeout_seconds) as response:
+        with _urlopen_with_retries(request, timeout_seconds=timeout_seconds) as response:
             return response.read().decode("utf-8")
     except urllib.error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
         raise RuntimeError(f"MinerU online markdown download HTTP {exc.code}: {body}") from exc
     except urllib.error.URLError as exc:
         raise RuntimeError(f"MinerU online markdown download failed: {exc.reason}") from exc
+
+
+def _urlopen_with_retries(
+    request: urllib.request.Request,
+    *,
+    timeout_seconds: float,
+):
+    max_attempts = _env_int("RAG_MINERU_ONLINE_HTTP_RETRIES", _DEFAULT_HTTP_RETRIES)
+    retry_backoff_seconds = _env_float(
+        "RAG_MINERU_ONLINE_RETRY_BACKOFF_SECONDS",
+        1.0,
+    )
+    last_error: urllib.error.URLError | None = None
+    for attempt in range(1, max_attempts + 1):
+        try:
+            return urllib.request.urlopen(request, timeout=timeout_seconds)
+        except urllib.error.HTTPError:
+            raise
+        except urllib.error.URLError as exc:
+            last_error = exc
+            if attempt >= max_attempts:
+                raise
+            if retry_backoff_seconds > 0:
+                time.sleep(retry_backoff_seconds * attempt)
+    if last_error is not None:
+        raise last_error
+    raise RuntimeError("MinerU online request retry loop ended unexpectedly")
 
 
 def _response_data(response: dict[str, Any], action: str) -> dict[str, Any]:
@@ -281,6 +309,19 @@ def _env_float(name: str, default: float) -> float:
         raise RuntimeError(f"{name} must be a number") from exc
     if number < 0:
         raise RuntimeError(f"{name} must be zero or greater")
+    return number
+
+
+def _env_int(name: str, default: int) -> int:
+    value = os.getenv(name)
+    if value is None or value.strip() == "":
+        return default
+    try:
+        number = int(value)
+    except ValueError as exc:
+        raise RuntimeError(f"{name} must be an integer") from exc
+    if number <= 0:
+        raise RuntimeError(f"{name} must be greater than zero")
     return number
 
 

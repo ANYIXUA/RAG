@@ -1,6 +1,8 @@
 import os
+import ssl
 import sys
 import types
+import urllib.error
 import urllib.request
 import unittest
 from pathlib import Path
@@ -203,6 +205,43 @@ class MinerUAdapterTest(unittest.TestCase):
         self.assertTrue(request.has_header("Content-type"))
         self.assertIsNone(request.headers.get("Content-type"))
         self.assertIsNone(request.headers.get("Content-Type"))
+
+    def test_http_json_retries_transient_url_errors(self) -> None:
+        from rag_app.ingestion.mineru_adapter import _http_json
+
+        class FakeResponse:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, exc_type, exc, traceback):
+                return None
+
+            def read(self) -> bytes:
+                return b'{"code":0,"data":{"task_id":"task-1"}}'
+
+        eof = ssl.SSLEOFError(8, "EOF occurred in violation of protocol")
+        with (
+            patch.dict(
+                os.environ,
+                {
+                    "RAG_MINERU_ONLINE_HTTP_RETRIES": "2",
+                    "RAG_MINERU_ONLINE_RETRY_BACKOFF_SECONDS": "0",
+                },
+                clear=False,
+            ),
+            patch(
+                "urllib.request.urlopen",
+                side_effect=[urllib.error.URLError(eof), FakeResponse()],
+            ) as urlopen,
+        ):
+            response = _http_json(
+                "POST",
+                "https://mineru.example/api/v1/agent/parse/file",
+                {"file_name": "probe.pdf"},
+            )
+
+        self.assertEqual(response["data"]["task_id"], "task-1")
+        self.assertEqual(urlopen.call_count, 2)
 
 
 if __name__ == "__main__":
