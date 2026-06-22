@@ -18,6 +18,15 @@ _ONLINE_RUNNING_STATES = {"waiting-file", "uploading", "pending", "running"}
 _ONLINE_FAILED_STATES = {"failed", "error"}
 
 
+class _SignedUrlPutRequest(urllib.request.Request):
+    """PUT request for OSS signed URLs without urllib's implicit Content-Type."""
+
+    def has_header(self, header_name: str) -> bool:
+        if header_name.lower() == "content-type":
+            return True
+        return super().has_header(header_name)
+
+
 @dataclass(frozen=True)
 class MinerUParsedPdf:
     text: str
@@ -205,7 +214,7 @@ def _http_json(
 
 
 def _http_put_file(url: str, path: Path, timeout_seconds: float = 30.0) -> None:
-    request = urllib.request.Request(
+    request = _SignedUrlPutRequest(
         url,
         data=path.read_bytes(),
         method="PUT",

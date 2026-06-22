@@ -200,6 +200,7 @@ class MinerUAdapterTest(unittest.TestCase):
 
         request = captured["request"]
         self.assertEqual(request.get_method(), "PUT")
+        self.assertTrue(request.has_header("Content-type"))
         self.assertIsNone(request.headers.get("Content-type"))
         self.assertIsNone(request.headers.get("Content-Type"))
 
