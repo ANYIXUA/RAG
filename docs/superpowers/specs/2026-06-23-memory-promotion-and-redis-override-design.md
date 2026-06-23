@@ -24,6 +24,7 @@
 ## 非目标
 
 - 不把所有短期会话自动写入长期知识库。
+- 不把系统故障、维护公告、临时通知、运营应急口径等人工 Redis 快答沉淀为长期知识。
 - 不让负反馈自动生成可直接回答的内容。
 - 不重写现有 `query_logs`、`feedback`、`knowledge_build_jobs`、`rag_knowledge_chunks` 存储链路。
 - 不在第一版引入复杂语义聚类服务；问题匹配先采用标准化文本 key，后续再扩展相似问法归并。
@@ -51,6 +52,8 @@ Redis 记录建议字段：
   "tenant_id": "tenant-a",
   "permission_tags": ["public"],
   "source": "manual",
+  "category": "incident",
+  "promote_to_long_term": false,
   "enabled": true,
   "priority": 100,
   "ttl_seconds": 1800,
@@ -61,6 +64,8 @@ Redis 记录建议字段：
 ```
 
 人工 override 优先级高于自动缓存。人工记录适合故障通知、临时业务口径、活动规则临时变更；自动缓存适合高频且已确认的标准问答。
+
+人工 override 默认是临时答案，不参与长期知识沉淀。`category` 为 `incident`、`outage`、`maintenance`、`notice`、`campaign` 的记录必须保持 `promote_to_long_term=false`；系统恢复后通过更新、禁用、删除或 TTL 到期让它失效，不把历史故障状态写入 pgvector 长期知识库。
 
 ### 2. 管理接口
 
@@ -118,6 +123,8 @@ feedback_id: fb_xxx
 5. 由现有 `run_knowledge_build_job()` 切片、向量化、写入 `rag_knowledge_chunks`，构建成功后按配置决定是否自动激活。
 
 第一版建议默认不自动激活长期知识版本，先生成构建任务和候选记录，避免反馈噪声直接影响线上检索。需要自动激活时再通过配置开启。
+
+长期记忆沉淀只从 `/feedback` 产生的 `feedback_promotion` 候选进入，不扫描人工 override。即使系统故障类 override 被大量命中，也只作为 Redis 临时答案和运行日志存在，不生成知识上传、不创建构建任务。
 
 ### 5. 多租户与权限边界
 
@@ -190,6 +197,7 @@ feedback_id: fb_xxx
 - `/memory/overrides` 创建、更新、禁用、删除。
 - 正向反馈写入 hot cache。
 - 负反馈只累计统计，不生成直接答案。
+- 系统故障、维护公告等人工 override 不会触发长期知识上传或构建任务。
 - 高价值反馈生成长期知识上传和构建任务，且默认不自动激活。
 - 配置项能从 env 和 config 文件读取。
 
