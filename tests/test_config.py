@@ -306,7 +306,39 @@ class SettingsConfigTest(unittest.TestCase):
         self.assertEqual(settings.conversation_memory_ttl_seconds, 900)
         self.assertFalse(settings.conversation_coreference_enabled)
 
-    def test_requires_redis_url_for_redis_conversation_memory(self) -> None:
+    def test_conversation_memory_defaults_to_redis(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            with patch.dict(
+                os.environ,
+                {
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=Path(temp_dir))
+
+        self.assertEqual(settings.conversation_memory_provider, "redis")
+        self.assertEqual(settings.redis_url, "redis://127.0.0.1:6379/0")
+
+    def test_can_override_conversation_memory_default_back_to_memory(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            with patch.dict(
+                os.environ,
+                {
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "RAG_CONVERSATION_MEMORY_PROVIDER": "memory",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=Path(temp_dir))
+
+        self.assertEqual(settings.conversation_memory_provider, "memory")
+
+    def test_empty_redis_url_uses_default_for_redis_conversation_memory(self) -> None:
         with TemporaryDirectory() as temp_dir:
             with patch.dict(
                 os.environ,
@@ -319,8 +351,10 @@ class SettingsConfigTest(unittest.TestCase):
                 },
                 clear=True,
             ):
-                with self.assertRaisesRegex(ValueError, "RAG_REDIS_URL"):
-                    Settings.from_env(base_dir=Path(temp_dir))
+                settings = Settings.from_env(base_dir=Path(temp_dir))
+
+        self.assertEqual(settings.conversation_memory_provider, "redis")
+        self.assertEqual(settings.redis_url, "redis://127.0.0.1:6379/0")
 
     def test_rejects_invalid_complex_pdf_parser_provider(self) -> None:
         with TemporaryDirectory() as temp_dir:

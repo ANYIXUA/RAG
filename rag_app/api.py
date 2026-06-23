@@ -190,7 +190,10 @@ def _settings_summary(settings: Settings) -> dict[str, Any]:
         "conversation_memory_history_limit": settings.conversation_memory_history_limit,
         "conversation_memory_ttl_seconds": settings.conversation_memory_ttl_seconds,
         "conversation_coreference_enabled": settings.conversation_coreference_enabled,
-        "redis_configured": settings.redis_url is not None,
+        "redis_configured": (
+            settings.conversation_memory_provider == "redis"
+            and settings.redis_url is not None
+        ),
         "ops_store_provider": settings.ops_store_provider,
         "knowledge_upload_dir": str(settings.knowledge_upload_dir),
         "knowledge_build_dir": str(settings.knowledge_build_dir),

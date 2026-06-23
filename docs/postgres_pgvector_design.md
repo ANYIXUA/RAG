@@ -2,6 +2,8 @@
 
 当前项目把结构化业务数据、RAG 运行数据、知识版本状态和知识向量统一放在 PostgreSQL 中，向量列由 pgvector 提供。
 
+多轮对话的短期会话记忆默认存放在 Redis，并按 TTL 过期；它不属于长期知识库。长期知识、向量索引、查询日志、反馈和知识版本状态仍以 PostgreSQL/pgvector 为准。
+
 ## 在哪里查看
 
 本机 Docker 容器名是 `rag-postgres`。如果用 DBeaver、pgAdmin 或 DataGrip 查看，连接信息如下：

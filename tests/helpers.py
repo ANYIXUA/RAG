@@ -196,6 +196,7 @@ def production_settings(base_dir, data_dir=None, storage_dir=None, **overrides) 
         "ops_postgres_dsn": "postgresql://rag:pwd@localhost:5432/rag",
         "order_status_postgres_dsn": "postgresql://rag:pwd@localhost:5432/rag",
         "order_status_tool_enabled": False,
+        "conversation_memory_provider": "memory",
     }
     kwargs.update(overrides)
     return Settings(**kwargs)

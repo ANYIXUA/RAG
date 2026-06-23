@@ -19,6 +19,23 @@ services:
       retries: 5
     restart: unless-stopped
 
+  redis:
+    image: redis:7-alpine
+    container_name: rag-redis
+    ports:
+      - "${REDIS_PORT:-6379}:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test:
+        - CMD
+        - redis-cli
+        - ping
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
   rag-api:
     build:
       context: .
@@ -37,11 +54,15 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+      redis:
+        condition: service_healthy
     environment:
       RAG_OPS_STORE_PROVIDER: postgresql
       RAG_OPS_POSTGRES_DSN: postgresql://${POSTGRES_USER:-rag}:${POSTGRES_PASSWORD:-rag_password}@postgres:5432/${POSTGRES_DB:-rag}
       RAG_ORDER_STATUS_POSTGRES_DSN: postgresql://${POSTGRES_USER:-rag}:${POSTGRES_PASSWORD:-rag_password}@postgres:5432/${POSTGRES_DB:-rag}
       RAG_VECTOR_STORE_PROVIDER: postgresql
+      RAG_CONVERSATION_MEMORY_PROVIDER: ${RAG_CONVERSATION_MEMORY_PROVIDER:-redis}
+      RAG_REDIS_URL: ${RAG_REDIS_URL:-redis://redis:6379/0}
     healthcheck:
       test:
         - CMD
@@ -69,11 +90,15 @@ services:
     depends_on:
       postgres:
         condition: service_healthy
+      redis:
+        condition: service_healthy
     environment:
       RAG_OPS_STORE_PROVIDER: postgresql
       RAG_OPS_POSTGRES_DSN: postgresql://${POSTGRES_USER:-rag}:${POSTGRES_PASSWORD:-rag_password}@postgres:5432/${POSTGRES_DB:-rag}
       RAG_ORDER_STATUS_POSTGRES_DSN: postgresql://${POSTGRES_USER:-rag}:${POSTGRES_PASSWORD:-rag_password}@postgres:5432/${POSTGRES_DB:-rag}
       RAG_VECTOR_STORE_PROVIDER: postgresql
+      RAG_CONVERSATION_MEMORY_PROVIDER: ${RAG_CONVERSATION_MEMORY_PROVIDER:-redis}
+      RAG_REDIS_URL: ${RAG_REDIS_URL:-redis://redis:6379/0}
     command:
       - python
       - -m
@@ -87,3 +112,4 @@ services:
 
 volumes:
   pg_data:
+  redis_data:

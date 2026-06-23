@@ -1,17 +1,18 @@
 # 运维 RAG
 
-生产向 RAG 服务，默认链路直接连接 PostgreSQL/pgvector、PostgreSQL 业务表和 OpenAI 兼容模型服务。
+生产向 RAG 服务，默认链路直接连接 PostgreSQL/pgvector、Redis 短期会话记忆、PostgreSQL 业务表和 OpenAI 兼容模型服务。
 
 ## 生产默认链路
 
 - 知识向量：PostgreSQL + pgvector，表 `rag_documents`、`rag_knowledge_chunks`。
+- 多轮短期记忆：Redis，默认保存最近会话摘要并按 TTL 过期。
 - 在线业务查询：PostgreSQL 业务表，当前工具为 `query_order_status`。
 - 运行日志/反馈/处理轨迹：PostgreSQL。
 - 查询和文档向量化：OpenAI 兼容向量化接口。
 - 回答生成：OpenAI 兼容聊天补全接口。
 - 热更新版本指针：PostgreSQL。
 
-仓库只保留生产运行链路，所有运行时存储、检索、日志和业务工具调用都通过 PostgreSQL 或 OpenAI 兼容模型服务完成。
+仓库只保留生产运行链路，长期知识、检索索引、日志和业务工具调用通过 PostgreSQL 或 OpenAI 兼容模型服务完成；会话短期记忆默认通过 Redis 完成。
 
 ## 配置
 
@@ -28,6 +29,8 @@ RAG_OPS_STORE_PROVIDER=postgresql
 RAG_OPS_POSTGRES_DSN=postgresql://rag:rag_password@postgres:5432/rag
 RAG_ORDER_STATUS_POSTGRES_DSN=postgresql://rag:rag_password@postgres:5432/rag
 RAG_VECTOR_STORE_PROVIDER=postgresql
+RAG_CONVERSATION_MEMORY_PROVIDER=redis
+RAG_REDIS_URL=redis://redis:6379/0
 RAG_EMBEDDING_PROVIDER=openai
 RAG_LLM_PROVIDER=openai
 DASHSCOPE_API_KEY=
@@ -40,10 +43,10 @@ RAG_EMBEDDING_DIMENSION=1024
 RAG_EMBEDDING_BATCH_SIZE=10
 ```
 
-本机用 Docker Compose 起 PostgreSQL/pgvector：
+本机用 Docker Compose 起 PostgreSQL/pgvector 和 Redis：
 
 ```powershell
-docker compose up -d postgres
+docker compose up -d postgres redis
 ```
 
 启动完整服务：

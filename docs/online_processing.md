@@ -114,7 +114,7 @@ POST /query
 - 查询侧：把“这个怎么处理”“下一步呢”“它为什么会这样”这类跟进问句改写成带明确主题的检索查询。
 - 生成侧：把最近会话历史摘要放入增强上下文，让回答模型知道当前问题承接了哪一轮业务问题。
 
-短期记忆默认存在进程内内存，适合本地开发和单进程调试。如果生产环境使用多 worker、多副本部署，或者希望服务重启后短时间内仍保留上下文，建议开启 Redis：
+短期记忆默认使用 Redis，适合多 worker、多副本部署，也能在服务重启后保留 TTL 范围内的会话上下文。本机运行时默认连接 `redis://127.0.0.1:6379/0`；Docker Compose 中默认连接 `redis://redis:6379/0`：
 
 ```powershell
 pip install -e ".[redis]"
@@ -129,6 +129,12 @@ $env:RAG_CONVERSATION_MEMORY_TTL_SECONDS="7200"
 
 ```powershell
 $env:RAG_CONVERSATION_COREFERENCE_ENABLED="false"
+```
+
+单进程调试或临时离线验证时，也可以显式切回进程内记忆：
+
+```powershell
+$env:RAG_CONVERSATION_MEMORY_PROVIDER="memory"
 ```
 
 ## 在线与离线的边界
@@ -261,7 +267,8 @@ $env:RAG_QUERY_EMBEDDING_CACHE_SIZE="128"
 会话短期记忆：
 
 ```powershell
-$env:RAG_CONVERSATION_MEMORY_PROVIDER="memory"
+$env:RAG_CONVERSATION_MEMORY_PROVIDER="redis"
+$env:RAG_REDIS_URL="redis://127.0.0.1:6379/0"
 $env:RAG_CONVERSATION_MEMORY_MAX_TURNS="12"
 $env:RAG_CONVERSATION_MEMORY_HISTORY_LIMIT="5"
 $env:RAG_CONVERSATION_MEMORY_TTL_SECONDS="7200"

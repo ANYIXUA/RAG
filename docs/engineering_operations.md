@@ -2,13 +2,15 @@
 
 ## 存储
 
-生产运维数据统一写入 PostgreSQL：
+长期知识、检索索引、查询日志、反馈和知识版本状态统一写入 PostgreSQL；多轮会话短期记忆默认写入 Redis：
 
 ```text
 RAG_OPS_STORE_PROVIDER=postgresql
 RAG_OPS_POSTGRES_DSN=postgresql://rag:rag_password@postgres:5432/rag
 RAG_ORDER_STATUS_POSTGRES_DSN=postgresql://rag:rag_password@postgres:5432/rag
 RAG_VECTOR_STORE_PROVIDER=postgresql
+RAG_CONVERSATION_MEMORY_PROVIDER=redis
+RAG_REDIS_URL=redis://redis:6379/0
 ```
 
 ## 常用检查

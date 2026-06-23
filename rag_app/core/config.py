@@ -19,6 +19,7 @@ _RERANK_TRIGGERS = {"always", "auto"}
 _OPS_STORE_PROVIDERS = {"postgresql", "postgres", "pgsql"}
 _VECTOR_STORE_PROVIDERS = {"postgresql", "postgres", "pgsql", "pgvector"}
 _CONVERSATION_MEMORY_PROVIDERS = {"memory", "redis"}
+DEFAULT_REDIS_URL = "redis://127.0.0.1:6379/0"
 _PDF_COMPLEX_PARSERS = {"local", "deepdoc"}
 _PDF_TABLE_PARSER_CHOICES = {
     "RAG_PDF_BORDERED_TABLE_PARSER": {"local", "deepdoc"},
@@ -417,12 +418,12 @@ class Settings:
     query_embedding_cache_enabled: bool = True
     query_embedding_cache_size: int = 128
     query_logging_enabled: bool = True
-    conversation_memory_provider: str = "memory"
+    conversation_memory_provider: str = "redis"
     conversation_memory_max_turns: int = 12
     conversation_memory_history_limit: int = 5
     conversation_memory_ttl_seconds: int = 7200
     conversation_coreference_enabled: bool = True
-    redis_url: str | None = None
+    redis_url: str | None = DEFAULT_REDIS_URL
     api_admin_token: str | None = None
     api_cors_origins: tuple[str, ...] = ("*",)
     ops_store_provider: str = "postgresql"
@@ -821,7 +822,7 @@ class Settings:
             "query_logging_enabled": _env_bool("RAG_QUERY_LOGGING_ENABLED", True),
             "conversation_memory_provider": os.getenv(
                 "RAG_CONVERSATION_MEMORY_PROVIDER",
-                "memory",
+                "redis",
             ),
             "conversation_memory_max_turns": _env_int(
                 "RAG_CONVERSATION_MEMORY_MAX_TURNS",
@@ -839,7 +840,11 @@ class Settings:
                 "RAG_CONVERSATION_COREFERENCE_ENABLED",
                 True,
             ),
-            "redis_url": os.getenv("RAG_REDIS_URL") or os.getenv("REDIS_URL") or None,
+            "redis_url": (
+                os.getenv("RAG_REDIS_URL")
+                or os.getenv("REDIS_URL")
+                or DEFAULT_REDIS_URL
+            ),
             "api_admin_token": os.getenv("RAG_API_ADMIN_TOKEN") or None,
             "api_cors_origins": _env_list("RAG_API_CORS_ORIGINS", ("*",)),
             "ops_store_provider": os.getenv("RAG_OPS_STORE_PROVIDER", "postgresql"),
