@@ -2,14 +2,20 @@
 
 from __future__ import annotations
 
+import json
 import re
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
+from typing import Any
 
 from rag_app.retrieval.query import normalize_query
 
 
 FOLLOW_UP_PRONOUN_RE = re.compile(r"(这个|这个问题|这个情况|它|他|她|那|那个|上述|上面|前面)")
 FOLLOW_UP_START_RE = re.compile(r"^(那|然后|另外|还有|关于这个|关于它|继续|顺便)")
+SHORT_FOLLOW_UP_RE = re.compile(
+    r"^(下一步|下步|怎么判断|如何判断|怎么确认|如何确认|要先看什么|先看什么|"
+    r"还要看什么|需要派单吗|要派单吗|怎么处理|怎么办|咋办|为什么|原因呢|还有吗)"
+)
 
 
 @dataclass(frozen=True)
@@ -47,10 +53,72 @@ class ConversationMemory:
             self._sessions[session_id] = turns[-self.max_turns_per_session :]
 
 
+class RedisConversationMemory(ConversationMemory):
+    """基于 Redis 的短期会话记忆，适合多 worker 和服务重启场景。"""
+
+    def __init__(
+        self,
+        redis_url: str,
+        max_turns_per_session: int = 12,
+        ttl_seconds: int = 7200,
+        key_prefix: str = "rag:conversation",
+    ) -> None:
+        super().__init__(max_turns_per_session=max_turns_per_session)
+        if not redis_url:
+            raise RuntimeError("Redis conversation memory requires RAG_REDIS_URL")
+        try:
+            import redis
+        except ModuleNotFoundError as exc:
+            raise RuntimeError(
+                "Redis conversation memory requires dependency: pip install redis"
+            ) from exc
+        self.ttl_seconds = ttl_seconds
+        self.key_prefix = key_prefix.rstrip(":")
+        self._client = redis.Redis.from_url(redis_url, decode_responses=True)
+
+    def get_recent_turns(self, session_id: str | None, limit: int = 3) -> list[ConversationTurn]:
+        if not session_id or limit <= 0:
+            return []
+        raw_items = self._client.lrange(self._key(session_id), -limit, -1)
+        turns: list[ConversationTurn] = []
+        for raw_item in raw_items:
+            try:
+                payload = json.loads(raw_item)
+                turns.append(_turn_from_dict(payload))
+            except (TypeError, ValueError, json.JSONDecodeError):
+                continue
+        return turns
+
+    def append_turn(self, session_id: str | None, turn: ConversationTurn) -> None:
+        if not session_id:
+            return
+        key = self._key(session_id)
+        self._client.rpush(key, json.dumps(asdict(turn), ensure_ascii=False))
+        self._client.ltrim(key, -self.max_turns_per_session, -1)
+        if self.ttl_seconds > 0:
+            self._client.expire(key, self.ttl_seconds)
+
+    def _key(self, session_id: str) -> str:
+        return f"{self.key_prefix}:{session_id}"
+
+
+def create_conversation_memory(settings: Any) -> ConversationMemory:
+    provider = str(getattr(settings, "conversation_memory_provider", "memory")).lower()
+    max_turns = int(getattr(settings, "conversation_memory_max_turns", 12))
+    if provider == "redis":
+        return RedisConversationMemory(
+            redis_url=str(getattr(settings, "redis_url", "") or ""),
+            max_turns_per_session=max_turns,
+            ttl_seconds=int(getattr(settings, "conversation_memory_ttl_seconds", 7200)),
+        )
+    return ConversationMemory(max_turns_per_session=max_turns)
+
+
 def rewrite_query_with_context(
     question: str,
     history: list[ConversationTurn],
     max_context_terms: int = 8,#最多从历史中提取多少个关键词
+    coreference_enabled: bool = True,
 ) -> tuple[str, bool, list[str]]:
     """如果是跟进问句，则拼接上下文关键词，扩展成更完整的检索问题。"""
 
@@ -65,8 +133,13 @@ def rewrite_query_with_context(
     context_terms = _collect_context_terms(history, max_terms=max_context_terms)
     if not context_terms: #历史中没有关键词，强行改写也没有意义
         return normalized, False, []
+    resolved_query = (
+        resolve_references_with_rules(normalized, history)
+        if coreference_enabled
+        else normalized
+    )
     #重新进行改写
-    contextual_query = normalize_query(f"{normalized} {' '.join(context_terms)}")
+    contextual_query = normalize_query(f"{resolved_query} {' '.join(context_terms)}")
     return contextual_query, True, context_terms
 
 
@@ -85,7 +158,26 @@ def is_follow_up_question(question: str) -> bool:
         return True
     if len(normalized) <= 8 and "？" in normalized:
         return True
+    if SHORT_FOLLOW_UP_RE.search(normalized):
+        return True
     return False
+
+
+def resolve_references_with_rules(question: str, history: list[ConversationTurn]) -> str:
+    """基于规则把追问中的指代词替换成最近一轮业务主题。"""
+
+    normalized = normalize_query(question)
+    reference = _primary_reference(history)
+    if not normalized or not reference:
+        return normalized
+    if FOLLOW_UP_PRONOUN_RE.search(normalized):
+        return normalize_query(FOLLOW_UP_PRONOUN_RE.sub(reference, normalized, count=1))
+    if FOLLOW_UP_START_RE.search(normalized):
+        suffix = FOLLOW_UP_START_RE.sub("", normalized, count=1).strip()
+        return normalize_query(f"{reference} {suffix or normalized}")
+    if SHORT_FOLLOW_UP_RE.search(normalized):
+        return normalize_query(f"{reference} {normalized}")
+    return normalized
 
 
 def summarize_answer(answer: str, max_chars: int = 120) -> str:
@@ -100,10 +192,39 @@ def summarize_answer(answer: str, max_chars: int = 120) -> str:
 def _collect_context_terms(history: list[ConversationTurn], max_terms: int) -> list[str]:
     terms: list[str] = []
     for turn in history[-2:]:
+        terms.extend(title for title in turn.retrieved_titles if title)
         if turn.rewritten_query:
             terms.append(turn.rewritten_query)
-        terms.extend(title for title in turn.retrieved_titles if title)
+        if turn.question:
+            terms.append(turn.question)
     return _dedupe([normalize_query(term) for term in terms if normalize_query(term)])[:max_terms]
+
+
+def _primary_reference(history: list[ConversationTurn]) -> str:
+    for turn in reversed(history):
+        for title in turn.retrieved_titles:
+            normalized = normalize_query(title)
+            if normalized:
+                return normalized
+        for candidate in (turn.rewritten_query, turn.question):
+            normalized = normalize_query(candidate)
+            if normalized:
+                return normalized
+    return ""
+
+
+def _turn_from_dict(payload: dict[str, Any]) -> ConversationTurn:
+    return ConversationTurn(
+        question=str(payload.get("question") or ""),
+        rewritten_query=str(payload.get("rewritten_query") or ""),
+        intent_label=str(payload.get("intent_label") or ""),
+        retrieved_titles=[
+            str(item)
+            for item in payload.get("retrieved_titles") or []
+            if str(item).strip()
+        ],
+        answer_summary=str(payload.get("answer_summary") or ""),
+    )
 
 
 def _dedupe(items: list[str]) -> list[str]:

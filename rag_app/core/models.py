@@ -176,6 +176,7 @@ class OnlineProcessingTrace:
     permission_tags: tuple[str, ...] = ()
     authorized_source_count: int = 0
     tool_calls: list[ToolCallTrace] = field(default_factory=list)
+    conversation_history_turn_count: int = 0
 
 
 @dataclass(frozen=True)

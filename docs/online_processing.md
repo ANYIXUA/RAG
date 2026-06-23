@@ -15,7 +15,7 @@
 
 3. 查询改写 / 扩写
    将口语化、不完整的用户查询改写成更标准的业务表达，同时补充同义词扩展和语义扩展。例如“光猫红灯咋办”会扩展出“LOS 红灯、光路异常、ONU、排查步骤、现场处理建议”等检索词。
-   对于“这个/它/那”这类跟进问句，会结合会话历史做上下文查询改写，把上轮关键术语拼入当前查询，再进入检索。
+   对于“这个/它/那”这类跟进问句，会结合会话历史做上下文查询改写；规则指代消除会先把指代词替换为最近一轮召回主题，随后把上轮关键术语拼入当前查询，再进入检索。
 
 4. 工具调用
    当意图识别为 `query_order_status` 且问题中包含工单号时，在线链路会调用 `query_order_status` 工具查询工单主状态、最近流转和派单信息。工具结果会进入增强上下文、trace 和查询日志。
@@ -31,7 +31,7 @@
    可通过 `RAG_RERANK_TRIGGER=auto` 按意图、跟进问题和低置信度场景按需触发，降低低风险问题的在线成本。
 
 8. 增强上下文生成
-   将用户原始查询、归一化查询、改写查询、检索查询、识别意图、工具调用结果、召回文档、来源信息和相似度分数拼接成增强上下文。
+   将用户原始查询、归一化查询、改写查询、检索查询、识别意图、会话历史摘要、工具调用结果、召回文档、来源信息和相似度分数拼接成增强上下文。
 
 9. 大语言模型回答
    大语言模型基于增强上下文回答问题，并输出来源引用（如 `[1]`、`[2]`），确保答案可溯源。
@@ -107,6 +107,30 @@ POST /query
 }
 ```
 
+## 多轮会话与短期记忆
+
+在线问答通过 `session_id` 串联多轮对话。同一个 `session_id` 下，系统会保存最近若干轮问题、改写查询、识别意图、召回主题和回答摘要，并在后续问题中用于两件事：
+
+- 查询侧：把“这个怎么处理”“下一步呢”“它为什么会这样”这类跟进问句改写成带明确主题的检索查询。
+- 生成侧：把最近会话历史摘要放入增强上下文，让回答模型知道当前问题承接了哪一轮业务问题。
+
+短期记忆默认存在进程内内存，适合本地开发和单进程调试。如果生产环境使用多 worker、多副本部署，或者希望服务重启后短时间内仍保留上下文，建议开启 Redis：
+
+```powershell
+pip install -e ".[redis]"
+$env:RAG_CONVERSATION_MEMORY_PROVIDER="redis"
+$env:RAG_REDIS_URL="redis://127.0.0.1:6379/0"
+$env:RAG_CONVERSATION_MEMORY_MAX_TURNS="12"
+$env:RAG_CONVERSATION_MEMORY_HISTORY_LIMIT="5"
+$env:RAG_CONVERSATION_MEMORY_TTL_SECONDS="7200"
+```
+
+规则指代消除默认开启，作为不依赖大模型的兜底能力。它会优先使用上一轮召回标题作为主语；如果没有召回标题，则退回到上一轮改写查询或原始问题。需要关闭时可设置：
+
+```powershell
+$env:RAG_CONVERSATION_COREFERENCE_ENABLED="false"
+```
+
 ## 在线与离线的边界
 
 在线处理会做：
@@ -114,6 +138,7 @@ POST /query
 - 接收用户原始问题。
 - 识别用户查询意图。
 - 将口语化查询改写成标准业务表达。
+- 基于 `session_id` 读取短期会话记忆，执行规则指代消除和跟进问句改写。
 - 进行同义词扩展和语义扩展。
 - 使用扩展后的检索查询生成查询向量。
 - 每次查询前使用生效知识集合查询 PostgreSQL/pgvector。
@@ -152,6 +177,7 @@ POST /query
 - `contextual_query`：结合会话历史后的上下文改写查询。
 - `is_follow_up`：是否识别为跟进问句。
 - `context_terms`：用于跟进问句改写的上下文关键术语。
+- `conversation_history_turn_count`：本次进入增强上下文的历史轮数。
 - `rewritten_query`：标准化后的查询。
 - `retrieval_query`：最终用于向量化和混合检索的扩展查询。
 - `synonym_expansions`：同义词扩展结果。
@@ -230,4 +256,14 @@ $env:RAG_RERANK_MIN_INTENT_CONFIDENCE="0.75"
 ```powershell
 $env:RAG_QUERY_EMBEDDING_CACHE_ENABLED="true"
 $env:RAG_QUERY_EMBEDDING_CACHE_SIZE="128"
+```
+
+会话短期记忆：
+
+```powershell
+$env:RAG_CONVERSATION_MEMORY_PROVIDER="memory"
+$env:RAG_CONVERSATION_MEMORY_MAX_TURNS="12"
+$env:RAG_CONVERSATION_MEMORY_HISTORY_LIMIT="5"
+$env:RAG_CONVERSATION_MEMORY_TTL_SECONDS="7200"
+$env:RAG_CONVERSATION_COREFERENCE_ENABLED="true"
 ```

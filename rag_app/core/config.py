@@ -18,6 +18,7 @@ _RERANK_PROVIDERS = {"none", "off", "disabled", "cross-encoder"}
 _RERANK_TRIGGERS = {"always", "auto"}
 _OPS_STORE_PROVIDERS = {"postgresql", "postgres", "pgsql"}
 _VECTOR_STORE_PROVIDERS = {"postgresql", "postgres", "pgsql", "pgvector"}
+_CONVERSATION_MEMORY_PROVIDERS = {"memory", "redis"}
 _PDF_COMPLEX_PARSERS = {"local", "deepdoc"}
 _PDF_TABLE_PARSER_CHOICES = {
     "RAG_PDF_BORDERED_TABLE_PARSER": {"local", "deepdoc"},
@@ -50,6 +51,9 @@ _INT_CONFIG_FIELDS = {
     "retrieval_candidate_k",
     "rerank_candidate_k",
     "query_embedding_cache_size",
+    "conversation_memory_max_turns",
+    "conversation_memory_history_limit",
+    "conversation_memory_ttl_seconds",
 }
 _OPTIONAL_INT_CONFIG_FIELDS = {"openai_max_tokens"}
 _OPTIONAL_FLOAT_CONFIG_FIELDS = {
@@ -69,6 +73,7 @@ _BOOL_CONFIG_FIELDS = {
     "require_approval_for_crawled",
     "parse_quality_gate_enabled",
     "order_status_tool_enabled",
+    "conversation_coreference_enabled",
 }
 _PATH_CONFIG_FIELDS = {
     "data_dir",
@@ -412,6 +417,12 @@ class Settings:
     query_embedding_cache_enabled: bool = True
     query_embedding_cache_size: int = 128
     query_logging_enabled: bool = True
+    conversation_memory_provider: str = "memory"
+    conversation_memory_max_turns: int = 12
+    conversation_memory_history_limit: int = 5
+    conversation_memory_ttl_seconds: int = 7200
+    conversation_coreference_enabled: bool = True
+    redis_url: str | None = None
     api_admin_token: str | None = None
     api_cors_origins: tuple[str, ...] = ("*",)
     ops_store_provider: str = "postgresql"
@@ -557,6 +568,35 @@ class Settings:
             "RAG_QUERY_EMBEDDING_CACHE_SIZE",
             self.query_embedding_cache_size,
         )
+        _require_positive_int(
+            "RAG_CONVERSATION_MEMORY_MAX_TURNS",
+            self.conversation_memory_max_turns,
+        )
+        _require_positive_int(
+            "RAG_CONVERSATION_MEMORY_HISTORY_LIMIT",
+            self.conversation_memory_history_limit,
+        )
+        _require_non_negative_int(
+            "RAG_CONVERSATION_MEMORY_TTL_SECONDS",
+            self.conversation_memory_ttl_seconds,
+        )
+        conversation_memory_provider = self.conversation_memory_provider.strip().lower()
+        if conversation_memory_provider not in _CONVERSATION_MEMORY_PROVIDERS:
+            raise ValueError(
+                "RAG_CONVERSATION_MEMORY_PROVIDER must be one of: "
+                + ", ".join(sorted(_CONVERSATION_MEMORY_PROVIDERS))
+            )
+        object.__setattr__(
+            self,
+            "conversation_memory_provider",
+            conversation_memory_provider,
+        )
+        redis_url = self.redis_url.strip() if self.redis_url else None
+        object.__setattr__(self, "redis_url", redis_url)
+        if conversation_memory_provider == "redis" and not redis_url:
+            raise ValueError(
+                "RAG_REDIS_URL is required when RAG_CONVERSATION_MEMORY_PROVIDER=redis"
+            )
 
         ops_store_provider = self.ops_store_provider.strip().lower()
         if ops_store_provider not in _OPS_STORE_PROVIDERS:
@@ -779,6 +819,27 @@ class Settings:
                 128,
             ),
             "query_logging_enabled": _env_bool("RAG_QUERY_LOGGING_ENABLED", True),
+            "conversation_memory_provider": os.getenv(
+                "RAG_CONVERSATION_MEMORY_PROVIDER",
+                "memory",
+            ),
+            "conversation_memory_max_turns": _env_int(
+                "RAG_CONVERSATION_MEMORY_MAX_TURNS",
+                12,
+            ),
+            "conversation_memory_history_limit": _env_int(
+                "RAG_CONVERSATION_MEMORY_HISTORY_LIMIT",
+                5,
+            ),
+            "conversation_memory_ttl_seconds": _env_int(
+                "RAG_CONVERSATION_MEMORY_TTL_SECONDS",
+                7200,
+            ),
+            "conversation_coreference_enabled": _env_bool(
+                "RAG_CONVERSATION_COREFERENCE_ENABLED",
+                True,
+            ),
+            "redis_url": os.getenv("RAG_REDIS_URL") or os.getenv("REDIS_URL") or None,
             "api_admin_token": os.getenv("RAG_API_ADMIN_TOKEN") or None,
             "api_cors_origins": _env_list("RAG_API_CORS_ORIGINS", ("*",)),
             "ops_store_provider": os.getenv("RAG_OPS_STORE_PROVIDER", "postgresql"),

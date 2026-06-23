@@ -1,5 +1,10 @@
 {
   "query_logging_enabled": true,
+  "conversation_memory_provider": "${RAG_CONVERSATION_MEMORY_PROVIDER:-memory}",
+  "conversation_memory_max_turns": "${RAG_CONVERSATION_MEMORY_MAX_TURNS:-12}",
+  "conversation_memory_history_limit": "${RAG_CONVERSATION_MEMORY_HISTORY_LIMIT:-5}",
+  "conversation_memory_ttl_seconds": "${RAG_CONVERSATION_MEMORY_TTL_SECONDS:-7200}",
+  "conversation_coreference_enabled": "${RAG_CONVERSATION_COREFERENCE_ENABLED:-true}",
   "api_admin_token": "${RAG_API_ADMIN_TOKEN:-}",
   "api_cors_origins": ["*"]
 }

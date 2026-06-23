@@ -16,6 +16,7 @@ from rag_app.core.config import Settings
 from rag_app.retrieval.dialogue import (
     ConversationMemory,
     ConversationTurn,
+    create_conversation_memory,
     rewrite_query_with_context,
     summarize_answer,
 )
@@ -60,7 +61,7 @@ class OnlineQueryProcessor:
         self.vector_store = vector_store or create_vector_store(settings)
         self.reranker = reranker or create_reranker(settings)
         self.order_status_tool = order_status_tool or create_order_status_tool(settings)
-        self.conversation_memory = conversation_memory or ConversationMemory()
+        self.conversation_memory = conversation_memory or create_conversation_memory(settings)
         self.query_log_store = query_log_store or create_query_log_store(settings)
         self._query_embedding_cache: OrderedDict[str, list[float]] = OrderedDict()
 
@@ -87,10 +88,14 @@ class OnlineQueryProcessor:
         # 2. 会话上下文改写：处理“这个怎么弄”“那下一步呢”这类追问。
         context_start = time.perf_counter()
         normalized_query = _normalize_query(original_query) #清洗，去掉多余空格之类的，大小写归一化
-        history = self.conversation_memory.get_recent_turns(session_id=session_id, limit=5) #获取session中最近的5轮对话
+        history = self.conversation_memory.get_recent_turns(
+            session_id=session_id,
+            limit=self.settings.conversation_memory_history_limit,
+        ) #获取session中最近的多轮对话
         contextual_query, is_follow_up, context_terms = rewrite_query_with_context(
             normalized_query,
             history,
+            coreference_enabled=self.settings.conversation_coreference_enabled,
         )#改写追问，contextual_query：改写后的完整问题；is_follow_up：表示当前问题是不是追问；context_terms：从历史上下文中提取的关键词
         context_latency_ms = (time.perf_counter() - context_start) * 1000
 
@@ -231,6 +236,7 @@ class OnlineQueryProcessor:
             sources=sources,
             user_context=user_context,
             tool_calls=tool_calls,
+            conversation_history=history,
         )
         generation_start = time.perf_counter()
         try:
@@ -318,6 +324,7 @@ class OnlineQueryProcessor:
             permission_tags=user_context.permission_tags,
             authorized_source_count=len(sources),
             tool_calls=tool_calls,
+            conversation_history_turn_count=len(history),
         )
         rag_answer = RAGAnswer(
             question=original_query,
@@ -429,6 +436,10 @@ class OnlineQueryProcessor:
         )
         vector_search_latency_ms = (time.perf_counter() - vector_search_start) * 1000
         retrieval_latency_ms = (time.perf_counter() - retrieval_start) * 1000
+        conversation_history = self.conversation_memory.get_recent_turns(
+            session_id=session_id,
+            limit=self.settings.conversation_memory_history_limit,
+        )
 
         augmented_context = build_augmented_context(
             request_id=request_id,
@@ -446,6 +457,7 @@ class OnlineQueryProcessor:
             sources=sources,
             user_context=user_context,
             tool_calls=tool_calls,
+            conversation_history=conversation_history,
         )
         generation_start = time.perf_counter()
         degradation_reason: str | None = None
@@ -530,6 +542,7 @@ class OnlineQueryProcessor:
             permission_tags=user_context.permission_tags,
             authorized_source_count=len(sources),
             tool_calls=tool_calls,
+            conversation_history_turn_count=len(conversation_history),
         )
         rag_answer = RAGAnswer(
             question=original_query,
@@ -612,6 +625,7 @@ def build_augmented_context(
     sources: list[RetrievalResult],
     user_context: UserContext | None = None,
     tool_calls: list | None = None,
+    conversation_history: list[ConversationTurn] | None = None,
 ) -> str:
     """把用户原始问题和召回文档拼成大模型输入上下文。"""
 
@@ -639,9 +653,32 @@ def build_augmented_context(
         if semantic_expansions
         else "无",
         intent_label=intent_label,
+        conversation_history_block=_build_conversation_history_block(
+            conversation_history or []
+        ),
         tool_calls_block=_build_tool_calls_block(tool_calls or []),
         sources_block=_build_sources_block(sources),
     ).strip()
+
+
+def _build_conversation_history_block(history: list[ConversationTurn]) -> str:
+    if not history:
+        return "无"
+    blocks: list[str] = []
+    for index, turn in enumerate(history, start=1):
+        titles = "、".join(turn.retrieved_titles) if turn.retrieved_titles else "无"
+        blocks.append(
+            "\n".join(
+                [
+                    f"[{index}] 用户：{turn.question}",
+                    f"    改写查询：{turn.rewritten_query or '无'}",
+                    f"    意图：{turn.intent_label or 'unknown'}",
+                    f"    召回主题：{titles}",
+                    f"    回答摘要：{turn.answer_summary or '无'}",
+                ]
+            )
+        )
+    return "\n".join(blocks)
 
 
 def _build_tool_calls_block(tool_calls: list) -> str:
