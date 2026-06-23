@@ -8,7 +8,7 @@
 - `config/model.json`：向量模型、大模型、base URL、embedding 维度和批大小。
 - `config/retrieval.json`：召回数量、检索模式、候选数量、语义/BM25 权重、阈值、重排策略。
 - `config/knowledge.json`：知识审核、上传目录、构建目录、租户和权限标签。
-- `config/api.json`：查询日志、管理 token、CORS。
+- `config/api.json`：查询日志、会话短期记忆、管理 token、CORS。
 - `config/evaluation.json`：手动评测参数记录，不参与在线运行。
 
 ## 生效顺序
@@ -37,6 +37,12 @@ API 每次处理请求前都会重新读取配置，并把配置指纹放进在�
 - `rerank_trigger`
 - `rerank_candidate_k`
 - `query_embedding_cache_size`
+- `conversation_memory_provider`
+- `conversation_memory_max_turns`
+- `conversation_memory_history_limit`
+- `conversation_memory_ttl_seconds`
+- `conversation_coreference_enabled`
+- `redis_url`
 - `embedding_timeout_seconds`
 - `embedding_max_retries`
 - `openai_max_tokens`

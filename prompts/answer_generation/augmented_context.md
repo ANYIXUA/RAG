@@ -14,6 +14,9 @@
 语义扩展：{semantic_expansions}
 识别意图：{intent_label}
 
+会话历史摘要：
+{conversation_history_block}
+
 工具调用结果：
 {tool_calls_block}
 

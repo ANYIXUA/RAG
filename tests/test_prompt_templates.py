@@ -68,7 +68,9 @@ class PromptTemplateFilesTest(unittest.TestCase):
 
         self.assertIn("装维业务知识问答助手", system_prompt)
         self.assertEqual(
-            "用户原始问题：\n光猫 LOS 红灯怎么处理？\n\n增强上下文：\n检索上下文",
+            "---\n# 待处理任务\n\n【用户原始问题】\n"
+            "光猫 LOS 红灯怎么处理？\n\n【增强上下文】\n"
+            '"""\n检索上下文\n"""',
             user_prompt,
         )
 

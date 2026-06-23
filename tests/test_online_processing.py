@@ -236,6 +236,10 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertIn("光猫 LOS 红灯怎么处理", second.trace.contextual_query)
             self.assertIn("会话ID：u-1", second.trace.augmented_context)
             self.assertIn("是否跟进问答：是", second.trace.augmented_context)
+            self.assertIn("会话历史摘要", second.trace.augmented_context)
+            self.assertIn("用户：光猫红灯咋办", second.trace.augmented_context)
+            self.assertIn("回答摘要：", second.trace.augmented_context)
+            self.assertGreaterEqual(second.trace.conversation_history_turn_count, 1)
 
     def test_auto_rerank_skips_low_risk_query(self) -> None:
         with TemporaryDirectory() as temp_dir:

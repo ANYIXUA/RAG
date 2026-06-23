@@ -90,6 +90,82 @@ class SettingsConfigTest(unittest.TestCase):
                 "postgresql://rag:pwd@localhost:15432/rag",
             )
 
+    def test_config_file_reads_conversation_memory_settings(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            config_dir = base_dir / "config"
+            config_dir.mkdir()
+            (config_dir / "api.json").write_text(
+                json.dumps(
+                    {
+                        "conversation_memory_provider": "${TEST_MEMORY_PROVIDER:-memory}",
+                        "conversation_memory_max_turns": "${TEST_MEMORY_MAX_TURNS:-12}",
+                        "conversation_memory_history_limit": "${TEST_MEMORY_HISTORY_LIMIT:-5}",
+                        "conversation_memory_ttl_seconds": "${TEST_MEMORY_TTL_SECONDS:-7200}",
+                        "conversation_coreference_enabled": "${TEST_COREFERENCE_ENABLED:-true}",
+                        "redis_url": "${TEST_REDIS_URL:-}",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with patch.dict(
+                os.environ,
+                {
+                    "RAG_CONFIG_DIR": str(config_dir),
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "TEST_MEMORY_PROVIDER": "redis",
+                    "TEST_MEMORY_MAX_TURNS": "21",
+                    "TEST_MEMORY_HISTORY_LIMIT": "7",
+                    "TEST_MEMORY_TTL_SECONDS": "1800",
+                    "TEST_COREFERENCE_ENABLED": "false",
+                    "TEST_REDIS_URL": "redis://localhost:6379/3",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=base_dir)
+
+        self.assertEqual(settings.conversation_memory_provider, "redis")
+        self.assertEqual(settings.conversation_memory_max_turns, 21)
+        self.assertEqual(settings.conversation_memory_history_limit, 7)
+        self.assertEqual(settings.conversation_memory_ttl_seconds, 1800)
+        self.assertFalse(settings.conversation_coreference_enabled)
+        self.assertEqual(settings.redis_url, "redis://localhost:6379/3")
+
+    def test_config_file_keeps_redis_url_env_fallback_when_not_overridden(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            config_dir = base_dir / "config"
+            config_dir.mkdir()
+            (config_dir / "api.json").write_text(
+                json.dumps(
+                    {
+                        "conversation_memory_provider": "${RAG_CONVERSATION_MEMORY_PROVIDER:-memory}",
+                        "conversation_memory_max_turns": "${RAG_CONVERSATION_MEMORY_MAX_TURNS:-12}",
+                        "conversation_memory_history_limit": "${RAG_CONVERSATION_MEMORY_HISTORY_LIMIT:-5}",
+                        "conversation_memory_ttl_seconds": "${RAG_CONVERSATION_MEMORY_TTL_SECONDS:-7200}",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with patch.dict(
+                os.environ,
+                {
+                    "RAG_CONFIG_DIR": str(config_dir),
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "RAG_CONVERSATION_MEMORY_PROVIDER": "redis",
+                    "REDIS_URL": "redis://localhost:6379/4",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=base_dir)
+
+        self.assertEqual(settings.conversation_memory_provider, "redis")
+        self.assertEqual(settings.redis_url, "redis://localhost:6379/4")
+
     def test_runtime_fingerprint_changes_when_config_changes(self) -> None:
         with TemporaryDirectory() as temp_dir:
             base_dir = Path(temp_dir)
@@ -203,6 +279,48 @@ class SettingsConfigTest(unittest.TestCase):
             self.assertEqual(settings.pdf_bordered_table_parser, "deepdoc")
             self.assertEqual(settings.pdf_borderless_table_parser, "mineru")
             self.assertEqual(settings.pdf_semistructured_table_parser, "rules_ml")
+
+    def test_from_env_reads_conversation_memory_settings(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            with patch.dict(
+                os.environ,
+                {
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "RAG_CONVERSATION_MEMORY_PROVIDER": "Redis",
+                    "RAG_REDIS_URL": "redis://localhost:6379/2",
+                    "RAG_CONVERSATION_MEMORY_MAX_TURNS": "20",
+                    "RAG_CONVERSATION_MEMORY_HISTORY_LIMIT": "6",
+                    "RAG_CONVERSATION_MEMORY_TTL_SECONDS": "900",
+                    "RAG_CONVERSATION_COREFERENCE_ENABLED": "false",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=Path(temp_dir))
+
+        self.assertEqual(settings.conversation_memory_provider, "redis")
+        self.assertEqual(settings.redis_url, "redis://localhost:6379/2")
+        self.assertEqual(settings.conversation_memory_max_turns, 20)
+        self.assertEqual(settings.conversation_memory_history_limit, 6)
+        self.assertEqual(settings.conversation_memory_ttl_seconds, 900)
+        self.assertFalse(settings.conversation_coreference_enabled)
+
+    def test_requires_redis_url_for_redis_conversation_memory(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            with patch.dict(
+                os.environ,
+                {
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "RAG_CONVERSATION_MEMORY_PROVIDER": "redis",
+                    "RAG_REDIS_URL": "",
+                },
+                clear=True,
+            ):
+                with self.assertRaisesRegex(ValueError, "RAG_REDIS_URL"):
+                    Settings.from_env(base_dir=Path(temp_dir))
 
     def test_rejects_invalid_complex_pdf_parser_provider(self) -> None:
         with TemporaryDirectory() as temp_dir:

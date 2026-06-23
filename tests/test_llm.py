@@ -66,7 +66,7 @@ class LLMTest(unittest.TestCase):
             )
 
         user_message = generator.client.chat.completions.last_kwargs["messages"][1]["content"]
-        sent_context = user_message.split("增强上下文：\n", 1)[1]
+        sent_context = user_message.split("【增强上下文】\n", 1)[1]
         self.assertLessEqual(len(sent_context), 130)
         self.assertIn("上下文已截断", sent_context)
         self.assertNotIn("TAIL_SHOULD_BE_REMOVED", sent_context)
