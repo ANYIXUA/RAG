@@ -5,7 +5,9 @@ from __future__ import annotations
 import json
 import re
 from dataclasses import asdict, dataclass
+from datetime import datetime, timezone
 from typing import Any
+from uuid import uuid4
 
 from rag_app.retrieval.query import normalize_query
 
@@ -16,6 +18,7 @@ SHORT_FOLLOW_UP_RE = re.compile(
     r"^(下一步|下步|怎么判断|如何判断|怎么确认|如何确认|要先看什么|先看什么|"
     r"还要看什么|需要派单吗|要派单吗|怎么处理|怎么办|咋办|为什么|原因呢|还有吗)"
 )
+SESSION_PART_RE = re.compile(r"[^a-zA-Z0-9_-]+")
 
 
 @dataclass(frozen=True)
@@ -112,6 +115,22 @@ def create_conversation_memory(settings: Any) -> ConversationMemory:
             ttl_seconds=int(getattr(settings, "conversation_memory_ttl_seconds", 7200)),
         )
     return ConversationMemory(max_turns_per_session=max_turns)
+
+
+def generate_session_id(
+    tenant_id: str | None = None,
+    source: str = "api",
+    now: datetime | None = None,
+    random_hex: str | None = None,
+) -> str:
+    """生成便于排查的会话 ID，时间段使用 YYYYMMDDHHMMSS。"""
+
+    actual_now = now or datetime.now(timezone.utc)
+    timestamp = actual_now.astimezone(timezone.utc).strftime("%Y%m%d%H%M%S")
+    tenant = _session_id_part(tenant_id or "default")
+    source_part = _session_id_part(source or "api")
+    suffix = (random_hex or uuid4().hex)[:8].lower()
+    return f"sess_{timestamp}_{tenant}_{source_part}_{suffix}"
 
 
 def rewrite_query_with_context(
@@ -225,6 +244,11 @@ def _turn_from_dict(payload: dict[str, Any]) -> ConversationTurn:
         ],
         answer_summary=str(payload.get("answer_summary") or ""),
     )
+
+
+def _session_id_part(value: str) -> str:
+    cleaned = SESSION_PART_RE.sub("-", value.strip()).strip("-_").lower()
+    return cleaned[:32] or "default"
 
 
 def _dedupe(items: list[str]) -> list[str]:

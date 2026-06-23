@@ -5,7 +5,7 @@
 ## 生产默认链路
 
 - 知识向量：PostgreSQL + pgvector，表 `rag_documents`、`rag_knowledge_chunks`。
-- 多轮短期记忆：Redis，默认保存最近会话摘要并按 TTL 过期。
+- 多轮短期记忆：Redis，默认保存最近会话摘要并按 TTL 过期；缺失 `session_id` 时自动生成 `sess_YYYYMMDDHHMMSS_<tenant>_<source>_<random>`。
 - 在线业务查询：PostgreSQL 业务表，当前工具为 `query_order_status`。
 - 运行日志/反馈/处理轨迹：PostgreSQL。
 - 查询和文档向量化：OpenAI 兼容向量化接口。

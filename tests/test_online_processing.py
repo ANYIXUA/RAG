@@ -1,5 +1,6 @@
 ﻿from pathlib import Path
 from tempfile import TemporaryDirectory
+import re
 import unittest
 from dataclasses import replace
 from unittest.mock import patch
@@ -65,7 +66,10 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertEqual(result.trace.retrieval_candidate_k, 20)
             self.assertTrue(result.trace.request_id)
             self.assertTrue(result.trace.created_at)
-            self.assertIsNone(result.trace.session_id)
+            self.assertRegex(
+                result.trace.session_id or "",
+                r"^sess_\d{14}_default_api_[0-9a-f]{8}$",
+            )
             self.assertFalse(result.trace.is_follow_up)
             self.assertEqual(result.trace.rerank_provider, "none")
             self.assertEqual(result.trace.rerank_model, "none")
@@ -92,7 +96,7 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertFalse(result.trace.query_embedding_cache_hit)
             self.assertTrue(repeat.trace.query_embedding_cache_hit)
             self.assertIn("请求ID：", result.trace.augmented_context)
-            self.assertIn("会话ID：无", result.trace.augmented_context)
+            self.assertIn(f"会话ID：{result.trace.session_id}", result.trace.augmented_context)
             self.assertIn("是否跟进问答：否", result.trace.augmented_context)
             self.assertIn("上下文关键术语：无", result.trace.augmented_context)
             self.assertIn("用户原始问题：光猫红灯怎么处理？", result.trace.augmented_context)
@@ -108,6 +112,32 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertIn("检索到的相关文档", result.trace.augmented_context)
             self.assertIn("光猫 LOS 红灯", result.trace.augmented_context)
             self.assertEqual(len(self.query_log_store.records), 2)
+
+    def test_online_processing_generates_datetime_session_id_when_missing(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            data_dir = base_dir / "data"
+            storage_dir = base_dir / "storage"
+            data_dir.mkdir()
+            (data_dir / "fault.md").write_text(
+                "# 故障案例\n\n## 光猫 LOS 红灯\n\n光猫 LOS 红灯通常表示光路异常。",
+                encoding="utf-8",
+            )
+            settings = _settings(base_dir, data_dir, storage_dir)
+            OfflineKnowledgeBuilder(settings).refresh(reset=True)
+
+            result = OnlineQueryProcessor(settings).process("光猫红灯怎么处理？", top_k=1)
+
+        assert result.trace is not None
+        self.assertRegex(
+            result.trace.session_id or "",
+            r"^sess_\d{14}_default_api_[0-9a-f]{8}$",
+        )
+        self.assertIn(f"会话ID：{result.trace.session_id}", result.trace.augmented_context)
+        self.assertEqual(
+            self.query_log_store.records[-1]["session_id"],
+            result.trace.session_id,
+        )
 
     def test_augmented_context_uses_external_prompt_templates(self) -> None:
         with TemporaryDirectory() as temp_dir:

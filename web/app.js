@@ -34,6 +34,8 @@ const els = {
 let lastAnswer = "";
 let lastRequestId = "";
 
+initializeSessionId();
+
 els.form.addEventListener("submit", async (event) => {
   event.preventDefault();
   await runQuery();
@@ -46,12 +48,13 @@ els.copyAnswerButton.addEventListener("click", copyAnswer);
 els.traceFetchButton.addEventListener("click", fetchOpsTrace);
 
 async function runQuery() {
+  const sessionId = ensureCurrentSessionId();
   const payload = {
     question: els.question.value.trim(),
     top_k: Number(els.topK.value || 3),
     tenant_id: emptyToNull(els.tenantId.value),
     permission_tags: splitTags(els.permissionTags.value),
-    session_id: emptyToNull(els.sessionId.value),
+    session_id: sessionId,
     user_id: emptyToNull(els.userId.value),
   };
 
@@ -430,6 +433,7 @@ function renderSources(sources) {
 function renderTrace(trace) {
   els.traceSummary.replaceChildren();
   const rows = [
+    ["session", trace.session_id],
     ["intent", trace.intent_label],
     ["retrieved", trace.retrieved_count],
     ["reranked", trace.reranked_count],
@@ -571,6 +575,30 @@ function splitTags(value) {
 function adminHeaders() {
   const token = els.adminToken.value.trim();
   return token ? { "X-API-Key": token } : {};
+}
+
+function initializeSessionId() {
+  if (!window.SessionId || !els.sessionId) {
+    return;
+  }
+  els.sessionId.value = window.SessionId.ensureSessionId({
+    currentValue: els.sessionId.value,
+    tenantId: els.tenantId.value || "default",
+    localStorage: window.localStorage,
+  });
+}
+
+function ensureCurrentSessionId() {
+  if (!window.SessionId || !els.sessionId) {
+    return emptyToNull(els.sessionId.value);
+  }
+  const sessionId = window.SessionId.ensureSessionId({
+    currentValue: els.sessionId.value,
+    tenantId: els.tenantId.value || "default",
+    localStorage: window.localStorage,
+  });
+  els.sessionId.value = sessionId;
+  return sessionId;
 }
 
 function listText(items) {

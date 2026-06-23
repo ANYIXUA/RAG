@@ -17,6 +17,7 @@ from rag_app.retrieval.dialogue import (
     ConversationMemory,
     ConversationTurn,
     create_conversation_memory,
+    generate_session_id,
     rewrite_query_with_context,
     summarize_answer,
 )
@@ -84,6 +85,10 @@ class OnlineQueryProcessor:
         if not original_query:
             raise ValueError("question must not be empty")
         user_context = user_context or UserContext()
+        session_id = (session_id or "").strip() or generate_session_id(
+            tenant_id=user_context.tenant_id or self.settings.default_tenant_id,
+            source="api",
+        )
 
         # 2. 会话上下文改写：处理“这个怎么弄”“那下一步呢”这类追问。
         context_start = time.perf_counter()

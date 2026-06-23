@@ -114,6 +114,20 @@ POST /query
 - 查询侧：把“这个怎么处理”“下一步呢”“它为什么会这样”这类跟进问句改写成带明确主题的检索查询。
 - 生成侧：把最近会话历史摘要放入增强上下文，让回答模型知道当前问题承接了哪一轮业务问题。
 
+如果请求没有传 `session_id`，后端会自动生成一个可排查的会话 ID；测试页也会在浏览器本地自动生成并复用。格式为：
+
+```text
+sess_YYYYMMDDHHMMSS_<tenant_id>_<source>_<random>
+```
+
+例如：
+
+```text
+sess_20260623231245_default_web_ab12cd34
+```
+
+其中时间段使用 UTC 的 `YYYYMMDDHHMMSS`，不包含冒号，方便 Redis key、query_logs 和 trace 联查。
+
 短期记忆默认使用 Redis，适合多 worker、多副本部署，也能在服务重启后保留 TTL 范围内的会话上下文。本机运行时默认连接 `redis://127.0.0.1:6379/0`；Docker Compose 中默认连接 `redis://redis:6379/0`：
 
 ```powershell
