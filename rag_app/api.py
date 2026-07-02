@@ -33,6 +33,9 @@ from rag_app.operations.ops import (
     create_query_log_store,
 )
 from rag_app.operations.feedback_memory import FeedbackMemoryService
+from rag_app.operations.dify_sync import (
+    create_dify_document_sync_service,
+)
 from rag_app.retrieval.answer_memory import (
     AnswerOverrideInput,
     AnswerOverridePatch,
@@ -113,6 +116,11 @@ class AnswerOverridePatchRequest(BaseModel):
     priority: int | None = Field(default=None)
     promote_to_long_term: bool | None = Field(default=None)
     updated_by: str | None = Field(default=None)
+
+
+class DifySyncRunRequest(BaseModel):
+    dataset_id: str | None = Field(default=None)
+    dry_run: bool = Field(default=False)
 
 
 app = FastAPI(title="Ops RAG", version=APP_VERSION)
@@ -737,6 +745,22 @@ def ops_summary(limit: int = 200) -> dict:
         "query_logs": query_store.summary(limit=limit),
         "feedback": feedback_store.summary(limit=limit),
     }
+
+
+@app.post("/ops/dify-sync/run", dependencies=[Depends(require_admin_token)])
+def run_dify_sync(request: DifySyncRunRequest) -> dict:
+    settings = Settings.from_env()
+    dataset_id = (request.dataset_id or settings.dify_dataset_id or "").strip()
+    if not dataset_id:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail={
+                "code": "DIFY_DATASET_REQUIRED",
+                "message": "Dify dataset_id is required",
+            },
+        )
+    service = create_dify_document_sync_service(settings)
+    return service.sync(dataset_id=dataset_id, dry_run=request.dry_run).to_dict()
 
 
 @app.get("/ops/trace/{request_id}", dependencies=[Depends(require_admin_token)])

@@ -59,6 +59,7 @@ _INT_CONFIG_FIELDS = {
     "redis_answer_override_timeout_ms",
     "feedback_hot_cache_ttl_seconds",
     "feedback_hot_cache_min_rating",
+    "dify_sync_timeout_seconds",
 }
 _OPTIONAL_INT_CONFIG_FIELDS = {"openai_max_tokens"}
 _OPTIONAL_FLOAT_CONFIG_FIELDS = {
@@ -442,6 +443,10 @@ class Settings:
     feedback_promotion_enabled: bool = True
     feedback_promotion_auto_build: bool = True
     feedback_promotion_auto_activate: bool = False
+    dify_api_base_url: str | None = None
+    dify_api_key: str | None = None
+    dify_dataset_id: str | None = None
+    dify_sync_timeout_seconds: int = 30
     api_admin_token: str | None = None
     api_cors_origins: tuple[str, ...] = ("*",)
     ops_store_provider: str = "postgresql"
@@ -683,6 +688,23 @@ class Settings:
         if self.api_admin_token is not None:
             admin_token = self.api_admin_token.strip()
             object.__setattr__(self, "api_admin_token", admin_token or None)
+        if self.dify_api_base_url is not None:
+            dify_api_base_url = self.dify_api_base_url.strip().rstrip("/")
+            object.__setattr__(
+                self,
+                "dify_api_base_url",
+                dify_api_base_url or None,
+            )
+        if self.dify_api_key is not None:
+            dify_api_key = self.dify_api_key.strip()
+            object.__setattr__(self, "dify_api_key", dify_api_key or None)
+        if self.dify_dataset_id is not None:
+            dify_dataset_id = self.dify_dataset_id.strip()
+            object.__setattr__(self, "dify_dataset_id", dify_dataset_id or None)
+        _require_positive_int(
+            "RAG_DIFY_SYNC_TIMEOUT_SECONDS",
+            self.dify_sync_timeout_seconds,
+        )
 
         if self.openai_base_url is not None:
             openai_base_url = self.openai_base_url.strip()
@@ -914,6 +936,13 @@ class Settings:
             "feedback_promotion_auto_activate": _env_bool(
                 "RAG_FEEDBACK_PROMOTION_AUTO_ACTIVATE",
                 False,
+            ),
+            "dify_api_base_url": os.getenv("RAG_DIFY_API_BASE_URL") or None,
+            "dify_api_key": os.getenv("RAG_DIFY_API_KEY") or None,
+            "dify_dataset_id": os.getenv("RAG_DIFY_DATASET_ID") or None,
+            "dify_sync_timeout_seconds": _env_int(
+                "RAG_DIFY_SYNC_TIMEOUT_SECONDS",
+                30,
             ),
             "api_admin_token": os.getenv("RAG_API_ADMIN_TOKEN") or None,
             "api_cors_origins": _env_list("RAG_API_CORS_ORIGINS", ("*",)),

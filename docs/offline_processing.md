@@ -246,6 +246,43 @@ $env:RAG_PDF_OCR_LANG="chi_sim+eng"
 python -m rag_app.cli offline-refresh --source data --json
 ```
 
+## 同步到 Dify 文档库
+
+Dify 文档库只承接离线解析后的知识资产，不替代当前在线召回链路。推荐顺序是先让 RAG 完成治理、解析、质量门禁、切片和 manifest 更新，再把通过门禁的文档同步到 Dify knowledge base。
+
+配置服务端环境变量：
+
+```powershell
+$env:RAG_DIFY_API_BASE_URL="https://<your-dify-host>/v1"
+$env:RAG_DIFY_API_KEY="<server-side-dify-api-key>"
+$env:RAG_DIFY_DATASET_ID="<dify-dataset-id>"
+```
+
+先做 dry-run，对账将要创建、更新、标记 stale 的文档：
+
+```powershell
+python -m rag_app.cli dify-sync --dry-run --json
+```
+
+确认结果后执行正式同步：
+
+```powershell
+python -m rag_app.cli dify-sync --json
+```
+
+API 方式也可以触发同步，管理接口需要 `RAG_API_ADMIN_TOKEN`：
+
+```powershell
+Invoke-RestMethod `
+  -Method Post `
+  -Uri "http://127.0.0.1:18080/ops/dify-sync/run" `
+  -Headers @{ "X-API-Key" = "<admin-token>" } `
+  -ContentType "application/json" `
+  -Body '{"dry_run":true}'
+```
+
+同步状态写入 `storage/<collection>_dify_sync_state.json`。同步失败不会影响 `/query` 在线问答；Dify 文档库中的 metadata 只用于资产管理和辅助过滤，最终权限仍由 RAG 的 `tenant_id`、`permission_tags` 过滤执行。
+
 ## 和在线问答的边界
 
 离线处理做这些事：

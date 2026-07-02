@@ -41,6 +41,9 @@ OPENAI_MAX_TOKENS=800
 OPENAI_EMBEDDING_MODEL=text-embedding-v4
 RAG_EMBEDDING_DIMENSION=1024
 RAG_EMBEDDING_BATCH_SIZE=10
+RAG_DIFY_API_BASE_URL=
+RAG_DIFY_API_KEY=
+RAG_DIFY_DATASET_ID=
 ```
 
 本机用 Docker Compose 起 PostgreSQL/pgvector 和 Redis：
@@ -63,6 +66,7 @@ docker compose up -d rag-api
 python -m rag_app.cli offline-refresh --source data --reset
 python -m rag_app.cli query "帮我查一下工单 WO202604290001 现在到哪了"
 python -m rag_app.cli ops-summary --limit 200
+python -m rag_app.cli dify-sync --dry-run --json
 python -m rag_app.cli evaluate-retrieval --dataset <生产评测集.jsonl> --top-k 3 --with-rerank-provider none
 ```
 
@@ -83,6 +87,7 @@ python -m rag_app.cli evaluate-retrieval --dataset <生产评测集.jsonl> --top
 - `GET /ops/query-logs`
 - `GET /ops/feedback`
 - `GET /ops/trace/{request_id}`
+- `POST /ops/dify-sync/run`
 - `POST /knowledge/uploads/text`
 - `POST /knowledge/build-jobs`
 - `GET /knowledge/build-jobs`

@@ -103,6 +103,51 @@ class ApiMemoryOverrideTest(unittest.TestCase):
         self.assertEqual(deleted.status_code, 200)
         self.assertTrue(deleted.json()["deleted"])
 
+    def test_dify_sync_endpoint_requires_admin_and_returns_sync_summary(self) -> None:
+        from rag_app.operations.dify_sync import DifySyncResult
+
+        class FakeDifySyncService:
+            def sync(self, dataset_id: str, dry_run: bool = False) -> DifySyncResult:
+                return DifySyncResult(
+                    dataset_id=dataset_id,
+                    dry_run=dry_run,
+                    created=1,
+                    updated=2,
+                    disabled=0,
+                    skipped=3,
+                    failed=0,
+                )
+
+        assert api is not None
+        env = {
+            "OPENAI_API_KEY": "test-key",
+            "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+            "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+            "RAG_API_ADMIN_TOKEN": "secret-token",
+            "RAG_DIFY_API_BASE_URL": "https://dify.example.com/v1",
+            "RAG_DIFY_API_KEY": "dify-secret",
+            "RAG_DIFY_DATASET_ID": "dataset-from-env",
+        }
+        with (
+            patch.dict(os.environ, env, clear=True),
+            patch("rag_app.api.create_dify_document_sync_service", return_value=FakeDifySyncService()),
+        ):
+            client = TestClient(api.app)
+            unauthorized = client.post("/ops/dify-sync/run", json={"dry_run": True})
+            authorized = client.post(
+                "/ops/dify-sync/run",
+                headers={"X-API-Key": "secret-token"},
+                json={"dry_run": True},
+            )
+
+        self.assertEqual(unauthorized.status_code, 401)
+        self.assertEqual(authorized.status_code, 200)
+        self.assertEqual(authorized.json()["dataset_id"], "dataset-from-env")
+        self.assertTrue(authorized.json()["dry_run"])
+        self.assertEqual(authorized.json()["created"], 1)
+        self.assertEqual(authorized.json()["updated"], 2)
+        self.assertEqual(authorized.json()["skipped"], 3)
+
 
 @unittest.skipIf(TestClient is None, "FastAPI API dependencies are not installed")
 @unittest.skipUnless(_TEST_POSTGRES_DSN, "PostgreSQL integration DSN is not configured")

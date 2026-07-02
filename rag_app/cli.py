@@ -23,6 +23,7 @@ from rag_app.operations.ops import (
     create_feedback_store,
     create_query_log_store,
 )
+from rag_app.operations.dify_sync import create_dify_document_sync_service
 from rag_app.rag import RAGPipeline
 from rag_app.version import get_build_info
 
@@ -173,6 +174,14 @@ def build_parser() -> argparse.ArgumentParser:
     feedback.add_argument("--expected-answer", default=None, help="期望答案")
     feedback.add_argument("--label", action="append", default=[], help="问题标签，可重复")
     feedback.add_argument("--json", action="store_true", help="输出 JSON 结果")
+
+    dify_sync = subparsers.add_parser(
+        "dify-sync",
+        help="把 RAG 离线解析清单中的文档同步到 Dify 文档库",
+    )
+    dify_sync.add_argument("--dataset-id", default=None, help="Dify knowledge base ID")
+    dify_sync.add_argument("--dry-run", action="store_true", help="只计算变更，不调用 Dify API")
+    dify_sync.add_argument("--json", action="store_true", help="输出 JSON 结果")
 
     ops_summary = subparsers.add_parser(
         "ops-summary",
@@ -456,6 +465,28 @@ def main(argv: list[str] | None = None) -> int:
                 print(f"评分：{record.rating}")
             if record.useful is not None:
                 print(f"是否有用：{'是' if record.useful else '否'}")
+        return 0
+
+    if args.command == "dify-sync":
+        settings = Settings.from_env()
+        dataset_id = (args.dataset_id or settings.dify_dataset_id or "").strip()
+        if not dataset_id:
+            parser.error("Dify dataset id is required via --dataset-id or RAG_DIFY_DATASET_ID")
+        service = create_dify_document_sync_service(settings)
+        result = service.sync(dataset_id=dataset_id, dry_run=args.dry_run)
+        payload = result.to_dict()
+        if args.json:
+            print(json.dumps(payload, ensure_ascii=False, indent=2))
+        else:
+            print(
+                "Dify 文档库同步完成："
+                f"created={result.created}, "
+                f"updated={result.updated}, "
+                f"disabled={result.disabled}, "
+                f"skipped={result.skipped}, "
+                f"failed={result.failed}, "
+                f"dry_run={result.dry_run}"
+            )
         return 0
 
     if args.command == "ops-summary":
