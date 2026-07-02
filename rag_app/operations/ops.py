@@ -37,6 +37,8 @@ class QueryLogRecord:
     generation_latency_ms: float
     sources: list[dict[str, Any]]
     tool_calls: list[dict[str, Any]]
+    tenant_id: str | None = None
+    permission_tags: list[str] | None = None
 
 
 @dataclass(frozen=True)
@@ -108,11 +110,11 @@ class PostgresQueryLogStore:
                         intent_confidence, is_follow_up, top_k, retrieved_count,
                         reranked_count, source_count, status, latency_ms,
                         retrieval_latency_ms, generation_latency_ms, sources_json,
-                        tool_calls_json
+                        tool_calls_json, tenant_id, permission_tags_json
                     ) VALUES (
                         %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
                         %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,
-                        %s
+                        %s, %s, %s
                     )
                     ON CONFLICT (request_id) DO UPDATE SET
                         created_at = EXCLUDED.created_at,
@@ -134,7 +136,9 @@ class PostgresQueryLogStore:
                         retrieval_latency_ms = EXCLUDED.retrieval_latency_ms,
                         generation_latency_ms = EXCLUDED.generation_latency_ms,
                         sources_json = EXCLUDED.sources_json,
-                        tool_calls_json = EXCLUDED.tool_calls_json
+                        tool_calls_json = EXCLUDED.tool_calls_json,
+                        tenant_id = EXCLUDED.tenant_id,
+                        permission_tags_json = EXCLUDED.permission_tags_json
                     """,
                     (
                         record.request_id,
@@ -158,6 +162,8 @@ class PostgresQueryLogStore:
                         record.generation_latency_ms,
                         jsonb(payload["sources"]),
                         jsonb(payload["tool_calls"]),
+                        record.tenant_id,
+                        jsonb(record.permission_tags or []),
                     ),
                 )
 
@@ -215,13 +221,23 @@ class PostgresQueryLogStore:
                         retrieval_latency_ms DOUBLE PRECISION NOT NULL,
                         generation_latency_ms DOUBLE PRECISION NOT NULL,
                         sources_json JSONB NOT NULL,
-                        tool_calls_json JSONB NOT NULL DEFAULT '[]'::JSONB
+                        tool_calls_json JSONB NOT NULL DEFAULT '[]'::JSONB,
+                        tenant_id TEXT,
+                        permission_tags_json JSONB NOT NULL DEFAULT '[]'::JSONB
                     )
                     """
                 )
                 cursor.execute(
                     "ALTER TABLE query_logs "
                     "ADD COLUMN IF NOT EXISTS tool_calls_json JSONB NOT NULL DEFAULT '[]'::JSONB"
+                )
+                cursor.execute(
+                    "ALTER TABLE query_logs "
+                    "ADD COLUMN IF NOT EXISTS tenant_id TEXT"
+                )
+                cursor.execute(
+                    "ALTER TABLE query_logs "
+                    "ADD COLUMN IF NOT EXISTS permission_tags_json JSONB NOT NULL DEFAULT '[]'::JSONB"
                 )
                 cursor.execute(
                     "CREATE INDEX IF NOT EXISTS idx_query_logs_created_at ON query_logs(created_at)"
@@ -366,7 +382,10 @@ def build_query_log_record(
         call.status in {"success", "not_found"}
         for call in trace.tool_calls
     )
-    status = "answered" if answer.sources or has_tool_answer else "no_context"
+    if trace.override_hit:
+        status = "override_answered"
+    else:
+        status = "answered" if answer.sources or has_tool_answer else "no_context"
     # 查询日志只保存来源快照和核心分数，避免把完整增强上下文重复写入运行库。
     return QueryLogRecord(
         request_id=request_id,
@@ -401,6 +420,8 @@ def build_query_log_record(
             for index, result in enumerate(answer.sources, start=1)
         ],
         tool_calls=[asdict(call) for call in trace.tool_calls],
+        tenant_id=trace.tenant_id,
+        permission_tags=list(trace.permission_tags),
     )
 
 
@@ -571,6 +592,8 @@ def _postgres_query_row_to_dict(row: dict[str, Any]) -> dict[str, Any]:
         "generation_latency_ms": row["generation_latency_ms"],
         "sources": _decode_json_value(row["sources_json"], default=[]),
         "tool_calls": _decode_json_value(row.get("tool_calls_json"), default=[]),
+        "tenant_id": row.get("tenant_id"),
+        "permission_tags": _decode_json_value(row.get("permission_tags_json"), default=[]),
     }
 
 

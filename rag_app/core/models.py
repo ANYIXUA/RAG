@@ -177,6 +177,11 @@ class OnlineProcessingTrace:
     authorized_source_count: int = 0
     tool_calls: list[ToolCallTrace] = field(default_factory=list)
     conversation_history_turn_count: int = 0
+    answer_source: str = "rag"
+    override_hit: bool = False
+    override_id: str | None = None
+    override_type: str | None = None
+    override_degradation_reason: str | None = None
 
 
 @dataclass(frozen=True)

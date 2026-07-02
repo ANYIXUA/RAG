@@ -10,6 +10,7 @@ from rag_app.core.config import Settings
 from rag_app.core.models import ToolCallTrace, UserContext
 from rag_app.indexing.offline import OfflineKnowledgeBuilder
 from rag_app.retrieval.online import OnlineQueryProcessor, build_augmented_context
+from rag_app.retrieval.answer_memory import AnswerOverrideInput, MemoryAnswerMemoryStore
 from tests.helpers import (
     DeterministicEmbedder,
     MemoryQueryLogStore,
@@ -123,7 +124,10 @@ class OnlineProcessingTest(unittest.TestCase):
                 "# 故障案例\n\n## 光猫 LOS 红灯\n\n光猫 LOS 红灯通常表示光路异常。",
                 encoding="utf-8",
             )
-            settings = _settings(base_dir, data_dir, storage_dir)
+            settings = replace(
+                _settings(base_dir, data_dir, storage_dir),
+                redis_answer_override_enabled=True,
+            )
             OfflineKnowledgeBuilder(settings).refresh(reset=True)
 
             result = OnlineQueryProcessor(settings).process("光猫红灯怎么处理？", top_k=1)
@@ -438,6 +442,75 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertIn("地址不存在", result.trace.augmented_context)
             self.assertNotIn("账号冻结", result.trace.augmented_context)
 
+    def test_manual_answer_override_returns_before_retrieval(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            data_dir = base_dir / "data"
+            storage_dir = base_dir / "storage"
+            data_dir.mkdir()
+            settings = replace(
+                _settings(base_dir, data_dir, storage_dir),
+                redis_answer_override_enabled=True,
+            )
+            answer_memory = MemoryAnswerMemoryStore()
+            answer_memory.upsert_override(
+                AnswerOverrideInput(
+                    question="系统是不是故障了？",
+                    answer="系统当前故障，请稍后再试。",
+                    tenant_id="tenant-a",
+                    permission_tags=("public",),
+                    category="incident",
+                    created_by="ops",
+                )
+            )
+
+            result = OnlineQueryProcessor(
+                settings,
+                embedder=_FailingEmbedder(),
+                vector_store=_FailingVectorStore(),
+                answer_memory=answer_memory,
+            ).process(
+                "系统是不是故障了？",
+                top_k=1,
+                user_context=UserContext(
+                    tenant_id="tenant-a",
+                    permission_tags=("public",),
+                ),
+            )
+
+        self.assertEqual(result.answer, "系统当前故障，请稍后再试。")
+        self.assertEqual(result.sources, [])
+        self.assertEqual(result.trace.answer_source, "redis_manual_override")
+        self.assertTrue(result.trace.override_hit)
+        self.assertEqual(result.trace.override_type, "manual")
+        self.assertEqual(self.query_log_store.records[-1]["status"], "override_answered")
+
+    def test_answer_override_failure_falls_back_to_rag(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            data_dir = base_dir / "data"
+            storage_dir = base_dir / "storage"
+            data_dir.mkdir()
+            (data_dir / "fault.md").write_text(
+                "# 故障案例\n\n## 光猫 LOS 红灯\n\n光猫 LOS 红灯需要检查尾纤。",
+                encoding="utf-8",
+            )
+            settings = replace(
+                _settings(base_dir, data_dir, storage_dir),
+                redis_answer_override_enabled=True,
+            )
+            OfflineKnowledgeBuilder(settings).refresh(reset=True)
+
+            result = OnlineQueryProcessor(
+                settings,
+                answer_memory=_FailingAnswerMemory(),
+            ).process("光猫红灯咋办", top_k=1)
+
+        self.assertIn("光猫 LOS 红灯", result.trace.augmented_context)
+        self.assertEqual(result.trace.answer_source, "rag")
+        self.assertFalse(result.trace.override_hit)
+        self.assertIn("override_lookup_failed", result.trace.override_degradation_reason)
+
     def test_stream_processing_emits_retrieval_deltas_and_complete_event(self) -> None:
         with TemporaryDirectory() as temp_dir:
             base_dir = Path(temp_dir)
@@ -542,6 +615,39 @@ class _FailingEmbedder:
     def embed(self, texts: list[str]) -> list[list[float]]:
         del texts
         raise RuntimeError("embedding timeout")
+
+
+class _FailingVectorStore:
+    def count(self) -> int:
+        raise AssertionError("override hit should not count vector store records")
+
+    def reload(self) -> None:
+        raise AssertionError("override hit should not reload vector store")
+
+    def clear(self) -> None:
+        raise AssertionError("override hit should not clear vector store")
+
+    def upsert(self, records) -> int:
+        del records
+        raise AssertionError("override hit should not upsert vector records")
+
+    def delete_by_document_ids(self, document_ids) -> int:
+        del document_ids
+        raise AssertionError("override hit should not delete vector records")
+
+    def search(self, *args, **kwargs):
+        del args, kwargs
+        raise AssertionError("override hit should not search vector store")
+
+    def search_by_error_code(self, *args, **kwargs):
+        del args, kwargs
+        raise AssertionError("override hit should not search vector store")
+
+
+class _FailingAnswerMemory:
+    def lookup(self, *args, **kwargs):
+        del args, kwargs
+        raise RuntimeError("redis timeout")
 
 
 class _StaticOrderStatusTool:

@@ -55,6 +55,10 @@ _INT_CONFIG_FIELDS = {
     "conversation_memory_max_turns",
     "conversation_memory_history_limit",
     "conversation_memory_ttl_seconds",
+    "redis_answer_override_ttl_seconds",
+    "redis_answer_override_timeout_ms",
+    "feedback_hot_cache_ttl_seconds",
+    "feedback_hot_cache_min_rating",
 }
 _OPTIONAL_INT_CONFIG_FIELDS = {"openai_max_tokens"}
 _OPTIONAL_FLOAT_CONFIG_FIELDS = {
@@ -75,6 +79,11 @@ _BOOL_CONFIG_FIELDS = {
     "parse_quality_gate_enabled",
     "order_status_tool_enabled",
     "conversation_coreference_enabled",
+    "redis_answer_override_enabled",
+    "feedback_hot_cache_enabled",
+    "feedback_promotion_enabled",
+    "feedback_promotion_auto_build",
+    "feedback_promotion_auto_activate",
 }
 _PATH_CONFIG_FIELDS = {
     "data_dir",
@@ -424,6 +433,15 @@ class Settings:
     conversation_memory_ttl_seconds: int = 7200
     conversation_coreference_enabled: bool = True
     redis_url: str | None = DEFAULT_REDIS_URL
+    redis_answer_override_enabled: bool = True
+    redis_answer_override_ttl_seconds: int = 3600
+    redis_answer_override_timeout_ms: int = 50
+    feedback_hot_cache_enabled: bool = True
+    feedback_hot_cache_ttl_seconds: int = 86400
+    feedback_hot_cache_min_rating: int = 4
+    feedback_promotion_enabled: bool = True
+    feedback_promotion_auto_build: bool = True
+    feedback_promotion_auto_activate: bool = False
     api_admin_token: str | None = None
     api_cors_origins: tuple[str, ...] = ("*",)
     ops_store_provider: str = "postgresql"
@@ -598,6 +616,22 @@ class Settings:
             raise ValueError(
                 "RAG_REDIS_URL is required when RAG_CONVERSATION_MEMORY_PROVIDER=redis"
             )
+        _require_non_negative_int(
+            "RAG_REDIS_ANSWER_OVERRIDE_TTL_SECONDS",
+            self.redis_answer_override_ttl_seconds,
+        )
+        _require_positive_int(
+            "RAG_REDIS_ANSWER_OVERRIDE_TIMEOUT_MS",
+            self.redis_answer_override_timeout_ms,
+        )
+        _require_non_negative_int(
+            "RAG_FEEDBACK_HOT_CACHE_TTL_SECONDS",
+            self.feedback_hot_cache_ttl_seconds,
+        )
+        _require_positive_int(
+            "RAG_FEEDBACK_HOT_CACHE_MIN_RATING",
+            self.feedback_hot_cache_min_rating,
+        )
 
         ops_store_provider = self.ops_store_provider.strip().lower()
         if ops_store_provider not in _OPS_STORE_PROVIDERS:
@@ -844,6 +878,42 @@ class Settings:
                 os.getenv("RAG_REDIS_URL")
                 or os.getenv("REDIS_URL")
                 or DEFAULT_REDIS_URL
+            ),
+            "redis_answer_override_enabled": _env_bool(
+                "RAG_REDIS_ANSWER_OVERRIDE_ENABLED",
+                True,
+            ),
+            "redis_answer_override_ttl_seconds": _env_int(
+                "RAG_REDIS_ANSWER_OVERRIDE_TTL_SECONDS",
+                3600,
+            ),
+            "redis_answer_override_timeout_ms": _env_int(
+                "RAG_REDIS_ANSWER_OVERRIDE_TIMEOUT_MS",
+                50,
+            ),
+            "feedback_hot_cache_enabled": _env_bool(
+                "RAG_FEEDBACK_HOT_CACHE_ENABLED",
+                True,
+            ),
+            "feedback_hot_cache_ttl_seconds": _env_int(
+                "RAG_FEEDBACK_HOT_CACHE_TTL_SECONDS",
+                86400,
+            ),
+            "feedback_hot_cache_min_rating": _env_int(
+                "RAG_FEEDBACK_HOT_CACHE_MIN_RATING",
+                4,
+            ),
+            "feedback_promotion_enabled": _env_bool(
+                "RAG_FEEDBACK_PROMOTION_ENABLED",
+                True,
+            ),
+            "feedback_promotion_auto_build": _env_bool(
+                "RAG_FEEDBACK_PROMOTION_AUTO_BUILD",
+                True,
+            ),
+            "feedback_promotion_auto_activate": _env_bool(
+                "RAG_FEEDBACK_PROMOTION_AUTO_ACTIVATE",
+                False,
             ),
             "api_admin_token": os.getenv("RAG_API_ADMIN_TOKEN") or None,
             "api_cors_origins": _env_list("RAG_API_CORS_ORIGINS", ("*",)),

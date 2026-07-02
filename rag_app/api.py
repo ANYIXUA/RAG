@@ -32,6 +32,12 @@ from rag_app.operations.ops import (
     create_feedback_store,
     create_query_log_store,
 )
+from rag_app.operations.feedback_memory import FeedbackMemoryService
+from rag_app.retrieval.answer_memory import (
+    AnswerOverrideInput,
+    AnswerOverridePatch,
+    create_answer_memory_store,
+)
 from rag_app.rag import RAGPipeline
 from rag_app.streaming import format_sse_event
 from rag_app.version import APP_VERSION, get_build_info
@@ -85,6 +91,30 @@ class FeedbackRequest(BaseModel):
     labels: list[str] = Field(default_factory=list)
 
 
+class AnswerOverrideCreateRequest(BaseModel):
+    question: str = Field(min_length=1)
+    answer: str = Field(min_length=1)
+    tenant_id: str = Field(min_length=1)
+    permission_tags: list[str] = Field(default_factory=lambda: ["public"])
+    category: str = Field(default="manual")
+    ttl_seconds: int | None = Field(default=None, ge=0)
+    created_by: str | None = Field(default=None)
+    enabled: bool = Field(default=True)
+    priority: int = Field(default=100)
+    promote_to_long_term: bool = Field(default=False)
+
+
+class AnswerOverridePatchRequest(BaseModel):
+    answer: str | None = Field(default=None)
+    permission_tags: list[str] | None = Field(default=None)
+    category: str | None = Field(default=None)
+    ttl_seconds: int | None = Field(default=None, ge=0)
+    enabled: bool | None = Field(default=None)
+    priority: int | None = Field(default=None)
+    promote_to_long_term: bool | None = Field(default=None)
+    updated_by: str | None = Field(default=None)
+
+
 app = FastAPI(title="Ops RAG", version=APP_VERSION)
 _PIPELINE: RAGPipeline | None = None
 _PIPELINE_KNOWLEDGE_KEY: str | None = None
@@ -120,6 +150,7 @@ def _get_pipeline() -> RAGPipeline:
         _PIPELINE = RAGPipeline(
             settings=knowledge_context.settings,
             vector_store=create_vector_store(knowledge_context.settings),
+            answer_memory=create_answer_memory_store(knowledge_context.settings),
         )
         _PIPELINE_KNOWLEDGE_KEY = pipeline_cache_key
     return _PIPELINE
@@ -190,6 +221,15 @@ def _settings_summary(settings: Settings) -> dict[str, Any]:
         "conversation_memory_history_limit": settings.conversation_memory_history_limit,
         "conversation_memory_ttl_seconds": settings.conversation_memory_ttl_seconds,
         "conversation_coreference_enabled": settings.conversation_coreference_enabled,
+        "redis_answer_override_enabled": settings.redis_answer_override_enabled,
+        "redis_answer_override_ttl_seconds": settings.redis_answer_override_ttl_seconds,
+        "redis_answer_override_timeout_ms": settings.redis_answer_override_timeout_ms,
+        "feedback_hot_cache_enabled": settings.feedback_hot_cache_enabled,
+        "feedback_hot_cache_ttl_seconds": settings.feedback_hot_cache_ttl_seconds,
+        "feedback_hot_cache_min_rating": settings.feedback_hot_cache_min_rating,
+        "feedback_promotion_enabled": settings.feedback_promotion_enabled,
+        "feedback_promotion_auto_build": settings.feedback_promotion_auto_build,
+        "feedback_promotion_auto_activate": settings.feedback_promotion_auto_activate,
         "redis_configured": (
             settings.conversation_memory_provider == "redis"
             and settings.redis_url is not None
@@ -521,6 +561,80 @@ def _run_build_job_background(settings: Settings, job_id: str) -> None:
     _invalidate_pipeline_cache()
 
 
+@app.post("/memory/overrides", dependencies=[Depends(require_admin_token)])
+def create_memory_override(request: AnswerOverrideCreateRequest) -> dict:
+    settings = Settings.from_env()
+    store = create_answer_memory_store(settings)
+    record = store.upsert_override(
+        AnswerOverrideInput(
+            question=request.question,
+            answer=request.answer,
+            tenant_id=request.tenant_id,
+            permission_tags=tuple(request.permission_tags or ["public"]),
+            category=request.category,
+            ttl_seconds=(
+                request.ttl_seconds
+                if request.ttl_seconds is not None
+                else settings.redis_answer_override_ttl_seconds
+            ),
+            created_by=request.created_by,
+            enabled=request.enabled,
+            priority=request.priority,
+            promote_to_long_term=request.promote_to_long_term,
+        )
+    )
+    return asdict(record)
+
+
+@app.get("/memory/overrides", dependencies=[Depends(require_admin_token)])
+def list_memory_overrides(
+    tenant_id: str | None = None,
+    enabled: bool | None = None,
+) -> dict:
+    settings = Settings.from_env()
+    store = create_answer_memory_store(settings)
+    return {
+        "items": [
+            asdict(item)
+            for item in store.list_overrides(tenant_id=tenant_id, enabled=enabled)
+        ]
+    }
+
+
+@app.patch("/memory/overrides/{override_id}", dependencies=[Depends(require_admin_token)])
+def patch_memory_override(
+    override_id: str,
+    request: AnswerOverridePatchRequest,
+) -> dict:
+    settings = Settings.from_env()
+    store = create_answer_memory_store(settings)
+    record = store.patch_override(
+        override_id,
+        AnswerOverridePatch(
+            answer=request.answer,
+            permission_tags=(
+                tuple(request.permission_tags)
+                if request.permission_tags is not None
+                else None
+            ),
+            category=request.category,
+            ttl_seconds=request.ttl_seconds,
+            enabled=request.enabled,
+            priority=request.priority,
+            promote_to_long_term=request.promote_to_long_term,
+            updated_by=request.updated_by,
+        ),
+    )
+    return asdict(record)
+
+
+@app.delete("/memory/overrides/{override_id}", dependencies=[Depends(require_admin_token)])
+def delete_memory_override(override_id: str) -> dict:
+    settings = Settings.from_env()
+    store = create_answer_memory_store(settings)
+    return {"override_id": override_id, "deleted": store.delete_override(override_id)}
+
+
 @app.post("/query")
 def query(request: QueryRequest) -> dict:
     pipeline = _get_pipeline()
@@ -571,6 +685,7 @@ def query_stream(request: QueryRequest) -> StreamingResponse:
 def feedback(request: FeedbackRequest) -> dict:
     settings = Settings.from_env()
     store = create_feedback_store(settings)
+    query_store = create_query_log_store(settings)
     record = build_feedback_record(
         request_id=request.request_id,
         session_id=request.session_id,
@@ -582,7 +697,21 @@ def feedback(request: FeedbackRequest) -> dict:
         labels=request.labels,
     )
     store.append(record)
-    return asdict(record)
+    payload = asdict(record)
+    try:
+        memory = FeedbackMemoryService(
+            settings=settings,
+            answer_memory=create_answer_memory_store(settings),
+            query_log_store=query_store,
+        ).handle_feedback(record)
+        payload["memory"] = asdict(memory)
+    except Exception as exc:
+        payload["memory"] = {
+            "hot_cache_status": "failed",
+            "promotion_status": "failed",
+            "error": str(exc),
+        }
+    return payload
 
 
 @app.get("/ops/query-logs", dependencies=[Depends(require_admin_token)])

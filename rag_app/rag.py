@@ -12,6 +12,7 @@ from rag_app.retrieval.llm import AnswerGenerator, create_answer_generator
 from rag_app.core.models import RAGAnswer, UserContext
 from rag_app.retrieval.online import OnlineQueryProcessor
 from rag_app.indexing.vector_store import VectorStore, create_vector_store
+from rag_app.retrieval.answer_memory import AnswerMemoryStore
 
 
 class RAGPipeline:
@@ -24,6 +25,7 @@ class RAGPipeline:
         answer_generator: AnswerGenerator | None = None,
         vector_store: VectorStore | None = None,
         online_processor: OnlineQueryProcessor | None = None,
+        answer_memory: AnswerMemoryStore | None = None,
     ) -> None:
         self.settings = settings
         self.embedder = embedder or create_embedder(settings)
@@ -34,6 +36,7 @@ class RAGPipeline:
             embedder=self.embedder,
             answer_generator=self.answer_generator,
             vector_store=self.vector_store,
+            answer_memory=answer_memory,
         )
 
     @classmethod

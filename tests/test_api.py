@@ -23,6 +23,88 @@ from rag_app.indexing.offline import OfflineKnowledgeBuilder
 
 
 @unittest.skipIf(TestClient is None, "FastAPI API dependencies are not installed")
+class ApiMemoryOverrideTest(unittest.TestCase):
+    def setUp(self) -> None:
+        assert api is not None
+        api._PIPELINE = None
+        api._PIPELINE_KNOWLEDGE_KEY = None
+
+    def tearDown(self) -> None:
+        assert api is not None
+        api._PIPELINE = None
+        api._PIPELINE_KNOWLEDGE_KEY = None
+
+    def test_memory_override_management_endpoints(self) -> None:
+        from rag_app.retrieval.answer_memory import MemoryAnswerMemoryStore
+
+        assert api is not None
+        store = MemoryAnswerMemoryStore()
+        env = {
+            "OPENAI_API_KEY": "test-key",
+            "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+            "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+            "RAG_API_ADMIN_TOKEN": "secret-token",
+            "RAG_REDIS_ANSWER_OVERRIDE_ENABLED": "true",
+        }
+        with (
+            patch.dict(os.environ, env, clear=True),
+            patch("rag_app.api.create_answer_memory_store", return_value=store),
+        ):
+            client = TestClient(api.app)
+            unauthorized = client.post(
+                "/memory/overrides",
+                json={
+                    "question": "系统是不是故障了？",
+                    "answer": "系统当前故障，请稍后再试。",
+                    "tenant_id": "tenant-a",
+                    "permission_tags": ["public"],
+                    "category": "incident",
+                    "promote_to_long_term": True,
+                },
+            )
+            created = client.post(
+                "/memory/overrides",
+                headers={"X-API-Key": "secret-token"},
+                json={
+                    "question": "系统是不是故障了？",
+                    "answer": "系统当前故障，请稍后再试。",
+                    "tenant_id": "tenant-a",
+                    "permission_tags": ["public"],
+                    "category": "incident",
+                    "promote_to_long_term": True,
+                    "ttl_seconds": 1800,
+                    "created_by": "ops",
+                },
+            )
+            override_id = created.json()["override_id"]
+            listed = client.get(
+                "/memory/overrides?tenant_id=tenant-a",
+                headers={"X-API-Key": "secret-token"},
+            )
+            patched = client.patch(
+                f"/memory/overrides/{override_id}",
+                headers={"X-API-Key": "secret-token"},
+                json={"enabled": False},
+            )
+            deleted = client.delete(
+                f"/memory/overrides/{override_id}",
+                headers={"X-API-Key": "secret-token"},
+            )
+
+        self.assertEqual(unauthorized.status_code, 401)
+        self.assertEqual(created.status_code, 200)
+        self.assertEqual(created.json()["answer"], "系统当前故障，请稍后再试。")
+        self.assertEqual(created.json()["category"], "incident")
+        self.assertFalse(created.json()["promote_to_long_term"])
+        self.assertEqual(listed.status_code, 200)
+        self.assertEqual(len(listed.json()["items"]), 1)
+        self.assertEqual(patched.status_code, 200)
+        self.assertFalse(patched.json()["enabled"])
+        self.assertEqual(deleted.status_code, 200)
+        self.assertTrue(deleted.json()["deleted"])
+
+
+@unittest.skipIf(TestClient is None, "FastAPI API dependencies are not installed")
 @unittest.skipUnless(_TEST_POSTGRES_DSN, "PostgreSQL integration DSN is not configured")
 class ApiTest(unittest.TestCase):
     def setUp(self) -> None:

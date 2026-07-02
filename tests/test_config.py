@@ -306,6 +306,90 @@ class SettingsConfigTest(unittest.TestCase):
         self.assertEqual(settings.conversation_memory_ttl_seconds, 900)
         self.assertFalse(settings.conversation_coreference_enabled)
 
+    def test_from_env_reads_answer_memory_settings(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            with patch.dict(
+                os.environ,
+                {
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "RAG_REDIS_ANSWER_OVERRIDE_ENABLED": "false",
+                    "RAG_REDIS_ANSWER_OVERRIDE_TTL_SECONDS": "120",
+                    "RAG_REDIS_ANSWER_OVERRIDE_TIMEOUT_MS": "25",
+                    "RAG_FEEDBACK_HOT_CACHE_ENABLED": "false",
+                    "RAG_FEEDBACK_HOT_CACHE_TTL_SECONDS": "600",
+                    "RAG_FEEDBACK_HOT_CACHE_MIN_RATING": "5",
+                    "RAG_FEEDBACK_PROMOTION_ENABLED": "false",
+                    "RAG_FEEDBACK_PROMOTION_AUTO_BUILD": "false",
+                    "RAG_FEEDBACK_PROMOTION_AUTO_ACTIVATE": "true",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=Path(temp_dir))
+
+        self.assertFalse(settings.redis_answer_override_enabled)
+        self.assertEqual(settings.redis_answer_override_ttl_seconds, 120)
+        self.assertEqual(settings.redis_answer_override_timeout_ms, 25)
+        self.assertFalse(settings.feedback_hot_cache_enabled)
+        self.assertEqual(settings.feedback_hot_cache_ttl_seconds, 600)
+        self.assertEqual(settings.feedback_hot_cache_min_rating, 5)
+        self.assertFalse(settings.feedback_promotion_enabled)
+        self.assertFalse(settings.feedback_promotion_auto_build)
+        self.assertTrue(settings.feedback_promotion_auto_activate)
+
+    def test_config_file_reads_answer_memory_settings(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            base_dir = Path(temp_dir)
+            config_dir = base_dir / "config"
+            config_dir.mkdir()
+            (config_dir / "api.json").write_text(
+                json.dumps(
+                    {
+                        "redis_answer_override_enabled": "${TEST_OVERRIDE_ENABLED:-true}",
+                        "redis_answer_override_ttl_seconds": "${TEST_OVERRIDE_TTL:-3600}",
+                        "redis_answer_override_timeout_ms": "${TEST_OVERRIDE_TIMEOUT:-50}",
+                        "feedback_hot_cache_enabled": "${TEST_HOT_CACHE_ENABLED:-true}",
+                        "feedback_hot_cache_ttl_seconds": "${TEST_HOT_CACHE_TTL:-86400}",
+                        "feedback_hot_cache_min_rating": "${TEST_HOT_CACHE_MIN_RATING:-4}",
+                        "feedback_promotion_enabled": "${TEST_PROMOTION_ENABLED:-true}",
+                        "feedback_promotion_auto_build": "${TEST_PROMOTION_BUILD:-true}",
+                        "feedback_promotion_auto_activate": "${TEST_PROMOTION_ACTIVATE:-false}",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            with patch.dict(
+                os.environ,
+                {
+                    "RAG_CONFIG_DIR": str(config_dir),
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "TEST_OVERRIDE_ENABLED": "false",
+                    "TEST_OVERRIDE_TTL": "90",
+                    "TEST_OVERRIDE_TIMEOUT": "15",
+                    "TEST_HOT_CACHE_ENABLED": "false",
+                    "TEST_HOT_CACHE_TTL": "300",
+                    "TEST_HOT_CACHE_MIN_RATING": "5",
+                    "TEST_PROMOTION_ENABLED": "false",
+                    "TEST_PROMOTION_BUILD": "false",
+                    "TEST_PROMOTION_ACTIVATE": "true",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=base_dir)
+
+        self.assertFalse(settings.redis_answer_override_enabled)
+        self.assertEqual(settings.redis_answer_override_ttl_seconds, 90)
+        self.assertEqual(settings.redis_answer_override_timeout_ms, 15)
+        self.assertFalse(settings.feedback_hot_cache_enabled)
+        self.assertEqual(settings.feedback_hot_cache_ttl_seconds, 300)
+        self.assertEqual(settings.feedback_hot_cache_min_rating, 5)
+        self.assertFalse(settings.feedback_promotion_enabled)
+        self.assertFalse(settings.feedback_promotion_auto_build)
+        self.assertTrue(settings.feedback_promotion_auto_activate)
+
     def test_conversation_memory_defaults_to_redis(self) -> None:
         with TemporaryDirectory() as temp_dir:
             with patch.dict(

@@ -21,6 +21,7 @@ from rag_app.retrieval.dialogue import (
     rewrite_query_with_context,
     summarize_answer,
 )
+from rag_app.retrieval.answer_memory import AnswerMemoryStore
 from rag_app.indexing.embeddings import Embedder, create_embedder
 from rag_app.retrieval.llm import AnswerGenerator, create_answer_generator
 from rag_app.core.models import OnlineProcessingTrace, RAGAnswer, RetrievalResult, UserContext
@@ -55,6 +56,7 @@ class OnlineQueryProcessor:
         order_status_tool: OrderStatusTool | None = None,
         conversation_memory: ConversationMemory | None = None,
         query_log_store: QueryLogStore | None = None,
+        answer_memory: AnswerMemoryStore | None = None,
     ) -> None:
         self.settings = settings
         self.embedder = embedder or create_embedder(settings)
@@ -64,6 +66,7 @@ class OnlineQueryProcessor:
         self.order_status_tool = order_status_tool or create_order_status_tool(settings)
         self.conversation_memory = conversation_memory or create_conversation_memory(settings)
         self.query_log_store = query_log_store or create_query_log_store(settings)
+        self.answer_memory = answer_memory
         self._query_embedding_cache: OrderedDict[str, list[float]] = OrderedDict()
 
     @classmethod
@@ -89,6 +92,96 @@ class OnlineQueryProcessor:
             tenant_id=user_context.tenant_id or self.settings.default_tenant_id,
             source="api",
         )
+        override_degradation_reason: str | None = None
+        if self.answer_memory is not None and self.settings.redis_answer_override_enabled:
+            override_start = time.perf_counter()
+            try:
+                override_hit = self.answer_memory.lookup(
+                    original_query,
+                    tenant_id=user_context.tenant_id or self.settings.default_tenant_id,
+                    permission_tags=user_context.permission_tags
+                    or self.settings.default_permission_tags,
+                )
+            except Exception as exc:
+                override_hit = None
+                override_degradation_reason = f"override_lookup_failed: {exc}"
+            if override_hit is not None:
+                latency_ms = (time.perf_counter() - total_start) * 1000
+                trace = OnlineProcessingTrace(
+                    request_id=request_id,
+                    created_at=created_at,
+                    session_id=session_id,
+                    is_follow_up=False,
+                    original_query=original_query,
+                    normalized_query=_normalize_query(original_query),
+                    contextual_query=_normalize_query(original_query),
+                    context_terms=[],
+                    rewritten_query=_normalize_query(original_query),
+                    retrieval_query=_normalize_query(original_query),
+                    synonym_expansions=[],
+                    semantic_expansions=[],
+                    query_rewrite_rules=[],
+                    intent_label="answer_override",
+                    intent_confidence=1.0,
+                    intent_reason="redis_answer_override_hit",
+                    top_k=self.settings.top_k if top_k is None else top_k,
+                    min_similarity_score=self.settings.min_similarity_score,
+                    relative_score_threshold=self.settings.relative_score_threshold,
+                    retrieval_mode="answer_override",
+                    semantic_weight=self.settings.semantic_weight,
+                    bm25_weight=self.settings.bm25_weight,
+                    keyword_weight=self.settings.keyword_weight,
+                    retrieval_candidate_k=self.settings.retrieval_candidate_k,
+                    rerank_provider=getattr(self.reranker, "provider_name", "none"),
+                    rerank_model=getattr(self.reranker, "model_name", "none"),
+                    rerank_candidate_k=self.settings.rerank_candidate_k,
+                    reranked_count=0,
+                    query_embedding_dimensions=0,
+                    retrieved_count=0,
+                    latency_ms=round(latency_ms, 3),
+                    retrieval_latency_ms=0.0,
+                    generation_latency_ms=0.0,
+                    augmented_context="Redis answer override hit",
+                    context_latency_ms=round((time.perf_counter() - override_start) * 1000, 3),
+                    intent_latency_ms=0.0,
+                    rewrite_latency_ms=0.0,
+                    embedding_latency_ms=0.0,
+                    vector_search_latency_ms=0.0,
+                    rerank_latency_ms=0.0,
+                    rerank_applied=False,
+                    rerank_skip_reason="answer_override",
+                    degradation_reason=None,
+                    query_embedding_cache_hit=False,
+                    user_id=user_context.user_id,
+                    tenant_id=user_context.tenant_id or self.settings.default_tenant_id,
+                    permission_tags=user_context.permission_tags
+                    or self.settings.default_permission_tags,
+                    authorized_source_count=0,
+                    tool_calls=[],
+                    conversation_history_turn_count=0,
+                    answer_source=override_hit.answer_source,
+                    override_hit=True,
+                    override_id=override_hit.override_id,
+                    override_type=override_hit.source,
+                    override_degradation_reason=None,
+                )
+                rag_answer = RAGAnswer(
+                    question=original_query,
+                    answer=override_hit.answer,
+                    sources=[],
+                    trace=trace,
+                )
+                if self.settings.query_logging_enabled:
+                    self.query_log_store.append(
+                        build_query_log_record(
+                            request_id=request_id,
+                            answer=rag_answer,
+                            latency_ms=latency_ms,
+                            retrieval_latency_ms=0.0,
+                            generation_latency_ms=0.0,
+                        )
+                    )
+                return rag_answer
 
         # 2. 会话上下文改写：处理“这个怎么弄”“那下一步呢”这类追问。
         context_start = time.perf_counter()
@@ -146,6 +239,7 @@ class OnlineQueryProcessor:
                 context_latency_ms=context_latency_ms,
                 intent_latency_ms=intent_latency_ms,
                 rewrite_latency_ms=rewrite_latency_ms,
+                override_degradation_reason=override_degradation_reason,
             )
         #本次是否跳过重排序
         rerank_skip_reason = _precheck_rerank_skip_reason(
@@ -330,6 +424,7 @@ class OnlineQueryProcessor:
             authorized_source_count=len(sources),
             tool_calls=tool_calls,
             conversation_history_turn_count=len(history),
+            override_degradation_reason=override_degradation_reason,
         )
         rag_answer = RAGAnswer(
             question=original_query,
@@ -370,6 +465,7 @@ class OnlineQueryProcessor:
             order_status_tool=self.order_status_tool,
             conversation_memory=self.conversation_memory,
             query_log_store=self.query_log_store,
+            answer_memory=self.answer_memory,
         )
         worker._query_embedding_cache = self._query_embedding_cache
 
@@ -427,6 +523,7 @@ class OnlineQueryProcessor:
         context_latency_ms: float,
         intent_latency_ms: float,
         rewrite_latency_ms: float,
+        override_degradation_reason: str | None = None,
     ) -> RAGAnswer:
         """异常码意图走结构化精确匹配，避免语义召回误命中相近错误码。"""
 
@@ -548,6 +645,7 @@ class OnlineQueryProcessor:
             authorized_source_count=len(sources),
             tool_calls=tool_calls,
             conversation_history_turn_count=len(conversation_history),
+            override_degradation_reason=override_degradation_reason,
         )
         rag_answer = RAGAnswer(
             question=original_query,
