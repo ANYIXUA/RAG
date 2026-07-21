@@ -31,6 +31,45 @@ from tests.helpers import (
 
 @unittest.skipIf(TestClient is None, "FastAPI API dependencies are not installed")
 class ApiPublicContractTest(unittest.TestCase):
+    def test_ops_trace_fails_closed_when_admin_token_is_absent(self) -> None:
+        assert api is not None
+        with (
+            patch.dict(os.environ, {}, clear=False),
+            patch.object(
+                api,
+                "build_request_trace",
+                return_value={"found": False},
+            ) as build_trace,
+        ):
+            os.environ.pop("RAG_API_ADMIN_TOKEN", None)
+            response = TestClient(api.app).get("/ops/trace/req-public-1")
+
+        self.assertEqual(response.status_code, 503)
+        self.assertEqual(
+            response.json()["error"]["code"],
+            "ADMIN_TOKEN_NOT_CONFIGURED",
+        )
+        build_trace.assert_not_called()
+
+    def test_ops_trace_fails_closed_when_admin_token_is_empty(self) -> None:
+        assert api is not None
+        with (
+            patch.dict(os.environ, {"RAG_API_ADMIN_TOKEN": ""}),
+            patch.object(
+                api,
+                "build_request_trace",
+                return_value={"found": False},
+            ) as build_trace,
+        ):
+            response = TestClient(api.app).get("/ops/trace/req-public-1")
+
+        self.assertEqual(response.status_code, 503)
+        self.assertEqual(
+            response.json()["error"]["code"],
+            "ADMIN_TOKEN_NOT_CONFIGURED",
+        )
+        build_trace.assert_not_called()
+
     def test_query_projects_answer_to_strict_public_contract(self) -> None:
         assert api is not None
         answer = malicious_public_contract_answer()
@@ -284,6 +323,7 @@ class ApiTest(unittest.TestCase):
         with TemporaryDirectory() as temp_dir:
             _write_knowledge(temp_dir)
             env = _env(temp_dir)
+            env["RAG_API_ADMIN_TOKEN"] = "trace-test-token"
             with patch.dict(os.environ, env, clear=True):
                 OfflineKnowledgeBuilder.from_env(base_dir=Path(temp_dir)).refresh(
                     reset=True
@@ -299,7 +339,10 @@ class ApiTest(unittest.TestCase):
                         "useful": True,
                     },
                 )
-                trace = client.get(f"/ops/trace/{request_id}")
+                trace = client.get(
+                    f"/ops/trace/{request_id}",
+                    headers={"X-API-Key": "trace-test-token"},
+                )
 
             self.assertEqual(query.status_code, 200)
             self.assertEqual(query.json()["trace"]["request_id"], request_id)

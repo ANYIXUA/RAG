@@ -320,6 +320,33 @@ def require_admin_token(
         )
 
 
+def require_full_trace_admin_token(
+    authorization: str | None = Header(default=None),
+    x_api_key: str | None = Header(default=None),
+) -> None:
+    """完整 trace 包含私有审计数据，未配置服务端 Token 时必须拒绝访问。"""
+
+    settings = Settings.from_env()
+    expected = settings.api_admin_token
+    if expected is None:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail={
+                "code": "ADMIN_TOKEN_NOT_CONFIGURED",
+                "message": "完整 Trace 接口未配置管理 Token",
+            },
+        )
+    actual = x_api_key or _extract_bearer_token(authorization)
+    if actual != expected:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail={
+                "code": "UNAUTHORIZED",
+                "message": "管理接口需要有效的 Token",
+            },
+        )
+
+
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(
     request: Request,
@@ -740,7 +767,10 @@ def ops_summary(limit: int = 200) -> dict:
     }
 
 
-@app.get("/ops/trace/{request_id}", dependencies=[Depends(require_admin_token)])
+@app.get(
+    "/ops/trace/{request_id}",
+    dependencies=[Depends(require_full_trace_admin_token)],
+)
 def ops_trace(request_id: str) -> dict:
     settings = Settings.from_env()
     return build_request_trace(settings, request_id)

@@ -90,7 +90,7 @@ python -m rag_app.cli evaluate-retrieval --dataset <生产评测集.jsonl> --top
 - `POST /knowledge/versions/{version}/activate`
 - `POST /knowledge/rollback`
 
-管理接口建议配置 `RAG_API_ADMIN_TOKEN`，调用时通过 `X-API-Key` 或 `Authorization: Bearer ...` 传入。
+管理接口建议配置 `RAG_API_ADMIN_TOKEN`，调用时通过 `X-API-Key` 或 `Authorization: Bearer ...` 传入。`/ops/trace/{request_id}` 包含完整私有审计数据，必须配置该 Token；服务端未配置时固定返回 `503 ADMIN_TOKEN_NOT_CONFIGURED`。
 
 ## 查询测试页
 
