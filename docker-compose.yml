@@ -51,6 +51,7 @@ services:
       - ./storage:/app/storage
       - ./logs:/app/logs
       - ./config:/app/config
+      - rag-model-cache:/root/.cache/huggingface
     depends_on:
       postgres:
         condition: service_healthy
@@ -87,6 +88,7 @@ services:
       - ./storage:/app/storage
       - ./logs:/app/logs
       - ./config:/app/config
+      - rag-model-cache:/root/.cache/huggingface
     depends_on:
       postgres:
         condition: service_healthy
@@ -113,3 +115,4 @@ services:
 volumes:
   pg_data:
   redis_data:
+  rag-model-cache:

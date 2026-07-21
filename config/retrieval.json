@@ -6,7 +6,7 @@
   "bm25_weight": 0.3,
   "min_similarity_score": 0.05,
   "relative_score_threshold": 0.35,
-  "rerank_provider": "none",
+  "rerank_provider": "cross-encoder",
   "rerank_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
   "rerank_candidate_k": 20,
   "rerank_trigger": "always",

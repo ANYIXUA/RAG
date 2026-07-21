@@ -11,7 +11,7 @@ RUN python -m pip install --upgrade pip
 COPY pyproject.toml README.md ./
 COPY rag_app ./rag_app
 
-RUN python -m pip install --retries 10 --timeout 120 -e ".[commercial]"
+RUN python -m pip install --retries 10 --timeout 120 -e ".[commercial,rerank]"
 
 COPY data ./data
 COPY docs ./docs

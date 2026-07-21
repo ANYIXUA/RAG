@@ -1,5 +1,8 @@
 ﻿import unittest
 from pathlib import Path
+import sys
+import types
+from unittest.mock import patch
 
 from rag_app.core.models import Chunk, RetrievalResult
 from rag_app.retrieval.rerank import NoopReranker, create_reranker
@@ -40,6 +43,34 @@ class RerankTest(unittest.TestCase):
         reranker = create_reranker(settings)
         self.assertFalse(reranker.enabled)
         self.assertEqual(reranker.provider_name, "none")
+
+    def test_create_reranker_builds_cross_encoder_provider(self) -> None:
+        module = types.ModuleType("sentence_transformers")
+
+        class FakeCrossEncoder:
+            def __init__(self, model_name: str) -> None:
+                self.model_name = model_name
+
+            def predict(self, pairs):
+                return [0.5 for _ in pairs]
+
+        module.CrossEncoder = FakeCrossEncoder
+        settings = production_settings(
+            Path(".").resolve(),
+            data_dir=Path(".").resolve(),
+            storage_dir=Path(".").resolve(),
+            chunk_size=100,
+            chunk_overlap=10,
+            rerank_provider="cross-encoder",
+            rerank_model="test-cross-encoder",
+        )
+
+        with patch.dict(sys.modules, {"sentence_transformers": module}):
+            reranker = create_reranker(settings)
+
+        self.assertTrue(reranker.enabled)
+        self.assertEqual(reranker.provider_name, "cross-encoder")
+        self.assertEqual(reranker.model_name, "test-cross-encoder")
 
 
 if __name__ == "__main__":

@@ -63,6 +63,7 @@ class OnlineProcessingTest(unittest.TestCase):
             self.assertIsNotNone(result.trace)
             self.assertEqual(result.trace.top_k, 1)
             self.assertEqual(result.trace.retrieval_mode, "hybrid")
+            self.assertEqual(result.trace.vector_store_provider, "postgresql")
             self.assertEqual(result.trace.bm25_weight, 0.3)
             self.assertEqual(result.trace.retrieval_candidate_k, 20)
             self.assertTrue(result.trace.request_id)

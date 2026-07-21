@@ -161,6 +161,7 @@ class OnlineProcessingTrace:
     retrieval_latency_ms: float
     generation_latency_ms: float
     augmented_context: str
+    vector_store_provider: str = "unknown"
     context_latency_ms: float = 0.0
     intent_latency_ms: float = 0.0
     rewrite_latency_ms: float = 0.0
