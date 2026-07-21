@@ -20,6 +20,109 @@ except ModuleNotFoundError:  # pragma: no cover - API 依赖是可选安装项
     api = None
 
 from rag_app.indexing.offline import OfflineKnowledgeBuilder
+from tests.helpers import (
+    PUBLIC_CONTRACT_CANARIES,
+    PUBLIC_SOURCE_FIELDS,
+    PUBLIC_SOURCE_METADATA_FIELDS,
+    PUBLIC_TRACE_FIELDS,
+    malicious_public_contract_answer,
+)
+
+
+@unittest.skipIf(TestClient is None, "FastAPI API dependencies are not installed")
+class ApiPublicContractTest(unittest.TestCase):
+    def test_query_projects_answer_to_strict_public_contract(self) -> None:
+        assert api is not None
+        answer = malicious_public_contract_answer()
+        pipeline = unittest.mock.Mock()
+        pipeline.query.return_value = answer
+
+        with patch.object(api, "_get_pipeline", return_value=pipeline):
+            response = TestClient(api.app).post(
+                "/query",
+                json={
+                    "question": "公开问题",
+                    "user_id": "user-internal",
+                    "tenant_id": "tenant-internal",
+                    "permission_tags": ["ops-admin"],
+                },
+            )
+
+        self.assertEqual(response.status_code, 200)
+        payload = response.json()
+        self.assertEqual(
+            set(payload),
+            {"question", "answer", "sources", "request_id", "trace"},
+        )
+        self.assertEqual(payload["request_id"], "req-public-1")
+        self.assertEqual(set(payload["trace"]), PUBLIC_TRACE_FIELDS)
+        self.assertEqual(set(payload["sources"][0]), PUBLIC_SOURCE_FIELDS)
+        self.assertEqual(
+            set(payload["sources"][0]["chunk"]["metadata"]),
+            PUBLIC_SOURCE_METADATA_FIELDS,
+        )
+        self.assertEqual(payload["sources"][0]["retrieval_score"], 0.83)
+        self.assertEqual(payload["sources"][0]["rerank_score"], 0.97)
+        serialized = response.text
+        for canary in PUBLIC_CONTRACT_CANARIES:
+            self.assertNotIn(canary, serialized)
+
+    def test_query_internal_error_does_not_expose_exception_detail(self) -> None:
+        assert api is not None
+        pipeline = unittest.mock.Mock()
+        pipeline.query.side_effect = RuntimeError(PUBLIC_CONTRACT_CANARIES[2])
+
+        with patch.object(api, "_get_pipeline", return_value=pipeline):
+            response = TestClient(
+                api.app,
+                raise_server_exceptions=False,
+            ).post("/query", json={"question": "公开问题"})
+
+        self.assertEqual(response.status_code, 500)
+        self.assertEqual(response.json()["error"]["code"], "INTERNAL_ERROR")
+        self.assertEqual(response.json()["error"]["message"], "服务内部异常")
+        self.assertNotIn(PUBLIC_CONTRACT_CANARIES[2], response.text)
+
+    def test_query_config_error_does_not_expose_exception_detail(self) -> None:
+        assert api is not None
+        pipeline = unittest.mock.Mock()
+        pipeline.query.side_effect = ValueError(PUBLIC_CONTRACT_CANARIES[1])
+
+        with patch.object(api, "_get_pipeline", return_value=pipeline):
+            response = TestClient(
+                api.app,
+                raise_server_exceptions=False,
+            ).post("/query", json={"question": "公开问题"})
+
+        self.assertEqual(response.status_code, 400)
+        self.assertEqual(response.json()["error"]["code"], "CONFIG_ERROR")
+        self.assertEqual(response.json()["error"]["message"], "请求配置无效")
+        self.assertNotIn(PUBLIC_CONTRACT_CANARIES[1], response.text)
+
+    def test_ops_trace_remains_authenticated_private_audit(self) -> None:
+        assert api is not None
+        private_trace = {
+            "found": True,
+            "trace": {
+                "original_query": PUBLIC_CONTRACT_CANARIES[0],
+                "augmented_context": PUBLIC_CONTRACT_CANARIES[4],
+                "degradation_reason": PUBLIC_CONTRACT_CANARIES[5],
+            },
+        }
+        with (
+            patch.dict(os.environ, {"RAG_API_ADMIN_TOKEN": "admin-test-token"}),
+            patch.object(api, "build_request_trace", return_value=private_trace),
+        ):
+            client = TestClient(api.app)
+            unauthorized = client.get("/ops/trace/req-public-1")
+            authorized = client.get(
+                "/ops/trace/req-public-1",
+                headers={"X-API-Key": "admin-test-token"},
+            )
+
+        self.assertEqual(unauthorized.status_code, 401)
+        self.assertEqual(authorized.status_code, 200)
+        self.assertEqual(authorized.json(), private_trace)
 
 
 @unittest.skipIf(TestClient is None, "FastAPI API dependencies are not installed")

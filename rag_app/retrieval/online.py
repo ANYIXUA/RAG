@@ -32,6 +32,7 @@ from rag_app.operations.ops import (
     new_request_id,
     utc_now,
 )
+from rag_app.public_contract import public_answer_payload, public_source_payload
 from rag_app.prompt_templates import load_prompt_template, render_prompt_template
 from rag_app.retrieval.query import recognize_intent, rewrite_query
 from rag_app.retrieval.rerank import Reranker, create_reranker
@@ -479,16 +480,19 @@ class OnlineQueryProcessor:
                     session_id=session_id,
                     user_context=user_context,
                 )
-                payload = asdict(answer)
-                payload["request_id"] = answer.trace.request_id if answer.trace else None
-                events.put({"event": "complete", "data": payload})
-            except Exception as exc:
+                events.put(
+                    {
+                        "event": "complete",
+                        "data": public_answer_payload(answer),
+                    }
+                )
+            except Exception:
                 events.put(
                     {
                         "event": "error",
                         "data": {
                             "code": "STREAM_QUERY_ERROR",
-                            "message": str(exc),
+                            "message": "查询流处理失败",
                         },
                     }
                 )
@@ -939,40 +943,7 @@ def _request_id_from_augmented_context(context: str | None) -> str | None:
 
 
 def _stream_source_snapshot(result: RetrievalResult) -> dict[str, Any]:
-    return {
-        "chunk": {
-            "id": result.chunk.id,
-            "document_id": result.chunk.document_id,
-            "text": result.chunk.text,
-            "metadata": _stream_source_metadata(result.chunk.metadata),
-        },
-        "score": result.score,
-        "semantic_score": result.semantic_score,
-        "bm25_score": result.bm25_score,
-        "normalized_bm25_score": result.normalized_bm25_score,
-        "keyword_score": result.keyword_score,
-        "retrieval_score": result.retrieval_score,
-        "rerank_score": result.rerank_score,
-    }
-
-
-def _stream_source_metadata(metadata: dict[str, Any]) -> dict[str, Any]:
-    keys = (
-        "source",
-        "section_title",
-        "title",
-        "filename",
-        "page_number",
-        "slide_number",
-        "time_range",
-        "timestamp_range",
-        "business_module",
-    )
-    return {
-        key: metadata[key]
-        for key in keys
-        if metadata.get(key) not in (None, "")
-    }
+    return public_source_payload(result)
 
 
 def _precheck_rerank_skip_reason(

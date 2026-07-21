@@ -39,6 +39,7 @@ from rag_app.retrieval.answer_memory import (
     create_answer_memory_store,
 )
 from rag_app.rag import RAGPipeline
+from rag_app.public_contract import public_answer_payload, public_stream_event_payload
 from rag_app.streaming import format_sse_event
 from rag_app.version import APP_VERSION, get_build_info
 from rag_app.indexing.vector_store import create_vector_store
@@ -354,22 +355,21 @@ async def http_exception_handler(request: Request, exc: HTTPException) -> JSONRe
 
 @app.exception_handler(ValueError)
 async def value_error_handler(request: Request, exc: ValueError) -> JSONResponse:
-    del request
+    del request, exc
     return _api_error(
         code="CONFIG_ERROR",
-        message=str(exc),
+        message="请求配置无效",
         status_code=status.HTTP_400_BAD_REQUEST,
     )
 
 
 @app.exception_handler(Exception)
 async def unhandled_exception_handler(request: Request, exc: Exception) -> JSONResponse:
-    del request
+    del request, exc
     return _api_error(
         code="INTERNAL_ERROR",
         message="服务内部异常",
         status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-        detail=str(exc),
     )
 
 
@@ -648,10 +648,7 @@ def query(request: QueryRequest) -> dict:
             permission_tags=tuple(request.permission_tags),
         ),
     )
-    payload = asdict(answer)
-    # request_id 提升到响应顶层，方便前端直接提交反馈或查询 trace。
-    payload["request_id"] = answer.trace.request_id if answer.trace else None
-    return payload
+    return public_answer_payload(answer)
 
 
 @app.post("/query/stream")
@@ -669,7 +666,11 @@ def query_stream(request: QueryRequest) -> StreamingResponse:
             session_id=request.session_id,
             user_context=user_context,
         ):
-            yield format_sse_event(item["event"], item["data"])
+            event = item["event"]
+            yield format_sse_event(
+                event,
+                public_stream_event_payload(event, item.get("data")),
+            )
 
     return StreamingResponse(
         event_source(),
