@@ -17,6 +17,7 @@ build/
 !.env.example
 *.log
 query_result.json
+.demo_data/
 data/*
 !data/.gitkeep
 storage/

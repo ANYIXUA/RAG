@@ -1,0 +1,17 @@
+# 推荐解释器：CPython 3.12 x64。一天 Demo 不建议直接使用当前 Python 3.14 环境。
+# PDF / Word
+PyMuPDF==1.28.2
+python-docx==1.2.0
+lxml==6.1.2
+
+# Chroma 本地持久化
+chromadb==1.5.9
+onnxruntime==1.29.0
+numpy==2.5.2
+
+# 真实本地批量 Embedding（Hash 替身路径不需要以下四项）
+sentence-transformers==5.5.1
+transformers==4.57.6
+torch==2.13.0
+scikit-learn==1.9.0
+scipy==1.18.1

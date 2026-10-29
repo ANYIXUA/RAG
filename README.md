@@ -12,7 +12,18 @@
 - 回答生成：OpenAI 兼容聊天补全接口。
 - 热更新版本指针：PostgreSQL。
 
-仓库只保留生产运行链路，长期知识、检索索引、日志和业务工具调用通过 PostgreSQL 或 OpenAI 兼容模型服务完成；会话短期记忆默认通过 Redis 完成。
+生产运行链路的长期知识、检索索引、日志和业务工具调用通过 PostgreSQL 或 OpenAI 兼容模型服务完成；会话短期记忆默认通过 Redis 完成。
+
+## 离线解析教学 Demo
+
+独立学习入口位于 [`demo/offline_parsing/`](demo/offline_parsing/)，不接入生产服务。使用标准库即可运行 TXT + Hash Embedding + SQLite 的导入与来源页码验收：
+
+```powershell
+python -m demo.offline_parsing.ingest_demo --input demo/offline_parsing/sample_docs --persist-dir .demo_data/offline_index --no-progress
+python -m demo.offline_parsing.search_test --persist-dir .demo_data/offline_index --query "E203 地址校验失败" --top-k 2 --expected-source incident_codes.txt --expected-page 1
+```
+
+安装可选依赖后可练习 PDF/DOCX、Chroma 和本地 Sentence Transformer。完整步骤、跨页表格示例和能力边界见[快速开发手册](docs/offline_parsing_1day_demo_guide.md)；[复习交接](docs/offline_parsing_review_handoff.md)和[面试问答](docs/offline_parsing_interview_guide.md)保留了教学 Demo 开始前的讨论快照。`.demo_data/` 保存本地生成的索引与样例，已加入 Git 忽略规则。
 
 ## 配置
 

@@ -1,0 +1,5 @@
+# 推荐解释器：CPython 3.12 x64。
+# 可运行 PDF/DOCX + Hash Embedding + SQLite，不安装 Chroma、ONNX、Torch 或 BGE。
+PyMuPDF==1.28.2
+python-docx==1.2.0
+lxml==6.1.2

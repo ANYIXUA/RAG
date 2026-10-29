@@ -20,4 +20,5 @@ models/
 reports/
 training/
 query_result.json
+.demo_data/
 *.log
