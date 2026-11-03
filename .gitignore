@@ -24,3 +24,7 @@ storage/
 logs/
 reports/*.json
 !reports/.gitkeep
+
+# Private evaluation snapshots, including user-configured output directories.
+**/corpus.jsonl
+**/corpus.manifest.json

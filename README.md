@@ -70,6 +70,11 @@ docker compose up -d rag-api
 
 ## 常用命令
 
+评测语料的只读导出与 Corpus Snapshot 使用独立命令
+`export-eval-chunks`，需要显式 collection、tenant 和权限标签。
+命令示例、权限边界与测试方法见[评测语料快照说明](docs/eval_corpus_export.md)。
+候选生成、人工审核与 Gold 编译尚未实现。
+
 ```powershell
 python -m rag_app.cli offline-refresh --source data --reset
 python -m rag_app.cli query "帮我查一下工单 WO202604290001 现在到哪了"

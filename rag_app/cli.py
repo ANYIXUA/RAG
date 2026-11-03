@@ -34,6 +34,17 @@ def build_parser() -> argparse.ArgumentParser:
     version = subparsers.add_parser("version", help="查看应用版本和构建信息")
     version.add_argument("--json", action="store_true", help="输出 JSON 结果")
 
+    export_eval = subparsers.add_parser(
+        "export-eval-chunks", help="只读导出明确权限范围内的 active Chunk 和 Corpus Snapshot",
+    )
+    export_eval.add_argument("--collection", required=True, help="明确 collection，必须与当前配置一致")
+    export_eval.add_argument("--tenant-id", required=True, help="明确单一租户，不允许通配符")
+    export_eval.add_argument("--permission-tags", nargs="+", required=True, help="明确授权标签，多个用空格分隔")
+    export_eval.add_argument("--output-dir", type=Path, help="必须是新目录；默认 storage/evaluation/corpus/<唯一目录>")
+    export_eval.add_argument("--max-records", type=int, default=100000, help="租户范围记录数上限，默认 100000")
+    export_eval.add_argument("--statement-timeout-seconds", type=int, default=30, help="数据库单语句超时秒数")
+    export_eval.add_argument("--json", action="store_true", help="输出结果摘要 JSON，不打印正文或连接信息")
+
     offline = subparsers.add_parser(
         "offline-refresh",
         help="离线刷新知识库：扫描文档、切片、向量化并写入向量库",
@@ -194,6 +205,11 @@ def build_parser() -> argparse.ArgumentParser:
 def main(argv: list[str] | None = None) -> int:
     parser = build_parser()
     args = parser.parse_args(argv)
+
+    if args.command == "export-eval-chunks":
+        from rag_app.eval_dataset.corpus import run_export_command
+
+        return run_export_command(args)
 
     if args.command == "version":
         payload = get_build_info()

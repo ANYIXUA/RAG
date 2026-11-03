@@ -22,3 +22,5 @@ training/
 query_result.json
 .demo_data/
 *.log
+**/corpus.jsonl
+**/corpus.manifest.json
