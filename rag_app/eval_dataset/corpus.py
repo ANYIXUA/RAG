@@ -22,19 +22,21 @@ from rag_app.core.config import Settings
 from rag_app.eval_dataset.schemas import CorpusScope, permission_labels, required_label
 
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 CORPUS_FILE = "corpus.jsonl"
 MANIFEST_FILE = "corpus.manifest.json"
-METADATA_FIELDS = frozenset({
+_V1_METADATA_FIELDS = frozenset({
     "source", "filename", "title", "source_type", "business_module",
     "page_number", "version_id", "tenant_id", "permission_tags",
     "section_title", "section_path", "heading_path", "chunk_index",
     "block_id", "block_type", "parser_name", "parser_version", "content_hash",
     "chunk_parse_quality_status", "chunk_parse_warning_codes",
 })
+METADATA_FIELDS = _V1_METADATA_FIELDS | {"error_code", "error_codes"}
+_SCHEMA_FIELDS = {1: _V1_METADATA_FIELDS, SCHEMA_VERSION: METADATA_FIELDS}
 NORMALIZATION = {"chunk_text": "none", "json": "utf8_sorted_keys_compact_lf_v1"}
 _LIST_METADATA_FIELDS = frozenset({
-    "permission_tags", "section_path", "heading_path", "chunk_parse_warning_codes",
+    "permission_tags", "section_path", "heading_path", "chunk_parse_warning_codes", "error_codes",
 })
 _MANIFEST_FIELDS = frozenset({
     "schema_version", "corpus_file", "scope", "collection_resolution", "created_at",
@@ -64,6 +66,7 @@ LIMIT %s
 # CASE prevents jsonb array operators from accepting legacy malformed ACL types.
 _BODIES_SQL = """
 SELECT c.collection_name, c.chunk_id, c.document_id, c.chunk_text, c.metadata,
+       c.error_code AS indexed_error_code,
        c.version AS chunk_version,
        c.metadata->'tenant_id' AS tenant_id,
        c.metadata->'permission_tags' AS permission_tags,
@@ -148,6 +151,9 @@ def _body_to_record(row: dict, scope: CorpusScope) -> tuple[dict, set[str]]:
         raise CorpusExportError("Chunk metadata must be a JSON object.")
     try:
         _validate_metadata_types(metadata)
+        if row.get("indexed_error_code") is not None:
+            indexed_code = required_label(row["indexed_error_code"], "error_code")
+            metadata = {**metadata, "error_code": indexed_code}
         if metadata.get("tenant_id") != scope.tenant_id:
             raise ValueError("Metadata tenant mismatch")
         tags = permission_labels(metadata.get("permission_tags"))
@@ -205,6 +211,11 @@ def _validate_metadata_types(metadata: dict) -> None:
         if key in _LIST_METADATA_FIELDS:
             if not isinstance(value, list) or any(not isinstance(item, str) for item in value):
                 raise ValueError("Invalid structural list metadata")
+            if key == "error_codes":
+                for item in value:
+                    required_label(item, key)
+        elif key == "error_code":
+            required_label(value, key)
         elif key in {"page_number", "chunk_index"}:
             minimum = 1 if key == "page_number" else 0
             if type(value) is not int or value < minimum:
@@ -365,9 +376,9 @@ def export_active_chunks(
     return CorpusExportResult(corpus_path, manifest_path, manifest["snapshot_id"], len(records), manifest["document_count"])
 
 
-def _validate_record(record: dict, scope: CorpusScope) -> None:
+def _validate_record(record: dict, scope: CorpusScope, metadata_fields: frozenset[str]) -> None:
     metadata = record["metadata"]
-    if not isinstance(metadata, dict) or set(metadata) - METADATA_FIELDS:
+    if not isinstance(metadata, dict) or set(metadata) - metadata_fields:
         raise ValueError("Invalid exported metadata")
     # Reuse the same consistency checks on loaded records rather than trusting
     # hashes to imply valid types/ACLs. Hashes are integrity checks, not signatures.
@@ -388,7 +399,7 @@ def _validate_record(record: dict, scope: CorpusScope) -> None:
 def _validate_manifest_schema(manifest: dict) -> None:
     if not isinstance(manifest, dict) or set(manifest) != _MANIFEST_FIELDS:
         raise ValueError("Missing/unsupported manifest fields")
-    if type(manifest["schema_version"]) is not int or manifest["schema_version"] != SCHEMA_VERSION:
+    if type(manifest["schema_version"]) is not int or manifest["schema_version"] not in _SCHEMA_FIELDS:
         raise ValueError("Unsupported schema version")
     if manifest["corpus_file"] != CORPUS_FILE or manifest["collection_resolution"] != "explicit":
         raise ValueError("Invalid corpus/collection resolution")
@@ -406,7 +417,7 @@ def _validate_manifest_schema(manifest: dict) -> None:
     policy = manifest["metadata_policy"]
     if (
         not isinstance(policy, dict) or set(policy) != {"kind", "fields", "excluded_keys"}
-        or policy["kind"] != "allowlist" or policy["fields"] != sorted(METADATA_FIELDS)
+        or policy["kind"] != "allowlist" or policy["fields"] != sorted(_SCHEMA_FIELDS[manifest["schema_version"]])
         or not isinstance(policy["excluded_keys"], list)
         or any(not isinstance(key, str) for key in policy["excluded_keys"])
         or policy["excluded_keys"] != sorted(set(policy["excluded_keys"]))
@@ -470,7 +481,7 @@ def load_corpus_snapshot(
         if ids != sorted(set(ids)):
             raise ValueError("Chunk order/uniqueness mismatch")
         for record in records:
-            _validate_record(record, scope)
+            _validate_record(record, scope, _SCHEMA_FIELDS[manifest["schema_version"]])
         if content != b"".join(_canonical(record) + b"\n" for record in records):
             raise ValueError("Noncanonical corpus encoding")
         return manifest, records

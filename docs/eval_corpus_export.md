@@ -1,8 +1,8 @@
 # Evaluation Dataset V1：只读语料导出与快照
 
-当前仅实现 Active Chunk Exporter 和 Corpus Snapshot。候选生成、Ollama、
-人工审核、Gold 编译及四路 Benchmark 尚未实现。本阶段不更改线上检索、
-权限网关或 Docker Compose，也不创建数据库对象。
+本文记录 Active Chunk Exporter 和 Corpus Snapshot。
+P1 本地候选生成入口、覆盖度与代码审查见 [候选生成说明](eval_candidate_generation.md)。
+快照导出使用只读事务，不创建数据库对象。
 
 ## 环境与代码来源
 
@@ -73,6 +73,11 @@ metadata 仅导出代码内 `METADATA_FIELDS` 指定的结构性字段。source_
 只能是字符串数组；页码和序号拒绝布尔值、浮点数及嵌套对象。
 这并不是对知识正文的自动脱敏：正文和来源本身仍可能敏感，产物必须留在
 授权本机目录内。
+
+P1 导出的 schema v2 在白名单中加入可选 `error_code` 字符串和
+`error_codes` 字符串数组。标量优先取生产精确检索使用的现有索引列，
+缺失时沿用 Chunk metadata 中的标量。校验器仍按原白名单读取 schema v1。
+异常码元数据是审计线索，候选题还需要有相应的正文证据。
 
 manifest 包含：
 

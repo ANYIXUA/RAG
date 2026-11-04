@@ -45,6 +45,21 @@ def build_parser() -> argparse.ArgumentParser:
     export_eval.add_argument("--statement-timeout-seconds", type=int, default=30, help="数据库单语句超时秒数")
     export_eval.add_argument("--json", action="store_true", help="输出结果摘要 JSON，不打印正文或连接信息")
 
+    candidates = subparsers.add_parser(
+        "generate-eval-candidates", help="从经验证的 Corpus Snapshot 生成待审核候选题",
+    )
+    candidates.add_argument("--snapshot-manifest", required=True, type=Path)
+    candidates.add_argument("--collection", required=True)
+    candidates.add_argument("--tenant-id", required=True)
+    candidates.add_argument("--permission-tags", required=True, nargs="+")
+    candidates.add_argument("--output-dir", required=True, type=Path)
+    candidates.add_argument("--endpoint", help="显式配置的本机 Ollama HTTP 地址")
+    candidates.add_argument("--model", help="已安装的本地模型名和 tag")
+    candidates.add_argument("--seed", type=int, default=42)
+    candidates.add_argument("--max-batches", type=int, default=72)
+    candidates.add_argument("--timeout-seconds", type=float, default=120)
+    candidates.add_argument("--audit-only", action="store_true", help="仅审计证据覆盖，不调用模型")
+
     offline = subparsers.add_parser(
         "offline-refresh",
         help="离线刷新知识库：扫描文档、切片、向量化并写入向量库",
@@ -210,6 +225,11 @@ def main(argv: list[str] | None = None) -> int:
         from rag_app.eval_dataset.corpus import run_export_command
 
         return run_export_command(args)
+
+    if args.command == "generate-eval-candidates":
+        from rag_app.eval_dataset.candidates import run_candidate_command
+
+        return run_candidate_command(args)
 
     if args.command == "version":
         payload = get_build_info()

@@ -117,7 +117,7 @@ class CorpusPostgresTest(unittest.TestCase):
 WITH fixture_chunks AS (
   SELECT * FROM jsonb_to_recordset(%s::jsonb) AS x(
     collection_name text,chunk_id text,document_id text,chunk_text text,
-    version int,status text,metadata jsonb)
+    version int,status text,metadata jsonb,error_code text)
 ), fixture_documents AS (
   SELECT * FROM jsonb_to_recordset(%s::jsonb) AS x(
     collection_name text,document_id text,status text,source_name text,

@@ -146,6 +146,27 @@ class CorpusExportTest(unittest.TestCase):
         for sql, _ in db.calls:
             self.assertNotRegex(sql.upper(), r"\b(CREATE|ALTER|INSERT|UPDATE|DELETE|REFRESH|TRUNCATE|GRANT)\b")
 
+    def test_exports_indexed_scalar_and_metadata_code_array(self):
+        row = body()
+        row["indexed_error_code"] = "E123"
+        row["metadata"]["error_codes"] = ["E123", "F456"]
+        result = self.export(FakeDatabase(bodies=[row]))
+        manifest, records = load_corpus_snapshot(result.manifest_path, expected_scope=self.scope)
+        self.assertEqual(manifest["schema_version"], 2)
+        self.assertEqual(records[0]["metadata"]["error_code"], "E123")
+        self.assertEqual(records[0]["metadata"]["error_codes"], ["E123", "F456"])
+
+    def test_rejects_wrong_error_code_metadata_types(self):
+        for index, (key, value) in enumerate((
+            ("error_code", {"secret": 1}), ("error_codes", "E123"),
+            ("error_codes", ["E123", 456]), ("error_codes", [" "]),
+        )):
+            with self.subTest(key=key, value=value):
+                row = body()
+                row["metadata"][key] = value
+                with self.assertRaises(CorpusExportError):
+                    self.export(FakeDatabase(bodies=[row]), self.root / str(index))
+
     def test_sql_parameterizes_scope_and_filters_before_body_read(self):
         db = FakeDatabase()
         self.export(db)

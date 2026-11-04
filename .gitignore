@@ -28,3 +28,7 @@ reports/*.json
 # Private evaluation snapshots, including user-configured output directories.
 **/corpus.jsonl
 **/corpus.manifest.json
+**/candidates.jsonl
+**/generation_manifest.json
+**/candidate_quality_report.json
+**/coverage_gap_report.json
