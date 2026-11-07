@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:24.141032+08:00",
+  "conservative_cost_yuan": 0.0007809,
+  "error": null,
+  "latency_ms": 1678.2947999890894,
+  "list_price_estimate_yuan": 0.0006069,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区环境监控设备巡检的项目编码是WH21112003。[1]  \n2. 该编码对应的工作内容包括检查清洁设备、测试告警功能等。[1]  \n3. 项目编码按地貌分类，山区为独立子项。[3]  \n4. 综合单价为21.89元/站·次。[1]  \n5. 项目编码在《电信基础设施维护规程》第238页有明确列出。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881102,
+    "id": "chatcmpl-f86965b9-cdf1-92a1-b781-22545adebb73",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 116,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2886,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3002
+    }
+  },
+  "usage_known": true
+}

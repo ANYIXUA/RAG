@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:23.448987+08:00",
+  "conservative_cost_yuan": 0.00131625,
+  "error": null,
+  "latency_ms": 3460.6230000499636,
+  "list_price_estimate_yuan": 0.00091875,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确拒答且理由充分\",\n    \"evidence\": \"上下文未提供不同品牌智慧家庭产品价格对比信息。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"所有结论均基于检索内容，无编造\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖拒答必要要素\",\n    \"evidence\": \"包含无法回答、原因、建议\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"[1]对应第9页内容\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"正确拒答并提示补充\",\n    \"evidence\": \"建议补充具体产品型号或品牌信息，或转人工咨询\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"correct_no_answer\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882180,
+    "id": "chatcmpl-d6dfd41b-0ea6-959f-8a7a-c61ffb6cd472",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 265,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3475,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3740
+    }
+  },
+  "usage_known": true
+}

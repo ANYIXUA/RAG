@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:18:38.366252+08:00",
+  "input_token_upper_bound": 1211,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0373"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "市区基站发生天馈系线系统故障，需要进行应急发电且故障抢修，每小时发电费用和故障抢修费用分别是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "914668da11bb43679d19e521f76923fc",
+  "reserved_yuan": 0.0006055
+}

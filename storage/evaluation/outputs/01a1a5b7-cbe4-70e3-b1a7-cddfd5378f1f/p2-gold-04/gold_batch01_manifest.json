@@ -1,0 +1,89 @@
+{
+  "gold_version": "p2-gold-04-batch01-v1",
+  "source_git_commit": "7810bfb54d43a1e5ffb4b6428bd30c0b4b0161a5",
+  "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+  "corpus_manifest_internal_sha256": "0ddcdfe183ab387767065dcf029dd31ba5cdf0088ee9dc7e3501254d72223827",
+  "corpus_export_git_head": "9686e3992b216b7c180cbc1887e999500b07313c",
+  "generated_at": "2026-11-04T21:58:42+08:00",
+  "generator": {
+    "name": "P2-Gold-04 one-off static export",
+    "python": "3.12.14",
+    "workbook_reader": "openpyxl 3.1.5",
+    "evaluator": "rag_app.operations.evaluation",
+    "corpus_validator": "rag_app.eval_dataset.corpus.load_corpus_snapshot"
+  },
+  "candidate_file_sha256": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120",
+  "human_signoff_file_sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+  "gold_file_sha256": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+  "inputs_sha256": {
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2_gold_03_signoff_packet.md": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/review.xlsx": "df13e2755786cfb7f4d30e44d6323463ce6cbfe49c99a2b5ae87dfeec369d5ea",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/review_p2_gold_03_draft.xlsx": "359a12bb9923326b7dc738eb5575411ec55cca25946751c98aab6a72b40211a0",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2_gold_03_revision_proposal.md": "766e882d9065020376fa4383d1b89ec25b00e1e35be89c24eb8d17f537b26b94",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2_gold_02_review_proposal.md": "cb22b75e2cead9e1595a2c1271e77fc08721db57a76772afa81e4691bbfbb3fa",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/first-batch-evidence.md": "0a55423f56f8313343d022ba0e2b7a34d9d714877e6146621d02c2813331b111",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/review-index.md": "b2b99c19365768ecec88933197e57ce4db589f2ffa9f2923a0fba125f2e06bd3",
+    "storage/evaluation/candidates/p1-20261104-structured/generation_manifest.json": "f859cd0dc08dd2617f964887cb3994b1a7f1c2407a06423193ca49c0ed2d0581",
+    "storage/evaluation/corpus/p1-20261104-v2/corpus.manifest.json": "50bb2c71e205698ae8bee394231d961d19567117e03f489579a1f53b9bf1245f",
+    "storage/evaluation/corpus/p1-20261104-v2/corpus.jsonl": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+    "storage/evaluation/candidates/p1-20261104-structured/candidate_quality_report.json": "cd304fcab441d28723e9b94b85c91e13ddb18698715d0d090e98d7cbea2b9711",
+    "storage/evaluation/candidates/p1-20261104-structured/candidates.jsonl": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120",
+    "storage/evaluation/candidates/p1-20261104-structured/coverage_gap_report.json": "50fa7d7d6b05962f45c2400d935d34aefd0e71e9d64f7572d7bb0c1b6dd92374",
+    "data/电信基础设施维护规程.pdf": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+    "data/智慧家庭装维工程与管理职业技能等级标准.pdf": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+    "data/中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032"
+  },
+  "outputs_sha256": {
+    "p2_gold_04_validation.md": "38ddcc44595359c8bea73f5d77f2a7d534dd8af3c5178f835b1fc62da0c6319d",
+    "rejected_batch01_3.jsonl": "3bbeec82efe9ad5fc646479056cf189985314fadb8f5670ea164e28869c1ed91",
+    "retrieval_gold_batch01_9.jsonl": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+    "retrieval_gold_batch01_metadata.json": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39"
+  },
+  "counts": {
+    "gold": 9,
+    "accepted_original": 2,
+    "accepted_revision": 7,
+    "rejected": 3,
+    "candidates": 57,
+    "corpus_documents": 3,
+    "corpus_chunks": 447,
+    "gold_evidence_chunks": 11,
+    "rejection_evidence_chunks": 4,
+    "retrieval_targets": 10
+  },
+  "known_scoring_limits": [
+    "每个目标内 AND，目标之间 OR。Hit@K 和 MRR 采用首个匹配。",
+    "现有评测器无 NDCG、Chunk ID 直配或双证据完整覆盖指标。",
+    "仅填 source 会把同文档其他 Chunk 判为相关。三字段组合只在本冻结快照验证唯一性。",
+    "B07 仅第 62 页计入检索命中。B12 任一目标可计 Hit，完整覆盖需同一 Top-K 含两个目标。"
+  ],
+  "validation": {
+    "schema_loaded": 9,
+    "target_chunk_comparisons": 4470,
+    "target_matches": 10,
+    "same_document_negative_comparisons": 1058,
+    "same_document_false_positives": 0,
+    "single_chunk_case_checks": 4023,
+    "b07_background_only_hit": false,
+    "b07_rank_after_background": 2,
+    "b12_either_hit": true,
+    "b12_single_chunk_complete_coverage": false,
+    "b12_both_chunks_complete_coverage": true,
+    "benchmark_executed": false
+  },
+  "id_recipe": {
+    "prefix": "gold-batch01-sha256:",
+    "algorithm": "SHA-256",
+    "fields": [
+      "batch_id",
+      "parent_candidate_id",
+      "corpus_snapshot_id",
+      "review_decision",
+      "question",
+      "reference_answer",
+      "evidence_chunk_ids",
+      "retrieval_relevant_chunk_ids"
+    ],
+    "encoding": "UTF-8 JSON object, ensure_ascii=False, sort_keys=True, separators=(comma, colon), no final LF"
+  }
+}

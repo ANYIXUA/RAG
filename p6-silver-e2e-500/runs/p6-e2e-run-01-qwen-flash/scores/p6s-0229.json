@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "基站出现告警或故障，维护企业应在规定时限内完成故障处理、抢修。",
+    "reason": "上下文明确支持规定时限内处理",
+    "score": 1
+  },
+  "case_id": "p6s-0229",
+  "citation_correctness": {
+    "evidence": "维护企业应在规定时限内完成故障处理、抢修。[1]",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "接到告警后，须在规定时间内赶到现场处理。[1]",
+    "reason": "覆盖关键处理要求与流程",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "维护企业应随时做好障碍抢修的准备，做到在任何时间、任何情况下都能迅速出发抢修",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3a3fd76497f545d8b968c50782e2062e",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

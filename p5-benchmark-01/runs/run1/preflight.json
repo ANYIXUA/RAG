@@ -1,0 +1,89 @@
+{
+  "gold": {
+    "dataset_role": "Holdout",
+    "merged_cases": 28,
+    "sources": {
+      "holdout_jsonl": {
+        "path": "p4-gold-completion-01\\signed-final-20261105-v1\\retrieval_gold_holdout_28.jsonl",
+        "sha256": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c"
+      },
+      "holdout_metadata": {
+        "path": "p4-gold-completion-01\\signed-final-20261105-v1\\retrieval_gold_holdout_metadata.json",
+        "sha256": "aabb8d81b3d29031bed87bf821c1a3c759044d286347cb4dff62d2e5770636d7"
+      }
+    }
+  },
+  "gold_checks": {
+    "cases": 28,
+    "questions_present": true,
+    "expected_present": true,
+    "relevant_ids_missing_from_corpus": [],
+    "cases_without_relevant_ids": [],
+    "excluded_batch_ids_present": [],
+    "duplicate_batch_ids": [],
+    "duplicate_queries": [],
+    "batch_ids": [
+      "B32",
+      "B33",
+      "B34",
+      "B35",
+      "B40",
+      "B41",
+      "B42",
+      "B48",
+      "B49",
+      "B50",
+      "B53",
+      "B54",
+      "B57",
+      "P4-N01",
+      "P4-N02",
+      "P4-N03",
+      "P4-N04",
+      "P4-N05",
+      "P4-N06",
+      "P4-N07",
+      "P4-N08",
+      "P4-N09",
+      "P4-N10",
+      "P4-N11",
+      "P4-N12",
+      "P4-N13",
+      "P4-N14",
+      "P4-N15"
+    ],
+    "batch_ids_match_expected": true,
+    "relevant_chunk_ids_total": 28,
+    "requires_all_evidence_cases": 0,
+    "ok": true
+  },
+  "corpus": {
+    "path": "storage/evaluation/corpus/p1-20261104-v2/corpus.jsonl",
+    "sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+    "record_count": 447,
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "manifest_sha256_field": "0ddcdfe183ab387767065dcf029dd31ba5cdf0088ee9dc7e3501254d72223827",
+    "document_count": 3,
+    "created_at": "2026-11-04T07:46:52.693843+00:00"
+  },
+  "corpus_database_equivalence": {
+    "database_active_chunks": 447,
+    "corpus_chunks": 447,
+    "id_sets_equal": true,
+    "only_in_database": [],
+    "only_in_corpus": [],
+    "text_sha256_mismatches": [],
+    "text_sha256_mismatch_count": 0,
+    "consistent": true
+  },
+  "rerank_status": {
+    "requested": true,
+    "available": true,
+    "reason": null,
+    "model_name": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "resolved_model_name_or_path": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "hf_snapshot_revisions": [
+      "1427fd652930e4ba29e8149678df786c240d8825"
+    ]
+  }
+}

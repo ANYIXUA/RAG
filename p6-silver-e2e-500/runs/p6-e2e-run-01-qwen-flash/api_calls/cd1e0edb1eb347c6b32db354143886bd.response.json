@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:37.209614+08:00",
+  "conservative_cost_yuan": 0.00072645,
+  "error": null,
+  "latency_ms": 1718.1573000270873,
+  "list_price_estimate_yuan": 0.00054195,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 光纤熔接机在文档中列为“套”，未明确具体型号。[1]  \n2. 文档[2]提及“带状光纤熔接机”和“光纤熔接机”，但未给出具体型号。[2]  \n3. 文档[3]中“FTTH 熔接机”为名称，仍无具体型号信息。[3]  \n4. 所有文档均未提供“光纤熔接机”的确切规格型号。  \n5. 无法确定具体型号，建议补充厂家或设备标识信息。",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881115,
+    "id": "chatcmpl-081ddbbf-f3e7-91b8-8d3c-dd10be103e34",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 123,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2383,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2506
+    }
+  },
+  "usage_known": true
+}

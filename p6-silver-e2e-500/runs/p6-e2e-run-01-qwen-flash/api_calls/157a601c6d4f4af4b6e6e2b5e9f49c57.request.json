@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:29.406533+08:00",
+  "input_token_upper_bound": 1145,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0218"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "更换电杆地线与更换吊线保护装置的单位消耗量分别是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "157a601c6d4f4af4b6e6e2b5e9f49c57",
+  "reserved_yuan": 0.0005725
+}

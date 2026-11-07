@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:25.877004+08:00",
+  "conservative_cost_yuan": 0.00133005,
+  "error": null,
+  "latency_ms": 3339.884800137952,
+  "list_price_estimate_yuan": 0.00092355,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文支持满意度评定与质量分析相关\",\n    \"evidence\": \"装维企业定期对维护工作服务质量情况进行统计、分析\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"维护人员须履行检查、记录和报告制度以保障质量\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题核心要素，无遗漏\",\n    \"evidence\": \"评定依据应包括装维指标及实际服务表现\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致且支持内容\",\n    \"evidence\": \"装维企业定期对维护工作服务质量情况进行统计、分析\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，非拒答场景\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_context_used\",\n    \"repeated_citation\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882062,
+    "id": "chatcmpl-f8881912-96c5-93a5-b5e8-e9fbdfeedd80",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 271,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3447,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3718
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:59.645304+08:00",
+  "conservative_cost_yuan": 0.0014364,
+  "error": null,
+  "latency_ms": 2472.3833000753075,
+  "list_price_estimate_yuan": 0.0010014,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持两者单价相同。\",\n    \"evidence\": \"WH21110001 直流拉远供电设备巡检 市区 14.59\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"WH21112001 环境监控设备巡检 市区 14.59\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有条件与结论。\",\n    \"evidence\": \"两者在市区的综合单价相同，均为14.59元。[1][2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881977,
+    "id": "chatcmpl-89b050ba-ddeb-9d16-a22e-81e5b48335b3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 290,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3776,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4066
+    }
+  },
+  "usage_known": true
+}

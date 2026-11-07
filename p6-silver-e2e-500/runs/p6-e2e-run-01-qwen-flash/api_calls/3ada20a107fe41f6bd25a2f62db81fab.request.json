@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:13:59.594455+08:00",
+  "input_token_upper_bound": 1124,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0044"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "温湿、烟感、水浸监控单元的消耗量是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "3ada20a107fe41f6bd25a2f62db81fab",
+  "reserved_yuan": 0.000562
+}

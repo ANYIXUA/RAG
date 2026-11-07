@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:19.156386+08:00",
+  "conservative_cost_yuan": 0.00077505,
+  "error": null,
+  "latency_ms": 1609.9638999439776,
+  "list_price_estimate_yuan": 0.0005785499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 市区铁塔塔身垂直度测试综合人工费单价为43.32元。[1]  \n2. 市区接地网电阻测试综合人工费单价为5.70元。[2]  \n3. 两项测试均以“次”为计量单位，对应不同项目编码。[1][2]  \n4. 人工费包含技工与普工成本，按工日单价计算。[1][2]  \n5. 数据来源于《电信基础设施维护规程》第249页和第248页。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880917,
+    "id": "chatcmpl-82f359cc-2435-934f-ba32-30edee391ad2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 131,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2547,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2678
+    }
+  },
+  "usage_known": true
+}

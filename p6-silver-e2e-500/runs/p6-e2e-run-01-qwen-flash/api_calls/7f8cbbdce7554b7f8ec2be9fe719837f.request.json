@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:34.916788+08:00",
+  "input_token_upper_bound": 1134,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0225"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "更换整流模块中，100A以下规格的综合单价是多少元？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "7f8cbbdce7554b7f8ec2be9fe719837f",
+  "reserved_yuan": 0.000567
+}

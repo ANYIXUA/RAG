@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "全屋智能专业知识应包括下列内容：a）全屋智能综合布线知识；",
+    "reason": "覆盖核心知识点，与上下文一致。",
+    "score": 1
+  },
+  "case_id": "p6s-0430",
+  "citation_correctness": {
+    "evidence": "[1] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf",
+    "reason": "引用编号与上下文来源匹配。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "智能单品、智能家居（本地控制）、智能家居（网关及云平台控制）及场景设置与操作知识；",
+    "reason": "涵盖问题所需全部关键点。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "家庭网络、智能组网及智能家居控制技术基础知识；",
+    "reason": "每项事实均有对应引用支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "c3725fab997b43c3a2249b0a1bc6dfdc",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

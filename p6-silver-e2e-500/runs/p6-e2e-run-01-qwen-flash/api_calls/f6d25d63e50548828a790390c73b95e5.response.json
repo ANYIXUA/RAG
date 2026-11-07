@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:11.719176+08:00",
+  "conservative_cost_yuan": 0.00067725,
+  "error": null,
+  "latency_ms": 1280.5152002256364,
+  "list_price_estimate_yuan": 0.00054225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 应依据家庭网络拓扑技术标准进行设计与实施。[1]  \n2. 需掌握有线系统和无线系统拓展应用规范。[2]  \n3. 要熟悉智能家居子系统协同及场景联动需求。[1]  \n4. 应遵循综合接入业务系统相关技术要求。[2]  \n5. 须符合智能家居集中控制系统架构标准。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880970,
+    "id": "chatcmpl-f0b1efc8-96a3-9ca3-935c-0c3c5b53aab1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 90,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2715,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2805
+    }
+  },
+  "usage_known": true
+}

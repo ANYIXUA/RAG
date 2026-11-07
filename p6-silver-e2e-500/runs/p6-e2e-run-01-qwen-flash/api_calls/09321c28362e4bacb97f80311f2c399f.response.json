@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:35.767197+08:00",
+  "conservative_cost_yuan": 0.0028155,
+  "error": null,
+  "latency_ms": 7114.812399959192,
+  "list_price_estimate_yuan": 0.0016845,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确列出WH33118003项目中太阳能光伏离网发电系统的综合单价为33.02元，与silver_reference一致，且该信息在上下文中可直接支持。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第318页\\n定位信息：318\\n... WH33118003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实（如综合单价33.02元、计量单位台·次、包含人工费等、属于发电设备专项检修类别）均能在上下文[1]中找到对应支持，无虚构或超出原文内容的陈述。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第318页\\n定位信息：318\\n... WH33118003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —\\n... 计量单位：台·次\\n... 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元)\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问综合单价，回答准确给出33.02元，并补充了相关背景信息（如计量单位、费用构成、项目类别），虽略超基本要求但未遗漏必要条件，符合问题需求。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第318页\\n定位信息：318\\n... WH33118003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有关键结论均正确引用自上下文[1]，且引用编号[1]与实际来源匹配。虽然其他片段也提及类似内容，但核心数据来自[1]，引用正确。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第318页\\n定位信息：318\\n... WH33118003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，上下文中有明确答案，无需拒答，因此该维度不适用。\",\n    \"evidence\": \"无\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881348,
+    "id": "chatcmpl-5c9097c5-d389-9829-8d7c-b057e16befbd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 754,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3690,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4444
+    }
+  },
+  "usage_known": true
+}

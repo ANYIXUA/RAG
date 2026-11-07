@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:28.373983+08:00",
+  "conservative_cost_yuan": 0.0024474,
+  "error": null,
+  "latency_ms": 6797.117199981585,
+  "list_price_estimate_yuan": 0.0015024,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确显示WH33117001项目中100kVA以下变压器专项检修的消耗量为0.42，与问题完全匹配。参考证据也支持该数值，且无矛盾信息。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第317页\\n定位信息：317\\n... WH33117001 安装、调试、断电检修 变压器 100kVA 以下变压器专项检修 76.61 47.88 14.36 14.36 消耗量 0.42 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实（如消耗量0.42、单位台·次、来源第317页、与WH23120001一致）均在实际上下文[1]和[2]中得到直接支持，无虚构或推断内容。\",\n    \"evidence\": \"[1] ... 消耗量 0.42 —\\n[2] ... WH23120001 安装、调试、断电检修变压器 100kVA 以下变压器专项检修 76.61 47.88 14.36 14.36 消耗量 0.42 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问消耗量，回答完整提供了数值0.42，并补充了单位、来源和一致性验证，覆盖了所有必要信息，未遗漏关键条件或步骤。\",\n    \"evidence\": \"[1] ... 消耗量 0.42 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个引用编号[1]、[2]均正确对应实际上下文片段，且所引内容支持对应句子。例如[1]支持消耗量0.42，[2]支持与WH23120001一致，引用准确无误。\",\n    \"evidence\": \"[1] ... 消耗量 0.42 —\\n[2] ... 消耗量 0.42 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为可回答的exact_fact类型，且上下文存在明确答案，无需拒答，因此不适用此维度。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881341,
+    "id": "chatcmpl-64e67786-d4b0-90f1-b622-f9d33e168fad",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 630,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3716,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4346
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:49.553652+08:00",
+  "conservative_cost_yuan": 0.0015251999999999998,
+  "error": null,
+  "latency_ms": 2624.6609000954777,
+  "list_price_estimate_yuan": 0.0010766999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持丘陵地区按1.2倍计取\",\n    \"evidence\": \"用于丘陵、城区时综合单价按相应子目的1.2 倍计取。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"用于丘陵、城区时综合单价按相应子目的1.2 倍计取。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需条件与步骤\",\n    \"evidence\": \"用于丘陵、城区时综合单价按相应子目的1.2 倍计取。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源并支持语句\",\n    \"evidence\": \"用于丘陵、城区时综合单价按相应子目的1.2 倍计取。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881966,
+    "id": "chatcmpl-1485d10b-e565-96f3-be7f-92a8072e24fa",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 299,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4188,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4487
+    }
+  },
+  "usage_known": true
+}

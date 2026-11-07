@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:24.166192+08:00",
+  "conservative_cost_yuan": 0.00072675,
+  "error": null,
+  "latency_ms": 1452.7602000162005,
+  "list_price_estimate_yuan": 0.00054825,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH41112001项目技工消耗量为0.36工日。[1]  \n2. 该消耗量对应设备安装、调测、演示和交付工作内容。[1]  \n3. 工作内容包括设备检查、测位安装、接口检查等。[1]  \n4. 项目计量单位为“台”，按实计列。[2]  \n5. 综合单价为61.01元，含人工费41.39元。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880862,
+    "id": "chatcmpl-3c553c89-43f3-9110-a659-fb106d17fc87",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 119,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2465,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2584
+    }
+  },
+  "usage_known": true
+}

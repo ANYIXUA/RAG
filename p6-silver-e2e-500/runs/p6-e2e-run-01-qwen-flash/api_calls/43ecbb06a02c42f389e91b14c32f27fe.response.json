@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:27.476575+08:00",
+  "conservative_cost_yuan": 0.0005679,
+  "error": null,
+  "latency_ms": 1101.1385000310838,
+  "list_price_estimate_yuan": 0.00043739999999999995,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 需掌握全屋智能综合布线知识。[1]  \n2. 熟悉互联网及视听业务接入专业知识。[1]  \n3. 掌握家庭网络与智能家居控制技术基础。[1]  \n4. 了解智能单品及场景设置与操作方法。[1]  \n5. 具备智慧家庭管理平台操作与故障处理能力。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881166,
+    "id": "chatcmpl-0350a025-901e-931d-8205-2a5226ab3c60",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 87,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2046,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2133
+    }
+  },
+  "usage_known": true
+}

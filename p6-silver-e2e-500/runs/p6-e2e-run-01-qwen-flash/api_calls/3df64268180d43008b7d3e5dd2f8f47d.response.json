@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:51.320340+08:00",
+  "conservative_cost_yuan": 0.0016659,
+  "error": null,
+  "latency_ms": 4928.442599950358,
+  "list_price_estimate_yuan": 0.0011229,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出0.96\",\n    \"evidence\": \"WH33105004 带电更换熔断器/空开 175.10 109.44 32.83 32.83 0.96 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH33105004 带电更换熔断器/空开 175.10 109.44 32.83 32.83 0.96 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖消耗量及单位\",\n    \"evidence\": \"WH33105004 带电更换熔断器/空开 175.10 109.44 32.83 32.83 0.96 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881846,
+    "id": "chatcmpl-5affc7aa-b67a-9901-956d-41675f7c338e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 362,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3866,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4228
+    }
+  },
+  "usage_known": true
+}

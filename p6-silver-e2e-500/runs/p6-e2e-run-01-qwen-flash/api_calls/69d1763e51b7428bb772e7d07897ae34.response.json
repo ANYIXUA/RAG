@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:14.678720+08:00",
+  "conservative_cost_yuan": 0.0006452999999999999,
+  "error": null,
+  "latency_ms": 1144.8629000224173,
+  "list_price_estimate_yuan": 0.0005162999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 生产质量分析会应每月召开一次。[1]  \n2. 每月生产质量分析会需作专门记录。[1]  \n3. 重大通信阻断时应立即召开分析会。[1]  \n4. 分析会内容包括计划完成情况与质量指标分析。[2]  \n5. 会议改进措施须按时限落实。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880853,
+    "id": "chatcmpl-669e6cc1-2836-9a83-abb8-b45b6054c00a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 86,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2582,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2668
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,408 @@
+{
+  "pilot": "P3-Pilot-01",
+  "label": "run1",
+  "case_count": 22,
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "max_k": 10,
+  "retrieval_top_k": 20,
+  "metrics": {
+    "bm25_only": {
+      "method_key": "A",
+      "description": "BM25 关键词检索（生产候选池）",
+      "mode": "bm25",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "mrr@10": 0.0,
+      "ndcg@10": 0.0,
+      "recall@10": 0.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 8.727,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 89.974,
+      "latency_p95_ms": 132.605,
+      "latency_mean_ms": 100.454,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.0
+    },
+    "vector_only": {
+      "method_key": "B",
+      "description": "向量（余弦）检索",
+      "mode": "semantic",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.863636,
+      "hit@5": 0.909091,
+      "hit@10": 0.954545,
+      "mrr@10": 0.80202,
+      "ndcg@10": 0.834976,
+      "recall@10": 0.954545,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 76.273,
+      "latency_p95_ms": 92.708,
+      "latency_mean_ms": 74.118,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    },
+    "hybrid": {
+      "method_key": "C",
+      "description": "BM25 + 向量加权融合",
+      "mode": "hybrid",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.909091,
+      "hit@3": 0.954545,
+      "hit@5": 0.954545,
+      "hit@10": 1.0,
+      "mrr@10": 0.930736,
+      "ndcg@10": 0.943321,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 124.564,
+      "latency_p95_ms": 189.396,
+      "latency_mean_ms": 139.446,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    },
+    "hybrid_rerank": {
+      "method_key": "D",
+      "description": "混合检索 + Cross-Encoder 重排",
+      "mode": "hybrid",
+      "rerank_applied": true,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.818182,
+      "hit@5": 0.863636,
+      "hit@10": 1.0,
+      "mrr@10": 0.799044,
+      "ndcg@10": 0.83809,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 3292.829,
+      "latency_p95_ms": 3552.936,
+      "latency_mean_ms": 3309.931,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 1.0
+    }
+  },
+  "supplementary_metrics": {
+    "bm25_full_corpus": {
+      "method_key": "A2",
+      "description": "诊断组（不计入四组对照）：绕过生产 keyword 候选池，在全部 447 个冻结 Chunk 上直接算同一套 BM25",
+      "mode": "bm25_full_corpus",
+      "rerank_applied": false,
+      "supplementary": true,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.818182,
+      "hit@5": 0.954545,
+      "hit@10": 0.954545,
+      "mrr@10": 0.802273,
+      "ndcg@10": 0.841364,
+      "recall@10": 0.954545,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 11.227,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 111.533,
+      "latency_p95_ms": 151.229,
+      "latency_mean_ms": 116.87,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    }
+  },
+  "deltas": {
+    "vector_only_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.727273,
+        "relative_percent": null
+      },
+      "hit@3": {
+        "absolute": 0.863636,
+        "relative_percent": null
+      },
+      "hit@5": {
+        "absolute": 0.909091,
+        "relative_percent": null
+      },
+      "hit@10": {
+        "absolute": 0.954545,
+        "relative_percent": null
+      },
+      "mrr@10": {
+        "absolute": 0.80202,
+        "relative_percent": null
+      },
+      "ndcg@10": {
+        "absolute": 0.834976,
+        "relative_percent": null
+      },
+      "recall@10": {
+        "absolute": 0.954545,
+        "relative_percent": null
+      },
+      "latency_p50_ms": {
+        "absolute": -13.701,
+        "relative_percent": -15.228
+      },
+      "latency_p95_ms": {
+        "absolute": -39.897,
+        "relative_percent": -30.087
+      }
+    },
+    "hybrid_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.909091,
+        "relative_percent": null
+      },
+      "hit@3": {
+        "absolute": 0.954545,
+        "relative_percent": null
+      },
+      "hit@5": {
+        "absolute": 0.954545,
+        "relative_percent": null
+      },
+      "hit@10": {
+        "absolute": 1.0,
+        "relative_percent": null
+      },
+      "mrr@10": {
+        "absolute": 0.930736,
+        "relative_percent": null
+      },
+      "ndcg@10": {
+        "absolute": 0.943321,
+        "relative_percent": null
+      },
+      "recall@10": {
+        "absolute": 1.0,
+        "relative_percent": null
+      },
+      "latency_p50_ms": {
+        "absolute": 34.59,
+        "relative_percent": 38.444
+      },
+      "latency_p95_ms": {
+        "absolute": 56.791,
+        "relative_percent": 42.827
+      }
+    },
+    "hybrid_rerank_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.727273,
+        "relative_percent": null
+      },
+      "hit@3": {
+        "absolute": 0.818182,
+        "relative_percent": null
+      },
+      "hit@5": {
+        "absolute": 0.863636,
+        "relative_percent": null
+      },
+      "hit@10": {
+        "absolute": 1.0,
+        "relative_percent": null
+      },
+      "mrr@10": {
+        "absolute": 0.799044,
+        "relative_percent": null
+      },
+      "ndcg@10": {
+        "absolute": 0.83809,
+        "relative_percent": null
+      },
+      "recall@10": {
+        "absolute": 1.0,
+        "relative_percent": null
+      },
+      "latency_p50_ms": {
+        "absolute": 3202.855,
+        "relative_percent": 3559.756
+      },
+      "latency_p95_ms": {
+        "absolute": 3420.331,
+        "relative_percent": 2579.338
+      }
+    },
+    "hybrid_rerank_vs_hybrid": {
+      "hit@1": {
+        "absolute": -0.181818,
+        "relative_percent": -20.0
+      },
+      "hit@3": {
+        "absolute": -0.136363,
+        "relative_percent": -14.286
+      },
+      "hit@5": {
+        "absolute": -0.090909,
+        "relative_percent": -9.524
+      },
+      "hit@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "mrr@10": {
+        "absolute": -0.131692,
+        "relative_percent": -14.149
+      },
+      "ndcg@10": {
+        "absolute": -0.105231,
+        "relative_percent": -11.155
+      },
+      "recall@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "latency_p50_ms": {
+        "absolute": 3168.265,
+        "relative_percent": 2543.484
+      },
+      "latency_p95_ms": {
+        "absolute": 3363.54,
+        "relative_percent": 1775.93
+      }
+    },
+    "bm25_only_vs_vector_only": {
+      "hit@1": {
+        "absolute": -0.727273,
+        "relative_percent": -100.0
+      },
+      "hit@3": {
+        "absolute": -0.863636,
+        "relative_percent": -100.0
+      },
+      "hit@5": {
+        "absolute": -0.909091,
+        "relative_percent": -100.0
+      },
+      "hit@10": {
+        "absolute": -0.954545,
+        "relative_percent": -100.0
+      },
+      "mrr@10": {
+        "absolute": -0.80202,
+        "relative_percent": -100.0
+      },
+      "ndcg@10": {
+        "absolute": -0.834976,
+        "relative_percent": -100.0
+      },
+      "recall@10": {
+        "absolute": -0.954545,
+        "relative_percent": -100.0
+      },
+      "latency_p50_ms": {
+        "absolute": 13.701,
+        "relative_percent": 17.963
+      },
+      "latency_p95_ms": {
+        "absolute": 39.897,
+        "relative_percent": 43.035
+      }
+    },
+    "hybrid_vs_vector_only": {
+      "hit@1": {
+        "absolute": 0.181818,
+        "relative_percent": 25.0
+      },
+      "hit@3": {
+        "absolute": 0.090909,
+        "relative_percent": 10.526
+      },
+      "hit@5": {
+        "absolute": 0.045454,
+        "relative_percent": 5.0
+      },
+      "hit@10": {
+        "absolute": 0.045455,
+        "relative_percent": 4.762
+      },
+      "mrr@10": {
+        "absolute": 0.128716,
+        "relative_percent": 16.049
+      },
+      "ndcg@10": {
+        "absolute": 0.108345,
+        "relative_percent": 12.976
+      },
+      "recall@10": {
+        "absolute": 0.045455,
+        "relative_percent": 4.762
+      },
+      "latency_p50_ms": {
+        "absolute": 48.291,
+        "relative_percent": 63.313
+      },
+      "latency_p95_ms": {
+        "absolute": 96.688,
+        "relative_percent": 104.293
+      }
+    },
+    "bm25_full_corpus_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.727273,
+        "relative_percent": null
+      },
+      "hit@3": {
+        "absolute": 0.818182,
+        "relative_percent": null
+      },
+      "hit@5": {
+        "absolute": 0.954545,
+        "relative_percent": null
+      },
+      "hit@10": {
+        "absolute": 0.954545,
+        "relative_percent": null
+      },
+      "mrr@10": {
+        "absolute": 0.802273,
+        "relative_percent": null
+      },
+      "ndcg@10": {
+        "absolute": 0.841364,
+        "relative_percent": null
+      },
+      "recall@10": {
+        "absolute": 0.954545,
+        "relative_percent": null
+      },
+      "latency_p50_ms": {
+        "absolute": 21.559,
+        "relative_percent": 23.961
+      },
+      "latency_p95_ms": {
+        "absolute": 18.624,
+        "relative_percent": 14.045
+      }
+    }
+  },
+  "active_methods": [
+    "bm25_only",
+    "vector_only",
+    "hybrid",
+    "hybrid_rerank",
+    "bm25_full_corpus"
+  ],
+  "unavailable_methods": []
+}

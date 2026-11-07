@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:00.715870+08:00",
+  "conservative_cost_yuan": 0.00165765,
+  "error": null,
+  "latency_ms": 3705.375300021842,
+  "list_price_estimate_yuan": 0.00110715,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持答案\",\n    \"evidence\": \"WH12032001 人井清淤 147.00 99.73 27.33 19.95 消耗量 0.42 0.85\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应证据支持\",\n    \"evidence\": \"WH12031001 临时抽水 积水 64.49 43.75 11.99 8.75 消耗量 0.25 0.25\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所有条件\",\n    \"evidence\": \"WH12032001 人井清淤 147.00 99.73 27.33 19.95 消耗量 0.42 0.85\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881917,
+    "id": "chatcmpl-fca87f79-5dcb-9d38-81a8-00cda590fa99",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 367,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3711,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4078
+    }
+  },
+  "usage_known": true
+}

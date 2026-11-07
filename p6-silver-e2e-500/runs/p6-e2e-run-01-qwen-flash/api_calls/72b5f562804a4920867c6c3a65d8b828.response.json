@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:39.423753+08:00",
+  "conservative_cost_yuan": 0.0008558999999999999,
+  "error": null,
+  "latency_ms": 1899.4338000193238,
+  "list_price_estimate_yuan": 0.0006624,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 敷设6孔（3X2）塑料管道时，利润为164.95元/百米。[1]  \n2. 技工人工费为824.75元/百米。[1]  \n3. 技工人工费与利润之和为989.70元/百米。[1]  \n4. 该价格基于综合单价表中WH12022005项数据。[1]  \n5. 计量单位为百米，需按实际长度折算。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880997,
+    "id": "chatcmpl-b116db9f-6705-9b75-9b70-06fcd3aefb34",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 129,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3126,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3255
+    }
+  },
+  "usage_known": true
+}

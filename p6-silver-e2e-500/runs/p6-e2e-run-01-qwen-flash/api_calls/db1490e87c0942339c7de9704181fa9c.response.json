@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:53.215504+08:00",
+  "conservative_cost_yuan": 0.0008508,
+  "error": null,
+  "latency_ms": 1646.1763998959213,
+  "list_price_estimate_yuan": 0.0006437999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 架空光缆线路徒步巡回在平原地区综合单价为66.01元/千米²次。[1]  \n2. 直埋光缆线路车辆巡回在平原地区综合单价为24.01元/千米²次。[2]  \n3. 两者计量单位均为千米²次，按维护周期和实际次数计算。[4]  \n4. 平原地区架空徒步巡回项目编码为WH11001001。[1]  \n5. 平原地区直埋车辆巡回项目编码为WH11004001。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880951,
+    "id": "chatcmpl-7f7a3c42-7218-9c25-80ce-e427cc80b5a1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 138,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2912,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3050
+    }
+  },
+  "usage_known": true
+}

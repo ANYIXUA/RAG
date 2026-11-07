@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:27.013293+08:00",
+  "input_token_upper_bound": 1169,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0216"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "一个光分纤箱和一个光网络箱都需要巡检时，分别需要多少工日的技工和普工？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "754e90092cf04bd8a9d375658c732259",
+  "reserved_yuan": 0.0005845
+}

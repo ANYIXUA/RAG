@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:05.644077+08:00",
+  "input_token_upper_bound": 1127,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0407"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "智慧家庭场景下如何选择最优的装维服务方案？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "52e5b8feb4134edfba59d7f20d6c956c",
+  "reserved_yuan": 0.0005635
+}

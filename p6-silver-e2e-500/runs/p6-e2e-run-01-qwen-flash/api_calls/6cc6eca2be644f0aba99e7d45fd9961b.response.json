@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:19.724004+08:00",
+  "conservative_cost_yuan": 0.0014019000000000002,
+  "error": null,
+  "latency_ms": 2511.5531999617815,
+  "list_price_estimate_yuan": 0.0009563999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"交越时净距应为1.5米，非0.5米\",\n    \"evidence\": \"给水管（管径大于500mm) 1.5 0.5\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"关键事实与上下文矛盾\",\n    \"evidence\": \"给水管（管径大于500mm) 1.5 0.5\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题核心要求\",\n    \"evidence\": \"给水管（管径大于500mm) 1.5 0.5\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]对应正确来源\",\n    \"evidence\": \"给水管（管径大于500mm) 1.5 0.5\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_fact\",\n    \"citation_mismatch\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881937,
+    "id": "chatcmpl-652707ac-a64c-925a-9217-4e68f05fe36d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 297,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3406,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3703
+    }
+  },
+  "usage_known": true
+}

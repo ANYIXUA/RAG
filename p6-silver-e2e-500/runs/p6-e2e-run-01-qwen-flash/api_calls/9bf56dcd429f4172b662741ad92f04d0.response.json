@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:49.666262+08:00",
+  "conservative_cost_yuan": 0.0016741500000000001,
+  "error": null,
+  "latency_ms": 3651.631300104782,
+  "list_price_estimate_yuan": 0.00111615,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"混淆车辆与徒步巡回，数据错误\",\n    \"evidence\": \"WH11004002 山区 36.01 24.43 6.69 4.89 0.21 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"人工费与利润引用错误项目\",\n    \"evidence\": \"WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分覆盖但未明确区分项目类型\",\n    \"evidence\": \"山区直埋光缆线路徒步巡回人工费为73.29元/工日。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[2]对应徒步巡回，非问题所指\",\n    \"evidence\": \"WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_project_type\",\n    \"wrong_cost_item\",\n    \"misattribution\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881786,
+    "id": "chatcmpl-dee9d705-c69b-9e56-8b15-d49af1ac2dae",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 372,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3721,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4093
+    }
+  },
+  "usage_known": true
+}

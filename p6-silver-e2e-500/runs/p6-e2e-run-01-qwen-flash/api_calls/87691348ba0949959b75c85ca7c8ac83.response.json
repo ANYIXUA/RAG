@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:32.890390+08:00",
+  "conservative_cost_yuan": 0.0018288,
+  "error": null,
+  "latency_ms": 3483.849300071597,
+  "list_price_estimate_yuan": 0.0011883,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]明确提及表—04\",\n    \"evidence\": \"序号 编号 材料及备品备件名称 规格型号 单位 数量 金额(元) （除税价） 单价 合价 1 2 表格列：合；计 表—04\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"序号 编号 材料及备品备件名称 规格型号 单位 数量 金额(元) （除税价） 单价 合价 1 2 表格列：合；计 表—04\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答问题所需信息\",\n    \"evidence\": \"序号 编号 材料及备品备件名称 规格型号 单位 数量 金额(元) （除税价） 单价 合价 1 2 表格列：合；计 表—04\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"序号 编号 材料及备品备件名称 规格型号 单位 数量 金额(元) （除税价） 单价 合价 1 2 表格列：合；计 表—04\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881949,
+    "id": "chatcmpl-f80a4c0d-409e-9bb8-9ac1-611d951a8522",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 427,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3652,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4079
+    }
+  },
+  "usage_known": true
+}

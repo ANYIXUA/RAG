@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:47.710299+08:00",
+  "conservative_cost_yuan": 0.0030040500000000003,
+  "error": null,
+  "latency_ms": 7169.013699982315,
+  "list_price_estimate_yuan": 0.00179955,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文[1]明确列出WH23117019（路灯型高度1800mm以上）的综合单价为820.80元，与silver_reference一致，且该信息在实际LLM输出中被准确引用。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第274页\\n定位信息：274\\n内容：... WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有陈述均能在上下文[1]中找到直接支持：综合单价820.80元、项目编号WH23117019、包含安装材料人工费用（由‘综合单价’隐含）、与1800mm以下型号价格差异（456.00元），以及来源为第274页。每项事实均有对应原文支持。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第274页\\n定位信息：274\\n内容：... WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问综合单价，回答完整提供该数值，并补充了项目编号、费用构成说明、对比信息及来源页码，覆盖了必要信息，无遗漏关键条件或步骤。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第274页\\n定位信息：274\\n内容：... WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个关键结论均正确标注引用来源[1]，且该引用内容确实支持对应语句。例如，820.80元、WH23117019、第274页等均来自同一上下文片段[1]。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第274页\\n定位信息：274\\n内容：... WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确可答的exact_fact类型，上下文存在答案，模型未拒答，符合正常回答逻辑，无需适用拒答评分标准。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881300,
+    "id": "chatcmpl-685e41d4-723b-9550-961d-2a323a67a023",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 803,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3967,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4770
+    }
+  },
+  "usage_known": true
+}

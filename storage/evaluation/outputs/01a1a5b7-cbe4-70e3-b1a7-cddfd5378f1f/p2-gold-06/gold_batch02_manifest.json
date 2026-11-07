@@ -1,0 +1,133 @@
+{
+  "gold_version": "p2-gold-06-batch02-v1",
+  "batch": "batch02",
+  "parent_phase": "p2-gold-05",
+  "source_git_commit": "7810bfb54d43a1e5ffb4b6428bd30c0b4b0161a5",
+  "git_branch": "codex/eval-corpus-export-v1",
+  "tracked_worktree_clean": true,
+  "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+  "corpus_manifest_internal_sha256": "0ddcdfe183ab387767065dcf029dd31ba5cdf0088ee9dc7e3501254d72223827",
+  "corpus_export_git_head": "9686e3992b216b7c180cbc1887e999500b07313c",
+  "generated_at": "2026-11-04T23:06:14+08:00",
+  "manifest_finalized_at": "2026-11-04T23:11:39+08:00",
+  "generator": {
+    "name": "P2-Gold-06 one-off static export",
+    "python": "3.12.14",
+    "corpus_validator": "rag_app.eval_dataset.corpus.load_corpus_snapshot",
+    "evaluator": "rag_app.operations.evaluation.load_retrieval_eval_cases",
+    "note": "未运行 Benchmark、检索服务或数据库；未修改检索/评测代码。"
+  },
+  "candidate_file_sha256": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120",
+  "human_signoff_file_sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+  "human_signoff_file_sha256_before_signoff": "e7719369abd01d741e65b717aa4d61e965a92b1d50e51fe8fec2ef6150f313d0",
+  "human_signoff": {
+    "records": 15,
+    "complete_and_valid": 13,
+    "rejected": 1,
+    "unsigned": 1,
+    "ai_recommendation_used_as_approval": false
+  },
+  "gold_file_sha256": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+  "inputs_sha256": {
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/p2_gold_05_signoff_packet.md": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/p2_gold_05_review_proposal.md": "8811414d2c6447662a0ab4cbad45d60524b475543003fc5af575c32fe3cc8dc2",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/p2_gold_05_validation.md": "2d7454c7e50ea6e7aa83d0cb9a3e5200d2eb73b07a23f75b1119604b9646211f",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/review_batch02_15_draft.xlsx": "12f4a4acbb176590de732a7c92c0c620f03ac8376edda10ade52989a96c060b7",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/review.xlsx": "df13e2755786cfb7f4d30e44d6323463ce6cbfe49c99a2b5ae87dfeec369d5ea",
+    "storage/evaluation/candidates/p1-20261104-structured/candidates.jsonl": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120",
+    "storage/evaluation/candidates/p1-20261104-structured/generation_manifest.json": "f859cd0dc08dd2617f964887cb3994b1a7f1c2407a06423193ca49c0ed2d0581",
+    "storage/evaluation/corpus/p1-20261104-v2/corpus.manifest.json": "50bb2c71e205698ae8bee394231d961d19567117e03f489579a1f53b9bf1245f",
+    "storage/evaluation/corpus/p1-20261104-v2/corpus.jsonl": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_9.jsonl": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_metadata.json": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/rejected_batch01_3.jsonl": "3bbeec82efe9ad5fc646479056cf189985314fadb8f5670ea164e28869c1ed91",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/gold_batch01_manifest.json": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493",
+    "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/p2_gold_04_validation.md": "38ddcc44595359c8bea73f5d77f2a7d534dd8af3c5178f835b1fc62da0c6319d",
+    "data/电信基础设施维护规程.pdf": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+    "data/智慧家庭装维工程与管理职业技能等级标准.pdf": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+    "data/中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+    "rag_app/operations/evaluation.py": "f32a9afb6f8e35fa62502b3c1a8417eb444a81b4035fba846821ff36c42da20b",
+    "rag_app/eval_dataset/corpus.py": "61932767e050e4c0b420f4060ac9554da19486e817733c0b15bef408b19ec0aa"
+  },
+  "outputs_sha256": {
+    "retrieval_gold_batch02_13.jsonl": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+    "retrieval_gold_batch02_metadata.json": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3",
+    "rejected_batch02_1.jsonl": "aa0e784949e0d3ff535e57b510b8111fbbe6d869752292a613f80836409aff73",
+    "unsigned_batch02_1.jsonl": "4cd8ddc233c9a3f54b10fca609f388bf616d7653665d8a9accc5e69ca04e1cee",
+    "p2_gold_06_verify.json": "c3cce8d97631abe8cd1e336e68b632c1671bc182f0a380fad3ca0e1b6e62b551",
+    "p2_gold_06_validation.md": "ccbf9f358d79d8452c0c606982e1fc5282a6874b6e9b957e4bae906fb252d4a7"
+  },
+  "outputs_note": "outputs_sha256 不含 Manifest 自身，避免自引用；Manifest 字节哈希由调用方复算。",
+  "counts": {
+    "gold": 13,
+    "accepted_original": 3,
+    "accepted_revision": 10,
+    "rejected": 1,
+    "unsigned": 1,
+    "cumulative_gold": 22,
+    "remaining_to_50": 28,
+    "candidates": 57,
+    "corpus_documents": 3,
+    "corpus_chunks": 447,
+    "gold_evidence_chunks": 16,
+    "gold_unique_evidence_chunks": 10,
+    "retrieval_targets": 14,
+    "retrieval_target_chunks": 10,
+    "rejection_evidence_chunks": 2
+  },
+  "known_scoring_limits": [
+    "每个目标内 AND，目标之间 OR。Hit@K 和 MRR 采用首个匹配。",
+    "现有评测器无 NDCG、Chunk ID 直配或双证据完整覆盖指标。",
+    "B14、B15 完整证据需页 10 表头与续页正文两块，但检索目标只设正文块；Hit@K/MRR 无法判断两块是否同在一个返回集合。",
+    "B25 的两个目标为等价证据（OR），任一命中即计 Hit，指标不要求同一 Top-K 同时含两页。",
+    "B16/B21 与首批 B02 共享 254 页 Chunk，B17–B20 共享 255 页 Chunk；目标只验证 Chunk 级命中，不区分行或段落，且同 Chunk 内另有同价行（WH23104001 亦为 62.02 元/个）。",
+    "仅填 source 会把同文档其他 Chunk 判为相关。三字段组合只在本冻结快照验证唯一性（6258 次比对，0 误命中）。",
+    "text_contains 对空白与标点敏感，原文匹配需与冻结 Chunk 一致。"
+  ],
+  "validation": {
+    "static_checks": 643,
+    "static_checks_failed": 0,
+    "schema_loaded": 13,
+    "schema_loader": "rag_app.operations.evaluation.load_retrieval_eval_cases",
+    "target_chunk_comparisons": 6258,
+    "target_matches": 14,
+    "target_false_positives": 0,
+    "negative_comparisons_same_document": 3711,
+    "gold_ids_recomputed": 13,
+    "parents_found": 13,
+    "chunks_missing": 0,
+    "batch01_duplicate_questions": 0,
+    "max_similarity_vs_batch01": {
+      "value": 0.6486,
+      "pair": [
+        "B21",
+        "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      ]
+    },
+    "benchmark_executed": false,
+    "database_accessed": false,
+    "git_write": false
+  },
+  "id_recipe": {
+    "prefix": "gold-batch02-sha256:",
+    "algorithm": "SHA-256",
+    "fields": [
+      "batch_id",
+      "parent_candidate_id",
+      "corpus_snapshot_id",
+      "review_decision",
+      "question",
+      "reference_answer",
+      "evidence_chunk_ids",
+      "retrieval_relevant_chunk_ids"
+    ],
+    "encoding": "UTF-8 JSON object, ensure_ascii=False, sort_keys=True, separators=(comma, colon), no final LF"
+  },
+  "provenance": {
+    "signoff_packet": "人工字段逐条读取；空值或非法取值不纳入。",
+    "rejected_file": "rejected_batch02_1.jsonl 只含 B24，不含 Gold ID。",
+    "unsigned_file": "unsigned_batch02_1.jsonl 只含 B23，状态 unsigned_pending_clarification，gold_case_id=null。",
+    "first_batch_untouched": true,
+    "candidates_untouched": true
+  }
+}

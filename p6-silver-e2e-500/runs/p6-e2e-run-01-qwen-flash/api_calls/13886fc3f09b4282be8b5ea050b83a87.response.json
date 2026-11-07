@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:29.382322+08:00",
+  "conservative_cost_yuan": 0.0014650499999999999,
+  "error": null,
+  "latency_ms": 2945.5377999693155,
+  "list_price_estimate_yuan": 0.00101205,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文工作内容一致\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖全部关键施工步骤\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持句意\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881946,
+    "id": "chatcmpl-91076b46-3767-9b50-91a7-2916b29421dc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 302,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3727,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4029
+    }
+  },
+  "usage_known": true
+}

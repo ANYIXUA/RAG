@@ -1,0 +1,538 @@
+{
+  "note": "只读快照；原始 Gold 未被修改，本文件仅按字节拼接两批 JSONL。",
+  "merged_file": "p3-pilot-01\\data\\gold_22_merged.jsonl",
+  "merged_sha256": "9a4768df29cc86c2455318286590919b35dda25fed01c85d26c760b7df878939",
+  "merged_cases": 22,
+  "batch_ids": [
+    "B01",
+    "B02",
+    "B03",
+    "B04",
+    "B05",
+    "B06",
+    "B07",
+    "B09",
+    "B12",
+    "B13",
+    "B14",
+    "B15",
+    "B16",
+    "B17",
+    "B18",
+    "B19",
+    "B20",
+    "B21",
+    "B22",
+    "B25",
+    "B26",
+    "B27"
+  ],
+  "excluded_batch_ids_present": [],
+  "sources": {
+    "batch01_jsonl": {
+      "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_9.jsonl",
+      "sha256": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a"
+    },
+    "batch01_metadata": {
+      "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_metadata.json",
+      "sha256": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39"
+    },
+    "batch01_manifest": {
+      "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/gold_batch01_manifest.json",
+      "sha256": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493"
+    },
+    "batch02_jsonl": {
+      "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-06/retrieval_gold_batch02_13.jsonl",
+      "sha256": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9"
+    },
+    "batch02_metadata": {
+      "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-06/retrieval_gold_batch02_metadata.json",
+      "sha256": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3"
+    },
+    "batch02_manifest": {
+      "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-06/gold_batch02_manifest.json",
+      "sha256": "6fda108ba2d8f42a72fb5e16a735d4b9253a8c5200fa381472a6beab8ba036e1"
+    }
+  },
+  "cases": [
+    {
+      "batch": "batch01",
+      "batch_id": "B01",
+      "gold_case_id": "gold-batch01-sha256:d1fcbeb037f45ffa276e565a12f440e3812b98aef32598a2cd0fedd9810b1a06",
+      "query": "非高速公路场景下，管道线路的人（手）孔检修周期是多久？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第29页",
+          "text_contains": "管道线路的人（手）孔 检修 半年 高速公路中人孔的检修按需进行"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "831af7c41fd776db6b5b3ff9"
+      ],
+      "evidence_chunk_ids": [
+        "831af7c41fd776db6b5b3ff9"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch01",
+      "batch_id": "B02",
+      "gold_case_id": "gold-batch01-sha256:42b8a2541ffce7ab7ef69d2f1c165500ba5af5aa949ab806a45509dc44dd0dc3",
+      "query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第254页",
+          "text_contains": "WH23104003 测试波分复用器 测试波分复用器1:2 29.18"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "evidence_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch01",
+      "batch_id": "B03",
+      "gold_case_id": "gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5",
+      "query": "智慧家庭全光组网产品技术规范的版本是什么？",
+      "expected": [
+        {
+          "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+          "section_title": "第1页",
+          "text_contains": "全光组网产品技术规范\n\nV2.0.0"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "evidence_chunk_ids": [
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch01",
+      "batch_id": "B04",
+      "gold_case_id": "gold-batch01-sha256:0da5c82f433a53526cacf1f533e597e0d0d56bf090a952123037a56df20813b7",
+      "query": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？",
+      "expected": [
+        {
+          "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+          "section_title": "第19页",
+          "text_contains": "安全作业 10 10 10 合计 100 100 100"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "02c18b66c8c7d17fa1fb910e"
+      ],
+      "evidence_chunk_ids": [
+        "02c18b66c8c7d17fa1fb910e"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch01",
+      "batch_id": "B05",
+      "gold_case_id": "gold-batch01-sha256:c482b83580f3fb39b560f93a43695220c7fcca57dadaf88ad7391ba8a95a5c10",
+      "query": "全光组网终端支持IEEE 802.11ax协议时，2.4G频段应至少支持多少个RU并行调度？",
+      "expected": [
+        {
+          "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+          "section_title": "第25页",
+          "text_contains": "2.4G 频段应至少支持4 个RU 并行调度"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "4812f97659f77c46891223fa"
+      ],
+      "evidence_chunk_ids": [
+        "4812f97659f77c46891223fa"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch01",
+      "batch_id": "B06",
+      "gold_case_id": "gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239",
+      "query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？",
+      "expected": [
+        {
+          "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+          "section_title": "第6页",
+          "text_contains": "智慧家庭工程师 4.2 职业编码 4-04-02-012"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "5ab56d780f65ff344900b1a2"
+      ],
+      "evidence_chunk_ids": [
+        "5ab56d780f65ff344900b1a2"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch01",
+      "batch_id": "B07",
+      "gold_case_id": "gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42",
+      "query": "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？",
+      "expected": [
+        {
+          "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+          "section_title": "第62页",
+          "text_contains": "（3）尺寸大小：不小于17×17mm（公差：±1mm)，正方形"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "38ea5e749604f43f5f040901"
+      ],
+      "evidence_chunk_ids": [
+        "c120df3a569ae215d69183ac",
+        "38ea5e749604f43f5f040901"
+      ],
+      "requires_all_evidence": true,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch01",
+      "batch_id": "B09",
+      "gold_case_id": "gold-batch01-sha256:d398b06298f36c11da17723f8a1765f3580d9cab8d4393f6f9742f07d3e2c6bc",
+      "query": "在室温 25±2℃ 的情况下，非嵌入式全光组网终端表面温度不得超过多少℃？",
+      "expected": [
+        {
+          "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+          "section_title": "第58页",
+          "text_contains": "室温25±2℃的情况下，非嵌入式全光组网终端表面温度需不超过50℃"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "9b5d9b92dc528a1c594e3ec2"
+      ],
+      "evidence_chunk_ids": [
+        "9b5d9b92dc528a1c594e3ec2"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch01",
+      "batch_id": "B12",
+      "gold_case_id": "gold-batch01-sha256:fb01c2c2f5f0a5c0359778f2525216af20a933851661902b83de6a48c53f30aa",
+      "query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？",
+      "expected": [
+        {
+          "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+          "section_title": "第16页",
+          "text_contains": "3.2.2 无线局域网相关基础知识"
+        },
+        {
+          "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+          "section_title": "第18页",
+          "text_contains": "3.2.3 无线局域网网优及软件基础知 识"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ],
+      "evidence_chunk_ids": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ],
+      "requires_all_evidence": true,
+      "question_type": "confusable"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B13",
+      "gold_case_id": "gold-batch02-sha256:cb6c1fd465588112ef0e370268ad0183ee9da3679bcfc5cccee37d207f360e49",
+      "query": "《智慧家庭装维工程与管理职业技能等级标准》第 5.7 节规定，安全作业知识包括哪五项？",
+      "expected": [
+        {
+          "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+          "section_title": "第10页",
+          "text_contains": "有限空间作业基础知识"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "0eb4bd6e18d599063371f51b"
+      ],
+      "evidence_chunk_ids": [
+        "0eb4bd6e18d599063371f51b"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B14",
+      "gold_case_id": "gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c",
+      "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，中级人员在“智能家居（控制）技术”项下对系统架构有什么要求？",
+      "expected": [
+        {
+          "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+          "section_title": "第11页",
+          "text_contains": "熟悉智能家居系统架构"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "e010fe39879d92fa21dc59d9"
+      ],
+      "evidence_chunk_ids": [
+        "0eb4bd6e18d599063371f51b",
+        "e010fe39879d92fa21dc59d9"
+      ],
+      "requires_all_evidence": true,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B15",
+      "gold_case_id": "gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf",
+      "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，高级人员在“物联网接入业务运维”项下对网关组网方法的要求是什么？",
+      "expected": [
+        {
+          "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+          "section_title": "第12页",
+          "text_contains": "掌握网关组网方法"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "1c317b1dd2cebfbf9647d03e"
+      ],
+      "evidence_chunk_ids": [
+        "0eb4bd6e18d599063371f51b",
+        "1c317b1dd2cebfbf9647d03e"
+      ],
+      "requires_all_evidence": true,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B16",
+      "gold_case_id": "gold-batch02-sha256:50d51edece13e19c9b0461c5d28612c2bd57007a19ab3987f4a5506865d5e31e",
+      "query": "《电信基础设施维护规程》表 10.3.3.4 中，安装波分复用器这一子项包含哪些工作？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第254页",
+          "text_contains": "开箱检验、复核定位、安装固定、清理现场"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "evidence_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B17",
+      "gold_case_id": "gold-batch02-sha256:b084448f7e7645c2707588f54535d32b68eb9065c1c88e40589d1d9e429577e4",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，编码 WH23105001 对应的防雷箱子项名称是什么？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第255页",
+          "text_contains": "WH23105001 安装防雷接地装置 室内防雷箱"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "evidence_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B18",
+      "gold_case_id": "gold-batch02-sha256:ab3b66a0a8ccc60a2d24f08a125fcbfff193b42877b83821acb4b8a8e26af2e8",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，室外塔上防雷箱（WH23105003）的综合单价列标了多少元？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第255页",
+          "text_contains": "WH23105003 室外塔上防雷箱 519.84"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "evidence_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B19",
+      "gold_case_id": "gold-batch02-sha256:b4b194da3f8a23a7d4bfa98f30393ba5402f27c1e527513bc033dcf6b653e9b0",
+      "query": "安装防雷接地装置的工作内容有哪些？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第255页",
+          "text_contains": "接地电阻测试：接线、测量"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "evidence_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B20",
+      "gold_case_id": "gold-batch02-sha256:74d3dfa33289009b189597355bbb9cb5852fdad9ad135fcaebf18261f4a9c632",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，室内防雷箱（WH23105001）的综合单价列标了多少元？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第255页",
+          "text_contains": "WH23105001 安装防雷接地装置 室内防雷箱 271.78"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "evidence_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B21",
+      "gold_case_id": "gold-batch02-sha256:f2a4f74b711f2413b1402f768300d60583f1057569aa22e97a24ab2789b01491",
+      "query": "《电信基础设施维护规程》表 10.3.3.4 中，测试波分复用器 1:6 以下（WH23104004）的综合单价是多少（元/个）？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第254页",
+          "text_contains": "WH23104004 波分复用器1:6 以下 62.02"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "evidence_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B22",
+      "gold_case_id": "gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206",
+      "query": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0 第 4.8.2 节，全光组网终端出厂后可以保留什么账号？",
+      "expected": [
+        {
+          "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+          "section_title": "第52页",
+          "text_contains": "设备中除为用户提供的唯一账号外"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "81951fb8b5e157346ed83d77"
+      ],
+      "evidence_chunk_ids": [
+        "81951fb8b5e157346ed83d77"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "semantic"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B25",
+      "gold_case_id": "gold-batch02-sha256:5d0db5acf870d6545edfa8cf4b6a57f9208ffe39b392c47c0d6acb2d21f96e33",
+      "query": "铁塔专项维修的工作内容包括哪些？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第286页",
+          "text_contains": "塔基强度测试"
+        },
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第141页",
+          "text_contains": "WH23123"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "611a9eb6554a2b482561c775",
+        "4931f1a7b903ba2672bbb512"
+      ],
+      "evidence_chunk_ids": [
+        "611a9eb6554a2b482561c775"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B26",
+      "gold_case_id": "gold-batch02-sha256:4fe9bbf65368789a96fec628474fc6bfc870786f30c9c305f0da4cd8df09375a",
+      "query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第287页",
+          "text_contains": "护网外内部以及周边一米杂草、杂物集中清除"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "a264a91966d85e2ec3b52e02"
+      ],
+      "evidence_chunk_ids": [
+        "a264a91966d85e2ec3b52e02"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    },
+    {
+      "batch": "batch02",
+      "batch_id": "B27",
+      "gold_case_id": "gold-batch02-sha256:f60c41c855e4aca2f381666e34c23cc4466e2291b004c8c55340a4709193cea3",
+      "query": "WH23131004项目对应的防水处理范围是什么？",
+      "expected": [
+        {
+          "source": "电信基础设施维护规程.pdf",
+          "section_title": "第288页",
+          "text_contains": "WH23131004 地面墙面防水"
+        }
+      ],
+      "relevant_chunk_ids": [
+        "95cb40813342a7e91c27e7d3"
+      ],
+      "evidence_chunk_ids": [
+        "95cb40813342a7e91c27e7d3"
+      ],
+      "requires_all_evidence": false,
+      "question_type": "exact_entity"
+    }
+  ],
+  "generated_by": "p3-pilot-01/build_gold_bundle.py"
+}

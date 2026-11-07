@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:06.812432+08:00",
+  "conservative_cost_yuan": 0.00287865,
+  "error": null,
+  "latency_ms": 8090.567300096154,
+  "list_price_estimate_yuan": 0.00171165,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确列出WH33121001更换单体电池的综合单价为432.09元，与silver_reference一致，且该信息在原文中直接可得，无歧义。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第320页\\n定位信息：320\\n... WH33121001 更换单体电池 432.09 293.14 80.32 58.63 消耗量 2.57 0.00\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实（综合单价、费用构成、工作内容、计量单位、项目编码）均能在上下文[1]中找到对应支持，且未引入额外未提及的信息。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第320页\\n定位信息：320\\n... WH33121001 更换单体电池 432.09 293.14 80.32 58.63 消耗量 2.57 0.00\\n... 工作内容：1、断开蓄电池组熔丝；2、拆除相关电池连接条；2、拆除蓄电池；4、安装蓄电池；5、安装蓄电池连接条；6、测试、送电等。 计量单位：组（块）\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问综合单价，回答聚焦于该核心信息，并补充了相关背景（如费用构成、工作内容、计量单位、项目编码），虽非必要但不冗余，完整覆盖了问题所需条件。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第320页\\n定位信息：320\\n... WH33121001 更换单体电池 432.09 293.14 80.32 58.63 消耗量 2.57 0.00\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有关键结论均正确引用自上下文[1]，且引用编号[1]与实际来源匹配，每句均有对应出处，无错误或缺失引用。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第320页\\n定位信息：320\\n... WH33121001 更换单体电池 432.09 293.14 80.32 58.63 消耗量 2.57 0.00\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实查询，上下文存在答案，无需拒答，因此该维度不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881318,
+    "id": "chatcmpl-e7766bef-c11b-94c5-9be8-d0a25d0d4e9e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 778,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3631,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4409
+    }
+  },
+  "usage_known": true
+}

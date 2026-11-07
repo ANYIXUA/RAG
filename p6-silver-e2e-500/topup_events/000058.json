@@ -1,0 +1,114 @@
+{
+  "previous_sha256": "cbd2711940ff586a7f170d3ddc77951551dbd67c64e860fb75e6beb55085a304",
+  "record": {
+    "batch": 29,
+    "candidates": [
+      {
+        "answer": "基站断站时长等",
+        "evidence": [
+          {
+            "excerpt": "维护指标是衡量服务质量的一项重要指标，包括基站障碍率、基站断站时长等。达不到质量要求时，应及时进行分析、研究对策、制定措施。",
+            "passage_id": "666dd9962795da0fe92edf94"
+          }
+        ],
+        "question": "基站断站时长属于哪个维护指标？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "按月召开",
+        "evidence": [
+          {
+            "excerpt": "维护企业应按月召开生产质量分析会，并作专门记录。",
+            "passage_id": "666dd9962795da0fe92edf94"
+          }
+        ],
+        "question": "生产质量分析会应按什么频率召开？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "应定期检查，损坏要及时维修，确保抢修需要。",
+        "evidence": [
+          {
+            "excerpt": "抢修车辆应定期检查，损坏要及时维修，确保抢修需要。",
+            "passage_id": "efdd40b06ce9636a150a7668"
+          }
+        ],
+        "question": "抢修车辆应如何管理？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0494",
+          "expected_behavior": "answer",
+          "generation_batch": 29,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271135,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "生产质量分析会应按什么频率召开？",
+          "question_type": "exact_fact",
+          "reference_answer": "按月召开",
+          "source_chunk_ids": [
+            "666dd9962795da0fe92edf94"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "666dd9962795da0fe92edf94",
+              "excerpt": "维护企业应按月召开生产质量分析会，并作专门记录。"
+            }
+          ],
+          "source_page": 59,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0495",
+          "expected_behavior": "answer",
+          "generation_batch": 29,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271135,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "抢修车辆应如何管理？",
+          "question_type": "exact_fact",
+          "reference_answer": "应定期检查，损坏要及时维修，确保抢修需要。",
+          "source_chunk_ids": [
+            "efdd40b06ce9636a150a7668"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "efdd40b06ce9636a150a7668",
+              "excerpt": "抢修车辆应定期检查，损坏要及时维修，确保抢修需要。"
+            }
+          ],
+          "source_page": 60,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:56.521545+08:00",
+  "conservative_cost_yuan": 0.00271455,
+  "error": null,
+  "latency_ms": 6304.762099869549,
+  "list_price_estimate_yuan": 0.00163305,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际回答中指出吊顶式机房通用空调的消耗量为1.45，与上下文[1]和[2]中的数据一致。该数值在两个不同页码（第311页和第284页）的相同表格中重复出现，支持其正确性。\",\n    \"evidence\": \"WH33110003 吊顶式 264.48 165.30 49.59 49.59 1.45 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每一条事实均在提供的上下文片段中得到直接支持：1.45的消耗量来自[1]和[2]；单位‘台·次’在上下文中有明确说明；与其他类型对比也基于原文数据。所有陈述均有对应来源且无额外编造。\",\n    \"evidence\": \"WH33110003 吊顶式 264.48 165.30 49.59 49.59 1.45 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题询问的是消耗量，回答完整提供了数值（1.45）、单位（台·次）、来源位置（第311页和第284页）以及与其他类型的比较，覆盖了所有必要信息点，未遗漏关键条件或步骤。\",\n    \"evidence\": \"WH33110003 吊顶式 264.48 165.30 49.59 49.59 1.45 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个引用编号[1]、[2]均准确对应实际上下文来源。[1]对应第311页内容，[2]对应第284页内容，且所引语句均被正确引用。未出现错误引用或自创编号。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第311页\\n... WH33110003 吊顶式 264.48 165.30 49.59 49.59 1.45 —\\n\\n[2] 来源：电信基础设施维护规程.pdf\\n引用标签：[2]\\n标题：第284页\\n... WH23127003 吊顶式 264.48 165.30 49.59 49.59 1.45 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的精确事实类问题，且上下文提供了明确答案，因此无需拒答。模型正确作答，符合要求。\",\n    \"evidence\": \"无\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881490,
+    "id": "chatcmpl-4e5ba93e-8e25-9ff0-a8ce-f8fbd5288321",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 721,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3677,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4398
+    }
+  },
+  "usage_known": true
+}

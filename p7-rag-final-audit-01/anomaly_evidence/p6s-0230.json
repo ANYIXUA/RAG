@@ -1,0 +1,435 @@
+{
+  "case_id": "p6s-0230",
+  "question": "在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？",
+  "answer": "1. 维护作业综合单价应包含光缆引入、跳接与测试费用。[3]  \n2. 应涵盖用户端设备安装、调测及开通维护成本。[3]  \n3. 包含备品、备件及装维材料的管理与使用费用。[3]  \n4. 涉及终端返修时的登记、交接与诊断记录成本。[3]  \n5. 覆盖日常维护中的人工、工具及安全作业支出。[3]",
+  "silver_reference_answer": "综合单价包含人工费、企业管理费和利润，以及一定范围内的风险费用。",
+  "silver_source_evidence": [
+    {
+      "chunk_id": "a3cb9e6f0142a9e1ebab6be3",
+      "excerpt": "3.39 光网络单元 Optical Network Unit（ONU） 分为有源光网络单元和无源光网络单元。 一般把装有包括光接收机、上行光发射机、多个桥接放大 器网络监控的设备叫做光节点。 3.40 光纤配线架 Optical Distribution Frame（ODF） 光纤配线架用于光纤通信系统中局端主干光缆的成端和分配，可方便地实现光纤线路的连接、分配和 调度等。"
+    },
+    {
+      "chunk_id": "b113827b54593ec6085a7bbc",
+      "excerpt": "3.58 综合单价 Composite Unit Price 完成一个规定计量单位的维护分项作业工作量清单项目所需的人工费、企业管理费和利润，以及一定 范围内的风险费用。"
+    }
+  ],
+  "original_score": {
+    "case_id": "p6s-0230",
+    "errors": [
+      "ValueError",
+      "ValueError",
+      "ValueError"
+    ],
+    "needs_human_review": true,
+    "question_type": "multi_condition",
+    "score_state": "failed"
+  },
+  "original_diagnostic": {
+    "actual_prompt_chars": 3776,
+    "case_id": "p6s-0230",
+    "citation_index_and_context_valid_count": 5,
+    "citation_index_valid_count": 5,
+    "citation_markers": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "context_verification": "full normalized Silver quotation in actual rendered request; absence does not rule out alternative support",
+    "diagnosis_is_exploratory": true,
+    "primary_failure_bucket": "8_judge_unreliable",
+    "question_type": "multi_condition",
+    "reference_all_quotes_in_actual_prompt": false,
+    "reference_all_retrieved": false,
+    "reference_chunk_ids": [
+      "a3cb9e6f0142a9e1ebab6be3",
+      "b113827b54593ec6085a7bbc"
+    ],
+    "reference_quote_context_hit_ids": [
+      "a3cb9e6f0142a9e1ebab6be3"
+    ],
+    "retrieved_chunk_ids": [
+      "1c317b1dd2cebfbf9647d03e",
+      "48e4aa1fce9c20c3d6f6339f",
+      "4fce0b1cd8d9e372161536d0",
+      "a3cb9e6f0142a9e1ebab6be3"
+    ],
+    "unanswerable_provisional": false
+  },
+  "actual_generation_api_call_id": "4753bf14069c4e94b4c7e2c9788d80f4",
+  "actual_generation_prompt": "# 角色与记忆\n你是一台专门的“装维业务知识问答助手”。\n\n# 核心原则（严格遵守）\n1. **限定范围：** 只能基于提供的检索上下文回答问题，若上下文中没有答案，必须明确说明不知道，并提示补充信息或转人工，严禁凭空编造。\n2. **字数限制：** 回答必须控制在 5 条要点以内，且每条要点不得超过 40 个字。\n3. **精准引用：** 回答中的每个关键结论，必须使用如 [1]、[2] 的编号在文末或句末注明来源。引用编号只能来源于提供的上下文片段，不得自创。\n\n# 正确示例 (Good Case)\n【输入】\n用户问题：光猫红灯闪烁怎么处理？\n检索上下文：[1]光猫红灯闪烁通常因为光缆断或光功率低。[2]应先检查尾纤是否插紧。[3]若无法恢复，需上报系统转人工派发修障单。\n\n【输出】\n1. 光猫红灯闪烁通常是光缆断或光功率过低导致。[1]\n2. 处置时应首先检查尾纤是否已经插紧。[2]\n3. 若检查后仍无法恢复，请明确上报系统转人工处理。[3]\n\n# 避坑检查（模型自检项）\n- 严禁出现无引用编号的结论。\n- 严禁出现诸如“您可以尝试重启”等上下文中不存在的盲猜建议。\n---\n# 待处理任务\n\n【用户原始问题】\n在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？\n\n【增强上下文】\n\"\"\"\n请求ID：b9077ae9a3784a7b985eff695d67c898\n会话ID：p6-e2e-run01-qwen-flash-p6s-0230-attempt1\n租户ID：未指定\n用户ID：未指定\n权限标签：未指定\n用户原始问题：在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？\n归一化查询：在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？\n是否跟进问答：否\n上下文改写查询：在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？\n上下文关键术语：无\n改写查询：在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？\n检索查询：在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？ 业务说明 知识库 常见问题\n同义词扩展：无\n语义扩展：业务说明, 知识库, 常见问题\n识别意图：general_knowledge\n\n会话历史摘要：\n无\n\n工具调用结果：\n无\n\n检索到的相关文档：\n[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第13页\n定位信息：13\n综合分：0.777890\n召回综合分：0.777890\n重排分：无\n语义分：0.682699\nBM25 原始分：48.069134\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护规程 > 第13页 页码：13 T/CAICI XXXX—XXXX 7 是一种不含有任何电子器件及电子电源的光纤网络，与有源光接入技术相比，PON 由于消除了局端与 用户端之间的有源设备，维护简单、可靠性高、成本低，而且能节约光纤资源，是未来FTTH 的主要解决 方案。 3.39 光网络单元 Optical Network Unit（ONU） 分为有源光网络单元和无源光网络单元。 一般把装有包括光接收机、上行光发射机、多个桥接放大 器网络监控的设备叫做光节点。 3.40 光纤配线架 Optical Distribution Frame（ODF） 光纤配线架用于光纤通信系统中局端主干光缆的成端和分配，可方便地实现光纤线路的连接、分配和 调度等。 3.41 数字配线架 Digital Distribution Frame（DDF） 数字配线架又称高频配线架，在数字通信中越来越有优越性，它能使数字通信设备的数字码流的连接 成为一个整体，为配线、调线、转接、扩容都带来很大的灵活性和方便性。 3.42 宽带安装和维护 Broadband installation and maintenance 指为基础电信运营企业的客户开通宽带类业务所进行的线缆布放、设备安装调测，主动维护和故障维 修等工作的总称。 3.43 宽带用户 Broadband users 指使用基础电信运营企业宽带类产品的客户。 3.44 非对称数字用户线路 Asymmetric Digital Subscriber Line（ADSL） 一种数据传输方式，它因为上行和下行带宽不对称，因此称为非对称数字用户线环路。 3.45 光纤到楼 Fiber To The Building（FTTB） 它是利用数字宽带技术，光纤直接到小区里，再通过双绞线(超五类双绞线或4 对非屏蔽双绞线)到各 个用户。 3.46 光纤到户 Fiber To The Home（FTTH） FTTH 是指将光网络单元(ONU)安装在住家用户或企业用户处，是光接入系列中除FTTD(光纤到桌面) 外最靠近用户的光接入网应用类型。\n\n[2] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\n引用标签：[2]\n标题：第12页\n定位信息：12\n综合分：0.634844\n召回综合分：0.634844\n重排分：无\n语义分：0.649629\nBM25 原始分：28.857985\nBM25 归一化分：0.600343\n内容：章节：智慧家庭装维工程与管理职业技能等级标准 > 第12页 页码：12 T/CAICIXXXX—XX 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 物联网接入业务运维： 1.掌握物联网接入业务的设置 2.了解常见网关故障 物联网接入业务运维： 1.掌握常见网关故障 2.了解网关组网方法 物联网接入业务运维： 1.掌握网关组网方法 2.熟悉路由协议等 家庭复合总线接入业务运维： 1.熟悉家庭复合总线的设置 家庭复合总线接入业务运维： 1.熟悉家庭复合总线常见故障处理 家庭复合总线接入业务运维： 1.掌握家庭复合总线常见故障处理 智能家居业务运维： 1.了解智能家居组网及场景设置 智能家居业务运维： 1.熟悉智能家居组网及场景设置 2.了解常见智能家居故障 智能家居业务运维： 1.熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关知识要求 1.职业道德 1.1 职业道德 1.1.1 能进行职业道德描述 1.1.2 能进行职业道德展示 1.1.1 职业道德规范知识 1.1.2 职业道德内容知识\n\n[3] 来源：电信基础设施维护规程.pdf\n引用标签：[3]\n标题：第78页\n定位信息：78\n综合分：0.622638\n召回综合分：0.622638\n重排分：无\n语义分：0.661093\nBM25 原始分：25.616450\nBM25 归一化分：0.532908\n内容：章节：电信基础设施维护规程 > 第78页 页码：78 T/CAICI XXXX—XXXX 72 7.2.5 备品、备件及装维材料管理 7.2.5.1 日常维安装和维护的备品、备件及维护材料的管理应遵循以下要求： a） 备品、备件及装维材料应按要求分类存放、标识，做好防护措施，由专人负责，妥善保管； b） 应建立出入库登记制度，并定期清点，保证帐物相符； c） 接收和回收备品、备件及维护材料，必须进行检验，登记，并办理相关手续； d） 终端返修时，必须填写返修原因如：故障现象、故障诊断、故障时间等关键信息，并做好返修终 端的登记、交接记录。 7.3 宽带安装和维护范围及界面 7.3.1 宽带安装和维护范围 7.3.1.1 ADSL 接入方式应包括分线盒至用户端用户线引入与测试，用户端设备安装、调测、开通与维护。 7.3.1.2 FTTB 接入方式应包括ONU 至用户端用户线引入、跳接与测试，用户端设备安装、调测、开通与维 护。 7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试，用户端设备\n\n[上下文已截断，请优先依据已保留片段回答。]\n\"\"\"",
+  "actual_source_labels": [
+    1,
+    2,
+    3
+  ],
+  "sources": [
+    {
+      "index": 1,
+      "chunk_id": "a3cb9e6f0142a9e1ebab6be3",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 13,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 296,
+      "text": "章节：电信基础设施维护规程 > 第13页 页码：13 T/CAICI XXXX—XXXX 7 是一种不含有任何电子器件及电子电源的光纤网络，与有源光接入技术相比，PON 由于消除了局端与 用户端之间的有源设备，维护简单、可靠性高、成本低，而且能节约光纤资源，是未来FTTH 的主要解决 方案。 3.39 光网络单元 Optical Network Unit（ONU） 分为有源光网络单元和无源光网络单元。 一般把装有包括光接收机、上行光发射机、多个桥接放大 器网络监控的设备叫做光节点。 3.40 光纤配线架 Optical Distribution Frame（ODF） 光纤配线架用于光纤通信系统中局端主干光缆的成端和分配，可方便地实现光纤线路的连接、分配和 调度等。 3.41 数字配线架 Digital Distribution Frame（DDF） 数字配线架又称高频配线架，在数字通信中越来越有优越性，它能使数字通信设备的数字码流的连接 成为一个整体，为配线、调线、转接、扩容都带来很大的灵活性和方便性。 3.42 宽带安装和维护 Broadband installation and maintenance 指为基础电信运营企业的客户开通宽带类业务所进行的线缆布放、设备安装调测，主动维护和故障维 修等工作的总称。 3.43 宽带用户 Broadband users 指使用基础电信运营企业宽带类产品的客户。 3.44 非对称数字用户线路 Asymmetric Digital Subscriber Line（ADSL） 一种数据传输方式，它因为上行和下行带宽不对称，因此称为非对称数字用户线环路。 3.45 光纤到楼 Fiber To The Building（FTTB） 它是利用数字宽带技术，光纤直接到小区里，再通过双绞线(超五类双绞线或4 对非屏蔽双绞线)到各 个用户。 3.46 光纤到户 Fiber To The Home（FTTH） FTTH 是指将光网络单元(ONU)安装在住家用户或企业用户处，是光接入系列中除FTTD(光纤到桌面) 外最靠近用户的光接入网应用类型。"
+    },
+    {
+      "index": 2,
+      "chunk_id": "1c317b1dd2cebfbf9647d03e",
+      "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "page": 12,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 49,
+      "text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第12页 页码：12 T/CAICIXXXX—XX 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 物联网接入业务运维： 1.掌握物联网接入业务的设置 2.了解常见网关故障 物联网接入业务运维： 1.掌握常见网关故障 2.了解网关组网方法 物联网接入业务运维： 1.掌握网关组网方法 2.熟悉路由协议等 家庭复合总线接入业务运维： 1.熟悉家庭复合总线的设置 家庭复合总线接入业务运维： 1.熟悉家庭复合总线常见故障处理 家庭复合总线接入业务运维： 1.掌握家庭复合总线常见故障处理 智能家居业务运维： 1.了解智能家居组网及场景设置 智能家居业务运维： 1.熟悉智能家居组网及场景设置 2.了解常见智能家居故障 智能家居业务运维： 1.熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关知识要求 1.职业道德 1.1 职业道德 1.1.1 能进行职业道德描述 1.1.2 能进行职业道德展示 1.1.1 职业道德规范知识 1.1.2 职业道德内容知识"
+    },
+    {
+      "index": 3,
+      "chunk_id": "4fce0b1cd8d9e372161536d0",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 78,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": false,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 146,
+      "text": "章节：电信基础设施维护规程 > 第78页 页码：78 T/CAICI XXXX—XXXX 72 7.2.5 备品、备件及装维材料管理 7.2.5.1 日常维安装和维护的备品、备件及维护材料的管理应遵循以下要求： a） 备品、备件及装维材料应按要求分类存放、标识，做好防护措施，由专人负责，妥善保管； b） 应建立出入库登记制度，并定期清点，保证帐物相符； c） 接收和回收备品、备件及维护材料，必须进行检验，登记，并办理相关手续； d） 终端返修时，必须填写返修原因如：故障现象、故障诊断、故障时间等关键信息，并做好返修终 端的登记、交接记录。 7.3 宽带安装和维护范围及界面 7.3.1 宽带安装和维护范围 7.3.1.1 ADSL 接入方式应包括分线盒至用户端用户线引入与测试，用户端设备安装、调测、开通与维护。 7.3.1.2 FTTB 接入方式应包括ONU 至用户端用户线引入、跳接与测试，用户端设备安装、调测、开通与维 护。 7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试，用户端设备安装、调测、开通 与维护。 7.3.2 宽带安装和维护界面 7.3.2.1 线路维护界面： a） ADSL 接入方式以分线盒为分界点，分线盒至用户接入信息点（含信息点）由装维企业负责。分 线盒上行配线电缆、主干电缆由线路专业负责； b） FTTB 接入方式以ONU 为分界点，ONU（含ONU）至用户接入信息点（含信息点）由装维企业负责。 ONU 上行端口至一级光交箱（含光交箱)的光缆、管道等由线路专业负责； c） FTTH 接入方式以末端分光器的分纤箱为分界点，末端分光器或分纤箱（含分光器、接线端子、 箱体）至用户接入信息点（含信息点）由装维企业负责。分光器上行端口至一级光交箱（含光交 箱)的光缆、管道等由线路专业负责。 7.3.2.2 用户信息点安装维护界面：以用户接入信息点为分界点，其中信息点以下部分的用户端设施由用 户自行负责，信息点以上（含信息点）设备及线路由装维企业负责。 7.4 宽带安装和维护操作流程 7.4.1 宽带安装操作流程 7.4.1.1 联系阶段：接到装机工单后，装维人员应在规定时限内通过运营企业要求的预约渠道与用户预约 联系（录音），联系时需用敬语，按照与用户约定的时间上门服务。 7.4.1.2 入户前准备阶段：装维人员需穿戴整齐工作服、绝缘鞋、安全帽、工号牌，携带工具齐全的工具 包和终端、线材等。 7.4.1.3 现场施工阶段： a） 布、跳（拆）线施工后，应及时锁闭分线盒、交接箱、网络箱等，在OBD 内，应吊挂或粘贴相应 标签，并确保资料动态更新、记录准确无误； b） FTTH 皮线光缆敷设前应考虑用户住宅建筑物的类型、环境条件和已有线缆的敷设路由，同时需"
+    },
+    {
+      "index": 4,
+      "chunk_id": "48e4aa1fce9c20c3d6f6339f",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 91,
+      "present_label_in_actual_prompt": false,
+      "full_source_text_in_actual_prompt": false,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 135,
+      "text": "章节：电信基础设施维护规程 > 第91页 页码：91 T/CAICI XXXX—XXXX 85 其对应的综合单价按下列方法确定： a） 合同中已有适用的综合单价，按合同中已有的综合单价确定； b） 合同中有类似的综合单价，参照类似的综合单价确定； c） 合同中没有适用或类似的综合单价，由承包人提出综合单价，经发包人确认后执行。 8.4.7.4 因维护分项作业工作量清单漏项或非承包人原因的维护作业变更，引起备品备件购置和机械仪表 使用发生变化的，根据原备品备件购置清单和机械仪表使用清单的价格进行调整；原备品备件购置清单和 机械仪表使用清单中没有的内容，由承包人根据维护作业变更情况，提出适当的费用变更，经发包人确认 后调整。 8.4.7.5 因维护分项作业工作量清单漏项或非承包人原因的维护作业变更，引起措施项目发生变化，原措 施费中已有的措施项目，按原措施项目的组价方法调整；原措施费中没有的措施项目，由承包人根据措施 项目变更情况，提出适当的措施费变更，经发包人确认后调整。 8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。 8.4.7.7 若维护期内市场价格波动超出一定幅度时，应按合同约定调整维护价款；合同没有约定或约定不 明确的，应按通信行业主管部门或其授权的机构的规定调整。 8.4.7.8 因不可抗力事件导致的费用，发、承包双方应按以下原则分别承担并调整维护价款： a） 电信基础设施本身的损害、因维护工作损害导致第三方人员伤亡和财产损失以及运至维护现场的 用于维护作业的材料和待安装的设备的损害，由发包人承担； b） 发包人、承包人人员伤亡由其所在单位负责，并承担相应费用； c） 承包人的维护用机械（仪表）设备损坏及停工损失，由承包人承担； d） 停工期间，承包人应发包人要求留在维护场地的必要的管理人员及保卫人员的费用，由发包人承 担； e） 所需的清理、修复费用，由发包人承担。 8.4.7.9 维护价款调整报告应由受益方在合同约定时间内向合同的另一方提出，经对方确认后调整合同价 款。受益方未在合同约定时间内提出维护价款调整报告的，视为不涉及合同价款的调整。 收到维护价款调整报告的另一方应在合同约定时间内确认或提出协商意见，否则，视为维护价款调整 报告已经确认。 8.4.7.10 经发、承包双方确定调整的维护价款，作为追加（减）合同价款与进度款同期支付。 表格列：8.4.8；结算 8.4.8.1 维护周期结束后，发、承包双方应在合同约定时间内办理维护项目结算。 8.4.8.2 维护项目结算由承包人或受其委托具有相应资质的咨询人编制，由发包人或受其委托具有相应资 质的咨询人核对。 8.4.8.3 维护项目结算应依据： a） 本规则； b） 维护合同； c） 《电信基础设施维护费用编制办法》； d） 双方确认的工作量； e） 双方确认追加（减）的维护价款； f） 双方确认的索赔、现场签证事项及价款； g） 投标文件；"
+    }
+  ],
+  "retrieval_observation_summary": [
+    {
+      "kind": "search",
+      "request": {
+        "bm25_weight": 0.3,
+        "candidate_k": 20,
+        "keyword_weight": 0.3,
+        "min_score": 0.05,
+        "mode": "hybrid",
+        "permission_tags": [],
+        "query_text": "在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？ 业务说明 知识库 常见问题",
+        "relative_score_threshold": 0.35,
+        "semantic_weight": 0.7,
+        "tenant_id": null,
+        "top_k": 4
+      },
+      "results": [
+        {
+          "bm25_score": 48.06913387641378,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "a3cb9e6f0142a9e1ebab6be3",
+            "metadata": {
+              "block_id": "blk_4ce6cd4eb51ca2d17b5c",
+              "block_index": 12,
+              "block_type": "paragraph",
+              "business_module": "设备维护",
+              "chunk_index": 12,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 72,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第13页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_315ef04b32e9e30863d5",
+              "page_number": 13,
+              "page_warning_codes": [],
+              "parent_block_id": "blk_25b364526682709b0b2e",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_25b364526682709b0b2e",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第13页"
+              ],
+              "section_title": "第13页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_4ce6cd4eb51ca2d17b5c"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第13页 页码：13 T/CAICI XXXX—XXXX 7 是一种不含有任何电子器件及电子电源的光纤网络，与有源光接入技术相比，PON 由于消除了局端与 用户端之间的有源设备，维护简单、可靠性高、成本低，而且能节约光纤资源，是未来FTTH 的主要解决 方案。 3.39 光网络单元 Optical Network Unit（ONU） 分为有源光网络单元和无源光网络单元。 一般把装有包括光接收机、上行光发射机、多个桥接放大 器网络监控的设备叫做光节点。 3.40 光纤配线架 Optical Distribution Frame（ODF） 光纤配线架用于光纤通信系统中局端主干光缆的成端和分配，可方便地实现光纤线路的连接、分配和 调度等。 3.41 数字配线架 Digital Distribution Frame（DDF） 数字配线架又称高频配线架，在数字通信中越来越有优越性，它能使数字通信设备的数字码流的连接 成为一个整体，为配线、调线、转接、扩容都带来很大的灵活性和方便性。 3.42 宽带安装和维护 Broadband installation and maintenance 指为基础电信运营企业的客户开通宽带类业务所进行的线缆布放、设备安装调测，主动维护和故障维 修等工作的总称。 3.43 宽带用户 Broadband users 指使用基础电信运营企业宽带类产品的客户。 3.44 非对称数字用户线路 Asymmetric Digital Subscriber Line（ADSL） 一种数据传输方式，它因为上行和下行带宽不对称，因此称为非对称数字用户线环路。 3.45 光纤到楼 Fiber To The Building（FTTB） 它是利用数字宽带技术，光纤直接到小区里，再通过双绞线(超五类双绞线或4 对非屏蔽双绞线)到各 个用户。 3.46 光纤到户 Fiber To The Home（FTTH） FTTH 是指将光网络单元(ONU)安装在住家用户或企业用户处，是光接入系列中除FTTD(光纤到桌面) 外最靠近用户的光接入网应用类型。"
+          },
+          "keyword_score": 1.0,
+          "normalized_bm25_score": 1.0,
+          "rerank_score": null,
+          "retrieval_score": 0.7778896073300425,
+          "score": 0.7778896073300425,
+          "semantic_score": 0.6826994390429179
+        },
+        {
+          "bm25_score": 28.8579854071786,
+          "chunk": {
+            "document_id": "5256824b6b72b3f03d9c7a2c",
+            "id": "1c317b1dd2cebfbf9647d03e",
+            "metadata": {
+              "block_id": "blk_e4bef2211b5bd8cddc76",
+              "block_index": 11,
+              "block_type": "paragraph",
+              "business_module": "通用知识",
+              "chunk_index": 11,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 4,
+              "end_unit": 96,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "智慧家庭装维工程与管理职业技能等级标准",
+                "第12页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_7678536353d72d515bc9",
+              "page_number": 12,
+              "page_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "parent_block_id": "blk_941760edda054c582a94",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_941760edda054c582a94",
+              "review_status": "approved",
+              "section_path": [
+                "智慧家庭装维工程与管理职业技能等级标准",
+                "第12页"
+              ],
+              "section_title": "第12页",
+              "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "source_block_ids": [
+                "blk_e4bef2211b5bd8cddc76"
+              ],
+              "source_path": "/app/data/智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "智慧家庭装维工程与管理职业技能等级标准",
+              "version_id": "v_dcf78195a87f01f4"
+            },
+            "text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第12页 页码：12 T/CAICIXXXX—XX 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 物联网接入业务运维： 1.掌握物联网接入业务的设置 2.了解常见网关故障 物联网接入业务运维： 1.掌握常见网关故障 2.了解网关组网方法 物联网接入业务运维： 1.掌握网关组网方法 2.熟悉路由协议等 家庭复合总线接入业务运维： 1.熟悉家庭复合总线的设置 家庭复合总线接入业务运维： 1.熟悉家庭复合总线常见故障处理 家庭复合总线接入业务运维： 1.掌握家庭复合总线常见故障处理 智能家居业务运维： 1.了解智能家居组网及场景设置 智能家居业务运维： 1.熟悉智能家居组网及场景设置 2.了解常见智能家居故障 智能家居业务运维： 1.熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关知识要求 1.职业道德 1.1 职业道德 1.1.1 能进行职业道德描述 1.1.2 能进行职业道德展示 1.1.1 职业道德规范知识 1.1.2 职业道德内容知识"
+          },
+          "keyword_score": 0.6003433613214827,
+          "normalized_bm25_score": 0.6003433613214827,
+          "rerank_score": null,
+          "retrieval_score": 0.6348435565302949,
+          "score": 0.6348435565302949,
+          "semantic_score": 0.6496293544769287
+        },
+        {
+          "bm25_score": 25.61644980723976,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "4fce0b1cd8d9e372161536d0",
+            "metadata": {
+              "block_id": "blk_df6473896b6cd00e3fc3",
+              "block_index": 77,
+              "block_type": "paragraph",
+              "business_module": "设备维护",
+              "chunk_index": 77,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "semi_structured_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 77,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第78页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_8117e0484087e20ee006",
+              "page_number": 78,
+              "page_warning_codes": [
+                "semi_structured_table_detected"
+              ],
+              "parent_block_id": "blk_350bc4b1b35150a2cbb6",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_350bc4b1b35150a2cbb6",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第78页"
+              ],
+              "section_title": "第78页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_df6473896b6cd00e3fc3"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第78页 页码：78 T/CAICI XXXX—XXXX 72 7.2.5 备品、备件及装维材料管理 7.2.5.1 日常维安装和维护的备品、备件及维护材料的管理应遵循以下要求： a） 备品、备件及装维材料应按要求分类存放、标识，做好防护措施，由专人负责，妥善保管； b） 应建立出入库登记制度，并定期清点，保证帐物相符； c） 接收和回收备品、备件及维护材料，必须进行检验，登记，并办理相关手续； d） 终端返修时，必须填写返修原因如：故障现象、故障诊断、故障时间等关键信息，并做好返修终 端的登记、交接记录。 7.3 宽带安装和维护范围及界面 7.3.1 宽带安装和维护范围 7.3.1.1 ADSL 接入方式应包括分线盒至用户端用户线引入与测试，用户端设备安装、调测、开通与维护。 7.3.1.2 FTTB 接入方式应包括ONU 至用户端用户线引入、跳接与测试，用户端设备安装、调测、开通与维 护。 7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试，用户端设备安装、调测、开通 与维护。 7.3.2 宽带安装和维护界面 7.3.2.1 线路维护界面： a） ADSL 接入方式以分线盒为分界点，分线盒至用户接入信息点（含信息点）由装维企业负责。分 线盒上行配线电缆、主干电缆由线路专业负责； b） FTTB 接入方式以ONU 为分界点，ONU（含ONU）至用户接入信息点（含信息点）由装维企业负责。 ONU 上行端口至一级光交箱（含光交箱)的光缆、管道等由线路专业负责； c） FTTH 接入方式以末端分光器的分纤箱为分界点，末端分光器或分纤箱（含分光器、接线端子、 箱体）至用户接入信息点（含信息点）由装维企业负责。分光器上行端口至一级光交箱（含光交 箱)的光缆、管道等由线路专业负责。 7.3.2.2 用户信息点安装维护界面：以用户接入信息点为分界点，其中信息点以下部分的用户端设施由用 户自行负责，信息点以上（含信息点）设备及线路由装维企业负责。 7.4 宽带安装和维护操作流程 7.4.1 宽带安装操作流程 7.4.1.1 联系阶段：接到装机工单后，装维人员应在规定时限内通过运营企业要求的预约渠道与用户预约 联系（录音），联系时需用敬语，按照与用户约定的时间上门服务。 7.4.1.2 入户前准备阶段：装维人员需穿戴整齐工作服、绝缘鞋、安全帽、工号牌，携带工具齐全的工具 包和终端、线材等。 7.4.1.3 现场施工阶段： a） 布、跳（拆）线施工后，应及时锁闭分线盒、交接箱、网络箱等，在OBD 内，应吊挂或粘贴相应 标签，并确保资料动态更新、记录准确无误； b） FTTH 皮线光缆敷设前应考虑用户住宅建筑物的类型、环境条件和已有线缆的敷设路由，同时需"
+          },
+          "keyword_score": 0.5329084953579548,
+          "normalized_bm25_score": 0.5329084953579548,
+          "rerank_score": null,
+          "retrieval_score": 0.6226379524285335,
+          "score": 0.6226379524285335,
+          "semantic_score": 0.6610934340302101
+        },
+        {
+          "bm25_score": 25.630445173473944,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "48e4aa1fce9c20c3d6f6339f",
+            "metadata": {
+              "block_id": "blk_0cd76eb794551445c647",
+              "block_index": 90,
+              "block_type": "paragraph",
+              "business_module": "设备维护",
+              "chunk_index": 90,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "table_like_text_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 72,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第91页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_eb55940cdad1f56ddcbd",
+              "page_number": 91,
+              "page_warning_codes": [
+                "table_like_text_detected"
+              ],
+              "parent_block_id": "blk_ea93ab376939676bc3a9",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_ea93ab376939676bc3a9",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第91页"
+              ],
+              "section_title": "第91页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_0cd76eb794551445c647"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第91页 页码：91 T/CAICI XXXX—XXXX 85 其对应的综合单价按下列方法确定： a） 合同中已有适用的综合单价，按合同中已有的综合单价确定； b） 合同中有类似的综合单价，参照类似的综合单价确定； c） 合同中没有适用或类似的综合单价，由承包人提出综合单价，经发包人确认后执行。 8.4.7.4 因维护分项作业工作量清单漏项或非承包人原因的维护作业变更，引起备品备件购置和机械仪表 使用发生变化的，根据原备品备件购置清单和机械仪表使用清单的价格进行调整；原备品备件购置清单和 机械仪表使用清单中没有的内容，由承包人根据维护作业变更情况，提出适当的费用变更，经发包人确认 后调整。 8.4.7.5 因维护分项作业工作量清单漏项或非承包人原因的维护作业变更，引起措施项目发生变化，原措 施费中已有的措施项目，按原措施项目的组价方法调整；原措施费中没有的措施项目，由承包人根据措施 项目变更情况，提出适当的措施费变更，经发包人确认后调整。 8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。 8.4.7.7 若维护期内市场价格波动超出一定幅度时，应按合同约定调整维护价款；合同没有约定或约定不 明确的，应按通信行业主管部门或其授权的机构的规定调整。 8.4.7.8 因不可抗力事件导致的费用，发、承包双方应按以下原则分别承担并调整维护价款： a） 电信基础设施本身的损害、因维护工作损害导致第三方人员伤亡和财产损失以及运至维护现场的 用于维护作业的材料和待安装的设备的损害，由发包人承担； b） 发包人、承包人人员伤亡由其所在单位负责，并承担相应费用； c） 承包人的维护用机械（仪表）设备损坏及停工损失，由承包人承担； d） 停工期间，承包人应发包人要求留在维护场地的必要的管理人员及保卫人员的费用，由发包人承 担； e） 所需的清理、修复费用，由发包人承担。 8.4.7.9 维护价款调整报告应由受益方在合同约定时间内向合同的另一方提出，经对方确认后调整合同价 款。受益方未在合同约定时间内提出维护价款调整报告的，视为不涉及合同价款的调整。 收到维护价款调整报告的另一方应在合同约定时间内确认或提出协商意见，否则，视为维护价款调整 报告已经确认。 8.4.7.10 经发、承包双方确定调整的维护价款，作为追加（减）合同价款与进度款同期支付。 表格列：8.4.8；结算 8.4.8.1 维护周期结束后，发、承包双方应在合同约定时间内办理维护项目结算。 8.4.8.2 维护项目结算由承包人或受其委托具有相应资质的咨询人编制，由发包人或受其委托具有相应资 质的咨询人核对。 8.4.8.3 维护项目结算应依据： a） 本规则； b） 维护合同； c） 《电信基础设施维护费用编制办法》； d） 双方确认的工作量； e） 双方确认追加（减）的维护价款； f） 双方确认的索赔、现场签证事项及价款； g） 投标文件；"
+          },
+          "keyword_score": 0.5331996461465287,
+          "normalized_bm25_score": 0.5331996461465287,
+          "rerank_score": null,
+          "retrieval_score": 0.6042036229584911,
+          "score": 0.6042036229584911,
+          "semantic_score": 0.6346338987350464
+        }
+      ]
+    }
+  ],
+  "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0230.json",
+  "trace_sha256": "87d93fbf1f16ee39434431a377d57a05656ec5aabf24cb76704afa3398bc35e3"
+}

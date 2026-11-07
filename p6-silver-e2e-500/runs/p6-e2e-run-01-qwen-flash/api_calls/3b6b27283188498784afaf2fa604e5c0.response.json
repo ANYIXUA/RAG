@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:10.176000+08:00",
+  "conservative_cost_yuan": 0.0005655,
+  "error": null,
+  "latency_ms": 867.0575001742691,
+  "list_price_estimate_yuan": 0.0004845,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. PON光功率计的单位是dBm。[2]  \n2. 接收光功率范围通常以dBm为单位表示。[2]  \n3. 光功率测量中常用dBm作为标准单位。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880909,
+    "id": "chatcmpl-63da165f-4ab3-92c0-bfc4-1878ffd9b359",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 54,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2690,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2744
+    }
+  },
+  "usage_known": true
+}

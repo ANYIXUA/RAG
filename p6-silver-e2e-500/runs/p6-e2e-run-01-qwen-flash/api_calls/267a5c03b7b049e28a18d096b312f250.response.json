@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:20.867616+08:00",
+  "conservative_cost_yuan": 0.0014735999999999998,
+  "error": null,
+  "latency_ms": 2881.2899000477046,
+  "list_price_estimate_yuan": 0.0010446,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持山区按1.5倍计取\",\n    \"evidence\": \"用于山区时综合单价按相应子目的1.5倍计取。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"安装拉线隔电子综合单价为79.87元/处。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖计算方法、单价、系数、工作内容\",\n    \"evidence\": \"计量单位为“处”，按实际发生次数计算。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配\",\n    \"evidence\": \"山区施工时，综合单价按相应子目1.5倍计取。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"multi_condition\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882118,
+    "id": "chatcmpl-b27a1bce-0f32-9eb7-bf03-b1c40ebc62cc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 286,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4104,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4390
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:01.761280+08:00",
+  "conservative_cost_yuan": 0.0007872,
+  "error": null,
+  "latency_ms": 1295.6714001484215,
+  "list_price_estimate_yuan": 0.0006102000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 四角塔中心整体垂直偏差≤1/1500。[1]  \n2. 单管塔/景观塔中心整体垂直偏差≤全塔高度的1/750。[1]  \n3. 三管塔中心整体垂直偏差≤塔高的1/1500。[1]  \n4. 拉线塔中心整体垂直偏差≤塔高1/750。[1]  \n5. 不同类型铁塔垂直偏差指标不同，需按类型区分。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881200,
+    "id": "chatcmpl-88a579b2-d6ff-9938-b122-a3dc659f8dc8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 118,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2888,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3006
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "1.仪表校对。 2.驻波比测试。 3.测试结果记录反馈",
+    "reason": "答案与上下文一致，覆盖关键步骤。",
+    "score": 1
+  },
+  "case_id": "p6s-0183",
+  "citation_correctness": {
+    "evidence": "1.仪表校对。 2.驻波比测试。 3.测试结果记录反馈",
+    "reason": "引用编号与上下文匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "测试周期为每季度一次。[4]",
+    "reason": "涵盖测试前、中、后及周期要求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "1.仪表校对。 2.驻波比测试。 3.测试结果记录反馈",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "cbc051ce32084cb1a1d0e48ef0b86580",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

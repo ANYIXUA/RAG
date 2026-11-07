@@ -1,0 +1,64 @@
+{
+  "previous_sha256": "ad327fb28add586c87f1d64d4af34d8f8ee3f23353ad47dd54f2e10e32ae971b",
+  "record": {
+    "batch": 15,
+    "candidates": [
+      {
+        "assumed_out_of_scope": "联动触发条件属于产品功能实现细节，不在知识库覆盖范围内",
+        "category": "计划与市场",
+        "question": "如何设置智慧家庭场景的联动触发条件？"
+      },
+      {
+        "assumed_out_of_scope": "价格策略属于价格与促销范畴，超出知识库范围",
+        "category": "价格与促销",
+        "question": "不同品牌设备在市场推广中的价格策略有何差异？"
+      },
+      {
+        "assumed_out_of_scope": "绩效考核属于人事与考核，不在知识库覆盖范围内",
+        "category": "人事与考核",
+        "question": "当前装维人员的绩效考核标准是什么？"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "answerability_verification": "not_semantically_verified",
+          "assumed_out_of_scope_reason": "价格策略属于价格与促销范畴，超出知识库范围",
+          "case_id": "p6s-0484",
+          "expected_behavior": "refuse_or_qualify",
+          "generation_batch": 15,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271121,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "out_of_scope_category": "价格与促销",
+          "prompt_version": "p6-silver-generate-v1",
+          "quality_risks": [
+            "Unanswerability has only passed the original automated token overlap screen; corpus-wide semantic answerability and human review remain pending."
+          ],
+          "question": "不同品牌设备在市场推广中的价格策略有何差异？",
+          "question_type": "unanswerable",
+          "reference_answer": null,
+          "source_chunk_ids": [],
+          "source_document": null,
+          "source_evidence": [],
+          "source_page": null,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

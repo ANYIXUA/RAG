@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:05.861346+08:00",
+  "conservative_cost_yuan": 0.00130965,
+  "error": null,
+  "latency_ms": 2341.5467001032084,
+  "list_price_estimate_yuan": 0.0009196499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未提及满意度评估方法\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实无上下文支持\",\n    \"evidence\": \"通过用户对智能家居场景设置的反馈判断满意度。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"未说明无法评估，遗漏关键信息\",\n    \"evidence\": \"评估满意度需结合服务交付技巧与沟通技巧表现。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用编号不对应实际内容\",\n    \"evidence\": \"服务能力中的沟通与维护技巧进行综合评估。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"未拒答且未提示转人工\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"overconfident_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881923,
+    "id": "chatcmpl-879b1ea0-17be-963b-a7f4-7fa72aa0273d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 260,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3531,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3791
+    }
+  },
+  "usage_known": true
+}

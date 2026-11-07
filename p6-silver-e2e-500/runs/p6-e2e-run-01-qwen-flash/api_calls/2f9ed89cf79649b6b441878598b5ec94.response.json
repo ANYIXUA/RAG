@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:34.056299+08:00",
+  "conservative_cost_yuan": 0.00133875,
+  "error": null,
+  "latency_ms": 2516.7404001113027,
+  "list_price_estimate_yuan": 0.00093075,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持应对措施\",\n    \"evidence\": \"发生通信阻断和严重障碍等重大质量事故时应立即调查，及时分析。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"凡发生重大通信阻断、重大工作差错和通信事故，应及时召开分析会。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题所需全部关键措施\",\n    \"evidence\": \"必须对发生的通信阻断事件进行分析，提出防止障碍和缩短障碍历时的具体措施。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882071,
+    "id": "chatcmpl-b22b7a0d-3efc-9641-b9d4-dbc5157ea070",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 272,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3485,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3757
+    }
+  },
+  "usage_known": true
+}

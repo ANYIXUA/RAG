@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:43.771843+08:00",
+  "conservative_cost_yuan": 0.00139455,
+  "error": null,
+  "latency_ms": 2960.250499891117,
+  "list_price_estimate_yuan": 0.00096705,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未明确支持‘交互式网络电视’故障处理步骤\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实无对应引用，如[4]不存在\",\n    \"evidence\": \"2. 验证光猫及路由器连接状态，确认宽带网络正常。[4]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键排查步骤如信号源检测\",\n    \"evidence\": \"3. 使用光功率计检测入户光纤光功率是否达标。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[4]在上下文中不存在\",\n    \"evidence\": \"2. 验证光猫及路由器连接状态，确认宽带网络正常。[4]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"citation_error\",\n    \"unreferenced_fact\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881840,
+    "id": "chatcmpl-7c125906-abf9-9c95-bd57-26ca88a97684",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 285,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3597,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3882
+    }
+  },
+  "usage_known": true
+}

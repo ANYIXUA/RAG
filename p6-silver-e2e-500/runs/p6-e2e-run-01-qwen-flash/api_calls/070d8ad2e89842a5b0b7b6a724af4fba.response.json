@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:52.250363+08:00",
+  "conservative_cost_yuan": 0.0013398,
+  "error": null,
+  "latency_ms": 2884.7656999714673,
+  "list_price_estimate_yuan": 0.0009423,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"费率2.3%与上下文一致\",\n    \"evidence\": \"CS00006 夜间维护作业增加费 2.3\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"夜间维护作业增加费 表-04 人工费合计 2.3\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题核心信息\",\n    \"evidence\": \"夜间维护作业增加费的费率为2.3%。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号对应实际来源\",\n    \"evidence\": \"CS00006 夜间维护作业增加费 2.3\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882149,
+    "id": "chatcmpl-4470d4a5-6b0d-9fcb-ab0c-29cee15ef30c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 265,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3632,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3897
+    }
+  },
+  "usage_known": true
+}

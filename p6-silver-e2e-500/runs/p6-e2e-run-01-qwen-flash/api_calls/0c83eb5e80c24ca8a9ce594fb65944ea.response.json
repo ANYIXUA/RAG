@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:29.775497+08:00",
+  "conservative_cost_yuan": 0.0008238,
+  "error": null,
+  "latency_ms": 2344.38639995642,
+  "list_price_estimate_yuan": 0.0006108,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 5GHz频段应支持13个工作信道。[1]  \n2. 具体信道为：36, 40, 44, 48, 52, 56, 60, 64, 149, 153, 157, 161, 165。[1]  \n3. 信道范围符合802.11协议要求。[1]  \n4. 支持自动信道选择和手工配置。[1]  \n5. 支持遇干扰时信道跳转功能。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880987,
+    "id": "chatcmpl-37e40ea6-4a15-962f-b02d-01386f765f7a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 142,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2652,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2794
+    }
+  },
+  "usage_known": true
+}

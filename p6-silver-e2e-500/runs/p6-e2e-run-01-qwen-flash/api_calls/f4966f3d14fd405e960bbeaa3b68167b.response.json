@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:48.783974+08:00",
+  "conservative_cost_yuan": 0.00078465,
+  "error": null,
+  "latency_ms": 1582.4584001675248,
+  "list_price_estimate_yuan": 0.00059115,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 平原、丘陵低压供电线路巡检消耗量为0.12百米·次。[1]  \n2. 该数据对应项目编码WH21105002，适用于架空/直埋/管道线路。[1]  \n3. 消耗量单位为百米·次，与巡检工作量相关。[1]  \n4. 巡检内容包括塔杆、电缆、标牌及杂物清理等。[1]  \n5. 此标准出自《电信基础设施维护规程》第231页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880947,
+    "id": "chatcmpl-cfc62902-4665-99dc-84f6-ff868e4e0015",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 129,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2651,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2780
+    }
+  },
+  "usage_known": true
+}

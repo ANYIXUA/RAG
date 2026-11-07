@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:19.330153+08:00",
+  "input_token_upper_bound": 1201,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0282"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "铁塔垂直度与层间垂直度测试需在什么周期内完成，且对不同塔型有何具体要求？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "0a379316bf8e4e9ba5c17ee932912236",
+  "reserved_yuan": 0.0006005
+}

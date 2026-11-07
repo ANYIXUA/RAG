@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:03.768138+08:00",
+  "conservative_cost_yuan": 0.0014412,
+  "error": null,
+  "latency_ms": 2763.5242000687867,
+  "list_price_estimate_yuan": 0.0009822,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"支持VoIP实现音视频通信\",\n    \"evidence\": \"3.5 VoIP（Voice over Internet Protocol） 网络电话，一种语音通话技术，经由网际协议（IP）来达成语音通话与多媒 体会议\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"VoIP通过IP网络传输语音和多媒体数据，适用于家庭网络环境。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖技术选择与部署建议\",\n    \"evidence\": \"建议使用全光组网提升网络质量以保障通信效果。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"优先部署高优先级QoS策略保障音视频业务。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"multi_source_citation\",\n    \"practical_recommendation_included\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881861,
+    "id": "chatcmpl-c914193d-b860-9a5e-8821-3883e17319ce",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 306,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3488,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3794
+    }
+  },
+  "usage_known": true
+}

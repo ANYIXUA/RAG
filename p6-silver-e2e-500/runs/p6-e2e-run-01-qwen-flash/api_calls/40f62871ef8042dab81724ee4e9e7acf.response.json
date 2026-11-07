@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:26.437556+08:00",
+  "conservative_cost_yuan": 0.0007831499999999999,
+  "error": null,
+  "latency_ms": 1244.7810000739992,
+  "list_price_estimate_yuan": 0.0006076499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 敷设镀锌钢管管道时，钢管规格未在上下文中明确列出。[2]  \n2. 项目编码WH12023涉及敷设镀锌钢管管道，但未说明具体规格参数。[1]  \n3. 维护作业包含接钢管、铺钢管等，但未提及钢管尺寸或型号。[1]  \n4. 钢管规格需依据实际工程设计或合同约定确定。[2]  \n5. 当前检索内容中无明确的钢管规格参数信息。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880865,
+    "id": "chatcmpl-3c326789-6840-9604-9859-fc0bdd9190dd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2881,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2998
+    }
+  },
+  "usage_known": true
+}

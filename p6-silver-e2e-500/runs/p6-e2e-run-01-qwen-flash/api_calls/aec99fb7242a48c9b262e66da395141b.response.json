@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:57.880984+08:00",
+  "conservative_cost_yuan": 0.0007494,
+  "error": null,
+  "latency_ms": 1241.1762000992894,
+  "list_price_estimate_yuan": 0.0005889,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 进排风温度差低于10℃时，应立即上报并及时处理。[1]  \n2. 检查空调室外机进排风温度差是否符合≥10℃要求。[1]  \n3. 若温度差异常，需排查制冷系统或风机运行问题。[1]  \n4. 重点检查冷凝器翅片、过滤网及通风状况。[1]  \n5. 发现故障应及时通知专业维修队伍处理。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881016,
+    "id": "chatcmpl-9391ab7f-d179-992a-9b57-035859e518c9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2856,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2963
+    }
+  },
+  "usage_known": true
+}

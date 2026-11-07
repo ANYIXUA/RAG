@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:19.191818+08:00",
+  "input_token_upper_bound": 1148,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0066"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "重大突发事件发生时，维护人员应在多长时间内通知运营企业？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "da71f93ce54c4ff08e46fabf0ceafaf2",
+  "reserved_yuan": 0.000574
+}

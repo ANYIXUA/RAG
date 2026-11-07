@@ -1,0 +1,4373 @@
+{
+  "checks": [
+    {
+      "check": "frozen_input:storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/p2_gold_05_review_proposal.md",
+      "passed": true,
+      "detail": {
+        "expected": "8811414d2c6447662a0ab4cbad45d60524b475543003fc5af575c32fe3cc8dc2",
+        "actual": "8811414d2c6447662a0ab4cbad45d60524b475543003fc5af575c32fe3cc8dc2"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/review_batch02_15_draft.xlsx",
+      "passed": true,
+      "detail": {
+        "expected": "12f4a4acbb176590de732a7c92c0c620f03ac8376edda10ade52989a96c060b7",
+        "actual": "12f4a4acbb176590de732a7c92c0c620f03ac8376edda10ade52989a96c060b7"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/review.xlsx",
+      "passed": true,
+      "detail": {
+        "expected": "df13e2755786cfb7f4d30e44d6323463ce6cbfe49c99a2b5ae87dfeec369d5ea",
+        "actual": "df13e2755786cfb7f4d30e44d6323463ce6cbfe49c99a2b5ae87dfeec369d5ea"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/candidates/p1-20261104-structured/candidates.jsonl",
+      "passed": true,
+      "detail": {
+        "expected": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120",
+        "actual": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/corpus/p1-20261104-v2/corpus.manifest.json",
+      "passed": true,
+      "detail": {
+        "expected": "50bb2c71e205698ae8bee394231d961d19567117e03f489579a1f53b9bf1245f",
+        "actual": "50bb2c71e205698ae8bee394231d961d19567117e03f489579a1f53b9bf1245f"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/corpus/p1-20261104-v2/corpus.jsonl",
+      "passed": true,
+      "detail": {
+        "expected": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+        "actual": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_9.jsonl",
+      "passed": true,
+      "detail": {
+        "expected": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+        "actual": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_metadata.json",
+      "passed": true,
+      "detail": {
+        "expected": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+        "actual": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/rejected_batch01_3.jsonl",
+      "passed": true,
+      "detail": {
+        "expected": "3bbeec82efe9ad5fc646479056cf189985314fadb8f5670ea164e28869c1ed91",
+        "actual": "3bbeec82efe9ad5fc646479056cf189985314fadb8f5670ea164e28869c1ed91"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/gold_batch01_manifest.json",
+      "passed": true,
+      "detail": {
+        "expected": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493",
+        "actual": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493"
+      }
+    },
+    {
+      "check": "frozen_input:storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/p2_gold_05_validation.md",
+      "passed": true,
+      "detail": {
+        "expected": "2d7454c7e50ea6e7aa83d0cb9a3e5200d2eb73b07a23f75b1119604b9646211f",
+        "actual": "2d7454c7e50ea6e7aa83d0cb9a3e5200d2eb73b07a23f75b1119604b9646211f"
+      }
+    },
+    {
+      "check": "signoff_packet_changed_after_p05",
+      "passed": true,
+      "detail": {
+        "before": "e7719369abd01d741e65b717aa4d61e965a92b1d50e51fe8fec2ef6150f313d0",
+        "now": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "reason": "人工字段在 P2-Gold-05 之后追加，哈希变化符合预期"
+      }
+    },
+    {
+      "check": "packet_record_count",
+      "passed": true,
+      "detail": [
+        "B13",
+        "B14",
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B19",
+        "B20",
+        "B21",
+        "B22",
+        "B23",
+        "B24",
+        "B25",
+        "B26",
+        "B27"
+      ]
+    },
+    {
+      "check": "proposal_record_count",
+      "passed": true,
+      "detail": [
+        "B13",
+        "B14",
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B19",
+        "B20",
+        "B21",
+        "B22",
+        "B23",
+        "B24",
+        "B25",
+        "B26",
+        "B27"
+      ]
+    },
+    {
+      "check": "packet_batch_ids",
+      "passed": true,
+      "detail": [
+        "B13",
+        "B14",
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B19",
+        "B20",
+        "B21",
+        "B22",
+        "B23",
+        "B24",
+        "B25",
+        "B26",
+        "B27"
+      ]
+    },
+    {
+      "check": "candidate_count",
+      "passed": true,
+      "detail": 57
+    },
+    {
+      "check": "corpus_chunks",
+      "passed": true,
+      "detail": {
+        "chunks": 447,
+        "docs": 3
+      }
+    },
+    {
+      "check": "B23_not_accepted_as_gold",
+      "passed": true,
+      "detail": {
+        "decision": "保留测试",
+        "comment": "鉴权方式和加密方式是同一个吗？"
+      }
+    },
+    {
+      "check": "B24_rejected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "proposal_candidate_id:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "original_question_unchanged:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "original_answer_unchanged:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "original_evidence_unchanged:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "recommendation_unchanged:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "revised_question_unchanged:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "revised_answer_unchanged:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "revised_evidence_unchanged:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "revised_targets_unchanged:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "revision_decision_has_revision:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "gold_targets_present:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "proposal_candidate_id:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "original_question_unchanged:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "original_answer_unchanged:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "original_evidence_unchanged:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "recommendation_unchanged:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "revised_question_unchanged:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "revised_answer_unchanged:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "revised_evidence_unchanged:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "revised_targets_unchanged:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "revision_decision_has_revision:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "gold_targets_present:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "proposal_candidate_id:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "original_question_unchanged:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "original_answer_unchanged:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "original_evidence_unchanged:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "recommendation_unchanged:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "revised_question_unchanged:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "revised_answer_unchanged:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "revised_evidence_unchanged:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "revised_targets_unchanged:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "revision_decision_has_revision:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "gold_targets_present:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "proposal_candidate_id:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "original_question_unchanged:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "original_answer_unchanged:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "original_evidence_unchanged:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "recommendation_unchanged:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "revised_question_unchanged:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "revised_answer_unchanged:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "revised_evidence_unchanged:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "revised_targets_unchanged:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "revision_decision_has_revision:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "gold_targets_present:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "proposal_candidate_id:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "original_question_unchanged:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "original_answer_unchanged:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "original_evidence_unchanged:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "recommendation_unchanged:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "revised_question_unchanged:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "revised_answer_unchanged:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "revised_evidence_unchanged:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "revised_targets_unchanged:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "revision_decision_has_revision:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "gold_targets_present:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "proposal_candidate_id:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "original_question_unchanged:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "original_answer_unchanged:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "original_evidence_unchanged:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "recommendation_unchanged:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "revised_question_unchanged:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "revised_answer_unchanged:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "revised_evidence_unchanged:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "revised_targets_unchanged:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "revision_decision_has_revision:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "gold_targets_present:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "proposal_candidate_id:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "original_question_unchanged:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "original_answer_unchanged:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "original_evidence_unchanged:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "recommendation_unchanged:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "proposal_recommendation_is_original:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "revised_evidence_unchanged:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "revised_targets_unchanged:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "original_decision_has_no_revision:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "gold_targets_present:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "proposal_candidate_id:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "original_question_unchanged:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "original_answer_unchanged:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "original_evidence_unchanged:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "recommendation_unchanged:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "revised_question_unchanged:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "revised_answer_unchanged:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "revised_evidence_unchanged:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "revised_targets_unchanged:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "revision_decision_has_revision:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "gold_targets_present:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "proposal_candidate_id:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "original_question_unchanged:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "original_answer_unchanged:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "original_evidence_unchanged:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "recommendation_unchanged:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "revised_question_unchanged:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "revised_answer_unchanged:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "revised_evidence_unchanged:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "revised_targets_unchanged:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "revision_decision_has_revision:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "gold_targets_present:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "proposal_candidate_id:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "original_question_unchanged:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "original_answer_unchanged:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "original_evidence_unchanged:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "recommendation_unchanged:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "revised_question_unchanged:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "revised_answer_unchanged:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "revised_evidence_unchanged:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "revised_targets_unchanged:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "revision_decision_has_revision:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "gold_targets_present:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "proposal_candidate_id:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "original_question_unchanged:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "original_answer_unchanged:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "original_evidence_unchanged:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "recommendation_unchanged:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "unsigned_record_keeps_proposal:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "revised_evidence_unchanged:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "revised_targets_unchanged:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "proposal_candidate_id:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "original_question_unchanged:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "original_answer_unchanged:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "original_evidence_unchanged:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "recommendation_unchanged:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "proposal_recommendation_is_original:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "revised_evidence_unchanged:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "revised_targets_unchanged:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "reject_has_no_retrieval_target:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "reject_has_no_revision:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "proposal_candidate_id:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "original_question_unchanged:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "original_answer_unchanged:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "original_evidence_unchanged:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "recommendation_unchanged:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "proposal_recommendation_is_original:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "revised_evidence_unchanged:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "revised_targets_unchanged:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "original_decision_has_no_revision:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "gold_targets_present:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "proposal_candidate_id:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "original_question_unchanged:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "original_answer_unchanged:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "original_evidence_unchanged:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "recommendation_unchanged:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "revised_question_unchanged:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "revised_answer_unchanged:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "revised_evidence_unchanged:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "revised_targets_unchanged:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "revision_decision_has_revision:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "gold_targets_present:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "proposal_candidate_id:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "original_question_unchanged:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "original_answer_unchanged:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "original_evidence_unchanged:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "recommendation_unchanged:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "proposal_recommendation_is_original:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "revised_evidence_unchanged:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "revised_targets_unchanged:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "original_decision_has_no_revision:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "gold_targets_present:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "parent_candidate_exists:B13",
+      "passed": true,
+      "detail": "sha256:ba50e7af3e31659d88a2d0b4937eb510a09e19e2238d1c0e93a923a1aa42fe50"
+    },
+    {
+      "check": "parent_question_matches:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "parent_answer_matches:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "parent_evidence_matches:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "parent_status_pending:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "parent_candidate_exists:B14",
+      "passed": true,
+      "detail": "sha256:6b27f4cd6fb8a57d3ba3c96049bb0c8ce98b909be142ed809ab85a0bac89fba6"
+    },
+    {
+      "check": "parent_question_matches:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "parent_answer_matches:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "parent_evidence_matches:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "parent_status_pending:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "parent_candidate_exists:B15",
+      "passed": true,
+      "detail": "sha256:029aaf51ce9894999917d4730c0682047e6aee33d34f15d1bbc64e1195361c91"
+    },
+    {
+      "check": "parent_question_matches:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "parent_answer_matches:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "parent_evidence_matches:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "parent_status_pending:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "parent_candidate_exists:B16",
+      "passed": true,
+      "detail": "sha256:c0ee402dcbe543fe04df844c2c9d2134f4922a88177a166d82f0e2b2cdcd37c6"
+    },
+    {
+      "check": "parent_question_matches:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "parent_answer_matches:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "parent_evidence_matches:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "parent_status_pending:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "parent_candidate_exists:B17",
+      "passed": true,
+      "detail": "sha256:8fcecc4204b0c7149f3d002b1b693d01b9be5a5e8930d621c5ef089f39e0585a"
+    },
+    {
+      "check": "parent_question_matches:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "parent_answer_matches:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "parent_evidence_matches:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "parent_status_pending:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "parent_candidate_exists:B18",
+      "passed": true,
+      "detail": "sha256:b36c80cc90660614833ec0bdf464df7b4d37db9064457a2d1e2c496856ced6ba"
+    },
+    {
+      "check": "parent_question_matches:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "parent_answer_matches:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "parent_evidence_matches:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "parent_status_pending:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "parent_candidate_exists:B19",
+      "passed": true,
+      "detail": "sha256:4f4129854aedf46810ac9654b5e918be591a55ffb3a8bd01c24ca7aa787237de"
+    },
+    {
+      "check": "parent_question_matches:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "parent_answer_matches:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "parent_evidence_matches:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "parent_status_pending:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "parent_candidate_exists:B20",
+      "passed": true,
+      "detail": "sha256:0c141695e2654b721a2a70e712bfdd9cc951d132b823ef8b710b0f07c17d7f73"
+    },
+    {
+      "check": "parent_question_matches:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "parent_answer_matches:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "parent_evidence_matches:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "parent_status_pending:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "parent_candidate_exists:B21",
+      "passed": true,
+      "detail": "sha256:af261cdb97be35e69dd294aff4351ed7ec7477048b2377adaee100697c1809d3"
+    },
+    {
+      "check": "parent_question_matches:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "parent_answer_matches:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "parent_evidence_matches:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "parent_status_pending:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "parent_candidate_exists:B22",
+      "passed": true,
+      "detail": "sha256:474ea2ea4e472386215819df6edeb7f88ca3c1af3abae6259f11972588f52812"
+    },
+    {
+      "check": "parent_question_matches:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "parent_answer_matches:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "parent_evidence_matches:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "parent_status_pending:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "parent_candidate_exists:B23",
+      "passed": true,
+      "detail": "sha256:0f3b338e277722ef4de67a59096d7e8c931138eb05c300808fc9d2ea9a186468"
+    },
+    {
+      "check": "parent_question_matches:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "parent_answer_matches:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "parent_evidence_matches:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "parent_status_pending:B23",
+      "passed": true,
+      "detail": "B23"
+    },
+    {
+      "check": "parent_candidate_exists:B24",
+      "passed": true,
+      "detail": "sha256:d049bb19337a6de2e27a654729cdbfc8b84ef5e4b93dd4f31606dc51f4a0c6dd"
+    },
+    {
+      "check": "parent_question_matches:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "parent_answer_matches:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "parent_evidence_matches:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "parent_status_pending:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "parent_candidate_exists:B25",
+      "passed": true,
+      "detail": "sha256:2fa4c3c7182110647ed797c132138313300e447227199131a9731a8acd4a1afa"
+    },
+    {
+      "check": "parent_question_matches:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "parent_answer_matches:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "parent_evidence_matches:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "parent_status_pending:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "parent_candidate_exists:B26",
+      "passed": true,
+      "detail": "sha256:6535e6f78dc8eeb10b933e995f8321cd01ed80d90f405c5042b7fbfccf08ac95"
+    },
+    {
+      "check": "parent_question_matches:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "parent_answer_matches:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "parent_evidence_matches:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "parent_status_pending:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "parent_candidate_exists:B27",
+      "passed": true,
+      "detail": "sha256:0412887e0c24cae711a326d0032a59e8cce8c7618478be6748fd98c2cfc9f4bf"
+    },
+    {
+      "check": "parent_question_matches:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "parent_answer_matches:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "parent_evidence_matches:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "parent_status_pending:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "workbook_row_candidate:B13",
+      "passed": true,
+      "detail": {
+        "row": 17,
+        "found": "sha256:ba50e7af3e31659d88a2d0b4937eb510a09e19e2238d1c0e93a923a1aa42fe50"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B14",
+      "passed": true,
+      "detail": {
+        "row": 18,
+        "found": "sha256:6b27f4cd6fb8a57d3ba3c96049bb0c8ce98b909be142ed809ab85a0bac89fba6"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B15",
+      "passed": true,
+      "detail": {
+        "row": 19,
+        "found": "sha256:029aaf51ce9894999917d4730c0682047e6aee33d34f15d1bbc64e1195361c91"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B16",
+      "passed": true,
+      "detail": {
+        "row": 20,
+        "found": "sha256:c0ee402dcbe543fe04df844c2c9d2134f4922a88177a166d82f0e2b2cdcd37c6"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B17",
+      "passed": true,
+      "detail": {
+        "row": 21,
+        "found": "sha256:8fcecc4204b0c7149f3d002b1b693d01b9be5a5e8930d621c5ef089f39e0585a"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B18",
+      "passed": true,
+      "detail": {
+        "row": 22,
+        "found": "sha256:b36c80cc90660614833ec0bdf464df7b4d37db9064457a2d1e2c496856ced6ba"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B19",
+      "passed": true,
+      "detail": {
+        "row": 23,
+        "found": "sha256:4f4129854aedf46810ac9654b5e918be591a55ffb3a8bd01c24ca7aa787237de"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B20",
+      "passed": true,
+      "detail": {
+        "row": 24,
+        "found": "sha256:0c141695e2654b721a2a70e712bfdd9cc951d132b823ef8b710b0f07c17d7f73"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B21",
+      "passed": true,
+      "detail": {
+        "row": 25,
+        "found": "sha256:af261cdb97be35e69dd294aff4351ed7ec7477048b2377adaee100697c1809d3"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B22",
+      "passed": true,
+      "detail": {
+        "row": 26,
+        "found": "sha256:474ea2ea4e472386215819df6edeb7f88ca3c1af3abae6259f11972588f52812"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B23",
+      "passed": true,
+      "detail": {
+        "row": 27,
+        "found": "sha256:0f3b338e277722ef4de67a59096d7e8c931138eb05c300808fc9d2ea9a186468"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B24",
+      "passed": true,
+      "detail": {
+        "row": 28,
+        "found": "sha256:d049bb19337a6de2e27a654729cdbfc8b84ef5e4b93dd4f31606dc51f4a0c6dd"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B25",
+      "passed": true,
+      "detail": {
+        "row": 29,
+        "found": "sha256:2fa4c3c7182110647ed797c132138313300e447227199131a9731a8acd4a1afa"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B26",
+      "passed": true,
+      "detail": {
+        "row": 30,
+        "found": "sha256:6535e6f78dc8eeb10b933e995f8321cd01ed80d90f405c5042b7fbfccf08ac95"
+      }
+    },
+    {
+      "check": "workbook_row_candidate:B27",
+      "passed": true,
+      "detail": {
+        "row": 31,
+        "found": "sha256:0412887e0c24cae711a326d0032a59e8cce8c7618478be6748fd98c2cfc9f4bf"
+      }
+    },
+    {
+      "check": "draft_workbook_mapping",
+      "passed": true,
+      "detail": "draft workbook A17:A31 matches B13-B27"
+    },
+    {
+      "check": "draft_workbook_human_column_is_placeholder",
+      "passed": true,
+      "detail": [
+        "human"
+      ]
+    },
+    {
+      "check": "gold_question_nonempty:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "gold_answer_nonempty:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "evidence_ids_match_config:B13",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "0eb4bd6e18d599063371f51b"
+        ],
+        "config": [
+          "0eb4bd6e18d599063371f51b"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B13",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "0eb4bd6e18d599063371f51b"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B13:0eb4bd6e18d599063371f51b",
+      "passed": true,
+      "detail": "0eb4bd6e18d599063371f51b"
+    },
+    {
+      "check": "source_document_single:B13",
+      "passed": true,
+      "detail": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "pdf_present:B13",
+      "passed": true,
+      "detail": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "anchor_verbatim:B13:0eb4bd6e18d599063371f51b",
+      "passed": true,
+      "detail": {
+        "anchor": "有限空间作业基础知识"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B13:0eb4bd6e18d599063371f51b",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "0eb4bd6e18d599063371f51b"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B13",
+      "passed": true,
+      "detail": {
+        "lcs": 12,
+        "threshold": 6
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "gold_answer_nonempty:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "evidence_ids_match_config:B14",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "0eb4bd6e18d599063371f51b",
+          "e010fe39879d92fa21dc59d9"
+        ],
+        "config": [
+          "0eb4bd6e18d599063371f51b",
+          "e010fe39879d92fa21dc59d9"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B14",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "e010fe39879d92fa21dc59d9"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B14:0eb4bd6e18d599063371f51b",
+      "passed": true,
+      "detail": "0eb4bd6e18d599063371f51b"
+    },
+    {
+      "check": "chunk_exists:B14:e010fe39879d92fa21dc59d9",
+      "passed": true,
+      "detail": "e010fe39879d92fa21dc59d9"
+    },
+    {
+      "check": "source_document_single:B14",
+      "passed": true,
+      "detail": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "pdf_present:B14",
+      "passed": true,
+      "detail": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "anchor_verbatim:B14:e010fe39879d92fa21dc59d9",
+      "passed": true,
+      "detail": {
+        "anchor": "熟悉智能家居系统架构"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B14:e010fe39879d92fa21dc59d9",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "e010fe39879d92fa21dc59d9"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B14",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B14",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B14",
+      "passed": true,
+      "detail": {
+        "lcs": 10,
+        "threshold": 5
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "gold_answer_nonempty:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "evidence_ids_match_config:B15",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "0eb4bd6e18d599063371f51b",
+          "1c317b1dd2cebfbf9647d03e"
+        ],
+        "config": [
+          "0eb4bd6e18d599063371f51b",
+          "1c317b1dd2cebfbf9647d03e"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B15",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "1c317b1dd2cebfbf9647d03e"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B15:0eb4bd6e18d599063371f51b",
+      "passed": true,
+      "detail": "0eb4bd6e18d599063371f51b"
+    },
+    {
+      "check": "chunk_exists:B15:1c317b1dd2cebfbf9647d03e",
+      "passed": true,
+      "detail": "1c317b1dd2cebfbf9647d03e"
+    },
+    {
+      "check": "source_document_single:B15",
+      "passed": true,
+      "detail": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "pdf_present:B15",
+      "passed": true,
+      "detail": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "anchor_verbatim:B15:1c317b1dd2cebfbf9647d03e",
+      "passed": true,
+      "detail": {
+        "anchor": "掌握网关组网方法"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B15:1c317b1dd2cebfbf9647d03e",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "1c317b1dd2cebfbf9647d03e"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B15",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B15",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B15",
+      "passed": true,
+      "detail": {
+        "lcs": 8,
+        "threshold": 4
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "gold_answer_nonempty:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "evidence_ids_match_config:B16",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "92108b5bb6dcc5b2227d531c"
+        ],
+        "config": [
+          "92108b5bb6dcc5b2227d531c"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B16",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "92108b5bb6dcc5b2227d531c"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B16:92108b5bb6dcc5b2227d531c",
+      "passed": true,
+      "detail": "92108b5bb6dcc5b2227d531c"
+    },
+    {
+      "check": "source_document_single:B16",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "pdf_present:B16",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "anchor_verbatim:B16:92108b5bb6dcc5b2227d531c",
+      "passed": true,
+      "detail": {
+        "anchor": "开箱检验、复核定位、安装固定、清理现场"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B16:92108b5bb6dcc5b2227d531c",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "92108b5bb6dcc5b2227d531c"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B16",
+      "passed": true,
+      "detail": {
+        "lcs": 16,
+        "threshold": 6
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "gold_answer_nonempty:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "evidence_ids_match_config:B17",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "03e5582a4a0f7d3c76a33e66"
+        ],
+        "config": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B17",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B17:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": "03e5582a4a0f7d3c76a33e66"
+    },
+    {
+      "check": "source_document_single:B17",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "pdf_present:B17",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "anchor_verbatim:B17:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": {
+        "anchor": "WH23105001 安装防雷接地装置 室内防雷箱"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B17:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B17",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B17",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B17",
+      "passed": true,
+      "detail": {
+        "lcs": 5,
+        "threshold": 3
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "gold_answer_nonempty:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "evidence_ids_match_config:B18",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "03e5582a4a0f7d3c76a33e66"
+        ],
+        "config": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B18",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B18:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": "03e5582a4a0f7d3c76a33e66"
+    },
+    {
+      "check": "source_document_single:B18",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "pdf_present:B18",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "anchor_verbatim:B18:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": {
+        "anchor": "WH23105003 室外塔上防雷箱 519.84"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B18:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B18",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B18",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B18",
+      "passed": true,
+      "detail": {
+        "lcs": 5,
+        "threshold": 3
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "gold_answer_nonempty:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "evidence_ids_match_config:B19",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "03e5582a4a0f7d3c76a33e66"
+        ],
+        "config": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B19",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B19:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": "03e5582a4a0f7d3c76a33e66"
+    },
+    {
+      "check": "source_document_single:B19",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "pdf_present:B19",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "anchor_verbatim:B19:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": {
+        "anchor": "接地电阻测试：接线、测量"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B19:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B19",
+      "passed": true,
+      "detail": {
+        "lcs": 88,
+        "threshold": 6
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "gold_answer_nonempty:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "evidence_ids_match_config:B20",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "03e5582a4a0f7d3c76a33e66"
+        ],
+        "config": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B20",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B20:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": "03e5582a4a0f7d3c76a33e66"
+    },
+    {
+      "check": "source_document_single:B20",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "pdf_present:B20",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "anchor_verbatim:B20:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": {
+        "anchor": "WH23105001 安装防雷接地装置 室内防雷箱 271.78"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B20:03e5582a4a0f7d3c76a33e66",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B20",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B20",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B20",
+      "passed": true,
+      "detail": {
+        "lcs": 5,
+        "threshold": 3
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "gold_answer_nonempty:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "evidence_ids_match_config:B21",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "92108b5bb6dcc5b2227d531c"
+        ],
+        "config": [
+          "92108b5bb6dcc5b2227d531c"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B21",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "92108b5bb6dcc5b2227d531c"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B21:92108b5bb6dcc5b2227d531c",
+      "passed": true,
+      "detail": "92108b5bb6dcc5b2227d531c"
+    },
+    {
+      "check": "source_document_single:B21",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "pdf_present:B21",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "anchor_verbatim:B21:92108b5bb6dcc5b2227d531c",
+      "passed": true,
+      "detail": {
+        "anchor": "WH23104004 波分复用器1:6 以下 62.02"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B21:92108b5bb6dcc5b2227d531c",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "92108b5bb6dcc5b2227d531c"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B21",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B21",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B21",
+      "passed": true,
+      "detail": {
+        "lcs": 4,
+        "threshold": 3
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "gold_answer_nonempty:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "evidence_ids_match_config:B22",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "81951fb8b5e157346ed83d77"
+        ],
+        "config": [
+          "81951fb8b5e157346ed83d77"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B22",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "81951fb8b5e157346ed83d77"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B22:81951fb8b5e157346ed83d77",
+      "passed": true,
+      "detail": "81951fb8b5e157346ed83d77"
+    },
+    {
+      "check": "source_document_single:B22",
+      "passed": true,
+      "detail": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "pdf_present:B22",
+      "passed": true,
+      "detail": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "anchor_verbatim:B22:81951fb8b5e157346ed83d77",
+      "passed": true,
+      "detail": {
+        "anchor": "设备中除为用户提供的唯一账号外"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B22:81951fb8b5e157346ed83d77",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "81951fb8b5e157346ed83d77"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B22",
+      "passed": true,
+      "detail": {
+        "lcs": 10,
+        "threshold": 6
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "gold_answer_nonempty:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "evidence_ids_match_config:B25",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "611a9eb6554a2b482561c775"
+        ],
+        "config": [
+          "611a9eb6554a2b482561c775",
+          "4931f1a7b903ba2672bbb512"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B25",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "611a9eb6554a2b482561c775",
+          "4931f1a7b903ba2672bbb512"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B25:611a9eb6554a2b482561c775",
+      "passed": true,
+      "detail": "611a9eb6554a2b482561c775"
+    },
+    {
+      "check": "chunk_exists:B25:4931f1a7b903ba2672bbb512",
+      "passed": true,
+      "detail": "4931f1a7b903ba2672bbb512"
+    },
+    {
+      "check": "source_document_single:B25",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "pdf_present:B25",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "anchor_verbatim:B25:611a9eb6554a2b482561c775",
+      "passed": true,
+      "detail": {
+        "anchor": "塔基强度测试"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B25:611a9eb6554a2b482561c775",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "611a9eb6554a2b482561c775"
+        ]
+      }
+    },
+    {
+      "check": "anchor_verbatim:B25:4931f1a7b903ba2672bbb512",
+      "passed": true,
+      "detail": {
+        "anchor": "WH23123"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B25:4931f1a7b903ba2672bbb512",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "4931f1a7b903ba2672bbb512"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B25",
+      "passed": true,
+      "detail": {
+        "lcs": 23,
+        "threshold": 6
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "gold_answer_nonempty:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "evidence_ids_match_config:B26",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "a264a91966d85e2ec3b52e02"
+        ],
+        "config": [
+          "a264a91966d85e2ec3b52e02"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B26",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "a264a91966d85e2ec3b52e02"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B26:a264a91966d85e2ec3b52e02",
+      "passed": true,
+      "detail": "a264a91966d85e2ec3b52e02"
+    },
+    {
+      "check": "source_document_single:B26",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "pdf_present:B26",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "anchor_verbatim:B26:a264a91966d85e2ec3b52e02",
+      "passed": true,
+      "detail": {
+        "anchor": "护网外内部以及周边一米杂草、杂物集中清除"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B26:a264a91966d85e2ec3b52e02",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "a264a91966d85e2ec3b52e02"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B26",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B26",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B26",
+      "passed": true,
+      "detail": {
+        "lcs": 26,
+        "threshold": 6
+      }
+    },
+    {
+      "check": "gold_question_nonempty:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "gold_answer_nonempty:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "evidence_ids_match_config:B27",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "95cb40813342a7e91c27e7d3"
+        ],
+        "config": [
+          "95cb40813342a7e91c27e7d3"
+        ]
+      }
+    },
+    {
+      "check": "target_ids_match_config:B27",
+      "passed": true,
+      "detail": {
+        "packet": [
+          "95cb40813342a7e91c27e7d3"
+        ]
+      }
+    },
+    {
+      "check": "chunk_exists:B27:95cb40813342a7e91c27e7d3",
+      "passed": true,
+      "detail": "95cb40813342a7e91c27e7d3"
+    },
+    {
+      "check": "source_document_single:B27",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_source_matches_document:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "pdf_present:B27",
+      "passed": true,
+      "detail": "电信基础设施维护规程.pdf"
+    },
+    {
+      "check": "evidence_roles_cover_all:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "anchor_verbatim:B27:95cb40813342a7e91c27e7d3",
+      "passed": true,
+      "detail": {
+        "anchor": "WH23131004 地面墙面防水"
+      }
+    },
+    {
+      "check": "anchor_unique_triple:B27:95cb40813342a7e91c27e7d3",
+      "passed": true,
+      "detail": {
+        "matches": [
+          "95cb40813342a7e91c27e7d3"
+        ]
+      }
+    },
+    {
+      "check": "answer_numbers_in_evidence:B27",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_latin_in_evidence:B27",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "answer_lcs_threshold:B27",
+      "passed": true,
+      "detail": {
+        "lcs": 6,
+        "threshold": 3
+      }
+    },
+    {
+      "check": "gold_count",
+      "passed": true,
+      "detail": [
+        "B13",
+        "B14",
+        "B15",
+        "B16",
+        "B17",
+        "B18",
+        "B19",
+        "B20",
+        "B21",
+        "B22",
+        "B25",
+        "B26",
+        "B27"
+      ]
+    },
+    {
+      "check": "rejected_count",
+      "passed": true,
+      "detail": [
+        "B24"
+      ]
+    },
+    {
+      "check": "unsigned_count",
+      "passed": true,
+      "detail": [
+        "B23"
+      ]
+    },
+    {
+      "check": "gold_id_unique",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "check": "gold_id_recomputable:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "gold_id_recomputable:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "gold_id_recomputable:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "gold_id_recomputable:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "gold_id_recomputable:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "gold_id_recomputable:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "gold_id_recomputable:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "gold_id_recomputable:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "gold_id_recomputable:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "gold_id_recomputable:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "gold_id_recomputable:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "gold_id_recomputable:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "gold_id_recomputable:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "gold_parent_unique",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "no_exact_duplicate_batch01:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "no_internal_duplicate:B13:B14",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B15",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B16",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B17",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B18",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B19",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B20",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B21",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B13:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B15",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B16",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B17",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B18",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B19",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B20",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B21",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B14:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B16",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B17",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B18",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B19",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B20",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B21",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B15:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B17",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B18",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B19",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B20",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B21",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B16:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B17:B18",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B17:B19",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B17:B20",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B17:B21",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B17:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B17:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B17:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B17:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B18:B19",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B18:B20",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B18:B21",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B18:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B18:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B18:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B18:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B19:B20",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B19:B21",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B19:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B19:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B19:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B19:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B20:B21",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B20:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B20:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B20:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B20:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B21:B22",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B21:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B21:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B21:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B22:B25",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B22:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B22:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B25:B26",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B25:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "no_internal_duplicate:B26:B27",
+      "passed": true,
+      "detail": false
+    },
+    {
+      "check": "batch02_no_internal_duplicates",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "reject_evidence_present:B24",
+      "passed": true,
+      "detail": "B24"
+    },
+    {
+      "check": "reject_chunk_exists:B24:5ab56d780f65ff344900b1a2",
+      "passed": true,
+      "detail": "5ab56d780f65ff344900b1a2"
+    },
+    {
+      "check": "reject_chunk_exists:B24:469978708f9fe4506fc1fa7f",
+      "passed": true,
+      "detail": "469978708f9fe4506fc1fa7f"
+    },
+    {
+      "check": "unsigned_chunk_exists:B23:81951fb8b5e157346ed83d77",
+      "passed": true,
+      "detail": "81951fb8b5e157346ed83d77"
+    },
+    {
+      "check": "eval_schema_loads",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "check": "eval_case_query:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "eval_case_target_count:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "eval_case_note:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "eval_case_query:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "eval_case_target_count:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "eval_case_note:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "eval_case_query:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "eval_case_target_count:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "eval_case_note:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "eval_case_query:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "eval_case_target_count:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "eval_case_note:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "eval_case_query:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "eval_case_target_count:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "eval_case_note:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "eval_case_query:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "eval_case_target_count:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "eval_case_note:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "eval_case_query:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "eval_case_target_count:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "eval_case_note:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "eval_case_query:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "eval_case_target_count:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "eval_case_note:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "eval_case_query:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "eval_case_target_count:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "eval_case_note:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "eval_case_query:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "eval_case_target_count:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "eval_case_note:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "eval_case_query:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "eval_case_target_count:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "eval_case_note:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "eval_case_query:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "eval_case_target_count:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "eval_case_note:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "eval_case_query:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "eval_case_target_count:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "eval_case_note:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "target_replay_no_false_positive",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "check": "comparisons_count",
+      "passed": true,
+      "detail": 6258
+    },
+    {
+      "check": "metadata_readback_cases",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "check": "jsonl_readback_lines",
+      "passed": true,
+      "detail": 13
+    },
+    {
+      "check": "jsonl_note_matches_metadata",
+      "passed": true,
+      "detail": "note/gold_case_id alignment"
+    },
+    {
+      "check": "jsonl_query_matches:B13",
+      "passed": true,
+      "detail": "B13"
+    },
+    {
+      "check": "jsonl_target_matches:B13",
+      "passed": true,
+      "detail": "0eb4bd6e18d599063371f51b"
+    },
+    {
+      "check": "jsonl_query_matches:B14",
+      "passed": true,
+      "detail": "B14"
+    },
+    {
+      "check": "jsonl_target_matches:B14",
+      "passed": true,
+      "detail": "e010fe39879d92fa21dc59d9"
+    },
+    {
+      "check": "jsonl_query_matches:B15",
+      "passed": true,
+      "detail": "B15"
+    },
+    {
+      "check": "jsonl_target_matches:B15",
+      "passed": true,
+      "detail": "1c317b1dd2cebfbf9647d03e"
+    },
+    {
+      "check": "jsonl_query_matches:B16",
+      "passed": true,
+      "detail": "B16"
+    },
+    {
+      "check": "jsonl_target_matches:B16",
+      "passed": true,
+      "detail": "92108b5bb6dcc5b2227d531c"
+    },
+    {
+      "check": "jsonl_query_matches:B17",
+      "passed": true,
+      "detail": "B17"
+    },
+    {
+      "check": "jsonl_target_matches:B17",
+      "passed": true,
+      "detail": "03e5582a4a0f7d3c76a33e66"
+    },
+    {
+      "check": "jsonl_query_matches:B18",
+      "passed": true,
+      "detail": "B18"
+    },
+    {
+      "check": "jsonl_target_matches:B18",
+      "passed": true,
+      "detail": "03e5582a4a0f7d3c76a33e66"
+    },
+    {
+      "check": "jsonl_query_matches:B19",
+      "passed": true,
+      "detail": "B19"
+    },
+    {
+      "check": "jsonl_target_matches:B19",
+      "passed": true,
+      "detail": "03e5582a4a0f7d3c76a33e66"
+    },
+    {
+      "check": "jsonl_query_matches:B20",
+      "passed": true,
+      "detail": "B20"
+    },
+    {
+      "check": "jsonl_target_matches:B20",
+      "passed": true,
+      "detail": "03e5582a4a0f7d3c76a33e66"
+    },
+    {
+      "check": "jsonl_query_matches:B21",
+      "passed": true,
+      "detail": "B21"
+    },
+    {
+      "check": "jsonl_target_matches:B21",
+      "passed": true,
+      "detail": "92108b5bb6dcc5b2227d531c"
+    },
+    {
+      "check": "jsonl_query_matches:B22",
+      "passed": true,
+      "detail": "B22"
+    },
+    {
+      "check": "jsonl_target_matches:B22",
+      "passed": true,
+      "detail": "81951fb8b5e157346ed83d77"
+    },
+    {
+      "check": "jsonl_query_matches:B25",
+      "passed": true,
+      "detail": "B25"
+    },
+    {
+      "check": "jsonl_target_matches:B25",
+      "passed": true,
+      "detail": "611a9eb6554a2b482561c775"
+    },
+    {
+      "check": "jsonl_target_matches:B25",
+      "passed": true,
+      "detail": "4931f1a7b903ba2672bbb512"
+    },
+    {
+      "check": "jsonl_query_matches:B26",
+      "passed": true,
+      "detail": "B26"
+    },
+    {
+      "check": "jsonl_target_matches:B26",
+      "passed": true,
+      "detail": "a264a91966d85e2ec3b52e02"
+    },
+    {
+      "check": "jsonl_query_matches:B27",
+      "passed": true,
+      "detail": "B27"
+    },
+    {
+      "check": "jsonl_target_matches:B27",
+      "passed": true,
+      "detail": "95cb40813342a7e91c27e7d3"
+    },
+    {
+      "check": "gold_rejected_disjoint",
+      "passed": true,
+      "detail": "parent ids disjoint"
+    }
+  ],
+  "facts": {
+    "generated_at": "2026-11-04T23:06:14+08:00",
+    "packet_sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+    "packet_sha256_before_signoff": "e7719369abd01d741e65b717aa4d61e965a92b1d50e51fe8fec2ef6150f313d0",
+    "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "corpus_manifest_sha256": "0ddcdfe183ab387767065dcf029dd31ba5cdf0088ee9dc7e3501254d72223827",
+    "corpus_chunks": 447,
+    "corpus_documents": 3,
+    "candidate_count": 57,
+    "records": {
+      "B13": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "已查看PDF内容，与修订版无异"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B14": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "10-18页的这些表格，分别对应了初级、中级、高级工程师对应要熟悉的智能家居的技能。"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B15": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "已查询PDF，与修正后的答案无异"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B16": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "原版与修正版均为正确答案"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B17": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "原版与修正版均为正确答案"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B18": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "原版与修正版均为正确答案"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B19": {
+        "kind": "gold_original",
+        "human": {
+          "decision": "接受原题",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "原版与修正版均为正确答案"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B20": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "原版与修正版均为正确答案"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B21": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "已核对原始PDF。\nWH23104004与WH23104003对应不同测试规格，\n价格分别为62.02和29.18元/个。\n确认保留修订题目。"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B22": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "已核对原始PDF，确认保留修订题目。"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B23": {
+        "kind": "unsigned_invalid_decision",
+        "human": {
+          "decision": "保留测试",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "鉴权方式和加密方式是同一个吗？"
+        },
+        "complete": true,
+        "valid_decision": false
+      },
+      "B24": {
+        "kind": "rejected",
+        "human": {
+          "decision": "驳回",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "已核对原始PDF，确认驳回。"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B25": {
+        "kind": "gold_original",
+        "human": {
+          "decision": "接受原题",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "已核对原始PDF，确认符合。"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B26": {
+        "kind": "gold_revision",
+        "human": {
+          "decision": "接受修订",
+          "reviewer": "system",
+          "reviewed_at": "2026/11/04",
+          "comment": "已核对原始PDF，确认保留修订题目。"
+        },
+        "complete": true,
+        "valid_decision": true
+      },
+      "B27": {
+        "kind": "gold_original",
+        "human": {
+          "decision": "接受原题",
+          "reviewer": "systemsystem",
+          "reviewed_at": "2026/11/04",
+          "comment": "已核对原始PDF，确认原题。"
+        },
+        "complete": true,
+        "valid_decision": true
+      }
+    },
+    "gold_ids": [
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B25",
+      "B26",
+      "B27"
+    ],
+    "rejected_ids": [
+      "B24"
+    ],
+    "unsigned_ids": [
+      "B23"
+    ],
+    "counts": {
+      "gold": 13,
+      "accepted_original": 3,
+      "accepted_revision": 10,
+      "cumulative_gold": 22,
+      "remaining_to_50": 28
+    },
+    "gold_evidence_entries": 15,
+    "gold_unique_evidence_chunks": 9,
+    "gold_evidence_entries_including_equivalent": 16,
+    "retrieval_targets": 14,
+    "retrieval_target_unique_chunks": 10,
+    "rejection_evidence_chunks": 2,
+    "target_replay_comparisons": 6258,
+    "target_replay_false_positives": 0,
+    "schema_loader": "rag_app.operations.evaluation.load_retrieval_eval_cases",
+    "schema_loaded_cases": 13,
+    "schema_loader_error": null,
+    "target_uniqueness": [
+      {
+        "batch_id": "B13",
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "anchor": "有限空间作业基础知识",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "0eb4bd6e18d599063371f51b"
+        ]
+      },
+      {
+        "batch_id": "B14",
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "anchor": "熟悉智能家居系统架构",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "e010fe39879d92fa21dc59d9"
+        ]
+      },
+      {
+        "batch_id": "B15",
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "anchor": "掌握网关组网方法",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "1c317b1dd2cebfbf9647d03e"
+        ]
+      },
+      {
+        "batch_id": "B16",
+        "chunk_id": "92108b5bb6dcc5b2227d531c",
+        "anchor": "开箱检验、复核定位、安装固定、清理现场",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "92108b5bb6dcc5b2227d531c"
+        ]
+      },
+      {
+        "batch_id": "B17",
+        "chunk_id": "03e5582a4a0f7d3c76a33e66",
+        "anchor": "WH23105001 安装防雷接地装置 室内防雷箱",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      },
+      {
+        "batch_id": "B18",
+        "chunk_id": "03e5582a4a0f7d3c76a33e66",
+        "anchor": "WH23105003 室外塔上防雷箱 519.84",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      },
+      {
+        "batch_id": "B19",
+        "chunk_id": "03e5582a4a0f7d3c76a33e66",
+        "anchor": "接地电阻测试：接线、测量",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      },
+      {
+        "batch_id": "B20",
+        "chunk_id": "03e5582a4a0f7d3c76a33e66",
+        "anchor": "WH23105001 安装防雷接地装置 室内防雷箱 271.78",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "03e5582a4a0f7d3c76a33e66"
+        ]
+      },
+      {
+        "batch_id": "B21",
+        "chunk_id": "92108b5bb6dcc5b2227d531c",
+        "anchor": "WH23104004 波分复用器1:6 以下 62.02",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "92108b5bb6dcc5b2227d531c"
+        ]
+      },
+      {
+        "batch_id": "B22",
+        "chunk_id": "81951fb8b5e157346ed83d77",
+        "anchor": "设备中除为用户提供的唯一账号外",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "81951fb8b5e157346ed83d77"
+        ]
+      },
+      {
+        "batch_id": "B25",
+        "chunk_id": "611a9eb6554a2b482561c775",
+        "anchor": "塔基强度测试",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "611a9eb6554a2b482561c775"
+        ]
+      },
+      {
+        "batch_id": "B25",
+        "chunk_id": "4931f1a7b903ba2672bbb512",
+        "anchor": "WH23123",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "4931f1a7b903ba2672bbb512"
+        ]
+      },
+      {
+        "batch_id": "B26",
+        "chunk_id": "a264a91966d85e2ec3b52e02",
+        "anchor": "护网外内部以及周边一米杂草、杂物集中清除",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "a264a91966d85e2ec3b52e02"
+        ]
+      },
+      {
+        "batch_id": "B27",
+        "chunk_id": "95cb40813342a7e91c27e7d3",
+        "anchor": "WH23131004 地面墙面防水",
+        "match_count": 1,
+        "matched_chunk_ids": [
+          "95cb40813342a7e91c27e7d3"
+        ]
+      }
+    ],
+    "answer_support": [
+      {
+        "batch_id": "B13",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 48,
+        "lcs_len": 12,
+        "lcs_ratio": 0.25
+      },
+      {
+        "batch_id": "B14",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 10,
+        "lcs_len": 10,
+        "lcs_ratio": 1.0
+      },
+      {
+        "batch_id": "B15",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 8,
+        "lcs_len": 8,
+        "lcs_ratio": 1.0
+      },
+      {
+        "batch_id": "B16",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 16,
+        "lcs_len": 16,
+        "lcs_ratio": 1.0
+      },
+      {
+        "batch_id": "B17",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 5,
+        "lcs_len": 5,
+        "lcs_ratio": 1.0
+      },
+      {
+        "batch_id": "B18",
+        "numbers": [
+          "519.84"
+        ],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 6,
+        "lcs_len": 5,
+        "lcs_ratio": 0.8333
+      },
+      {
+        "batch_id": "B19",
+        "numbers": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 88,
+        "lcs_len": 88,
+        "lcs_ratio": 1.0
+      },
+      {
+        "batch_id": "B20",
+        "numbers": [
+          "271.78"
+        ],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 6,
+        "lcs_len": 5,
+        "lcs_ratio": 0.8333
+      },
+      {
+        "batch_id": "B21",
+        "numbers": [
+          "62.02"
+        ],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 6,
+        "lcs_len": 4,
+        "lcs_ratio": 0.6667
+      },
+      {
+        "batch_id": "B22",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 27,
+        "lcs_len": 10,
+        "lcs_ratio": 0.3704
+      },
+      {
+        "batch_id": "B25",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 23,
+        "lcs_len": 23,
+        "lcs_ratio": 1.0
+      },
+      {
+        "batch_id": "B26",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 26,
+        "lcs_len": 26,
+        "lcs_ratio": 1.0
+      },
+      {
+        "batch_id": "B27",
+        "numbers": [],
+        "missing_numbers": [],
+        "latin_tokens": [],
+        "answer_norm_len": 6,
+        "lcs_len": 6,
+        "lcs_ratio": 1.0
+      }
+    ],
+    "duplicate_check_vs_batch01": [
+      {
+        "batch_id": "B13",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.5676,
+        "closest_batch01_query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？"
+      },
+      {
+        "batch_id": "B14",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.5581,
+        "closest_batch01_query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？"
+      },
+      {
+        "batch_id": "B15",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.5333,
+        "closest_batch01_query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？"
+      },
+      {
+        "batch_id": "B16",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.3299,
+        "closest_batch01_query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      },
+      {
+        "batch_id": "B17",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.381,
+        "closest_batch01_query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      },
+      {
+        "batch_id": "B18",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.4444,
+        "closest_batch01_query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      },
+      {
+        "batch_id": "B19",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.092,
+        "closest_batch01_query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？"
+      },
+      {
+        "batch_id": "B20",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.434,
+        "closest_batch01_query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      },
+      {
+        "batch_id": "B21",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.6486,
+        "closest_batch01_query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      },
+      {
+        "batch_id": "B22",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.5517,
+        "closest_batch01_query": "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？"
+      },
+      {
+        "batch_id": "B25",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.093,
+        "closest_batch01_query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？"
+      },
+      {
+        "batch_id": "B26",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.3048,
+        "closest_batch01_query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      },
+      {
+        "batch_id": "B27",
+        "exact_duplicate_with_batch01": false,
+        "max_similarity": 0.2529,
+        "closest_batch01_query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      }
+    ],
+    "max_similarity_vs_batch01": {
+      "value": 0.6486,
+      "pair": [
+        "B21",
+        "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？"
+      ]
+    },
+    "batch01_questions": [
+      "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？",
+      "全光组网终端支持IEEE 802.11ax协议时，2.4G频段应至少支持多少个RU并行调度？",
+      "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？",
+      "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？",
+      "在室温 25±2℃ 的情况下，非嵌入式全光组网终端表面温度不得超过多少℃？",
+      "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？",
+      "智慧家庭全光组网产品技术规范的版本是什么？",
+      "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？",
+      "非高速公路场景下，管道线路的人（手）孔检修周期是多久？"
+    ],
+    "workbook_rows": {
+      "B13": {
+        "row": 17,
+        "batch_cell": null,
+        "candidate_cell": "sha256:ba50e7af3e31659d88a2d0b4937eb510a09e19e2238d1c0e93a923a1aa42fe50",
+        "batch_label_present": false
+      },
+      "B14": {
+        "row": 18,
+        "batch_cell": null,
+        "candidate_cell": "sha256:6b27f4cd6fb8a57d3ba3c96049bb0c8ce98b909be142ed809ab85a0bac89fba6",
+        "batch_label_present": false
+      },
+      "B15": {
+        "row": 19,
+        "batch_cell": null,
+        "candidate_cell": "sha256:029aaf51ce9894999917d4730c0682047e6aee33d34f15d1bbc64e1195361c91",
+        "batch_label_present": false
+      },
+      "B16": {
+        "row": 20,
+        "batch_cell": null,
+        "candidate_cell": "sha256:c0ee402dcbe543fe04df844c2c9d2134f4922a88177a166d82f0e2b2cdcd37c6",
+        "batch_label_present": false
+      },
+      "B17": {
+        "row": 21,
+        "batch_cell": null,
+        "candidate_cell": "sha256:8fcecc4204b0c7149f3d002b1b693d01b9be5a5e8930d621c5ef089f39e0585a",
+        "batch_label_present": false
+      },
+      "B18": {
+        "row": 22,
+        "batch_cell": null,
+        "candidate_cell": "sha256:b36c80cc90660614833ec0bdf464df7b4d37db9064457a2d1e2c496856ced6ba",
+        "batch_label_present": false
+      },
+      "B19": {
+        "row": 23,
+        "batch_cell": null,
+        "candidate_cell": "sha256:4f4129854aedf46810ac9654b5e918be591a55ffb3a8bd01c24ca7aa787237de",
+        "batch_label_present": false
+      },
+      "B20": {
+        "row": 24,
+        "batch_cell": null,
+        "candidate_cell": "sha256:0c141695e2654b721a2a70e712bfdd9cc951d132b823ef8b710b0f07c17d7f73",
+        "batch_label_present": false
+      },
+      "B21": {
+        "row": 25,
+        "batch_cell": null,
+        "candidate_cell": "sha256:af261cdb97be35e69dd294aff4351ed7ec7477048b2377adaee100697c1809d3",
+        "batch_label_present": false
+      },
+      "B22": {
+        "row": 26,
+        "batch_cell": null,
+        "candidate_cell": "sha256:474ea2ea4e472386215819df6edeb7f88ca3c1af3abae6259f11972588f52812",
+        "batch_label_present": false
+      },
+      "B23": {
+        "row": 27,
+        "batch_cell": null,
+        "candidate_cell": "sha256:0f3b338e277722ef4de67a59096d7e8c931138eb05c300808fc9d2ea9a186468",
+        "batch_label_present": false
+      },
+      "B24": {
+        "row": 28,
+        "batch_cell": null,
+        "candidate_cell": "sha256:d049bb19337a6de2e27a654729cdbfc8b84ef5e4b93dd4f31606dc51f4a0c6dd",
+        "batch_label_present": false
+      },
+      "B25": {
+        "row": 29,
+        "batch_cell": null,
+        "candidate_cell": "sha256:2fa4c3c7182110647ed797c132138313300e447227199131a9731a8acd4a1afa",
+        "batch_label_present": false
+      },
+      "B26": {
+        "row": 30,
+        "batch_cell": null,
+        "candidate_cell": "sha256:6535e6f78dc8eeb10b933e995f8321cd01ed80d90f405c5042b7fbfccf08ac95",
+        "batch_label_present": false
+      },
+      "B27": {
+        "row": 31,
+        "batch_cell": null,
+        "candidate_cell": "sha256:0412887e0c24cae711a326d0032a59e8cce8c7618478be6748fd98c2cfc9f4bf",
+        "batch_label_present": false
+      }
+    },
+    "pdf_sha256": {
+      "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "智慧家庭装维工程与管理职业技能等级标准.pdf": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "电信基础设施维护规程.pdf": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58"
+    },
+    "input_hashes": {
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/p2_gold_05_review_proposal.md": {
+        "sha256": "8811414d2c6447662a0ab4cbad45d60524b475543003fc5af575c32fe3cc8dc2",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/review_batch02_15_draft.xlsx": {
+        "sha256": "12f4a4acbb176590de732a7c92c0c620f03ac8376edda10ade52989a96c060b7",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/review.xlsx": {
+        "sha256": "df13e2755786cfb7f4d30e44d6323463ce6cbfe49c99a2b5ae87dfeec369d5ea",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/candidates/p1-20261104-structured/candidates.jsonl": {
+        "sha256": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/corpus/p1-20261104-v2/corpus.manifest.json": {
+        "sha256": "50bb2c71e205698ae8bee394231d961d19567117e03f489579a1f53b9bf1245f",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/corpus/p1-20261104-v2/corpus.jsonl": {
+        "sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_9.jsonl": {
+        "sha256": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_metadata.json": {
+        "sha256": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/rejected_batch01_3.jsonl": {
+        "sha256": "3bbeec82efe9ad5fc646479056cf189985314fadb8f5670ea164e28869c1ed91",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/gold_batch01_manifest.json": {
+        "sha256": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/p2_gold_05_validation.md": {
+        "sha256": "2d7454c7e50ea6e7aa83d0cb9a3e5200d2eb73b07a23f75b1119604b9646211f",
+        "matches_frozen_record": true
+      },
+      "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-05/p2_gold_05_signoff_packet.md": {
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "matches_frozen_record": false,
+        "note": "P2-Gold-05 记录的签核前哈希已因追加人工字段而变化"
+      }
+    },
+    "outputs": {
+      "retrieval_gold_batch02_13.jsonl": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+      "retrieval_gold_batch02_metadata.json": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3",
+      "rejected_batch02_1.jsonl": "aa0e784949e0d3ff535e57b510b8111fbbe6d869752292a613f80836409aff73",
+      "unsigned_batch02_1.jsonl": "4cd8ddc233c9a3f54b10fca609f388bf616d7653665d8a9accc5e69ca04e1cee"
+    }
+  }
+}

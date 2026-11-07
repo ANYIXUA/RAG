@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:17.187985+08:00",
+  "conservative_cost_yuan": 0.00072315,
+  "error": null,
+  "latency_ms": 1288.0063999909908,
+  "list_price_estimate_yuan": 0.00056115,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 智慧家庭产品线绩效评估未在上下文中明确提及。[1]  \n2. 职业技能等级标准包含职业道德、职业规范等要求。[1]  \n3. 技能要求按初级、中级、高级递进，涵盖装维与管理内容。[1]  \n4. 评估可能涉及岗位规范、服务流程及安全作业知识。[3]  \n5. 具体绩效指标需参考其他未提供文档或制度。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881215,
+    "id": "chatcmpl-2c1c63d6-55e6-9146-809f-8e3baab147dc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 108,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2661,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2769
+    }
+  },
+  "usage_known": true
+}

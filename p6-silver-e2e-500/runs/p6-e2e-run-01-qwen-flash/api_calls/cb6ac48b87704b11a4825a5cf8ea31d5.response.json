@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:26.468210+08:00",
+  "conservative_cost_yuan": 0.0030732,
+  "error": null,
+  "latency_ms": 7596.830600174144,
+  "list_price_estimate_yuan": 0.0017667,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[2]明确指出‘此表由招标人填写“暂估单价”’，与回答中第一条一致；上下文[3]明确说明‘注：此表项目名称、数量由招标人填写’，支持第二条；第三、四、五条均基于上下文[2][1]的合理推断，且无事实错误。所有信息均来自实际上下文，无编造。\",\n    \"evidence\": [\n      \"[2] 来源：电信基础设施维护规程.pdf\\n引用标签：[2]\\n标题：第113页\\n定位信息：113\\n内容：注：此表由招标人填写“暂估单价”，投标人应将“暂估金额”合计计入投标总价中，结算时按合同约定结算金额填写。\\n表—09—3\",\n      \"[3] 来源：电信基础设施维护规程.pdf\\n引用标签：[3]\\n标题：第114页\\n定位信息：114\\n内容：注：此表项目名称、数量由招标人填写。编制招标控制价时，单价由招标人按有关计价规定确定；投标时，单价由投标人自主报价，计入投标总价中。\"\n    ]\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持：第一条源自[2]，第二条源自[3]，第三、四条由[2]中‘暂估金额’和‘结算时按合同约定’推导得出，第五条由[1]中‘招标控制价使用表格包括：……表—09（不含表—09—3～表—09—5）’支持。所有陈述均在上下文范围内，无虚构或夸大。\",\n    \"evidence\": [\n      \"[2] 注：此表由招标人填写“暂估单价”……\",\n      \"[3] 注：此表项目名称、数量由招标人填写……\",\n      \"[1] 招标控制价使用表格包括：……表—09（不含表—09—3～表—09—5）……\"\n    ]\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题询问的是‘招标人填写的项目是什么内容’，回答完整覆盖了项目名称、数量、暂估单价、用途及所属表格类别，且未遗漏关键点。上下文已提供全部必要信息，无需补充。\",\n    \"evidence\": [\n      \"[2] 此表由招标人填写“暂估单价”\",\n      \"[3] 项目名称、数量由招标人填写\"\n    ]\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个引用编号均正确对应实际上下文来源：[2]对应第113页关于‘暂估单价’的描述，[3]对应第114页关于‘项目名称、数量’的说明，[1]对应第122页关于招标控制价表格范围的描述。引用与内容完全匹配，无错引或漏引。\",\n    \"evidence\": [\n      \"[2] 内容：注：此表由招标人填写“暂估单价”……\",\n      \"[3] 内容：注：此表项目名称、数量由招标人填写……\",\n      \"[1] 内容：招标控制价使用表格包括：……表—09（不含表—09—3～表—09—5）……\"\n    ]\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为具体事实查询，上下文中有明确答案，不应拒答。模型已给出完整回答，符合要求，故此项不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881278,
+    "id": "chatcmpl-879409d3-02da-9100-a9b0-8564f35392f4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 871,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3068,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3939
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "光缆线路发生障碍时，维护人员应在最短的时间内调通备用光纤。",
+    "reason": "回答与上下文一致，涵盖抢修、上报等关键点。",
+    "score": 1
+  },
+  "case_id": "p6s-0388",
+  "citation_correctness": {
+    "evidence": "故障处理报告和障碍申报表。[2]",
+    "reason": "引用编号与上下文来源匹配且支持对应语句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "重大障碍排除后的三个工作日内将障碍及处理详情书面上报运营企业。",
+    "reason": "覆盖处理与上报全流程，无遗漏必要步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "障碍排除后，应认真做好障碍查修记录。",
+    "reason": "每项事实均有对应上下文支持，无虚构内容。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "8a679ebe18f8429fb463b2d1fcc61a85",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

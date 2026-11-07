@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:14.106948+08:00",
+  "conservative_cost_yuan": 0.0007383,
+  "error": null,
+  "latency_ms": 1110.4644001461565,
+  "list_price_estimate_yuan": 0.0005882999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 铁塔设备测温应使用红外线测温仪。[1]  \n2. 红外线测温仪是动环监控系统常用测温工具。[1]  \n3. 该工具可非接触测量设备表面温度。[1]  \n4. 适用于铁塔、基站等高空设备巡检。[1]  \n5. 参考《电信基础设施维护规程》第355页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881153,
+    "id": "chatcmpl-6dfd9fed-0453-981c-92d7-ef568eeffe80",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2922,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3022
+    }
+  },
+  "usage_known": true
+}

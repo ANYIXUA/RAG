@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:15:46.637030+08:00",
+  "input_token_upper_bound": 1203,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0168"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在综合土质地条件下，安装水泥杆夹板法装7/2.6单股拉线时，应执行哪些操作步骤？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "f1060583f12a4af88d38509752bf2f68",
+  "reserved_yuan": 0.0006015
+}

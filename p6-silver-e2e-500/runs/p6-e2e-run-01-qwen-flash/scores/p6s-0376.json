@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "检查变压器油质、油面；检查接线柱及绝缘套管",
+    "reason": "覆盖油和接线检查核心要求",
+    "score": 1
+  },
+  "case_id": "p6s-0376",
+  "citation_correctness": {
+    "evidence": "[1] 断电外观检查、接线柱及绝缘套管瓷瓶检查更换",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检查变压器油质、油面；检查接线柱及绝缘套管",
+    "reason": "涵盖关键检查步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "断电外观检查、接线柱及绝缘套管瓷瓶检查更换",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "8ee364a8d05e46ed874880d25eb85747",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

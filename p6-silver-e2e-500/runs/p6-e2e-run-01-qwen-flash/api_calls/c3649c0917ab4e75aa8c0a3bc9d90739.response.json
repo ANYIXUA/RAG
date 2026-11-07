@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:55.723367+08:00",
+  "conservative_cost_yuan": 0.0013536,
+  "error": null,
+  "latency_ms": 2471.6656000819057,
+  "list_price_estimate_yuan": 0.0009230999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确指出绩效绑定未在上下文说明\",\n    \"evidence\": \"装维人员绩效未在上下文中明确与家庭服务绑定方式。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"绩效可能关联服务能力、交付技巧及故障处理能力。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题核心且无遗漏关键点\",\n    \"evidence\": \"具体绑定机制需参考更详细的绩效管理制度。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"服务礼仪、沟通技巧和维护技巧是考核要素之一。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"问题不可答时明确拒答并提示\",\n    \"evidence\": \"具体绑定机制需参考更详细的绩效管理制度。[1]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882033,
+    "id": "chatcmpl-03ec296d-0a5a-932c-b7c0-f78b753eb38b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 287,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3284,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3571
+    }
+  },
+  "usage_known": true
+}

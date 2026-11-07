@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:02.269097+08:00",
+  "conservative_cost_yuan": 0.0007656,
+  "error": null,
+  "latency_ms": 1472.9112999048084,
+  "list_price_estimate_yuan": 0.0005556,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 架空通信线路与110KV及以上电力线路交越时，最小垂直净距为4.0米。[1]  \n2. 若电力线路有防雷保护，垂直净距要求为4.0米。[1]  \n3. 无防雷保护时，最小垂直净距应为6.0米。[1]  \n4. 该标准出自《电信基础设施维护规程》第344页表D.0.3。[1]  \n5. 110KV至220KV电力线交越时，最小垂直净距为4.0米。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880900,
+    "id": "chatcmpl-fc5c5998-9d73-955f-ab1e-92378ec2d039",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 140,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2304,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2444
+    }
+  },
+  "usage_known": true
+}

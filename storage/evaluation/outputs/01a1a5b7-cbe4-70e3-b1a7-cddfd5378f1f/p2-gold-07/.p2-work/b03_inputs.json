@@ -1,0 +1,2153 @@
+{
+ "frozen_sha256": {
+  "candidates.jsonl": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120",
+  "corpus.jsonl": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6"
+ },
+ "counts": {
+  "candidates": 57,
+  "chunks": 447,
+  "mapping": 57
+ },
+ "workbook_header_row4": [
+  "首批编号",
+  "candidate_id",
+  "question_type",
+  "question",
+  "proposed_answer",
+  "审核状态",
+  "审核人",
+  "审核意见"
+ ],
+ "mapping": [
+  {
+   "row": 5,
+   "b": "B01",
+   "candidate_id": "sha256:9631dde730749e95e2c74da24726dd1d8e743b1242d189ac76034732a01fa5e9"
+  },
+  {
+   "row": 6,
+   "b": "B02",
+   "candidate_id": "sha256:6858125cbf5e8170a757c8a812aca9d1a9b2dd23347c59d5061af9a7c0d982f0"
+  },
+  {
+   "row": 7,
+   "b": "B03",
+   "candidate_id": "sha256:31d42a216450391763336ebbd7b38604cb50a3557831669e5b3371e63ef477ed"
+  },
+  {
+   "row": 8,
+   "b": "B04",
+   "candidate_id": "sha256:4d263ebb839f347941da0bd9c9d0c11533925443e6a26519593ad7628f6c29e6"
+  },
+  {
+   "row": 9,
+   "b": "B05",
+   "candidate_id": "sha256:e3783223e572063f0a3df106a6c1c6084c99e5f2943b788dc72a6996cb96b2bf"
+  },
+  {
+   "row": 10,
+   "b": "B06",
+   "candidate_id": "sha256:bfd1eea2e2dfb6cd0dbda8053b95cae3aee6dc526998a08e1da1ee5458570a41"
+  },
+  {
+   "row": 11,
+   "b": "B07",
+   "candidate_id": "sha256:50354083653ee2bf6b5811362051fffcabfb7895978e5d6d0004c77ad21b0622"
+  },
+  {
+   "row": 12,
+   "b": "B08",
+   "candidate_id": "sha256:d5ab4e3c5473589238491da686184e9c651ecdbf317776b9454bc222b49ff81a"
+  },
+  {
+   "row": 13,
+   "b": "B09",
+   "candidate_id": "sha256:8d8e0f5cbd56fd6adb9ba5e09728cc911d24345d7a41f15ec0eaddc37717d1c8"
+  },
+  {
+   "row": 14,
+   "b": "B10",
+   "candidate_id": "sha256:b503d526e513f66d71916de151812a19403e51bbfd81956c88dee63adda7814a"
+  },
+  {
+   "row": 15,
+   "b": "B11",
+   "candidate_id": "sha256:de1dd6ecf011fd92f5cbef969545f045b067fbc353123e327f2b8ce04527a0d3"
+  },
+  {
+   "row": 16,
+   "b": "B12",
+   "candidate_id": "sha256:70dc300fbcd568ccd4324dd4c6a93d6e438266da789c7865f0400d0c64547d24"
+  },
+  {
+   "row": 17,
+   "b": "B13",
+   "candidate_id": "sha256:ba50e7af3e31659d88a2d0b4937eb510a09e19e2238d1c0e93a923a1aa42fe50"
+  },
+  {
+   "row": 18,
+   "b": "B14",
+   "candidate_id": "sha256:6b27f4cd6fb8a57d3ba3c96049bb0c8ce98b909be142ed809ab85a0bac89fba6"
+  },
+  {
+   "row": 19,
+   "b": "B15",
+   "candidate_id": "sha256:029aaf51ce9894999917d4730c0682047e6aee33d34f15d1bbc64e1195361c91"
+  },
+  {
+   "row": 20,
+   "b": "B16",
+   "candidate_id": "sha256:c0ee402dcbe543fe04df844c2c9d2134f4922a88177a166d82f0e2b2cdcd37c6"
+  },
+  {
+   "row": 21,
+   "b": "B17",
+   "candidate_id": "sha256:8fcecc4204b0c7149f3d002b1b693d01b9be5a5e8930d621c5ef089f39e0585a"
+  },
+  {
+   "row": 22,
+   "b": "B18",
+   "candidate_id": "sha256:b36c80cc90660614833ec0bdf464df7b4d37db9064457a2d1e2c496856ced6ba"
+  },
+  {
+   "row": 23,
+   "b": "B19",
+   "candidate_id": "sha256:4f4129854aedf46810ac9654b5e918be591a55ffb3a8bd01c24ca7aa787237de"
+  },
+  {
+   "row": 24,
+   "b": "B20",
+   "candidate_id": "sha256:0c141695e2654b721a2a70e712bfdd9cc951d132b823ef8b710b0f07c17d7f73"
+  },
+  {
+   "row": 25,
+   "b": "B21",
+   "candidate_id": "sha256:af261cdb97be35e69dd294aff4351ed7ec7477048b2377adaee100697c1809d3"
+  },
+  {
+   "row": 26,
+   "b": "B22",
+   "candidate_id": "sha256:474ea2ea4e472386215819df6edeb7f88ca3c1af3abae6259f11972588f52812"
+  },
+  {
+   "row": 27,
+   "b": "B23",
+   "candidate_id": "sha256:0f3b338e277722ef4de67a59096d7e8c931138eb05c300808fc9d2ea9a186468"
+  },
+  {
+   "row": 28,
+   "b": "B24",
+   "candidate_id": "sha256:d049bb19337a6de2e27a654729cdbfc8b84ef5e4b93dd4f31606dc51f4a0c6dd"
+  },
+  {
+   "row": 29,
+   "b": "B25",
+   "candidate_id": "sha256:2fa4c3c7182110647ed797c132138313300e447227199131a9731a8acd4a1afa"
+  },
+  {
+   "row": 30,
+   "b": "B26",
+   "candidate_id": "sha256:6535e6f78dc8eeb10b933e995f8321cd01ed80d90f405c5042b7fbfccf08ac95"
+  },
+  {
+   "row": 31,
+   "b": "B27",
+   "candidate_id": "sha256:0412887e0c24cae711a326d0032a59e8cce8c7618478be6748fd98c2cfc9f4bf"
+  },
+  {
+   "row": 32,
+   "b": "B28",
+   "candidate_id": "sha256:9a72d01ef8f3b71904144877056fb2cf2f9ee7b02801140c14be922bb5fd8e9f"
+  },
+  {
+   "row": 33,
+   "b": "B29",
+   "candidate_id": "sha256:2769ae9af89aab01bd8aead8897e96ebbe6e4f64ef305bcd59780fb192171860"
+  },
+  {
+   "row": 34,
+   "b": "B30",
+   "candidate_id": "sha256:0691d0137cbe702a2ec0ed5fa33ab55628575d96781bf456d853a7d6d10191fe"
+  },
+  {
+   "row": 35,
+   "b": "B31",
+   "candidate_id": "sha256:e74e6386379043f840835ab6571daade945ae870605a1d5f46da3dae7a977264"
+  },
+  {
+   "row": 36,
+   "b": "B32",
+   "candidate_id": "sha256:86abb5904cd3b7241c6bd1baa9dc3888ec11fa28135c1fcb518ec9b19a51ddf1"
+  },
+  {
+   "row": 37,
+   "b": "B33",
+   "candidate_id": "sha256:85516c936d8fe455b05be5cb507eabbdaf7aec41e0339101b9f7e34b688b65fc"
+  },
+  {
+   "row": 38,
+   "b": "B34",
+   "candidate_id": "sha256:a9065f265727f73d5987f18a1b45172702509127e36212b003dfbcf857a24434"
+  },
+  {
+   "row": 39,
+   "b": "B35",
+   "candidate_id": "sha256:64e18eda64f9eb7f2bea1fd707d05c637ed7e13c0bec0c586200017cd4e7c894"
+  },
+  {
+   "row": 40,
+   "b": "B36",
+   "candidate_id": "sha256:5d42c5b4ccd006231d17ae08a942cef1de654e37e64092884cae899a372110b4"
+  },
+  {
+   "row": 41,
+   "b": "B37",
+   "candidate_id": "sha256:7fe4ebfaf574ebd0825e8f2d4541c494239212b9c9f0c0dac94fb989a2eecf2d"
+  },
+  {
+   "row": 42,
+   "b": "B38",
+   "candidate_id": "sha256:2bbfb4a82fec1d093c88df135fb2f44eae2c0a27dcfd428bd8b7db7788180a76"
+  },
+  {
+   "row": 43,
+   "b": "B39",
+   "candidate_id": "sha256:d2bbc8a14069a7efff2b77ffee9522792c095fafbdfdad8ee4e8fa53a21a6f39"
+  },
+  {
+   "row": 44,
+   "b": "B40",
+   "candidate_id": "sha256:bc83c840f1e8d89aa0229f2e8e30c808cbad720e93970135313bb16204ef083c"
+  },
+  {
+   "row": 45,
+   "b": "B41",
+   "candidate_id": "sha256:b4948d39941b4842ce1cec733083400393f944fb78b0a646fb187b3468ccfce5"
+  },
+  {
+   "row": 46,
+   "b": "B42",
+   "candidate_id": "sha256:8b2d213a6a85dbee5975b9cc800f3c119222f1dd612bc93892999817cef85871"
+  },
+  {
+   "row": 47,
+   "b": "B43",
+   "candidate_id": "sha256:e13b3e08b91f8ecc93a8f721859cde4e7d28675abb53ff5249a4334925abce47"
+  },
+  {
+   "row": 48,
+   "b": "B44",
+   "candidate_id": "sha256:450131450e1fd2c9b087c8d9990ec5667dc54c25c979b4fb5929307174570c36"
+  },
+  {
+   "row": 49,
+   "b": "B45",
+   "candidate_id": "sha256:de211868b35c7ce7c3fc759a17333f5829c97542cbfdafcadbb0445afc020266"
+  },
+  {
+   "row": 50,
+   "b": "B46",
+   "candidate_id": "sha256:d3109d6f7c5c9e35cef41bc51a466b88a5710a071e90e19c393e7ec18be79879"
+  },
+  {
+   "row": 51,
+   "b": "B47",
+   "candidate_id": "sha256:be11ad9c57042e53066edc836c22ea22c1df359c8f46d7bc09e5beca283fdef2"
+  },
+  {
+   "row": 52,
+   "b": "B48",
+   "candidate_id": "sha256:1cb66bac6381fa7f068e3c89a5469e939babb508ee62c54f3b6ff24ee0272ca0"
+  },
+  {
+   "row": 53,
+   "b": "B49",
+   "candidate_id": "sha256:b3cb46209708867debeabfffc91132b4d88fd613ee9017f7959edaa1a71a120f"
+  },
+  {
+   "row": 54,
+   "b": "B50",
+   "candidate_id": "sha256:a20b570f5a28d69b3e7aebf3083c0cfe0b1913c34693320496fa4e5f345ac2e0"
+  },
+  {
+   "row": 55,
+   "b": "B51",
+   "candidate_id": "sha256:7b3828d049462c38db624dc89d1733b296d18c8673d71242117f95c3413f7e8c"
+  },
+  {
+   "row": 56,
+   "b": "B52",
+   "candidate_id": "sha256:8d25da17cd828fdd5a472d80f1de41390f9e26616d31ff42715c6436e79fff2b"
+  },
+  {
+   "row": 57,
+   "b": "B53",
+   "candidate_id": "sha256:38376d247fabd496f655addd308a80ce91e133aa70c3d6108bb93404f33d0d2c"
+  },
+  {
+   "row": 58,
+   "b": "B54",
+   "candidate_id": "sha256:1c41c10613d8867a8469f80d9d506a49a58357bcd7030fa9b1a07d4655c5386c"
+  },
+  {
+   "row": 59,
+   "b": "B55",
+   "candidate_id": "sha256:672fe784fc33b88b4fb7660dcda841815d3c30a876eb39164ce3909a9d765374"
+  },
+  {
+   "row": 60,
+   "b": "B56",
+   "candidate_id": "sha256:5972f5480aeed3b4b705cc948d70c8ac5034cd30cb5c1ca0f9c2c08206a17c99"
+  },
+  {
+   "row": 61,
+   "b": "B57",
+   "candidate_id": "sha256:75f444c4a8d849e38771a34c0a5ad510d8b399a5381829f102e7632eb272a392"
+  }
+ ],
+ "records": {
+  "B23": {
+   "b": "B23",
+   "workbook_row": 27,
+   "candidate": {
+    "candidate_id": "sha256:0f3b338e277722ef4de67a59096d7e8c931138eb05c300808fc9d2ea9a186468",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "easy",
+    "evidence_excerpt": {
+     "81951fb8b5e157346ed83d77": "章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第52页 页码：52 47 4.8.2. 账号口令 1、禁用调试账号 设备中除为用户提供的唯一账号外，在设备出厂后不应以任何形式在设备中预留任 何其他账号。 2、口令安全 口令应支持足够复杂的策略，口令应满足至少8 位长度要求，且包含字符、数字和特 殊字符等。 4.8.3. WAN 侧接入安全性 除上网业务的交互协议，以及与中国移动业务管理平台的远程连接之外，全光组网终 端不应为其他第三方提供如用户数据分析等服务。 4.8.4. LAN 侧接入安全性 1. WLAN 应支持Open System 和Pre-Shared Key 两种链路层鉴权方式。"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "WLAN 应支持Open System 和Pre-Shared Key 两种链路层鉴权方式。",
+    "question": "WLAN应支持哪些链路层鉴权方式？",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "81951fb8b5e157346ed83d77"
+    ]
+   },
+   "evidence_chunks": {
+    "81951fb8b5e157346ed83d77": {
+     "chunk_id": "81951fb8b5e157346ed83d77",
+     "chunk_text": "章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第52页 页码：52 47 4.8.2. 账号口令 1、禁用调试账号 设备中除为用户提供的唯一账号外，在设备出厂后不应以任何形式在设备中预留任 何其他账号。 2、口令安全 口令应支持足够复杂的策略，口令应满足至少8 位长度要求，且包含字符、数字和特 殊字符等。 4.8.3. WAN 侧接入安全性 除上网业务的交互协议，以及与中国移动业务管理平台的远程连接之外，全光组网终 端不应为其他第三方提供如用户数据分析等服务。 4.8.4. LAN 侧接入安全性 1. WLAN 应支持Open System 和Pre-Shared Key 两种链路层鉴权方式。 2. WLAN 应支持WPA-PSK、WPA2-PSK、WPA-PSK/WPA2-PSK 混和模式、WPA3、 WPA2/WPA3混合模式，应支持AES、TKIP+AES混合加密模式。推荐启用WPA2/WPA3 混合模式和TKIP+AES 混合加密模式。 3. 应支持有线用户和无线用户的MAC 认证，即能对用户终端的MAC 地址进行“黑名 单”（禁止黑名单内的MAC 终端接入网络）、“白名单”（只允许白名单内的MAC 终端接入网络）配置和操作。 4. 应支持国家无线局域网安全标准。 5. 应支持VPN（IP SEC，PPTP，L2TP）透传功能。 4.8.5. 设备端口安全要求 默认情况下，设备应禁用SSH 和telnet 等远程管理协议，包括标准和非标准端口的 SSH 和telnet 协议。如在特殊情况下需要打开SSH 和Telnet 远程管理协议，应设置满足 本规范要求的账户口令验证措施，不应出现空口令或弱口令登录的情况。",
+     "chunk_text_sha256": "cb16037be3a0bac7b1809c6dc845c11cd9a6487c3a8616ce26c3b0a29c9bc7e1",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+     "document_id": "a2053ec18f1415e4912c510f",
+     "document_version": "v_ab72ce00c904f060",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_331fac305d9199e20770",
+      "block_type": "paragraph",
+      "business_module": "地址校验",
+      "chunk_index": 51,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [],
+      "content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+      "error_codes": [],
+      "filename": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "heading_path": [
+       "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+       "第52页"
+      ],
+      "page_number": 52,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+       "第52页"
+      ],
+      "section_title": "第52页",
+      "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+      "version_id": "v_ab72ce00c904f060"
+     },
+     "page_number": 52,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf#p52": " \n47 \n4.8.2. 账号口令 \n1、禁用调试账号 \n设备中除为用户提供的唯一账号外，在设备出厂后不应以任何形式在设备中预留任\n何其他账号。 \n2、口令安全 \n口令应支持足够复杂的策略，口令应满足至少8 位长度要求，且包含字符、数字和特\n殊字符等。 \n4.8.3. WAN 侧接入安全性 \n除上网业务的交互协议，以及与中国移动业务管理平台的远程连接之外，全光组网终\n端不应为其他第三方提供如用户数据分析等服务。 \n4.8.4. LAN 侧接入安全性 \n1. WLAN 应支持Open System 和Pre-Shared Key 两种链路层鉴权方式。 \n2. WLAN 应支持WPA-PSK、WPA2-PSK、WPA-PSK/WPA2-PSK 混和模式、WPA3、\nWPA2/WPA3混合模式，应支持AES、TKIP+AES混合加密模式。推荐启用WPA2/WPA3\n混合模式和TKIP+AES 混合加密模式。 \n3. 应支持有线用户和无线用户的MAC 认证，即能对用户终端的MAC 地址进行“黑名\n单”（禁止黑名单内的MAC 终端接入网络）、“白名单”（只允许白名单内的MAC\n终端接入网络）配置和操作。 \n4. 应支持国家无线局域网安全标准。 \n5. 应支持VPN（IP SEC，PPTP，L2TP）透传功能。 \n4.8.5. 设备端口安全要求 \n默认情况下，设备应禁用SSH 和telnet 等远程管理协议，包括标准和非标准端口的\nSSH 和telnet 协议。如在特殊情况下需要打开SSH 和Telnet 远程管理协议，应设置满足\n本规范要求的账户口令验证措施，不应出现空口令或弱口令登录的情况。 \n"
+   }
+  },
+  "B27": {
+   "b": "B27",
+   "workbook_row": 31,
+   "candidate": {
+    "candidate_id": "sha256:0412887e0c24cae711a326d0032a59e8cce8c7618478be6748fd98c2cfc9f4bf",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "hard",
+    "evidence_excerpt": {
+     "95cb40813342a7e91c27e7d3": "计量单位：综合 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23131001 内部墙面修复 平方米²次 23.94 7.18 7.18 消耗量 0.21 — WH23131002 外墙面修复 平方米²次 60.19 37.62 11.29 11.29 0.33 — WH23131003 顶面防水 平方米²次 52.90 33.06 9.92 9.92 0.29 WH23131004 地面墙面防水 平方米²次 18.24 11.40 3.42 3.42 0.10 WH23131005 锁具更换 个²次 18.24 11.40 3.42 3.42 0.10 WH23131006"
+    },
+    "exact_entity": "WH23131004",
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "地面墙面防水",
+    "question": "WH23131004项目对应的防水处理范围是什么？",
+    "question_type": "exact_entity",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "95cb40813342a7e91c27e7d3"
+    ]
+   },
+   "evidence_chunks": {
+    "95cb40813342a7e91c27e7d3": {
+     "chunk_id": "95cb40813342a7e91c27e7d3",
+     "chunk_text": "章节：电信基础设施维护规程 > 第288页 页码：288 T/CAICI XXXX—XXXX 282 表10.3.3.31 WH23131 机房土建零星维修 工作内容：1、内部墙面修复、外墙面修复； 2、防水：使用防水卷材对机房顶面进行简易防水处理； 3、墙面防水：使用室内防水涂料对机房地板及墙面进行简易防水处理； 4、更换：防盗门锁具更换； 5、门更换：机房防盗门更换，回收； 6、网更换：现场测量、制作、搬运、拆除、安装调整、清理现场等。 计量单位：综合 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23131001 内部墙面修复 平方米²次 23.94 7.18 7.18 消耗量 0.21 — WH23131002 外墙面修复 平方米²次 60.19 37.62 11.29 11.29 0.33 — WH23131003 顶面防水 平方米²次 52.90 33.06 9.92 9.92 0.29 WH23131004 地面墙面防水 平方米²次 18.24 11.40 3.42 3.42 0.10 WH23131005 锁具更换 个²次 18.24 11.40 3.42 3.42 0.10 WH23131006 防盗门更换 樘²次 156.86 98.04 29.41 29.41 0.86 WH23131007 防盗网更换 平方米 521.66 326.04 97.81 97.81 2.86",
+     "chunk_text_sha256": "c634697589891c2e245697dce4711116c10945d37477b5386f071df149d37482",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_82bf5160b1cfa27c6ba5",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 287,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected",
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第288页"
+      ],
+      "page_number": 288,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第288页"
+      ],
+      "section_title": "第288页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 288,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p288": "T/CAICI XXXX—XXXX \n282 \n表10.3.3.31 WH23131 机房土建零星维修 \n \n工作内容：1、内部墙面修复、外墙面修复； \n2、防水：使用防水卷材对机房顶面进行简易防水处理； \n3、墙面防水：使用室内防水涂料对机房地板及墙面进行简易防水处理； \n4、更换：防盗门锁具更换； \n5、门更换：机房防盗门更换，回收； \n6、网更换：现场测量、制作、搬运、拆除、安装调整、清理现场等。 \n计量单位：综合 \n \n \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23131001 \n内部墙面修复 \n平方米²次 \n \n23.94  \n7.18  \n7.18  \n消耗量 \n0.21 \n— \nWH23131002 \n外墙面修复 \n平方米²次 \n60.19  \n37.62  \n11.29  \n11.29  \n0.33 \n— \nWH23131003 \n顶面防水 \n平方米²次 \n52.90  \n33.06  \n9.92  \n9.92  \n0.29 \n \nWH23131004 \n地面墙面防水 \n平方米²次 \n18.24  \n11.40  \n3.42  \n3.42  \n0.10 \n \nWH23131005 \n锁具更换 \n个²次 \n18.24  \n11.40  \n3.42  \n3.42  \n0.10 \n \nWH23131006 \n防盗门更换 \n樘²次 \n156.86  \n98.04  \n29.41  \n29.41  \n0.86 \n \nWH23131007 \n防盗网更换 \n平方米 \n521.66  \n326.04  \n97.81  \n97.81  \n2.86 \n \n"
+   }
+  },
+  "B28": {
+   "b": "B28",
+   "workbook_row": 32,
+   "candidate": {
+    "candidate_id": "sha256:9a72d01ef8f3b71904144877056fb2cf2f9ee7b02801140c14be922bb5fd8e9f",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "medium",
+    "evidence_excerpt": {
+     "611a9eb6554a2b482561c775": "章节：电信基础设施维护规程 > 第286页 页码：286 T/CAICI XXXX—XXXX 280 表10.3.3.29 WH23126 铁塔专项维修 工作内容：塔体结构检查、螺丝紧固、漆面除锈刷漆、塔基强度测试等。 计量单位：座²次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 — WH23129002 角钢塔、三管塔、四管塔35m 以上 395.81 247.38 74.21 74.21 2.17 — WH23129003 单管塔（含景"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "291.84",
+    "question": "角钢塔、三管塔、四管塔35m以下铁塔专项维修的综合单价是多少？",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "611a9eb6554a2b482561c775"
+    ]
+   },
+   "evidence_chunks": {
+    "611a9eb6554a2b482561c775": {
+     "chunk_id": "611a9eb6554a2b482561c775",
+     "chunk_text": "章节：电信基础设施维护规程 > 第286页 页码：286 T/CAICI XXXX—XXXX 280 表10.3.3.29 WH23126 铁塔专项维修 工作内容：塔体结构检查、螺丝紧固、漆面除锈刷漆、塔基强度测试等。 计量单位：座²次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 — WH23129002 角钢塔、三管塔、四管塔35m 以上 395.81 247.38 74.21 74.21 2.17 — WH23129003 单管塔（含景观塔、仿生树、灯杆景观塔） 144.10 90.06 27.02 27.02 0.79 WH23129004 拉线塔 102.14 63.84 19.15 19.15 0.56 WH23129005 支撑杆、增高架，楼面拉线塔 71.14 44.46 13.34 13.34 0.39 WH23129006 路灯灯杆、水泥电杆、智慧灯杆、视频监 控杆 36.48 22.80 6.84 6.84 0.20 WH23129007 楼顶抱杆、美化天线外罩 31.01 19.38 5.81 5.81 0.17",
+     "chunk_text_sha256": "1204e7a40daa8c5904224d5331d838dd14d3ff99d963137d94c100bc494a0b84",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b6285831e06aa97fe297",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 285,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第286页"
+      ],
+      "page_number": 286,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第286页"
+      ],
+      "section_title": "第286页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 286,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p286": "T/CAICI XXXX—XXXX \n280 \n表10.3.3.29 WH23126 铁塔专项维修 \n \n工作内容：塔体结构检查、螺丝紧固、漆面除锈刷漆、塔基强度测试等。 \n计量单位：座²次 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23129001 \n铁塔专项维\n修 \n角钢塔、三管塔、四管塔35m 以下 \n291.84  \n182.40  \n54.72  \n54.72  \n消耗量 \n1.60 \n— \nWH23129002 \n角钢塔、三管塔、四管塔35m 以上 \n395.81  \n247.38  \n74.21  \n74.21  \n2.17 \n— \nWH23129003 \n单管塔（含景观塔、仿生树、灯杆景观塔）\n144.10  \n90.06  \n27.02  \n27.02  \n0.79 \n \nWH23129004 \n拉线塔 \n102.14  \n63.84  \n19.15  \n19.15  \n0.56 \n \nWH23129005 \n支撑杆、增高架，楼面拉线塔 \n71.14  \n44.46  \n13.34  \n13.34  \n0.39 \n \nWH23129006 \n路灯灯杆、水泥电杆、智慧灯杆、视频监\n控杆 \n36.48  \n22.80  \n6.84  \n6.84  \n0.20 \n \nWH23129007 \n楼顶抱杆、美化天线外罩 \n31.01  \n19.38  \n5.81  \n5.81  \n0.17 \n \n"
+   }
+  },
+  "B29": {
+   "b": "B29",
+   "workbook_row": 33,
+   "candidate": {
+    "candidate_id": "sha256:2769ae9af89aab01bd8aead8897e96ebbe6e4f64ef305bcd59780fb192171860",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "medium",
+    "evidence_excerpt": {
+     "a264a91966d85e2ec3b52e02": "章节：电信基础设施维护规程 > 第287页 页码：287 T/CAICI XXXX—XXXX 281 表10.3.3.30 WH23130 机房室外环境清理 工作内容：机房、铁塔、院墙、护网外内部以及周边一米杂草、杂物集中清除等。 计量单位：站²次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23130001 机房室外环 境清理 土建机房、彩钢板机房、一体化机房（方 舱） 25.54 15.96 4.79 4.79 消耗量 0.14 — WH23130002 一体化机柜 18.24 11.40 3.42 3.42 0.10 — WH23130003 角钢塔、三管塔、四管塔 18.24"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "18.24",
+    "question": "机房室外环境清理中，一体化机柜的综合单价是多少？",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "a264a91966d85e2ec3b52e02"
+    ]
+   },
+   "evidence_chunks": {
+    "a264a91966d85e2ec3b52e02": {
+     "chunk_id": "a264a91966d85e2ec3b52e02",
+     "chunk_text": "章节：电信基础设施维护规程 > 第287页 页码：287 T/CAICI XXXX—XXXX 281 表10.3.3.30 WH23130 机房室外环境清理 工作内容：机房、铁塔、院墙、护网外内部以及周边一米杂草、杂物集中清除等。 计量单位：站²次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23130001 机房室外环 境清理 土建机房、彩钢板机房、一体化机房（方 舱） 25.54 15.96 4.79 4.79 消耗量 0.14 — WH23130002 一体化机柜 18.24 11.40 3.42 3.42 0.10 — WH23130003 角钢塔、三管塔、四管塔 18.24 11.40 3.42 3.42 0.10 WH23130004 单管塔、拉线塔 12.77 7.98 2.39 2.39 0.07",
+     "chunk_text_sha256": "f24faa7022982e0091bec1ff25740cb0469982173aaa97fdfb09f4212c4192ce",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_4b9f00fca31d99e1ed9f",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 286,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第287页"
+      ],
+      "page_number": 287,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第287页"
+      ],
+      "section_title": "第287页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 287,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p287": "T/CAICI XXXX—XXXX \n281 \n表10.3.3.30 WH23130 机房室外环境清理 \n \n工作内容：机房、铁塔、院墙、护网外内部以及周边一米杂草、杂物集中清除等。 \n计量单位：站²次 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23130001 \n机房室外环\n境清理 \n土建机房、彩钢板机房、一体化机房（方\n舱） \n25.54  \n15.96  \n4.79  \n4.79  \n消耗量 \n0.14 \n— \nWH23130002 \n一体化机柜 \n18.24  \n11.40  \n3.42  \n3.42  \n0.10 \n— \nWH23130003 \n角钢塔、三管塔、四管塔 \n18.24  \n11.40  \n3.42  \n3.42  \n0.10 \n \nWH23130004 \n单管塔、拉线塔 \n12.77  \n7.98  \n2.39  \n2.39  \n0.07 \n \n \n"
+   }
+  },
+  "B30": {
+   "b": "B30",
+   "workbook_row": 34,
+   "candidate": {
+    "candidate_id": "sha256:0691d0137cbe702a2ec0ed5fa33ab55628575d96781bf456d853a7d6d10191fe",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "easy",
+    "evidence_excerpt": {
+     "c120df3a569ae215d69183ac": "章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第61页 页码：61 56 A.2 光路由终端二维码标识要求 二维码内容： （1）ssid1：设备的Wi-Fi名称，需与设备背面板的“默认无线网络名称”一致，一般 使用2.4G的SSID； （2）wifipwd：设备的Wi-Fi密码，需与设备背面板的“默认无线网络密钥”一致； （3）username：用户帐号，需与设备背面板的“默认终端配置帐号”一致；注：如 果此设备只使用密码登录，则username可填写空值； （4）userpwd：用户密码，需与设备背面板的“默认终端配置密码”一致； （5）productname: 产品名称码，2位阿拉伯数字； （6）mac：全光组网终端MAC地址； （7）sn：全光组网终端的SN；"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "默认无线网络名称",
+    "question": "二维码内容中，Wi-Fi名称需要与设备背面板的哪个字段一致？",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "c120df3a569ae215d69183ac"
+    ]
+   },
+   "evidence_chunks": {
+    "c120df3a569ae215d69183ac": {
+     "chunk_id": "c120df3a569ae215d69183ac",
+     "chunk_text": "章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第61页 页码：61 56 A.2 光路由终端二维码标识要求 二维码内容： （1）ssid1：设备的Wi-Fi名称，需与设备背面板的“默认无线网络名称”一致，一般 使用2.4G的SSID； （2）wifipwd：设备的Wi-Fi密码，需与设备背面板的“默认无线网络密钥”一致； （3）username：用户帐号，需与设备背面板的“默认终端配置帐号”一致；注：如 果此设备只使用密码登录，则username可填写空值； （4）userpwd：用户密码，需与设备背面板的“默认终端配置密码”一致； （5）productname: 产品名称码，2位阿拉伯数字； （6）mac：全光组网终端MAC地址； （7）sn：全光组网终端的SN； （8）cmei: 全光组网终端的CMEI号，具体编码规则请参考《中国移动非蜂窝类智能 硬件产品统一编码规范》； （9）ip：终端配置地址，如192.168.10.1，需与设备背面板的“默认终端配置地址” 一致; （10）vendor：全光组网终端合作伙伴名称，使用智家中心分配的厂商编码； （11）model：全光组网终端的产品型号，使用智家中心分配的型号编码。 （12）date：智能设备生产日期，6字节，格式xxxxxx，前4字节表示年，后2字节表示 月，例如：201901表示2019年1月。 二维码内容格式要求： 二维码内容所有符号为英文半角；用“&”把所有字段连起来，“&”左右无空格。 【实例】 ssid1=CMCC-xxx(无线网络名称)&wifipwd=xxx(无线网络密钥)&username=xxx（终端 配置帐号）&userpwd=xxx(终端配置密码)&ip=192.168.10.1&productname=xxx(产品名称 码)& mac=xxx( 终端MAC 地址)&sn=xxx( 终端的SN)&cmei=xxx( 终端的CMEI)& vendor=xxx(合作伙伴名称)&model=xxx(产品型号)&date=xxx(生产日期) 表格列：3.；二维码要求： （1）颜色：黑色； （2）黏贴位置：组网终端背面；",
+     "chunk_text_sha256": "20f3b0611832a802ce2ab30f07a0d31f662fbee5df3bdafa506d8f01934f1ca7",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+     "document_id": "a2053ec18f1415e4912c510f",
+     "document_version": "v_ab72ce00c904f060",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_0e9f34a5017e65493591",
+      "block_type": "paragraph",
+      "business_module": "地址校验",
+      "chunk_index": 60,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "table_like_text_detected",
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+      "error_codes": [],
+      "filename": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "heading_path": [
+       "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+       "第61页"
+      ],
+      "page_number": 61,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+       "第61页"
+      ],
+      "section_title": "第61页",
+      "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+      "version_id": "v_ab72ce00c904f060"
+     },
+     "page_number": 61,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf#p61": " \n56 \nA.2 光路由终端二维码标识要求 \n二维码内容： \n（1）ssid1：设备的Wi-Fi名称，需与设备背面板的“默认无线网络名称”一致，一般\n使用2.4G的SSID； \n（2）wifipwd：设备的Wi-Fi密码，需与设备背面板的“默认无线网络密钥”一致； \n（3）username：用户帐号，需与设备背面板的“默认终端配置帐号”一致；注：如\n果此设备只使用密码登录，则username可填写空值； \n（4）userpwd：用户密码，需与设备背面板的“默认终端配置密码”一致； \n（5）productname: 产品名称码，2位阿拉伯数字； \n（6）mac：全光组网终端MAC地址； \n（7）sn：全光组网终端的SN； \n（8）cmei: 全光组网终端的CMEI号，具体编码规则请参考《中国移动非蜂窝类智能\n硬件产品统一编码规范》； \n（9）ip：终端配置地址，如192.168.10.1，需与设备背面板的“默认终端配置地址”\n一致; \n（10）vendor：全光组网终端合作伙伴名称，使用智家中心分配的厂商编码； \n（11）model：全光组网终端的产品型号，使用智家中心分配的型号编码。  \n（12）date：智能设备生产日期，6字节，格式xxxxxx，前4字节表示年，后2字节表示\n月，例如：201901表示2019年1月。 \n二维码内容格式要求： \n二维码内容所有符号为英文半角；用“&”把所有字段连起来，“&”左右无空格。 \n【实例】 \nssid1=CMCC-xxx(无线网络名称)&wifipwd=xxx(无线网络密钥)&username=xxx（终端\n配置帐号）&userpwd=xxx(终端配置密码)&ip=192.168.10.1&productname=xxx(产品名称\n码)& mac=xxx( 终端MAC 地址)&sn=xxx( 终端的SN)&cmei=xxx( 终端的CMEI)& \nvendor=xxx(合作伙伴名称)&model=xxx(产品型号)&date=xxx(生产日期) \n3.  二维码要求： \n（1）颜色：黑色； \n（2）黏贴位置：组网终端背面； \n"
+   }
+  },
+  "B31": {
+   "b": "B31",
+   "workbook_row": 35,
+   "candidate": {
+    "candidate_id": "sha256:e74e6386379043f840835ab6571daade945ae870605a1d5f46da3dae7a977264",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "easy",
+    "evidence_excerpt": {
+     "71a4f239a4fd7b69fdc74486": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第1页 页码：1 ICS 33.180.01 CCS CAICI M11 中国通信企业协会团体标准 T/CAICIXXXX—XX 智慧家庭装维工程与管理职业技能等级 标准 Smart Home Installation Maintenance Engineer Position ability level and evaluation criteria （征求意见稿） XXXX-XX-XX 发布 XXXX-XX-XX 实施 表格列：中国通信企业协会；发布"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "XXXX-XX-XX 发布 XXXX-XX-XX 实施",
+    "question": "该标准的发布和实施日期是什么？",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "71a4f239a4fd7b69fdc74486"
+    ]
+   },
+   "evidence_chunks": {
+    "71a4f239a4fd7b69fdc74486": {
+     "chunk_id": "71a4f239a4fd7b69fdc74486",
+     "chunk_text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第1页 页码：1 ICS 33.180.01 CCS CAICI M11 中国通信企业协会团体标准 T/CAICIXXXX—XX 智慧家庭装维工程与管理职业技能等级 标准 Smart Home Installation Maintenance Engineer Position ability level and evaluation criteria （征求意见稿） XXXX-XX-XX 发布 XXXX-XX-XX 实施 表格列：中国通信企业协会；发布",
+     "chunk_text_sha256": "2c69f9548f7ab5bcc9592c004701ff8e277a1e69c49f52f04089023aec4f200c",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+     "document_id": "5256824b6b72b3f03d9c7a2c",
+     "document_version": "v_dcf78195a87f01f4",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_19892f626b72e03f3656",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 0,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "table_like_text_detected"
+      ],
+      "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "error_codes": [],
+      "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "heading_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第1页"
+      ],
+      "page_number": 1,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第1页"
+      ],
+      "section_title": "第1页",
+      "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "智慧家庭装维工程与管理职业技能等级标准",
+      "version_id": "v_dcf78195a87f01f4"
+     },
+     "page_number": 1,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "智慧家庭装维工程与管理职业技能等级标准.pdf#p1": " \n \n \nICS 33.180.01 \nCCS  \nCAICI \nM11 \n中国通信企业协会团体标准 \nT/CAICIXXXX—XX \n      \n \n智慧家庭装维工程与管理职业技能等级 \n标准 \nSmart Home Installation Maintenance Engineer Position ability level and  \nevaluation criteria \n \n（征求意见稿） \n      \n  \nXXXX-XX-XX 发布 \nXXXX-XX-XX 实施 \n中国通信企业协会  发布 \n"
+   }
+  },
+  "B32": {
+   "b": "B32",
+   "workbook_row": 36,
+   "candidate": {
+    "candidate_id": "sha256:86abb5904cd3b7241c6bd1baa9dc3888ec11fa28135c1fcb518ec9b19a51ddf1",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "medium",
+    "evidence_excerpt": {
+     "5766d05fd8a6f73a1ef60b57": "..................... 5 4.5 职业环境条件 .................................................................... 6 4.6 职业能力特征 .................................................................... 6 4.7 受教育程度 ...................................................................... 6 4.8 培训学时 ........................................................................ 6 4.9 职"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "4.6 职业能力特征 .................................................................... 6 4.7 受教育程度 ...................................................................... 6",
+    "question": "职业能力特征和受教育程度分别在哪个章节中说明？",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "5766d05fd8a6f73a1ef60b57"
+    ]
+   },
+   "evidence_chunks": {
+    "5766d05fd8a6f73a1ef60b57": {
+     "chunk_id": "5766d05fd8a6f73a1ef60b57",
+     "chunk_text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第2页 页码：2 T/CAICIXXXX—XX I 目 次 前 言 .......................................................................... III 1 范围 ................................................................................ 4 2 规范性引用文件 ...................................................................... 4 3 术语和定义 .......................................................................... 4 4 职业概况 ............................................................................ 5 4.1 职业名称 ......................................................................... 5 4.2 职业编码 ........................................................................ 5 4.3 职业定义 ........................................................................ 5 4.4 职业技能等级 .................................................................... 5 4.5 职业环境条件 .................................................................... 6 4.6 职业能力特征 .................................................................... 6 4.7 受教育程度 ...................................................................... 6 4.8 培训学时 ........................................................................ 6 4.9 职业技能鉴定 .................................................................... 6 4.9.1 申报条件 .................................................................... 6 4.9.2 鉴定方式 .................................................................... 6 4.9.3 监考人员、考评人员与考生配比 ................................................ 7 4.9.4 鉴定时间 .................................................................... 7 4.9.5 鉴定场所设备 ................................................................ 7 5 要求 ................................................................................ 7 5.1 职业道德 ......................................................................... 7 5.2 职业规范基础知识 ................................................................. 7 职业规范基础知识应包括下列内容： .................................................. 7 5.3 通信基础知识 .................................................................... 7 通信基础知识应包括下列内容： ...................................................... 7 5.4 智能组网专业基础知识 ............................................................. 8 智能组网专业基础知识应包括下列内容： .............................................. 8 5.5 全屋智能专业基础知识 ............................................................. 8 全屋智能专业基础知识应包括下列内容： .............................................. 8 5.6 计算机基础知识 ................................................................... 8 计算机基础知识应包括下列内容： .................................................... 8 5.7 安全基础知识 .................................................................... 9 安全基础知识应包括下列内容： ...................................................... 9 6 工作要求 ............................................................................ 9 6.1 本标准初级、中级、高级的技能要求和相关知识要求依次递进，高级别涵盖低级别的要求，主要 按照智慧家庭装维人员智能组网工作要求进行技能设置。 .................................. 9 6.2 智慧家庭装维工程与管理职业技能及职级应符合表1 的规定。 .......................... 9 6.3 初级 ......................................................................... 11",
+     "chunk_text_sha256": "e404afa1c23b6bbb8116ef68a16b89ff1ef3ff541d79271acc246f7762a52f54",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+     "document_id": "5256824b6b72b3f03d9c7a2c",
+     "document_version": "v_dcf78195a87f01f4",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_f6e3d54229a5ca51ce0e",
+      "block_type": "paragraph",
+      "business_module": "设备维护",
+      "chunk_index": 1,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "error_codes": [],
+      "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "heading_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第2页"
+      ],
+      "page_number": 2,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第2页"
+      ],
+      "section_title": "第2页",
+      "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "智慧家庭装维工程与管理职业技能等级标准",
+      "version_id": "v_dcf78195a87f01f4"
+     },
+     "page_number": 2,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "智慧家庭装维工程与管理职业技能等级标准.pdf#p2": "T/CAICIXXXX—XX \nI \n目\n次 \n前\n言 .......................................................................... III \n1 范围 ................................................................................ 4 \n2 规范性引用文件 ...................................................................... 4 \n3 术语和定义 .......................................................................... 4 \n4 职业概况 ............................................................................ 5 \n4.1 职业名称 ......................................................................... 5 \n4.2 职业编码 ........................................................................ 5 \n4.3 职业定义 ........................................................................ 5 \n4.4 职业技能等级 .................................................................... 5 \n4.5 职业环境条件 .................................................................... 6 \n4.6 职业能力特征 .................................................................... 6 \n4.7 受教育程度 ...................................................................... 6 \n4.8 培训学时 ........................................................................ 6 \n4.9 职业技能鉴定 .................................................................... 6 \n4.9.1 申报条件 .................................................................... 6 \n4.9.2 鉴定方式 .................................................................... 6 \n4.9.3 监考人员、考评人员与考生配比 ................................................ 7 \n4.9.4 鉴定时间 .................................................................... 7 \n4.9.5 鉴定场所设备 ................................................................ 7 \n5 要求 ................................................................................ 7 \n5.1 职业道德 ......................................................................... 7 \n5.2 职业规范基础知识 ................................................................. 7 \n职业规范基础知识应包括下列内容： .................................................. 7 \n5.3 通信基础知识 .................................................................... 7 \n通信基础知识应包括下列内容： ...................................................... 7 \n5.4 智能组网专业基础知识 ............................................................. 8 \n智能组网专业基础知识应包括下列内容： .............................................. 8 \n5.5 全屋智能专业基础知识 ............................................................. 8 \n全屋智能专业基础知识应包括下列内容： .............................................. 8 \n5.6 计算机基础知识 ................................................................... 8 \n计算机基础知识应包括下列内容： .................................................... 8 \n5.7 安全基础知识 .................................................................... 9 \n安全基础知识应包括下列内容： ...................................................... 9 \n6 工作要求 ............................................................................ 9 \n6.1 本标准初级、中级、高级的技能要求和相关知识要求依次递进，高级别涵盖低级别的要求，主要\n按照智慧家庭装维人员智能组网工作要求进行技能设置。 .................................. 9 \n6.2 智慧家庭装维工程与管理职业技能及职级应符合表1 的规定。 .......................... 9 \n6.3 初级 ......................................................................... 11 \n"
+   }
+  },
+  "B33": {
+   "b": "B33",
+   "workbook_row": 37,
+   "candidate": {
+    "candidate_id": "sha256:85516c936d8fe455b05be5cb507eabbdaf7aec41e0339101b9f7e34b688b65fc",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "hard",
+    "evidence_excerpt": {
+     "5766d05fd8a6f73a1ef60b57": "业技能鉴定 .................................................................... 6 4.9.1 申报条件 .................................................................... 6 4.9.2 鉴定方式 .................................................................... 6 4.9.3 监考人员、考评人员与考生配比 ................................................ 7 4.9.4 鉴定时间 ...................................................................."
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "4.9.1 申报条件 .................................................................... 6 4.9.2 鉴定方式 .................................................................... 6",
+    "question": "职业技能鉴定的申报条件和鉴定方式分别在哪个部分描述？",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "5766d05fd8a6f73a1ef60b57"
+    ]
+   },
+   "evidence_chunks": {
+    "5766d05fd8a6f73a1ef60b57": {
+     "chunk_id": "5766d05fd8a6f73a1ef60b57",
+     "chunk_text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第2页 页码：2 T/CAICIXXXX—XX I 目 次 前 言 .......................................................................... III 1 范围 ................................................................................ 4 2 规范性引用文件 ...................................................................... 4 3 术语和定义 .......................................................................... 4 4 职业概况 ............................................................................ 5 4.1 职业名称 ......................................................................... 5 4.2 职业编码 ........................................................................ 5 4.3 职业定义 ........................................................................ 5 4.4 职业技能等级 .................................................................... 5 4.5 职业环境条件 .................................................................... 6 4.6 职业能力特征 .................................................................... 6 4.7 受教育程度 ...................................................................... 6 4.8 培训学时 ........................................................................ 6 4.9 职业技能鉴定 .................................................................... 6 4.9.1 申报条件 .................................................................... 6 4.9.2 鉴定方式 .................................................................... 6 4.9.3 监考人员、考评人员与考生配比 ................................................ 7 4.9.4 鉴定时间 .................................................................... 7 4.9.5 鉴定场所设备 ................................................................ 7 5 要求 ................................................................................ 7 5.1 职业道德 ......................................................................... 7 5.2 职业规范基础知识 ................................................................. 7 职业规范基础知识应包括下列内容： .................................................. 7 5.3 通信基础知识 .................................................................... 7 通信基础知识应包括下列内容： ...................................................... 7 5.4 智能组网专业基础知识 ............................................................. 8 智能组网专业基础知识应包括下列内容： .............................................. 8 5.5 全屋智能专业基础知识 ............................................................. 8 全屋智能专业基础知识应包括下列内容： .............................................. 8 5.6 计算机基础知识 ................................................................... 8 计算机基础知识应包括下列内容： .................................................... 8 5.7 安全基础知识 .................................................................... 9 安全基础知识应包括下列内容： ...................................................... 9 6 工作要求 ............................................................................ 9 6.1 本标准初级、中级、高级的技能要求和相关知识要求依次递进，高级别涵盖低级别的要求，主要 按照智慧家庭装维人员智能组网工作要求进行技能设置。 .................................. 9 6.2 智慧家庭装维工程与管理职业技能及职级应符合表1 的规定。 .......................... 9 6.3 初级 ......................................................................... 11",
+     "chunk_text_sha256": "e404afa1c23b6bbb8116ef68a16b89ff1ef3ff541d79271acc246f7762a52f54",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+     "document_id": "5256824b6b72b3f03d9c7a2c",
+     "document_version": "v_dcf78195a87f01f4",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_f6e3d54229a5ca51ce0e",
+      "block_type": "paragraph",
+      "business_module": "设备维护",
+      "chunk_index": 1,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "error_codes": [],
+      "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "heading_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第2页"
+      ],
+      "page_number": 2,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第2页"
+      ],
+      "section_title": "第2页",
+      "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "智慧家庭装维工程与管理职业技能等级标准",
+      "version_id": "v_dcf78195a87f01f4"
+     },
+     "page_number": 2,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "智慧家庭装维工程与管理职业技能等级标准.pdf#p2": "T/CAICIXXXX—XX \nI \n目\n次 \n前\n言 .......................................................................... III \n1 范围 ................................................................................ 4 \n2 规范性引用文件 ...................................................................... 4 \n3 术语和定义 .......................................................................... 4 \n4 职业概况 ............................................................................ 5 \n4.1 职业名称 ......................................................................... 5 \n4.2 职业编码 ........................................................................ 5 \n4.3 职业定义 ........................................................................ 5 \n4.4 职业技能等级 .................................................................... 5 \n4.5 职业环境条件 .................................................................... 6 \n4.6 职业能力特征 .................................................................... 6 \n4.7 受教育程度 ...................................................................... 6 \n4.8 培训学时 ........................................................................ 6 \n4.9 职业技能鉴定 .................................................................... 6 \n4.9.1 申报条件 .................................................................... 6 \n4.9.2 鉴定方式 .................................................................... 6 \n4.9.3 监考人员、考评人员与考生配比 ................................................ 7 \n4.9.4 鉴定时间 .................................................................... 7 \n4.9.5 鉴定场所设备 ................................................................ 7 \n5 要求 ................................................................................ 7 \n5.1 职业道德 ......................................................................... 7 \n5.2 职业规范基础知识 ................................................................. 7 \n职业规范基础知识应包括下列内容： .................................................. 7 \n5.3 通信基础知识 .................................................................... 7 \n通信基础知识应包括下列内容： ...................................................... 7 \n5.4 智能组网专业基础知识 ............................................................. 8 \n智能组网专业基础知识应包括下列内容： .............................................. 8 \n5.5 全屋智能专业基础知识 ............................................................. 8 \n全屋智能专业基础知识应包括下列内容： .............................................. 8 \n5.6 计算机基础知识 ................................................................... 8 \n计算机基础知识应包括下列内容： .................................................... 8 \n5.7 安全基础知识 .................................................................... 9 \n安全基础知识应包括下列内容： ...................................................... 9 \n6 工作要求 ............................................................................ 9 \n6.1 本标准初级、中级、高级的技能要求和相关知识要求依次递进，高级别涵盖低级别的要求，主要\n按照智慧家庭装维人员智能组网工作要求进行技能设置。 .................................. 9 \n6.2 智慧家庭装维工程与管理职业技能及职级应符合表1 的规定。 .......................... 9 \n6.3 初级 ......................................................................... 11 \n"
+   }
+  },
+  "B34": {
+   "b": "B34",
+   "workbook_row": 38,
+   "candidate": {
+    "candidate_id": "sha256:a9065f265727f73d5987f18a1b45172702509127e36212b003dfbcf857a24434",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "easy",
+    "evidence_excerpt": {
+     "d8dfa78cb9362f0d69cd659c": "章节：电信基础设施维护规程 > 第343页 页码：343 T/CAICI XXXX—XXXX 337 2）D.0.2 架空通信线路与其他建筑物的最小垂直净距表： 表 D.0.2 架空通信线路与其他建筑物的最小垂直净距表 架设高度(m) 备注 架设高度(m) 备注 市内街道 4.5 5.5 市内里弄 （胡同） 4.0 5.0 铁路 3.0 7.5 公路 3.0 5.5 土路 3.0 5 0.6 最低缆线到屋脊 1.5 最低缆线到房屋平顶 河流 - 1 最低缆线到最高水位时的船桅顶 市区树木 - 1.5 郊区树木 - 1.5 其他通信 导线 - 0.6 一方最低缆线到另一方最高线条 最低缆线到树枝的垂直距离 与线路方向平时时 与线路方向交越时 名称 最低缆线到 地面 房屋建筑物 - 最低缆线到轨面"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "3.0",
+    "question": "铁路与架空通信线路交越时的最小垂直净距是多少米？",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "d8dfa78cb9362f0d69cd659c"
+    ]
+   },
+   "evidence_chunks": {
+    "d8dfa78cb9362f0d69cd659c": {
+     "chunk_id": "d8dfa78cb9362f0d69cd659c",
+     "chunk_text": "章节：电信基础设施维护规程 > 第343页 页码：343 T/CAICI XXXX—XXXX 337 2）D.0.2 架空通信线路与其他建筑物的最小垂直净距表： 表 D.0.2 架空通信线路与其他建筑物的最小垂直净距表 架设高度(m) 备注 架设高度(m) 备注 市内街道 4.5 5.5 市内里弄 （胡同） 4.0 5.0 铁路 3.0 7.5 公路 3.0 5.5 土路 3.0 5 0.6 最低缆线到屋脊 1.5 最低缆线到房屋平顶 河流 - 1 最低缆线到最高水位时的船桅顶 市区树木 - 1.5 郊区树木 - 1.5 其他通信 导线 - 0.6 一方最低缆线到另一方最高线条 最低缆线到树枝的垂直距离 与线路方向平时时 与线路方向交越时 名称 最低缆线到 地面 房屋建筑物 - 最低缆线到轨面",
+     "chunk_text_sha256": "110a0b6a4b8d0f647fefa5ba20dc57bdb8d94925917f00eaaa0553a4e200ef06",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b6f247a411f750a786e9",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 342,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第343页"
+      ],
+      "page_number": 343,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第343页"
+      ],
+      "section_title": "第343页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 343,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p343": "T/CAICI XXXX—XXXX \n337 \n2）D.0.2 架空通信线路与其他建筑物的最小垂直净距表： \n \n表 D.0.2 架空通信线路与其他建筑物的最小垂直净距表 \n \n \n \n \n架设高度(m)\n备注\n架设高度(m)\n备注\n市内街道\n4.5\n5.5\n市内里弄\n（胡同）\n4.0\n5.0\n铁路\n3.0\n7.5\n公路\n3.0\n5.5\n土路\n3.0\n5\n0.6\n最低缆线到屋脊\n1.5\n最低缆线到房屋平顶\n河流\n-\n1\n最低缆线到最高水位时的船桅顶\n市区树木\n-\n1.5\n郊区树木\n-\n1.5\n其他通信\n导线\n-\n0.6\n一方最低缆线到另一方最高线条\n最低缆线到树枝的垂直距离\n与线路方向平时时\n与线路方向交越时\n名称\n最低缆线到\n地面\n房屋建筑物\n-\n最低缆线到轨面\n"
+   }
+  },
+  "B35": {
+   "b": "B35",
+   "workbook_row": 39,
+   "candidate": {
+    "candidate_id": "sha256:64e18eda64f9eb7f2bea1fd707d05c637ed7e13c0bec0c586200017cd4e7c894",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "medium",
+    "evidence_excerpt": {
+     "5d5fd6cf18ea4e313fdc45b5": "10 4.2. 设备形态 ................................................................................................................ 10 4.3. 功能要求 ................................................................................"
+    },
+    "exact_entity": "设备形态",
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "设备形态",
+    "question": "产品入库要求中包含哪些设备形态要求？",
+    "question_type": "exact_entity",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "5d5fd6cf18ea4e313fdc45b5"
+    ]
+   },
+   "evidence_chunks": {
+    "5d5fd6cf18ea4e313fdc45b5": {
+     "chunk_id": "5d5fd6cf18ea4e313fdc45b5",
+     "chunk_text": "章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第3页 内容类型：表格 页码：3 表格列：中国移动；智慧家庭全光组网产品技术规范 ii 目 录 1. 总述 ........................................................................................................................................ 1 1.1. 业务介绍及定义 ...................................................................................................... 1 1.2. 全光组网业务要求 .................................................................................................. 1 1.3. 适用范围 .................................................................................................................. 1 1.4. 名词解释 .................................................................................................................. 2 2. 资质要求 ................................................................................................................................ 5 2.1. 合作伙伴资质 .......................................................................................................... 5 2.2. 合作硬件产品资质 .................................................................................................. 6 3. 业务架构 ................................................................................................................................ 6 3.1. 总体架构图 .............................................................................................................. 6 3.2. 各网元功能 .............................................................................................................. 7 3.3. 接口说明 .................................................................................................................. 9 3.4. 应用场景 .................................................................................................................. 9 4. 产品入库要求 ...................................................................................................................... 10 4.1. 基本要求 ................................................................................................................ 10 4.2. 设备形态 ................................................................................................................ 10 4.3. 功能要求 ................................................................................................................ 11 4.3.1. WAN 接入要求（光网关必选） ................................................................... 11 4.3.2. 传送功能 ......................................................................................................... 12 4.3.3. 地址功能 ......................................................................................................... 12 4.3.4. WLAN 功能 .................................................................................................... 15 4.3.5. QoS 功能 ......................................................................................................... 21 4.3.6. 光与Wi-Fi 协同要求 ..................................................................................... 21 4.3.7. 组网功能要求 ................................................................................................. 21 4.3.8. 锁网功能 ......................................................................................................... 22 4.3.9. 组网增值应用要求 ......................................................................................... 23 4.3.10. 场景化宽带功能（光网关必选） .......................................................... 23 4.3.11. 地址预置要求 .......................................................................................... 24",
+     "chunk_text_sha256": "778749fca041de6c41c5a4576cb33ba07317116542af12be41e7352aa292a76d",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+     "document_id": "a2053ec18f1415e4912c510f",
+     "document_version": "v_ab72ce00c904f060",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_9f20a94f803705ac7d63",
+      "block_type": "table",
+      "business_module": "地址校验",
+      "chunk_index": 2,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "table_like_text_detected"
+      ],
+      "content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+      "error_codes": [],
+      "filename": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "heading_path": [
+       "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+       "第3页"
+      ],
+      "page_number": 3,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+       "第3页"
+      ],
+      "section_title": "第3页",
+      "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+      "version_id": "v_ab72ce00c904f060"
+     },
+     "page_number": 3,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf#p3": "中国移动                                                              智慧家庭全光组网产品技术规范 \nii \n \n目 录 \n1. 总述 ........................................................................................................................................ 1 \n1.1. \n业务介绍及定义 ...................................................................................................... 1 \n1.2. \n全光组网业务要求 .................................................................................................. 1 \n1.3. \n适用范围 .................................................................................................................. 1 \n1.4. \n名词解释 .................................................................................................................. 2 \n2. 资质要求 ................................................................................................................................ 5 \n2.1. \n合作伙伴资质 .......................................................................................................... 5 \n2.2. \n合作硬件产品资质 .................................................................................................. 6 \n3. 业务架构 ................................................................................................................................ 6 \n3.1. \n总体架构图 .............................................................................................................. 6 \n3.2. \n各网元功能 .............................................................................................................. 7 \n3.3. \n接口说明 .................................................................................................................. 9 \n3.4. \n应用场景 .................................................................................................................. 9 \n4. 产品入库要求 ...................................................................................................................... 10 \n4.1. \n基本要求 ................................................................................................................ 10 \n4.2. \n设备形态 ................................................................................................................ 10 \n4.3. \n功能要求 ................................................................................................................ 11 \n4.3.1. WAN 接入要求（光网关必选） ................................................................... 11 \n4.3.2. 传送功能 ......................................................................................................... 12 \n4.3.3. 地址功能 ......................................................................................................... 12 \n4.3.4. WLAN 功能 .................................................................................................... 15 \n4.3.5. QoS 功能 ......................................................................................................... 21 \n4.3.6. 光与Wi-Fi 协同要求 ..................................................................................... 21 \n4.3.7. 组网功能要求 ................................................................................................. 21 \n4.3.8. 锁网功能 ......................................................................................................... 22 \n4.3.9. 组网增值应用要求 ......................................................................................... 23 \n4.3.10. \n场景化宽带功能（光网关必选） .......................................................... 23 \n4.3.11. \n地址预置要求 .......................................................................................... 24 \n"
+   }
+  },
+  "B36": {
+   "b": "B36",
+   "workbook_row": 40,
+   "candidate": {
+    "candidate_id": "sha256:5d42c5b4ccd006231d17ae08a942cef1de654e37e64092884cae899a372110b4",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "easy",
+    "evidence_excerpt": {
+     "02c18b66c8c7d17fa1fb910e": "具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5 安全作业知识 15 15 15 合计 100 100 100 7.2 智慧家庭装维工程与管理实操技能权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 技能要求 职业道德 10 5 5 基础知识 10 10 10 智能组网 25 30 35 业务开通和业务运维 25 30 35 服务能力 20 15 5 安全作业 10 10 10 合计 100 100"
+    },
+    "exact_entity": "业务开通和业务运维",
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "35",
+    "question": "智慧家庭装维工程与管理实操技能权重表中，业务开通和业务运维在高级阶段的权重是多少？",
+    "question_type": "exact_entity",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "02c18b66c8c7d17fa1fb910e"
+    ]
+   },
+   "evidence_chunks": {
+    "02c18b66c8c7d17fa1fb910e": {
+     "chunk_id": "02c18b66c8c7d17fa1fb910e",
+     "chunk_text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第19页 页码：19 T/CAICIXXXX—XX 18 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识 7 权重表 智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机 制分为理论和技能实操两部分。具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5 安全作业知识 15 15 15 合计 100 100 100 7.2 智慧家庭装维工程与管理实操技能权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 技能要求 职业道德 10 5 5 基础知识 10 10 10 智能组网 25 30 35 业务开通和业务运维 25 30 35 服务能力 20 15 5 安全作业 10 10 10 合计 100 100 100",
+     "chunk_text_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+     "document_id": "5256824b6b72b3f03d9c7a2c",
+     "document_version": "v_dcf78195a87f01f4",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_25058ec9872577366bf9",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 18,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected"
+      ],
+      "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "error_codes": [],
+      "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "heading_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第19页"
+      ],
+      "page_number": 19,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第19页"
+      ],
+      "section_title": "第19页",
+      "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "智慧家庭装维工程与管理职业技能等级标准",
+      "version_id": "v_dcf78195a87f01f4"
+     },
+     "page_number": 19,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "智慧家庭装维工程与管理职业技能等级标准.pdf#p19": "T/CAICIXXXX—XX \n18 \n6.安全作业 \n6.1 施工作业安全 \n6.1.1 能安全施工 \n6.1.2 能遵守用户信息安全 \n6.1.1 施工安全知识 \n6.1.2 用户信息安全知识 \n6.1.3 网络安全基础知识 \n7 权重表 \n智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机\n制分为理论和技能实操两部分。具体评价维度及权重如下： \n7.1 智慧家庭装维工程与管理理论知识权重表 \n项目 \n技能等级 \n初级 \n中级 \n高级 \n（%） \n（%） \n（%） \n基本要求 \n职业道德基础知识 \n10 \n5 \n5 \n职业规范基础知识 \n5 \n5 \n5 \n相关知识 \n通信基础知识 \n25 \n15 \n10 \n智能组网专业知识 \n15 \n25 \n30 \n全屋智能专业知识 \n15 \n20 \n30 \n终端和计算机知识 \n15 \n15 \n5 \n安全作业知识 \n15 \n15 \n15 \n合计 \n100 \n100 \n100 \n7.2 智慧家庭装维工程与管理实操技能权重表 \n项目 \n技能等级 \n初级 \n中级 \n高级 \n（%） \n（%） \n（%） \n技能要求 \n职业道德 \n10 \n5 \n5 \n基础知识 \n10 \n10 \n10 \n智能组网 \n25 \n30 \n35 \n业务开通和业务运维 \n25 \n30 \n35 \n服务能力 \n20 \n15 \n5 \n安全作业 \n10 \n10 \n10 \n合计 \n100 \n100 \n100 \n \n \n"
+   }
+  },
+  "B37": {
+   "b": "B37",
+   "workbook_row": 41,
+   "candidate": {
+    "candidate_id": "sha256:7fe4ebfaf574ebd0825e8f2d4541c494239212b9c9f0c0dac94fb989a2eecf2d",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "easy",
+    "evidence_excerpt": {
+     "02c18b66c8c7d17fa1fb910e": "具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5 安全作业知识 15 15 15 合计 100 100 100 7.2 智慧家庭装维工程与管理实操技能权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 技能要求 职业道德 10 5 5 基础知识 10 10 10 智能组网 25 30 35 业务开通和业务运维 25 30 35 服务能力 20 15 5 安全作业 10 10 10 合计 100 100"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "25",
+    "question": "初级等级中，通信基础知识在理论知识权重表中的占比是多少",
+    "question_type": "semantic",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "02c18b66c8c7d17fa1fb910e"
+    ]
+   },
+   "evidence_chunks": {
+    "02c18b66c8c7d17fa1fb910e": {
+     "chunk_id": "02c18b66c8c7d17fa1fb910e",
+     "chunk_text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第19页 页码：19 T/CAICIXXXX—XX 18 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识 7 权重表 智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机 制分为理论和技能实操两部分。具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5 安全作业知识 15 15 15 合计 100 100 100 7.2 智慧家庭装维工程与管理实操技能权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 技能要求 职业道德 10 5 5 基础知识 10 10 10 智能组网 25 30 35 业务开通和业务运维 25 30 35 服务能力 20 15 5 安全作业 10 10 10 合计 100 100 100",
+     "chunk_text_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+     "document_id": "5256824b6b72b3f03d9c7a2c",
+     "document_version": "v_dcf78195a87f01f4",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_25058ec9872577366bf9",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 18,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected"
+      ],
+      "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "error_codes": [],
+      "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "heading_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第19页"
+      ],
+      "page_number": 19,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "智慧家庭装维工程与管理职业技能等级标准",
+       "第19页"
+      ],
+      "section_title": "第19页",
+      "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "智慧家庭装维工程与管理职业技能等级标准",
+      "version_id": "v_dcf78195a87f01f4"
+     },
+     "page_number": 19,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "智慧家庭装维工程与管理职业技能等级标准.pdf#p19": "T/CAICIXXXX—XX \n18 \n6.安全作业 \n6.1 施工作业安全 \n6.1.1 能安全施工 \n6.1.2 能遵守用户信息安全 \n6.1.1 施工安全知识 \n6.1.2 用户信息安全知识 \n6.1.3 网络安全基础知识 \n7 权重表 \n智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机\n制分为理论和技能实操两部分。具体评价维度及权重如下： \n7.1 智慧家庭装维工程与管理理论知识权重表 \n项目 \n技能等级 \n初级 \n中级 \n高级 \n（%） \n（%） \n（%） \n基本要求 \n职业道德基础知识 \n10 \n5 \n5 \n职业规范基础知识 \n5 \n5 \n5 \n相关知识 \n通信基础知识 \n25 \n15 \n10 \n智能组网专业知识 \n15 \n25 \n30 \n全屋智能专业知识 \n15 \n20 \n30 \n终端和计算机知识 \n15 \n15 \n5 \n安全作业知识 \n15 \n15 \n15 \n合计 \n100 \n100 \n100 \n7.2 智慧家庭装维工程与管理实操技能权重表 \n项目 \n技能等级 \n初级 \n中级 \n高级 \n（%） \n（%） \n（%） \n技能要求 \n职业道德 \n10 \n5 \n5 \n基础知识 \n10 \n10 \n10 \n智能组网 \n25 \n30 \n35 \n业务开通和业务运维 \n25 \n30 \n35 \n服务能力 \n20 \n15 \n5 \n安全作业 \n10 \n10 \n10 \n合计 \n100 \n100 \n100 \n \n \n"
+   }
+  },
+  "B38": {
+   "b": "B38",
+   "workbook_row": 42,
+   "candidate": {
+    "candidate_id": "sha256:2bbfb4a82fec1d093c88df135fb2f44eae2c0a27dcfd428bd8b7db7788180a76",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "medium",
+    "evidence_excerpt": {
+     "4a65d0d3ead0bc841b1b28f8": "章节：电信基础设施维护规程 > 第278页 页码：278 T/CAICI XXXX—XXXX 272 表10.3.3.21 WH23121 安装与调试控制设备 工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。 计量单位：只 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23121001 安装与调试控制设备 组合控制开关 25.54 15.96 4.79 4.79 消耗量 0.14 — WH23121002 带电安装熔断器 120.38 75.24 22.57 22.57 0.66 WH23121003 带电安装断路器 105.79 66.12 19.84 19.84",
+     "647c44016cd2e8fabe51f5de": "章节：电信基础设施维护规程 > 第277页 页码：277 T/CAICI XXXX—XXXX 271 表10.3.3.20 WH23120 安装、调试、断电检修变压器 工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； 2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； 3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "开箱检验、安装固定、附件检查与安装、连接线、清理现场等。",
+    "question": "安装、调试、断电检修变压器和安装与调试控制设备的工作内容分别是什么？",
+    "question_anchors": {
+     "4a65d0d3ead0bc841b1b28f8": "安装与调试控制设备",
+     "647c44016cd2e8fabe51f5de": "安装、调试、断电检修变压器"
+    },
+    "question_type": "confusable",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "4a65d0d3ead0bc841b1b28f8",
+     "647c44016cd2e8fabe51f5de"
+    ]
+   },
+   "evidence_chunks": {
+    "4a65d0d3ead0bc841b1b28f8": {
+     "chunk_id": "4a65d0d3ead0bc841b1b28f8",
+     "chunk_text": "章节：电信基础设施维护规程 > 第278页 页码：278 T/CAICI XXXX—XXXX 272 表10.3.3.21 WH23121 安装与调试控制设备 工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。 计量单位：只 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23121001 安装与调试控制设备 组合控制开关 25.54 15.96 4.79 4.79 消耗量 0.14 — WH23121002 带电安装熔断器 120.38 75.24 22.57 22.57 0.66 WH23121003 带电安装断路器 105.79 66.12 19.84 19.84 0.58 WH23121004 带电更换熔断器/空开 175.10 109.44 32.83 32.83 0.96 —",
+     "chunk_text_sha256": "8100204aabd1274cc45a3bd8a237ddddfd8edf85eeea9590326a3f6286f145a8",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b65cdf72c2a7b58af78f",
+      "block_type": "paragraph",
+      "business_module": "设备维护",
+      "chunk_index": 277,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第278页"
+      ],
+      "page_number": 278,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第278页"
+      ],
+      "section_title": "第278页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 278,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    },
+    "647c44016cd2e8fabe51f5de": {
+     "chunk_id": "647c44016cd2e8fabe51f5de",
+     "chunk_text": "章节：电信基础设施维护规程 > 第277页 页码：277 T/CAICI XXXX—XXXX 271 表10.3.3.20 WH23120 安装、调试、断电检修变压器 工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； 2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； 3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。 计量单位：台 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23120001 安装、调试、断电检 修变压器 100kVA 以下变压器专项检修 76.61 47.88 14.36 14.36 消耗量 0.42 — WH23120002 安装油浸电力100kVA以下变压器 430.46 269.04 80.71 80.71 2.36 WH23120003 安装干式电力100kVA以下变压器 452.35 282.72 84.82 84.82 2.48 —",
+     "chunk_text_sha256": "057961c656ae3e25b14152474934c98de9ec537cfb67abd331ff50fdd863384d",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b752c48e8d6ea8c40317",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 276,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected",
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第277页"
+      ],
+      "page_number": 277,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第277页"
+      ],
+      "section_title": "第277页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 277,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p278": "T/CAICI XXXX—XXXX \n272 \n表10.3.3.21 WH23121 安装与调试控制设备 \n \n工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。 \n计量单位：只 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23121001 \n安装与调试控制设备 \n组合控制开关 \n25.54  \n15.96  \n4.79  \n4.79  \n消耗量 \n0.14 \n— \nWH23121002 \n带电安装熔断器 \n120.38  \n75.24  \n22.57  \n22.57  \n0.66 \n \nWH23121003 \n带电安装断路器 \n105.79  \n66.12  \n19.84  \n19.84  \n0.58 \n \nWH23121004 \n带电更换熔断器/空开 \n175.10  \n109.44  \n32.83  \n32.83  \n0.96 \n— \n",
+    "电信基础设施维护规程.pdf#p277": "T/CAICI XXXX—XXXX \n271 \n表10.3.3.20 WH23120 安装、调试、断电检修变压器 \n \n工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； \n2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； \n3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。 \n计量单位：台 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23120001 \n安装、调试、断电检\n修变压器 \n100kVA 以下变压器专项检修 \n76.61  \n47.88  \n14.36  \n14.36  \n消耗量 \n0.42 \n— \nWH23120002 \n安装油浸电力100kVA以下变压器\n430.46  \n269.04  \n80.71  \n80.71  \n2.36 \n \nWH23120003 \n安装干式电力100kVA以下变压器\n452.35  \n282.72  \n84.82  \n84.82  \n2.48 \n— \n \n \n \n"
+   }
+  },
+  "B39": {
+   "b": "B39",
+   "workbook_row": 43,
+   "candidate": {
+    "candidate_id": "sha256:d2bbc8a14069a7efff2b77ffee9522792c095fafbdfdad8ee4e8fa53a21a6f39",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "hard",
+    "evidence_excerpt": {
+     "647c44016cd2e8fabe51f5de": "计量单位：台 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23120001 安装、调试、断电检 修变压器 100kVA 以下变压器专项检修 76.61 47.88 14.36 14.36 消耗量 0.42 — WH23120002 安装油浸电力100kVA以下变压器 430.46 269.04 80.71 80.71 2.36 WH23120003 安装干式电力100kVA以下变压器 452.35 282.72 84.82 84.82 2.48 —",
+     "d2df450647a1e967aa910201": "章节：电信基础设施维护规程 > 第279页 页码：279 T/CAICI XXXX—XXXX 273 表10.3.3.22 WH23122 发电设备专项检修 工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； 2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； 3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。"
+    },
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压；",
+    "question": "发电设备专项检修和安装油浸电力100kVA以下变压器在工作内容上有什么不同？",
+    "question_anchors": {
+     "647c44016cd2e8fabe51f5de": "安装油浸电力100kVA以下变压器",
+     "d2df450647a1e967aa910201": "发电设备专项检修"
+    },
+    "question_type": "confusable",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "647c44016cd2e8fabe51f5de",
+     "d2df450647a1e967aa910201"
+    ]
+   },
+   "evidence_chunks": {
+    "647c44016cd2e8fabe51f5de": {
+     "chunk_id": "647c44016cd2e8fabe51f5de",
+     "chunk_text": "章节：电信基础设施维护规程 > 第277页 页码：277 T/CAICI XXXX—XXXX 271 表10.3.3.20 WH23120 安装、调试、断电检修变压器 工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； 2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； 3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。 计量单位：台 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23120001 安装、调试、断电检 修变压器 100kVA 以下变压器专项检修 76.61 47.88 14.36 14.36 消耗量 0.42 — WH23120002 安装油浸电力100kVA以下变压器 430.46 269.04 80.71 80.71 2.36 WH23120003 安装干式电力100kVA以下变压器 452.35 282.72 84.82 84.82 2.48 —",
+     "chunk_text_sha256": "057961c656ae3e25b14152474934c98de9ec537cfb67abd331ff50fdd863384d",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b752c48e8d6ea8c40317",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 276,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected",
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第277页"
+      ],
+      "page_number": 277,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第277页"
+      ],
+      "section_title": "第277页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 277,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    },
+    "d2df450647a1e967aa910201": {
+     "chunk_id": "d2df450647a1e967aa910201",
+     "chunk_text": "章节：电信基础设施维护规程 > 第279页 页码：279 T/CAICI XXXX—XXXX 273 表10.3.3.22 WH23122 发电设备专项检修 工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； 2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； 3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。 计量单位：台次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23122001 发电设备专项检修 固定式燃油发电机组 10.75 6.72 2.02 2.02 消耗量 0.14 — WH23122002 小型离网风力发电机组 54.53 34.08 10.22 10.22 0.71 WH23122003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —",
+     "chunk_text_sha256": "84f63d97dc00d530f501e332e8682c978e2328aedc58d2871503acf2a4b429e4",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b54c4d93151067815d86",
+      "block_type": "paragraph",
+      "business_module": "设备维护",
+      "chunk_index": 278,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected",
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第279页"
+      ],
+      "page_number": 279,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第279页"
+      ],
+      "section_title": "第279页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 279,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p277": "T/CAICI XXXX—XXXX \n271 \n表10.3.3.20 WH23120 安装、调试、断电检修变压器 \n \n工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； \n2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； \n3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。 \n计量单位：台 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23120001 \n安装、调试、断电检\n修变压器 \n100kVA 以下变压器专项检修 \n76.61  \n47.88  \n14.36  \n14.36  \n消耗量 \n0.42 \n— \nWH23120002 \n安装油浸电力100kVA以下变压器\n430.46  \n269.04  \n80.71  \n80.71  \n2.36 \n \nWH23120003 \n安装干式电力100kVA以下变压器\n452.35  \n282.72  \n84.82  \n84.82  \n2.48 \n— \n \n \n \n",
+    "电信基础设施维护规程.pdf#p279": "T/CAICI XXXX—XXXX \n273 \n表10.3.3.22 WH23122 发电设备专项检修 \n \n工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； \n2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； \n3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。 \n计量单位：台次 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23122001 \n发电设备专项检修 \n固定式燃油发电机组 \n10.75  \n6.72  \n2.02  \n2.02  \n消耗量 \n0.14 \n— \nWH23122002 \n小型离网风力发电机组 \n54.53  \n34.08  \n10.22  \n10.22  \n0.71 \n \nWH23122003 \n太阳能光伏离网发电系统 \n33.02  \n20.64  \n6.19  \n6.19  \n0.43 \n— \n \n \n \n"
+   }
+  },
+  "B40": {
+   "b": "B40",
+   "workbook_row": 44,
+   "candidate": {
+    "candidate_id": "sha256:bc83c840f1e8d89aa0229f2e8e30c808cbad720e93970135313bb16204ef083c",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "easy",
+    "evidence_excerpt": {
+     "647c44016cd2e8fabe51f5de": "章节：电信基础设施维护规程 > 第277页 页码：277 T/CAICI XXXX—XXXX 271 表10.3.3.20 WH23120 安装、调试、断电检修变压器 工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； 2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； 3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。"
+    },
+    "exact_entity": "WH23120",
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； 2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； 3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。",
+    "question": "WH23120 安装、调试、断电检修变压器的工作内容包括哪些？",
+    "question_type": "exact_entity",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "647c44016cd2e8fabe51f5de"
+    ]
+   },
+   "evidence_chunks": {
+    "647c44016cd2e8fabe51f5de": {
+     "chunk_id": "647c44016cd2e8fabe51f5de",
+     "chunk_text": "章节：电信基础设施维护规程 > 第277页 页码：277 T/CAICI XXXX—XXXX 271 表10.3.3.20 WH23120 安装、调试、断电检修变压器 工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； 2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； 3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。 计量单位：台 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23120001 安装、调试、断电检 修变压器 100kVA 以下变压器专项检修 76.61 47.88 14.36 14.36 消耗量 0.42 — WH23120002 安装油浸电力100kVA以下变压器 430.46 269.04 80.71 80.71 2.36 WH23120003 安装干式电力100kVA以下变压器 452.35 282.72 84.82 84.82 2.48 —",
+     "chunk_text_sha256": "057961c656ae3e25b14152474934c98de9ec537cfb67abd331ff50fdd863384d",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b752c48e8d6ea8c40317",
+      "block_type": "paragraph",
+      "business_module": "通用知识",
+      "chunk_index": 276,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected",
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第277页"
+      ],
+      "page_number": 277,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第277页"
+      ],
+      "section_title": "第277页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 277,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p277": "T/CAICI XXXX—XXXX \n271 \n表10.3.3.20 WH23120 安装、调试、断电检修变压器 \n \n工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； \n2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； \n3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。 \n计量单位：台 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23120001 \n安装、调试、断电检\n修变压器 \n100kVA 以下变压器专项检修 \n76.61  \n47.88  \n14.36  \n14.36  \n消耗量 \n0.42 \n— \nWH23120002 \n安装油浸电力100kVA以下变压器\n430.46  \n269.04  \n80.71  \n80.71  \n2.36 \n \nWH23120003 \n安装干式电力100kVA以下变压器\n452.35  \n282.72  \n84.82  \n84.82  \n2.48 \n— \n \n \n \n"
+   }
+  },
+  "B41": {
+   "b": "B41",
+   "workbook_row": 45,
+   "candidate": {
+    "candidate_id": "sha256:b4948d39941b4842ce1cec733083400393f944fb78b0a646fb187b3468ccfce5",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "easy",
+    "evidence_excerpt": {
+     "4a65d0d3ead0bc841b1b28f8": "章节：电信基础设施维护规程 > 第278页 页码：278 T/CAICI XXXX—XXXX 272 表10.3.3.21 WH23121 安装与调试控制设备 工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。 计量单位：只 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23121001 安装与调试控制设备 组合控制开关 25.54 15.96 4.79 4.79 消耗量 0.14 — WH23121002 带电安装熔断器 120.38 75.24 22.57 22.57 0.66 WH23121003 带电安装断路器 105.79 66.12 19.84 19.84"
+    },
+    "exact_entity": "WH23121",
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。",
+    "question": "WH23121 安装与调试控制设备的工作内容是什么？",
+    "question_type": "exact_entity",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "4a65d0d3ead0bc841b1b28f8"
+    ]
+   },
+   "evidence_chunks": {
+    "4a65d0d3ead0bc841b1b28f8": {
+     "chunk_id": "4a65d0d3ead0bc841b1b28f8",
+     "chunk_text": "章节：电信基础设施维护规程 > 第278页 页码：278 T/CAICI XXXX—XXXX 272 表10.3.3.21 WH23121 安装与调试控制设备 工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。 计量单位：只 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23121001 安装与调试控制设备 组合控制开关 25.54 15.96 4.79 4.79 消耗量 0.14 — WH23121002 带电安装熔断器 120.38 75.24 22.57 22.57 0.66 WH23121003 带电安装断路器 105.79 66.12 19.84 19.84 0.58 WH23121004 带电更换熔断器/空开 175.10 109.44 32.83 32.83 0.96 —",
+     "chunk_text_sha256": "8100204aabd1274cc45a3bd8a237ddddfd8edf85eeea9590326a3f6286f145a8",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b65cdf72c2a7b58af78f",
+      "block_type": "paragraph",
+      "business_module": "设备维护",
+      "chunk_index": 277,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第278页"
+      ],
+      "page_number": 278,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第278页"
+      ],
+      "section_title": "第278页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 278,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p278": "T/CAICI XXXX—XXXX \n272 \n表10.3.3.21 WH23121 安装与调试控制设备 \n \n工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。 \n计量单位：只 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23121001 \n安装与调试控制设备 \n组合控制开关 \n25.54  \n15.96  \n4.79  \n4.79  \n消耗量 \n0.14 \n— \nWH23121002 \n带电安装熔断器 \n120.38  \n75.24  \n22.57  \n22.57  \n0.66 \n \nWH23121003 \n带电安装断路器 \n105.79  \n66.12  \n19.84  \n19.84  \n0.58 \n \nWH23121004 \n带电更换熔断器/空开 \n175.10  \n109.44  \n32.83  \n32.83  \n0.96 \n— \n"
+   }
+  },
+  "B42": {
+   "b": "B42",
+   "workbook_row": 46,
+   "candidate": {
+    "candidate_id": "sha256:8b2d213a6a85dbee5975b9cc800f3c119222f1dd612bc93892999817cef85871",
+    "chunk_permission_tags": [
+     "public"
+    ],
+    "difficulty": "medium",
+    "evidence_excerpt": {
+     "d2df450647a1e967aa910201": "章节：电信基础设施维护规程 > 第279页 页码：279 T/CAICI XXXX—XXXX 273 表10.3.3.22 WH23122 发电设备专项检修 工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； 2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； 3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。"
+    },
+    "exact_entity": "WH23122",
+    "generator_model": "qwen3:4b-instruct-2507-q4_K_M",
+    "prompt_version": "rag-candidates-p1-v4",
+    "proposed_answer": "工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； 2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； 3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。",
+    "question": "WH23122 发电设备专项检修的工作内容包括哪些？",
+    "question_type": "exact_entity",
+    "review_status": "pending_review",
+    "scope": {
+     "collection_name": "default",
+     "permission_tags": [
+      "public"
+     ],
+     "tenant_id": "default"
+    },
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "supporting_chunk_ids": [
+     "d2df450647a1e967aa910201"
+    ]
+   },
+   "evidence_chunks": {
+    "d2df450647a1e967aa910201": {
+     "chunk_id": "d2df450647a1e967aa910201",
+     "chunk_text": "章节：电信基础设施维护规程 > 第279页 页码：279 T/CAICI XXXX—XXXX 273 表10.3.3.22 WH23122 发电设备专项检修 工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； 2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； 3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。 计量单位：台次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23122001 发电设备专项检修 固定式燃油发电机组 10.75 6.72 2.02 2.02 消耗量 0.14 — WH23122002 小型离网风力发电机组 54.53 34.08 10.22 10.22 0.71 WH23122003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —",
+     "chunk_text_sha256": "84f63d97dc00d530f501e332e8682c978e2328aedc58d2871503acf2a4b429e4",
+     "collection_name": "default",
+     "database_chunk_version": 1,
+     "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+     "document_id": "c8588238d99d4079e1ec6101",
+     "document_version": "v_8ae9b63d869002c1",
+     "document_version_source": "chunk_metadata.version_id",
+     "metadata": {
+      "block_id": "blk_b54c4d93151067815d86",
+      "block_type": "paragraph",
+      "business_module": "设备维护",
+      "chunk_index": 278,
+      "chunk_parse_quality_status": "parsed_with_warning",
+      "chunk_parse_warning_codes": [
+       "bordered_table_detected",
+       "semi_structured_table_detected"
+      ],
+      "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "error_codes": [],
+      "filename": "电信基础设施维护规程.pdf",
+      "heading_path": [
+       "电信基础设施维护规程",
+       "第279页"
+      ],
+      "page_number": 279,
+      "parser_name": "pdf",
+      "parser_version": "document-parser-v7",
+      "permission_tags": [
+       "public"
+      ],
+      "section_path": [
+       "电信基础设施维护规程",
+       "第279页"
+      ],
+      "section_title": "第279页",
+      "source": "电信基础设施维护规程.pdf",
+      "source_type": "manual",
+      "tenant_id": "default",
+      "title": "电信基础设施维护规程",
+      "version_id": "v_8ae9b63d869002c1"
+     },
+     "page_number": 279,
+     "permission_tags": [
+      "public"
+     ],
+     "source": "电信基础设施维护规程.pdf",
+     "tenant_id": "default"
+    }
+   },
+   "pdf_pages": {
+    "电信基础设施维护规程.pdf#p279": "T/CAICI XXXX—XXXX \n273 \n表10.3.3.22 WH23122 发电设备专项检修 \n \n工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； \n2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； \n3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。 \n计量单位：台次 \n维护分项作业 \n项目编码 \n项目名称 \n综合单价 \n（元） \n其中 \n名称 \n人工 \n人工费(元) 企业管理费(元)\n利润(元) \n技工 \n普工 \n单位 \n工日 \n单价(元) \n114.00 \n61.00 \nWH23122001 \n发电设备专项检修 \n固定式燃油发电机组 \n10.75  \n6.72  \n2.02  \n2.02  \n消耗量 \n0.14 \n— \nWH23122002 \n小型离网风力发电机组 \n54.53  \n34.08  \n10.22  \n10.22  \n0.71 \n \nWH23122003 \n太阳能光伏离网发电系统 \n33.02  \n20.64  \n6.19  \n6.19  \n0.43 \n— \n \n \n \n"
+   }
+  }
+ },
+ "gold_batch01": [
+  {
+   "query": "非高速公路场景下，管道线路的人（手）孔检修周期是多久？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第29页",
+     "text_contains": "管道线路的人（手）孔 检修 半年 高速公路中人孔的检修按需进行"
+    }
+   ],
+   "note": "gold-batch01-sha256:d1fcbeb037f45ffa276e565a12f440e3812b98aef32598a2cd0fedd9810b1a06"
+  },
+  {
+   "query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第254页",
+     "text_contains": "WH23104003 测试波分复用器 测试波分复用器1:2 29.18"
+    }
+   ],
+   "note": "gold-batch01-sha256:42b8a2541ffce7ab7ef69d2f1c165500ba5af5aa949ab806a45509dc44dd0dc3"
+  },
+  {
+   "query": "智慧家庭全光组网产品技术规范的版本是什么？",
+   "expected": [
+    {
+     "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+     "section_title": "第1页",
+     "text_contains": "全光组网产品技术规范\n\nV2.0.0"
+    }
+   ],
+   "note": "gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5"
+  },
+  {
+   "query": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？",
+   "expected": [
+    {
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "section_title": "第19页",
+     "text_contains": "安全作业 10 10 10 合计 100 100 100"
+    }
+   ],
+   "note": "gold-batch01-sha256:0da5c82f433a53526cacf1f533e597e0d0d56bf090a952123037a56df20813b7"
+  },
+  {
+   "query": "全光组网终端支持IEEE 802.11ax协议时，2.4G频段应至少支持多少个RU并行调度？",
+   "expected": [
+    {
+     "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+     "section_title": "第25页",
+     "text_contains": "2.4G 频段应至少支持4 个RU 并行调度"
+    }
+   ],
+   "note": "gold-batch01-sha256:c482b83580f3fb39b560f93a43695220c7fcca57dadaf88ad7391ba8a95a5c10"
+  },
+  {
+   "query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？",
+   "expected": [
+    {
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "section_title": "第6页",
+     "text_contains": "智慧家庭工程师 4.2 职业编码 4-04-02-012"
+    }
+   ],
+   "note": "gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239"
+  },
+  {
+   "query": "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？",
+   "expected": [
+    {
+     "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+     "section_title": "第62页",
+     "text_contains": "（3）尺寸大小：不小于17×17mm（公差：±1mm)，正方形"
+    }
+   ],
+   "note": "gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42"
+  },
+  {
+   "query": "在室温 25±2℃ 的情况下，非嵌入式全光组网终端表面温度不得超过多少℃？",
+   "expected": [
+    {
+     "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+     "section_title": "第58页",
+     "text_contains": "室温25±2℃的情况下，非嵌入式全光组网终端表面温度需不超过50℃"
+    }
+   ],
+   "note": "gold-batch01-sha256:d398b06298f36c11da17723f8a1765f3580d9cab8d4393f6f9742f07d3e2c6bc"
+  },
+  {
+   "query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？",
+   "expected": [
+    {
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "section_title": "第16页",
+     "text_contains": "3.2.2 无线局域网相关基础知识"
+    },
+    {
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "section_title": "第18页",
+     "text_contains": "3.2.3 无线局域网网优及软件基础知 识"
+    }
+   ],
+   "note": "gold-batch01-sha256:fb01c2c2f5f0a5c0359778f2525216af20a933851661902b83de6a48c53f30aa"
+  }
+ ],
+ "gold_batch02": [
+  {
+   "query": "《智慧家庭装维工程与管理职业技能等级标准》第 5.7 节规定，安全作业知识包括哪五项？",
+   "expected": [
+    {
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "section_title": "第10页",
+     "text_contains": "有限空间作业基础知识"
+    }
+   ],
+   "note": "gold-batch02-sha256:cb6c1fd465588112ef0e370268ad0183ee9da3679bcfc5cccee37d207f360e49"
+  },
+  {
+   "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，中级人员在“智能家居（控制）技术”项下对系统架构有什么要求？",
+   "expected": [
+    {
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "section_title": "第11页",
+     "text_contains": "熟悉智能家居系统架构"
+    }
+   ],
+   "note": "gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c"
+  },
+  {
+   "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，高级人员在“物联网接入业务运维”项下对网关组网方法的要求是什么？",
+   "expected": [
+    {
+     "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     "section_title": "第12页",
+     "text_contains": "掌握网关组网方法"
+    }
+   ],
+   "note": "gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf"
+  },
+  {
+   "query": "《电信基础设施维护规程》表 10.3.3.4 中，安装波分复用器这一子项包含哪些工作？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第254页",
+     "text_contains": "开箱检验、复核定位、安装固定、清理现场"
+    }
+   ],
+   "note": "gold-batch02-sha256:50d51edece13e19c9b0461c5d28612c2bd57007a19ab3987f4a5506865d5e31e"
+  },
+  {
+   "query": "《电信基础设施维护规程》表 10.3.3.5 中，编码 WH23105001 对应的防雷箱子项名称是什么？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第255页",
+     "text_contains": "WH23105001 安装防雷接地装置 室内防雷箱"
+    }
+   ],
+   "note": "gold-batch02-sha256:b084448f7e7645c2707588f54535d32b68eb9065c1c88e40589d1d9e429577e4"
+  },
+  {
+   "query": "《电信基础设施维护规程》表 10.3.3.5 中，室外塔上防雷箱（WH23105003）的综合单价列标了多少元？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第255页",
+     "text_contains": "WH23105003 室外塔上防雷箱 519.84"
+    }
+   ],
+   "note": "gold-batch02-sha256:ab3b66a0a8ccc60a2d24f08a125fcbfff193b42877b83821acb4b8a8e26af2e8"
+  },
+  {
+   "query": "安装防雷接地装置的工作内容有哪些？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第255页",
+     "text_contains": "接地电阻测试：接线、测量"
+    }
+   ],
+   "note": "gold-batch02-sha256:b4b194da3f8a23a7d4bfa98f30393ba5402f27c1e527513bc033dcf6b653e9b0"
+  },
+  {
+   "query": "《电信基础设施维护规程》表 10.3.3.5 中，室内防雷箱（WH23105001）的综合单价列标了多少元？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第255页",
+     "text_contains": "WH23105001 安装防雷接地装置 室内防雷箱 271.78"
+    }
+   ],
+   "note": "gold-batch02-sha256:74d3dfa33289009b189597355bbb9cb5852fdad9ad135fcaebf18261f4a9c632"
+  },
+  {
+   "query": "《电信基础设施维护规程》表 10.3.3.4 中，测试波分复用器 1:6 以下（WH23104004）的综合单价是多少（元/个）？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第254页",
+     "text_contains": "WH23104004 波分复用器1:6 以下 62.02"
+    }
+   ],
+   "note": "gold-batch02-sha256:f2a4f74b711f2413b1402f768300d60583f1057569aa22e97a24ab2789b01491"
+  },
+  {
+   "query": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0 第 4.8.2 节，全光组网终端出厂后可以保留什么账号？",
+   "expected": [
+    {
+     "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+     "section_title": "第52页",
+     "text_contains": "设备中除为用户提供的唯一账号外"
+    }
+   ],
+   "note": "gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206"
+  },
+  {
+   "query": "铁塔专项维修的工作内容包括哪些？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第286页",
+     "text_contains": "塔基强度测试"
+    },
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第141页",
+     "text_contains": "WH23123"
+    }
+   ],
+   "note": "gold-batch02-sha256:5d0db5acf870d6545edfa8cf4b6a57f9208ffe39b392c47c0d6acb2d21f96e33"
+  },
+  {
+   "query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第287页",
+     "text_contains": "护网外内部以及周边一米杂草、杂物集中清除"
+    }
+   ],
+   "note": "gold-batch02-sha256:4fe9bbf65368789a96fec628474fc6bfc870786f30c9c305f0da4cd8df09375a"
+  },
+  {
+   "query": "WH23131004项目对应的防水处理范围是什么？",
+   "expected": [
+    {
+     "source": "电信基础设施维护规程.pdf",
+     "section_title": "第288页",
+     "text_contains": "WH23131004 地面墙面防水"
+    }
+   ],
+   "note": "gold-batch02-sha256:f60c41c855e4aca2f381666e34c23cc4466e2291b004c8c55340a4709193cea3"
+  }
+ ]
+}

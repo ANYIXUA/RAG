@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:27.353289+08:00",
+  "conservative_cost_yuan": 0.0008372999999999999,
+  "error": null,
+  "latency_ms": 1300.7100999820977,
+  "list_price_estimate_yuan": 0.0006498,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 挂墙式有源综合机箱尺寸为218.88×136.80×41.04mm。[1]  \n2. 该型号综合柜综合单价为218.88元/台。[1]  \n3. 价格信息来源于《电信基础设施维护规程》第252页。[1]  \n4. 该设备为室内挂墙式有源类型，适用于特定安装场景。[1]  \n5. 详细参数与价格以实际工程定额为准。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881046,
+    "id": "chatcmpl-046e4cab-7f6e-9cfc-baf0-2ec08307009a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 125,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3082,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3207
+    }
+  },
+  "usage_known": true
+}

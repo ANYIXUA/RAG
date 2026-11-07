@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0311",
+  "citation_correctness": {
+    "evidence": "建议补充相关业务运营或市场策略文档以获取准确信息。[1][2][3]",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "无法基于现有材料提供促销策略调整建议。[1][2][3]",
+    "reason": "完整覆盖问题范围",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "所有检索文档聚焦于装维技能与业务运维知识，不涉及营销或促销策略。[1][2][3]",
+    "reason": "每项事实均来自上下文",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "correct_rejection"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "40aecf7b6fd8443198dbb613a523d09c",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "建议补充相关业务运营或市场策略文档以获取准确信息。[1][2][3]",
+    "reason": "正确拒答并提示补充",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

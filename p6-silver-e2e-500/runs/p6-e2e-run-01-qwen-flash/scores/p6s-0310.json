@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0310",
+  "citation_correctness": {
+    "evidence": "[6] 不存在于上下文",
+    "reason": "引用编号[6][7]未在上下文出现",
+    "score": 0
+  },
+  "completeness": {
+    "evidence": "",
+    "reason": "未回应问题核心，信息缺失",
+    "score": null
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "[6] 不存在于上下文",
+    "reason": "无有效事实支持，引用错误",
+    "score": null
+  },
+  "flags": [
+    "unanswerable",
+    "incorrect_citation",
+    "overclaim"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "0d24c2df72fb49db955b7cfd7558f7ca",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未尝试编造，明确拒答倾向",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

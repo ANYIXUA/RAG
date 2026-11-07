@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0325",
+  "citation_correctness": {
+    "evidence": "上下文未提及员工申请家庭场景设备补贴的具体流程。[1][2][3]",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "建议补充相关补贴政策文档或转人工咨询。[1][2][3]",
+    "reason": "完整覆盖问题缺失信息并说明",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "上下文未提及员工申请家庭场景设备补贴的具体流程。[1][2][3]",
+    "reason": "每项事实均基于上下文且无编造",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e3f42e9bf5cf4e55b285bd1cff93bf3b",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "建议补充相关补贴政策文档或转人工咨询。[1][2][3]",
+    "reason": "明确拒答并提示补充或转人工",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

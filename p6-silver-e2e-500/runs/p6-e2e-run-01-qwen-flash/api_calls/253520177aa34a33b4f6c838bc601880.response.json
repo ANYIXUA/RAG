@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:41.600002+08:00",
+  "conservative_cost_yuan": 0.0013449,
+  "error": null,
+  "latency_ms": 3243.8384001143277,
+  "list_price_estimate_yuan": 0.0009504,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"支持家庭总线故障处理方法\",\n    \"evidence\": \"4.4.1 能处理家庭复合总线的常见故障\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"设备连接线是否松动或接触不良。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖排查关键步骤\",\n    \"evidence\": \"确认供电电压是否在正常范围（如-44.4V～-53.2V）。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"参照附录J抢修流程进行故障排查与处理。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882138,
+    "id": "chatcmpl-d39f59f9-b204-939d-882c-8e3f9f393aba",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 263,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3706,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3969
+    }
+  },
+  "usage_known": true
+}

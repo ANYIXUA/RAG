@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "光网关和光路由均支持Wi-Fi 7时，漫游吞吐平均不低于170Mbps，最小不低于80Mbps。",
+    "reason": "支持Wi-Fi 7时最小吞吐不低于80Mbps，与证据一致。",
+    "score": 1
+  },
+  "case_id": "p6s-0178",
+  "citation_correctness": {
+    "evidence": "光网关和光路由均支持Wi-Fi 7时，漫游吞吐平均不低于170Mbps，最小不低于80Mbps。",
+    "reason": "引用编号[1]对应实际来源且支持该句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "测试时长为3分钟，按秒记录吞吐量。[1]",
+    "reason": "回答覆盖了最低要求及测试条件。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "光网关和光路由均支持Wi-Fi 7时，漫游吞吐平均不低于170Mbps，最小不低于80Mbps。",
+    "reason": "每项事实均有对应上下文支持，无编造。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "7b1cfbfa6fe24e72a82a0c0151851431",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

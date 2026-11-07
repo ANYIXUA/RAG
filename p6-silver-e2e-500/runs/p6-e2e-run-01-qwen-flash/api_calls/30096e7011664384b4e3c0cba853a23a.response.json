@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:45.815214+08:00",
+  "conservative_cost_yuan": 0.0006721499999999999,
+  "error": null,
+  "latency_ms": 1605.8954000473022,
+  "list_price_estimate_yuan": 0.0005266499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 招标项目以投标截止日前28天为基准日。[1]  \n2. 基准日后国家政策变化可调整合同价款。[1]  \n3. 该基准日用于维护工作价款调整。[1]  \n4. 非招标项目以合同签订前28天为基准日。[1]  \n5. 调整依据为通信行业主管部门规定。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880824,
+    "id": "chatcmpl-6c3d78df-9f0a-9cec-8471-cc26fe5239c2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 97,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2541,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2638
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "WH12009016 水泥杆另缠法装 7/3.0 单股拉线 平原 299.20 202.99 55.62 40.60 1.40 0.70",
+    "reason": "回答错误，未匹配问题",
+    "score": 0
+  },
+  "case_id": "p6s-0089",
+  "citation_correctness": {
+    "evidence": "WH12009010 更换拉线 水泥杆另缠法装 7/2.2 单股拉线 平原 212.99 144.50 39.59 28.90 消耗量 1.00 0.50",
+    "reason": "引用编号不对应",
+    "score": 0
+  },
+  "completeness": {
+    "evidence": "水泥杆另缠法装 7/3.0 单股拉线 平原 299.20 202.99 55.62 40.60 1.40 0.70",
+    "reason": "遗漏关键条件",
+    "score": 0
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH12009010 更换拉线 水泥杆另缠法装 7/2.2 单股拉线 平原 212.99 144.50 39.59 28.90 消耗量 1.00 0.50",
+    "reason": "事实与上下文不符",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_fact",
+    "wrong_citation",
+    "misaligned_query"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "6fd9d3163d05483d8c64c69b87d029d6",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "非拒答场景",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

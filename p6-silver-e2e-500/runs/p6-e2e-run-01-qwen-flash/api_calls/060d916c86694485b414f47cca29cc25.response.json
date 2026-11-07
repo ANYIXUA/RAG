@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:49.923362+08:00",
+  "conservative_cost_yuan": 0.00074925,
+  "error": null,
+  "latency_ms": 1307.7650999184698,
+  "list_price_estimate_yuan": 0.00057975,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 当前上下文未提及智慧家庭产品线的价格策略。[1][2][3]  \n2. 所有检索内容均为职业技能标准，不包含价格信息。[1][2][3]  \n3. 无关于产品定价、促销或费用调整的记录。[1][2][3]  \n4. 无法从现有资料中提取价格相关数据。[1][2][3]  \n5. 建议补充官方价格文档或转人工咨询。[1][2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881008,
+    "id": "chatcmpl-07077a2a-6552-93b9-bcfb-6b07227f8f95",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2735,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2848
+    }
+  },
+  "usage_known": true
+}

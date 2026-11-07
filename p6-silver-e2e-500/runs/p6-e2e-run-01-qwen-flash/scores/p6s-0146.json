@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "计量单位：法兰盘",
+    "reason": "引用[1]中计量单位为'法兰盘'，非'个'",
+    "score": 0
+  },
+  "case_id": "p6s-0146",
+  "citation_correctness": {
+    "evidence": "计量单位：法兰盘",
+    "reason": "引用[1]内容不支持'个'的结论",
+    "score": 0
+  },
+  "completeness": {
+    "evidence": "WH11013 ODF 架日常维护 法兰 盘²次",
+    "reason": "完整覆盖问题所需信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "计量单位：法兰盘",
+    "reason": "声称单位为'个'无上下文支持",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_unit",
+    "misattribution"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "a35aa1d235374ecf8caeba7ac01c95ff",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

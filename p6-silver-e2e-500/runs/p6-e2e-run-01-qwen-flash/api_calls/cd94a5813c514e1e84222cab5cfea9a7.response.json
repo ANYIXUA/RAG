@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:15.213318+08:00",
+  "conservative_cost_yuan": 0.00076725,
+  "error": null,
+  "latency_ms": 1454.5014998875558,
+  "list_price_estimate_yuan": 0.00060075,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查电池组表面是否整洁，无渗漏、变形或酸液溢出。[4]  \n2. 观察极柱及安全阀周围是否有酸雾或酸液痕迹。[4]  \n3. 确认连接条连接牢固，无氧化或腐蚀现象。[4]  \n4. 通过巡检标准确认电池外观无异常，符合维护要求。[3]  \n5. 若发现漏液或异常，应立即上报并更换处理。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881033,
+    "id": "chatcmpl-a3efd399-414f-91ce-aded-0dbeaa4fa5a1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2895,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3006
+    }
+  },
+  "usage_known": true
+}

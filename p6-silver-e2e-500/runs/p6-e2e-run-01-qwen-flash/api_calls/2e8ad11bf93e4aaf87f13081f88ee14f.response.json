@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:06.066105+08:00",
+  "conservative_cost_yuan": 0.0006853499999999999,
+  "error": null,
+  "latency_ms": 1208.7528998963535,
+  "list_price_estimate_yuan": 0.0005503499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 应依据物联网基础知识设置网关接入业务。[2]  \n2. 需掌握计算机网络基础知识以支持网关配置。[2]  \n3. 熟悉接入网基础知识有助于正确接入业务。[2]  \n4. 了解网关组网方法可保障接入稳定性。[2]  \n5. 遵循光纤到户业务运维规范进行操作。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880904,
+    "id": "chatcmpl-fbbbd2b2-44f0-9db4-9505-19f9eb56ad45",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 90,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2769,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2859
+    }
+  },
+  "usage_known": true
+}

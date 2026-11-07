@@ -1,0 +1,562 @@
+[
+  {
+    "review_id": "B32",
+    "parent_candidate_id": "sha256:86abb5904cd3b7241c6bd1baa9dc3888ec11fa28135c1fcb518ec9b19a51ddf1",
+    "accepted_proposal_id": "p4-proposal-sha256:29988c1f182457553508da84bde4a0d5903274e45e6673fd6b38133622b33378",
+    "gold_case_id": "gold-holdout-v1-sha256:0996009394843023982e5901c712f7bd863f21dd6279e7889b082f9cc4342d9b",
+    "is_revision": true,
+    "changed_retrieval_target": true,
+    "revision_kind": "new_proposal_retargeted",
+    "original_question": "职业能力特征和受教育程度分别在哪个章节中说明？",
+    "original_answer": "4.6 职业能力特征 .................................................................... 6 4.7 受教育程度 ...................................................................... 6",
+    "original_supporting_chunk_ids": [
+      "5766d05fd8a6f73a1ef60b57"
+    ],
+    "accepted_question": "《智慧家庭装维工程与管理职业技能等级标准》第 4.6、4.7 节分别对职业能力特征和受教育程度提出了什么要求？",
+    "accepted_reference_answer": "职业能力应具有学习、表达、计算、故障处置能力，动手能力和安全意识；受教育程度为高中、中等专业技术学校毕业及同等或以上学历。",
+    "accepted_evidence_chunk_ids": [
+      "d70540614c288a2dc8b3066f"
+    ],
+    "human_comment": "修订后的题目和答案在材料中具有明确的知识点及证据定位，可以考虑作为独立的新提案接受，但必须保留原始候选与新提案的关联，不能把改变检索目标伪装成普通文字修正。"
+  },
+  {
+    "review_id": "B33",
+    "parent_candidate_id": "sha256:85516c936d8fe455b05be5cb507eabbdaf7aec41e0339101b9f7e34b688b65fc",
+    "accepted_proposal_id": "p4-proposal-sha256:aa85e47d7780dd977c86b5733af082eadaa607115e283230db8db3ed457d158e",
+    "gold_case_id": "gold-holdout-v1-sha256:1641686df64542611a7bbb6c26386bf498fa07e845cfb2cbc3f80967bcd745a3",
+    "is_revision": true,
+    "changed_retrieval_target": true,
+    "revision_kind": "new_proposal_retargeted",
+    "original_question": "职业技能鉴定的申报条件和鉴定方式分别在哪个部分描述？",
+    "original_answer": "4.9.1 申报条件 .................................................................... 6 4.9.2 鉴定方式 .................................................................... 6",
+    "original_supporting_chunk_ids": [
+      "5766d05fd8a6f73a1ef60b57"
+    ],
+    "accepted_question": "《智慧家庭装维工程与管理职业技能等级标准》第 4.9.2.1 节规定，职业技能鉴定的鉴定方式应分为哪两类？",
+    "accepted_reference_answer": "理论知识考试、技能考核。",
+    "accepted_evidence_chunk_ids": [
+      "14da1c09b687f7b48896e03a"
+    ],
+    "human_comment": "修订后的题目和答案在材料中具有明确的知识点及证据定位，可以考虑作为独立的新提案接受，但必须保留原始候选与新提案的关联，不能把改变检索目标伪装成普通文字修正。"
+  },
+  {
+    "review_id": "B34",
+    "parent_candidate_id": "sha256:a9065f265727f73d5987f18a1b45172702509127e36212b003dfbcf857a24434",
+    "accepted_proposal_id": "p4-proposal-sha256:724ab60a6832f336236db13679e97ab28bd63de985c49c15dbb5f71a7000b9b5",
+    "gold_case_id": "gold-holdout-v1-sha256:6aef319d0508bfaa30b250807fbf415ad8c4ddc2202d56b8fa273275bd607e05",
+    "is_revision": true,
+    "changed_retrieval_target": false,
+    "revision_kind": "content_revision",
+    "original_question": "铁路与架空通信线路交越时的最小垂直净距是多少米？",
+    "original_answer": "3.0",
+    "original_supporting_chunk_ids": [
+      "d8dfa78cb9362f0d69cd659c"
+    ],
+    "accepted_question": "《电信基础设施维护规程》表 D.0.2 中，铁路与架空通信线路交越时，最低缆线到轨面的最小垂直净距是多少米？",
+    "accepted_reference_answer": "7.5 m",
+    "accepted_evidence_chunk_ids": [
+      "d8dfa78cb9362f0d69cd659c"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B35",
+    "parent_candidate_id": "sha256:64e18eda64f9eb7f2bea1fd707d05c637ed7e13c0bec0c586200017cd4e7c894",
+    "accepted_proposal_id": "p4-proposal-sha256:4daf37a75b4a0af2d3070626e4470ebff2ea2befb3094e542b76bae17ab25a18",
+    "gold_case_id": "gold-holdout-v1-sha256:850c548feb0d13d21c90ab0e8955d38acb22c9ba768c2eac625cf231f838d260",
+    "is_revision": true,
+    "changed_retrieval_target": true,
+    "revision_kind": "new_proposal_retargeted",
+    "original_question": "产品入库要求中包含哪些设备形态要求？",
+    "original_answer": "设备形态",
+    "original_supporting_chunk_ids": [
+      "5d5fd6cf18ea4e313fdc45b5"
+    ],
+    "accepted_question": "《中国移动智慧家庭全光组网产品技术规范》V2.0.0 表 4-1 中，全光组网终端的产品类型和设备形态名称分别有哪些？",
+    "accepted_reference_answer": "产品类型分为光网关、光路由两类；产品名称分别为 Wi-Fi 7 光网关、Wi-Fi 6 光网关、Wi-Fi 7 光路由、Wi-Fi 6 光路由。",
+    "accepted_evidence_chunk_ids": [
+      "e69ef87cafd302938c765e20"
+    ],
+    "human_comment": "修订后的题目和答案在材料中具有明确的知识点及证据定位，可以考虑作为独立的新提案接受，但必须保留原始候选与新提案的关联，不能把改变检索目标伪装成普通文字修正。"
+  },
+  {
+    "review_id": "B40",
+    "parent_candidate_id": "sha256:bc83c840f1e8d89aa0229f2e8e30c808cbad720e93970135313bb16204ef083c",
+    "accepted_proposal_id": "p4-proposal-sha256:781f0debdb7943a99d5623f5f2e88347f4ae63afddebac433c1057991f213f95",
+    "gold_case_id": "gold-holdout-v1-sha256:af41ce4b7173b8c7e92e3e34310a0ccc1fd027b80d4aeba0ccfc4294cc322f57",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "WH23120 安装、调试、断电检修变压器的工作内容包括哪些？",
+    "original_answer": "工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； 2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； 3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。",
+    "original_supporting_chunk_ids": [
+      "647c44016cd2e8fabe51f5de"
+    ],
+    "accepted_question": "WH23120 安装、调试、断电检修变压器的工作内容包括哪些？",
+    "accepted_reference_answer": "工作内容：1、器检修：断电外观检查、接线柱及绝缘套管瓷瓶检查更换、呼吸器（吸湿器）硅胶检查更换、变压器油质检查更换； 2、变压器：开箱检验、体位固定、主件与配件清洗、附件检查与安装、补充注油、接地检查、接地、密封与电器实验； 3、变压器：开箱检验、体位固定、附件安装、接地、电气实验等。",
+    "accepted_evidence_chunk_ids": [
+      "647c44016cd2e8fabe51f5de"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B41",
+    "parent_candidate_id": "sha256:b4948d39941b4842ce1cec733083400393f944fb78b0a646fb187b3468ccfce5",
+    "accepted_proposal_id": "p4-proposal-sha256:700bcbf118a5fb2d69726115f858255432c87fdaa462ea87ae3aae501c2b57a1",
+    "gold_case_id": "gold-holdout-v1-sha256:c8be16e1bd577b857cb53c617bf1ae10a0bcb10a627ad88206bd05f89ff6d209",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "WH23121 安装与调试控制设备的工作内容是什么？",
+    "original_answer": "工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。",
+    "original_supporting_chunk_ids": [
+      "4a65d0d3ead0bc841b1b28f8"
+    ],
+    "accepted_question": "WH23121 安装与调试控制设备的工作内容是什么？",
+    "accepted_reference_answer": "工作内容：开箱检验、安装固定、附件检查与安装、连接线、清理现场等。",
+    "accepted_evidence_chunk_ids": [
+      "4a65d0d3ead0bc841b1b28f8"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B42",
+    "parent_candidate_id": "sha256:8b2d213a6a85dbee5975b9cc800f3c119222f1dd612bc93892999817cef85871",
+    "accepted_proposal_id": "p4-proposal-sha256:47749ec8b3196b6a2a7bfcf45cea8ae4be62f5acc1336912f0c7db56da87f69e",
+    "gold_case_id": "gold-holdout-v1-sha256:d3bc7354a2d1242c1fe332e5a8576c0b5895847ffc039887c0a26374296ec7ca",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "WH23122 发电设备专项检修的工作内容包括哪些？",
+    "original_answer": "工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； 2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； 3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。",
+    "original_supporting_chunk_ids": [
+      "d2df450647a1e967aa910201"
+    ],
+    "accepted_question": "WH23122 发电设备专项检修的工作内容包括哪些？",
+    "accepted_reference_answer": "工作内容：1、发电机组：检查清洁发动机和发电机外观、启动电池；检查补充燃油、润滑油和冷冻液；发电机空载试机；测试输出电压； 2、离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换； 3、能光伏离网发电系统：检查清洁太阳能光伏板阵列、检修防雹保护设施、光伏板支架和基础、密封胶条；清理排水系统、检查设置设备参数等。",
+    "accepted_evidence_chunk_ids": [
+      "d2df450647a1e967aa910201"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B48",
+    "parent_candidate_id": "sha256:1cb66bac6381fa7f068e3c89a5469e939babb508ee62c54f3b6ff24ee0272ca0",
+    "accepted_proposal_id": "p4-proposal-sha256:25fb17b4ee52178dea764c67bcc3d5bd7cd25edc8e76b32773c8b1971975b757",
+    "gold_case_id": "gold-holdout-v1-sha256:e0a367414446b776f567badfb65983ded94a8608b289b9838c4d8a9cd2487dbf",
+    "is_revision": true,
+    "changed_retrieval_target": false,
+    "revision_kind": "content_revision",
+    "original_question": "因维护分项作业工作量清单漏项或非承包人原因的维护作业变更，引起措施项目发生变化，原措施费中已有的措施项目，按原措施项目的组价方法如何调整？",
+    "original_answer": "按原措施项目的组价方法调整",
+    "original_supporting_chunk_ids": [
+      "48e4aa1fce9c20c3d6f6339f"
+    ],
+    "accepted_question": "按《电信基础设施维护规程》第8.4.7.5条，清单漏项或非承包人原因的作业变更导致措施项目变化时，原措施费中已有项目和没有的项目分别如何调整？",
+    "accepted_reference_answer": "已有项目按原措施项目的组价方法调整；没有的项目由承包人根据措施项目变更情况提出适当的措施费变更，经发包人确认后调整。",
+    "accepted_evidence_chunk_ids": [
+      "48e4aa1fce9c20c3d6f6339f"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B49",
+    "parent_candidate_id": "sha256:b3cb46209708867debeabfffc91132b4d88fd613ee9017f7959edaa1a71a120f",
+    "accepted_proposal_id": "p4-proposal-sha256:ecb4839cc9b50349bf97ec93be80b15981dd32ad0beb7c184ce4b77d8cfe90c8",
+    "gold_case_id": "gold-holdout-v1-sha256:702d7cb3a844742ae607eba9f22206b93d39423cc5ac3c1f75207c41434e3348",
+    "is_revision": true,
+    "changed_retrieval_target": false,
+    "revision_kind": "content_revision",
+    "original_question": "维护分项作业费应依据什么进行计算？",
+    "original_answer": "依据双方确认的工作量、合同约定的综合单价计算",
+    "original_supporting_chunk_ids": [
+      "847ed8afec9fe78a708ad65f"
+    ],
+    "accepted_question": "按《电信基础设施维护规程》第8.4.8.4条，维护分项作业费在综合单价未调整与已调整时，分别依据什么计算？",
+    "accepted_reference_answer": "未调整时依据双方确认的工作量、合同约定的综合单价计算；发生调整时，以发、承包双方确认调整的综合单价计算。",
+    "accepted_evidence_chunk_ids": [
+      "847ed8afec9fe78a708ad65f"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B50",
+    "parent_candidate_id": "sha256:a20b570f5a28d69b3e7aebf3083c0cfe0b1913c34693320496fa4e5f345ac2e0",
+    "accepted_proposal_id": "p4-proposal-sha256:c6c54d473a64d73bc009f6b756730e19453d4ec566e6ee9604fc91e449b8a279",
+    "gold_case_id": "gold-holdout-v1-sha256:75bec1a04c8e5280f0c80677a4e9eba49f962a0a69652027984bad7ad8296783",
+    "is_revision": true,
+    "changed_retrieval_target": false,
+    "revision_kind": "content_revision",
+    "original_question": "承包人维护用机械（仪表）设备损坏及停工损失应由谁承担？",
+    "original_answer": "由承包人承担；",
+    "original_supporting_chunk_ids": [
+      "48e4aa1fce9c20c3d6f6339f"
+    ],
+    "accepted_question": "按《电信基础设施维护规程》第8.4.7.8条，因不可抗力事件导致承包人的维护用机械（仪表）设备损坏及停工损失，由谁承担？",
+    "accepted_reference_answer": "由承包人承担。",
+    "accepted_evidence_chunk_ids": [
+      "48e4aa1fce9c20c3d6f6339f"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B53",
+    "parent_candidate_id": "sha256:38376d247fabd496f655addd308a80ce91e133aa70c3d6108bb93404f33d0d2c",
+    "accepted_proposal_id": "p4-proposal-sha256:7ef45b339043fb53a9ba9ae54335bfc3e5cb54b635591346c3fabd0ef1608292",
+    "gold_case_id": "gold-holdout-v1-sha256:e6ea26b592e30fe65a9279e4e792936ca0bde9fb62cfbae738217460488b8e43",
+    "is_revision": true,
+    "changed_retrieval_target": false,
+    "revision_kind": "content_revision",
+    "original_question": "光网关终端通过二维码实现零配置功能时，二维码需要集成哪些参数",
+    "original_answer": "二维码应集成该设备的Wi-Fi 的SSID 和密码参数",
+    "original_supporting_chunk_ids": [
+      "3a3f2c0bc27d1815ea693a4a"
+    ],
+    "accepted_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0附录A.1，光网关零配置二维码必须集成设备的哪两项Wi-Fi参数？",
+    "accepted_reference_answer": "该设备Wi-Fi的SSID和密码参数。",
+    "accepted_evidence_chunk_ids": [
+      "3a3f2c0bc27d1815ea693a4a"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B54",
+    "parent_candidate_id": "sha256:1c41c10613d8867a8469f80d9d506a49a58357bcd7030fa9b1a07d4655c5386c",
+    "accepted_proposal_id": "p4-proposal-sha256:f6d2809e3597cc042108f7fa8f4569f618779a799920499862d5ae4e6697a3c7",
+    "gold_case_id": "gold-holdout-v1-sha256:972fa191c9d61cbc4b86f442113e3db72bafd15952524e778413f036b2c9da33",
+    "is_revision": true,
+    "changed_retrieval_target": false,
+    "revision_kind": "content_revision",
+    "original_question": "能使用红光光源、光功率计进行光路达标测试的具体要求是什么？",
+    "original_answer": "3.3.1 能使用红光光源、光功率计",
+    "original_supporting_chunk_ids": [
+      "95ae763cde2f43aec2cb7d14"
+    ],
+    "accepted_question": "《智慧家庭装维工程与管理职业技能等级标准》初级等级“3.3 光路达标测试”的技能要求3.3.1和3.3.2分别是什么？",
+    "accepted_reference_answer": "3.3.1：能使用红光光源、光功率计；3.3.2：能掌握手持终端的使用。",
+    "accepted_evidence_chunk_ids": [
+      "95ae763cde2f43aec2cb7d14"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "B57",
+    "parent_candidate_id": "sha256:75f444c4a8d849e38771a34c0a5ad510d8b399a5381829f102e7632eb272a392",
+    "accepted_proposal_id": "p4-proposal-sha256:017f6ee5daa6caaeb13e3124e017cd762e8cdb1c44d46915ff7cfcc81c4abd4f",
+    "gold_case_id": "gold-holdout-v1-sha256:ab6b15ec238a63251e6e74d9f93b86057c655529189a25d27d308b1145bf331a",
+    "is_revision": true,
+    "changed_retrieval_target": false,
+    "revision_kind": "content_revision",
+    "original_question": "宁夏省级数字家庭管理平台智能组网模块的域名和端口是什么？",
+    "original_answer": "jtwlgl.nx.chinamobile.com:9005(TCP) jtwlgl.nx.chinamobile.com:9007(UDP)",
+    "original_supporting_chunk_ids": [
+      "9f8fb549d52c59eafb4ce394"
+    ],
+    "accepted_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0附录A.3的省级平台预置表，宁夏平台的TCP和UDP域名、端口各是什么？",
+    "accepted_reference_answer": "TCP：jtwlgl.nx.chinamobile.com:9005；UDP：jtwlgl.nx.chinamobile.com:9007。",
+    "accepted_evidence_chunk_ids": [
+      "9f8fb549d52c59eafb4ce394"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N01",
+    "parent_candidate_id": "p4-candidate-sha256:dd6b70333689eace549807042500f8d50da44c9dfe46d4116c81128036b4ebed",
+    "accepted_proposal_id": "p4-proposal-sha256:a39463e72711fcbe304dc99448824be495a966121ca46aec9f32ad2ab387cdff",
+    "gold_case_id": "gold-holdout-v1-sha256:a230de0a7bfdebcbd7122e4c590b2e02b6cbffd858a6591c32597109eb680fbf",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.3.1.3节，光网关建立多条WAN连接时，连接间的数据应如何处理？路由WAN下两侧ARP报文又有何要求？",
+    "original_answer": "不同WAN连接之间的数据（包括DNS、ARP、管理应用数据等）应支持完全隔离；路由WAN连接下，应支持网络侧和用户侧ARP报文的隔离。",
+    "original_supporting_chunk_ids": [
+      "2d70309c35065f6a38c507ed"
+    ],
+    "accepted_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.3.1.3节，光网关建立多条WAN连接时，连接间的数据应如何处理？路由WAN下两侧ARP报文又有何要求？",
+    "accepted_reference_answer": "不同WAN连接之间的数据（包括DNS、ARP、管理应用数据等）应支持完全隔离；路由WAN连接下，应支持网络侧和用户侧ARP报文的隔离。",
+    "accepted_evidence_chunk_ids": [
+      "2d70309c35065f6a38c507ed"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N02",
+    "parent_candidate_id": "p4-candidate-sha256:34439beb6b7301520ec3ef0800d2e9e30b94502b6894c6caf578d876e6565ccf",
+    "accepted_proposal_id": "p4-proposal-sha256:a70a061fdb85d4c296f34af00adfe5abc73234ce46ede89854e9ceb94a1793fc",
+    "gold_case_id": "gold-holdout-v1-sha256:1216ecb9c81e96579fc4951acaa11df58330b4756234ec37e4cb65b332ee9817",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.3.4.3节，支持WPS Push-Button的客户端应在多长时间内完成协商并连接？WPS过程对已连接客户端有什么限制？",
+    "original_answer": "应在2分钟内协商好加密算法、分发密钥、配置好相关参数并建立连接；WPS过程不应影响已连接客户端的连接状态和数据传送。",
+    "original_supporting_chunk_ids": [
+      "84139f0d408339d51910bb1e"
+    ],
+    "accepted_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.3.4.3节，支持WPS Push-Button的客户端应在多长时间内完成协商并连接？WPS过程对已连接客户端有什么限制？",
+    "accepted_reference_answer": "应在2分钟内协商好加密算法、分发密钥、配置好相关参数并建立连接；WPS过程不应影响已连接客户端的连接状态和数据传送。",
+    "accepted_evidence_chunk_ids": [
+      "84139f0d408339d51910bb1e"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N03",
+    "parent_candidate_id": "p4-candidate-sha256:0dd1efdad9dc0232e3dbb02f955541f0c4330c0bffd862bc6e83376acffcf976",
+    "accepted_proposal_id": "p4-proposal-sha256:e6c4cc5720e12498b409525406711c6af9ef45bfd9ab37f46d0e1138de91cd12",
+    "gold_case_id": "gold-holdout-v1-sha256:7374b41a3bd9546eea01212d39efbd56bc86c108edd55c39d19a540841a7b523",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0的智能重启要求，已支持并开启该功能的终端能否采用固定重启时间？原文规定了什么例外？",
+    "original_answer": "智能重启功能禁止采用固定重启时间；用户通过和家亲APP或本地Web设置定时重启任务除外。",
+    "original_supporting_chunk_ids": [
+      "38fdd5ab96a7a1c7db0c03c0"
+    ],
+    "accepted_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0的智能重启要求，已支持并开启该功能的终端能否采用固定重启时间？原文规定了什么例外？",
+    "accepted_reference_answer": "智能重启功能禁止采用固定重启时间；用户通过和家亲APP或本地Web设置定时重启任务除外。",
+    "accepted_evidence_chunk_ids": [
+      "38fdd5ab96a7a1c7db0c03c0"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N04",
+    "parent_candidate_id": "p4-candidate-sha256:6dc4237449258788fc01e6e2ac54a60b9abc5e20800ee2cca950588de1dae44a",
+    "accepted_proposal_id": "p4-proposal-sha256:1b19ca3ea47985e536bd96015bb321fa1452f88b53419a995a4b10a75c12f1ad",
+    "gold_case_id": "gold-holdout-v1-sha256:998f3e4f259ac191d03e62a147c51c177e81bf775c6c9778b71011384e009b2b",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "在《中国移动智慧家庭全光组网产品技术规范》V2.0.0“Wi-Fi 7链路时延要求”的MLD链路测试场景中，UDP单向的链路平均时延与TP99时延分别须满足什么阈值？",
+    "original_answer": "链路平均时延须小于5ms；链路TP99时延须小于25ms。",
+    "original_supporting_chunk_ids": [
+      "c9798c374ba5448e95e08c22"
+    ],
+    "accepted_question": "在《中国移动智慧家庭全光组网产品技术规范》V2.0.0“Wi-Fi 7链路时延要求”的MLD链路测试场景中，UDP单向的链路平均时延与TP99时延分别须满足什么阈值？",
+    "accepted_reference_answer": "链路平均时延须小于5ms；链路TP99时延须小于25ms。",
+    "accepted_evidence_chunk_ids": [
+      "c9798c374ba5448e95e08c22"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N05",
+    "parent_candidate_id": "p4-candidate-sha256:12dc07345e2a0ee36b202efad9553b4c74e58cf9954e684f693c6de794623484",
+    "accepted_proposal_id": "p4-proposal-sha256:7ad048d15ac3998e9b252f74c3d68712c4b8296aeb0f62446907ce323b940830",
+    "gold_case_id": "gold-holdout-v1-sha256:aa0944324148e8d105af434f2fd211933e64f20c05d4e7cae76142c789c86fa7",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.6.1.1节“光网关指示灯要求”，上行光信号状态灯熄灭和闪烁分别表示什么？",
+    "original_answer": "熄灭表示接收光功率正常；闪烁表示接收光功率异常。",
+    "original_supporting_chunk_ids": [
+      "d60c3992acb84d003c25c027"
+    ],
+    "accepted_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.6.1.1节“光网关指示灯要求”，上行光信号状态灯熄灭和闪烁分别表示什么？",
+    "accepted_reference_answer": "熄灭表示接收光功率正常；闪烁表示接收光功率异常。",
+    "accepted_evidence_chunk_ids": [
+      "d60c3992acb84d003c25c027"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N06",
+    "parent_candidate_id": "p4-candidate-sha256:d29f7757ee8f42f0525101b5a0a37c7706e1fb95e02b09148a6615d63012ddc1",
+    "accepted_proposal_id": "p4-proposal-sha256:6a887a494a46de75fad46483e8974ad011e540579c3fb8a80bf2510f0117645d",
+    "gold_case_id": "gold-holdout-v1-sha256:9be2b5a6fbb5a8d75436b2538fa62a037faeaf510533d0030226551a4d6f45c1",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.8.10节，终端每个启动阶段何时才可执行下一阶段？安全签名校验未通过时怎么办？",
+    "original_answer": "每个启动阶段须校验下一个启动阶段的安全签名，校验通过后方可执行下一启动过程；否则设备停止启动或进入修复流程。",
+    "original_supporting_chunk_ids": [
+      "d74f298bf424e80db33f40c0"
+    ],
+    "accepted_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.8.10节，终端每个启动阶段何时才可执行下一阶段？安全签名校验未通过时怎么办？",
+    "accepted_reference_answer": "每个启动阶段须校验下一个启动阶段的安全签名，校验通过后方可执行下一启动过程；否则设备停止启动或进入修复流程。",
+    "accepted_evidence_chunk_ids": [
+      "d74f298bf424e80db33f40c0"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N07",
+    "parent_candidate_id": "p4-candidate-sha256:afb86e337d717969a9232ad176d53164f66c91b0fbefcb0ffa537bb93b049d55",
+    "accepted_proposal_id": "p4-proposal-sha256:e51b91599c4aa943de2131ce4b717898daa0480e4013246d5fcb31940d7b2cdb",
+    "gold_case_id": "gold-holdout-v1-sha256:8b07a8efe385efac024f7466c7cad8381e4be877a04ab4ca2efea969199e3073",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.9.2.4节，全光组网终端升级软件时应具备什么校验功能？升级失败后应支持哪两种处理路径？",
+    "original_answer": "应具有容错校验功能；升级失败时应能恢复到原来的软件版本，或者连接管理平台接受再次升级。",
+    "original_supporting_chunk_ids": [
+      "d1d75534f8865f49c152b4dd"
+    ],
+    "accepted_question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0第4.9.2.4节，全光组网终端升级软件时应具备什么校验功能？升级失败后应支持哪两种处理路径？",
+    "accepted_reference_answer": "应具有容错校验功能；升级失败时应能恢复到原来的软件版本，或者连接管理平台接受再次升级。",
+    "accepted_evidence_chunk_ids": [
+      "d1d75534f8865f49c152b4dd"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N08",
+    "parent_candidate_id": "p4-candidate-sha256:0256829aae95d224589020ce66aa97cdcfae24c06c736b20d4130c49b61ced1e",
+    "accepted_proposal_id": "p4-proposal-sha256:e43c5f3ec8afe5c571bdd40d036fc3e9be611f7848485edcfe9aa8227ef74b0f",
+    "gold_case_id": "gold-holdout-v1-sha256:efe567eac9cf007eacbb02132e9ccc4887d2d038978690784563678a7c4e4825",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "《智慧家庭装维工程与管理职业技能等级标准》第1章对人员培训、考核评价与人员聘用分别规定了怎样的适用或参照关系？",
+    "original_answer": "本文件适用于智慧家庭装维人员职业技能培训、考核与评价；人员聘用、培训与考核可参照执行。",
+    "original_supporting_chunk_ids": [
+      "2eda6960dfbb194d0f84e4b0"
+    ],
+    "accepted_question": "《智慧家庭装维工程与管理职业技能等级标准》第1章对人员培训、考核评价与人员聘用分别规定了怎样的适用或参照关系？",
+    "accepted_reference_answer": "本文件适用于智慧家庭装维人员职业技能培训、考核与评价；人员聘用、培训与考核可参照执行。",
+    "accepted_evidence_chunk_ids": [
+      "2eda6960dfbb194d0f84e4b0"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N09",
+    "parent_candidate_id": "p4-candidate-sha256:d316178fce530744b30cf51de524a5bd488fc52942e6454ad7dfb1bf636d79d7",
+    "accepted_proposal_id": "p4-proposal-sha256:ce059a32a795b9905f93a75db27c4130d780170cbd850915211782daa5fe9b2c",
+    "gold_case_id": "gold-holdout-v1-sha256:da5c7473a3c95c7a5fe67929421bdaf85e9b24c75c927597676f8fbd51fc58d0",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "《智慧家庭装维工程与管理职业技能等级标准》第5.4节列出的智能组网专业基础知识有哪八项？",
+    "original_answer": "综合布线知识；通信网络技术及光纤到户业务知识；无线局域网技术知识；视听业务技术知识；智能控制技术知识；智能组网及家庭总线（数据、视听、控制）技术知识；智能家居、智能家电及联网、联动技术知识；家庭业务云平台及智能门户技术知识。",
+    "original_supporting_chunk_ids": [
+      "5d1e8fd617217ecea2afa2f1"
+    ],
+    "accepted_question": "《智慧家庭装维工程与管理职业技能等级标准》第5.4节列出的智能组网专业基础知识有哪八项？",
+    "accepted_reference_answer": "综合布线知识；通信网络技术及光纤到户业务知识；无线局域网技术知识；视听业务技术知识；智能控制技术知识；智能组网及家庭总线（数据、视听、控制）技术知识；智能家居、智能家电及联网、联动技术知识；家庭业务云平台及智能门户技术知识。",
+    "accepted_evidence_chunk_ids": [
+      "5d1e8fd617217ecea2afa2f1"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N10",
+    "parent_candidate_id": "p4-candidate-sha256:904c2b45e4d6fc1c015400d7cbbd1ca5f78638a598ff0f741801cd67c240ba20",
+    "accepted_proposal_id": "p4-proposal-sha256:394d92893892329f76d908e590df79cd3d197f944fef85db0db076d771ecec22",
+    "gold_case_id": "gold-holdout-v1-sha256:9709c0f2e4eddd2e503a9d2cdfc88227203138eefde40e24bab8fff7fd9ccc12",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "《智慧家庭装维工程与管理职业技能等级标准》第6.5节高级等级“2.4 智能家居技术”的两项技能要求是什么？",
+    "original_answer": "2.4.1：能进行智能家居集中控制；2.4.2：能进行有线系统和无线系统拓展应用。",
+    "original_supporting_chunk_ids": [
+      "f86d4474f6f6b987d29ada4c"
+    ],
+    "accepted_question": "《智慧家庭装维工程与管理职业技能等级标准》第6.5节高级等级“2.4 智能家居技术”的两项技能要求是什么？",
+    "accepted_reference_answer": "2.4.1：能进行智能家居集中控制；2.4.2：能进行有线系统和无线系统拓展应用。",
+    "accepted_evidence_chunk_ids": [
+      "f86d4474f6f6b987d29ada4c"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N11",
+    "parent_candidate_id": "p4-candidate-sha256:65430c07a057e087a72eef9a588782399ea315ea60bdd9758d2ded7b0be77ec8",
+    "accepted_proposal_id": "p4-proposal-sha256:373132dd5a58bae0bbdf5c4f855e54af84bfda9c888c7b27adfb471a3560162a",
+    "gold_case_id": "gold-holdout-v1-sha256:bab758ddfe7ed1565f1f20af922a78af15d500ef25789664984f38bce1d11fa2",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "《电信基础设施维护规程》第4.3.4.2 b）规定，普通水线与海缆两侧各多大范围内禁止抛锚、捕鱼、炸鱼、挖砂等危及水线安全的活动？",
+    "original_answer": "普通水线两侧各100米；海缆两侧各2海里。",
+    "original_supporting_chunk_ids": [
+      "002a1b9d6ade401fd6b92575"
+    ],
+    "accepted_question": "《电信基础设施维护规程》第4.3.4.2 b）规定，普通水线与海缆两侧各多大范围内禁止抛锚、捕鱼、炸鱼、挖砂等危及水线安全的活动？",
+    "accepted_reference_answer": "普通水线两侧各100米；海缆两侧各2海里。",
+    "accepted_evidence_chunk_ids": [
+      "002a1b9d6ade401fd6b92575"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N12",
+    "parent_candidate_id": "p4-candidate-sha256:519d58d8c79cae8c81f666f92170f05f827687cc1e6d78e728a9317a1a020de1",
+    "accepted_proposal_id": "p4-proposal-sha256:2028f2cc5ef3ca0cbf5ad091ba5f3147cf09bd46ab09210856d2e7b1eb468a0f",
+    "gold_case_id": "gold-holdout-v1-sha256:c0c54172759b630bb48c1a92b0926b844d5fee4c969ab6a5ecc69d8468bbf2ed",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "《电信基础设施维护规程》第4.5.0.5 f）中，《光缆线路维护方案》的“四新”技术指哪四项？",
+    "original_answer": "新技术、新材料、新工艺、新设备。",
+    "original_supporting_chunk_ids": [
+      "ac65d74597a1d491a319475a"
+    ],
+    "accepted_question": "《电信基础设施维护规程》第4.5.0.5 f）中，《光缆线路维护方案》的“四新”技术指哪四项？",
+    "accepted_reference_answer": "新技术、新材料、新工艺、新设备。",
+    "accepted_evidence_chunk_ids": [
+      "ac65d74597a1d491a319475a"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N13",
+    "parent_candidate_id": "p4-candidate-sha256:cfe761369558854150b13d1a16342db701b61abe59a4acf13e1a0f03736e03f5",
+    "accepted_proposal_id": "p4-proposal-sha256:c2d66637972892c7afa1b4c4b61339c4f5b28a7235222d68f2903142c71164dd",
+    "gold_case_id": "gold-holdout-v1-sha256:69d8a25f6a3b19a29fe65f3ab7d8e048306b2873a57c12623a6ce1d12e33aff7",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "《电信基础设施维护规程》第4.8.2.6 d）要求，进行光缆割接操作前与割接完毕离开现场前，分别须取得谁的什么确认？",
+    "original_answer": "割接操作前必须经运营企业网管人员确认，方可割接；割接完毕后必须经运营企业网管人员确认，方可离开现场。",
+    "original_supporting_chunk_ids": [
+      "6f33bafc20e0ad09486add1b"
+    ],
+    "accepted_question": "《电信基础设施维护规程》第4.8.2.6 d）要求，进行光缆割接操作前与割接完毕离开现场前，分别须取得谁的什么确认？",
+    "accepted_reference_answer": "割接操作前必须经运营企业网管人员确认，方可割接；割接完毕后必须经运营企业网管人员确认，方可离开现场。",
+    "accepted_evidence_chunk_ids": [
+      "6f33bafc20e0ad09486add1b"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N14",
+    "parent_candidate_id": "p4-candidate-sha256:1034d2e63b5dee4465460b56a8ad10af6fbae49d314f33815756db7fc2044cee",
+    "accepted_proposal_id": "p4-proposal-sha256:1c8f02290b77a14bca53b6d8b2125aa707dbfb753783d868a61284a9c94b8300",
+    "gold_case_id": "gold-holdout-v1-sha256:97e60e479a03569649f3b6394388fd87120bae5bc26515f1d02985bc9c30b656",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "《电信基础设施维护规程》第6.3.2.1规定，小型局站有线设备与传输线路专业以什么为维护界面？成端以内尾纤、传输设备和光缆成端及以外部分分别由谁负责？",
+    "original_answer": "以局站内ODF架或ODF单元成端为界；成端以内尾纤、传输设备等由本专业（小型局站有线设备）负责；光缆线路成端（含终端盒、法兰盘等）及成端以外的传输线路部分由线路专业负责。",
+    "original_supporting_chunk_ids": [
+      "6bf394ec756103a82e9f6e9c"
+    ],
+    "accepted_question": "《电信基础设施维护规程》第6.3.2.1规定，小型局站有线设备与传输线路专业以什么为维护界面？成端以内尾纤、传输设备和光缆成端及以外部分分别由谁负责？",
+    "accepted_reference_answer": "以局站内ODF架或ODF单元成端为界；成端以内尾纤、传输设备等由本专业（小型局站有线设备）负责；光缆线路成端（含终端盒、法兰盘等）及成端以外的传输线路部分由线路专业负责。",
+    "accepted_evidence_chunk_ids": [
+      "6bf394ec756103a82e9f6e9c"
+    ],
+    "human_comment": null
+  },
+  {
+    "review_id": "P4-N15",
+    "parent_candidate_id": "p4-candidate-sha256:99a7d854e627e650d9ae0dcefef78d70ec0560c62d8ab52948cd4055b4e19140",
+    "accepted_proposal_id": "p4-proposal-sha256:9dabe3bae6dc2baa0029a6c52b7b15a4fec8b0add1a427671bd3a316411194df",
+    "gold_case_id": "gold-holdout-v1-sha256:41c90cd20af831de71ead32f249c320a542b93e2d0d8994b39fdef8303bcc7ba",
+    "is_revision": false,
+    "changed_retrieval_target": false,
+    "revision_kind": "accepted_original",
+    "original_question": "按《电信基础设施维护规程》第3.35、3.36条，MSTP基于什么平台提供统一网管的多业务接入处理传送？ASON基于什么网络，并引入什么来按需分配资源？",
+    "original_answer": "MSTP基于SDH平台；ASON以光传送网（OTN）为基础，在光传送网中引入控制平面，实现网络资源按需分配。",
+    "original_supporting_chunk_ids": [
+      "258ef2b78ff022814a5dd780"
+    ],
+    "accepted_question": "按《电信基础设施维护规程》第3.35、3.36条，MSTP基于什么平台提供统一网管的多业务接入处理传送？ASON基于什么网络，并引入什么来按需分配资源？",
+    "accepted_reference_answer": "MSTP基于SDH平台；ASON以光传送网（OTN）为基础，在光传送网中引入控制平面，实现网络资源按需分配。",
+    "accepted_evidence_chunk_ids": [
+      "258ef2b78ff022814a5dd780"
+    ],
+    "human_comment": null
+  }
+]

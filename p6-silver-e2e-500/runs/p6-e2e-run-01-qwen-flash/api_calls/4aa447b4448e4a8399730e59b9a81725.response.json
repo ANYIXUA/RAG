@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:52.736137+08:00",
+  "conservative_cost_yuan": 0.0015084,
+  "error": null,
+  "latency_ms": 2957.1389998309314,
+  "list_price_estimate_yuan": 0.0010359000000000002,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出0.71\",\n    \"evidence\": \"WH33118002 小型离网风力发电机组 54.53 34.08 10.22 10.22 0.71\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"小型离网风力发电机组的维护消耗量为0.71台·次。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键数据及场景差异\",\n    \"evidence\": \"在巡检作业中，其消耗量为0.10～0.15台·次，依地区而定。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881729,
+    "id": "chatcmpl-82f835a6-b826-9f33-82d4-88e5cc8a4449",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 315,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3756,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4071
+    }
+  },
+  "usage_known": true
+}

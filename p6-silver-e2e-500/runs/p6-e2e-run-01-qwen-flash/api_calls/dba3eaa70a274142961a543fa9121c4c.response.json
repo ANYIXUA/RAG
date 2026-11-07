@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:43.210828+08:00",
+  "conservative_cost_yuan": 0.00131505,
+  "error": null,
+  "latency_ms": 2368.9865001942962,
+  "list_price_estimate_yuan": 0.00092205,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"成本结构未在上下文明确说明\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"装维服务成本涉及光缆布放与端接等施工环节。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分覆盖但未完整回答成本结构\",\n    \"evidence\": \"成本包含智能组网布线及无线信号检测工作。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"[2] 光纤入户施工及验收规范\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"未虚构信息，基于上下文回应\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_answer\",\n    \"context_limitation\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882080,
+    "id": "chatcmpl-1856cc71-05f0-9885-8c5c-2d4c32b322d7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 262,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3527,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3789
+    }
+  },
+  "usage_known": true
+}

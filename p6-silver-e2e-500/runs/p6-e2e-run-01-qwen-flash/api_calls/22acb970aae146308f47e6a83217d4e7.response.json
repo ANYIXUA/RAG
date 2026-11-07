@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:58.364585+08:00",
+  "conservative_cost_yuan": 0.00070695,
+  "error": null,
+  "latency_ms": 1367.5518000964075,
+  "list_price_estimate_yuan": 0.00054195,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. Wi-Fi 7 光网关的产品名称码为52、53。[1]  \n2. 家庭用户扩展无线覆盖时，应配置Wi-Fi 7光路由设备。[1]  \n3. Wi-Fi 7光路由的产品名称码为62、63。[1]  \n4. 设备编码需在二维码中通过productname字段配置。[2]  \n5. 产品名称码为2位阿拉伯数字，需与规范一致。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880897,
+    "id": "chatcmpl-db041302-0656-94b2-9232-021632990940",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2513,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2623
+    }
+  },
+  "usage_known": true
+}

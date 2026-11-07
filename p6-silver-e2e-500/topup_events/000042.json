@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "be59421eee0f4816b8716246db18db14ae1afabad1ceafbe9264fd6ab79d9abf",
+  "record": {
+    "batch": 21,
+    "candidates": [
+      {
+        "answer": "218.88元",
+        "evidence": [
+          {
+            "excerpt": "WH23127001 安装与调试机房通用空调 壁挂式 218.88 136.80 41.04 41.04 消耗量 1.20 —",
+            "passage_id": "6e5a272af3da496e1040bc69"
+          }
+        ],
+        "question": "壁挂式机房通用空调的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "1.75",
+        "evidence": [
+          {
+            "excerpt": "WH23127002 立式 319.20 199.50 59.85 59.85 1.75 —",
+            "passage_id": "6e5a272af3da496e1040bc69"
+          }
+        ],
+        "question": "立式机房通用空调的消耗量是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "291.84元",
+        "evidence": [
+          {
+            "excerpt": "WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —",
+            "passage_id": "611a9eb6554a2b482561c775"
+          }
+        ],
+        "question": "35m以下角钢塔、三管塔、四管塔的专项维修综合单价是多少元？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

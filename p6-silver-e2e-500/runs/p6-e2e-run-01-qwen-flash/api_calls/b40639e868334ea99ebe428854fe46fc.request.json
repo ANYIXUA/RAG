@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:29.287281+08:00",
+  "input_token_upper_bound": 1166,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0294"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在山区进行天线信号测试和蓄电池容量测试时，分别对应的综合单价是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "b40639e868334ea99ebe428854fe46fc",
+  "reserved_yuan": 0.000583
+}

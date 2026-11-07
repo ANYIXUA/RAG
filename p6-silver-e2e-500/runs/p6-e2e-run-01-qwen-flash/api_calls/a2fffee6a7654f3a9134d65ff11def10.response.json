@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:43.620285+08:00",
+  "conservative_cost_yuan": 0.0007378499999999999,
+  "error": null,
+  "latency_ms": 1228.4580999985337,
+  "list_price_estimate_yuan": 0.00058335,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 控制箱开关频繁跳闸，需由专业人员带电更换空开。[1]  \n2. 更换操作应遵循带电更换熔断器/空开规范流程。[1]  \n3. 严禁非专业人员擅自操作，确保作业安全。[1]  \n4. 建议上报系统派单，由持证人员处理。[1]  \n5. 操作前应确认设备状态并做好防护措施。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881122,
+    "id": "chatcmpl-165e086c-7137-9b2e-9c58-c1af617d2289",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 103,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2859,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2962
+    }
+  },
+  "usage_known": true
+}

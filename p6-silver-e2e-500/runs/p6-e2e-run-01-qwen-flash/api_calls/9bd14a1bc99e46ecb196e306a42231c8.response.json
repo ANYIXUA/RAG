@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:11.450114+08:00",
+  "conservative_cost_yuan": 0.00077505,
+  "error": null,
+  "latency_ms": 1809.5056000165641,
+  "list_price_estimate_yuan": 0.0005800499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 直埋光缆与埋式电力电缆（交流36KV及以上）平行时，最小净距为2米。[1]  \n2. 该数据来源于《电信基础设施维护规程》第345页表D.0.4。[1]  \n3. 平行敷设时需满足此最小净距要求以确保安全。[1]  \n4. 交越时最小净距为0.5米，但本问题关注平行情况。[1]  \n5. 该标准适用于直埋光缆与其他地下管线的间距规范。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881089,
+    "id": "chatcmpl-479decfc-806c-91c5-a93d-349dc3f3553f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 130,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2567,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2697
+    }
+  },
+  "usage_known": true
+}

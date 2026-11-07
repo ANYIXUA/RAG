@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH12027003 山区 110.55 75.00 20.55 15.00 0.43 0.43",
+    "reason": "上下文明确支持山区单价110.55元",
+    "score": 1
+  },
+  "case_id": "p6s-0193",
+  "citation_correctness": {
+    "evidence": "WH12027003 山区 110.55 75.00 20.55 15.00 0.43 0.43",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "注：本条目适用于平原地区；用于丘陵、城区时综合单价按相应子目的1.2 倍计取，用于山区时综合单价按相应子目的1.5 倍计取。",
+    "reason": "涵盖单价、构成及适用条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH12027003 山区 110.55 75.00 20.55 15.00 0.43 0.43",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "aa2a7a88edd64b64bc9af88f92c27e06",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

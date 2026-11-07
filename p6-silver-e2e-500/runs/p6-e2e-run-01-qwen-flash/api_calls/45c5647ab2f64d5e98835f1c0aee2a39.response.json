@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:58.370829+08:00",
+  "conservative_cost_yuan": 0.00079725,
+  "error": null,
+  "latency_ms": 1265.4182999394834,
+  "list_price_estimate_yuan": 0.00060375,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检索上下文未提及智慧家庭设备月费的计算方式。[1][2][3]  \n2. 无法根据现有资料提供月费计算规则或计费逻辑。[1][2][3]  \n3. 建议补充具体业务套餐或资费说明以获取准确信息。[1][2][3]  \n4. 月费可能涉及设备绑定、服务包或云平台订阅，但无明确依据。[3]  \n5. 请转人工客服或查阅官方资费手册获取详细信息。[1][2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881077,
+    "id": "chatcmpl-90a3090c-1715-9b15-947d-4be8ca60105b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 129,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2735,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2864
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:01.724504+08:00",
+  "conservative_cost_yuan": 0.00083055,
+  "error": null,
+  "latency_ms": 1324.2093999870121,
+  "list_price_estimate_yuan": 0.00063105,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 温湿、烟感、水浸监控单元的消耗量为0.50点。[1]  \n2. 该数据来源于表10.3.3.28及表10.4.3.11，均显示相同数值。[2]  \n3. 消耗量单位为“点”，适用于安装调试作业。[1]  \n4. 与动力监控、配电监控单元的1.00点不同，此单元消耗量较低。[1]  \n5. 该信息在多个页面中一致确认，可信度高。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880840,
+    "id": "chatcmpl-eedaeb69-35fb-90ed-97c2-26dd974e8f68",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 133,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2877,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3010
+    }
+  },
+  "usage_known": true
+}

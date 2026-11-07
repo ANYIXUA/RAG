@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:01.910546+08:00",
+  "conservative_cost_yuan": 0.0014616,
+  "error": null,
+  "latency_ms": 2242.382099851966,
+  "list_price_estimate_yuan": 0.0010386,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持修复步骤\",\n    \"evidence\": \"挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"应挖坑并埋设地锚，确保拉线稳固。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖了关键修复步骤\",\n    \"evidence\": \"回填后需夯实，并做中、上把处理。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"若地锚松动，可考虑制作新横木地锚加固。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881979,
+    "id": "chatcmpl-bdbfb5f4-7f70-905d-91f4-aea2878f65b1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 282,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4104,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4386
+    }
+  },
+  "usage_known": true
+}

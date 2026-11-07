@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:18.440527+08:00",
+  "conservative_cost_yuan": 0.0016925999999999998,
+  "error": null,
+  "latency_ms": 3327.256300020963,
+  "list_price_estimate_yuan": 0.0011361,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]明确支持3.91元/工日\",\n    \"evidence\": \"WH11002003 城区 5.76 3.91 1.07 0.78 0.03 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH11002003 城区 5.76 3.91 1.07 0.78 0.03 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖计费依据、项目编码等关键点\",\n    \"evidence\": \"WH11002003 城区 5.76 3.91 1.07 0.78 0.03 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"WH11002003 城区 5.76 3.91 1.07 0.78 0.03 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881815,
+    "id": "chatcmpl-d11b6f30-b6e9-9c62-86c9-7dc4f1567ebf",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 371,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3864,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4235
+    }
+  },
+  "usage_known": true
+}

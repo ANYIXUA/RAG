@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "检查沿线塔杆以及附属设施、电缆、标牌标识，清理线路杂物等。",
+    "reason": "回答与上下文一致，覆盖关键操作点。",
+    "score": 1
+  },
+  "case_id": "p6s-0385",
+  "citation_correctness": {
+    "evidence": "检查导线；检查绝缘子；检查拉线撑杆；检查接地装置；检查标志；检查清理线路沿线环境；做好巡查记录；",
+    "reason": "引用编号与上下文来源匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检查沿线塔杆以及附属设施、电缆、标牌标识，清理线路杂物等。",
+    "reason": "涵盖巡检核心步骤，无遗漏必要条件。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查导线；检查绝缘子；检查拉线撑杆；检查接地装置；检查标志；检查清理线路沿线环境；做好巡查记录；",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [
+    "correct_citation",
+    "complete_coverage",
+    "faithful_facts"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ec9557441c824eec928e7b5c8f840a8f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

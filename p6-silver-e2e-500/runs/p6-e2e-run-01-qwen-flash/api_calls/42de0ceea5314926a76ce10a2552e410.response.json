@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:16.783206+08:00",
+  "conservative_cost_yuan": 0.00065655,
+  "error": null,
+  "latency_ms": 923.4603000804782,
+  "list_price_estimate_yuan": 0.00053955,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH33121 更换单体电池的容量门槛为300Ah以下。[2]  \n2. 该作业项目适用于容量低于300Ah的单体电池更换。[2]  \n3. 超过300Ah的电池需按其他标准执行，未在本项中涵盖。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880855,
+    "id": "chatcmpl-edfb9369-f90e-9919-b200-d324fbb1aa58",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 78,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2817,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2895
+    }
+  },
+  "usage_known": true
+}

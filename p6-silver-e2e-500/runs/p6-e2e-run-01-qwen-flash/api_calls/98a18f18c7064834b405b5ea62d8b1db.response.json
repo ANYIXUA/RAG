@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:11.725801+08:00",
+  "conservative_cost_yuan": 0.00131775,
+  "error": null,
+  "latency_ms": 2624.4961998891085,
+  "list_price_estimate_yuan": 0.00092025,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答基于上下文，聚焦运维职责范围\",\n    \"evidence\": \"运维团队如何优化智慧家庭产品的使用体验？[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"能对无线局域网信号进行检测[3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖网络、组网、故障处理等关键点\",\n    \"evidence\": \"掌握常见智能家居故障处理方法[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"采用常用协议完成智能终端联调适配[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"context_relevance\",\n    \"citation_accuracy\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882169,
+    "id": "chatcmpl-b3ada690-24b3-9055-afd5-711ad258d1ef",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 265,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3485,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3750
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:38.984380+08:00",
+  "conservative_cost_yuan": 0.0007625999999999999,
+  "error": null,
+  "latency_ms": 1316.7184998746961,
+  "list_price_estimate_yuan": 0.0005960999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 基站主设备巡检的计量单位为“三台·次”。[1]  \n2. 以每三台设备为基本计量单位，不足三台按三台计算。[1]  \n3. 计量单位在规程中明确标注为“三台²次”。[3]  \n4. 巡检工作量按实际发生次数和维护周期计算。[3]  \n5. 不同地区（市区、平原、山区）执行相同计量标准。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881177,
+    "id": "chatcmpl-bd5ae1a2-423b-9c56-bbf3-f55c6f88a319",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2864,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2975
+    }
+  },
+  "usage_known": true
+}

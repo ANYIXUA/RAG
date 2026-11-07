@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:08.826935+08:00",
+  "conservative_cost_yuan": 0.00155205,
+  "error": null,
+  "latency_ms": 2893.2076001074165,
+  "list_price_estimate_yuan": 0.00104955,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持300Ah以下\",\n    \"evidence\": \"WH33121 更换单体电池 300Ah以下 组(块) 按实际发生 的维护数量 计算\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应原文支持\",\n    \"evidence\": \"WH33121 更换单体电池 300Ah以下 组(块) 按实际发生 的维护数量 计算\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖容量门槛要求\",\n    \"evidence\": \"WH33121 更换单体电池 300Ah以下 组(块) 按实际发生 的维护数量 计算\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"WH33121 更换单体电池 300Ah以下 组(块) 按实际发生 的维护数量 计算\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881685,
+    "id": "chatcmpl-e8fe23fa-6025-9224-afb7-52cdde0819ff",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 335,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3647,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3982
+    }
+  },
+  "usage_known": true
+}

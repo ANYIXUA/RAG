@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0499",
+  "citation_correctness": {
+    "evidence": "和家亲APP接收平台推送的家庭组网终端上报信息",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "推荐使用和家亲APP进行统一控制与状态监控",
+    "reason": "覆盖设备选择核心要素",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "支持使用WPS或DPP功能",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e246443657df49939ec5e588788c47ec",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "非拒答场景，无需评估",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

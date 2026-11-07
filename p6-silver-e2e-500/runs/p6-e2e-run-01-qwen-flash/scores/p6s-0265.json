@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0265",
+  "citation_correctness": {
+    "evidence": "服务能力中的沟通与维护技巧进行综合评估。[2]",
+    "reason": "引用编号不对应实际内容",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "评估满意度需结合服务交付技巧与沟通技巧表现。[3]",
+    "reason": "未说明无法评估，遗漏关键信息",
+    "score": 0
+  },
+  "confidence": "low",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "通过用户对智能家居场景设置的反馈判断满意度。[3]",
+    "reason": "部分事实无上下文支持",
+    "score": 0.5
+  },
+  "flags": [
+    "unanswerable_question",
+    "overconfident_response"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "138d8cf7d76c40498956e4dc7eb30cf2",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未拒答且未提示转人工",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

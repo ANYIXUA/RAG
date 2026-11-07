@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:51.866114+08:00",
+  "conservative_cost_yuan": 0.00127305,
+  "error": null,
+  "latency_ms": 2495.213200105354,
+  "list_price_estimate_yuan": 0.00090705,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确列出步骤\",\n    \"evidence\": \"工作内容：安装、固定、清理现场等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"安装时应确保缆架位置准确，符合设计要求。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要步骤\",\n    \"evidence\": \"安装、固定、清理现场等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"检查预留缆架与光缆的连接是否稳固。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881849,
+    "id": "chatcmpl-435c95bb-89ed-95e4-8c46-eddcf9a31f1e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 244,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3607,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3851
+    }
+  },
+  "usage_known": true
+}

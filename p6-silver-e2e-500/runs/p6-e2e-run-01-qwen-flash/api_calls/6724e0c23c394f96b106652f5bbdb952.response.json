@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:41.429359+08:00",
+  "conservative_cost_yuan": 0.00134055,
+  "error": null,
+  "latency_ms": 2705.6920998729765,
+  "list_price_estimate_yuan": 0.00093255,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题属未确认unanswerable，上下文可部分支持\",\n    \"evidence\": \"运维团队如何提升智慧家庭用户的满意度？\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文且无编造\",\n    \"evidence\": \"能进行智能家居场景设置 [2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏用户满意度核心维度如响应速度\",\n    \"evidence\": \"服务过程中需展示专业服务礼仪与沟通技巧。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"能进行无线局域网信号检测与覆盖优化。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"非拒答场景，无需评估\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_support\",\n    \"minor_completeness_gap\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882078,
+    "id": "chatcmpl-a5ea6d20-d95d-9af4-9422-8f46cfa984d2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 272,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3497,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3769
+    }
+  },
+  "usage_known": true
+}

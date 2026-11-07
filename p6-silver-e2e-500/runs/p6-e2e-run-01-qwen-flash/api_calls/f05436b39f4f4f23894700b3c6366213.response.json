@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:55.477533+08:00",
+  "conservative_cost_yuan": 0.0007783499999999999,
+  "error": null,
+  "latency_ms": 1234.5847999677062,
+  "list_price_estimate_yuan": 0.0006253499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 路灯型高度1800mm以上美化天线综合单价为820.80元。[1]  \n2. 人工费为513.00元。[1]  \n3. 企业管理费为153.90元。[1]  \n4. 该数据来源于《电信基础设施维护规程》第274页。[1]  \n5. 无其他相关费用明细。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881074,
+    "id": "chatcmpl-aa40bda7-7a61-94be-90bf-03bff0e7c59f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3149,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3251
+    }
+  },
+  "usage_known": true
+}

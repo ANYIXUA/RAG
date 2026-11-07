@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "《Multi-AP_Specification》规范实现EasyMeshTM 要求的网络拓扑、漫游、频段切换、角 色选择等功能",
+    "reason": "协议与功能均匹配上下文",
+    "score": 1
+  },
+  "case_id": "p6s-0263",
+  "citation_correctness": {
+    "evidence": "支持Wi-Fi 7 协议的全光组网终端，使用Wi-Fi 的Backhaul Link 宜使用双频MLO 实现回传",
+    "reason": "引用编号与上下文来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "回传链路优先使用光纤，次选5GHz频段Wi-Fi",
+    "reason": "涵盖协议、角色、配网、链路等关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "光网关承担Controller 角色，用于家庭Wi-Fi 网络的覆盖AP 和回传链路的控制逻辑 策略",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "427d3d1ae38744f8884db2d6b7d52687",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

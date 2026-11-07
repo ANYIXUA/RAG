@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:47.272830+08:00",
+  "conservative_cost_yuan": 0.0004767,
+  "error": null,
+  "latency_ms": 544.6617000270635,
+  "list_price_estimate_yuan": 0.0004437,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 三阶互调仪的台数为20292台。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880826,
+    "id": "chatcmpl-9aa1a8b6-c0cf-9427-983a-b9ca265e9b68",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 22,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2738,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2760
+    }
+  },
+  "usage_known": true
+}

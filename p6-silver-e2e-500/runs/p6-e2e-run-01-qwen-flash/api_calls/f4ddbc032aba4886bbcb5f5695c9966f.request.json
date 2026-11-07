@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:13:32.751861+08:00",
+  "input_token_upper_bound": 1192,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0009"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "室外、铁塔安装无线局域网接入点（AP）设备的综合单价是多少元？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "f4ddbc032aba4886bbcb5f5695c9966f",
+  "reserved_yuan": 0.000596
+}

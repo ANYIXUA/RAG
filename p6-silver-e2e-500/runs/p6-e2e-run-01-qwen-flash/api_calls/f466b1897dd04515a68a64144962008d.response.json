@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:14.617177+08:00",
+  "conservative_cost_yuan": 0.0013515,
+  "error": null,
+  "latency_ms": 2240.7863999251276,
+  "list_price_estimate_yuan": 0.000939,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确拒答且理由合理\",\n    \"evidence\": \"上下文未提供不同品牌装维服务响应速度的对比数据。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"所有结论均基于检索内容，无编造\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖拒答必要信息\",\n    \"evidence\": \"包含无法回答、建议转人工等要点\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"[1]对应第12页内容\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"正确拒答并提示补充\",\n    \"evidence\": \"建议补充具体品牌及响应时效数据，或转人工咨询。[2]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"correct_rejection\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882172,
+    "id": "chatcmpl-f391e626-61b9-9a98-86c7-90de800396be",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 275,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3510,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3785
+    }
+  },
+  "usage_known": true
+}

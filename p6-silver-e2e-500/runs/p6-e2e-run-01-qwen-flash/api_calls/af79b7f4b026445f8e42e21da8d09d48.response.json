@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:33.505701+08:00",
+  "conservative_cost_yuan": 0.0006890999999999999,
+  "error": null,
+  "latency_ms": 1207.9865001142025,
+  "list_price_estimate_yuan": 0.0005210999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH12004001项目技工人工费为54.19元。[1]  \n2. 该费用对应安装拉线隔电子工作内容。[1]  \n3. 综合单价中技工部分按工日单价114.00元计取。[1]  \n4. 消耗量为0.38工日。[1]  \n5. 人工费包含在综合单价79.87元内。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880932,
+    "id": "chatcmpl-84f4cf94-4dad-9f32-95a1-5f0c094ceafb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2354,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2466
+    }
+  },
+  "usage_known": true
+}

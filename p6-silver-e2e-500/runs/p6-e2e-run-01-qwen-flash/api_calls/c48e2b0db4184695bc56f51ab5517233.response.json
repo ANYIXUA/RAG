@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:56.726464+08:00",
+  "conservative_cost_yuan": 0.0012714,
+  "error": null,
+  "latency_ms": 2336.297999834642,
+  "list_price_estimate_yuan": 0.0008574,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"未提及振动监测仪，正确拒答\",\n    \"evidence\": \"检索结果中未提及“振动监测仪”的规格型号。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"表格中列出的仪表均不包含“振动监测仪”。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需条件\",\n    \"evidence\": \"无相关文档明确说明该仪器的规格型号。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"建议补充具体设备信息或转人工查询。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"应拒答时明确拒答并建议转人工\",\n    \"evidence\": \"当前知识库无法提供该问题的答案。[1]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882034,
+    "id": "chatcmpl-17e0650e-dfc5-98b6-942c-647f2bfa6bbb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 276,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2956,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3232
+    }
+  },
+  "usage_known": true
+}

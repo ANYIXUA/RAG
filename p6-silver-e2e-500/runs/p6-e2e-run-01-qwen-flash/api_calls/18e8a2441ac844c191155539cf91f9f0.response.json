@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:08.171692+08:00",
+  "conservative_cost_yuan": 0.00051075,
+  "error": null,
+  "latency_ms": 1075.4808001220226,
+  "list_price_estimate_yuan": 0.00037275,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 宽带安装和维护操作流程位于第7章第7.4节。[1]  \n2. 该章节标题为“宽带安装和维护操作流程”。[1]  \n3. 具体内容在文档第72页。[1]  \n4. 本规程属于《电信基础设施维护规程》。[1]  \n5. 相关章节编号为7.4。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880967,
+    "id": "chatcmpl-fac92885-ec69-9f0f-9b8f-b6a8dd0f0e7f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 92,
+      "completion_tokens_details": null,
+      "prompt_tokens": 1565,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 1657
+    }
+  },
+  "usage_known": true
+}

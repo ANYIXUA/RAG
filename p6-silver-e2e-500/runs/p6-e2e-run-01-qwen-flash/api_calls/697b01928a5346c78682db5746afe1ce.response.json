@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:53.917106+08:00",
+  "conservative_cost_yuan": 0.0007250999999999999,
+  "error": null,
+  "latency_ms": 1163.4050998836756,
+  "list_price_estimate_yuan": 0.0005736,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 交流配电设备输入电压检查属于季度维护内容。[1]  \n2. 整流模块输出电流不平衡度测试属于季度维护内容。[1]  \n3. 两项指标均在“季度”维护项目中明确列出。[1]  \n4. 检查要求为整流模块间输出电流不平衡度低于±5%。[1]  \n5. 两者均需在季度维护时核对并记录。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881072,
+    "id": "chatcmpl-56468d2a-e5c1-9ec8-8565-43fdaf0991da",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2814,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2915
+    }
+  },
+  "usage_known": true
+}

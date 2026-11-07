@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:39.184504+08:00",
+  "conservative_cost_yuan": 0.0013775999999999999,
+  "error": null,
+  "latency_ms": 2555.5511999409646,
+  "list_price_estimate_yuan": 0.0009621,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文支持信号波动原因及优化建议\",\n    \"evidence\": \"Wi-Fi信号在客厅与卧室间波动，可能因设备间存在干扰或覆盖不均。[3]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"可通过检测无线局域网信号强度优化布局。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖干扰、检测、布局调整等关键点\",\n    \"evidence\": \"请结合现场环境进行信号检测并调整设备位置。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持内容\",\n    \"evidence\": \"多用户并发时延指标场景的用户数为12个。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882136,
+    "id": "chatcmpl-bb7c5fb7-993d-9ef4-a075-2972e2a43010",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 277,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3644,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3921
+    }
+  },
+  "usage_known": true
+}

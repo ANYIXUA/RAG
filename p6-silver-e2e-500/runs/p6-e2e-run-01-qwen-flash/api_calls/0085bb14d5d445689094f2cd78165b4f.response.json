@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:28.645652+08:00",
+  "conservative_cost_yuan": 0.000741,
+  "error": null,
+  "latency_ms": 1430.0442999228835,
+  "list_price_estimate_yuan": 0.000594,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 机械成端综合单价中人工费为23.52元。[1]  \n2. 企业管理费为6.45元。[1]  \n3. 企业管理费按人工费的27.4%计算。[4]  \n4. 综合单价包含人工费、企业管理费和利润。[4]  \n5. 人工费单价技工为114元/工日。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880927,
+    "id": "chatcmpl-b3139a63-2fbe-9b05-b2fb-9b4722bbd6b1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 98,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2980,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3078
+    }
+  },
+  "usage_known": true
+}

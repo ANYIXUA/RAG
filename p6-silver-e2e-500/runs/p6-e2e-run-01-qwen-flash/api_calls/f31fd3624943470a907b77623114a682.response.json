@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:51.236603+08:00",
+  "conservative_cost_yuan": 0.0008198999999999999,
+  "error": null,
+  "latency_ms": 1511.372199980542,
+  "list_price_estimate_yuan": 0.0006099,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 基站维护总费用包括分项作业费、材料费、机械仪表费等八部分。[1]  \n2. 措施项目费涵盖文明生产、车辆使用、特殊地区增加费等，按费率或实计列。[2]  \n3. 人工费单价为技工114元/工日，普工61元/工日，含企业管理费与利润。[3]  \n4. 特殊地区维护需加收20%费率的特殊地区增加费。[2]  \n5. 规费包括社保、公积金、意外险等政府规定费用。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881009,
+    "id": "chatcmpl-3266268e-3339-9f6d-bba3-94f928fac6ee",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 140,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2666,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2806
+    }
+  },
+  "usage_known": true
+}

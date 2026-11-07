@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:39.486280+08:00",
+  "conservative_cost_yuan": 0.00070875,
+  "error": null,
+  "latency_ms": 1188.96729988046,
+  "list_price_estimate_yuan": 0.00055725,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护企业应在规定时限内完成基站故障处理和抢修。[1]  \n2. 接到告警后，须在规定时间内赶到现场处理。[1]  \n3. 特殊情况需申告延长时限，并按时提交处理报告。[1]  \n4. 多故障时遵循“先重点、后一般”原则。[1]  \n5. 抢修后应验证网络质量并上报报告。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880998,
+    "id": "chatcmpl-ce8a3302-ccf1-9ad2-9539-3753aac7e4f2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2705,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2806
+    }
+  },
+  "usage_known": true
+}

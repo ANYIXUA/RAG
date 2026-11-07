@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "半年 基础回弹均值必须符合设计要求。",
+    "reason": "上下文明确支持半年和特殊天气后执行",
+    "score": 1
+  },
+  "case_id": "p6s-0500",
+  "citation_correctness": {
+    "evidence": "[2] 塔体构件齐全，各部件连接牢固、无锈蚀。",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "特殊天气后应对塔身轴线、基础及所有节点作全面观测检查。",
+    "reason": "涵盖所有条件与执行场景",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "塔体构件齐全，各部件连接牢固、无锈蚀。",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "multi_condition_comprehensive",
+    "correct_citation",
+    "explicit_timing"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3ab2170bc0ac41929d7f8ef5e396c082",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

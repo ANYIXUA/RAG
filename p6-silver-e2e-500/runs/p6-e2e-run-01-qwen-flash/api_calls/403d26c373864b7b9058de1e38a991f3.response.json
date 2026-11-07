@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:57.749541+08:00",
+  "conservative_cost_yuan": 0.0006792,
+  "error": null,
+  "latency_ms": 932.5241001788527,
+  "list_price_estimate_yuan": 0.0005532,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 夜间维护作业增加费的费率为2.3%。[1]  \n2. 该费率基于人工费合计计算。[2]  \n3. 费率在多个页面表格中一致确认。[3]  \n4. 项目编码为CS00006。[1]  \n5. 属于措施项目费组成部分。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881196,
+    "id": "chatcmpl-98198a81-c5d3-9a05-8c0c-e8cdf9315610",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 84,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2848,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2932
+    }
+  },
+  "usage_known": true
+}

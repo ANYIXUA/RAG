@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:58.821153+08:00",
+  "conservative_cost_yuan": 0.0006207000000000001,
+  "error": null,
+  "latency_ms": 855.2674001548439,
+  "list_price_estimate_yuan": 0.0005187000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 投标报价高于招标控制价的应予废标。[3]  \n2. 招标控制价应在发布招标文件时公布，不得上调或下浮。[1]  \n3. 投标人可对未按规定编制的招标控制价提出质疑或投诉。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881137,
+    "id": "chatcmpl-7b903452-45da-918b-b611-d2be7267b2b7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 68,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2778,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2846
+    }
+  },
+  "usage_known": true
+}

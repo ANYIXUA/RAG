@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:27.839207+08:00",
+  "conservative_cost_yuan": 0.0008323499999999999,
+  "error": null,
+  "latency_ms": 1643.863399978727,
+  "list_price_estimate_yuan": 0.0006298499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 基站主设备巡检按三台为计量单位，市区综合单价为18.24元/次。[1]  \n2. 三台设备定期巡检费用约为18.24元每次。[1]  \n3. 若涉及调测或联网调测，费用更高，但非常规巡检范畴。[2]  \n4. 维护费用以“三台·次”为单位计算，不足三台按三台计。[1]  \n5. 仅基于巡检项目，总成本约18.24元/次。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881166,
+    "id": "chatcmpl-d211097d-d60c-9912-a8c9-a1b3212bdc00",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 135,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2849,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2984
+    }
+  },
+  "usage_known": true
+}

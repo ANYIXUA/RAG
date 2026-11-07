@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:13.410723+08:00",
+  "conservative_cost_yuan": 0.0012885,
+  "error": null,
+  "latency_ms": 3139.1692999750376,
+  "list_price_estimate_yuan": 0.0008775,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖核心知识点，与上下文一致。\",\n    \"evidence\": \"全屋智能专业知识应包括下列内容：a）全屋智能综合布线知识；\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持。\",\n    \"evidence\": \"家庭网络、智能组网及智能家居控制技术基础知识；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所需全部关键点。\",\n    \"evidence\": \"智能单品、智能家居（本地控制）、智能家居（网关及云平台控制）及场景设置与操作知识；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配。\",\n    \"evidence\": \"[1] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882110,
+    "id": "chatcmpl-7a60f710-a28b-9697-8f14-e87ff35a25e9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 274,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3110,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3384
+    }
+  },
+  "usage_known": true
+}

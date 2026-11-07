@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:40.011308+08:00",
+  "conservative_cost_yuan": 0.00177975,
+  "error": null,
+  "latency_ms": 3236.5703999530524,
+  "list_price_estimate_yuan": 0.00119325,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致\",\n    \"evidence\": \"WH41108001 布放钉固式蝶形引入光缆 热熔成端 20.14 13.66 3.74 2.73\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH41108001 布放钉固式蝶形引入光缆 热熔成端 20.14 13.66 3.74 2.73\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要信息\",\n    \"evidence\": \"WH41108001 布放钉固式蝶形引入光缆 热熔成端 20.14 13.66 3.74 2.73\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"WH41108001 布放钉固式蝶形引入光缆 热熔成端 20.14 13.66 3.74 2.73\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881776,
+    "id": "chatcmpl-067973ad-666b-9eb7-839b-abcafc305ffc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 391,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4045,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4436
+    }
+  },
+  "usage_known": true
+}

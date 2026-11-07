@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:53.450642+08:00",
+  "conservative_cost_yuan": 0.0007558499999999999,
+  "error": null,
+  "latency_ms": 1465.0011998601258,
+  "list_price_estimate_yuan": 0.0005878499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 96芯以上割接的利润为817.21元/次。[1]  \n2. 该利润包含在综合单价6022.86元中。[1]  \n3. 综合单价由人工费、企业管理费及利润构成。[1]  \n4. 项目编码为WH14002004，计量单位为头·次。[1]  \n5. 利润依据维护分项作业标准确定。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880832,
+    "id": "chatcmpl-0ce70b4f-9181-9e8b-93a1-3ee06d74e760",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2799,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2911
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH34102001 故障抢修 182.40 114.00 34.20 34.20 消耗量 114.00 —",
+    "reason": "上下文明确支持182.40元",
+    "score": 1
+  },
+  "case_id": "p6s-0084",
+  "citation_correctness": {
+    "evidence": "WH34102001 故障抢修 182.40 114.00 34.20 34.20 消耗量 114.00 —",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH34102001 故障抢修 182.40 114.00 34.20 34.20 消耗量 114.00 —",
+    "reason": "完整覆盖问题所需信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH34102001 故障抢修 182.40 114.00 34.20 34.20 消耗量 114.00 —",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "63c3f7ff616a4e1d9ab882029b7a30c2",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

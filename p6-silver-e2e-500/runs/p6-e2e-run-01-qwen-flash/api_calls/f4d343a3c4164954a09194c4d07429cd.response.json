@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:25.820515+08:00",
+  "conservative_cost_yuan": 0.0006975,
+  "error": null,
+  "latency_ms": 1117.2670000232756,
+  "list_price_estimate_yuan": 0.000549,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装吊线保护装置时需安装吊线绝缘保护套管。[1]  \n2. 需进行绑扎固定操作以确保装置稳固。[2]  \n3. 工作内容包括安装保护装置及后续绑扎。[4]  \n4. 旧套管需先拆除，再安装新保护套管。[1]  \n5. 具体部件为吊线绝缘保护套管。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880864,
+    "id": "chatcmpl-c089bbf4-9d36-9e98-93d1-8b35e5d66317",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 99,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2670,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2769
+    }
+  },
+  "usage_known": true
+}

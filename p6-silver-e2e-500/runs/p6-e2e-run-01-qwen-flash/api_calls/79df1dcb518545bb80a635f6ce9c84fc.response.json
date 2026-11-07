@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:23.352545+08:00",
+  "conservative_cost_yuan": 0.0015107999999999999,
+  "error": null,
+  "latency_ms": 2987.9466998390853,
+  "list_price_estimate_yuan": 0.0010653,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未提树叶遮挡处理\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分建议无依据，引用不匹配\",\n    \"evidence\": \"请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键处理步骤\",\n    \"evidence\": \"清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用编号与内容不匹配\",\n    \"evidence\": \"请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0.5,\n    \"reason\": \"未明确拒答且提示补充\",\n    \"evidence\": \"检索内容未明确提及“树叶遮挡”的处理办法\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"partial_citation\",\n    \"unverified_recommendation\",\n    \"missing_direct_evidence\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882060,
+    "id": "chatcmpl-6b0b9460-d9db-951c-b0f9-c911872a3989",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 297,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4132,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4429
+    }
+  },
+  "usage_known": true
+}

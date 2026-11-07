@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:35.776671+08:00",
+  "conservative_cost_yuan": 0.0012945,
+  "error": null,
+  "latency_ms": 2649.4223999325186,
+  "list_price_estimate_yuan": 0.0009135,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确指出6.4章节\",\n    \"evidence\": \"6.4 小型局站有线设备维护项目接收\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"6.4 小型局站有线设备维护项目接收\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题核心信息\",\n    \"evidence\": \"6.4 小型局站有线设备维护项目接收\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]对应实际来源\",\n    \"evidence\": \"6.4 小型局站有线设备维护项目接收\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881833,
+    "id": "chatcmpl-e7b0f98f-9b66-9c73-8d0d-53914659a3ec",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 254,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3550,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3804
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,48 @@
+{
+  "answer_correctness": {
+    "evidence": "1允许无频光网关产品入库，无须支持Wi-Fi功能",
+    "reason": "上下文明确支持无频光网关无需Wi-Fi功能",
+    "score": 1
+  },
+  "case_id": "p6s-0112",
+  "citation_correctness": {
+    "evidence": "光路由产品编码应为60（Wi-Fi 6）或62/63（Wi-Fi 7）[2]",
+    "reason": "引用编号与上下文来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "多台光路由协同覆盖需支持EasyMesh功能",
+    "reason": "涵盖问题所有条件与要求",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "光路由产品编码应为60（Wi-Fi 6）或62/63（Wi-Fi 7）",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "multi_condition_compliant",
+    "citation_aligned",
+    "complete_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "959fa78eec5a43729e41db93baf49219",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

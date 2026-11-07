@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:08.430605+08:00",
+  "input_token_upper_bound": 1121,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0269"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "用户引入线巡检时，需确认哪些具体项目？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "9a97626aa3a34f32bbf7911f384036e1",
+  "reserved_yuan": 0.0005605
+}

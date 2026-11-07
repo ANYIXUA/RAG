@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:51.272327+08:00",
+  "input_token_upper_bound": 1296,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0318"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "728afb7fef8640a7a256a75fe99eca92",
+  "reserved_yuan": 0.000648
+}

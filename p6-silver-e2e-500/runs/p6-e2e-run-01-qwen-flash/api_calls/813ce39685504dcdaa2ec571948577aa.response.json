@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:53.985715+08:00",
+  "conservative_cost_yuan": 0.0007452,
+  "error": null,
+  "latency_ms": 1387.756200041622,
+  "list_price_estimate_yuan": 0.0005742000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WLAN应支持Open System和Pre-Shared Key两种链路层鉴权方式。[1]  \n2. 应支持WPA-PSK、WPA2-PSK等混合模式鉴权。[1]  \n3. 应支持WPA3及WPA2/WPA3混合模式鉴权。[1]  \n4. 鉴权方式需符合国家无线局域网安全标准。[1]  \n5. 支持MAC认证，包括黑名单与白名单功能。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880952,
+    "id": "chatcmpl-eebc8223-c87c-9781-8804-d4b3ffbd5623",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 114,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2688,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2802
+    }
+  },
+  "usage_known": true
+}

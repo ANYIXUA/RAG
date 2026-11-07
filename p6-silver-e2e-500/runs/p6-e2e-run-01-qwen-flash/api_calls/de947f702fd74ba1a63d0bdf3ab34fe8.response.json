@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:37.071362+08:00",
+  "conservative_cost_yuan": 0.0015343499999999999,
+  "error": null,
+  "latency_ms": 2761.30609982647,
+  "list_price_estimate_yuan": 0.0010588499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持单价数值\",\n    \"evidence\": \"WH22102003 山区 27.36 17.10 5.13 5.13 0.15 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH22103003 山区 508.90 318.06 95.42 95.42 2.79 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需条件\",\n    \"evidence\": \"山区天线信号测试综合单价为27.36元/扇区·次。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881954,
+    "id": "chatcmpl-bca93fe7-1b6a-9135-89fb-ca28c67b41d4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 317,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3889,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4206
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:04.052628+08:00",
+  "conservative_cost_yuan": 0.00073305,
+  "error": null,
+  "latency_ms": 1234.3572000972927,
+  "list_price_estimate_yuan": 0.0005725499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 更换单体电池的项目编码是WH33121。[2]  \n2. 项目编码WH33121对应“更换单体电池”工作内容。[2]  \n3. 该编码适用于300Ah以下蓄电池更换作业。[2]  \n4. 维护计量单位为组（块）。[2]  \n5. 项目编码在《电信基础设施维护规程》第150页有明确标注。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881202,
+    "id": "chatcmpl-8e28fa58-581d-9555-9a56-5ba38757fccd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2747,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2854
+    }
+  },
+  "usage_known": true
+}

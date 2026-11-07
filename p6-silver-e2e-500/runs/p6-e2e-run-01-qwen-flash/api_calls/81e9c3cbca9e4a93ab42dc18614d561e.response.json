@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:26.687606+08:00",
+  "conservative_cost_yuan": 0.0007813499999999999,
+  "error": null,
+  "latency_ms": 1349.4793998543173,
+  "list_price_estimate_yuan": 0.0006208499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 热熔成端人工费为13.66元/十米条。[1]  \n2. 企业管理费为3.74元/十米条。[1]  \n3. 计量单位为十米条，按实计列。[2]  \n4. 该费用适用于布放钉固式蝶形引入光缆场景。[1]  \n5. 项目编码为WH41108001。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880925,
+    "id": "chatcmpl-33e94d6b-c9c1-9554-9ab9-2ccd8c73b894",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3069,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3176
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0339",
+  "citation_correctness": {
+    "evidence": "优先处理重大、重复或高价值用户投诉以提升体验。[2]",
+    "reason": "引用编号与上下文匹配准确",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "完工后需向用户详细说明设备使用及故障申告流程。[2]",
+    "reason": "覆盖关键提升点且无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "安装交付应按规范操作，确保设备安装牢固、美观。[2]",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [
+    "citation_consistent",
+    "content_aligned_with_context"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "de93f6edff7e42e19725918398eca52c",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

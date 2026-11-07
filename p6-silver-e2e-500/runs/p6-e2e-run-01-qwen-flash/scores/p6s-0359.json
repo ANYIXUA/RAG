@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "设备冒烟属严重安全隐患，应立即断电并撤离现场。[4]",
+    "reason": "上下文支持冒烟设备处理流程",
+    "score": 1
+  },
+  "case_id": "p6s-0359",
+  "citation_correctness": {
+    "evidence": "事件发生后应及时上报系统，启动突发事件应急流程。[4]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "优先确保人身安全，迅速报警并通知专业人员处理。[4]",
+    "reason": "覆盖关键应对步骤且无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "切勿用水或普通灭火器扑救电气火灾，需使用干粉或二氧化碳灭火器。[4]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "7e39e01d88ae4f139b194272172cf753",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

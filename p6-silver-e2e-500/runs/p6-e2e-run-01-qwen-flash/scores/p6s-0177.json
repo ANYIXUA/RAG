@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "对于支持11ax的全光组网终端，测试 STA建议通过5GHz频段与光网关或光路由建立关联",
+    "reason": "与上下文一致，正确建议5GHz频段关联",
+    "score": 1
+  },
+  "case_id": "p6s-0177",
+  "citation_correctness": {
+    "evidence": "对于支持11ax的全光组网终端，测试 STA建议通过5GHz频段与光网关或光路由建立关联",
+    "reason": "引用编号[1]准确对应来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "光网关和光路由间Wi-Fi信号相互可见，且信号强度为-60dBm±2dBm",
+    "reason": "遗漏部分关键条件如信号强度要求",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "对于支持11ax的全光组网终端，测试 STA建议通过5GHz频段与光网关或光路由建立关联",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "f215590f6e3a46899fdab18d90125f1a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

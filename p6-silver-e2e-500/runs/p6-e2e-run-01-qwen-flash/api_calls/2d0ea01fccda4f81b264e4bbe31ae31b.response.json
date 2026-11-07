@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:38.739461+08:00",
+  "conservative_cost_yuan": 0.0014021999999999997,
+  "error": null,
+  "latency_ms": 2529.101099818945,
+  "list_price_estimate_yuan": 0.0009881999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0242计价方式无直接对比\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"8.2.1.2 工作量清单应采用综合单价计价。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏计价方式一致的核心判断\",\n    \"evidence\": \"两者均需在《计价表》中列明编号、名称、规格、单位、数量及单价。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"8.2.1.2 工作量清单应采用综合单价计价。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881896,
+    "id": "chatcmpl-1aa21fba-b2b6-974f-bf3b-f5013c8acab9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 276,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3828,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4104
+    }
+  },
+  "usage_known": true
+}

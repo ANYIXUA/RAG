@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0236",
+  "citation_correctness": {
+    "evidence": "优先匹配智能家居场景设置与联动需求。[3]",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "应综合考虑光纤到户、无线局域网与物联网接入能力。[2]",
+    "reason": "未涵盖价格/用户需求等关键因素",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "智能组网及家庭总线技术知识[3]",
+    "reason": "每项事实均来自上下文引用",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "overconfident_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "1bdb60911c654d6a84efaefe2b100783",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未拒答，应明确表示无法回答",
+    "score": 0
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

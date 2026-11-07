@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "1.定位 2.装固定物、检验 3.布放光缆 4.光缆成端 5.光缆测试",
+    "reason": "上下文支持成端操作规范",
+    "score": 1
+  },
+  "case_id": "p6s-0093",
+  "citation_correctness": {
+    "evidence": "操作前需完成定位与固定物安装。[1]",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "成端后应固定牢固，防止松动或拉扯。[1]",
+    "reason": "覆盖关键操作步骤且无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "盘留时需保证弯曲半径不小于15mm，避免损伤光纤。[1]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "eef728e25b8c434591d1b3c67eab9bb3",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

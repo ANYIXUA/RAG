@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:36.954384+08:00",
+  "conservative_cost_yuan": 0.0012087,
+  "error": null,
+  "latency_ms": 2600.489200092852,
+  "list_price_estimate_yuan": 0.0007812,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确指出7.4节为操作流程章节\",\n    \"evidence\": \"7.4 宽带安装和维护操作流程 ........................................................... 72\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文[1]内容\",\n    \"evidence\": \"7.4 宽带安装和维护操作流程 ........................................................... 72\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖章节位置、标题、页码与文档来源\",\n    \"evidence\": \"7.4 宽带安装和维护操作流程 ........................................................... 72\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用[1]均对应实际上下文片段\",\n    \"evidence\": \"7.4 宽带安装和维护操作流程 ........................................................... 72\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881834,
+    "id": "chatcmpl-2aad9646-9cf2-928d-a0cf-92367e010968",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 285,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2358,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2643
+    }
+  },
+  "usage_known": true
+}

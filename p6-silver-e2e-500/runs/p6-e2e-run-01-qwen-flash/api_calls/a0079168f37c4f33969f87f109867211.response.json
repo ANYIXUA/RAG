@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:45.587823+08:00",
+  "conservative_cost_yuan": 0.00146325,
+  "error": null,
+  "latency_ms": 2611.0610999166965,
+  "list_price_estimate_yuan": 0.00100125,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，覆盖关键流程。\",\n    \"evidence\": \"维护人员应迅速赶往突发事件现场，立即对现场进行处理并判断该事件为一般突发事件或重大突发事件。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"一般突发事件，维护企业应现场妥善处理，恢复并确保基站正常安全运行，并及时通报处理过程及结果。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖从到场到反馈全流程关键步骤。\",\n    \"evidence\": \"实施处理 填写《应急事件处理表》 向运营管理企业反馈处理结果 处理结束\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持所述内容。\",\n    \"evidence\": \"维护人员应迅速赶往突发事件现场，立即对现场进行处理并判断该事件为一般突发事件或重大突发事件。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882023,
+    "id": "chatcmpl-63a85f2c-f118-9f92-8f12-0c9c2c09e43d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 308,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3595,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3903
+    }
+  },
+  "usage_known": true
+}

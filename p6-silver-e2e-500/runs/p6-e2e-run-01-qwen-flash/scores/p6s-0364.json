@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0364",
+  "citation_correctness": {
+    "evidence": "[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "跨品牌协同属其他产品线范围",
+    "reason": "未说明跨品牌协同局限性",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "光网关应承担Controller角色，用于家庭Wi-Fi网络的覆盖和回传链路的控制逻辑策略",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "overconfident_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "31eddf4e69cf4c3fb7e794956f9fc50f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "应拒答但未拒答",
+    "score": 0
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

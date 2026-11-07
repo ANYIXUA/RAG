@@ -1,0 +1,29 @@
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/mmarco-mMiniLMv2-L12-H384-v1'.
+
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]
+Loading weights:  35%|��������      | 70/201 [00:00<00:00, 686.43it/s]
+Loading weights: 100%|��������������������| 201/201 [00:00<00:00, 1513.66it/s]
+[transformers] Token indices sequence length is longer than the specified maximum sequence length for this model (602 > 512). Running this sequence through the model will result in indexing errors
+{
+  "before": {
+    "cases": 22,
+    "degraded": [
+      "B06",
+      "B07",
+      "B14",
+      "B15",
+      "B22"
+    ],
+    "truncated_pairs": 146
+  },
+  "fixed": {
+    "cases": 22,
+    "degraded": [
+      "B07",
+      "B14",
+      "B15",
+      "B22"
+    ],
+    "truncated_pairs": 146
+  }
+}

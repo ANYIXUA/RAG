@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0338",
+  "citation_correctness": {
+    "evidence": "掌握智能组网方案设计及配置方法[3]",
+    "reason": "引用编号与上下文来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "能对家居智能组网进行设计",
+    "reason": "覆盖问题所需核心条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "熟悉有线与无线系统在家庭总线中的拓展应用",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "0cfbca0f255d4365b3c6eae3f3e96c1f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "非拒答场景，无需评估",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

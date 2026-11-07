@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH12019001 安装电杆地线 拉线式 15.53 10.53 2.89 2.11 消耗量 0.09 _",
+    "reason": "上下文明确支持人工费数值",
+    "score": 1
+  },
+  "case_id": "p6s-0419",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与上下文来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "拉线式安装电杆地线人工费为10.53元/条。[2]",
+    "reason": "涵盖问题所有条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH12020001 更换电杆地线 拉线式 14.79 10.03 2.75 2.01 消耗量 0.09 _",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "d5ae99c0d0dd437f8efcca91598360ef",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

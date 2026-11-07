@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:27.976698+08:00",
+  "conservative_cost_yuan": 0.0014623499999999998,
+  "error": null,
+  "latency_ms": 2510.0513000506908,
+  "list_price_estimate_yuan": 0.00101535,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文一致，步骤完整。\",\n    \"evidence\": \"1.开箱检验。2.清理搬运。3.安装加固。4.通电调测。5.清理现场等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持。\",\n    \"evidence\": \"1.开箱检验。2.清理搬运。3.安装加固。4.通电调测。5.清理现场等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有必要步骤。\",\n    \"evidence\": \"1.开箱检验。2.清理搬运。3.安装加固。4.通电调测。5.清理现场等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881765,
+    "id": "chatcmpl-3010a078-a347-9055-9302-ebc1a7a65acb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 298,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3789,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4087
+    }
+  },
+  "usage_known": true
+}

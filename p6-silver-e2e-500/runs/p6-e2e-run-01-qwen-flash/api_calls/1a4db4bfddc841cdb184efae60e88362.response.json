@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:42.260442+08:00",
+  "conservative_cost_yuan": 0.0009306,
+  "error": null,
+  "latency_ms": 2190.98319998011,
+  "list_price_estimate_yuan": 0.0007040999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 智慧灯杆（视频监控杆）15m以上每增加1m，安装扩装设备板件费用为91.20元。[1]  \n2. 该费用对应项目为“扩装设备板件（块）”，标准单价为91.20元。[1]  \n3. 不同高度区间的计价标准存在差异，需按实际高度分段计算。[2]  \n4. 15m以上每增1m的费用在多个文档中一致为91.20元。[1]  \n5. 费用明细包含人工、材料及管理成本，具体以规程为准。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880940,
+    "id": "chatcmpl-f1a8b843-7d15-95cd-96f5-f3575332085c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 151,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3184,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3335
+    }
+  },
+  "usage_known": true
+}

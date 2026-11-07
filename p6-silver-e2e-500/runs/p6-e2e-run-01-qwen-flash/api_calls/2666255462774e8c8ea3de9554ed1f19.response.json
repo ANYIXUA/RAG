@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:33.111162+08:00",
+  "conservative_cost_yuan": 0.0008262,
+  "error": null,
+  "latency_ms": 1294.2958001513034,
+  "list_price_estimate_yuan": 0.0006507,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 路灯型高度1800mm以上对应的综合单价为820.80元。[1]  \n2. 该价格对应项目编号WH23117019。[1]  \n3. 单价包含安装、材料及人工费用。[1]  \n4. 与1800mm以下型号（456.00元）存在明显差异。[1]  \n5. 信息来源于《电信基础设施维护规程》第274页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880811,
+    "id": "chatcmpl-891b1253-da3e-9076-9038-6e497c40674d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3168,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3285
+    }
+  },
+  "usage_known": true
+}

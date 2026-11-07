@@ -5,11 +5,26 @@ import types
 from unittest.mock import patch
 
 from rag_app.core.models import Chunk, RetrievalResult
-from rag_app.retrieval.rerank import NoopReranker, create_reranker
+from rag_app.retrieval.rerank import CrossEncoderReranker, NoopReranker, create_reranker
 from tests.helpers import production_settings
 
 
 class RerankTest(unittest.TestCase):
+    def test_cross_encoder_pairs_all_candidates_and_sorts_before_truncation(self):
+        from unittest.mock import Mock
+        reranker = object.__new__(CrossEncoderReranker)
+        reranker.model = Mock()
+        reranker.model.predict.return_value = [-3.0, -5.0, -1.0]
+        results = [RetrievalResult(Chunk(cid, 'doc', text), score)
+                   for cid, text, score in [('a', '全文 A', .9), ('b', '全文 B', .8), ('c', '全文 C', .7)]]
+        output = reranker.rerank('原始问题', results, top_k=2)
+        reranker.model.predict.assert_called_once_with([
+            ('原始问题', '全文 A'), ('原始问题', '全文 B'), ('原始问题', '全文 C')])
+        self.assertEqual([r.chunk.id for r in output], ['c', 'a'])
+        self.assertEqual([r.rerank_score for r in output], [-1., -3.])
+        self.assertEqual([r.retrieval_score for r in output], [.7, .9])
+        self.assertEqual([r.score for r in results], [.9, .8, .7])
+
     def test_noop_reranker_keeps_order_and_sets_retrieval_score(self) -> None:
         reranker = NoopReranker()
         results = [

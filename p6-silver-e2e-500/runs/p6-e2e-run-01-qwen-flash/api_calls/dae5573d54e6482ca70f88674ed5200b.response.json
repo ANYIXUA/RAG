@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:36.742529+08:00",
+  "conservative_cost_yuan": 0.0016443,
+  "error": null,
+  "latency_ms": 3761.8143998552114,
+  "list_price_estimate_yuan": 0.0010953,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"公式与上下文一致，涵盖关键项\",\n    \"evidence\": \"7 安全生产费 (1 +表-06 合计 +表-07 合计+ 4+5+6 ) × 1.5%\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"8.4.1.8 规费、安全生产费和销项税额应按国家相关行业主管部门的规定计算\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖计算方式与关键条件\",\n    \"evidence\": \"7 安全生产费 (1 +表-06 合计 +表-07 合计+ 4+5+6 ) × 1.5%\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"7 安全生产费 (1 +表-06 合计 +表-07 合计+ 4+5+6 ) × 1.5%\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"formula_aligned_with_context\",\n    \"complete_calculation_steps\",\n    \"correct_citation_mapping\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881773,
+    "id": "chatcmpl-333fb15b-35f8-999a-b8c6-13220871593b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 366,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3642,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4008
+    }
+  },
+  "usage_known": true
+}

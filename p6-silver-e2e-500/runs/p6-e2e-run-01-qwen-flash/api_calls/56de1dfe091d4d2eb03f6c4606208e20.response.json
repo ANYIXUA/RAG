@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:44.362633+08:00",
+  "conservative_cost_yuan": 0.00081645,
+  "error": null,
+  "latency_ms": 1428.5181001760066,
+  "list_price_estimate_yuan": 0.00063345,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区管道光缆日常检修的消耗量为2.00单位/千米²次。[1]  \n2. 消耗量适用于人孔内抽水、光缆整理、除垢等作业。[1]  \n3. 该数据基于《电信基础设施维护规程》表10.2.1.9。[1]  \n4. 计量单位为千米²次，与维护频次相关。[1]  \n5. 本项不包含直埋或架空光缆的消耗标准。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881182,
+    "id": "chatcmpl-74b48b07-d216-9aaf-8e35-7ead929337de",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 122,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3003,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3125
+    }
+  },
+  "usage_known": true
+}

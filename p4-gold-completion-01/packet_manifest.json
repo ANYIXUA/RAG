@@ -1,0 +1,29 @@
+{
+  "created_at": "2026-11-05 Asia/Shanghai",
+  "status": "pending_human_confirmation",
+  "purpose": "审核材料版本，不代表Holdout已冻结",
+  "formal_benchmark_run": false,
+  "new_approved": 0,
+  "frozen_holdout": 0,
+  "files": {
+    "outputs/p4-gold-completion-01/human_signoff.xlsx": "b47e66da0064e3f9fb49564951add4abb79b3d6013506ff025358c7c79018cf5",
+    "p4-gold-completion-01/b28_b42_signoff_summary.md": "7701b8ae2d762557eb22f681fb90572c8b9588a59a69a03a86362985e19f92ad",
+    "p4-gold-completion-01/b43_b57_independent_review.md": "79298428676236c99ad9e1e81bd6fd2630f417f6e231b7705b4e9ee68d24091e",
+    "p4-gold-completion-01/benchmark_readiness_checklist.md": "73d70053e8faa4ff9574c46e2c21d2c943c91276bca231b34f37a6639cc0ebac",
+    "p4-gold-completion-01/candidate_inventory_72.json": "2f2ef2fc5e80092a03180a9b53e34a81015e29834bb2edfd1981acec5e364dba",
+    "p4-gold-completion-01/candidate_reviews.jsonl": "cdb598a17e8361ececb9262685d687711f8be3bf93b5d8bafaf2b55a31155ca6",
+    "p4-gold-completion-01/development_holdout_split.md": "340a610a0270723f30034f528257a6fa2cc196a4ca6c6cc1e172ebcbef49741f",
+    "p4-gold-completion-01/development_manifest.json": "bc3d48380cce5dc76d9327c1386112d697d9aeecf5cf882ad01a1be124a5f80e",
+    "p4-gold-completion-01/evidence_catalog.jsonl": "3be76b503b24d63f1d4a6603c24aaaeb62ce7c3f3a6bc91c4c28e79e7bdcc7b5",
+    "p4-gold-completion-01/evidence_catalog.md": "2049c6b900ea9a9321b7765546d32614195187bbf68fdc642612e7c2e12aaafc",
+    "p4-gold-completion-01/gold_coverage_report.md": "e87e098b4f165440b723284ba400904cab481364017d029f22abaf6a16664f0d",
+    "p4-gold-completion-01/holdout_proposed_28.jsonl": "485d99728eeceb09c8814e84193972624ea32c173dc12edaf7b41ec975702ead",
+    "p4-gold-completion-01/human_signoff_packet.md": "f0dea5730ea74456335449f972948097236c88bb853b5471f294957f43cbbd1c",
+    "p4-gold-completion-01/input_integrity.json": "b71ad8005655897c7666fc2f54ff6615a9d67d5494a511764fd6b579a7c9c55a",
+    "p4-gold-completion-01/new_candidate_review_summary.md": "cf80f7a436ef5afab7f91ed197f91951775e7ab4faafe5a36d5b4ae936d9523c",
+    "p4-gold-completion-01/new_candidates_15.jsonl": "9730ae640239ac5b3be32f526e0253ada9aaf32efe9f2e5adb5481a30ba448de",
+    "p4-gold-completion-01/README.md": "fcc2f524cda5572df6c9723fcdb6db663114a5dbe91dcbc8ee6080357e0b5fb8",
+    "p4-gold-completion-01/summary_counts.json": "2fae2043e8790d0f9a0853280fe902a9bcf47acca302d013b7bc5fa8f0270b15",
+    "p4-gold-completion-01/validation.md": "82bdcd8f6f51e771f08a6757ea0e9dcf3ccc9017edeedb6a844314f7f2be4348"
+  }
+}

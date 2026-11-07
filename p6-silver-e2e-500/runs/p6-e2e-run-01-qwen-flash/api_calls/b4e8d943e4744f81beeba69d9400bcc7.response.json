@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:17.966192+08:00",
+  "conservative_cost_yuan": 0.00131115,
+  "error": null,
+  "latency_ms": 3368.165400112048,
+  "list_price_estimate_yuan": 0.00091815,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"未提供绩效评估具体方法\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实有引用，但不完整\",\n    \"evidence\": \"人员绩效评估基于理论知识与技能实操两部分考核。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键评估维度\",\n    \"evidence\": \"评估维度包括职业道德、职业规范及专业知识等。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"重点考察服务礼仪、交付技巧、沟通能力等服务能力。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0,\n    \"reason\": \"应拒答却给出推测性回答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"overconfident_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882114,
+    "id": "chatcmpl-4828cb0a-93df-98a6-ac84-f76bc3f98888",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 262,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3501,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3763
+    }
+  },
+  "usage_known": true
+}

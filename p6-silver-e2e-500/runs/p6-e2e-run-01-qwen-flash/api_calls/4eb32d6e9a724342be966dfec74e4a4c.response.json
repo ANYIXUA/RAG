@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:19.546970+08:00",
+  "conservative_cost_yuan": 0.0008673,
+  "error": null,
+  "latency_ms": 1764.5778998266906,
+  "list_price_estimate_yuan": 0.0006632999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 平原丘陵地区铁塔塔身垂直度测试综合单价为83.17元/座·次。[1]  \n2. 室外馈线走道安装综合单价为63.84元/米。[2]  \n3. 垂直度测试适用于平原、丘陵地形，项目编码WH22105002。[1]  \n4. 馈线走道安装计量单位为米，包含固定、接地等工序。[2]  \n5. 两项单价均来自《电信基础设施维护规程》相关表格。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880917,
+    "id": "chatcmpl-bb5a55c4-ef4a-9f2d-b21a-ec2966aef0a9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 136,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3062,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3198
+    }
+  },
+  "usage_known": true
+}

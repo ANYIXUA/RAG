@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:05.006427+08:00",
+  "input_token_upper_bound": 1109,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0406"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "顶面防水的消耗量是多少平方米？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "ac67ab4bd8844f37a21cf0103ba940a6",
+  "reserved_yuan": 0.0005545
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:22.475068+08:00",
+  "conservative_cost_yuan": 0.000747,
+  "error": null,
+  "latency_ms": 1260.64100000076,
+  "list_price_estimate_yuan": 0.000588,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查管道或人孔是否有沉陷、破损、井盖丢失等情况。[1]  \n2. 进行路由探测，确认线路走向是否正常。[1]  \n3. 检查沿线重点部位保护是否到位，有无外力施工影响安全。[1]  \n4. 查看沿线是否发生鼠害、蚁害等威胁线路的情况。[1]  \n5. 做好巡查记录，并将发现问题及时上报。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881041,
+    "id": "chatcmpl-edaad698-1ebe-90c8-843c-d898db95014a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2860,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2966
+    }
+  },
+  "usage_known": true
+}

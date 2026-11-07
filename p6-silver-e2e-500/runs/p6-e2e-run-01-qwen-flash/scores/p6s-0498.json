@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：器材准备，发电，恢复现场，记录发电时间等。",
+    "reason": "回答与上下文一致，步骤完整。",
+    "score": 1
+  },
+  "case_id": "p6s-0498",
+  "citation_correctness": {
+    "evidence": "[2] 平原、2 小时以下 167.81 104.88 31.46 31.46 0.92 —",
+    "reason": "引用编号与上下文来源匹配且支持所述内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "应急发电工作内容包括器材准备、发电、恢复现场及记录时间。",
+    "reason": "涵盖所有关键操作步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "平原地区应急发电按实际次数和时长计，2小时以内按次计算。",
+    "reason": "每项事实均有对应引用支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "05dfa91239e64a43bd8daa9dd25250aa",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

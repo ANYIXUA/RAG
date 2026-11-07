@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:37.756366+08:00",
+  "conservative_cost_yuan": 0.0014865,
+  "error": null,
+  "latency_ms": 2538.892999989912,
+  "list_price_estimate_yuan": 0.001035,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确指向《材料及备品备件购置清单与计价表》\",\n    \"evidence\": \"需参照《材料及备品备件购置清单与计价表》中的规定。[2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"交货方式需在清单中明确注明。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖交货方式与数量要求\",\n    \"evidence\": \"清单内容包括编号、名称、规格、数量、交货方式等。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持语句\",\n    \"evidence\": \"需参照《材料及备品备件购置清单与计价表》中的规定。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"correct_reference_match\",\n    \"full_context_utilization\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881895,
+    "id": "chatcmpl-86b41eea-bc2f-94b1-a966-dfb731eb8132",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 301,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3890,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4191
+    }
+  },
+  "usage_known": true
+}

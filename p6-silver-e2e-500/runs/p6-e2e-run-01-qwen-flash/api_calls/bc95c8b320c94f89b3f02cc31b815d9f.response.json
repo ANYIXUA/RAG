@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:36.721007+08:00",
+  "conservative_cost_yuan": 0.0007168499999999999,
+  "error": null,
+  "latency_ms": 1297.4483999423683,
+  "list_price_estimate_yuan": 0.0005653499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 稳压设备安装应符合设备图纸及施工规范要求。[3]  \n2. 电源系统需检查双路供电与主备切换功能是否正常。[3]  \n3. 设备接地、线缆安装须符合相关施工标准。[3]  \n4. 安装时应确保熔丝容量与设计图纸一致。[3]  \n5. 需核查设备标签、线缆标识是否齐全准确。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881055,
+    "id": "chatcmpl-8b63a088-f2af-90dd-ae8b-0bef9667020a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2759,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2860
+    }
+  },
+  "usage_known": true
+}

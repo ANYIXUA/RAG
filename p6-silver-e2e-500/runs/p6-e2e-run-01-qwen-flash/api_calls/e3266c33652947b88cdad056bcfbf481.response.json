@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:17.748395+08:00",
+  "conservative_cost_yuan": 0.0007525499999999999,
+  "error": null,
+  "latency_ms": 1525.0446000136435,
+  "list_price_estimate_yuan": 0.0005905499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 100kVA以下干式变压器安装调试人工费为282.72元/台·次。[1]  \n2. 干式变压器安装调试的计量单位为台·次。[1]  \n3. 机房防盗门更换的单位是“次”。[2]  \n4. 防盗门更换工作内容包含拆除、安装及清理现场。[4]  \n5. 该项工作按实际发生数量计算费用。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880976,
+    "id": "chatcmpl-c12a2976-f574-9638-a483-7d6014399f8f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 108,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2857,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2965
+    }
+  },
+  "usage_known": true
+}

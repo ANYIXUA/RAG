@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "馈线接头紧固无松动、无划伤、无露铜、无变形，密封良好、无积水。",
+    "reason": "与上下文一致，覆盖关键点。",
+    "score": 1
+  },
+  "case_id": "p6s-0087",
+  "citation_correctness": {
+    "evidence": "馈线接头紧固无松动、无划伤、无露铜、无变形，密封良好、无积水。",
+    "reason": "引用[4]未在上下文中出现。",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "馈线接头紧固无松动、无划伤、无露铜、无变形，密封良好、无积水。",
+    "reason": "涵盖连接牢固与密封要求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "馈线接头紧固无松动、无划伤、无露铜、无变形，密封良好、无积水。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [
+    "citation_mismatch"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "40b61ac24d27416c986f80dc135c2413",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

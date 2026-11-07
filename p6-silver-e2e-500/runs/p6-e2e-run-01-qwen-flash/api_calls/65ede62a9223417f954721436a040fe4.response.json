@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:21.136282+08:00",
+  "conservative_cost_yuan": 0.00078795,
+  "error": null,
+  "latency_ms": 1611.031400039792,
+  "list_price_estimate_yuan": 0.0006184500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 整治固定接头盒、预留光缆应按规程要求进行规范绑扎与固定。[4]  \n2. 补、换挂钩及标识牌，确保线路标识清晰完整。[2]  \n3. 清除吊线上的杂物，保持光缆线路整洁畅通。[2]  \n4. 预留光缆应符合规范，弯曲半径满足要求。[4]  \n5. 作业中需同步检查并修复缺损的光缆标志牌。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881219,
+    "id": "chatcmpl-dc71abc1-23a8-9e74-a9a1-4ff105e3d8f1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2993,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3106
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:59.893972+08:00",
+  "conservative_cost_yuan": 0.00074475,
+  "error": null,
+  "latency_ms": 1757.7679001260549,
+  "list_price_estimate_yuan": 0.00055725,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 无频光网关无需支持Wi-Fi功能，可产品入库。[1]  \n2. 多台光路由协同覆盖需支持EasyMesh功能，光网关为Controller角色。[3]  \n3. 光路由产品编码应为60（Wi-Fi 6）或62/63（Wi-Fi 7）。[2]  \n4. 光网关与光路由需支持统一SSID，实现无缝漫游。[1]  \n5. 新入库产品不得使用产品编码16，应按新规范分配。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880898,
+    "id": "chatcmpl-418dad97-d95b-9fdd-a50a-f357c9837c32",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 125,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2465,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2590
+    }
+  },
+  "usage_known": true
+}

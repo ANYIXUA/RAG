@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:30.581502+08:00",
+  "conservative_cost_yuan": 0.0007864500000000001,
+  "error": null,
+  "latency_ms": 1722.1720998641104,
+  "list_price_estimate_yuan": 0.0005824500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 更换吊线保护装置技工人工费为16.67元/米。[2]  \n2. 安装电杆地线（拉线式）技工人工费为10.53元/条。[3]  \n3. 直埋式电杆地线技工人工费为42.35元/条。[3]  \n4. 延伸式电杆地线技工人工费为58.45元/条。[3]  \n5. 以上费用均基于综合单价中技工人工费明细。[2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880988,
+    "id": "chatcmpl-afee8458-4f89-98b9-ac4d-22e0ed581192",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 136,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2523,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2659
+    }
+  },
+  "usage_known": true
+}

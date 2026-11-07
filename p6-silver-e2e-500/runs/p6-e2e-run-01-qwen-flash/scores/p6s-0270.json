@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：工单信息确认，器材准备、确定障碍原因、障碍维修、业务恢复确认、障碍回单等。",
+    "reason": "上下文明确列出处理流程步骤。",
+    "score": 1
+  },
+  "case_id": "p6s-0270",
+  "citation_correctness": {
+    "evidence": "工作内容：工单信息确认，器材准备、确定障碍原因、障碍维修、业务恢复确认、障碍回单等。",
+    "reason": "引用编号与上下文来源一致且支持对应句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "工作内容：工单信息确认，器材准备、确定障碍原因、障碍维修、业务恢复确认、障碍回单等。",
+    "reason": "覆盖全部关键步骤，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "工单信息确认，器材准备、确定障碍原因、障碍维修、业务恢复确认、障碍回单等。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [
+    "citation_consistent",
+    "complete_flow",
+    "step_aligned"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "439859a01340460299779f745dbff78a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

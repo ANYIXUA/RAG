@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:19.209782+08:00",
+  "input_token_upper_bound": 1156,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0421"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "全光组网终端本地管理的IP地址是多少？ 标准地址 地址资源 地址校验 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "7c072dd3dd5b416f8f2478d9dfc22301",
+  "reserved_yuan": 0.000578
+}

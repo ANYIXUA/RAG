@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:55.311976+08:00",
+  "conservative_cost_yuan": 0.0009729,
+  "error": null,
+  "latency_ms": 1783.603599993512,
+  "list_price_estimate_yuan": 0.0007268999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 天线被树叶遮挡属外部环境影响，需定期清理障碍物。[无直接依据]  \n2. 建议检查天线安装位置是否易受植被遮挡，必要时调整高度或角度。[无直接依据]  \n3. 若频繁遮挡，可考虑更换为更高或更远的安装点。[无直接依据]  \n4. 请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]  \n5. 需结合实际运维规程，由专业人员现场评估处理方案。[1]  \n\n> 注：检索内容未明确提及“树叶遮挡”的处理办法，以上建议基于规程中关于智慧灯杆安装与维护的通用原则推断，非直接引用。",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881133,
+    "id": "chatcmpl-abd867da-4bfc-9d27-bb28-8ff5fb5191b6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 164,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3206,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3370
+    }
+  },
+  "usage_known": true
+}

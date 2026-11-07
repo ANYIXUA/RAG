@@ -1,0 +1,9 @@
+{
+  "source": "本次对话的人工明确回复",
+  "reviewer_and_date_confirmation": "确认：审核标识 system，日期 2026-11-05",
+  "nonprimary_confirmation": "保留待澄清，仅推进28条主选",
+  "reviewer_alias": "system",
+  "reviewed_date": "2026-11-05",
+  "timestamp_precision": "day",
+  "raw_workbook_untouched": true
+}

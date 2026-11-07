@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-05T20:02:13.102120+08:00",
+  "input_token_upper_bound": 1071,
+  "kind": "chat",
+  "metadata": {
+    "not_a_silver_case": true,
+    "purpose": "single_service_health_probe_after_failed_smoke"
+  },
+  "output_token_upper_bound": 220,
+  "request": {
+    "max_tokens": 220,
+    "messages": [
+      {
+        "content": "请只回复OK",
+        "role": "user"
+      }
+    ],
+    "model": "qwen-turbo",
+    "temperature": 0.2
+  },
+  "request_id": "7e665c46ea1f45eb83692156885eb827",
+  "reserved_yuan": 0.0009813
+}

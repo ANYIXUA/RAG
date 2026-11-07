@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:12:06.868765+08:00",
+  "conservative_cost_yuan": 0.00076065,
+  "error": null,
+  "latency_ms": 1309.9378999322653,
+  "list_price_estimate_yuan": 0.00058365,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检测制冷剂压力和制冷效果，必要时补加制冷剂。[1]  \n2. 确保空调温度设置符合规程要求，异常及时修改。[2]  \n3. 清洁冷凝器翅片、制冷管路及排水系统，保持畅通。[1]  \n4. 检查压缩机、风机等运行正常，无异常噪音或故障。[2]  \n5. 测量工作电流，偏差应控制在额定值的10%以内。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880725,
+    "id": "chatcmpl-0e094619-0c77-949e-a01d-b48626bd9e38",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 118,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2711,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2829
+    }
+  },
+  "usage_known": true
+}

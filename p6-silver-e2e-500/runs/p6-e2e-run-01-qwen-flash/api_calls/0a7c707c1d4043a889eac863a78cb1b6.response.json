@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:46.131169+08:00",
+  "conservative_cost_yuan": 0.00134655,
+  "error": null,
+  "latency_ms": 2342.430900083855,
+  "list_price_estimate_yuan": 0.00094305,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0195无解析歧义，但实际答案未完全匹配参考\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误或无依据\",\n    \"evidence\": \"4.3.1 能熟练进行计算机操作\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键排查步骤如信号源检测\",\n    \"evidence\": \"4.2.1 能操作交互式网络电视业务的 APP\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[4]不存在于上下文\",\n    \"evidence\": \"4.3.1 能熟练进行计算机操作\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"citation_error\",\n    \"missing_evidence\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881843,
+    "id": "chatcmpl-6bda05cb-3d9e-9f0a-8b4d-0e0062e74143",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 269,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3597,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3866
+    }
+  },
+  "usage_known": true
+}

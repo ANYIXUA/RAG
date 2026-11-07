@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:27:59.300623+08:00",
+  "conservative_cost_yuan": 0.00146025,
+  "error": null,
+  "latency_ms": 3095.9455999545753,
+  "list_price_estimate_yuan": 0.00099825,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持36.85元\",\n    \"evidence\": \"WH11007001 架空光缆日常检修 平原 36.85\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应证据支持\",\n    \"evidence\": \"WH11007001 架空光缆日常检修 平原 36.85\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、适用范围、单位、编码\",\n    \"evidence\": \"WH11007001 架空光缆日常检修 平原 36.85\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"WH11007001 架空光缆日常检修 平原 36.85\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881676,
+    "id": "chatcmpl-2302a46c-ae76-945b-9080-bac82f28407a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 308,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3575,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3883
+    }
+  },
+  "usage_known": true
+}

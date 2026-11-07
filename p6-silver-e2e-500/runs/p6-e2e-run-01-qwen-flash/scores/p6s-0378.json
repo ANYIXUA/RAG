@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "2、小型离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换；",
+    "reason": "上下文支持完整维修步骤",
+    "score": 1
+  },
+  "case_id": "p6s-0378",
+  "citation_correctness": {
+    "evidence": "检查发电机输电线插接头是否松动或氧化，必要时更换。[2]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检查风机立柱、基础是否下沉、倾斜或锈蚀。[4]",
+    "reason": "覆盖关键维修点且无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查发电机输电线插接头是否松动或氧化，必要时更换。[2]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "91a5fc90fef4425c99adb4cf9ce0e745",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

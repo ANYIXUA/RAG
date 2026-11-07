@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:50.196597+08:00",
+  "conservative_cost_yuan": 0.00307425,
+  "error": null,
+  "latency_ms": 8956.612799782306,
+  "list_price_estimate_yuan": 0.00183675,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出WH23129001项下'角钢塔、三管塔、四管塔35m以下'的消耗量为1.60，与问题直接对应，且数值准确。银参考一致，证据支持。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第286页\\n定位信息：286\\n内容：... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实（消耗量1.60、计量单位座²次、项目编码WH23129001、维修内容、综合单价）均有对应上下文来源支持，且无额外编造信息。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第286页\\n定位信息：286\\n内容：... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问消耗量，回答聚焦于该核心信息，并补充了相关背景信息（如项目编码、计量单位、综合单价、维修内容），虽非必须，但未遗漏关键条件或步骤，符合精确事实类问题要求。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第286页\\n定位信息：286\\n内容：... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应实际上下文片段[1]，且该片段确实支持所陈述的每一条结论，引用位置准确，无错引或漏引。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第286页\\n定位信息：286\\n内容：... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确可答的精确事实类问题，上下文存在完整答案，模型正常回答，无需拒答，故此项不适用。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881481,
+    "id": "chatcmpl-c61e0a3a-4b91-9273-ab9c-306d2cdd32df",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 825,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3995,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4820
+    }
+  },
+  "usage_known": true
+}

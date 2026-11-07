@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:19.594526+08:00",
+  "conservative_cost_yuan": 0.0007085999999999999,
+  "error": null,
+  "latency_ms": 1190.1534998323768,
+  "list_price_estimate_yuan": 0.0005705999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查沿线重点部位保护是否到位，如护坡、挡水墙等。[1]  \n2. 观察是否有外力施工影响线路安全的行为。[1]  \n3. 路由探测并记录巡查情况。[1]  \n4. 发现问题及时上报处理。[1]  \n5. 重点排查人孔沉陷、井盖丢失等隐患。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881218,
+    "id": "chatcmpl-1b0da5f2-4b39-9bb8-a76d-e60c8e13e474",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 92,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2884,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2976
+    }
+  },
+  "usage_known": true
+}

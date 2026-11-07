@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "7262d78020dfb179f06c49657bf508e82d2080d07286e7ef14161cd4c4de52dd",
+  "record": {
+    "batch": 42,
+    "candidates": [
+      {
+        "answer": "992.16 元",
+        "evidence": [
+          {
+            "excerpt": "WH12013007 13m 以下水泥杆 综合土 992.16 673.11 184.43 134.62 3.10 5.25",
+            "passage_id": "a08fd0f65890c68b54ac7790"
+          }
+        ],
+        "question": "WH12013007 项目中，13m 以下水泥杆的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "1122.37 元",
+        "evidence": [
+          {
+            "excerpt": "WH12014002 木围桩 1122.37 761.44 208.64 152.29 3.29 6.34",
+            "passage_id": "f7cee66c5c29f23117e88696"
+          }
+        ],
+        "question": "WH12014002 木围桩的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "830.41 元",
+        "evidence": [
+          {
+            "excerpt": "WH12013005 软石 830.41 563.37 154.36 112.67 3.02 3.58",
+            "passage_id": "a08fd0f65890c68b54ac7790"
+          }
+        ],
+        "question": "WH12013005 软石的综合单价是多少元？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

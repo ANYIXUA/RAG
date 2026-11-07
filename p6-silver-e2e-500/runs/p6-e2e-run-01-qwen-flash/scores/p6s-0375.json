@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "代缴电费 站·次 次 31.01 19.38 5.81 5.81 0.17 —",
+    "reason": "上下文明确支持代缴电费及费用",
+    "score": 1
+  },
+  "case_id": "p6s-0375",
+  "citation_correctness": {
+    "evidence": "WH24103002 代缴电费 站·次 次 31.01 19.38 5.81 5.81 0.17 —",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "代缴电费 站·次 次 31.01 19.38 5.81 5.81 0.17 —",
+    "reason": "涵盖问题所有条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH24103002 代缴电费 站·次 次 31.01 19.38 5.81 5.81 0.17 —",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "815bb46311d142c59f2a0d520091b6c3",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:09.357209+08:00",
+  "conservative_cost_yuan": 0.0013211999999999998,
+  "error": null,
+  "latency_ms": 2701.88089995645,
+  "list_price_estimate_yuan": 0.0009476999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文完全一致，覆盖所有要点。\",\n    \"evidence\": \"工作内容：1、检查用户引入线的完好情况；\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"检查用户引入线的接头是否完好、安全和规范。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所需全部项目。\",\n    \"evidence\": \"处理或上报发现的问题。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持所述内容。\",\n    \"evidence\": \"填写巡检记录等。[1][2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881926,
+    "id": "chatcmpl-b9e94c65-ca19-9f71-ba2b-81c997e2dafd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 249,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3828,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4077
+    }
+  },
+  "usage_known": true
+}

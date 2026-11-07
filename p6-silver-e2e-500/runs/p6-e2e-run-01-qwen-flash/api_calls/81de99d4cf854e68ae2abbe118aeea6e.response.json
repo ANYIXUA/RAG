@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:58.755575+08:00",
+  "conservative_cost_yuan": 0.0015601500000000002,
+  "error": null,
+  "latency_ms": 3072.142200078815,
+  "list_price_estimate_yuan": 0.00107115,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"项目编码WH12021对应光缆接头坑作业\",\n    \"evidence\": \"WH12021 挖、松填光（电）缆沟及接头坑（光缆升高与降低）\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH12021 挖、松填光（电）缆沟及接头坑（光缆升高与降低）\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"WH12021 挖、松填光（电）缆沟及接头坑（光缆升高与降低）\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"WH12021 挖、松填光（电）缆沟及接头坑（光缆升高与降低）\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882035,
+    "id": "chatcmpl-d10ca1e5-6840-92a8-bc2b-4a9ac7a39fa7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 326,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3881,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4207
+    }
+  },
+  "usage_known": true
+}

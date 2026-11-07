@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:11.215499+08:00",
+  "conservative_cost_yuan": 0.0007407000000000001,
+  "error": null,
+  "latency_ms": 1429.1174998506904,
+  "list_price_estimate_yuan": 0.0005727000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查机顶盒配置是否正确，确保已成功开通交互式网络电视业务。[2]  \n2. 验证光猫及路由器连接状态，确认宽带网络正常。[4]  \n3. 使用光功率计检测入户光纤光功率是否达标。[3]  \n4. 检查家庭网络拓扑结构，排除组网异常导致的信号干扰。[3]  \n5. 通过APP或终端测试业务，定位故障是否为设备端问题。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880969,
+    "id": "chatcmpl-896a809c-de6a-9707-946c-f5d41d7639a2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2698,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2810
+    }
+  },
+  "usage_known": true
+}

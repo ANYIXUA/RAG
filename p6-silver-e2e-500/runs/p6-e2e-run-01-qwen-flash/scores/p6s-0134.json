@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH22105002 平原、丘陵 83.17 51.98 15.60 15.60 0.46 —",
+    "reason": "上下文明确支持单价数值。",
+    "score": 1
+  },
+  "case_id": "p6s-0134",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与上下文来源匹配。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "平原、丘陵 83.17 51.98 15.60 15.60 0.46 —",
+    "reason": "涵盖问题所有条件与步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23101003 室外馈线走道 63.84 39.90 11.97 11.97 0.35 —",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "0fc3bac62b29438d9f3e892321ea0420",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

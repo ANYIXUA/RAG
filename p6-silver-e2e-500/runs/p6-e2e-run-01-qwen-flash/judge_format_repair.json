@@ -1,0 +1,15 @@
+{
+  "grading_criteria_changed": false,
+  "human_review_fabricated": false,
+  "note": "All original API request/response bodies retained; prompt formatting revision is observable per call.",
+  "rag_answers_changed": false,
+  "reason": "Judge sometimes returned N/A no_answer_behavior.evidence=null, and verbose quotations hit1600-token cap",
+  "related_tests": "40 passed",
+  "repairs": [
+    "Canonicalize null evidence to empty string only for null-score N/A dimension; preserve null score and original reason",
+    "Bound each Judge reason to40characters and quote80characters; criteria, model, temperature0 and1600 max output unchanged",
+    "Preserve original failed score files; recover already-paid valid responses into scores_recovered without more API calls",
+    "Interrupted paid calls consume the same max3 judge attempts; do not reset counters"
+  ],
+  "script_sha256_after_repair": "c47d612629c2b42749288fa721ad9b458c24a3a26e7cef3f1591e90cfe8cfccc"
+}

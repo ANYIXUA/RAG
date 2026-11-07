@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "铁塔基础表面无蜂窝、麻面、无结构裂缝，基础钢筋无外露。",
+    "reason": "回答与上下文一致，覆盖关键检查点。",
+    "score": 1
+  },
+  "case_id": "p6s-0357",
+  "citation_correctness": {
+    "evidence": "特殊天气灾害 按需 1.雷雨天气后，重点检查铁塔基础无下陷或山体滑坡、接地装置牢固。",
+    "reason": "引用编号与上下文来源匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "六度以上地震或八级以上大风或重裹冰天气后，应对塔身轴线、基础及所有节点作全面观测检查和维护。",
+    "reason": "涵盖检查与处理流程核心步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "塔体构件齐全，各部件连接牢固、无锈蚀。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "dec38d9912c340e9bdf12c4535932790",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

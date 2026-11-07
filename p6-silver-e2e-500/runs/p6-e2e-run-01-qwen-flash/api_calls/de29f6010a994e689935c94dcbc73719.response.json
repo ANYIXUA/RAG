@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:10.714420+08:00",
+  "conservative_cost_yuan": 0.0008982,
+  "error": null,
+  "latency_ms": 1755.2517999429256,
+  "list_price_estimate_yuan": 0.0006882,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 智慧灯杆（视频监控杆）15m以下安装射频拉远单元费用为565.44元。[1]  \n2. 该费用对应标准为“智慧灯杆（视频监控杆）15m以下”安装项目。[1]  \n3. 费用包含人工、材料及施工成本，依据规程定价。[1]  \n4. 若为小型天线设备，费用为826.27元，但非本题所指。[2]  \n5. 15m以上按每米增加5.47元计价。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881029,
+    "id": "chatcmpl-5a867bfe-c69d-958a-9689-fc8d91ef458f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 140,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3188,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3328
+    }
+  },
+  "usage_known": true
+}

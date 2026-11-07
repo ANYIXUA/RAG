@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:56.870068+08:00",
+  "conservative_cost_yuan": 0.0017793,
+  "error": null,
+  "latency_ms": 4435.933499829844,
+  "list_price_estimate_yuan": 0.0011792999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"综合单价953.95元与证据一致。\",\n    \"evidence\": \"WH23117005 仿太阳能热水器型 953.95 596.22 178.87 178.87 5.23\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"WH23117005 仿太阳能热水器型 953.95 596.22 178.87 178.87 5.23\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、单位、类别等关键信息。\",\n    \"evidence\": \"WH23117005 仿太阳能热水器型 953.95 596.22 178.87 178.87 5.23\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源片段。\",\n    \"evidence\": \"WH23117005 仿太阳能热水器型 953.95 596.22 178.87 178.87 5.23\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881972,
+    "id": "chatcmpl-cfcf9a06-8736-9b6b-a782-da128aa49bc4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 400,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3862,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4262
+    }
+  },
+  "usage_known": true
+}

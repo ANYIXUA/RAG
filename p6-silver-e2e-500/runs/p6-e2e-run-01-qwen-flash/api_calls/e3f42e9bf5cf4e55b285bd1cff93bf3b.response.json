@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:15.171713+08:00",
+  "conservative_cost_yuan": 0.00138405,
+  "error": null,
+  "latency_ms": 2636.745600029826,
+  "list_price_estimate_yuan": 0.00094305,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文无补贴申请信息，无法判断正确性\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均基于上下文且无编造\",\n    \"evidence\": \"上下文未提及员工申请家庭场景设备补贴的具体流程。[1][2][3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题缺失信息并说明\",\n    \"evidence\": \"建议补充相关补贴政策文档或转人工咨询。[1][2][3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"上下文未提及员工申请家庭场景设备补贴的具体流程。[1][2][3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"明确拒答并提示补充或转人工\",\n    \"evidence\": \"建议补充相关补贴政策文档或转人工咨询。[1][2][3]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881992,
+    "id": "chatcmpl-e8d39aa6-493f-9dce-b0a2-6425352fa2c2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 294,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3347,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3641
+    }
+  },
+  "usage_known": true
+}

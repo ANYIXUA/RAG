@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH21102001 天馈线系统巡检 角钢塔、三管塔、 四管塔35m 以下 市区 94.85",
+    "reason": "准确匹配参考价格与条件。",
+    "score": 1
+  },
+  "case_id": "p6s-0432",
+  "citation_correctness": {
+    "evidence": "WH21102001 天馈线系统巡检 角钢塔、三管塔、 四管塔35m 以下 市区 94.85",
+    "reason": "引用编号与来源一致且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "此费用适用于角钢塔、三管塔、四管塔35m以下。[1]",
+    "reason": "涵盖费用、范围与排除项。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH21102001 天馈线系统巡检 角钢塔、三管塔、 四管塔35m 以下 市区 94.85",
+    "reason": "每项事实均有上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "a489f263b6574efab58553aa421e5e76",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

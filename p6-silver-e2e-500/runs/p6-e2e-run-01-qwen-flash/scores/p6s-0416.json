@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "封面：维护预算总价；总说明：项目规模、项目特征、项目维护地点...",
+    "reason": "覆盖封面与项目概况全部要素",
+    "score": 1
+  },
+  "case_id": "p6s-0416",
+  "citation_correctness": {
+    "evidence": "维护项目概况：项目规模、项目特征、项目维护地点...",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "总说明：项目规模、项目特征、项目维护地点...",
+    "reason": "涵盖问题所有条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "维护项目概况：项目规模、项目特征、项目维护地点...",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "9b0eaea6b1274f74a989ce4c819bc536",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:53.219200+08:00",
+  "conservative_cost_yuan": 0.00073725,
+  "error": null,
+  "latency_ms": 1304.7887000720948,
+  "list_price_estimate_yuan": 0.00057225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 发生障碍时应迅速抢修，优先抢通高速率系统并保持不停止。[1]  \n2. 应遵循“先抢通、后修复”原则，配合传输人员协同处理。[1]  \n3. 重大障碍排除后三日内须书面上报运营企业。[1]  \n4. 障碍处理后需记录详情，并分析原因提出改进措施。[1]  \n5. 上报材料包括故障处理报告和障碍申报表等。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881131,
+    "id": "chatcmpl-cd35496f-956f-9dd5-9de3-e22c339b8edd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2715,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2825
+    }
+  },
+  "usage_known": true
+}

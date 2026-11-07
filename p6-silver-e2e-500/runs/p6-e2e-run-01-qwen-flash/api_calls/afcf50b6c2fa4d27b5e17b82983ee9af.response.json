@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:33.913897+08:00",
+  "conservative_cost_yuan": 0.0008923499999999999,
+  "error": null,
+  "latency_ms": 1576.2958000414073,
+  "list_price_estimate_yuan": 0.0006868499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH12013007项目中，13m以下水泥杆综合单价为992.16元。[1]  \n2. 该价格对应工作内容包括立新杆、回填夯实、安装号牌等。[1]  \n3. 计量单位为“根”，适用于综合土地质条件。[1]  \n4. 人工费占比约67.8%，其中技工3.10工日，普工5.25工日。[1]  \n5. 企业管理费和利润合计319.05元/根。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880872,
+    "id": "chatcmpl-ea946e8a-a14f-91c3-9cdc-56ddf3036d62",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 137,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3209,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3346
+    }
+  },
+  "usage_known": true
+}

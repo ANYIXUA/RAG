@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:14.649773+08:00",
+  "conservative_cost_yuan": 0.0007419,
+  "error": null,
+  "latency_ms": 1292.551700025797,
+  "list_price_estimate_yuan": 0.0005844,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 配电柜红灯闪烁可能表示光路异常或无光信号。[3]  \n2. 应检查光纤连接是否松动或中断。[3]  \n3. 若为光功率异常，需使用OTDR检测中继段光纤损耗。[3]  \n4. 确认防雷接地电阻是否符合标准（≤100Ω）。[3]  \n5. 如无法定位故障，应上报并启动抢修流程。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881033,
+    "id": "chatcmpl-aed1f621-1f28-95a1-b457-6c0b1a41b9bd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 105,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2846,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2951
+    }
+  },
+  "usage_known": true
+}

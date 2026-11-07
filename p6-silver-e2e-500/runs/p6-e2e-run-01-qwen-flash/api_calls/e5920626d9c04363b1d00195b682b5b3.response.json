@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:58.418813+08:00",
+  "conservative_cost_yuan": 0.0015189000000000001,
+  "error": null,
+  "latency_ms": 3127.0775999873877,
+  "list_price_estimate_yuan": 0.0010824,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致，无错误信息。\",\n    \"evidence\": \"更换拉线且不换地锚的工作量按“更换拉线”项目计量，单位为条。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"山区作业的综合单价按平原子目的1.5倍计取。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要条件和步骤。\",\n    \"evidence\": \"拆除拉线人工工日按安装子目的0.6倍计算。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持内容。\",\n    \"evidence\": \"项目编码为WH12009003（山区水泥杆夹板法装）。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881735,
+    "id": "chatcmpl-3494f0bf-ac72-90c5-8a10-b182e5eb663d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 291,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4306,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4597
+    }
+  },
+  "usage_known": true
+}

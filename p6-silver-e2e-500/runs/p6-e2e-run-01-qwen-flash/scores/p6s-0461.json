@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%",
+    "reason": "正确给出1.5%比例及计算基数",
+    "score": 1
+  },
+  "case_id": "p6s-0461",
+  "citation_correctness": {
+    "evidence": "安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%",
+    "reason": "引用[1]对应实际来源且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "安全生产费是指维护企业按照国家有关规定和维护作业安全标准，购置防护用具、落实安全作业措施、改善安全生产条件以及加强安全生产管理等所需的各项费用。",
+    "reason": "涵盖计算比例、基数与用途",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "6db8c26a2a624636bc08bdba250b1a55",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

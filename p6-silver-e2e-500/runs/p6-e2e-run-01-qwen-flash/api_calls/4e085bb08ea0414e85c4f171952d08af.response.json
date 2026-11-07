@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:15.239286+08:00",
+  "conservative_cost_yuan": 0.0017643,
+  "error": null,
+  "latency_ms": 4371.522099943832,
+  "list_price_estimate_yuan": 0.0011627999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"内容与上下文一致，覆盖全部要点\",\n    \"evidence\": \"1、环境安全检查；2、道路巡检；3、造物杂草、杂物清理；4、机房主体机构、地基和围墙巡查；5、机房主体结构内部巡查；6、情况记录\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"1、环境安全检查；2、道路巡检；3、造物杂草、杂物清理；4、机房主体机构、地基和围墙巡查；5、机房主体结构内部巡查；6、情况记录\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"六项操作均完整覆盖，无遗漏\",\n    \"evidence\": \"1、环境安全检查；2、道路巡检；3、造物杂草、杂物清理；4、机房主体机构、地基和围墙巡查；5、机房主体结构内部巡查；6、情况记录\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源内容\",\n    \"evidence\": \"1、环境安全检查；2、道路巡检；3、造物杂草、杂物清理；4、机房主体机构、地基和围墙巡查；5、机房主体结构内部巡查；6、情况记录\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881810,
+    "id": "chatcmpl-d56344b3-7d5a-9bf2-82a6-cd52c7c8985a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 401,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3742,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4143
+    }
+  },
+  "usage_known": true
+}

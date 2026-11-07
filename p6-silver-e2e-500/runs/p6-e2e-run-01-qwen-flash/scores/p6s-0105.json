@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "应急发电超出2小时部分按实际工时折算工日，以2小时为基准。[2]",
+    "reason": "上下文明确支持计工日规则和防盗门更换包含性。",
+    "score": 1
+  },
+  "case_id": "p6s-0105",
+  "citation_correctness": {
+    "evidence": "防盗门更换属于WH33116007编码维护内容。[1]",
+    "reason": "引用编号与上下文来源完全匹配。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "计量单位为“套²次”，综合单价156.86元。[1]",
+    "reason": "涵盖问题所有条件与步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "机房土建零星维修包含防盗门更换项目。[1]",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "46499e030a8e482f87bd6e3a01df1539",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

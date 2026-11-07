@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0349",
+  "citation_correctness": {
+    "evidence": "服务能力 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "包括故障处理、服务礼仪及沟通技巧等综合服务能力。[1]",
+    "reason": "覆盖关键评估维度",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "服务能力 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力",
+    "reason": "每项事实均来自上下文[1]",
+    "score": 1
+  },
+  "flags": [
+    "partial_coverage",
+    "repeated_citation"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "9072fdb017d3480ab933b3fccb10b643",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可部分回答，非拒答场景",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

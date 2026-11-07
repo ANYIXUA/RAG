@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:04.881904+08:00",
+  "conservative_cost_yuan": 0.0030716999999999997,
+  "error": null,
+  "latency_ms": 7318.787900032476,
+  "list_price_estimate_yuan": 0.0018131999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际上下文[1]明确列出WH23116001调测基站系统（3个扇区以下）的综合单价为2134.08元，与问题完全匹配。参考证据也支持该数值，且无歧义。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每项事实均在上下文[1]中得到直接支持：综合单价、适用范围、费用构成、计量单位及增量计价规则均有原文依据。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\\n... 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元)\\n... 计量单位：站、扇区\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答覆盖了问题所需的核心信息——综合单价，并补充了相关条件（如适用范围、费用构成、计量单位和增量规则），未遗漏关键条件或步骤。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\\n... 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元)\\n... 计量单位：站、扇区\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应上下文片段[1]，且该片段完整支持每一句结论，引用准确无误。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的精确事实类问题，且上下文有明确答案，无需拒答。模型已正确回答，故此项不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881317,
+    "id": "chatcmpl-c3e1ded1-630e-9497-a577-abf331d1b4e8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 839,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3698,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4537
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:44.768892+08:00",
+  "conservative_cost_yuan": 0.0006844500000000001,
+  "error": null,
+  "latency_ms": 1182.3758000973612,
+  "list_price_estimate_yuan": 0.00054045,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 智慧家庭设备相关技能纳入装维人员职级考核标准。[1]  \n2. 设备装维与故障处理能力影响岗位绩效评估。[3]  \n3. 智能组网及物联网知识为职业技能考核内容。[2]  \n4. 服务交付与沟通技巧与业务运维挂钩。[3]  \n5. 职业规范与职业道德要求贯穿考核体系。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881123,
+    "id": "chatcmpl-4103e005-31df-9deb-9651-da92aabe5c6b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 96,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2643,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2739
+    }
+  },
+  "usage_known": true
+}

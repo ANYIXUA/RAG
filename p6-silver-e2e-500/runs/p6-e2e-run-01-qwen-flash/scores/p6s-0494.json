@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "维护企业应按月召开生产质量分析会，并作专门记录。",
+    "reason": "上下文明确支持按月召开",
+    "score": 1
+  },
+  "case_id": "p6s-0494",
+  "citation_correctness": {
+    "evidence": "维护企业应按月召开生产质量分析会，并作专门记录。",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "维护企业应按月召开生产质量分析会，并作专门记录。",
+    "reason": "涵盖问题核心频率要求",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "各级质量管理部门每月至少一次。",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ad9779e16f8b47728abb62bd1001e3c4",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

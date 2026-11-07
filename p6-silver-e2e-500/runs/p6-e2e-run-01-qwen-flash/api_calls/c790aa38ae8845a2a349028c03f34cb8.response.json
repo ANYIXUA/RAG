@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:31.505472+08:00",
+  "conservative_cost_yuan": 0.0007039500000000001,
+  "error": null,
+  "latency_ms": 1431.1832999810576,
+  "list_price_estimate_yuan": 0.0005389500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 更换电杆地线单位消耗量为每条（条）[3]。  \n2. 更换吊线保护装置单位消耗量为每米（米）[2]。  \n3. 地线类型包括直埋式、延伸式、拉线式，按条计量[3]。  \n4. 吊线保护装置更换按米计算，含拆除与安装[2]。  \n5. 消耗量依据具体地线类型及项目编码确定[3]。",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880990,
+    "id": "chatcmpl-d3a1f606-8674-9680-983d-c3e0404ef685",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2493,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2603
+    }
+  },
+  "usage_known": true
+}

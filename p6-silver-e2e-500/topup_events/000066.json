@@ -1,0 +1,55 @@
+{
+  "previous_sha256": "8d0f41c683964c865ef55b7d6d9b52528112c5e5d612d7d2a5d270b95f27a6ea",
+  "record": {
+    "batch": 33,
+    "candidates": [
+      {
+        "answer": "1.器材准备 2.发电 3.恢复现场 4.记录发电时间",
+        "evidence": [
+          {
+            "excerpt": "1.器材准备 2.发电 3.恢复现场 4.记录发电时间",
+            "passage_id": "a7d5a112b0cfc93129f456ff"
+          }
+        ],
+        "question": "在平原地区进行无线通信基站应急发电时，应如何操作？",
+        "question_type": "procedure"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0498",
+          "expected_behavior": "answer",
+          "generation_batch": 33,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271139,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "在平原地区进行无线通信基站应急发电时，应如何操作？",
+          "question_type": "procedure",
+          "reference_answer": "1.器材准备 2.发电 3.恢复现场 4.记录发电时间",
+          "source_chunk_ids": [
+            "a7d5a112b0cfc93129f456ff"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "a7d5a112b0cfc93129f456ff",
+              "excerpt": "1.器材准备 2.发电 3.恢复现场 4.记录发电时间"
+            }
+          ],
+          "source_page": 142,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

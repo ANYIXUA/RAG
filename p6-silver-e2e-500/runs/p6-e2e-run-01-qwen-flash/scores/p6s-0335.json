@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "维护企业应随时做好障碍抢修的准备，做到在任何时间、任何情况下都能迅速出发抢修",
+    "reason": "上下文明确支持抢修流程启动与现场响应",
+    "score": 1
+  },
+  "case_id": "p6s-0335",
+  "citation_correctness": {
+    "evidence": "维护企业应随时做好障碍抢修的准备",
+    "reason": "引用[1]准确对应各句内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "维护企业应在规定时限内完成故障处理、抢修",
+    "reason": "覆盖关键步骤：响应、准备、优先级、时限、申告",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "抢修专用器材、仪表、机具及车辆等应处于待用状态，不得外借或挪作它用",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e69083a5585f45ba830b8754c9d0a95c",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

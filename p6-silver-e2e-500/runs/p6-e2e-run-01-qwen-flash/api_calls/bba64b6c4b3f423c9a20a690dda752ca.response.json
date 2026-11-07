@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:07.979874+08:00",
+  "conservative_cost_yuan": 0.0006738,
+  "error": null,
+  "latency_ms": 1200.3357000648975,
+  "list_price_estimate_yuan": 0.0005327999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 未提供不同品牌智能设备的价格信息。[1]  \n2. 文档中提及设备编码规则，但未涉及价格对比。[1]  \n3. 所有文档聚焦于技术规范与组网要求，无价格数据。[2]  \n4. 无法基于现有内容进行品牌设备价格对比。[3]  \n5. 建议补充具体设备型号或价格来源信息。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881206,
+    "id": "chatcmpl-a1b76784-f8d3-94d3-b9c0-19faa0ca9b9a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 94,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2612,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2706
+    }
+  },
+  "usage_known": true
+}

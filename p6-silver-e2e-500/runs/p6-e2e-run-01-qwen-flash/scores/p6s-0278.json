@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0278",
+  "citation_correctness": {
+    "evidence": "无法确认是否存在价格差异，需补充具体信息。[1][2][3]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "未提供任何关于产品定价策略或品牌间价格对比的内容。[1][2][3]",
+    "reason": "完整覆盖问题所需条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "无相关文档说明品牌与价格之间的关联性。[1][2][3]",
+    "reason": "每项事实均来自上下文且无编造",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "1e8b94c0dd2e45a896672ca7ec6cc873",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "建议转人工或提供具体产品型号以获取准确信息。[1][2][3]",
+    "reason": "明确拒答并建议转人工",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

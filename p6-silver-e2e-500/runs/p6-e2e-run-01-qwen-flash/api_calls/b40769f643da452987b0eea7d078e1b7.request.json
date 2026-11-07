@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:18:25.389930+08:00",
+  "input_token_upper_bound": 1142,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0360"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在山区铁塔巡检中，需检查铁塔主体结构及哪些附属设施？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "b40769f643da452987b0eea7d078e1b7",
+  "reserved_yuan": 0.000571
+}

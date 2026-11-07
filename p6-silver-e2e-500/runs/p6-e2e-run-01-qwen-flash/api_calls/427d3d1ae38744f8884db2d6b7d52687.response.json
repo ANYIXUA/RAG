@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:04.194294+08:00",
+  "conservative_cost_yuan": 0.0015045,
+  "error": null,
+  "latency_ms": 2937.4643000774086,
+  "list_price_estimate_yuan": 0.001014,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"协议与功能均匹配上下文\",\n    \"evidence\": \"《Multi-AP_Specification》规范实现EasyMeshTM 要求的网络拓扑、漫游、频段切换、角 色选择等功能\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"光网关承担Controller 角色，用于家庭Wi-Fi 网络的覆盖AP 和回传链路的控制逻辑 策略\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖协议、角色、配网、链路等关键点\",\n    \"evidence\": \"回传链路优先使用光纤，次选5GHz频段Wi-Fi\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致且支持内容\",\n    \"evidence\": \"支持Wi-Fi 7 协议的全光组网终端，使用Wi-Fi 的Backhaul Link 宜使用双频MLO 实现回传\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881921,
+    "id": "chatcmpl-8358664e-5ef7-9bad-9fa1-c1dc48fd937e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 327,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3490,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3817
+    }
+  },
+  "usage_known": true
+}

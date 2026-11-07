@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:13:44.264843+08:00",
+  "input_token_upper_bound": 1207,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0024"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "因非承包人原因引起的工作量增减，超出合同约定幅度时，应如何处理综合单价？ 故障原因 排查步骤 处理步骤 解决办法 现场处理建议"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "b92c840112444f03ac597218009bc4a0",
+  "reserved_yuan": 0.0006035
+}

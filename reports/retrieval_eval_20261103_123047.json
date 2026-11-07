@@ -1,0 +1,294 @@
+{
+  "report_type": "retrieval_evaluation",
+  "generated_at": "2026-11-03T12:30:47.791850+00:00",
+  "dataset_path": "/tmp/retrieval_eval.sample.jsonl",
+  "cases": 1,
+  "top_k": 3,
+  "settings": {
+    "collection_name": "default",
+    "embedding_provider": "openai",
+    "embedding_dimension": 1024,
+    "vector_store_provider": "postgresql",
+    "retrieval_mode": "hybrid",
+    "retrieval_candidate_k": 20,
+    "semantic_weight": 0.7,
+    "bm25_weight": 0.3,
+    "min_similarity_score": 0.05,
+    "relative_score_threshold": 0.35,
+    "rerank_candidate_k": 20
+  },
+  "runs": [
+    {
+      "name": "no_rerank",
+      "rerank_provider": "none",
+      "rerank_model": "none",
+      "case_count": 1,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "no_result_rate": 0.0,
+      "avg_latency_ms": 1051.904,
+      "median_latency_ms": 1051.904,
+      "p95_latency_ms": 1051.904,
+      "failure_count": 0,
+      "bucket_metrics": {
+        "intent_label": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 1051.904,
+            "median_latency_ms": 1051.904,
+            "p95_latency_ms": 1051.904,
+            "failure_count": 0
+          }
+        },
+        "business_module": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 1051.904,
+            "median_latency_ms": 1051.904,
+            "p95_latency_ms": 1051.904,
+            "failure_count": 0
+          }
+        },
+        "source_type": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 1051.904,
+            "median_latency_ms": 1051.904,
+            "p95_latency_ms": 1051.904,
+            "failure_count": 0
+          }
+        }
+      },
+      "failures": [],
+      "case_results": [
+        {
+          "query": "T9254 是什么错误",
+          "note": "本地 smoke 样本：验证 pgvector 召回链路可用",
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "tags": [],
+          "hit": true,
+          "rank": 1,
+          "reciprocal_rank": 1.0,
+          "no_result": false,
+          "latency_ms": 1051.904,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第59页",
+              "score": 0.471332,
+              "retrieval_score": 0.471332,
+              "rerank_score": null,
+              "semantic_score": 0.455622,
+              "bm25_score": 2.086897
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第324页",
+              "score": 0.412734,
+              "retrieval_score": 0.412734,
+              "rerank_score": null,
+              "semantic_score": 0.483153,
+              "bm25_score": 1.02056
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第290页",
+              "score": 0.409694,
+              "retrieval_score": 0.409694,
+              "rerank_score": null,
+              "semantic_score": 0.486637,
+              "bm25_score": 0.945522
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "with_rerank",
+      "rerank_provider": "cross-encoder",
+      "rerank_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "case_count": 1,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "no_result_rate": 0.0,
+      "avg_latency_ms": 4404.589,
+      "median_latency_ms": 4404.589,
+      "p95_latency_ms": 4404.589,
+      "failure_count": 0,
+      "bucket_metrics": {
+        "intent_label": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 4404.589,
+            "median_latency_ms": 4404.589,
+            "p95_latency_ms": 4404.589,
+            "failure_count": 0
+          }
+        },
+        "business_module": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 4404.589,
+            "median_latency_ms": 4404.589,
+            "p95_latency_ms": 4404.589,
+            "failure_count": 0
+          }
+        },
+        "source_type": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 4404.589,
+            "median_latency_ms": 4404.589,
+            "p95_latency_ms": 4404.589,
+            "failure_count": 0
+          }
+        }
+      },
+      "failures": [],
+      "case_results": [
+        {
+          "query": "T9254 是什么错误",
+          "note": "本地 smoke 样本：验证 pgvector 召回链路可用",
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "tags": [],
+          "hit": true,
+          "rank": 1,
+          "reciprocal_rank": 1.0,
+          "no_result": false,
+          "latency_ms": 4404.589,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第65页",
+              "score": -3.748234,
+              "retrieval_score": 0.321125,
+              "rerank_score": -3.748234,
+              "semantic_score": 0.45875,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第61页",
+              "score": -4.63395,
+              "retrieval_score": 0.346544,
+              "rerank_score": -4.63395,
+              "semantic_score": 0.495063,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第116页",
+              "score": -6.800058,
+              "retrieval_score": 0.322383,
+              "rerank_score": -6.800058,
+              "semantic_score": 0.460547,
+              "bm25_score": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "delta": {
+    "hit_at_k": 0.0,
+    "mrr": 0.0,
+    "no_result_rate": 0.0,
+    "avg_latency_ms": 3352.685,
+    "p95_latency_ms": 3352.685
+  },
+  "release_gate": {
+    "passed": true,
+    "candidate_run": "with_rerank",
+    "baseline_run": null,
+    "thresholds": {
+      "min_hit_at_k": 0.8,
+      "min_mrr": 0.7,
+      "max_no_result_rate": 0.2,
+      "max_avg_latency_ms": null,
+      "max_p95_latency_ms": null,
+      "max_hit_at_k_drop": 0.05,
+      "max_mrr_drop": 0.05,
+      "max_no_result_rate_increase": 0.05,
+      "max_avg_latency_increase_ms": null,
+      "max_p95_latency_increase_ms": null
+    },
+    "checks": [
+      {
+        "name": "min_hit_at_k",
+        "metric": "hit_at_k",
+        "operator": ">=",
+        "value": 1.0,
+        "threshold": 0.8,
+        "passed": true
+      },
+      {
+        "name": "min_mrr",
+        "metric": "mrr",
+        "operator": ">=",
+        "value": 1.0,
+        "threshold": 0.7,
+        "passed": true
+      },
+      {
+        "name": "max_no_result_rate",
+        "metric": "no_result_rate",
+        "operator": "<=",
+        "value": 0.0,
+        "threshold": 0.2,
+        "passed": true
+      },
+      {
+        "name": "max_avg_latency_ms",
+        "metric": "avg_latency_ms",
+        "operator": "skip",
+        "value": 4404.589,
+        "threshold": null,
+        "passed": true,
+        "skipped": true
+      },
+      {
+        "name": "max_p95_latency_ms",
+        "metric": "p95_latency_ms",
+        "operator": "skip",
+        "value": 4404.589,
+        "threshold": null,
+        "passed": true,
+        "skipped": true
+      }
+    ],
+    "baseline_delta": null
+  },
+  "report_path": "/tmp/rag-retrieval-smoke/retrieval_eval_20261103_123047.json"
+}

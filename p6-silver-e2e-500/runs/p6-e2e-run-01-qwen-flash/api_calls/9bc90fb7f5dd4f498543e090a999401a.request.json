@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:46.452374+08:00",
+  "input_token_upper_bound": 1132,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0455"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "家里Wi-Fi信号总在客厅和卧室之间忽强忽弱，咋整？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "9bc90fb7f5dd4f498543e090a999401a",
+  "reserved_yuan": 0.000566
+}

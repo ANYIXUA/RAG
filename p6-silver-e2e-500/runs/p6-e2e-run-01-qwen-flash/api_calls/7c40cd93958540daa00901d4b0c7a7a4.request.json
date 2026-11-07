@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:18.266613+08:00",
+  "input_token_upper_bound": 1162,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0064"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "备用业务通道的误码测试要求在多长时间内无误码？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "7c40cd93958540daa00901d4b0c7a7a4",
+  "reserved_yuan": 0.000581
+}

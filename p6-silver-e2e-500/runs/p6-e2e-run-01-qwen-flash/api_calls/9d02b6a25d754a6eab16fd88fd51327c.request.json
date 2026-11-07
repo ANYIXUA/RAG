@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:13:59.550932+08:00",
+  "input_token_upper_bound": 1115,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0043"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "吊顶式机房空调的综合单价是多少元？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "9d02b6a25d754a6eab16fd88fd51327c",
+  "reserved_yuan": 0.0005575
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:15.250584+08:00",
+  "input_token_upper_bound": 1240,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0203"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "机房外墙修复每平方米的综合单价是多少，若同时涉及机房室外环境清理的作业内容，其人工费构成如何？ 故障原因 排查步骤 处理步骤 解决办法 现场处理建议"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "fd47a6b39e534255917b727a17cb7204",
+  "reserved_yuan": 0.00062
+}

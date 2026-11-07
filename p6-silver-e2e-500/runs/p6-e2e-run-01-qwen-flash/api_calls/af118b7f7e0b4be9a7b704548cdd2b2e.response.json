@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:52.665370+08:00",
+  "conservative_cost_yuan": 0.0008079,
+  "error": null,
+  "latency_ms": 1471.2098999880254,
+  "list_price_estimate_yuan": 0.0006159,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 直埋光缆金属护套对地绝缘电阻测试的消耗量为0.71条千米·次。[1]  \n2. 测试工作内容包括技术指标测试、记录、资料整理与分析。[1]  \n3. 计量单位为条千米·次，按维护周期实际发生次数计算。[3]  \n4. 综合单价为120.03元，含人工费、管理费及利润。[1]  \n5. 金属护套对地绝缘电阻应≥2MΩ/单盘。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880831,
+    "id": "chatcmpl-54b99993-3911-9e3a-97f1-8829e38ac5c3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 128,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2826,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2954
+    }
+  },
+  "usage_known": true
+}

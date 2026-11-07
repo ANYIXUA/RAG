@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:17.464481+08:00",
+  "conservative_cost_yuan": 0.0007296,
+  "error": null,
+  "latency_ms": 1348.725700052455,
+  "list_price_estimate_yuan": 0.0005720999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 上下文未提供不同品牌装维服务响应速度的对比数据。[1]  \n2. 未提及任何品牌在响应速度方面的具体表现或差异。[2]  \n3. 所有内容聚焦于装维技能与标准，非品牌性能比较。[3]  \n4. 无法基于现有信息进行品牌间响应速度对比。[1]  \n5. 建议补充具体品牌及响应时效数据，或转人工咨询。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881216,
+    "id": "chatcmpl-a8d11ed8-acac-939c-bd76-b465f2ac41a9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 105,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2764,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2869
+    }
+  },
+  "usage_known": true
+}

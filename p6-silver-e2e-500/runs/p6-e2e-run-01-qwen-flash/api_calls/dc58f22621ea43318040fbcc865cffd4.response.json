@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:09.406527+08:00",
+  "conservative_cost_yuan": 0.0013485,
+  "error": null,
+  "latency_ms": 2750.8481999393553,
+  "list_price_estimate_yuan": 0.0009675,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文工作内容一致。\",\n    \"evidence\": \"工作内容：安装、绑扎、清理现场等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持。\",\n    \"evidence\": \"绑扎应按规范操作，确保牢固可靠。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖绑扎与清理现场全部要求。\",\n    \"evidence\": \"清理现场包括移除施工垃圾与工具。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配。\",\n    \"evidence\": \"[2] 绑扎应按规范操作，确保牢固可靠。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882106,
+    "id": "chatcmpl-843fbafa-d642-981c-bae4-9d1c7dcf9c96",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 254,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3910,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4164
+    }
+  },
+  "usage_known": true
+}

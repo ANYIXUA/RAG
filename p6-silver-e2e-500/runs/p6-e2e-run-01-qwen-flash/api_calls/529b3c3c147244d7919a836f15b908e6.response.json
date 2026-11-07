@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:25.510195+08:00",
+  "conservative_cost_yuan": 0.0014830499999999999,
+  "error": null,
+  "latency_ms": 3288.439800031483,
+  "list_price_estimate_yuan": 0.00099105,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出66.01元\",\n    \"evidence\": \"WH11001001 架空光缆线路徒步巡回 平原 66.01 44.79 12.27 8.96\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应原文支持\",\n    \"evidence\": \"WH11001001 架空光缆线路徒步巡回 平原 66.01 44.79 12.27 8.96\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、单位、费用构成\",\n    \"evidence\": \"计量单位：千米²次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881702,
+    "id": "chatcmpl-ad442a4e-6309-9f2e-b987-59771fc86dce",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 328,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3327,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3655
+    }
+  },
+  "usage_known": true
+}

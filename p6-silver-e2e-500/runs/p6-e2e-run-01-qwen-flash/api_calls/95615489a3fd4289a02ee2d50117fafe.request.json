@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:21.594554+08:00",
+  "input_token_upper_bound": 1133,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0285"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "家里网线断了，想把旧的线拆了，怎么处理才合规？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "95615489a3fd4289a02ee2d50117fafe",
+  "reserved_yuan": 0.0005665
+}

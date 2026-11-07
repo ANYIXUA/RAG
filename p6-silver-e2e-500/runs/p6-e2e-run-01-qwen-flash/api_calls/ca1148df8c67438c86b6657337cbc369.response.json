@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:37.141587+08:00",
+  "conservative_cost_yuan": 0.00144,
+  "error": null,
+  "latency_ms": 2961.330800084397,
+  "list_price_estimate_yuan": 0.0009825,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确说明补贴未提及，符合事实\",\n    \"evidence\": \"装维人员安装补贴未在上下文中提及，无法确认获取方式。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文并有对应引用\",\n    \"evidence\": \"所有文档聚焦于技术规范与操作要求，不包含激励或补贴条款。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息，无遗漏\",\n    \"evidence\": \"建议补充具体补贴政策文件或转人工咨询。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致且支持内容\",\n    \"evidence\": \"未提供关于终端设备安装补贴的具体政策或标准。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"应拒答时明确拒答并提示转人工\",\n    \"evidence\": \"建议补充具体补贴政策文件或转人工咨询。\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"explicit_rejection\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881954,
+    "id": "chatcmpl-1b8eabb6-2653-9002-9662-9126bf133327",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 305,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3500,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3805
+    }
+  },
+  "usage_known": true
+}

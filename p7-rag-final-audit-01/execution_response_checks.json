@@ -1,0 +1,5002 @@
+[
+  {
+    "case_id": "p6s-0001",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7bfc6a1b06c34fcc96fece4a717a698e"
+  },
+  {
+    "case_id": "p6s-0002",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9f2a9db5d48546a8944bcab3c69275d4"
+  },
+  {
+    "case_id": "p6s-0003",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6535eaeccddf486da4af25f576db74d8"
+  },
+  {
+    "case_id": "p6s-0004",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0c70d8781342417592271f625a6f490e"
+  },
+  {
+    "case_id": "p6s-0005",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0d4d84e59a414d78b4d925af8e5114b3"
+  },
+  {
+    "case_id": "p6s-0006",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "df2983c51d1f47e59cd90b1a6207f750"
+  },
+  {
+    "case_id": "p6s-0007",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d38fcdb5a5b94bd9a6fb205744093714"
+  },
+  {
+    "case_id": "p6s-0008",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3188b279d46f4b6e8f9e7e165632bcbe"
+  },
+  {
+    "case_id": "p6s-0009",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6d78036c021b49318d41409d39f7ccc4"
+  },
+  {
+    "case_id": "p6s-0010",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1255c3f9bfa7438b9329b5d45d75a93f"
+  },
+  {
+    "case_id": "p6s-0011",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "193a85e291b5432baa5c61685e26dc89"
+  },
+  {
+    "case_id": "p6s-0012",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "80c116633514487e9f4c81c748bfe8db"
+  },
+  {
+    "case_id": "p6s-0013",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a889aa5308c24138b85de6a3761cf03a"
+  },
+  {
+    "case_id": "p6s-0014",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9918bb9a0a9f4d999915afe78dedff12"
+  },
+  {
+    "case_id": "p6s-0015",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "99908699c78b4e959621df59f90186b3"
+  },
+  {
+    "case_id": "p6s-0016",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f89a99d971ce42d8ab2a51b042e43395"
+  },
+  {
+    "case_id": "p6s-0017",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1d104451dd1545d4a63ee7e078783e31"
+  },
+  {
+    "case_id": "p6s-0018",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "50ae3424a0364b2c8bd14795c6ca9090"
+  },
+  {
+    "case_id": "p6s-0019",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "52837ba9fcd8492dbc69f3af428e6662"
+  },
+  {
+    "case_id": "p6s-0020",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b4d8a4986b7e47ab8bab9f0b021d7e8d"
+  },
+  {
+    "case_id": "p6s-0021",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e40738b3662f40709cbb7f9ee2b00fb6"
+  },
+  {
+    "case_id": "p6s-0022",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "91a06450c4dd493180bd2f7e3209180b"
+  },
+  {
+    "case_id": "p6s-0023",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5bf2c10550e74b21830e400ef3301c60"
+  },
+  {
+    "case_id": "p6s-0024",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2e0ad52faa094e198df0e8877336644a"
+  },
+  {
+    "case_id": "p6s-0025",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3821f962c2194b8a90c45871e92b2e3e"
+  },
+  {
+    "case_id": "p6s-0026",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "02324d7c78f440d48ff2cadaeabc8238"
+  },
+  {
+    "case_id": "p6s-0027",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f59e917e98d940a8b465a7b92be941b8"
+  },
+  {
+    "case_id": "p6s-0028",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3e9122ab618e4679bd32c2ad405521c5"
+  },
+  {
+    "case_id": "p6s-0029",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e040b9dc1ad247efa9630baf7f33986b"
+  },
+  {
+    "case_id": "p6s-0030",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f21077ab5d8c4a45905f5eeb9a9129d2"
+  },
+  {
+    "case_id": "p6s-0031",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "bd82bf2da444464e9f76af9902335e1f"
+  },
+  {
+    "case_id": "p6s-0032",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "58b660d230864a1b81da0d76741df9a7"
+  },
+  {
+    "case_id": "p6s-0033",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f8f589a9dac5474886ed68a4de6e9b25"
+  },
+  {
+    "case_id": "p6s-0034",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7ce61b4f6f3e4510af6af2cccd742b68"
+  },
+  {
+    "case_id": "p6s-0035",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8c505ddd4d9c48a0981902b35faffa67"
+  },
+  {
+    "case_id": "p6s-0036",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e6c5c8445f134e09b414cd3e4d904da2"
+  },
+  {
+    "case_id": "p6s-0037",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "dbe9f081aefb4bd599b5c58c38d4e8a5"
+  },
+  {
+    "case_id": "p6s-0038",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e6ab5636aacd4ab48f6e06d53acbf137"
+  },
+  {
+    "case_id": "p6s-0039",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6057a8f8220c41ccac56fcbe4f0762f4"
+  },
+  {
+    "case_id": "p6s-0040",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f5d2279c037346e5bdc37fc7b4208f97"
+  },
+  {
+    "case_id": "p6s-0041",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "170fcc26e0194106b5dbb717af650621"
+  },
+  {
+    "case_id": "p6s-0042",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a5890ebefecc4192a42f4644da71c09d"
+  },
+  {
+    "case_id": "p6s-0043",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2b9ce2a101c740099687d36d5aa61d0b"
+  },
+  {
+    "case_id": "p6s-0044",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "df825ed44959484d8c07e92fb5b9ea86"
+  },
+  {
+    "case_id": "p6s-0045",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "97d656a37cb34406af9b1d047710adb0"
+  },
+  {
+    "case_id": "p6s-0046",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "86fdcf8d3cb4480fa2c00914cdd5df8a"
+  },
+  {
+    "case_id": "p6s-0047",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "17b7b30c7b7d4d779ac92204d1b5f0f5"
+  },
+  {
+    "case_id": "p6s-0048",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "438df19cb3534999a6f9244ba87cc61c"
+  },
+  {
+    "case_id": "p6s-0049",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "34e10a8327e34cdf97491f2d0834f330"
+  },
+  {
+    "case_id": "p6s-0050",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3d2de6311bea497a89f45523ac9e7361"
+  },
+  {
+    "case_id": "p6s-0051",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "807cfebf18f043ad9bbbd5b74d932f11"
+  },
+  {
+    "case_id": "p6s-0052",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3f18ac1788b24842935fdb979f35e190"
+  },
+  {
+    "case_id": "p6s-0053",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "752400a0a4a249299d83557c3ccee4a1"
+  },
+  {
+    "case_id": "p6s-0054",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "30ab3031db6c443d9e489e90c51d9549"
+  },
+  {
+    "case_id": "p6s-0055",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c03386bb5be7417db6601575015b7813"
+  },
+  {
+    "case_id": "p6s-0056",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "273f55b32f094d9f8965991ca1b1029f"
+  },
+  {
+    "case_id": "p6s-0057",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2fe4c050261e48e2b4c78524509f17c2"
+  },
+  {
+    "case_id": "p6s-0058",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6fae1455572c448baef644822ae38aa7"
+  },
+  {
+    "case_id": "p6s-0059",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "67da862b9a964f37878738cb761d501c"
+  },
+  {
+    "case_id": "p6s-0060",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6c58e56cf7df4a449d2e01fabea00f17"
+  },
+  {
+    "case_id": "p6s-0061",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a22e6b22d2ff4cc7a1d371cf865754c7"
+  },
+  {
+    "case_id": "p6s-0062",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "39efc1569165442b93b09d4e15df4384"
+  },
+  {
+    "case_id": "p6s-0063",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0f49d379ab6a4f8abcadc4a2c00d0a23"
+  },
+  {
+    "case_id": "p6s-0064",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "913e3911e276435cb9eeb8f8793f37e2"
+  },
+  {
+    "case_id": "p6s-0065",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5f53696191174414a14ae052756c4ffb"
+  },
+  {
+    "case_id": "p6s-0066",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a5dd954dfa4d412998f7e8848b5a9078"
+  },
+  {
+    "case_id": "p6s-0067",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "30dc08a3c1554cfc865b2adb26c03490"
+  },
+  {
+    "case_id": "p6s-0068",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f2b8682fa8654ad48b9c62f3dfbb80b0"
+  },
+  {
+    "case_id": "p6s-0069",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "822b193edeab4eb79f46c597487dac82"
+  },
+  {
+    "case_id": "p6s-0070",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6327a2ef7bc94803aa8e1cf44727f698"
+  },
+  {
+    "case_id": "p6s-0071",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "54822643f982429a934398994fc4fafc"
+  },
+  {
+    "case_id": "p6s-0072",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "cc57596da3734cafb7210f34c56b74de"
+  },
+  {
+    "case_id": "p6s-0073",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b461b839225549fcb184337920b3974b"
+  },
+  {
+    "case_id": "p6s-0074",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2d45169dd6154b01a626f31924ce92f5"
+  },
+  {
+    "case_id": "p6s-0075",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e870288d6e5e4755a712335aa18bf6b7"
+  },
+  {
+    "case_id": "p6s-0076",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "41632a108e6e42f0bf61b4d63e9c10e0"
+  },
+  {
+    "case_id": "p6s-0077",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7cdcba25a4c2454d9a57e8a4ab0e3bba"
+  },
+  {
+    "case_id": "p6s-0078",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4733af9db1a34711b2d5444711cf5138"
+  },
+  {
+    "case_id": "p6s-0079",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4f272bd90a0b43c89e2803fa66e9b4ab"
+  },
+  {
+    "case_id": "p6s-0080",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a586c7404bd74570a08876eea46fa89f"
+  },
+  {
+    "case_id": "p6s-0081",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "043cddbaee8945a4ba75805eac79bfaf"
+  },
+  {
+    "case_id": "p6s-0082",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "fab5eaad60ed47c8a226ec1411e53528"
+  },
+  {
+    "case_id": "p6s-0083",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1bd22d3eef17461cbb75b424363a3688"
+  },
+  {
+    "case_id": "p6s-0084",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "40078e2cd8fc49a0811ce8152dabb2a3"
+  },
+  {
+    "case_id": "p6s-0085",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1869196d87db4dcc87624e095f7c1fbc"
+  },
+  {
+    "case_id": "p6s-0086",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "bbc528fc23ff4f9db4af2e3974c8f5df"
+  },
+  {
+    "case_id": "p6s-0087",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e30aec39ef124a35b496af646e1d27f9"
+  },
+  {
+    "case_id": "p6s-0088",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "43bcffb04d144498b2314b724916cba3"
+  },
+  {
+    "case_id": "p6s-0089",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "75403bc5a233416abe971474a0f8bfbc"
+  },
+  {
+    "case_id": "p6s-0090",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b10995be491d476ba2e986de8db6572a"
+  },
+  {
+    "case_id": "p6s-0091",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "90a78d6561e844889858474116e52035"
+  },
+  {
+    "case_id": "p6s-0092",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "080bd0b97ea74f438ee9862996ba498a"
+  },
+  {
+    "case_id": "p6s-0093",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "74baeb5d074d4f1ea173ee8186c190a0"
+  },
+  {
+    "case_id": "p6s-0094",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5ae952a320f24157859a9ace224d08a6"
+  },
+  {
+    "case_id": "p6s-0095",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a88f55cb21e94ed8bf852040560ca3a6"
+  },
+  {
+    "case_id": "p6s-0096",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "13d0dc8d92ef468592b60bcc070ea3e3"
+  },
+  {
+    "case_id": "p6s-0097",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "87b48dbc327142469271f4e99658fd8c"
+  },
+  {
+    "case_id": "p6s-0098",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9260b0d0b9a942efa7a14a9d6bae85fb"
+  },
+  {
+    "case_id": "p6s-0099",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "fe1df3e8fe7442ceae5525da5b1e5e19"
+  },
+  {
+    "case_id": "p6s-0100",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8a31bf8c015d4155922a7ad7d2d805fc"
+  },
+  {
+    "case_id": "p6s-0101",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d6430fd8edf6469294687cbe108a22a9"
+  },
+  {
+    "case_id": "p6s-0102",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "77ab525e3ae14df7ad2f5a0403825819"
+  },
+  {
+    "case_id": "p6s-0103",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d89d1f5e037b44e188bad57e74ec107d"
+  },
+  {
+    "case_id": "p6s-0104",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "30bc73f921fb480ea44a0c00edcd935e"
+  },
+  {
+    "case_id": "p6s-0105",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "80fdc640b24742a6afb461f279868bd3"
+  },
+  {
+    "case_id": "p6s-0106",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c96d155bd8e64ec2a62af66c705b9cfc"
+  },
+  {
+    "case_id": "p6s-0107",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "30066f84676b44149de6dcb50addc5eb"
+  },
+  {
+    "case_id": "p6s-0108",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a6cab2be40e54476a45bb6697a5d4243"
+  },
+  {
+    "case_id": "p6s-0109",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9c0a48ae5ed74388bc8864183ba1c2f2"
+  },
+  {
+    "case_id": "p6s-0110",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1e11d439873744d18446554d5d3e996a"
+  },
+  {
+    "case_id": "p6s-0111",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "84a9f418631549178485d1fb0f60fc56"
+  },
+  {
+    "case_id": "p6s-0112",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ece59df57b3f4725b17831df52f21255"
+  },
+  {
+    "case_id": "p6s-0113",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8b7ad97baee14f6f962335d6358abe08"
+  },
+  {
+    "case_id": "p6s-0114",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f65646de95384f53b0f9c1ed15bd91f5"
+  },
+  {
+    "case_id": "p6s-0115",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "08ead41bc54b4d589815f2cee49b0368"
+  },
+  {
+    "case_id": "p6s-0116",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7e8c99ec625641869e60e316e4c87292"
+  },
+  {
+    "case_id": "p6s-0117",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "77d9788849144a879dbb69554384b91f"
+  },
+  {
+    "case_id": "p6s-0118",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ff8cfc8520d740b79f502d138b5a78d6"
+  },
+  {
+    "case_id": "p6s-0119",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "42c70630e7db4e0ea21c92e9f300cfa3"
+  },
+  {
+    "case_id": "p6s-0120",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "bfd039d20ceb4ed59798c96ebc9f9ce4"
+  },
+  {
+    "case_id": "p6s-0121",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ddfa4d4cf4bd45a3aa61968018fcc88e"
+  },
+  {
+    "case_id": "p6s-0122",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8ecdb8b8b63d4d989139e306ec50e791"
+  },
+  {
+    "case_id": "p6s-0123",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "62cdcde47fcc48e0b735bff421b4b5b6"
+  },
+  {
+    "case_id": "p6s-0124",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "999e7c8748e647e694d60968a78d12c5"
+  },
+  {
+    "case_id": "p6s-0125",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e449e4c510254a10b69a72c878f15a11"
+  },
+  {
+    "case_id": "p6s-0126",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6d38399db7d544039baf4bc669e44ea9"
+  },
+  {
+    "case_id": "p6s-0127",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e146d40a503e4368a39f103b225faf74"
+  },
+  {
+    "case_id": "p6s-0128",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "54a1d1b6ba574b4aaad2676fc6849c80"
+  },
+  {
+    "case_id": "p6s-0129",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "56fa165249ac4c3dbbfc02aa8f689412"
+  },
+  {
+    "case_id": "p6s-0130",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0f2df9189d094b32a5f7c10e355897a9"
+  },
+  {
+    "case_id": "p6s-0131",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3efb9a6691f9413ebe9bb865827c6aed"
+  },
+  {
+    "case_id": "p6s-0132",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "49dad1897c024c05b1e25bae85e54bc7"
+  },
+  {
+    "case_id": "p6s-0133",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1ce14d45272d4b73ba80002c41e58bce"
+  },
+  {
+    "case_id": "p6s-0134",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7bc0c19156ef4c4d8bece4295a2defb6"
+  },
+  {
+    "case_id": "p6s-0135",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0d915ad08b4f41af951813ff4939b14e"
+  },
+  {
+    "case_id": "p6s-0136",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0b7354ba1e4a48be8ac3b9c8dd76bb3b"
+  },
+  {
+    "case_id": "p6s-0137",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "31bb3abf78064908adbd396f3dbc8b27"
+  },
+  {
+    "case_id": "p6s-0138",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d744dd000f75425e8fd0480328ee1a97"
+  },
+  {
+    "case_id": "p6s-0139",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "14bcf395829c44bab059c1143b76e93d"
+  },
+  {
+    "case_id": "p6s-0140",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "effbe7c8246a42baa89668bbd450086d"
+  },
+  {
+    "case_id": "p6s-0141",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "bf95b8521fe248e9b61ca0830dded313"
+  },
+  {
+    "case_id": "p6s-0142",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2885add2051243378702103e3061d84a"
+  },
+  {
+    "case_id": "p6s-0143",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f6e7a07116794ccb8cb666c83a81a596"
+  },
+  {
+    "case_id": "p6s-0144",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b540fa9acbfe41019e5f0f04cd5cc2ee"
+  },
+  {
+    "case_id": "p6s-0145",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d849f2ed6238427ba719ddd6062cee46"
+  },
+  {
+    "case_id": "p6s-0146",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3cee9861f1264059bf314c6ca16db347"
+  },
+  {
+    "case_id": "p6s-0147",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "effd4c9732fe43c4b5fceb9933427975"
+  },
+  {
+    "case_id": "p6s-0148",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e8c186d51ce54a8181fa577e98cedf78"
+  },
+  {
+    "case_id": "p6s-0149",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9b7b6adc7224435f95da4c3d99d9b1f6"
+  },
+  {
+    "case_id": "p6s-0150",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6f8c14f6e02a4aec974c44964fe015ea"
+  },
+  {
+    "case_id": "p6s-0151",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b60c5af9c2004236a6e27e4d46df41bb"
+  },
+  {
+    "case_id": "p6s-0152",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e1e888f9992a491fa41099f9ff3c69f8"
+  },
+  {
+    "case_id": "p6s-0153",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b590c4fae28247d19a212c797eda2266"
+  },
+  {
+    "case_id": "p6s-0154",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d098f3f020944fe8913b93112516823b"
+  },
+  {
+    "case_id": "p6s-0155",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f2475b87323a4b3a9d1681acb23c474f"
+  },
+  {
+    "case_id": "p6s-0156",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0e3db7b7190a4b14aa350cb422556239"
+  },
+  {
+    "case_id": "p6s-0157",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "17f7864ea90742d2b1dc3185f6309543"
+  },
+  {
+    "case_id": "p6s-0158",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3d580d251a4c4f6ba3b0134ecb522b7e"
+  },
+  {
+    "case_id": "p6s-0159",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1958d8fab6be48c4bf6ffdf4cfc99d89"
+  },
+  {
+    "case_id": "p6s-0160",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6d0191a0780240b79837c0e2f4719d40"
+  },
+  {
+    "case_id": "p6s-0161",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4a3998510353438e9b68a2d6ab0ac4fd"
+  },
+  {
+    "case_id": "p6s-0162",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2a49bce9fc1d46f89ed3e8aa4d13672b"
+  },
+  {
+    "case_id": "p6s-0163",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "564df99bcd2a4560931f9e7098b5e2dc"
+  },
+  {
+    "case_id": "p6s-0164",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a0c83cbbce674c4bafc80f6a0e2f1bfe"
+  },
+  {
+    "case_id": "p6s-0165",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d680d6d5ef084d05baa8384580989331"
+  },
+  {
+    "case_id": "p6s-0166",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2ac26d321f354a37a97d55cd13b6c105"
+  },
+  {
+    "case_id": "p6s-0167",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f23ddf10dacc4a7c95eef69ba51a293c"
+  },
+  {
+    "case_id": "p6s-0168",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5e888cb082b740e8a25e00e9216a5415"
+  },
+  {
+    "case_id": "p6s-0169",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "17eb755f1003404fa3c0da49e439f628"
+  },
+  {
+    "case_id": "p6s-0170",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9cc52824d85a43bc80e2e3d40c29a5e9"
+  },
+  {
+    "case_id": "p6s-0171",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "387893d4d7b549dc859f953f491e4b17"
+  },
+  {
+    "case_id": "p6s-0172",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "83b9b3cecd8e456a9eef201e61c093ea"
+  },
+  {
+    "case_id": "p6s-0173",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4faf80c3b7d548a49d4b7e0f6107194e"
+  },
+  {
+    "case_id": "p6s-0174",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7bde810407f842d5bac8461f930a368b"
+  },
+  {
+    "case_id": "p6s-0175",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ae8fbeb07e104e488958ab0060d0cfe6"
+  },
+  {
+    "case_id": "p6s-0176",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ca063bd10a2440718473ef4c25ad96bb"
+  },
+  {
+    "case_id": "p6s-0177",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0bb1cf17fdad4fe2904764700d8a85bc"
+  },
+  {
+    "case_id": "p6s-0178",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f554a1411e6b498896aeeafcc5a6d771"
+  },
+  {
+    "case_id": "p6s-0179",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "41fa3dd22b0e4be3896f4cd393852180"
+  },
+  {
+    "case_id": "p6s-0180",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c2641e83a96f418e9c4bd4b33433bcd7"
+  },
+  {
+    "case_id": "p6s-0181",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ca1f48888bca4cc8b3c846235f12b93a"
+  },
+  {
+    "case_id": "p6s-0182",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1cdb7499366d4376926959b295d89f95"
+  },
+  {
+    "case_id": "p6s-0183",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f2fab1e94bd549aa990860374b509bfd"
+  },
+  {
+    "case_id": "p6s-0184",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a54c127a37a04d92b6c8bd3f4372c60d"
+  },
+  {
+    "case_id": "p6s-0185",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "af996d6e3cc4448ba86afcdf6cf2e644"
+  },
+  {
+    "case_id": "p6s-0186",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "414f1d16c48d4bd9ba94f5e57d27f15c"
+  },
+  {
+    "case_id": "p6s-0187",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "83e2e84c3d814c018e0afab728c0e9b5"
+  },
+  {
+    "case_id": "p6s-0188",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1b955b9b910848ee8ef146ab3aff4490"
+  },
+  {
+    "case_id": "p6s-0189",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "689ad77098154164a28d4f5fb3856e7b"
+  },
+  {
+    "case_id": "p6s-0190",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c4e48b1693a043ae8dd0d58d565d7e5e"
+  },
+  {
+    "case_id": "p6s-0191",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2526d497e98c4475898502671d0e1879"
+  },
+  {
+    "case_id": "p6s-0192",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "439cf6486ec04274bbb1fc096ee13130"
+  },
+  {
+    "case_id": "p6s-0193",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "08e1228b0c6949359897dce6aebdda94"
+  },
+  {
+    "case_id": "p6s-0194",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1778af33e3e44c9798db08bfa1acdae7"
+  },
+  {
+    "case_id": "p6s-0195",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5e2ff6e9de434e39956af954e07da285"
+  },
+  {
+    "case_id": "p6s-0196",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b2caae73b11c48a1a1a4a98019db4a64"
+  },
+  {
+    "case_id": "p6s-0197",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a54e26de53c147838c50a3fd5a73a524"
+  },
+  {
+    "case_id": "p6s-0198",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "238709582e6e4a49958cfa7553aa2e70"
+  },
+  {
+    "case_id": "p6s-0199",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "447aa40f76394ff4b5af7f38f5d87065"
+  },
+  {
+    "case_id": "p6s-0200",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "54cfd12f0dbb4f16b0def5509568c2f0"
+  },
+  {
+    "case_id": "p6s-0201",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "aa704e3a438040cb8d220715e3627b3c"
+  },
+  {
+    "case_id": "p6s-0202",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "566b7827cc134ac8b70571f2c7d95c4e"
+  },
+  {
+    "case_id": "p6s-0203",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9877d00223d5456db5f858f9515a85a7"
+  },
+  {
+    "case_id": "p6s-0204",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "17b2463f3c8147b29ec3eb9ec5fab15e"
+  },
+  {
+    "case_id": "p6s-0205",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "16d0f57ee8c54913b99d2224a2990231"
+  },
+  {
+    "case_id": "p6s-0206",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d35fd933758e415298baf1794f8bd4b8"
+  },
+  {
+    "case_id": "p6s-0207",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5ea6fdfb1e434960ac783bbdfd3d7207"
+  },
+  {
+    "case_id": "p6s-0208",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "01e56f0fcbf045e5ab6047d6757ea6ef"
+  },
+  {
+    "case_id": "p6s-0209",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ad5c40068dd246ef8abb99c565eb1919"
+  },
+  {
+    "case_id": "p6s-0210",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "fb27b39029674755bfec179dd1645ce0"
+  },
+  {
+    "case_id": "p6s-0211",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "167355c05ec641fb9f118bc3caedb2c9"
+  },
+  {
+    "case_id": "p6s-0212",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "56b65235a39c43a98a9b9d9f4135c5e0"
+  },
+  {
+    "case_id": "p6s-0213",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c5fc6ee2c2624b8bb88bb6c14a6de194"
+  },
+  {
+    "case_id": "p6s-0214",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8e8e626a105d4d5cbcbf075123641c83"
+  },
+  {
+    "case_id": "p6s-0215",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3f685548397646c0a731b4bf7c93666f"
+  },
+  {
+    "case_id": "p6s-0216",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ef12de1bd6af4976bb71312300ace788"
+  },
+  {
+    "case_id": "p6s-0217",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0c6766f79997459989c336bbbe4fa80d"
+  },
+  {
+    "case_id": "p6s-0218",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a2902f544552419e9bf4eb30260e65bb"
+  },
+  {
+    "case_id": "p6s-0219",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6e8553911eba44a1ad3ea254b8d2a9db"
+  },
+  {
+    "case_id": "p6s-0220",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4ebc9afe49164a899ba931d92ea8f9f1"
+  },
+  {
+    "case_id": "p6s-0221",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d5a704b94a46410aae691e1ffd3d7552"
+  },
+  {
+    "case_id": "p6s-0222",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f30d75d0b4e7484880b3f61cb41b46ff"
+  },
+  {
+    "case_id": "p6s-0223",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "bcd0a37c6c9e4de990a3bc09e71522dd"
+  },
+  {
+    "case_id": "p6s-0224",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c4f453bb519640a883e434e88290a41b"
+  },
+  {
+    "case_id": "p6s-0225",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e546eb88e59747289aeb6e9270635c0b"
+  },
+  {
+    "case_id": "p6s-0226",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "39e53279392b4eed9a821ca19b5ccb86"
+  },
+  {
+    "case_id": "p6s-0227",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ccd3162911b64917a187cafa7d25540e"
+  },
+  {
+    "case_id": "p6s-0228",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "60f60fdc235240789f1a19b43ec17987"
+  },
+  {
+    "case_id": "p6s-0229",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c830dc4235f24d0695e0fe2aca773222"
+  },
+  {
+    "case_id": "p6s-0230",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b9077ae9a3784a7b985eff695d67c898"
+  },
+  {
+    "case_id": "p6s-0231",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4864af5df512405282d4131950e7c7c3"
+  },
+  {
+    "case_id": "p6s-0232",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "68b9ed22cb1d4e3cad2be6fca17dbfe1"
+  },
+  {
+    "case_id": "p6s-0233",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3e44498da4bb47efad0a70b7550d2a8c"
+  },
+  {
+    "case_id": "p6s-0234",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "66a353c2fc414d03aaa279181f9d6476"
+  },
+  {
+    "case_id": "p6s-0235",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d08dfd9d7f9a471b8a7a5f4fe4e4825f"
+  },
+  {
+    "case_id": "p6s-0236",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2cea09b8524e4e9d8875100596cc824e"
+  },
+  {
+    "case_id": "p6s-0237",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "dbb3a0c29bfc44fc96778e28adeb9dde"
+  },
+  {
+    "case_id": "p6s-0238",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3706d32f2d5346e09d890587ff04de14"
+  },
+  {
+    "case_id": "p6s-0239",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "765c16ebf62045e686dead81dac6c174"
+  },
+  {
+    "case_id": "p6s-0240",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3cfc54ffd09d422b940215f2407c7d44"
+  },
+  {
+    "case_id": "p6s-0241",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "79e307c8fa974d36a4f233494ea8d061"
+  },
+  {
+    "case_id": "p6s-0242",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ca6a85c795f54e58af8aad4084f95dfd"
+  },
+  {
+    "case_id": "p6s-0243",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "722cae2976e944c5aed0657004e8a492"
+  },
+  {
+    "case_id": "p6s-0244",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9c3c53596b7e4e27849c9494bb5a98d7"
+  },
+  {
+    "case_id": "p6s-0245",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d0a42bbcfcc94beb9d24f01c7eb34f48"
+  },
+  {
+    "case_id": "p6s-0246",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "10cf6f31365e4d03bf8c51127552ef0a"
+  },
+  {
+    "case_id": "p6s-0247",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d672388da0f647e8931e0f3ab77c786b"
+  },
+  {
+    "case_id": "p6s-0248",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5ad97b5192904e0db2cdd6b847701f0a"
+  },
+  {
+    "case_id": "p6s-0249",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a66d120132f9429c9d7d956a00de89cd"
+  },
+  {
+    "case_id": "p6s-0250",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "02b01c3974464a7cb04e997268a5bb83"
+  },
+  {
+    "case_id": "p6s-0251",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2bbe7acd649345da86efdcc260d5c944"
+  },
+  {
+    "case_id": "p6s-0252",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "130e226238ee4f89bdcfd356664654e5"
+  },
+  {
+    "case_id": "p6s-0253",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f10464d7c93b48d3adbe767987c76af8"
+  },
+  {
+    "case_id": "p6s-0254",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8499115c64ba4cb8a25644fe2eb677de"
+  },
+  {
+    "case_id": "p6s-0255",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b26cd6a2fb8c4f62bcd19da1bb3c688b"
+  },
+  {
+    "case_id": "p6s-0256",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4724a3992c8346bc96396e23aacdb994"
+  },
+  {
+    "case_id": "p6s-0257",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6812510e405649beb5a1649725d331eb"
+  },
+  {
+    "case_id": "p6s-0258",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "197653186477470bb2eb31782c1e3176"
+  },
+  {
+    "case_id": "p6s-0259",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "11f8d53d6c2346a79b1331fa44ffd145"
+  },
+  {
+    "case_id": "p6s-0260",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "37b7522f4baa4ea8aa909c2c0fc6c61e"
+  },
+  {
+    "case_id": "p6s-0261",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8c1302647fa44fb7b4429e47c7813e17"
+  },
+  {
+    "case_id": "p6s-0262",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "dd1e252f22d64c219ae9fc2049fd2df3"
+  },
+  {
+    "case_id": "p6s-0263",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "61f348670747403684bed45b1ccfe362"
+  },
+  {
+    "case_id": "p6s-0264",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "47244b1231954b3b9b51f810d2e6afa3"
+  },
+  {
+    "case_id": "p6s-0265",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "89048a31f857465aa5c3b114387cc8f0"
+  },
+  {
+    "case_id": "p6s-0266",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "484eb51ff47343488a9e0c8cfd1ef764"
+  },
+  {
+    "case_id": "p6s-0267",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0d358b7c57ce4c33a7de8a5dbc75fe50"
+  },
+  {
+    "case_id": "p6s-0268",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3b78797fddff461b9fa889cb628cf51d"
+  },
+  {
+    "case_id": "p6s-0269",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b9f96de861114351919df76a7d922c62"
+  },
+  {
+    "case_id": "p6s-0270",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9c63ffdce3aa40d4a50d9a56a5cc63d7"
+  },
+  {
+    "case_id": "p6s-0271",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1a0e92eab799420f8a1e00549521e196"
+  },
+  {
+    "case_id": "p6s-0272",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0de84f5a76ab48ae9e605ce80d57d5aa"
+  },
+  {
+    "case_id": "p6s-0273",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ee3ec30f372b4b2bbe25f7870d5e6fb9"
+  },
+  {
+    "case_id": "p6s-0274",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f555da83cdec462bb2e9cb9e783be7ad"
+  },
+  {
+    "case_id": "p6s-0275",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ca324cfc0bb64da6bddf3e2cde6c08c1"
+  },
+  {
+    "case_id": "p6s-0276",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "29b3372e0e214b5fb596e6c44433ec59"
+  },
+  {
+    "case_id": "p6s-0277",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c9593f9611f74d5a857e748b281f2f58"
+  },
+  {
+    "case_id": "p6s-0278",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "55db70dfc33e441b991677eff5ab23af"
+  },
+  {
+    "case_id": "p6s-0279",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "16ad432fec09447b9d610f9163834b23"
+  },
+  {
+    "case_id": "p6s-0280",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "80c90f05e93d4fd5ba167a3e4b6e3f0e"
+  },
+  {
+    "case_id": "p6s-0281",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "802217155c05485bb922a238aae0c802"
+  },
+  {
+    "case_id": "p6s-0282",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "cf92fb3c7b404637a7857495fdb358a1"
+  },
+  {
+    "case_id": "p6s-0283",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0a90e03d874741f79a998a83162d339f"
+  },
+  {
+    "case_id": "p6s-0284",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b913804cfbc347a9963664b11a1df70c"
+  },
+  {
+    "case_id": "p6s-0285",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e9b43e7648cc4324a46651813f85ac60"
+  },
+  {
+    "case_id": "p6s-0286",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "308afdccd7384e5c8915b2db240eb6ee"
+  },
+  {
+    "case_id": "p6s-0287",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2055e714c32a4eb18a82b3adc5dc82b2"
+  },
+  {
+    "case_id": "p6s-0288",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "bf1e22d56af04f2d8ddeae96af8f6017"
+  },
+  {
+    "case_id": "p6s-0289",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "92bbdcf1b3b5426bb61897547bb9ab5b"
+  },
+  {
+    "case_id": "p6s-0290",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a16e0fd93c364567bb7262781b8b88ad"
+  },
+  {
+    "case_id": "p6s-0291",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "04a303a752454be483c9a3ccb9aeaef4"
+  },
+  {
+    "case_id": "p6s-0292",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f215e730b32e4cabb8eb0461dd315e00"
+  },
+  {
+    "case_id": "p6s-0293",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4a130cd3a4534871950fcfefa5edd67c"
+  },
+  {
+    "case_id": "p6s-0294",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5ff0f57bb5eb4152a786769eb0892d56"
+  },
+  {
+    "case_id": "p6s-0295",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "40592ccc799e4a15a1de9b859566b618"
+  },
+  {
+    "case_id": "p6s-0296",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e098a4b8f0e840a1821f20e21c60bb19"
+  },
+  {
+    "case_id": "p6s-0297",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0d9830f54b5f490193cbfc25631cdd17"
+  },
+  {
+    "case_id": "p6s-0298",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "30b1b70f91e44647bc5816fe46e99146"
+  },
+  {
+    "case_id": "p6s-0299",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1998f03b5c4a4fe1b3a6660eab476963"
+  },
+  {
+    "case_id": "p6s-0300",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "961a8b6ad25746fb9557c2f0de9c1920"
+  },
+  {
+    "case_id": "p6s-0301",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e27526f7b31144d09b4c5a4e812e8f40"
+  },
+  {
+    "case_id": "p6s-0302",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f52c1ef31ae44650b20781c26998b58d"
+  },
+  {
+    "case_id": "p6s-0303",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c5056cd709054069bf352ebe37cbcc94"
+  },
+  {
+    "case_id": "p6s-0304",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "217504707177423586d4e1e48eb0e020"
+  },
+  {
+    "case_id": "p6s-0305",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "fcb01e47edb74ca5b9b6094f722eb2f4"
+  },
+  {
+    "case_id": "p6s-0306",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1c0905b8ed8f4be58b0bb3ac786bfeee"
+  },
+  {
+    "case_id": "p6s-0307",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "33cb278840194e50b421a4edbb79c02a"
+  },
+  {
+    "case_id": "p6s-0308",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "975a3adeb0884876a2609c4163c0a6b9"
+  },
+  {
+    "case_id": "p6s-0309",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ed9b447a352842c6a5d94c79e566bc1a"
+  },
+  {
+    "case_id": "p6s-0310",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9b9751e805a442bab86c60eafb999ca6"
+  },
+  {
+    "case_id": "p6s-0311",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "565088b1bbb64f0b87d413845218fa2d"
+  },
+  {
+    "case_id": "p6s-0312",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "81fbc27292984411951c636280013413"
+  },
+  {
+    "case_id": "p6s-0313",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4a54798d3afb4811a2f0e18256732e62"
+  },
+  {
+    "case_id": "p6s-0314",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "cf06043bf76a4309b5e4c6c918229d6d"
+  },
+  {
+    "case_id": "p6s-0315",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e86dc533cd074904b0e72a6d3479390c"
+  },
+  {
+    "case_id": "p6s-0316",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "56afd0e24f94483780f8d9cd7a750cf0"
+  },
+  {
+    "case_id": "p6s-0317",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "237a12cd564243aeb7bda1be6d7e7adf"
+  },
+  {
+    "case_id": "p6s-0318",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "456405e6fb7e4293a8a5deb37e08447b"
+  },
+  {
+    "case_id": "p6s-0319",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4b94163ef75c418e9026338b25758731"
+  },
+  {
+    "case_id": "p6s-0320",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0cc03f3a4cb44dd0a2f603cd3c78f8cf"
+  },
+  {
+    "case_id": "p6s-0321",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "25bce7ce7efe4077b74694901885f381"
+  },
+  {
+    "case_id": "p6s-0322",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f8f497b1b4e647e89af8b21270ab6d73"
+  },
+  {
+    "case_id": "p6s-0323",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b476a0a349d74a569f5ba1cb2c6fe7cf"
+  },
+  {
+    "case_id": "p6s-0324",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d5541a07b2b342ce93cd0acfed7c3f24"
+  },
+  {
+    "case_id": "p6s-0325",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c533d124fd964d07955b4540f32880cd"
+  },
+  {
+    "case_id": "p6s-0326",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c89cc3a550d84bfc99d8d3ba77e043ea"
+  },
+  {
+    "case_id": "p6s-0327",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d14c00cf7a7b4ffca5af762fe3b7ef21"
+  },
+  {
+    "case_id": "p6s-0328",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e25ee2d9d0b64f62a4a927d5d952256b"
+  },
+  {
+    "case_id": "p6s-0329",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8ce4967981cb4c64b45c3aba726864fe"
+  },
+  {
+    "case_id": "p6s-0330",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9bf05f8c904841cbb4eaf83e52929ae9"
+  },
+  {
+    "case_id": "p6s-0331",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a7df33f43e944a99ace175cecc0497db"
+  },
+  {
+    "case_id": "p6s-0332",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "52222aedfdd6471f8265799e1f68ccca"
+  },
+  {
+    "case_id": "p6s-0333",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "253d86669ab04b2a95946091fe2b2bfe"
+  },
+  {
+    "case_id": "p6s-0334",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c0b2dbee3d1f4e84a23f18c093ca448b"
+  },
+  {
+    "case_id": "p6s-0335",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e0578a045bf34a42ac7237dfd34fe502"
+  },
+  {
+    "case_id": "p6s-0336",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "fe8c871ff7cf450998cd1817d0aba812"
+  },
+  {
+    "case_id": "p6s-0337",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6b21d510f0bc4ce491a138a19e98fb99"
+  },
+  {
+    "case_id": "p6s-0338",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "83afcbd2213e47fb9577ca11f7a98484"
+  },
+  {
+    "case_id": "p6s-0339",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "95a6c2ff59b24a6c83edf2df47a5380f"
+  },
+  {
+    "case_id": "p6s-0340",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d2ad863808a1451f8668e1b70c72743d"
+  },
+  {
+    "case_id": "p6s-0341",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d75309f9fb1a4ae1a67c2ac5d9b0f0c1"
+  },
+  {
+    "case_id": "p6s-0342",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d0e68eb62db043d69765c5799ebdd655"
+  },
+  {
+    "case_id": "p6s-0343",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "cf71baf857824f8eb26a182f37f96eac"
+  },
+  {
+    "case_id": "p6s-0344",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b03636f6e92a4957bd4fae2a2531c92f"
+  },
+  {
+    "case_id": "p6s-0345",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3553bb4980484c05acfb18c362cb4d9d"
+  },
+  {
+    "case_id": "p6s-0346",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "425f080925644a9283eeda8d29c52c28"
+  },
+  {
+    "case_id": "p6s-0347",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "81156cfcad344485817ac248480ecd83"
+  },
+  {
+    "case_id": "p6s-0348",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c33d878ec02f4fb99140694b485cdabf"
+  },
+  {
+    "case_id": "p6s-0349",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3c9dc90fb9f245aa9261680bf404cee6"
+  },
+  {
+    "case_id": "p6s-0350",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7c89ed7847834de286a77775ce7150f6"
+  },
+  {
+    "case_id": "p6s-0351",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "03cde6a2fc5e44c3bd6b6d49b9ee1670"
+  },
+  {
+    "case_id": "p6s-0352",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "43e6789c495e41dd9948b9d97033b82c"
+  },
+  {
+    "case_id": "p6s-0353",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "912cdb7bc1244a80a6f1622158ad6df6"
+  },
+  {
+    "case_id": "p6s-0354",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "def26b804bf3482999758ba424d21264"
+  },
+  {
+    "case_id": "p6s-0355",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a2a3375fc677422c80220deabf1e165f"
+  },
+  {
+    "case_id": "p6s-0356",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "45303f7a56a94c94bf839d50e8438790"
+  },
+  {
+    "case_id": "p6s-0357",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "fe04796927e74e63af607285eb1de661"
+  },
+  {
+    "case_id": "p6s-0358",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "89eccef3b74f4228993b0eaf955f497f"
+  },
+  {
+    "case_id": "p6s-0359",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "77c19d2d7af64605a1b81afe48af1336"
+  },
+  {
+    "case_id": "p6s-0360",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "595c501a3ee341009b1eeae95ca96c9f"
+  },
+  {
+    "case_id": "p6s-0361",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "aeec39a758c448a580d8d4896ddc3213"
+  },
+  {
+    "case_id": "p6s-0362",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "841831b647f2485cb4a516cf35824534"
+  },
+  {
+    "case_id": "p6s-0363",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "cbb65d0ec98248a6889a357213feb571"
+  },
+  {
+    "case_id": "p6s-0364",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4329bbdc2836466384feaeff30d11d63"
+  },
+  {
+    "case_id": "p6s-0365",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "111214a8231744e9b5c9840c86f78d0b"
+  },
+  {
+    "case_id": "p6s-0366",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "af39eaf0f3714e8a9ae5e74506a47ea9"
+  },
+  {
+    "case_id": "p6s-0367",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "253ab2872e6a4200a90b551f7336d2fb"
+  },
+  {
+    "case_id": "p6s-0368",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "bd0af7e69dfe400ca80624b9ae5b89d3"
+  },
+  {
+    "case_id": "p6s-0369",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f78fc0808be940ada71bc8e0c19aa11f"
+  },
+  {
+    "case_id": "p6s-0370",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3102246fa82141f5b17c74df0cd1a7fd"
+  },
+  {
+    "case_id": "p6s-0371",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b8ba6e7717164f5188ddf8fd48a6b0b2"
+  },
+  {
+    "case_id": "p6s-0372",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "50f6f8036e494348a8c9fec87bc34c84"
+  },
+  {
+    "case_id": "p6s-0373",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "88b1fcbecc01458ba923e2253ac2d737"
+  },
+  {
+    "case_id": "p6s-0374",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e636b98c003c4493b87add455506bb9f"
+  },
+  {
+    "case_id": "p6s-0375",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "51fcb96fec004e3198f5ba59de13b121"
+  },
+  {
+    "case_id": "p6s-0376",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b6a900bdb2ac464f8ca901835f50bd70"
+  },
+  {
+    "case_id": "p6s-0377",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8d00860d974940b3828572d90faf18e3"
+  },
+  {
+    "case_id": "p6s-0378",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c71103c7012c4b41bfcea8576636945f"
+  },
+  {
+    "case_id": "p6s-0379",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4c9177d4ee51454e8eb0a6db1b77bea0"
+  },
+  {
+    "case_id": "p6s-0380",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "acda59b462e94c4d9a69ab1d8cb8fd17"
+  },
+  {
+    "case_id": "p6s-0381",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f181523b67c848529c4faebbb649ad7a"
+  },
+  {
+    "case_id": "p6s-0382",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "787fc667f2924f67ba173f3c14a5600f"
+  },
+  {
+    "case_id": "p6s-0383",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0cf10ff0532645e7b16168801e3ea832"
+  },
+  {
+    "case_id": "p6s-0384",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f5b58812b6ae44b3a6314cbe8f54eaab"
+  },
+  {
+    "case_id": "p6s-0385",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5253495e654946108bbade54dd0f1f81"
+  },
+  {
+    "case_id": "p6s-0386",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "732ed7367e404226902eabbb40379f2a"
+  },
+  {
+    "case_id": "p6s-0387",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "42fc8fe0d2b84ef28f5d9e58faa1ae20"
+  },
+  {
+    "case_id": "p6s-0388",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "18d1ef53160c4e1f995c40fd3691323e"
+  },
+  {
+    "case_id": "p6s-0389",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3a2700a9727c4249b794c07b1b684876"
+  },
+  {
+    "case_id": "p6s-0390",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6848ccd27ddb42c693686164f3e08f61"
+  },
+  {
+    "case_id": "p6s-0391",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "61bcd4c9eadc4309903b2301fd299841"
+  },
+  {
+    "case_id": "p6s-0392",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e0118899efb4410588eb81a67adf43d8"
+  },
+  {
+    "case_id": "p6s-0393",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ee8d7256a7694661bfeb8b9a393fccb0"
+  },
+  {
+    "case_id": "p6s-0394",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2a5e28bdea544ae8949618cb0e70b936"
+  },
+  {
+    "case_id": "p6s-0395",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f35920b30b2e43c7b73b39225e0ee4a1"
+  },
+  {
+    "case_id": "p6s-0396",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c4878ddfbb1b4838bbcd445747745050"
+  },
+  {
+    "case_id": "p6s-0397",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d6bbfc1f0a3749d8bdb35be59ae4ddbb"
+  },
+  {
+    "case_id": "p6s-0398",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d87e43b4c0aa4981ba8fac1a4e8cecce"
+  },
+  {
+    "case_id": "p6s-0399",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0c5ca5158c974cc98da0b6b36044ea6d"
+  },
+  {
+    "case_id": "p6s-0400",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4247efbc238f4f9e97908348284b837b"
+  },
+  {
+    "case_id": "p6s-0401",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7e3f8826c6ca435fb21f5ee0ffaf6b15"
+  },
+  {
+    "case_id": "p6s-0402",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "199786805c824a00bdb915f539984c22"
+  },
+  {
+    "case_id": "p6s-0403",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1bc8e02dff4043f48fab12404e934fa1"
+  },
+  {
+    "case_id": "p6s-0404",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6625e5b8a3e24b14a3473d418b37ab2a"
+  },
+  {
+    "case_id": "p6s-0405",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a2707d678aac45639a041bfa58d1368a"
+  },
+  {
+    "case_id": "p6s-0406",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "82cd24a64dc34f0f881915aeec598140"
+  },
+  {
+    "case_id": "p6s-0407",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a1137012ab5a4379aac61bf3ecb216c5"
+  },
+  {
+    "case_id": "p6s-0408",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2dcf855116b145cc8ed22a639454e595"
+  },
+  {
+    "case_id": "p6s-0409",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b4677ae994964a34993a6ac5e834dc3a"
+  },
+  {
+    "case_id": "p6s-0410",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f710360615ad41efa3d6841e58ed3742"
+  },
+  {
+    "case_id": "p6s-0411",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "877577af783c4beead43d82f5119d006"
+  },
+  {
+    "case_id": "p6s-0412",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9dd496c567974494857eb2bcead22522"
+  },
+  {
+    "case_id": "p6s-0413",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "05391d090f3a4a8282e07afb08e93d44"
+  },
+  {
+    "case_id": "p6s-0414",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "885e5cd4c0a1427687e8f5a5b825bab9"
+  },
+  {
+    "case_id": "p6s-0415",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5a8ea56c805b4d709f1d7cb8c0553d0f"
+  },
+  {
+    "case_id": "p6s-0416",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "78cceb4948ef4061bacbb8638059aba4"
+  },
+  {
+    "case_id": "p6s-0417",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f8d9cbfda03d4b6aa80fbedc0ae3fc6b"
+  },
+  {
+    "case_id": "p6s-0418",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "1fe847912d494af69f8aa3bd2f1e890b"
+  },
+  {
+    "case_id": "p6s-0419",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a2d15716f50b43f4a037cb4c77601f17"
+  },
+  {
+    "case_id": "p6s-0420",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b863f4412d9b4ea293ca455504570309"
+  },
+  {
+    "case_id": "p6s-0421",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "2ffb7d21a435433ca156c41fbbc2bf5e"
+  },
+  {
+    "case_id": "p6s-0422",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ee2116fe0058450f859d6776f6e0f8ba"
+  },
+  {
+    "case_id": "p6s-0423",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5c7c0e62ffd54d8490a0d3dc5eddd905"
+  },
+  {
+    "case_id": "p6s-0424",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3342bf9db5c640ae8ec72920dd2b5146"
+  },
+  {
+    "case_id": "p6s-0425",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f5114906a8394e3da95af360b5c36f15"
+  },
+  {
+    "case_id": "p6s-0426",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8caef574908f4e35a0b3124356329cd3"
+  },
+  {
+    "case_id": "p6s-0427",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "50eae69e604d4413b3cf8efbb426f022"
+  },
+  {
+    "case_id": "p6s-0428",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7ac5045e12714ae5b24e68dac044856f"
+  },
+  {
+    "case_id": "p6s-0429",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "6e18f7c9882b41c6be0f00c3bb817269"
+  },
+  {
+    "case_id": "p6s-0430",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "082c473a50a24e7da90cd849156f07f8"
+  },
+  {
+    "case_id": "p6s-0431",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b8649b3be999423ea661cbe9833387cd"
+  },
+  {
+    "case_id": "p6s-0432",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "81845cafa3a2413f8330f70df8e2696b"
+  },
+  {
+    "case_id": "p6s-0433",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "157b7ecd30b846bea7f4393fb7ebcad7"
+  },
+  {
+    "case_id": "p6s-0434",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "91dc9f3d4a8e40ba8f795dac54189dda"
+  },
+  {
+    "case_id": "p6s-0435",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c7a11839768347e194d9e7c7ea7a6f73"
+  },
+  {
+    "case_id": "p6s-0436",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "cc2eb30e8d58480d9ad82c0bf9174b4a"
+  },
+  {
+    "case_id": "p6s-0437",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "866bfbded79b463c82eb36875a238a76"
+  },
+  {
+    "case_id": "p6s-0438",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "4a3959dc3f9a4bb5b6d7985497ecc9d2"
+  },
+  {
+    "case_id": "p6s-0439",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "64122927d7c2425fbbcde80e9ee25eb7"
+  },
+  {
+    "case_id": "p6s-0440",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "930f7ca4baa94d31b837fff5badc5136"
+  },
+  {
+    "case_id": "p6s-0441",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "5820a2fdc2fc40a7a12d06ed811aeb26"
+  },
+  {
+    "case_id": "p6s-0442",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b94c49528daa49ea9efb750842d71b2a"
+  },
+  {
+    "case_id": "p6s-0443",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7dcd4ca689ee4d1b982e54e9881bfa72"
+  },
+  {
+    "case_id": "p6s-0444",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e0308d372be64c96b9a6dc86cacaf912"
+  },
+  {
+    "case_id": "p6s-0445",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "11c7e94989a5467ead39e05e368ea999"
+  },
+  {
+    "case_id": "p6s-0446",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8162c1c578be45bbb63c7ae8ee4d13f4"
+  },
+  {
+    "case_id": "p6s-0447",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8f9a835fc72d4dc6a960905cb3bfeffa"
+  },
+  {
+    "case_id": "p6s-0448",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "58880f3749a94fc8b5d5d604d19d9fc5"
+  },
+  {
+    "case_id": "p6s-0449",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "78bfaca60d724810bb15db4676509679"
+  },
+  {
+    "case_id": "p6s-0450",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7b9fbce2f87041338084377b81e310d9"
+  },
+  {
+    "case_id": "p6s-0451",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f33cb52ee4d146aeb0bd230f2355d502"
+  },
+  {
+    "case_id": "p6s-0452",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b1d554ba3ef44d368c2ae170cf88dcb6"
+  },
+  {
+    "case_id": "p6s-0453",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7800c74e09a649749eb0b7b809ad06fb"
+  },
+  {
+    "case_id": "p6s-0454",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "285b9cfa91124cf885bccc1d374ab742"
+  },
+  {
+    "case_id": "p6s-0455",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "00ee25310a4f406092713d2b923e5e79"
+  },
+  {
+    "case_id": "p6s-0456",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d1c34bf1db1d4648957f9fe000118f6e"
+  },
+  {
+    "case_id": "p6s-0457",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f857bb512719406e98503e58ff136207"
+  },
+  {
+    "case_id": "p6s-0458",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c7b88883ee354763a4dff86b0b1a1fe7"
+  },
+  {
+    "case_id": "p6s-0459",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "662d112ce8db4487af06cfd2a880ff8c"
+  },
+  {
+    "case_id": "p6s-0460",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0ab38add575447f4b09b6a143941bb53"
+  },
+  {
+    "case_id": "p6s-0461",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "948829e533384b95a8217f024f1e0da0"
+  },
+  {
+    "case_id": "p6s-0462",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "85837c65596a4838b2acb09bbe125005"
+  },
+  {
+    "case_id": "p6s-0463",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b5918f9c805a44f590817efa00ca1a6c"
+  },
+  {
+    "case_id": "p6s-0464",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "d2345fbd52f34f928eda27a09d29e79b"
+  },
+  {
+    "case_id": "p6s-0465",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ac2b5bcabb774840af92be2d46938bc1"
+  },
+  {
+    "case_id": "p6s-0466",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "bb02b1d0d02840ecb15663c3645124c3"
+  },
+  {
+    "case_id": "p6s-0467",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "7ede91b91b7e48f39041da66755a2795"
+  },
+  {
+    "case_id": "p6s-0468",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9ad34c67ab68428983359a6ed767067d"
+  },
+  {
+    "case_id": "p6s-0469",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "c85e7a3499554f7587bb3d385a689679"
+  },
+  {
+    "case_id": "p6s-0470",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "0fe0adf022634397b162c9dc3fbd1c27"
+  },
+  {
+    "case_id": "p6s-0471",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "160b7fb21aba4b468454f81bd3878b4b"
+  },
+  {
+    "case_id": "p6s-0472",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8d3b735999724f5d824e71a0d66d0bcb"
+  },
+  {
+    "case_id": "p6s-0473",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "766a255679ec45758df05b8b4986da4d"
+  },
+  {
+    "case_id": "p6s-0474",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "cb81d5238b6c4d32a93d5b64da29ba58"
+  },
+  {
+    "case_id": "p6s-0475",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "fd2fff01601f41fa9fc83c9e24b6de54"
+  },
+  {
+    "case_id": "p6s-0476",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f6bcc62361a5427a8c3bb78fbe0c0ccd"
+  },
+  {
+    "case_id": "p6s-0477",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9094103c0dac4a42910477fd88af93b4"
+  },
+  {
+    "case_id": "p6s-0478",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e530bae98c4c4d62a1c308b94e248262"
+  },
+  {
+    "case_id": "p6s-0479",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "671c20ffc7364fcb96236ffc85b5347a"
+  },
+  {
+    "case_id": "p6s-0480",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9bcc122074e746bba21393efb85f02d8"
+  },
+  {
+    "case_id": "p6s-0481",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e7c8f22045744a1aacfc06fd48aa121a"
+  },
+  {
+    "case_id": "p6s-0482",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "33475bdeb699431b86def09115aefbbe"
+  },
+  {
+    "case_id": "p6s-0483",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "94926f1869144f6f91a5ae6d9ac9f8a5"
+  },
+  {
+    "case_id": "p6s-0484",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "3949a4cc41734b9da2367bf42ac9c4c8"
+  },
+  {
+    "case_id": "p6s-0485",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "fc757641d08f485bbb359f6e1f1d625a"
+  },
+  {
+    "case_id": "p6s-0486",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "01842ebd6e48471897e9462d627100a3"
+  },
+  {
+    "case_id": "p6s-0487",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b71fd84bd87349289ad952b0270eaf82"
+  },
+  {
+    "case_id": "p6s-0488",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "a5708350e52f477398c0661d5378f73a"
+  },
+  {
+    "case_id": "p6s-0489",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "de596f88abf94e0fa174d3f468dc721a"
+  },
+  {
+    "case_id": "p6s-0490",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "8a68beb05a65469aa925606d76d7a418"
+  },
+  {
+    "case_id": "p6s-0491",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "086e344f6f624eef9324ee4e6e02d645"
+  },
+  {
+    "case_id": "p6s-0492",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "b21d0821ffd3439da9f548ac47993a38"
+  },
+  {
+    "case_id": "p6s-0493",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e156dc1dd54642ba8ce6635dc02b5746"
+  },
+  {
+    "case_id": "p6s-0494",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f0b955e2f89347a4ac39057621615927"
+  },
+  {
+    "case_id": "p6s-0495",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "663010a97a2b40b1a792f35648669742"
+  },
+  {
+    "case_id": "p6s-0496",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ea514d430318425591290ad120050ae4"
+  },
+  {
+    "case_id": "p6s-0497",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "e4279ab87d124c7d91385ce0cab2a674"
+  },
+  {
+    "case_id": "p6s-0498",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "9a5d4ab91b5d4427a535e68faf6b0102"
+  },
+  {
+    "case_id": "p6s-0499",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "f7c983ff7e9f4c179ddf3c7f330aa5a9"
+  },
+  {
+    "case_id": "p6s-0500",
+    "state_success": true,
+    "nonempty_answer": true,
+    "raw_response_matches_answer": true,
+    "requested_model": "qwen-flash",
+    "returned_model": "qwen-flash",
+    "finish_reason": "stop",
+    "request_id": "ce33130218484c1b8f2927588c765423"
+  }
+]

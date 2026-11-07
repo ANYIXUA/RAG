@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:16.933126+08:00",
+  "conservative_cost_yuan": 0.0015718499999999999,
+  "error": null,
+  "latency_ms": 3784.210099838674,
+  "list_price_estimate_yuan": 0.00103635,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"人工费12.44元与上下文一致\",\n    \"evidence\": \"WH42301001 拆除用户终端设备 18.34 12.44 3.41 2.49\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH42301001 拆除用户终端设备 18.34 12.44 3.41 2.49\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所需全部信息\",\n    \"evidence\": \"WH42301001 拆除用户终端设备 18.34 12.44 3.41 2.49\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"WH42301001 拆除用户终端设备 18.34 12.44 3.41 2.49\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881693,
+    "id": "chatcmpl-31b0f126-6712-9530-a302-c4d2a66e3eeb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 357,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3339,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3696
+    }
+  },
+  "usage_known": true
+}

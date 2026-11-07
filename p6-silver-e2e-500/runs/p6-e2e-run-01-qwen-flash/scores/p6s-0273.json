@@ -1,0 +1,48 @@
+{
+  "answer_correctness": {
+    "evidence": "检查防雷箱（单元）及防雷模块状态，记录计数器读数。",
+    "reason": "部分正确但引用错误，防雷模块未提及",
+    "score": 0.5
+  },
+  "case_id": "p6s-0273",
+  "citation_correctness": {
+    "evidence": "中继段光纤的损耗测量：1)仪表的测试状态应与前次的测试状态相同。",
+    "reason": "引用[3]支持非相关句，[2]未支持抢修流程",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "确认防雷接地电阻是否符合标准（≤100Ω）。[3]",
+    "reason": "覆盖了主要排查步骤",
+    "score": 1
+  },
+  "confidence": "medium",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "当发现光纤通道损耗增大或后向散射信号曲线上有大台阶时，应适当增加检查次数",
+    "reason": "部分事实无上下文支持，如OTDR检测",
+    "score": 0.5
+  },
+  "flags": [
+    "citation_mismatch",
+    "overgeneralization"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "c21776239c03476996a73e2a025cce07",
+  "judge_attempts": 3,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError",
+    "ValueError"
+  ],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

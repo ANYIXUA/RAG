@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:40.171866+08:00",
+  "conservative_cost_yuan": 0.00139575,
+  "error": null,
+  "latency_ms": 2389.5871001295745,
+  "list_price_estimate_yuan": 0.00095625,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题属非运维范畴，上下文未覆盖用户满意度提升策略\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文且无矛盾\",\n    \"evidence\": \"和家亲APP接收平台推送的家庭组网终端上报信息，提示用户\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分回答涉及运维操作，但未完整覆盖用户满意度维度\",\n    \"evidence\": \"装维人员应掌握智能组网故障处理技能，快速响应问题\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"第5条引用[5]不存在于上下文\",\n    \"evidence\": \"服务交付中注重沟通与维护技巧，提升用户满意度\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0,\n    \"reason\": \"应拒答却给出建议，违反限定范围原则\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"incorrect_citation\",\n    \"overreach_in_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881897,
+    "id": "chatcmpl-7c5de3f5-8966-9243-9517-a420bd7e12a1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 293,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3445,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3738
+    }
+  },
+  "usage_known": true
+}

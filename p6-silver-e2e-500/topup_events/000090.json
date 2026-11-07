@@ -1,0 +1,85 @@
+{
+  "previous_sha256": "4b89d8892260dd0c4056b16522b3326d716ebf994e2edaa90c63c812c9fdb0c3",
+  "record": {
+    "batch": 43,
+    "candidates": [
+      {
+        "answer": "https://rgw.komect.com:443",
+        "evidence": [
+          {
+            "excerpt": "4.3.11.2. 一级平台地址预置要求 预置一级平台的地址：\"https://rgw.komect.com:443\"",
+            "passage_id": "a7db14a3391bc332376a980d"
+          }
+        ],
+        "question": "全光组网终端预置的一级平台地址是什么？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "180",
+        "evidence": [
+          {
+            "excerpt": "表4-2 11ax WLAN大字节（1518字节）吞吐量要求 频段 频宽设置（Hz） 吞吐量要求不低于（Mbps） 2×2 20M 180 40M 360 80M 720 160M 1440 3×3 20M 270 40M 540 80M 1080 160M 2160 4×4 20M 360 40M 720 80M 1440 160M 2440",
+            "passage_id": "b0b4d01dbf2c0c1e81eb2229"
+          }
+        ],
+        "question": "11ax WLAN 2×2 频段在20M频宽下，吞吐量要求不低于多少Mbps？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "32",
+        "evidence": [
+          {
+            "excerpt": "合作伙伴-型号 -YYYY（例如：CMHI-AN1202L-0000，DHCPName 总长度应不超32 字节）",
+            "passage_id": "a7db14a3391bc332376a980d"
+          }
+        ],
+        "question": "全光组网终端DHCPName总长度应不超多少字节？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0470",
+          "expected_behavior": "answer",
+          "generation_batch": 43,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271149,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "11ax WLAN 2×2 频段在20M频宽下，吞吐量要求不低于多少Mbps？",
+          "question_type": "exact_fact",
+          "reference_answer": "180",
+          "source_chunk_ids": [
+            "b0b4d01dbf2c0c1e81eb2229"
+          ],
+          "source_document": [
+            "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "b0b4d01dbf2c0c1e81eb2229",
+              "excerpt": "表4-2 11ax WLAN大字节（1518字节）吞吐量要求 频段 频宽设置（Hz） 吞吐量要求不低于（Mbps） 2×2 20M 180 40M 360 80M 720 160M 1440 3×3 20M 270 40M 540 80M 1080 160M 2160 4×4 20M 360 40M 720 80M 1440 160M 2440"
+            }
+          ],
+          "source_page": 31,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "authorization_date": "2026-11-05",
+  "user_reply": "授权发送28条查询并继续正式实验",
+  "destination": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+  "model": "text-embedding-v4",
+  "payload": "28 frozen Holdout query texts only; no reference answers, human reviews or PDF bodies",
+  "initial_auto_review": "Rejected external query disclosure before explicit authorization; no retrieval ran under that rejected command",
+  "preflight_adapter_issue": "Development JSONL has no relevance labels; fixed adapter to load original sidecar before any Holdout retrieval",
+  "metrics_unit_tests": {
+    "command": ".\\venv\\Scripts\\python.exe -B -m unittest tests.test_retrieval_metrics -v",
+    "ran": 26,
+    "passed": 26
+  }
+}

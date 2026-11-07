@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:00.983015+08:00",
+  "input_token_upper_bound": 1142,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0045"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "35m以下角钢塔、三管塔、四管塔专项维修的消耗量是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "874f3627d2b547e19b81afd3435050f5",
+  "reserved_yuan": 0.000571
+}

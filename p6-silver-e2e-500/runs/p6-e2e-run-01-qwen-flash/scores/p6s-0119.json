@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列",
+    "reason": "上下文明确支持处理步骤与安全措施",
+    "score": 1
+  },
+  "case_id": "p6s-0119",
+  "citation_correctness": {
+    "evidence": "清理井内淤泥、杂物[1]",
+    "reason": "引用编号与上下文来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "清除人孔内光缆上的污垢，抽除人孔内的积水",
+    "reason": "覆盖所有关键处理与安全措施",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "清理井内淤泥、杂物；整治人孔内的托架、托板和标志",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "fe48169a997e457eb78c2b63177866bc",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0340",
+  "citation_correctness": {
+    "evidence": "利用IF5、IF6等标准接口对接平台，支持设备状态与配置同步。[2]",
+    "reason": "引用编号与来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "运维需通过统一接口规范实现跨品牌设备协同管理。[3]",
+    "reason": "部分覆盖但未提跨品牌核心挑战",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "依托一级平台和省平台实现全网终端统一纳管与诊断。[2]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "partial_support",
+    "interface_focus"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "c3094e6dbfe445ef8f9cce587ef81601",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "非拒答场景，无需判别",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

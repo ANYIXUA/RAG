@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:49.312120+08:00",
+  "conservative_cost_yuan": 0.0007825499999999999,
+  "error": null,
+  "latency_ms": 1689.6850001066923,
+  "list_price_estimate_yuan": 0.00059205,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 当前上下文未提及智慧家庭产品线促销策略调整相关内容。[1][2][3]  \n2. 所有检索文档聚焦于装维技能与业务运维知识，不涉及营销或促销策略。[1][2][3]  \n3. 无关于产品推广、价格策略或市场活动的信息。[1][2][3]  \n4. 无法基于现有材料提供促销策略调整建议。[1][2][3]  \n5. 建议补充相关业务运营或市场策略文档以获取准确信息。[1][2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881067,
+    "id": "chatcmpl-a68395c9-e67c-920c-9d92-7ce4a9fe7ee3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 127,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2677,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2804
+    }
+  },
+  "usage_known": true
+}

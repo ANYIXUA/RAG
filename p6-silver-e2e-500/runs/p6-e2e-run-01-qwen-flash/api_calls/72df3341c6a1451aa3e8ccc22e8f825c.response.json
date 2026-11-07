@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:48.009831+08:00",
+  "conservative_cost_yuan": 0.0015774,
+  "error": null,
+  "latency_ms": 3410.6857001315802,
+  "list_price_estimate_yuan": 0.0010809,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖核心检查项，与上下文一致。\",\n    \"evidence\": \"检查清理变压器周边环境，无杂物杂草，安全警示牌完整。[4]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持。\",\n    \"evidence\": \"检查引线接头、电缆、母线应无发热迹象，各类仪表显示正常。[4]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖环境与外观关键点，无遗漏。\",\n    \"evidence\": \"观察变压器外观，确认大盖螺丝齐全、无渗油，散热管完整无脏污变形。[4]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持内容。\",\n    \"evidence\": \"检查呼吸器（吸湿器）内硅胶的颜色，硅胶正常时是蓝或白色的，当硅胶变为淡黄色或其它颜色时，表明硅胶已经失效，需要更换。[4]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_consistent\",\n    \"content_comprehensive\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882144,
+    "id": "chatcmpl-b6a842b1-aa94-9832-b0fe-324d17f633a9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 331,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3896,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4227
+    }
+  },
+  "usage_known": true
+}

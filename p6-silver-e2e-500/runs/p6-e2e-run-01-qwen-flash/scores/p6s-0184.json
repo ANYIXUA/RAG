@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "山区天线发射功率测试应按规程执行，工作量为0.15工日/扇区。[1]",
+    "reason": "上下文明确支持山区测试执行方式",
+    "score": 1
+  },
+  "case_id": "p6s-0184",
+  "citation_correctness": {
+    "evidence": "作业类型属“天线信号测试”，适用于山区地貌。[2]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "测试周期为季度，需定期开展。[3]",
+    "reason": "覆盖测试流程与周期等关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "测试内容包括发射功率测量，结果应不低于设备规定值。[3]",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "4cc463e9004f4fff913dc52f405882c6",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

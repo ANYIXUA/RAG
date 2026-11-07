@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:33.526147+08:00",
+  "conservative_cost_yuan": 0.0007965,
+  "error": null,
+  "latency_ms": 1178.2787998672575,
+  "list_price_estimate_yuan": 0.000636,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装楼面抱杆（单杆高度）3m以下的综合单价为729.60元。[1]  \n2. 该单价包含人工、材料及管理费用等。[1]  \n3. 工作内容包括现场测量、安装调整、避雷针安装等。[1]  \n4. 计量单位为“副”。[1]  \n5. 项目编码为WH23118001。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880812,
+    "id": "chatcmpl-e812973f-4716-919d-b5e0-39f1f1f2b856",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3170,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3277
+    }
+  },
+  "usage_known": true
+}

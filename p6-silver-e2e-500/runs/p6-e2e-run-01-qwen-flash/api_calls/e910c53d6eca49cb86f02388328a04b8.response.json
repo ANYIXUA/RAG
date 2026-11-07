@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:21.584115+08:00",
+  "conservative_cost_yuan": 0.00177885,
+  "error": null,
+  "latency_ms": 3783.4045998752117,
+  "list_price_estimate_yuan": 0.00115935,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确列出计算基础\",\n    \"evidence\": \"销项税额=（维护分项作业费+材料及备品备件购置费（不含甲供部分）+机械仪表使用费（不含甲供部分）+措施项目+规费+安全生产费+其他项目费）× 6%\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应原文支持\",\n    \"evidence\": \"销项税额=（维护分项作业费+材料及备品备件购置费（不含甲供部分）+机械仪表使用费（不含甲供部分）+措施项目+规费+安全生产费+其他项目费）× 6%\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要费用项\",\n    \"evidence\": \"销项税额=（维护分项作业费+材料及备品备件购置费（不含甲供部分）+机械仪表使用费（不含甲供部分）+措施项目+规费+安全生产费+其他项目费）× 6%\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"销项税额=（维护分项作业费+材料及备品备件购置费（不含甲供部分）+机械仪表使用费（不含甲供部分）+措施项目+规费+安全生产费+其他项目费）× 6%\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881757,
+    "id": "chatcmpl-b930de32-3328-9eab-ac06-376e6d072be7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 413,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3599,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4012
+    }
+  },
+  "usage_known": true
+}

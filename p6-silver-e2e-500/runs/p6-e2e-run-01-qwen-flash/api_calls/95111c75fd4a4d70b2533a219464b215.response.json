@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:50.942514+08:00",
+  "conservative_cost_yuan": 0.0008090999999999999,
+  "error": null,
+  "latency_ms": 1527.451500063762,
+  "list_price_estimate_yuan": 0.0006275999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 应急发电超出2小时部分按实际工时折算工日，以2小时为基准。[2]  \n2. 机房土建零星维修包含防盗门更换项目。[1]  \n3. 防盗门更换属于WH33116007编码维护内容。[1]  \n4. 计量单位为“套²次”，综合单价156.86元。[1]  \n5. 超出部分计工日依据实际发生维护数量计算。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880889,
+    "id": "chatcmpl-89a4bc74-1e04-9cc6-b8b8-61ca441d29ae",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2974,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3095
+    }
+  },
+  "usage_known": true
+}

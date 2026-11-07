@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:26.622805+08:00",
+  "conservative_cost_yuan": 0.0007482000000000001,
+  "error": null,
+  "latency_ms": 1276.4939998742193,
+  "list_price_estimate_yuan": 0.0005802,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 设备冒烟属严重安全隐患，应立即断电并撤离现场。[4]  \n2. 切勿用水或普通灭火器扑救电气火灾，需使用干粉或二氧化碳灭火器。[4]  \n3. 优先确保人身安全，迅速报警并通知专业人员处理。[4]  \n4. 现场不得擅自移动或触碰冒烟设备，防止二次事故。[4]  \n5. 事件发生后应及时上报系统，启动突发事件应急流程。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881105,
+    "id": "chatcmpl-37dd54b4-b5e6-915c-9804-d0ba7072df5b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2748,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2860
+    }
+  },
+  "usage_known": true
+}

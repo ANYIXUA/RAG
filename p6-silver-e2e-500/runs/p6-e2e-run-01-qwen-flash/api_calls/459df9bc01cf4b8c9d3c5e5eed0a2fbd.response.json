@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:07.372859+08:00",
+  "conservative_cost_yuan": 0.0007138499999999999,
+  "error": null,
+  "latency_ms": 1204.8269999213517,
+  "list_price_estimate_yuan": 0.00056385,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 根据用户需求选择对应业务运维技能，如光纤到户或智能组网。[1]  \n2. 优先掌握基础网络质量检测与无线信号评估能力。[2]  \n3. 熟悉智能家居场景设置及常见故障处理方法。[2]  \n4. 遵守施工安全与用户信息安全规范要求。[2]  \n5. 依据家庭网络拓扑结构合理规划布线方案。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881146,
+    "id": "chatcmpl-c4350a77-64e9-95c9-a123-43070190f3ec",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2759,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2859
+    }
+  },
+  "usage_known": true
+}

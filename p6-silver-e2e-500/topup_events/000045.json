@@ -1,0 +1,27 @@
+{
+  "previous_sha256": "26a6ef59889dffd6a3ad502e183040885b8b1de5eb6fb057d61011d63a7a9102",
+  "record": {
+    "batch": 23,
+    "corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+    "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+    "event": "start",
+    "kind": "exact_fact",
+    "model": "qwen3:4b-instruct-2507-q4_K_M",
+    "options": {
+      "num_ctx": 8192,
+      "num_predict": 1800,
+      "seed": 20271129,
+      "temperature": 0.6,
+      "top_p": 0.9
+    },
+    "packet_chunk_ids": [
+      "38ea5e749604f43f5f040901",
+      "d451de9bde2b24de1755e285",
+      "9f8fb549d52c59eafb4ce394"
+    ],
+    "prompt": "任务：题型 exact_fact：提问一个能从单个段落中直接找到答案的具体事实，重点覆盖数值参数、指标门槛、设备或终端型号、异常或告警代码、时限、数量。问题里必须包含该事实的某个关键标识（如参数名、设备名、异常码等，且逐字出现在段落里）。\ncount: 3\n\nchunks 如下：\npassage_id:38ea5e749604f43f5f040901 | 来源:中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf | 页码:62\n章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第62页 页码：62 57 （3）尺寸大小：不小于17×17mm（公差：±1mm)，正方形； （4）文字说明：“二维码”，方正兰亭，字号5.5PT，文字位置根据实际情况紧贴二 维码的边缘线； （5）打印分辨率：大于300dpi； （6）材质要求：防水、防潮、防老化、防磨损。 【实例】 二维码\n\npassage_id:d451de9bde2b24de1755e285 | 来源:中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf | 页码:63\n章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第63页 页码：63 58 A.3 省份编码和省平台域名和端口对照表 省份编码列表 省市名称 编码 省市名称 编码 北京市 BEJ 湖南省 HUN 天津市 TAJ 湖北省 HUB 上海市 SHH 广东省 GUD 重庆市 CHQ 海南省 HAI 河北省 HEB 四川省 SCH 山西省 SHX 贵州省 GUI 辽宁省 LIA 云南省 YUN 吉林省 JIL 陕西省 SHA 黑龙江省 HLJ 甘肃省 GAN 江苏省 JSU 青海省 QIH 浙江省 ZHJ 台湾省 TAI 安徽省 ANH 西藏自治区 TIB 福建省 FUJ 内蒙古自治区 NMG 江西省 JXI 广西壮族自治区 GXI 山东省 SHD 宁夏回族自治区 NXA 河南省 HEN 新疆维吾尔自治区 XIN 香港 HKG 澳门 MAC\n\npassage_id:9f8fb549d52c59eafb4ce394 | 来源:中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf | 页码:64\n章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第64页 页码：64 59 31 个省平台的域名和端口应按照以下要求进行预置。 省级数字家庭管理平台智能组网模块域名和端口列表 省份 域名/端口号 宁夏 jtwlgl.nx.chinamobile.com:9005(TCP) jtwlgl.nx.chinamobile.com:9007(UDP) 上海 jtwlgl.sh.chinamobile.com:9005(TCP) jtwlgl.sh.chinamobile.com:9007(UDP) 云南 jtwlgl.yn.chinamobile.com:9005(TCP) jtwlgl.yn.chinamobile.com:9007(UDP) 内蒙古 jtwlgl.nm.chinamobile.com:9005(TCP) jtwlgl.nm.chinamobile.com:9007(UDP) 北京 jtwlgl.bj.chinamobile.com:9005(TCP) jtwlgl.bj.chinamobile.com:9007(UDP) 吉林 jtwlgl.jl.chinamobile.com:9005(TCP) jtwlgl.jl.chinamobile.com:9007(UDP) 四川 jtwlgl.sc.chinamobile.com:9005(TCP) jtwlgl.sc.chinamobile.com:9007(UDP) 安徽 jtwlgl.ah.chinamobile.com:9005(TCP) jtwlgl.ah.chinamobile.com:9007(UDP) 广东 jtwlgl.gd.chinamobile.com:9005(TCP) jtwlgl.gd.chinamobile.com:9007(UDP) 广西 jtwlgl.gx.chinamobile.com:9005(TCP) jtwlgl.gx.chinamobile.com:9007(UDP) 江苏 jtwlgl.js.chinamobile.com:9005(TCP) jtwlgl.js.chinamobile.com:9007(UDP) 江西 jtwlgl.jx.chinamobile.com:9005(TCP) jtwlgl.jx.chinamobile.com:9007(UDP) 浙江 jtwlgl.zj.chinamobile.com:9005(TCP)\n\n仅依据给定 chunks 生成中文 RAG 评测问题。只做任务指定的题型，最多生成 count 条，证据不足就少写。\n硬性要求：\n1. 问题模拟真实用户/工程师口吻，自包含；禁止出现“文档”“原文”“本文”“该章节”“根据材料”等指代。\n2. 禁止把完整答案写进问题；禁止编造 chunks 中不存在的实体、数值、型号、异常码或条件。\n3. answer 必须完全由 evidence 支持且简短（不超过80字），不得引入 chunks 之外的信息。\n4. evidence 每项含 passage_id 与 excerpt；excerpt 必须逐字按顺序复制上下文文本中的连续片段（12–300字），\n   不要改写、不要省略中间任何字符。\n5. 多个问题之间覆盖不同事实，不要把同一事实换种问法。\n只返回 {\"candidates\":[...]}，每个元素含 question、question_type、answer、evidence。\n",
+    "prompt_sha256": "738aa32e88971fa544ac7213d1ac41e67b7c310658364a9d519dca4d60a4ecae",
+    "seed": 20271129,
+    "topup_version": "p6-silver-topup-v1"
+  }
+}

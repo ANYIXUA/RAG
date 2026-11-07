@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH21106003 山区 10.94 6.84 2.05 2.05 0.06 —",
+    "reason": "正确提取山区人工费与利润",
+    "score": 1
+  },
+  "case_id": "p6s-0128",
+  "citation_correctness": {
+    "evidence": "WH21106003 山区 10.94 6.84 2.05 2.05 0.06 —",
+    "reason": "引用编号对应实际来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH21106003 山区 10.94 6.84 2.05 2.05 0.06 —",
+    "reason": "完整覆盖问题所需信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH21106003 山区 10.94 6.84 2.05 2.05 0.06 —",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "5ddb769e9b30408fb8fb5acb91b89bda",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

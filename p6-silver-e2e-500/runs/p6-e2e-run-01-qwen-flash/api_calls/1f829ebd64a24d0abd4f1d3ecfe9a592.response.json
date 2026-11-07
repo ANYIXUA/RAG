@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:29.330746+08:00",
+  "conservative_cost_yuan": 0.0007742999999999999,
+  "error": null,
+  "latency_ms": 1374.1515001747757,
+  "list_price_estimate_yuan": 0.0006062999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH11013 ODF架日常维护中，法兰盘的计量单位为“个”。[1]  \n2. 法兰盘更换工作在维护项目中以“个”为单位计费。[1]  \n3. 表10.2.1.13明确列出“法兰盘”作为计量单位。[1]  \n4. 该单位用于统计更换法兰盘的实际工作量。[1]  \n5. 文档中未提及其他计量方式。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880927,
+    "id": "chatcmpl-83161bb2-e9aa-920a-8aef-9fd61edfd53e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2922,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3034
+    }
+  },
+  "usage_known": true
+}

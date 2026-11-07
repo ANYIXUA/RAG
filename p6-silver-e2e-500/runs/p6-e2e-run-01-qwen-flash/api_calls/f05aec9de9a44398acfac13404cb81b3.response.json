@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:44.541107+08:00",
+  "conservative_cost_yuan": 0.0014456999999999998,
+  "error": null,
+  "latency_ms": 2948.953300016001,
+  "list_price_estimate_yuan": 0.0010107,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确匹配作业内容与计量单位\",\n    \"evidence\": \"地面墙面防水：使用室内防水涂料对机房地板及墙面进行简易防水处理\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"使用室内防水涂料对机房地板及墙面进行简易防水处理\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"地面墙面防水的计量单位为平方米²次\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"WH33116005 地面墙面防水 平方米²次 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881961,
+    "id": "chatcmpl-c7dd7450-765c-99de-bed1-035929a0eed8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 290,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3838,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4128
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:32.081425+08:00",
+  "conservative_cost_yuan": 0.00078225,
+  "error": null,
+  "latency_ms": 1538.3886999916285,
+  "list_price_estimate_yuan": 0.00061275,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区天线信号测试综合单价为27.36元/扇区·次。[1]  \n2. 山区蓄电池容量测试综合单价为508.90元/组·次。[2]  \n3. 天线信号测试包含互调与发射功率测试。[1]  \n4. 蓄电池测试包括容量与内阻测试。[2]  \n5. 项目按地貌分山区、平原、丘陵等执行不同单价。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881050,
+    "id": "chatcmpl-a04e4ba3-4175-98b4-8948-7166a2f12bb0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2955,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3068
+    }
+  },
+  "usage_known": true
+}

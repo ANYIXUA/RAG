@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:15:29.389978+08:00",
+  "input_token_upper_bound": 1151,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0149"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "中继段光纤损耗测试在主用光纤和备用光纤上的周期分别是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "12bce4de7f2d444e935e8a7e7e6aec73",
+  "reserved_yuan": 0.0005755
+}

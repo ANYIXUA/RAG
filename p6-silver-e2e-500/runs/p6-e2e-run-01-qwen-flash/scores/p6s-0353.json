@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：开箱检验、清洁搬运、安装固定、线缆连接、清理现场等。",
+    "reason": "步骤与上下文一致，覆盖全部关键流程。",
+    "score": 1
+  },
+  "case_id": "p6s-0353",
+  "citation_correctness": {
+    "evidence": "整个流程包含安装固定、线缆连接等关键步骤。[3]",
+    "reason": "引用编号与上下文来源匹配且支持所述内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "完成线缆连接作业。[1]",
+    "reason": "涵盖所有必要步骤，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "安装有源落地式柜需进行开箱检验与清洁搬运。[1]",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3d34fedec70f4f12a68459dd16ebf966",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

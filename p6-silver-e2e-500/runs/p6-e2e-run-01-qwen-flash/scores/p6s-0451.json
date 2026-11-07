@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "维护分项作业工作量清单必须载明项目编码、维护分项作业名称、项目特征、计量单位和工作量。[1]",
+    "reason": "准确列出清单要素及编制要求",
+    "score": 1
+  },
+  "case_id": "p6s-0451",
+  "citation_correctness": {
+    "evidence": "项目名称应结合实际维护项目情况确定。[1]",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "工作量需依据附录规定的计算规则进行确定。[1]",
+    "reason": "覆盖关键操作要点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "项目编码由WH加八位数字组成，前五位按附录规定设置。[1]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "db179a088f314a808afb20c1eb9e3b99",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

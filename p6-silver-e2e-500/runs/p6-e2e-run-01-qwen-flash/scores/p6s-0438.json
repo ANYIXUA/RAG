@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "检查用户引入线的接头是否完好、安全和规范",
+    "reason": "上下文明确支持接头检查要求",
+    "score": 1
+  },
+  "case_id": "p6s-0438",
+  "citation_correctness": {
+    "evidence": "发现异常应立即处理或上报。[2]",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "观察接头连接处是否牢固，接触良好无虚接。[3]",
+    "reason": "覆盖了接头检查关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "确认接头无松动、破损或老化现象。[3]",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "dfcef53b41aa4ed0bf46f79368dd541b",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

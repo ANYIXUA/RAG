@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:54.111898+08:00",
+  "conservative_cost_yuan": 0.00197085,
+  "error": null,
+  "latency_ms": 3593.628800008446,
+  "list_price_estimate_yuan": 0.0012988499999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持826.27元\",\n    \"evidence\": \"WH23115038 智慧灯杆（视频监控杆）15m 以 下 826.27 516.42 154.93 154.93 4.53\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文\",\n    \"evidence\": \"WH23115038 智慧灯杆（视频监控杆）15m 以 下 826.27 516.42 154.93 154.93 4.53\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖费用、标准、适用范围\",\n    \"evidence\": \"WH23115038 智慧灯杆（视频监控杆）15m 以 下 826.27 516.42 154.93 154.93 4.53\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"[1]对应实际来源\",\n    \"evidence\": \"WH23115038 智慧灯杆（视频监控杆）15m 以 下 826.27 516.42 154.93 154.93 4.53\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"multiple_references_used\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881790,
+    "id": "chatcmpl-9da149c7-19f7-905e-bbdc-966bc1389397",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 448,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4179,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4627
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:06.006050+08:00",
+  "conservative_cost_yuan": 0.00061125,
+  "error": null,
+  "latency_ms": 988.5517000220716,
+  "list_price_estimate_yuan": 0.00049125,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 二维码文字字号为5.5PT。[1]  \n2. 文字使用方正兰亭字体。[1]  \n3. 文字需紧贴二维码边缘线。[1]  \n4. 二维码尺寸不小于17×17mm。[1]  \n5. 打印分辨率需大于300dpi。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880845,
+    "id": "chatcmpl-f64e8897-6443-9264-a697-10b7ea7dd629",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 80,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2475,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2555
+    }
+  },
+  "usage_known": true
+}

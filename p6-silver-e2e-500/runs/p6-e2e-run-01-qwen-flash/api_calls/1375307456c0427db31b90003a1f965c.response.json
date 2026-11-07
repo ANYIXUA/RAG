@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:48.864609+08:00",
+  "conservative_cost_yuan": 0.0007310999999999999,
+  "error": null,
+  "latency_ms": 1311.6808999329805,
+  "list_price_estimate_yuan": 0.0005720999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 装维服务计划需掌握光纤到户、物联网等新兴业务运维技能。[1]  \n2. 应熟悉交互式网络电视及智能家居组网配置能力。[2]  \n3. 需具备智能组网与复杂故障处理的实操能力。[1]  \n4. 服务中应融入销售技巧与交付能力以匹配市场需求。[2]  \n5. 需依据安全规范和用户信息安全要求开展作业。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881067,
+    "id": "chatcmpl-99b656a6-942a-9e4f-aa18-61668931bd2c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2754,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2860
+    }
+  },
+  "usage_known": true
+}

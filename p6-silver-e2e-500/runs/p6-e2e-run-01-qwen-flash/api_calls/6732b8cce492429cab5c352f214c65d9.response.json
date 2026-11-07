@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:23.479030+08:00",
+  "conservative_cost_yuan": 0.00073905,
+  "error": null,
+  "latency_ms": 1187.672199914232,
+  "list_price_estimate_yuan": 0.00057705,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 网线拆除前应确认线路已断开，避免影响其他业务。[3]  \n2. 拆除旧线需按规范操作，不得随意丢弃或破坏线路。[3]  \n3. 旧线拆除后应清理现场，保持用户环境整洁。[2]  \n4. 若涉及资源端口变更，需在系统中登记更新。[3]  \n5. 拆除作业须遵守施工安全与用户信息安全要求。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881042,
+    "id": "chatcmpl-fb7df904-016c-92f9-b325-d4b565f00192",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 108,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2767,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2875
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,78 @@
+{
+  "baseline_hashes_unchanged": {
+    "D:\\AgentAIProgect\\RAG\\p4-gold-completion-01\\signed-final-20261105-v1\\retrieval_gold_holdout_28.jsonl": true,
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\corpus\\p1-20261104-v2\\corpus.jsonl": true,
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-04\\retrieval_gold_batch01_9.jsonl": true,
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-06\\retrieval_gold_batch02_13.jsonl": true,
+    "p3-pilot-01\\pilot_config.json": true,
+    "p6-silver-e2e-500\\generate_silver.py": true,
+    "p6-silver-e2e-500\\generation_raw.jsonl": true,
+    "p6-silver-e2e-500\\generation_raw_debug.jsonl": true,
+    "p6-silver-e2e-500\\generation_summary.json": true,
+    "p6-silver-e2e-500\\silver_build_summary.json": true,
+    "p6-silver-e2e-500\\silver_cases.jsonl": true
+  },
+  "final_sha256": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+  "note": "Explicit semantic rejections are journaled. Superseded publications remain in topup_quarantine. This final publication is byte-stable under repeated build and completed generation.",
+  "other_497_fields_unchanged_after_last_semantic_replacements": true,
+  "runs": [
+    {
+      "after_sha256": {
+        "silver_500_validation.json": "f061cadff11f5c7538314277a2f4c7b7b5d1597fbdf5ea028753d1117b751648",
+        "silver_cases_500.jsonl": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+        "silver_topup_raw.jsonl": "e779493c7b9cda39aed103fdf3b269ea9ad5093f6d141f72e1afc4292211f791",
+        "silver_topup_summary.json": "511631e423f696b01422929e33670401862058b6cf36d1338ee18b442de25164"
+      },
+      "all_outputs_unchanged": true,
+      "before_sha256": {
+        "silver_500_validation.json": "f061cadff11f5c7538314277a2f4c7b7b5d1597fbdf5ea028753d1117b751648",
+        "silver_cases_500.jsonl": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+        "silver_topup_raw.jsonl": "e779493c7b9cda39aed103fdf3b269ea9ad5093f6d141f72e1afc4292211f791",
+        "silver_topup_summary.json": "511631e423f696b01422929e33670401862058b6cf36d1338ee18b442de25164"
+      },
+      "mode": "--build",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"passed\", \"total\": 500, \"errors\": [], \"final_sha256\": \"03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410\"}"
+    },
+    {
+      "after_sha256": {
+        "silver_500_validation.json": "f061cadff11f5c7538314277a2f4c7b7b5d1597fbdf5ea028753d1117b751648",
+        "silver_cases_500.jsonl": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+        "silver_topup_raw.jsonl": "e779493c7b9cda39aed103fdf3b269ea9ad5093f6d141f72e1afc4292211f791",
+        "silver_topup_summary.json": "511631e423f696b01422929e33670401862058b6cf36d1338ee18b442de25164"
+      },
+      "all_outputs_unchanged": true,
+      "before_sha256": {
+        "silver_500_validation.json": "f061cadff11f5c7538314277a2f4c7b7b5d1597fbdf5ea028753d1117b751648",
+        "silver_cases_500.jsonl": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+        "silver_topup_raw.jsonl": "e779493c7b9cda39aed103fdf3b269ea9ad5093f6d141f72e1afc4292211f791",
+        "silver_topup_summary.json": "511631e423f696b01422929e33670401862058b6cf36d1338ee18b442de25164"
+      },
+      "mode": "--build",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"passed\", \"total\": 500, \"errors\": [], \"final_sha256\": \"03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410\"}"
+    },
+    {
+      "after_sha256": {
+        "silver_500_validation.json": "f061cadff11f5c7538314277a2f4c7b7b5d1597fbdf5ea028753d1117b751648",
+        "silver_cases_500.jsonl": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+        "silver_topup_raw.jsonl": "e779493c7b9cda39aed103fdf3b269ea9ad5093f6d141f72e1afc4292211f791",
+        "silver_topup_summary.json": "511631e423f696b01422929e33670401862058b6cf36d1338ee18b442de25164"
+      },
+      "all_outputs_unchanged": true,
+      "before_sha256": {
+        "silver_500_validation.json": "f061cadff11f5c7538314277a2f4c7b7b5d1597fbdf5ea028753d1117b751648",
+        "silver_cases_500.jsonl": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+        "silver_topup_raw.jsonl": "e779493c7b9cda39aed103fdf3b269ea9ad5093f6d141f72e1afc4292211f791",
+        "silver_topup_summary.json": "511631e423f696b01422929e33670401862058b6cf36d1338ee18b442de25164"
+      },
+      "mode": "--generate",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"status\": \"passed\", \"total\": 500, \"errors\": [], \"final_sha256\": \"03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410\"}"
+    }
+  ],
+  "status": "passed"
+}

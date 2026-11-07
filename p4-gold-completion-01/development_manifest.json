@@ -1,0 +1,97 @@
+{
+  "dataset_role": "Development",
+  "count": 22,
+  "source": "p3-pilot-01/data/gold_22_merged.jsonl",
+  "source_sha256": "9a4768df29cc86c2455318286590919b35dda25fed01c85d26c760b7df878939",
+  "case_ids": [
+    {
+      "batch_id": "B01",
+      "gold_case_id": "gold-batch01-sha256:d1fcbeb037f45ffa276e565a12f440e3812b98aef32598a2cd0fedd9810b1a06"
+    },
+    {
+      "batch_id": "B02",
+      "gold_case_id": "gold-batch01-sha256:42b8a2541ffce7ab7ef69d2f1c165500ba5af5aa949ab806a45509dc44dd0dc3"
+    },
+    {
+      "batch_id": "B03",
+      "gold_case_id": "gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5"
+    },
+    {
+      "batch_id": "B04",
+      "gold_case_id": "gold-batch01-sha256:0da5c82f433a53526cacf1f533e597e0d0d56bf090a952123037a56df20813b7"
+    },
+    {
+      "batch_id": "B05",
+      "gold_case_id": "gold-batch01-sha256:c482b83580f3fb39b560f93a43695220c7fcca57dadaf88ad7391ba8a95a5c10"
+    },
+    {
+      "batch_id": "B06",
+      "gold_case_id": "gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239"
+    },
+    {
+      "batch_id": "B07",
+      "gold_case_id": "gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42"
+    },
+    {
+      "batch_id": "B09",
+      "gold_case_id": "gold-batch01-sha256:d398b06298f36c11da17723f8a1765f3580d9cab8d4393f6f9742f07d3e2c6bc"
+    },
+    {
+      "batch_id": "B12",
+      "gold_case_id": "gold-batch01-sha256:fb01c2c2f5f0a5c0359778f2525216af20a933851661902b83de6a48c53f30aa"
+    },
+    {
+      "batch_id": "B13",
+      "gold_case_id": "gold-batch02-sha256:cb6c1fd465588112ef0e370268ad0183ee9da3679bcfc5cccee37d207f360e49"
+    },
+    {
+      "batch_id": "B14",
+      "gold_case_id": "gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c"
+    },
+    {
+      "batch_id": "B15",
+      "gold_case_id": "gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf"
+    },
+    {
+      "batch_id": "B16",
+      "gold_case_id": "gold-batch02-sha256:50d51edece13e19c9b0461c5d28612c2bd57007a19ab3987f4a5506865d5e31e"
+    },
+    {
+      "batch_id": "B17",
+      "gold_case_id": "gold-batch02-sha256:b084448f7e7645c2707588f54535d32b68eb9065c1c88e40589d1d9e429577e4"
+    },
+    {
+      "batch_id": "B18",
+      "gold_case_id": "gold-batch02-sha256:ab3b66a0a8ccc60a2d24f08a125fcbfff193b42877b83821acb4b8a8e26af2e8"
+    },
+    {
+      "batch_id": "B19",
+      "gold_case_id": "gold-batch02-sha256:b4b194da3f8a23a7d4bfa98f30393ba5402f27c1e527513bc033dcf6b653e9b0"
+    },
+    {
+      "batch_id": "B20",
+      "gold_case_id": "gold-batch02-sha256:74d3dfa33289009b189597355bbb9cb5852fdad9ad135fcaebf18261f4a9c632"
+    },
+    {
+      "batch_id": "B21",
+      "gold_case_id": "gold-batch02-sha256:f2a4f74b711f2413b1402f768300d60583f1057569aa22e97a24ab2789b01491"
+    },
+    {
+      "batch_id": "B22",
+      "gold_case_id": "gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206"
+    },
+    {
+      "batch_id": "B25",
+      "gold_case_id": "gold-batch02-sha256:5d0db5acf870d6545edfa8cf4b6a57f9208ffe39b392c47c0d6acb2d21f96e33"
+    },
+    {
+      "batch_id": "B26",
+      "gold_case_id": "gold-batch02-sha256:4fe9bbf65368789a96fec628474fc6bfc870786f30c9c305f0da4cd8df09375a"
+    },
+    {
+      "batch_id": "B27",
+      "gold_case_id": "gold-batch02-sha256:f60c41c855e4aca2f381666e34c23cc4466e2291b004c8c55340a4709193cea3"
+    }
+  ],
+  "note": "仅角色清单；原Gold字节保持不动，已用于Pilot，禁止标为未见Holdout。"
+}

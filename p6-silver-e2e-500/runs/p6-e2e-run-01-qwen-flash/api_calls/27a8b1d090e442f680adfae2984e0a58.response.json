@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:46.085001+08:00",
+  "conservative_cost_yuan": 0.000813,
+  "error": null,
+  "latency_ms": 1516.0503000952303,
+  "list_price_estimate_yuan": 0.000624,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 小型离网风力发电机组的维护消耗量为0.71台·次。[1]  \n2. 在巡检作业中，其消耗量为0.10～0.15台·次，依地区而定。[3]  \n3. 消耗量数据基于维护规程中的计量单位“台·次”。[1]  \n4. 该数值用于设备专项检修及巡检作业的资源评估。[2]  \n5. 不同场景下消耗量存在差异，需结合具体作业类型判断。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880884,
+    "id": "chatcmpl-8fff76db-bc59-9069-ab29-5071fb642434",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 126,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2900,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3026
+    }
+  },
+  "usage_known": true
+}

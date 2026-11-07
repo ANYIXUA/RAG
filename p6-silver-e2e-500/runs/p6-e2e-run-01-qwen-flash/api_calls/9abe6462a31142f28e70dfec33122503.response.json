@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:09.511353+08:00",
+  "conservative_cost_yuan": 0.00074925,
+  "error": null,
+  "latency_ms": 1425.0988999847323,
+  "list_price_estimate_yuan": 0.00057225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 默认应禁用SSH和Telnet远程管理协议，避免开放风险。[1]  \n2. 若必须启用，需配置复杂口令，满足8位以上且含字符、数字、特殊符号。[1]  \n3. 禁止使用空口令或弱口令登录，确保账户验证安全。[1]  \n4. 远程管理通信应采用加密方式，保障数据传输安全。[4]  \n5. 不得在设备中预留未知账号或后门，防止隐蔽访问。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880908,
+    "id": "chatcmpl-062454da-4434-9ee6-878d-c1a6ea6e9fe5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 118,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2635,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2753
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:59.956042+08:00",
+  "input_token_upper_bound": 1197,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0115"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "当架空通信线路与110KV及以上电力线路交越时，最小垂直净距应满足什么条件？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "f16255a8b64749e0a91857e4f4d3474d",
+  "reserved_yuan": 0.0005985
+}

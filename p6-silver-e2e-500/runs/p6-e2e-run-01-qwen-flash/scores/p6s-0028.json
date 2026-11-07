@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第234页\n定位信息：234\n... WH21108001 蓄电池巡检 铅酸电池 市区 18.24 11.40 3.42 3.42 消耗量 0.10 —",
+    "reason": "实际LLM上下文[1]明确列出WH21108001项目编码对应市区铅酸电池蓄电池巡检的综合单价为18.24元，与silver_reference一致，且该信息在上下文中可直接支持。",
+    "score": 1
+  },
+  "case_id": "p6s-0028",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第234页\n定位信息：234\n... WH21108001 蓄电池巡检 铅酸电池 市区 18.24 11.40 3.42 3.42 消耗量 0.10 —",
+    "reason": "所有引用编号[1]均正确对应上下文片段[1]，且该片段完整支持所引用的每一条陈述，包括单价、项目编码、工作内容、费用构成和地形差异。引用格式规范，无错引或漏引。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第234页\n定位信息：234\n... WH21108001 蓄电池巡检 铅酸电池 市区 18.24 11.40 3.42 3.42 消耗量 0.10 —",
+    "reason": "问题为精确事实查询，仅需提供综合单价数值即可满足要求。回答虽补充了项目编码、工作内容、费用构成和地形差异等额外信息，但未遗漏任何必要条件或步骤，且所有补充信息均有上下文支持。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第234页\n定位信息：234\n... WH21108001 蓄电池巡检 铅酸电池 市区 18.24 11.40 3.42 3.42 消耗量 0.10 —\n... 工作内容：检查清洁蓄电池表面、检查电池连接线及标牌标识，测试电池组端电压、单体电池电压；紧固连接片螺丝，测量电池温度等。",
+    "reason": "回答中每一项事实（如单价18.24元、项目编码WH21108001、工作内容、人工费构成、地形差异）均能在上下文[1]中找到直接支持，无虚构或超出上下文的信息。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "2e6331037b5e4d26bd5fdcac106d7dfb",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题为可回答的精确事实类问题，且上下文中有明确答案，因此无需拒答。模型正确回答，符合行为规范。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

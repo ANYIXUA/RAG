@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH12013013 10m 以下木电杆 综合土 470.42 319.14 87.45 63.83 1.50 2.43",
+    "reason": "引用[1]明确支持技工人工费63.83元",
+    "score": 1
+  },
+  "case_id": "p6s-0260",
+  "citation_correctness": {
+    "evidence": "WH12013013 10m 以下木电杆 综合土 470.42 319.14 87.45 63.83 1.50 2.43",
+    "reason": "所有引用编号均正确对应来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH12013013 10m 以下木电杆 综合土 470.42 319.14 87.45 63.83 1.50 2.43",
+    "reason": "完整覆盖问题所需条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH12013013 10m 以下木电杆 综合土 470.42 319.14 87.45 63.83 1.50 2.43",
+    "reason": "每项事实均在上下文中有对应支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "a9fb011ac69742b29c884362b2a1e785",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

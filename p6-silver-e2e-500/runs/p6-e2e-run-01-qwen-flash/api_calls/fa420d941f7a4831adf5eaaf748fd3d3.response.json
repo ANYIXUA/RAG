@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:04.480450+08:00",
+  "conservative_cost_yuan": 0.00138465,
+  "error": null,
+  "latency_ms": 2634.9369001109153,
+  "list_price_estimate_yuan": 0.00095115,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0112的114工日存在解析歧义，不得因与此参考不一致而判错\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文且无矛盾\",\n    \"evidence\": \"1允许无频光网关产品入库，无须支持Wi-Fi功能\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题全部条件与步骤\",\n    \"evidence\": \"光路由产品编码应为60（Wi-Fi 6）或62/63（Wi-Fi 7）\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源完全对应\",\n    \"evidence\": \"光路由产品编码为60，Wi-Fi 7 光路由 产品编码为62、63\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881741,
+    "id": "chatcmpl-9048abcf-b688-9544-b612-5cc50acf9867",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 289,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3451,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3740
+    }
+  },
+  "usage_known": true
+}

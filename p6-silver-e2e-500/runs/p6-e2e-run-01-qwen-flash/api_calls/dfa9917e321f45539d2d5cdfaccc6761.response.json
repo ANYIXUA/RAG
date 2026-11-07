@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:21.553704+08:00",
+  "conservative_cost_yuan": 0.0025986,
+  "error": null,
+  "latency_ms": 6637.782000005245,
+  "list_price_estimate_yuan": 0.0015800999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]明确指出WH23101003室外馈线走道的消耗量为0.35，与问题直接对应，且数值准确。参考证据也支持该值，因此答案正确。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第250页\\n定位信息：250\\n... WH23101003 室外馈线走道 63.84 39.90 11.97 11.97 0.35 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均在实际上下文中找到明确支持：0.35的消耗量来自[1]；单位米来自[3]中对计量单位的说明；项目编码WH23101003和工作内容来自[1]；综合单价63.84元也来自[1]。所有陈述均有对应来源。\",\n    \"evidence\": \"[1] ... WH23101003 室外馈线走道 ... 消耗量 0.35 —\\n[3] ... 计量单位：米 ... \\n[1] ... 工作内容：1、电缆操作及走线架：... 2、室外馈线走道：开箱检验、清洁搬运、量裁、定位、安装固定、接地处理、清理现场。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答涵盖了问题所需的核心信息——消耗量数值（0.35）、单位（米）、项目编码（WH23101003）以及关键工作内容，且未遗漏必要条件或步骤。虽未提及综合单价，但问题仅询问消耗量，故不构成缺失。\",\n    \"evidence\": \"[1] ... 消耗量 0.35 —\\n[3] ... 计量单位：米 ...\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个引用编号均正确对应实际上下文来源：[1]用于消耗量、项目编码、工作内容和综合单价；[3]用于单位说明。引用编号与上下文片段匹配无误，且每条引用均支持其所在句子。\",\n    \"evidence\": \"[1] ... WH23101003 室外馈线走道 ... 消耗量 0.35 —\\n[3] ... 计量单位：米 ...\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确可答的exact_fact类型，且上下文中有完整答案，无需拒答。因此该维度不适用。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881334,
+    "id": "chatcmpl-0dc9f8b5-5405-967e-a618-66eb11cc39f7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 679,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3744,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4423
+    }
+  },
+  "usage_known": true
+}

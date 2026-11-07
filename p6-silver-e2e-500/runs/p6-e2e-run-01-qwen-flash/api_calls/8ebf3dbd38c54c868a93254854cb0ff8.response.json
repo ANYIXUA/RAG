@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:34.477582+08:00",
+  "conservative_cost_yuan": 0.0013341,
+  "error": null,
+  "latency_ms": 2679.957700194791,
+  "list_price_estimate_yuan": 0.0009140999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文一致，准确描述要求\",\n    \"evidence\": \"注：签证及索赔依据是指经双方认可的签证单和索赔依据的编号。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"注：签证及索赔依据是指经双方认可的签证单和索赔依据的编号。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖字段要求全部关键点\",\n    \"evidence\": \"注：签证及索赔依据是指经双方认可的签证单和索赔依据的编号。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"注：签证及索赔依据是指经双方认可的签证单和索赔依据的编号。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882011,
+    "id": "chatcmpl-23759652-b0f5-9a7e-bf2c-6eda72ebbaf1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 280,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3294,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3574
+    }
+  },
+  "usage_known": true
+}

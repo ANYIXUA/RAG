@@ -1,0 +1,48 @@
+{
+  "answer_correctness": {
+    "evidence": "高速公路中人孔的检修按需进行",
+    "reason": "部分正确但存在矛盾信息",
+    "score": 0.5
+  },
+  "case_id": "p6s-0090",
+  "citation_correctness": {
+    "evidence": "人孔内抽水、整理光缆走线等属日常维护内容。[3]",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "人孔内抽水、整理光缆走线等属日常维护内容。[3]",
+    "reason": "覆盖了主要维护内容",
+    "score": 1
+  },
+  "confidence": "medium",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "高速公路中人孔的检修周期为半年。[1]",
+    "reason": "存在自相矛盾的周期描述",
+    "score": 0.5
+  },
+  "flags": [
+    "contradictory_info",
+    "overclaim"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "79631b046e374263acf75b4098f46c3e",
+  "judge_attempts": 3,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError",
+    "ValueError"
+  ],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

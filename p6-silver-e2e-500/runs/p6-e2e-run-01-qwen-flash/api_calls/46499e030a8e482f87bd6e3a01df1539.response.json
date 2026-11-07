@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:58.503022+08:00",
+  "conservative_cost_yuan": 0.0014705999999999999,
+  "error": null,
+  "latency_ms": 2648.2287000399083,
+  "list_price_estimate_yuan": 0.0010401,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持计工日规则和防盗门更换包含性。\",\n    \"evidence\": \"应急发电超出2小时部分按实际工时折算工日，以2小时为基准。[2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"机房土建零星维修包含防盗门更换项目。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有条件与步骤。\",\n    \"evidence\": \"计量单位为“套²次”，综合单价156.86元。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源完全匹配。\",\n    \"evidence\": \"防盗门更换属于WH33116007编码维护内容。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881735,
+    "id": "chatcmpl-8f5a1b8b-2427-9db3-9cd3-28259778dbc5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 287,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4064,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4351
+    }
+  },
+  "usage_known": true
+}

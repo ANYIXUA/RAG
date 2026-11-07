@@ -1,0 +1,36 @@
+test_required_evidence_all_present (tests.test_retrieval_metrics.CoverageTest.test_required_evidence_all_present) ... ok
+test_required_evidence_missing_one (tests.test_retrieval_metrics.CoverageTest.test_required_evidence_missing_one) ... ok
+test_duplicates_do_not_inflate_ndcg (tests.test_retrieval_metrics.DedupeTest.test_duplicates_do_not_inflate_ndcg) ... ok
+test_first_occurrence_kept (tests.test_retrieval_metrics.DedupeTest.test_first_occurrence_kept) ... ok
+test_first_of_several_relevant_wins (tests.test_retrieval_metrics.FirstRelevantRankTest.test_first_of_several_relevant_wins) ... ok
+test_rank_is_one_based (tests.test_retrieval_metrics.FirstRelevantRankTest.test_rank_is_one_based) ... ok
+test_respects_truncation (tests.test_retrieval_metrics.FirstRelevantRankTest.test_respects_truncation) ... ok
+test_returns_none_when_absent (tests.test_retrieval_metrics.FirstRelevantRankTest.test_returns_none_when_absent) ... ok
+test_empty_relevant_is_miss (tests.test_retrieval_metrics.HitAtKTest.test_empty_relevant_is_miss) ... ok
+test_hit_inside_truncation (tests.test_retrieval_metrics.HitAtKTest.test_hit_inside_truncation) ... ok
+test_miss_outside_truncation (tests.test_retrieval_metrics.HitAtKTest.test_miss_outside_truncation) ... ok
+test_non_positive_k_is_zero (tests.test_retrieval_metrics.HitAtKTest.test_non_positive_k_is_zero) ... ok
+test_empty_inputs_return_zero (tests.test_retrieval_metrics.NdcgTest.test_empty_inputs_return_zero) ... ok
+test_ideal_hits_capped_by_k (tests.test_retrieval_metrics.NdcgTest.test_ideal_hits_capped_by_k) ... ok
+test_single_relevant_at_first_position_is_one (tests.test_retrieval_metrics.NdcgTest.test_single_relevant_at_first_position_is_one) ... ok
+test_single_relevant_second_position (tests.test_retrieval_metrics.NdcgTest.test_single_relevant_second_position) ... ok
+test_two_relevant_chunks_use_full_ideal (tests.test_retrieval_metrics.NdcgTest.test_two_relevant_chunks_use_full_ideal) ... ok
+test_empty_is_zero (tests.test_retrieval_metrics.PercentileTest.test_empty_is_zero) ... ok
+test_linear_interpolation (tests.test_retrieval_metrics.PercentileTest.test_linear_interpolation) ... ok
+test_p95_of_ten_values (tests.test_retrieval_metrics.PercentileTest.test_p95_of_ten_values) ... ok
+test_empty_relevant_is_zero (tests.test_retrieval_metrics.RecallTest.test_empty_relevant_is_zero) ... ok
+test_full_coverage (tests.test_retrieval_metrics.RecallTest.test_full_coverage) ... ok
+test_partial_coverage (tests.test_retrieval_metrics.RecallTest.test_partial_coverage) ... ok
+test_truncation_limits_recall (tests.test_retrieval_metrics.RecallTest.test_truncation_limits_recall) ... ok
+test_miss_is_zero (tests.test_retrieval_metrics.ReciprocalRankTest.test_miss_is_zero) ... ok
+test_mrr_component (tests.test_retrieval_metrics.ReciprocalRankTest.test_mrr_component) ... ok
+test_compare_rerank_runs_with_noop_provider (tests.test_evaluation.EvaluationTest.test_compare_rerank_runs_with_noop_provider) ... ok
+test_load_retrieval_eval_cases (tests.test_evaluation.EvaluationTest.test_load_retrieval_eval_cases) ... ok
+test_release_gate_compares_with_baseline_report (tests.test_evaluation.EvaluationTest.test_release_gate_compares_with_baseline_report) ... ok
+test_release_gate_fails_when_absolute_metric_is_too_low (tests.test_evaluation.EvaluationTest.test_release_gate_fails_when_absolute_metric_is_too_low) ... ok
+test_save_evaluation_report_creates_report_file (tests.test_evaluation.EvaluationTest.test_save_evaluation_report_creates_report_file) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.158s
+
+OK

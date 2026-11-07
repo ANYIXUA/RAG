@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:05.908672+08:00",
+  "conservative_cost_yuan": 0.0016166999999999998,
+  "error": null,
+  "latency_ms": 3132.687499979511,
+  "list_price_estimate_yuan": 0.0010976999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文[1]\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖利润值及关键属性\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881682,
+    "id": "chatcmpl-a310df4b-4bfb-976b-ae16-14f78696ed05",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 346,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3858,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4204
+    }
+  },
+  "usage_known": true
+}

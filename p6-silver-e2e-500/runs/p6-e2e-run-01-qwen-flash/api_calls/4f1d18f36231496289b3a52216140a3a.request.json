@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-05T20:10:56.840146+08:00",
+  "input_token_upper_bound": 1071,
+  "kind": "chat",
+  "metadata": {
+    "not_a_silver_case": true,
+    "purpose": "authorized_qwen_flash_migration_health_probe"
+  },
+  "output_token_upper_bound": 220,
+  "request": {
+    "max_tokens": 220,
+    "messages": [
+      {
+        "content": "请只回复OK",
+        "role": "user"
+      }
+    ],
+    "model": "qwen-flash",
+    "temperature": 0.2
+  },
+  "request_id": "4f1d18f36231496289b3a52216140a3a",
+  "reserved_yuan": 0.00082065
+}

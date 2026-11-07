@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:01.274398+08:00",
+  "conservative_cost_yuan": 0.0019571999999999997,
+  "error": null,
+  "latency_ms": 4028.6568000447005,
+  "list_price_estimate_yuan": 0.0012881999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]明确支持技工人工费63.83元\",\n    \"evidence\": \"WH12013013 10m 以下木电杆 综合土 470.42 319.14 87.45 63.83 1.50 2.43\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均在上下文中有对应支持\",\n    \"evidence\": \"WH12013013 10m 以下木电杆 综合土 470.42 319.14 87.45 63.83 1.50 2.43\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需条件与步骤\",\n    \"evidence\": \"WH12013013 10m 以下木电杆 综合土 470.42 319.14 87.45 63.83 1.50 2.43\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号均正确对应来源\",\n    \"evidence\": \"WH12013013 10m 以下木电杆 综合土 470.42 319.14 87.45 63.83 1.50 2.43\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881917,
+    "id": "chatcmpl-60fb85b5-4b7b-99ae-bd14-983e62b5840b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 446,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4128,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4574
+    }
+  },
+  "usage_known": true
+}

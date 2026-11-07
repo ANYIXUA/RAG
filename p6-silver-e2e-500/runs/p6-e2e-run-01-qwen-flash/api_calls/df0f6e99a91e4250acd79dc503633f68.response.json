@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:44.355906+08:00",
+  "conservative_cost_yuan": 0.0014974499999999998,
+  "error": null,
+  "latency_ms": 2903.7130000069737,
+  "list_price_estimate_yuan": 0.0010489499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确给出两项独立人工费及计算方式。\",\n    \"evidence\": \"室外布放控制信号线人工费为54.72元/十米条，含人工费34.20元。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持。\",\n    \"evidence\": \"安装室外接地排人工费为100.32元/套，对应0.88工日。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要条件与步骤。\",\n    \"evidence\": \"两项工作需分别计价，无合并人工费标准。[1][2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持内容。\",\n    \"evidence\": \"未提供同时施工的综合人工费率，无法合并计算。[1][2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882081,
+    "id": "chatcmpl-5e00ab18-b7ae-96a4-a6b5-6cf7bad956ec",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 299,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4003,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4302
+    }
+  },
+  "usage_known": true
+}

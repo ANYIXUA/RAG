@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:46.162760+08:00",
+  "conservative_cost_yuan": 0.00075615,
+  "error": null,
+  "latency_ms": 1402.7313000988215,
+  "list_price_estimate_yuan": 0.00057765,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 运维流程需通过平台实现网络状态查询与诊断，支撑策略协同。[3]  \n2. 光网关支持QoS功能，可按业务流分类保障关键服务优先级。[2]  \n3. 全光组网终端具备光与Wi-Fi协同能力，提升整体网络性能。[2]  \n4. 一级平台提供远程管理与组网配置服务，支持运维策略下发。[3]  \n5. 省级平台实现终端运维与质量统计，保障运维闭环。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881124,
+    "id": "chatcmpl-d3fcb94b-c995-9156-8430-530ad3b0ab14",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 119,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2661,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2780
+    }
+  },
+  "usage_known": true
+}

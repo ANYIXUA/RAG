@@ -1,0 +1,994 @@
+{
+  "report_type": "retrieval_evaluation",
+  "generated_at": "2026-11-03T12:59:34.841762+00:00",
+  "dataset_path": "/tmp/retrieval_eval.strict-smoke.jsonl",
+  "cases": 1,
+  "top_k": 20,
+  "settings": {
+    "collection_name": "default",
+    "embedding_provider": "openai",
+    "embedding_dimension": 1024,
+    "vector_store_provider": "postgresql",
+    "retrieval_mode": "hybrid",
+    "retrieval_candidate_k": 20,
+    "semantic_weight": 0.7,
+    "bm25_weight": 0.3,
+    "min_similarity_score": 0.05,
+    "relative_score_threshold": 0.35,
+    "rerank_candidate_k": 20
+  },
+  "runs": [
+    {
+      "name": "no_rerank",
+      "rerank_provider": "none",
+      "rerank_model": "none",
+      "case_count": 1,
+      "hit_at_k": 0.0,
+      "mrr": 0.0,
+      "no_result_rate": 0.0,
+      "avg_latency_ms": 1198.936,
+      "median_latency_ms": 1198.936,
+      "p95_latency_ms": 1198.936,
+      "failure_count": 1,
+      "bucket_metrics": {
+        "intent_label": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 0.0,
+            "mrr": 0.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 1198.936,
+            "median_latency_ms": 1198.936,
+            "p95_latency_ms": 1198.936,
+            "failure_count": 1
+          }
+        },
+        "business_module": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 0.0,
+            "mrr": 0.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 1198.936,
+            "median_latency_ms": 1198.936,
+            "p95_latency_ms": 1198.936,
+            "failure_count": 1
+          }
+        },
+        "source_type": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 0.0,
+            "mrr": 0.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 1198.936,
+            "median_latency_ms": 1198.936,
+            "p95_latency_ms": 1198.936,
+            "failure_count": 1
+          }
+        }
+      },
+      "failures": [
+        {
+          "query": "T9254 是什么错误",
+          "note": null,
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "text_contains": "T9254"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第59页",
+              "score": 0.471332,
+              "retrieval_score": 0.471332,
+              "rerank_score": null,
+              "semantic_score": 0.455622,
+              "bm25_score": 2.086897
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第324页",
+              "score": 0.412734,
+              "retrieval_score": 0.412734,
+              "rerank_score": null,
+              "semantic_score": 0.483153,
+              "bm25_score": 1.02056
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第290页",
+              "score": 0.409694,
+              "retrieval_score": 0.409694,
+              "rerank_score": null,
+              "semantic_score": 0.486637,
+              "bm25_score": 0.945522
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第338页",
+              "score": 0.392712,
+              "retrieval_score": 0.392712,
+              "rerank_score": null,
+              "semantic_score": 0.45926,
+              "bm25_score": 0.975404
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第61页",
+              "score": 0.346544,
+              "retrieval_score": 0.346544,
+              "rerank_score": null,
+              "semantic_score": 0.495063,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第102页",
+              "score": 0.336053,
+              "retrieval_score": 0.336053,
+              "rerank_score": null,
+              "semantic_score": 0.480076,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第349页",
+              "score": 0.333969,
+              "retrieval_score": 0.333969,
+              "rerank_score": null,
+              "semantic_score": 0.477099,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第94页",
+              "score": 0.333829,
+              "retrieval_score": 0.333829,
+              "rerank_score": null,
+              "semantic_score": 0.476899,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第98页",
+              "score": 0.332562,
+              "retrieval_score": 0.332562,
+              "rerank_score": null,
+              "semantic_score": 0.475089,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第348页",
+              "score": 0.329001,
+              "retrieval_score": 0.329001,
+              "rerank_score": null,
+              "semantic_score": 0.470002,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第291页",
+              "score": 0.32532,
+              "retrieval_score": 0.32532,
+              "rerank_score": null,
+              "semantic_score": 0.464743,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第125页",
+              "score": 0.323877,
+              "retrieval_score": 0.323877,
+              "rerank_score": null,
+              "semantic_score": 0.462681,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第248页",
+              "score": 0.323844,
+              "retrieval_score": 0.323844,
+              "rerank_score": null,
+              "semantic_score": 0.462635,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第95页",
+              "score": 0.323769,
+              "retrieval_score": 0.323769,
+              "rerank_score": null,
+              "semantic_score": 0.462527,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第340页",
+              "score": 0.323616,
+              "retrieval_score": 0.323616,
+              "rerank_score": null,
+              "semantic_score": 0.462309,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第116页",
+              "score": 0.322383,
+              "retrieval_score": 0.322383,
+              "rerank_score": null,
+              "semantic_score": 0.460547,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第110页",
+              "score": 0.322343,
+              "retrieval_score": 0.322343,
+              "rerank_score": null,
+              "semantic_score": 0.46049,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第360页",
+              "score": 0.32172,
+              "retrieval_score": 0.32172,
+              "rerank_score": null,
+              "semantic_score": 0.459601,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第65页",
+              "score": 0.321125,
+              "retrieval_score": 0.321125,
+              "rerank_score": null,
+              "semantic_score": 0.45875,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第1页",
+              "score": 0.318211,
+              "retrieval_score": 0.318211,
+              "rerank_score": null,
+              "semantic_score": 0.454586,
+              "bm25_score": 0.0
+            }
+          ]
+        }
+      ],
+      "case_results": [
+        {
+          "query": "T9254 是什么错误",
+          "note": null,
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "tags": [],
+          "hit": false,
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "no_result": false,
+          "latency_ms": 1198.936,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "text_contains": "T9254"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第59页",
+              "score": 0.471332,
+              "retrieval_score": 0.471332,
+              "rerank_score": null,
+              "semantic_score": 0.455622,
+              "bm25_score": 2.086897
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第324页",
+              "score": 0.412734,
+              "retrieval_score": 0.412734,
+              "rerank_score": null,
+              "semantic_score": 0.483153,
+              "bm25_score": 1.02056
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第290页",
+              "score": 0.409694,
+              "retrieval_score": 0.409694,
+              "rerank_score": null,
+              "semantic_score": 0.486637,
+              "bm25_score": 0.945522
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第338页",
+              "score": 0.392712,
+              "retrieval_score": 0.392712,
+              "rerank_score": null,
+              "semantic_score": 0.45926,
+              "bm25_score": 0.975404
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第61页",
+              "score": 0.346544,
+              "retrieval_score": 0.346544,
+              "rerank_score": null,
+              "semantic_score": 0.495063,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第102页",
+              "score": 0.336053,
+              "retrieval_score": 0.336053,
+              "rerank_score": null,
+              "semantic_score": 0.480076,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第349页",
+              "score": 0.333969,
+              "retrieval_score": 0.333969,
+              "rerank_score": null,
+              "semantic_score": 0.477099,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第94页",
+              "score": 0.333829,
+              "retrieval_score": 0.333829,
+              "rerank_score": null,
+              "semantic_score": 0.476899,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第98页",
+              "score": 0.332562,
+              "retrieval_score": 0.332562,
+              "rerank_score": null,
+              "semantic_score": 0.475089,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第348页",
+              "score": 0.329001,
+              "retrieval_score": 0.329001,
+              "rerank_score": null,
+              "semantic_score": 0.470002,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第291页",
+              "score": 0.32532,
+              "retrieval_score": 0.32532,
+              "rerank_score": null,
+              "semantic_score": 0.464743,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第125页",
+              "score": 0.323877,
+              "retrieval_score": 0.323877,
+              "rerank_score": null,
+              "semantic_score": 0.462681,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第248页",
+              "score": 0.323844,
+              "retrieval_score": 0.323844,
+              "rerank_score": null,
+              "semantic_score": 0.462635,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第95页",
+              "score": 0.323769,
+              "retrieval_score": 0.323769,
+              "rerank_score": null,
+              "semantic_score": 0.462527,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第340页",
+              "score": 0.323616,
+              "retrieval_score": 0.323616,
+              "rerank_score": null,
+              "semantic_score": 0.462309,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第116页",
+              "score": 0.322383,
+              "retrieval_score": 0.322383,
+              "rerank_score": null,
+              "semantic_score": 0.460547,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第110页",
+              "score": 0.322343,
+              "retrieval_score": 0.322343,
+              "rerank_score": null,
+              "semantic_score": 0.46049,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第360页",
+              "score": 0.32172,
+              "retrieval_score": 0.32172,
+              "rerank_score": null,
+              "semantic_score": 0.459601,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第65页",
+              "score": 0.321125,
+              "retrieval_score": 0.321125,
+              "rerank_score": null,
+              "semantic_score": 0.45875,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第1页",
+              "score": 0.318211,
+              "retrieval_score": 0.318211,
+              "rerank_score": null,
+              "semantic_score": 0.454586,
+              "bm25_score": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "with_rerank",
+      "rerank_provider": "cross-encoder",
+      "rerank_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "case_count": 1,
+      "hit_at_k": 0.0,
+      "mrr": 0.0,
+      "no_result_rate": 0.0,
+      "avg_latency_ms": 579.568,
+      "median_latency_ms": 579.568,
+      "p95_latency_ms": 579.568,
+      "failure_count": 1,
+      "bucket_metrics": {
+        "intent_label": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 0.0,
+            "mrr": 0.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 579.568,
+            "median_latency_ms": 579.568,
+            "p95_latency_ms": 579.568,
+            "failure_count": 1
+          }
+        },
+        "business_module": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 0.0,
+            "mrr": 0.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 579.568,
+            "median_latency_ms": 579.568,
+            "p95_latency_ms": 579.568,
+            "failure_count": 1
+          }
+        },
+        "source_type": {
+          "未标注": {
+            "case_count": 1,
+            "hit_at_k": 0.0,
+            "mrr": 0.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 579.568,
+            "median_latency_ms": 579.568,
+            "p95_latency_ms": 579.568,
+            "failure_count": 1
+          }
+        }
+      },
+      "failures": [
+        {
+          "query": "T9254 是什么错误",
+          "note": null,
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "text_contains": "T9254"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第59页",
+              "score": 0.471332,
+              "retrieval_score": 0.471332,
+              "rerank_score": null,
+              "semantic_score": 0.455622,
+              "bm25_score": 2.086897
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第324页",
+              "score": 0.412734,
+              "retrieval_score": 0.412734,
+              "rerank_score": null,
+              "semantic_score": 0.483153,
+              "bm25_score": 1.02056
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第290页",
+              "score": 0.409694,
+              "retrieval_score": 0.409694,
+              "rerank_score": null,
+              "semantic_score": 0.486637,
+              "bm25_score": 0.945522
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第338页",
+              "score": 0.392712,
+              "retrieval_score": 0.392712,
+              "rerank_score": null,
+              "semantic_score": 0.45926,
+              "bm25_score": 0.975404
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第61页",
+              "score": 0.346544,
+              "retrieval_score": 0.346544,
+              "rerank_score": null,
+              "semantic_score": 0.495063,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第102页",
+              "score": 0.336053,
+              "retrieval_score": 0.336053,
+              "rerank_score": null,
+              "semantic_score": 0.480076,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第349页",
+              "score": 0.333969,
+              "retrieval_score": 0.333969,
+              "rerank_score": null,
+              "semantic_score": 0.477099,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第94页",
+              "score": 0.333829,
+              "retrieval_score": 0.333829,
+              "rerank_score": null,
+              "semantic_score": 0.476899,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第98页",
+              "score": 0.332562,
+              "retrieval_score": 0.332562,
+              "rerank_score": null,
+              "semantic_score": 0.475089,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第348页",
+              "score": 0.329001,
+              "retrieval_score": 0.329001,
+              "rerank_score": null,
+              "semantic_score": 0.470002,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第291页",
+              "score": 0.32532,
+              "retrieval_score": 0.32532,
+              "rerank_score": null,
+              "semantic_score": 0.464743,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第125页",
+              "score": 0.323877,
+              "retrieval_score": 0.323877,
+              "rerank_score": null,
+              "semantic_score": 0.462681,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第248页",
+              "score": 0.323844,
+              "retrieval_score": 0.323844,
+              "rerank_score": null,
+              "semantic_score": 0.462635,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第95页",
+              "score": 0.323769,
+              "retrieval_score": 0.323769,
+              "rerank_score": null,
+              "semantic_score": 0.462527,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第340页",
+              "score": 0.323616,
+              "retrieval_score": 0.323616,
+              "rerank_score": null,
+              "semantic_score": 0.462309,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第116页",
+              "score": 0.322383,
+              "retrieval_score": 0.322383,
+              "rerank_score": null,
+              "semantic_score": 0.460547,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第110页",
+              "score": 0.322343,
+              "retrieval_score": 0.322343,
+              "rerank_score": null,
+              "semantic_score": 0.46049,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第360页",
+              "score": 0.32172,
+              "retrieval_score": 0.32172,
+              "rerank_score": null,
+              "semantic_score": 0.459601,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第65页",
+              "score": 0.321125,
+              "retrieval_score": 0.321125,
+              "rerank_score": null,
+              "semantic_score": 0.45875,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第1页",
+              "score": 0.318211,
+              "retrieval_score": 0.318211,
+              "rerank_score": null,
+              "semantic_score": 0.454586,
+              "bm25_score": 0.0
+            }
+          ]
+        }
+      ],
+      "case_results": [
+        {
+          "query": "T9254 是什么错误",
+          "note": null,
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "tags": [],
+          "hit": false,
+          "rank": null,
+          "reciprocal_rank": 0.0,
+          "no_result": false,
+          "latency_ms": 579.568,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "text_contains": "T9254"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第59页",
+              "score": 0.471332,
+              "retrieval_score": 0.471332,
+              "rerank_score": null,
+              "semantic_score": 0.455622,
+              "bm25_score": 2.086897
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第324页",
+              "score": 0.412734,
+              "retrieval_score": 0.412734,
+              "rerank_score": null,
+              "semantic_score": 0.483153,
+              "bm25_score": 1.02056
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第290页",
+              "score": 0.409694,
+              "retrieval_score": 0.409694,
+              "rerank_score": null,
+              "semantic_score": 0.486637,
+              "bm25_score": 0.945522
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第338页",
+              "score": 0.392712,
+              "retrieval_score": 0.392712,
+              "rerank_score": null,
+              "semantic_score": 0.45926,
+              "bm25_score": 0.975404
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第61页",
+              "score": 0.346544,
+              "retrieval_score": 0.346544,
+              "rerank_score": null,
+              "semantic_score": 0.495063,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第102页",
+              "score": 0.336053,
+              "retrieval_score": 0.336053,
+              "rerank_score": null,
+              "semantic_score": 0.480076,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第349页",
+              "score": 0.333969,
+              "retrieval_score": 0.333969,
+              "rerank_score": null,
+              "semantic_score": 0.477099,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第94页",
+              "score": 0.333829,
+              "retrieval_score": 0.333829,
+              "rerank_score": null,
+              "semantic_score": 0.476899,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第98页",
+              "score": 0.332562,
+              "retrieval_score": 0.332562,
+              "rerank_score": null,
+              "semantic_score": 0.475089,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第348页",
+              "score": 0.329001,
+              "retrieval_score": 0.329001,
+              "rerank_score": null,
+              "semantic_score": 0.470002,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第291页",
+              "score": 0.32532,
+              "retrieval_score": 0.32532,
+              "rerank_score": null,
+              "semantic_score": 0.464743,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第125页",
+              "score": 0.323877,
+              "retrieval_score": 0.323877,
+              "rerank_score": null,
+              "semantic_score": 0.462681,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第248页",
+              "score": 0.323844,
+              "retrieval_score": 0.323844,
+              "rerank_score": null,
+              "semantic_score": 0.462635,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第95页",
+              "score": 0.323769,
+              "retrieval_score": 0.323769,
+              "rerank_score": null,
+              "semantic_score": 0.462527,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第340页",
+              "score": 0.323616,
+              "retrieval_score": 0.323616,
+              "rerank_score": null,
+              "semantic_score": 0.462309,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第116页",
+              "score": 0.322383,
+              "retrieval_score": 0.322383,
+              "rerank_score": null,
+              "semantic_score": 0.460547,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第110页",
+              "score": 0.322343,
+              "retrieval_score": 0.322343,
+              "rerank_score": null,
+              "semantic_score": 0.46049,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第360页",
+              "score": 0.32172,
+              "retrieval_score": 0.32172,
+              "rerank_score": null,
+              "semantic_score": 0.459601,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第65页",
+              "score": 0.321125,
+              "retrieval_score": 0.321125,
+              "rerank_score": null,
+              "semantic_score": 0.45875,
+              "bm25_score": 0.0
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第1页",
+              "score": 0.318211,
+              "retrieval_score": 0.318211,
+              "rerank_score": null,
+              "semantic_score": 0.454586,
+              "bm25_score": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "delta": {
+    "hit_at_k": 0.0,
+    "mrr": 0.0,
+    "no_result_rate": 0.0,
+    "avg_latency_ms": -619.368,
+    "p95_latency_ms": -619.368
+  },
+  "release_gate": {
+    "passed": false,
+    "candidate_run": "with_rerank",
+    "baseline_run": null,
+    "thresholds": {
+      "min_hit_at_k": 0.8,
+      "min_mrr": 0.7,
+      "max_no_result_rate": 0.2,
+      "max_avg_latency_ms": null,
+      "max_p95_latency_ms": null,
+      "max_hit_at_k_drop": 0.05,
+      "max_mrr_drop": 0.05,
+      "max_no_result_rate_increase": 0.05,
+      "max_avg_latency_increase_ms": null,
+      "max_p95_latency_increase_ms": null
+    },
+    "checks": [
+      {
+        "name": "min_hit_at_k",
+        "metric": "hit_at_k",
+        "operator": ">=",
+        "value": 0.0,
+        "threshold": 0.8,
+        "passed": false
+      },
+      {
+        "name": "min_mrr",
+        "metric": "mrr",
+        "operator": ">=",
+        "value": 0.0,
+        "threshold": 0.7,
+        "passed": false
+      },
+      {
+        "name": "max_no_result_rate",
+        "metric": "no_result_rate",
+        "operator": "<=",
+        "value": 0.0,
+        "threshold": 0.2,
+        "passed": true
+      },
+      {
+        "name": "max_avg_latency_ms",
+        "metric": "avg_latency_ms",
+        "operator": "skip",
+        "value": 579.568,
+        "threshold": null,
+        "passed": true,
+        "skipped": true
+      },
+      {
+        "name": "max_p95_latency_ms",
+        "metric": "p95_latency_ms",
+        "operator": "skip",
+        "value": 579.568,
+        "threshold": null,
+        "passed": true,
+        "skipped": true
+      }
+    ],
+    "baseline_delta": null
+  },
+  "report_path": "/tmp/rag-retrieval-smoke/retrieval_eval_20261103_125934.json"
+}

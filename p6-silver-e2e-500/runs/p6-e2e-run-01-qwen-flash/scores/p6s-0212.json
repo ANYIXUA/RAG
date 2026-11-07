@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "3.5 VoIP（Voice over Internet Protocol） 网络电话，一种语音通话技术，经由网际协议（IP）来达成语音通话与多媒 体会议",
+    "reason": "支持VoIP实现音视频通信",
+    "score": 1
+  },
+  "case_id": "p6s-0212",
+  "citation_correctness": {
+    "evidence": "优先部署高优先级QoS策略保障音视频业务。[3]",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "建议使用全光组网提升网络质量以保障通信效果。[3]",
+    "reason": "覆盖技术选择与部署建议",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "VoIP通过IP网络传输语音和多媒体数据，适用于家庭网络环境。[1]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "multi_source_citation",
+    "practical_recommendation_included"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "0d03db2337104fe08104cd8c7ebddde4",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

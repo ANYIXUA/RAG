@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:04.261425+08:00",
+  "conservative_cost_yuan": 0.0007579500000000001,
+  "error": null,
+  "latency_ms": 1339.0683000907302,
+  "list_price_estimate_yuan": 0.0006004500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 直流远供电远端模块壁挂的综合单价为359.33元。[1]  \n2. 该价格对应计量单位为“台、个”。[1]  \n3. 项目编码为WH33109004。[1]  \n4. 包含安装固定、接线等作业内容。[1]  \n5. 与表10.3.3.26中数据一致。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880842,
+    "id": "chatcmpl-4d111f81-5b57-9557-b6c5-69f4a85fcb40",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 105,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2953,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3058
+    }
+  },
+  "usage_known": true
+}

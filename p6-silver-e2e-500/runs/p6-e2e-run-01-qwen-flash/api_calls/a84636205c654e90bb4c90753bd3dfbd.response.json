@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:28.934461+08:00",
+  "conservative_cost_yuan": 0.0006315,
+  "error": null,
+  "latency_ms": 1039.737300015986,
+  "list_price_estimate_yuan": 0.0005175,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安全生产费计算基础包含维护分项作业费。[1]  \n2. 包括材料及备品备件购置费。[1]  \n3. 包含机械仪表使用费。[1]  \n4. 包含措施项目费。[1]  \n5. 包含规费。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881047,
+    "id": "chatcmpl-a45f810e-1f3d-9a98-84d0-e127b09e4d8a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 76,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2690,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2766
+    }
+  },
+  "usage_known": true
+}

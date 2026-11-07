@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:40.691777+08:00",
+  "conservative_cost_yuan": 0.00163305,
+  "error": null,
+  "latency_ms": 3597.709900001064,
+  "list_price_estimate_yuan": 0.00111105,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与证据一致，引用准确。\",\n    \"evidence\": \"WH22103005 平原、丘陵 29.18 18.24 5.47 5.47 0.16 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持。\",\n    \"evidence\": \"WH22102002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要条件与步骤。\",\n    \"evidence\": \"维护分项作业 项目编码 项目名称 综合单价 （元）\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容。\",\n    \"evidence\": \"WH22103005 平原、丘陵 29.18 18.24 5.47 5.47 0.16 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881957,
+    "id": "chatcmpl-767e4930-1514-933d-85f8-f59500e120ab",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 348,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3927,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4275
+    }
+  },
+  "usage_known": true
+}

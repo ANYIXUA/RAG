@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23116004 联网调测 扇区 895.58 559.74 167.92 167.92 4.91",
+    "reason": "上下文明确给出895.58元",
+    "score": 1
+  },
+  "case_id": "p6s-0308",
+  "citation_correctness": {
+    "evidence": "WH23116004 联网调测 扇区 895.58 559.74 167.92 167.92 4.91",
+    "reason": "引用[1]准确对应来源内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23116004 联网调测 扇区 895.58 559.74 167.92 167.92 4.91",
+    "reason": "涵盖单价、单位、项目编码等关键信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23116004 联网调测 扇区 895.58 559.74 167.92 167.92 4.91",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "6b2a494df8d644a2a47b7769d970155b",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

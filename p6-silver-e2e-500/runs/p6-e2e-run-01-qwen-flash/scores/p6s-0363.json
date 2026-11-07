@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23111009 安装小型化 定向通信天 线 铁塔上20m 以下 456.00 285.00 85.50 85.50 2.50",
+    "reason": "引用错误，应为WH23111009",
+    "score": 0
+  },
+  "case_id": "p6s-0363",
+  "citation_correctness": {
+    "evidence": "WH23111009 安装小型化 定向通信天 线 铁塔上20m 以下 456.00 285.00 85.50 85.50 2.50",
+    "reason": "引用编号对应错误片段",
+    "score": 0
+  },
+  "completeness": {
+    "evidence": "WH23111009 安装小型化 定向通信天 线 铁塔上20m 以下 456.00 285.00 85.50 85.50 2.50",
+    "reason": "覆盖问题核心条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23111009 安装小型化 定向通信天 线 铁塔上20m 以下 456.00 285.00 85.50 85.50 2.50",
+    "reason": "事实与上下文不符，引用错误",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_citation",
+    "fact_mismatch"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "7e0ec058fc0a4bc9ac96fa0695f17215",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，非拒答场景",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

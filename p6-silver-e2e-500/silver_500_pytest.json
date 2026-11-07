@@ -1,0 +1,21 @@
+{
+  "command": "D:\\AgentAIProgect\\RAG\\venv\\Scripts\\python.exe -m pytest D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\test_topup_silver.py D:\\AgentAIProgect\\RAG\\tests\\test_eval_candidates.py D:\\AgentAIProgect\\RAG\\tests\\test_eval_corpus.py -q --junitxml=D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\pytest_topup_final.xml",
+  "full_repository_suite": "not_run",
+  "junit_sha256": "800fe0ee7169884d7915b90d5e6ca299e4ce4905a39a594c9231e4d78342911c",
+  "pytest_version": "9.2.0",
+  "rag_e2e": "not_run",
+  "status": "passed",
+  "suites": [
+    {
+      "errors": "0",
+      "failures": "0",
+      "hostname": "二号机",
+      "name": "pytest",
+      "skipped": "0",
+      "tests": "139",
+      "time": "22.029",
+      "timestamp": "2026-11-05T19:23:51.830327+08:00"
+    }
+  ],
+  "summary": "72 passed, 67 subtests passed, 1 third-party deprecation warning"
+}

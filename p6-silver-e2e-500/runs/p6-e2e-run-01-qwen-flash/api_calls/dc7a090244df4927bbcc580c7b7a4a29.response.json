@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:15.959359+08:00",
+  "conservative_cost_yuan": 0.0006778499999999999,
+  "error": null,
+  "latency_ms": 1251.701100030914,
+  "list_price_estimate_yuan": 0.0005248499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 签证及索赔依据需提供经双方认可的签证单和索赔依据编号。[1]  \n2. 依据应与现场签证表或费用索赔申请表相关联。[4]  \n3. 编号信息需确保可追溯且真实有效。[1]  \n4. 须在表格中明确填写具体编号，不得空白。[1]  \n5. 依据内容应支持计价合理性与审批合规性。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881094,
+    "id": "chatcmpl-d6e46e17-4e42-96ed-bd2d-44d01811671d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2479,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2581
+    }
+  },
+  "usage_known": true
+}

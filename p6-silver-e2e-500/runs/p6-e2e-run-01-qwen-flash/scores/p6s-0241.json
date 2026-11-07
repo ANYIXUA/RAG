@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "表—06 械仪表使用清单与计价表 表格列：项目名称：；第；页；共；页",
+    "reason": "上下文明确支持表—06为计价依据。",
+    "score": 1
+  },
+  "case_id": "p6s-0241",
+  "citation_correctness": {
+    "evidence": "表—06 械仪表使用清单与计价表 表格列：项目名称：；第；页；共；页",
+    "reason": "引用编号与上下文匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "维护周期（年）和金额（元）等信息。[1]",
+    "reason": "涵盖计价表格、周期与金额信息。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "表—06 械仪表使用清单与计价表 表格列：项目名称：；第；页；共；页",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "a8131f27c32c4e8984419d0f6de8fdaa",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

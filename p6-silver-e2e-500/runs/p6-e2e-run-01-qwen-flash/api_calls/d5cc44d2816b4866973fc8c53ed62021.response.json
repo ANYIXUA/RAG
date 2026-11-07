@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:59.493180+08:00",
+  "conservative_cost_yuan": 0.0007767000000000001,
+  "error": null,
+  "latency_ms": 1104.3506001587957,
+  "list_price_estimate_yuan": 0.0006057,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 防雷箱连接处部件若出现锈蚀，应立即处理以确保接地可靠性。[1]  \n2. 处理时需检查接头是否紧固，防止因锈蚀导致接触不良。[2]  \n3. 应清除锈蚀部位，并进行防锈处理，恢复连接性能。[1]  \n4. 若锈蚀严重，应更换连接部件或采取防腐措施。[2]  \n5. 维护后需确认接地连线齐全且接头牢固。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881198,
+    "id": "chatcmpl-c681b538-4c56-9367-a143-da5dadf661df",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 114,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2898,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3012
+    }
+  },
+  "usage_known": true
+}

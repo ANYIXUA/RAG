@@ -1,0 +1,114 @@
+{
+  "previous_sha256": "ba2931cb95309d89996b45806601d28e405d557784d4683fbc4b9d836dde42ec",
+  "record": {
+    "batch": 7,
+    "candidates": [
+      {
+        "answer": "28.81元",
+        "evidence": [
+          {
+            "excerpt": "WH33122002 ONU 28.81 19.54 5.35 3.91 0.17 0.00",
+            "passage_id": "6636ccfbf047ac530ed22fe9"
+          }
+        ],
+        "question": "更换板卡中ONU的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "WH33121001",
+        "evidence": [
+          {
+            "excerpt": "WH33121001 更换单体电池 432.09 293.14 80.32 58.63",
+            "passage_id": "adc2afb6e2d7e581151ff613"
+          }
+        ],
+        "question": "更换单体电池的项目编码是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "1.71",
+        "evidence": [
+          {
+            "excerpt": "消耗量 1.71 0.00",
+            "passage_id": "79906d3f54cc4f882fd8c7fb"
+          }
+        ],
+        "question": "封堵孔洞的消耗量是多少？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0471",
+          "expected_behavior": "answer",
+          "generation_batch": 7,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271113,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "更换板卡中ONU的综合单价是多少元？",
+          "question_type": "exact_fact",
+          "reference_answer": "28.81元",
+          "source_chunk_ids": [
+            "6636ccfbf047ac530ed22fe9"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "6636ccfbf047ac530ed22fe9",
+              "excerpt": "WH33122002 ONU 28.81 19.54 5.35 3.91 0.17 0.00"
+            }
+          ],
+          "source_page": 321,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0472",
+          "expected_behavior": "answer",
+          "generation_batch": 7,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271113,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "更换单体电池的项目编码是多少？",
+          "question_type": "exact_fact",
+          "reference_answer": "WH33121001",
+          "source_chunk_ids": [
+            "adc2afb6e2d7e581151ff613"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "adc2afb6e2d7e581151ff613",
+              "excerpt": "WH33121001 更换单体电池 432.09 293.14 80.32 58.63"
+            }
+          ],
+          "source_page": 320,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "reason": "duplicate_evidence_answer",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

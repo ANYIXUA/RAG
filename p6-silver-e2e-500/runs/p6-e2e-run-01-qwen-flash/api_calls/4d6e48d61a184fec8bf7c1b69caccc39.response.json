@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:37.216004+08:00",
+  "conservative_cost_yuan": 0.0007088999999999999,
+  "error": null,
+  "latency_ms": 1391.6969997808337,
+  "list_price_estimate_yuan": 0.0005664,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 防雹保护设施检查属于太阳能光伏离网发电系统检修内容。[1]  \n2. 检修工作包含防雹保护设施、支架及基础等项目。[3]  \n3. 该检查是专项检修中的常规作业项。[2]  \n4. 属于发电设备专项检修范畴。[1]  \n5. 与光伏板阵列清洁同属维护项目。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880995,
+    "id": "chatcmpl-49cc9a6f-3d7e-927f-82a1-2801387fca06",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 95,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2826,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2921
+    }
+  },
+  "usage_known": true
+}

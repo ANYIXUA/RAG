@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:10:58.495684+08:00",
+  "conservative_cost_yuan": 4.8e-06,
+  "error": null,
+  "latency_ms": 1641.4462001994252,
+  "list_price_estimate_yuan": 3.2999999999999997e-06,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "OK",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880658,
+    "id": "chatcmpl-bc7fa99f-6bfd-9da5-96c5-fdf519d78060",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1,
+      "completion_tokens_details": null,
+      "prompt_tokens": 12,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 13
+    }
+  },
+  "usage_known": true
+}

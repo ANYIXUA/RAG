@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:36.771124+08:00",
+  "input_token_upper_bound": 1189,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0303"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "设备端口安全要求对应的条目编号是什么？ 终端设备 设备信息 设备状态 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "8a7647284a484e0f9b556bc03ef5ff1a",
+  "reserved_yuan": 0.0005945
+}

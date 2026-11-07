@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:35.909324+08:00",
+  "conservative_cost_yuan": 0.0007325999999999999,
+  "error": null,
+  "latency_ms": 1415.0072000920773,
+  "list_price_estimate_yuan": 0.0005600999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 清理范围包括机房、铁塔、院墙及护网内外周边一米内杂草杂物。[1]  \n2. 作业对象涵盖一体化机房（方舱）及一体化机柜类型。[2]  \n3. 应按规程要求清除外部环境中的杂草与障碍物。[4]  \n4. 作业需覆盖机房主体结构周边区域，确保环境整洁安全。[3]  \n5. 维护频率依据实际发生次数和地貌类型确定。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881054,
+    "id": "chatcmpl-70fc5341-a83d-965e-ba24-1a62666b541d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 115,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2584,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2699
+    }
+  },
+  "usage_known": true
+}

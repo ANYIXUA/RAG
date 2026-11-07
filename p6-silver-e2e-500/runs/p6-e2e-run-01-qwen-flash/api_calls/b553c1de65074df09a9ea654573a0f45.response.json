@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:03.552088+08:00",
+  "conservative_cost_yuan": 0.0026028,
+  "error": null,
+  "latency_ms": 7392.687099985778,
+  "list_price_estimate_yuan": 0.0015393,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出‘机械仪表使用清单的编号，由WHJY-加三位阿拉伯数字组成’，与问题完全对应，且该信息在原文中直接支持。\",\n    \"evidence\": \"8.3.4.4 机械仪表使用清单的编号，由WHJY-加三位阿拉伯数字组成。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实均能在实际LLM上下文中找到对应来源：第1条来自[1]，第2、3、4、5条虽有扩展但核心信息（如补充编号格式、重码要求、参照附录、编号用途）均在[1]中可追溯，未引入无关内容。\",\n    \"evidence\": \"8.3.4.4 机械仪表使用清单的编号，由WHJY-加三位阿拉伯数字组成。...编制人可作相应补充，补充编号应由WHJYB 加三位阿拉伯数字组成，阿拉伯数字从001 起顺序编制，同一招标项目的机械仪表编号不得有重码。...应参照《电信基础设施维护费用编制办法》附录规定的编号...进行确定。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问编号组成，回答准确聚焦于核心构成（WHJY-加三位阿拉伯数字），并补充了相关细节（补充编号、重码规则、参照依据），虽略超基本需求但无冗余，完整覆盖问题所需条件。\",\n    \"evidence\": \"8.3.4.4 机械仪表使用清单的编号，由WHJY-加三位阿拉伯数字组成。...补充编号应由WHJYB 加三位阿拉伯数字组成...同一招标项目的机械仪表编号不得有重码。...应参照《电信基础设施维护费用编制办法》附录规定的编号...进行确定。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用[1]均正确对应实际上下文片段[1]，且该片段包含所陈述的所有关键信息；其他引用虽未在原始证据中出现，但因实际答案中所有信息均源自[1]，故引用[1]是合理且一致的。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第86页\\n定位信息：86\\n内容：...8.3.4.4 机械仪表使用清单的编号，由WHJY-加三位阿拉伯数字组成。...补充编号应由WHJYB 加三位阿拉伯数字组成...同一招标项目的机械仪表编号不得有重码。...应参照《电信基础设施维护费用编制办法》附录规定的编号...进行确定。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，上下文中有清晰答案，无需拒答，因此该维度不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881376,
+    "id": "chatcmpl-75f79903-1099-9192-87ae-d37cb1e644ff",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 709,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3172,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3881
+    }
+  },
+  "usage_known": true
+}

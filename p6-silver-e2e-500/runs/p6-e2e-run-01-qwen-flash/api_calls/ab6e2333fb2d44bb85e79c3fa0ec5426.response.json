@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:46.713506+08:00",
+  "conservative_cost_yuan": 0.0007992,
+  "error": null,
+  "latency_ms": 1224.386400077492,
+  "list_price_estimate_yuan": 0.0006177,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 一体化壁挂式安装的消耗量为4.10。[1]  \n2. 该消耗量对应项目编码WH33108003。[1]  \n3. 消耗量单位为“台”，按实际发生数量计算。[3]  \n4. 与一体化落地式（消耗量2.80）不同，壁挂式更高。[2]  \n5. 该数据出自《电信基础设施维护规程》第309页表10.4.3.8。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881005,
+    "id": "chatcmpl-b1979f83-4be4-9f83-810e-059de5c1cd5a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2908,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3029
+    }
+  },
+  "usage_known": true
+}

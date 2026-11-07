@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:15.375619+08:00",
+  "conservative_cost_yuan": 0.0007338,
+  "error": null,
+  "latency_ms": 1209.359899861738,
+  "list_price_estimate_yuan": 0.0005778,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装预留缆架需完成安装、固定及清理现场等步骤。[1]  \n2. 安装时应确保缆架位置准确，符合设计要求。[2]  \n3. 固定过程需牢固可靠，防止松动或位移。[2]  \n4. 安装后须清理作业现场，保持环境整洁。[1]  \n5. 检查预留缆架与光缆的连接是否稳固。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880974,
+    "id": "chatcmpl-4337fbbf-db64-97d0-8871-a9694c91637f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2812,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2916
+    }
+  },
+  "usage_known": true
+}

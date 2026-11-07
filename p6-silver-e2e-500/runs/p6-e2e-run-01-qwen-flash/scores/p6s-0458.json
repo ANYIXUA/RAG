@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0458",
+  "citation_correctness": {
+    "evidence": "[1] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "服务能力如交付、沟通、销售技巧需纳入绩效评价。[1]",
+    "reason": "遗漏绩效评估维度的完整说明",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "员工绩效评估应基于技能掌握程度，如故障处理能力。[1]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "overclaiming"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "14be5c8f4dce43eb844f04cd30fa59e1",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "应拒答但未明确表示不知",
+    "score": 0
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

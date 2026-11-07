@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:56.104798+08:00",
+  "conservative_cost_yuan": 0.0008209500000000001,
+  "error": null,
+  "latency_ms": 1639.8820001631975,
+  "list_price_estimate_yuan": 0.00061545,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 测试STA应通过5GHz频段与光网关或光路由建立关联。[1]  \n2. 光网关与光路由间Wi-Fi信号强度需保持在-60dBm±2dBm。[1]  \n3. 信号相互可见且通过光纤连接，确保漫游性能达标。[1]  \n4. 漫游时延须优于75ms，宜优于40ms（支持802.11k/v/r）。[1]  \n5. 测试时长为3分钟，按秒记录吞吐量及漫游时延。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880954,
+    "id": "chatcmpl-16d87dcd-8119-967f-89d9-61c766c158a3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 137,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2733,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2870
+    }
+  },
+  "usage_known": true
+}

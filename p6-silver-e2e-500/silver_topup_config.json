@@ -1,0 +1,20 @@
+{
+  "baseline_manifest_sha256": "fb66898d13209f92aa2091e25c9a119b0d33f36dec1fbde2f297d4f71e807e74",
+  "digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "model": "qwen3:4b-instruct-2507-q4_K_M",
+  "options": {
+    "num_ctx": 8192,
+    "num_predict": 1800,
+    "temperature": 0.6,
+    "top_p": 0.9
+  },
+  "seed": 20261106,
+  "targets": {
+    "colloquial": 50,
+    "exact_fact": 200,
+    "multi_condition": 100,
+    "procedure": 100,
+    "unanswerable": 50
+  },
+  "version": "p6-silver-topup-v1"
+}

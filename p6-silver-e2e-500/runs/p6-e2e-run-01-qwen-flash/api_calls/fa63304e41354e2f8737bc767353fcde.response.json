@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:39.243568+08:00",
+  "conservative_cost_yuan": 0.0006542999999999999,
+  "error": null,
+  "latency_ms": 1054.4643998146057,
+  "list_price_estimate_yuan": 0.0005493,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 环境安全检查。[1]  \n2. 道路巡检。[1]  \n3. 造物杂草、杂物清理。[1]  \n4. 机房主体机构、地基和围墙巡查。[1]  \n5. 情况记录。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881118,
+    "id": "chatcmpl-ff30cd49-d189-9065-b680-2cf74ce70033",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 70,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2962,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3032
+    }
+  },
+  "usage_known": true
+}

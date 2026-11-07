@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:46.118764+08:00",
+  "conservative_cost_yuan": 0.0007145999999999999,
+  "error": null,
+  "latency_ms": 1066.3171999622136,
+  "list_price_estimate_yuan": 0.0005480999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 工作量增减超出合同约定幅度时，综合单价应予以调整。[1]  \n2. 调整依据为原备品备件及机械仪表清单价格进行对应变更。[1]  \n3. 无对应清单内容的，由承包人提出费用变更并经发包人确认。[1]  \n4. 综合单价调整需按合同约定程序执行。[1]  \n5. 受益方应在合同规定时间内提出调整报告。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880825,
+    "id": "chatcmpl-0f5d95f7-ac7c-938e-949c-4fadbef62c66",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2544,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2655
+    }
+  },
+  "usage_known": true
+}

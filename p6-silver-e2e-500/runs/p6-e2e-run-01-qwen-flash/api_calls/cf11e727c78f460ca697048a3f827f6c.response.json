@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:03.652888+08:00",
+  "conservative_cost_yuan": 0.0016577999999999999,
+  "error": null,
+  "latency_ms": 3609.6205001231283,
+  "list_price_estimate_yuan": 0.0011328,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"太阳能人工费错误，应为29.64元\",\n    \"evidence\": \"WH21111009 山区 47.42 29.64 8.89 8.89 0.26 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"直流设备无对应信息，却声称未列出\",\n    \"evidence\": \"文档中无“直流拉远供电设备”的巡检项目及人工费信息。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏直流设备费用，未说明无法回答\",\n    \"evidence\": \"直流拉远供电设备未在文档中明确列出对应人工费用。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"WH21111009 山区 47.42 29.64 8.89 8.89 0.26 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0,\n    \"reason\": \"未拒答且提供错误信息\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_cost\",\n    \"missing_reference\",\n    \"false_claim\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881980,
+    "id": "chatcmpl-092df04d-8b09-9e38-ab6c-b8740805f55e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 350,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4052,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4402
+    }
+  },
+  "usage_known": true
+}

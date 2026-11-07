@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:58.355702+08:00",
+  "conservative_cost_yuan": 0.00070815,
+  "error": null,
+  "latency_ms": 1381.7579001188278,
+  "list_price_estimate_yuan": 0.00055965,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 需掌握交互式网络电视机顶盒配置方法。[2]  \n2. 应熟悉交互式网络电视开通业务流程。[2]  \n3. 终端配置需符合运营商视听业务基础知识要求。[4.5.1]  \n4. 操作中须遵守装维作业安全操作规范。[4.2.2]  \n5. 需确保用户信息安全与网络安全合规。[6.1.2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880957,
+    "id": "chatcmpl-873c9d03-1de1-9b37-a7e7-240d20af0529",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 99,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2741,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2840
+    }
+  },
+  "usage_known": true
+}

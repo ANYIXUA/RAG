@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "接地电缆固定牢固、接地正确。",
+    "reason": "支持问题核心处理步骤",
+    "score": 1
+  },
+  "case_id": "p6s-0346",
+  "citation_correctness": {
+    "evidence": "接地引下线无丢失、断股、损伤；接地卡子牢固可靠，螺丝紧固无锈蚀；",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检查室内防雷箱的输入和输出电压，室内防雷箱上下电检查空开状态以及复位检查。",
+    "reason": "覆盖电压与接地双重问题",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "测量核对交流输电电压，输入的交流电压的范围应在380V +/-10%范围内。",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "57c13e5de79441f59ecc417d627dd3b5",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

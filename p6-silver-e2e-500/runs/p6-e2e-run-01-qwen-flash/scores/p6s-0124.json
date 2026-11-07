@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "默认情况下，设备应禁用SSH 和telnet 等远程管理协议...",
+    "reason": "答案与上下文一致，覆盖禁用、口令要求等关键点。",
+    "score": 1
+  },
+  "case_id": "p6s-0124",
+  "citation_correctness": {
+    "evidence": "禁止使用空口令或弱口令登录，确保账户验证安全。[1]",
+    "reason": "引用编号与上下文来源匹配且支持对应句子。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "远程管理通信应采用加密方式，保障数据传输安全。[4]",
+    "reason": "涵盖禁用、口令、加密、防后门等全部必要条件。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "如在特殊情况下需要打开SSH 和Telnet 远程管理协议...",
+    "reason": "每项事实均有对应上下文支持，无虚构内容。",
+    "score": 1
+  },
+  "flags": [
+    "citation_consistent",
+    "content_aligned_with_context"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "dd7d04afc2334c71a3b9c58575e6b721",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

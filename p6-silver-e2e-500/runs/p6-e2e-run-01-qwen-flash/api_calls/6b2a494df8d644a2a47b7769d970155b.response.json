@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:53.878481+08:00",
+  "conservative_cost_yuan": 0.0018321,
+  "error": null,
+  "latency_ms": 3665.2134000323713,
+  "list_price_estimate_yuan": 0.0012096,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出895.58元\",\n    \"evidence\": \"WH23116004 联网调测 扇区 895.58 559.74 167.92 167.92 4.91\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH23116004 联网调测 扇区 895.58 559.74 167.92 167.92 4.91\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、单位、项目编码等关键信息\",\n    \"evidence\": \"WH23116004 联网调测 扇区 895.58 559.74 167.92 167.92 4.91\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]准确对应来源内容\",\n    \"evidence\": \"WH23116004 联网调测 扇区 895.58 559.74 167.92 167.92 4.91\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881970,
+    "id": "chatcmpl-2a3a1640-7578-9a1f-80bf-0e91691d3a97",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 415,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3914,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4329
+    }
+  },
+  "usage_known": true
+}

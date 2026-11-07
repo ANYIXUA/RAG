@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:28.481409+08:00",
+  "conservative_cost_yuan": 0.0014154,
+  "error": null,
+  "latency_ms": 2522.3214998841286,
+  "list_price_estimate_yuan": 0.0009893999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"费用与维修内容均匹配上下文\",\n    \"evidence\": \"山区架空光缆日常检修综合单价为55.28元/千米²次。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"整治固定接头盒、预留光缆，补、换挂钩及标识牌，清除吊线上的杂物等。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题所有关键点\",\n    \"evidence\": \"需整治松动光缆、更换损坏挂钩及标识牌。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"费用按“千米²次”计价，具体需根据实际长度核算。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882066,
+    "id": "chatcmpl-3da4d89f-1fe7-989b-98de-ee67220d4393",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 284,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3756,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4040
+    }
+  },
+  "usage_known": true
+}

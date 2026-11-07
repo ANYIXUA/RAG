@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:45.212249+08:00",
+  "conservative_cost_yuan": 0.0007182,
+  "error": null,
+  "latency_ms": 1298.9332999568433,
+  "list_price_estimate_yuan": 0.0005487000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 实行招标的维护合同价款应在中标通知书发出之日起30天内约定。[1]  \n2. 双方应依据招标文件和中标人投标文件在书面合同中确定价款。[1]  \n3. 合同约定不得违背招、投标文件中的实质性内容。[1]  \n4. 招标文件与投标文件不一致时，以投标文件为准。[1]  \n5. 未明确约定事项可协商，协商不成按规程执行。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880823,
+    "id": "chatcmpl-a86a7991-baea-9239-9783-a0f74181605e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2528,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2641
+    }
+  },
+  "usage_known": true
+}

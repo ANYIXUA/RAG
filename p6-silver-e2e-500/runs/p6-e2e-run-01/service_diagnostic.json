@@ -1,0 +1,15 @@
+{
+  "api_call_id": "7e665c46ea1f45eb83692156885eb827",
+  "body": {
+    "code": "limit_requests",
+    "message": "You have exceeded your current request limit. For details, see: https://help.aliyun.com/zh/model-studio/error-code#rate-limit",
+    "param": null,
+    "type": "limit_requests"
+  },
+  "exception": "RateLimitError",
+  "rate_limit_headers": {
+    "x-request-id": "5ad3e4a8-69a2-9ca6-aaf3-36161240b2eb"
+  },
+  "status": "unavailable",
+  "status_code": 429
+}

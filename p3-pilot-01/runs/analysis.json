@@ -1,0 +1,4381 @@
+{
+  "run_dir": "p3-pilot-01\\runs\\run1",
+  "cases": 22,
+  "methods": [
+    "bm25_only",
+    "vector_only",
+    "hybrid",
+    "hybrid_rerank",
+    "bm25_full_corpus"
+  ],
+  "hit_at_10_counts": {
+    "bm25_only": 0,
+    "vector_only": 21,
+    "hybrid": 22,
+    "hybrid_rerank": 22,
+    "bm25_full_corpus": 21
+  },
+  "rerank_rank_changes": [
+    {
+      "batch_id": "B03",
+      "gold_case_id": "gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5",
+      "query": "智慧家庭全光组网产品技术规范的版本是什么？",
+      "hybrid_rank": 7,
+      "hybrid_rerank_rank": 2,
+      "delta": -5
+    },
+    {
+      "batch_id": "B06",
+      "gold_case_id": "gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239",
+      "query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？",
+      "hybrid_rank": 1,
+      "hybrid_rerank_rank": 7,
+      "delta": 6
+    },
+    {
+      "batch_id": "B07",
+      "gold_case_id": "gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42",
+      "query": "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？",
+      "hybrid_rank": 1,
+      "hybrid_rerank_rank": 2,
+      "delta": 1
+    },
+    {
+      "batch_id": "B14",
+      "gold_case_id": "gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c",
+      "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，中级人员在“智能家居（控制）技术”项下对系统架构有什么要求？",
+      "hybrid_rank": 3,
+      "hybrid_rerank_rank": 9,
+      "delta": 6
+    },
+    {
+      "batch_id": "B15",
+      "gold_case_id": "gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf",
+      "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，高级人员在“物联网接入业务运维”项下对网关组网方法的要求是什么？",
+      "hybrid_rank": 1,
+      "hybrid_rerank_rank": 5,
+      "delta": 4
+    },
+    {
+      "batch_id": "B22",
+      "gold_case_id": "gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206",
+      "query": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0 第 4.8.2 节，全光组网终端出厂后可以保留什么账号？",
+      "hybrid_rank": 1,
+      "hybrid_rerank_rank": 8,
+      "delta": 7
+    }
+  ],
+  "keyword_pool": {
+    "cases_with_relevant_in_pool": 1,
+    "pool_size": [
+      20
+    ],
+    "token_match_count_range": [
+      125,
+      447
+    ],
+    "corpus_chunks": 447
+  },
+  "semantic_pool": {
+    "cases_with_relevant_in_pool": 22
+  },
+  "per_case": {
+    "gold-batch01-sha256:d1fcbeb037f45ffa276e565a12f440e3812b98aef32598a2cd0fedd9810b1a06": {
+      "gold_case_id": "gold-batch01-sha256:d1fcbeb037f45ffa276e565a12f440e3812b98aef32598a2cd0fedd9810b1a06",
+      "batch_id": "B01",
+      "query": "非高速公路场景下，管道线路的人（手）孔检修周期是多久？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "831af7c41fd776db6b5b3ff9"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "非高",
+          "高速",
+          "速公",
+          "公路",
+          "路场",
+          "场景",
+          "景下",
+          "管道",
+          "道线",
+          "线路",
+          "路的",
+          "的人"
+        ],
+        "token_match_count": 125,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "831af7c41fd776db6b5b3ff9": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "831af7c41fd776db6b5b3ff9": true
+        },
+        "semantic_score_of_relevant": {
+          "831af7c41fd776db6b5b3ff9": 0.74059
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "2eda6960dfbb194d0f84e4b0",
+            "890981c54bb6c50e5c0d6d8b",
+            "acbdb12c2a62c12fe9787ef7",
+            "66e41c6a6dbb49b77fb123f2",
+            "469978708f9fe4506fc1fa7f",
+            "546f017c81972bb8f8da4d1d",
+            "3b1f839571de44bb1abd2f94",
+            "72fa8e10c0e1591665ff1d32",
+            "8a7f78eaa2ea7985e75538ec",
+            "5183d18205e64c4836ba9020",
+            "cdcc369a72b7aaa79fefb319"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 148.161,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "831af7c41fd776db6b5b3ff9",
+            "c3ecd4637056aff1167beaf5",
+            "bae1b3473d922bce016eb32f",
+            "901684f8902440d567a21566",
+            "823d1d04036b14e9b9ccac9e",
+            "a04a5aeb2ab4fbd5df07dfbf",
+            "256632ea7d6f5a2319f44fb9",
+            "0989de782fe9da63db0ee42f",
+            "c2b948d56e35be96db3d5500",
+            "9970d3dcdf2c44cdaefecd51",
+            "dcb62613c4ce7472d33766b3",
+            "063a41b2179b75da0d47a042",
+            "1b56cd11de85631a94e7765d",
+            "cbbeb4430a68f9c32c878010",
+            "362c9e604739de54353d1864",
+            "9832f94c5c169b4751480ff2",
+            "70202f4f6bd327b7effcf732",
+            "321dd6d7b5fe1fa2c0277758",
+            "1b2149ec028f9c253059616f",
+            "eced514a8afb5d6002fb7c2a"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "831af7c41fd776db6b5b3ff9": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 81.393,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "831af7c41fd776db6b5b3ff9",
+            "c2b948d56e35be96db3d5500",
+            "bae1b3473d922bce016eb32f",
+            "c3ecd4637056aff1167beaf5",
+            "901684f8902440d567a21566",
+            "823d1d04036b14e9b9ccac9e",
+            "a04a5aeb2ab4fbd5df07dfbf",
+            "321dd6d7b5fe1fa2c0277758",
+            "256632ea7d6f5a2319f44fb9",
+            "362c9e604739de54353d1864",
+            "cbbeb4430a68f9c32c878010",
+            "0989de782fe9da63db0ee42f",
+            "9970d3dcdf2c44cdaefecd51",
+            "9832f94c5c169b4751480ff2",
+            "70202f4f6bd327b7effcf732",
+            "1b56cd11de85631a94e7765d",
+            "063a41b2179b75da0d47a042",
+            "dcb62613c4ce7472d33766b3",
+            "eced514a8afb5d6002fb7c2a",
+            "1b2149ec028f9c253059616f"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "831af7c41fd776db6b5b3ff9": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 191.511,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "831af7c41fd776db6b5b3ff9",
+            "bae1b3473d922bce016eb32f",
+            "362c9e604739de54353d1864",
+            "256632ea7d6f5a2319f44fb9",
+            "321dd6d7b5fe1fa2c0277758",
+            "c2b948d56e35be96db3d5500",
+            "c3ecd4637056aff1167beaf5",
+            "a04a5aeb2ab4fbd5df07dfbf",
+            "901684f8902440d567a21566",
+            "cbbeb4430a68f9c32c878010",
+            "dcb62613c4ce7472d33766b3",
+            "9832f94c5c169b4751480ff2",
+            "823d1d04036b14e9b9ccac9e",
+            "1b2149ec028f9c253059616f",
+            "0989de782fe9da63db0ee42f",
+            "70202f4f6bd327b7effcf732",
+            "eced514a8afb5d6002fb7c2a",
+            "063a41b2179b75da0d47a042",
+            "1b56cd11de85631a94e7765d",
+            "9970d3dcdf2c44cdaefecd51"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "831af7c41fd776db6b5b3ff9": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3285.443,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "831af7c41fd776db6b5b3ff9",
+            "c2b948d56e35be96db3d5500"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "831af7c41fd776db6b5b3ff9": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 102.922,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch01-sha256:42b8a2541ffce7ab7ef69d2f1c165500ba5af5aa949ab806a45509dc44dd0dc3": {
+      "gold_case_id": "gold-batch01-sha256:42b8a2541ffce7ab7ef69d2f1c165500ba5af5aa949ab806a45509dc44dd0dc3",
+      "batch_id": "B02",
+      "query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "10",
+          "3",
+          "3",
+          "4",
+          "wh23104",
+          "1",
+          "2",
+          "wh23104003",
+          "在维",
+          "维护",
+          "护分",
+          "分项"
+        ],
+        "token_match_count": 447,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "92108b5bb6dcc5b2227d531c": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "92108b5bb6dcc5b2227d531c": true
+        },
+        "semantic_score_of_relevant": {
+          "92108b5bb6dcc5b2227d531c": 0.878357
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "2a7f16b2864963c72902351f",
+            "5b25186e3e9342c92e5a3670",
+            "3b8f42f7061b1f1a8e2205a6",
+            "469978708f9fe4506fc1fa7f",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "a36043b8ee1a391f2dd1c31a",
+            "bdc9ea567c0d78ab37c2cf77",
+            "d349f789d2e652960680ae1c",
+            "2d70309c35065f6a38c507ed",
+            "3b1f839571de44bb1abd2f94",
+            "e69ef87cafd302938c765e20"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 96.741,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "8d6a3993748474ddec52ba5c",
+            "e8513e8aa3405fff338783f1",
+            "4a65d0d3ead0bc841b1b28f8",
+            "95380ab0ebb17410a5f37707",
+            "3d3eb164235efb301e727bfd",
+            "b2edc2384d6b845e0005973a",
+            "2dd16c7ac2fac611ae6bf362",
+            "3fcd612549a4e58e909deb0e",
+            "2467800bf8ef29b6791440b4",
+            "53d5b679c6d5759fca64305a",
+            "8294eda000c1fa18ec81773e",
+            "3f406ad653cd6ded7e011a40",
+            "abee735aa9c981d3bebcae9f",
+            "8dfd7acc3a5fcf416e5ca637",
+            "6b980f4f3b783a0bcb029caf",
+            "fc7d5eed0b515cf1096fd166",
+            "73988b3bb3ed3d5eba984089",
+            "fc16bde58b2e5f6168fc4bba",
+            "d8732d372789df9517c5bdcc"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 86.94,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "8d6a3993748474ddec52ba5c",
+            "e8513e8aa3405fff338783f1",
+            "2467800bf8ef29b6791440b4",
+            "2dd16c7ac2fac611ae6bf362",
+            "4a65d0d3ead0bc841b1b28f8",
+            "8294eda000c1fa18ec81773e",
+            "73988b3bb3ed3d5eba984089",
+            "53d5b679c6d5759fca64305a",
+            "95380ab0ebb17410a5f37707",
+            "b2edc2384d6b845e0005973a",
+            "3fcd612549a4e58e909deb0e",
+            "6b980f4f3b783a0bcb029caf",
+            "8dfd7acc3a5fcf416e5ca637",
+            "d8732d372789df9517c5bdcc",
+            "fc16bde58b2e5f6168fc4bba",
+            "fc7d5eed0b515cf1096fd166",
+            "3d3eb164235efb301e727bfd",
+            "abee735aa9c981d3bebcae9f",
+            "3f406ad653cd6ded7e011a40"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 126.017,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "8dfd7acc3a5fcf416e5ca637",
+            "b2edc2384d6b845e0005973a",
+            "2dd16c7ac2fac611ae6bf362",
+            "53d5b679c6d5759fca64305a",
+            "6b980f4f3b783a0bcb029caf",
+            "3fcd612549a4e58e909deb0e",
+            "4a65d0d3ead0bc841b1b28f8",
+            "fc7d5eed0b515cf1096fd166",
+            "e8513e8aa3405fff338783f1",
+            "2467800bf8ef29b6791440b4",
+            "8294eda000c1fa18ec81773e",
+            "fc16bde58b2e5f6168fc4bba",
+            "95380ab0ebb17410a5f37707",
+            "73988b3bb3ed3d5eba984089",
+            "8d6a3993748474ddec52ba5c",
+            "d8732d372789df9517c5bdcc",
+            "abee735aa9c981d3bebcae9f",
+            "3d3eb164235efb301e727bfd",
+            "3f406ad653cd6ded7e011a40"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3473.894,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 111.72,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5": {
+      "gold_case_id": "gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5",
+      "batch_id": "B03",
+      "query": "智慧家庭全光组网产品技术规范的版本是什么？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "智慧",
+          "慧家",
+          "家庭",
+          "庭全",
+          "全光",
+          "光组",
+          "组网",
+          "网产",
+          "产品",
+          "品技",
+          "技术",
+          "术规"
+        ],
+        "token_match_count": 146,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "4f32247f7a6d7526df77bddd": true
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "4f32247f7a6d7526df77bddd": true
+        },
+        "semantic_score_of_relevant": {
+          "4f32247f7a6d7526df77bddd": 0.786526
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "4723262fed91f6b5026a5480",
+            "7bd438a6e96bd608918543bc",
+            "e69ef87cafd302938c765e20"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 130.2,
+          "failure": {
+            "stage": "filtered_by_threshold",
+            "detail": "去掉 min_similarity_score / relative_score_threshold 后本应排第 5",
+            "unfiltered_rank": 5
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "5d5fd6cf18ea4e313fdc45b5",
+            "54615572d7bd4dde554106e9",
+            "7bd438a6e96bd608918543bc",
+            "5b25186e3e9342c92e5a3670",
+            "4f32247f7a6d7526df77bddd",
+            "c03289565d5cc78f2b44cfca",
+            "3b8f42f7061b1f1a8e2205a6",
+            "0b2bc61ba6e04bf37c779232",
+            "a36043b8ee1a391f2dd1c31a",
+            "9b5d9b92dc528a1c594e3ec2",
+            "e69ef87cafd302938c765e20",
+            "a8887b02ae32e4d4748ad264",
+            "3c9c81f21d4df15d5cb812c4",
+            "4723262fed91f6b5026a5480",
+            "2d70309c35065f6a38c507ed",
+            "84139f0d408339d51910bb1e",
+            "acbdb12c2a62c12fe9787ef7",
+            "5183d18205e64c4836ba9020",
+            "06e68d69881bfa6bffefd124",
+            "bdc9ea567c0d78ab37c2cf77"
+          ],
+          "first_relevant_rank": 5,
+          "relevant_ranks": {
+            "4f32247f7a6d7526df77bddd": 5
+          },
+          "ndcg_at_10": 0.38685280723454163,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 84.351,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "4723262fed91f6b5026a5480",
+            "7bd438a6e96bd608918543bc",
+            "e69ef87cafd302938c765e20",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "54615572d7bd4dde554106e9",
+            "5b25186e3e9342c92e5a3670",
+            "4f32247f7a6d7526df77bddd",
+            "c03289565d5cc78f2b44cfca",
+            "3b8f42f7061b1f1a8e2205a6",
+            "0b2bc61ba6e04bf37c779232",
+            "a36043b8ee1a391f2dd1c31a",
+            "9b5d9b92dc528a1c594e3ec2",
+            "a8887b02ae32e4d4748ad264",
+            "3c9c81f21d4df15d5cb812c4",
+            "2d70309c35065f6a38c507ed",
+            "5183d18205e64c4836ba9020",
+            "06e68d69881bfa6bffefd124",
+            "84139f0d408339d51910bb1e",
+            "acbdb12c2a62c12fe9787ef7",
+            "bdc9ea567c0d78ab37c2cf77"
+          ],
+          "first_relevant_rank": 7,
+          "relevant_ranks": {
+            "4f32247f7a6d7526df77bddd": 7
+          },
+          "ndcg_at_10": 0.3333333333333333,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 171.842,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "7bd438a6e96bd608918543bc",
+            "4f32247f7a6d7526df77bddd",
+            "54615572d7bd4dde554106e9",
+            "4723262fed91f6b5026a5480",
+            "5183d18205e64c4836ba9020",
+            "e69ef87cafd302938c765e20",
+            "a36043b8ee1a391f2dd1c31a",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "06e68d69881bfa6bffefd124",
+            "bdc9ea567c0d78ab37c2cf77",
+            "5b25186e3e9342c92e5a3670",
+            "a8887b02ae32e4d4748ad264",
+            "c03289565d5cc78f2b44cfca",
+            "3b8f42f7061b1f1a8e2205a6",
+            "acbdb12c2a62c12fe9787ef7",
+            "2d70309c35065f6a38c507ed",
+            "0b2bc61ba6e04bf37c779232",
+            "84139f0d408339d51910bb1e",
+            "9b5d9b92dc528a1c594e3ec2",
+            "3c9c81f21d4df15d5cb812c4"
+          ],
+          "first_relevant_rank": 2,
+          "relevant_ranks": {
+            "4f32247f7a6d7526df77bddd": 2
+          },
+          "ndcg_at_10": 0.6309297535714575,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3333.416,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "4f32247f7a6d7526df77bddd",
+            "7bd438a6e96bd608918543bc",
+            "4723262fed91f6b5026a5480",
+            "9a35c463bb86d1e7617aaa22",
+            "958047c40a522ec22f73e5a5",
+            "54615572d7bd4dde554106e9",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "d1d75534f8865f49c152b4dd",
+            "5b25186e3e9342c92e5a3670",
+            "e69ef87cafd302938c765e20",
+            "3b1f839571de44bb1abd2f94",
+            "7a5e449592e6d9eb8cd92316",
+            "38ea5e749604f43f5f040901",
+            "c03289565d5cc78f2b44cfca",
+            "a7db14a3391bc332376a980d",
+            "3a3f2c0bc27d1815ea693a4a",
+            "bdc9ea567c0d78ab37c2cf77",
+            "b0b4d01dbf2c0c1e81eb2229",
+            "06e68d69881bfa6bffefd124",
+            "2a7f16b2864963c72902351f"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "4f32247f7a6d7526df77bddd": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 127.494,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch01-sha256:0da5c82f433a53526cacf1f533e597e0d0d56bf090a952123037a56df20813b7": {
+      "gold_case_id": "gold-batch01-sha256:0da5c82f433a53526cacf1f533e597e0d0d56bf090a952123037a56df20813b7",
+      "batch_id": "B04",
+      "query": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "02c18b66c8c7d17fa1fb910e"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "7",
+          "2",
+          "在",
+          "智慧",
+          "慧家",
+          "家庭",
+          "庭装",
+          "装维",
+          "维工",
+          "工程",
+          "程与",
+          "与管"
+        ],
+        "token_match_count": 432,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "02c18b66c8c7d17fa1fb910e": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "02c18b66c8c7d17fa1fb910e": true
+        },
+        "semantic_score_of_relevant": {
+          "02c18b66c8c7d17fa1fb910e": 0.882755
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "5b25186e3e9342c92e5a3670",
+            "4723262fed91f6b5026a5480",
+            "c03289565d5cc78f2b44cfca",
+            "7bd438a6e96bd608918543bc",
+            "cdcc369a72b7aaa79fefb319",
+            "bdc9ea567c0d78ab37c2cf77",
+            "d349f789d2e652960680ae1c",
+            "06e68d69881bfa6bffefd124",
+            "2a7f16b2864963c72902351f",
+            "e69ef87cafd302938c765e20",
+            "3b1f839571de44bb1abd2f94"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 89.7,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "02c18b66c8c7d17fa1fb910e",
+            "0eb4bd6e18d599063371f51b",
+            "9cc4e5069f6287c6f33683b2",
+            "5766d05fd8a6f73a1ef60b57",
+            "f86d4474f6f6b987d29ada4c",
+            "d70540614c288a2dc8b3066f",
+            "14da1c09b687f7b48896e03a",
+            "2dcaa8db79f8754db213ab1c",
+            "48ecc091e26caaa3ccbd3be5",
+            "1daa7b0cd5324d66d627a243",
+            "71a4f239a4fd7b69fdc74486",
+            "c10a8b3b89210595f9880fc6",
+            "95ae763cde2f43aec2cb7d14",
+            "2eda6960dfbb194d0f84e4b0",
+            "5d1e8fd617217ecea2afa2f1",
+            "e010fe39879d92fa21dc59d9",
+            "5ab56d780f65ff344900b1a2",
+            "81bd459de1d4e62f9428ae88",
+            "1c317b1dd2cebfbf9647d03e",
+            "3d3eb164235efb301e727bfd"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "02c18b66c8c7d17fa1fb910e": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 78.615,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "02c18b66c8c7d17fa1fb910e",
+            "9cc4e5069f6287c6f33683b2",
+            "0eb4bd6e18d599063371f51b",
+            "5766d05fd8a6f73a1ef60b57",
+            "d70540614c288a2dc8b3066f",
+            "f86d4474f6f6b987d29ada4c",
+            "2dcaa8db79f8754db213ab1c",
+            "14da1c09b687f7b48896e03a",
+            "71a4f239a4fd7b69fdc74486",
+            "48ecc091e26caaa3ccbd3be5",
+            "1daa7b0cd5324d66d627a243",
+            "2eda6960dfbb194d0f84e4b0",
+            "95ae763cde2f43aec2cb7d14",
+            "c10a8b3b89210595f9880fc6",
+            "5d1e8fd617217ecea2afa2f1",
+            "e010fe39879d92fa21dc59d9",
+            "5ab56d780f65ff344900b1a2",
+            "1c317b1dd2cebfbf9647d03e",
+            "81bd459de1d4e62f9428ae88",
+            "3d3eb164235efb301e727bfd"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "02c18b66c8c7d17fa1fb910e": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 119.525,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "02c18b66c8c7d17fa1fb910e",
+            "9cc4e5069f6287c6f33683b2",
+            "0eb4bd6e18d599063371f51b",
+            "d70540614c288a2dc8b3066f",
+            "f86d4474f6f6b987d29ada4c",
+            "c10a8b3b89210595f9880fc6",
+            "1daa7b0cd5324d66d627a243",
+            "95ae763cde2f43aec2cb7d14",
+            "48ecc091e26caaa3ccbd3be5",
+            "14da1c09b687f7b48896e03a",
+            "2dcaa8db79f8754db213ab1c",
+            "e010fe39879d92fa21dc59d9",
+            "1c317b1dd2cebfbf9647d03e",
+            "5d1e8fd617217ecea2afa2f1",
+            "71a4f239a4fd7b69fdc74486",
+            "2eda6960dfbb194d0f84e4b0",
+            "5ab56d780f65ff344900b1a2",
+            "5766d05fd8a6f73a1ef60b57",
+            "81bd459de1d4e62f9428ae88",
+            "3d3eb164235efb301e727bfd"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "02c18b66c8c7d17fa1fb910e": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3652.916,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "9cc4e5069f6287c6f33683b2",
+            "02c18b66c8c7d17fa1fb910e",
+            "0eb4bd6e18d599063371f51b",
+            "71a4f239a4fd7b69fdc74486",
+            "5766d05fd8a6f73a1ef60b57",
+            "2eda6960dfbb194d0f84e4b0",
+            "d70540614c288a2dc8b3066f",
+            "5ab56d780f65ff344900b1a2",
+            "14da1c09b687f7b48896e03a"
+          ],
+          "first_relevant_rank": 2,
+          "relevant_ranks": {
+            "02c18b66c8c7d17fa1fb910e": 2
+          },
+          "ndcg_at_10": 0.6309297535714575,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 151.258,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch01-sha256:c482b83580f3fb39b560f93a43695220c7fcca57dadaf88ad7391ba8a95a5c10": {
+      "gold_case_id": "gold-batch01-sha256:c482b83580f3fb39b560f93a43695220c7fcca57dadaf88ad7391ba8a95a5c10",
+      "batch_id": "B05",
+      "query": "全光组网终端支持IEEE 802.11ax协议时，2.4G频段应至少支持多少个RU并行调度？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "4812f97659f77c46891223fa"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "ieee",
+          "802",
+          "11ax",
+          "2",
+          "4g",
+          "ru",
+          "全光",
+          "光组",
+          "组网",
+          "网终",
+          "终端",
+          "端支"
+        ],
+        "token_match_count": 420,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "4812f97659f77c46891223fa": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "4812f97659f77c46891223fa": true
+        },
+        "semantic_score_of_relevant": {
+          "4812f97659f77c46891223fa": 0.837536
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "cdcc369a72b7aaa79fefb319",
+            "a36043b8ee1a391f2dd1c31a",
+            "e69ef87cafd302938c765e20"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 118.785,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "4812f97659f77c46891223fa",
+            "a36043b8ee1a391f2dd1c31a",
+            "44f638f745282f4192dcd963",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "acbdb12c2a62c12fe9787ef7",
+            "3c9c81f21d4df15d5cb812c4",
+            "8e0f763bb003a20ec8b5f6b2",
+            "8a7f78eaa2ea7985e75538ec",
+            "e69ef87cafd302938c765e20",
+            "bbeae10790f98769a3820459",
+            "81657f3072d88fc4ffe4762b",
+            "72fa8e10c0e1591665ff1d32",
+            "b656aa1e5d609e2de7a81a0d",
+            "66e41c6a6dbb49b77fb123f2",
+            "5183d18205e64c4836ba9020",
+            "b0b4d01dbf2c0c1e81eb2229",
+            "cdcc369a72b7aaa79fefb319",
+            "3ef6f0c2eb6c280b4b3a262b",
+            "84139f0d408339d51910bb1e",
+            "469978708f9fe4506fc1fa7f"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "4812f97659f77c46891223fa": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 93.012,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "4812f97659f77c46891223fa",
+            "a36043b8ee1a391f2dd1c31a",
+            "44f638f745282f4192dcd963",
+            "cdcc369a72b7aaa79fefb319",
+            "acbdb12c2a62c12fe9787ef7",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "81657f3072d88fc4ffe4762b",
+            "3c9c81f21d4df15d5cb812c4",
+            "b656aa1e5d609e2de7a81a0d",
+            "8a7f78eaa2ea7985e75538ec",
+            "e69ef87cafd302938c765e20",
+            "72fa8e10c0e1591665ff1d32",
+            "8e0f763bb003a20ec8b5f6b2",
+            "bbeae10790f98769a3820459",
+            "84139f0d408339d51910bb1e",
+            "b0b4d01dbf2c0c1e81eb2229",
+            "66e41c6a6dbb49b77fb123f2",
+            "5183d18205e64c4836ba9020",
+            "469978708f9fe4506fc1fa7f",
+            "3ef6f0c2eb6c280b4b3a262b"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "4812f97659f77c46891223fa": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 184.023,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "4812f97659f77c46891223fa",
+            "84139f0d408339d51910bb1e",
+            "bbeae10790f98769a3820459",
+            "b656aa1e5d609e2de7a81a0d",
+            "44f638f745282f4192dcd963",
+            "81657f3072d88fc4ffe4762b",
+            "cdcc369a72b7aaa79fefb319",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "a36043b8ee1a391f2dd1c31a",
+            "8a7f78eaa2ea7985e75538ec",
+            "8e0f763bb003a20ec8b5f6b2",
+            "e69ef87cafd302938c765e20",
+            "72fa8e10c0e1591665ff1d32",
+            "5183d18205e64c4836ba9020",
+            "b0b4d01dbf2c0c1e81eb2229",
+            "acbdb12c2a62c12fe9787ef7",
+            "3c9c81f21d4df15d5cb812c4",
+            "3ef6f0c2eb6c280b4b3a262b",
+            "66e41c6a6dbb49b77fb123f2",
+            "469978708f9fe4506fc1fa7f"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "4812f97659f77c46891223fa": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3557.096,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "4812f97659f77c46891223fa",
+            "cdcc369a72b7aaa79fefb319",
+            "144e5bb0bd204af1664a969c",
+            "44f638f745282f4192dcd963",
+            "72fa8e10c0e1591665ff1d32"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "4812f97659f77c46891223fa": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 116.307,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239": {
+      "gold_case_id": "gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239",
+      "batch_id": "B06",
+      "query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？",
+      "question_type": "semantic",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "5ab56d780f65ff344900b1a2"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "4",
+          "2",
+          "智慧",
+          "慧家",
+          "家庭",
+          "庭装",
+          "装维",
+          "维工",
+          "工程",
+          "程与",
+          "与管",
+          "管理"
+        ],
+        "token_match_count": 437,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "5ab56d780f65ff344900b1a2": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "5ab56d780f65ff344900b1a2": true
+        },
+        "semantic_score_of_relevant": {
+          "5ab56d780f65ff344900b1a2": 0.732968
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "3b8f42f7061b1f1a8e2205a6",
+            "5b25186e3e9342c92e5a3670",
+            "4723262fed91f6b5026a5480",
+            "3b1f839571de44bb1abd2f94",
+            "2d70309c35065f6a38c507ed",
+            "958047c40a522ec22f73e5a5"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 83.596,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "71a4f239a4fd7b69fdc74486",
+            "5766d05fd8a6f73a1ef60b57",
+            "0eb4bd6e18d599063371f51b",
+            "2eda6960dfbb194d0f84e4b0",
+            "02c18b66c8c7d17fa1fb910e",
+            "14da1c09b687f7b48896e03a",
+            "9cc4e5069f6287c6f33683b2",
+            "f86d4474f6f6b987d29ada4c",
+            "d70540614c288a2dc8b3066f",
+            "1daa7b0cd5324d66d627a243",
+            "2dcaa8db79f8754db213ab1c",
+            "c10a8b3b89210595f9880fc6",
+            "5ab56d780f65ff344900b1a2",
+            "5d1e8fd617217ecea2afa2f1",
+            "81bd459de1d4e62f9428ae88",
+            "48ecc091e26caaa3ccbd3be5",
+            "e010fe39879d92fa21dc59d9",
+            "95ae763cde2f43aec2cb7d14",
+            "3b8f42f7061b1f1a8e2205a6",
+            "3d3eb164235efb301e727bfd"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {
+            "5ab56d780f65ff344900b1a2": 13
+          },
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 61.293,
+          "failure": {
+            "stage": "filtered_by_threshold",
+            "detail": "去掉 min_similarity_score / relative_score_threshold 后本应排第 13",
+            "unfiltered_rank": 13
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "5ab56d780f65ff344900b1a2",
+            "5766d05fd8a6f73a1ef60b57",
+            "71a4f239a4fd7b69fdc74486",
+            "9cc4e5069f6287c6f33683b2",
+            "02c18b66c8c7d17fa1fb910e",
+            "2eda6960dfbb194d0f84e4b0",
+            "0eb4bd6e18d599063371f51b",
+            "14da1c09b687f7b48896e03a",
+            "d70540614c288a2dc8b3066f",
+            "81bd459de1d4e62f9428ae88",
+            "f86d4474f6f6b987d29ada4c",
+            "1daa7b0cd5324d66d627a243",
+            "2dcaa8db79f8754db213ab1c",
+            "5d1e8fd617217ecea2afa2f1",
+            "c10a8b3b89210595f9880fc6",
+            "48ecc091e26caaa3ccbd3be5",
+            "95ae763cde2f43aec2cb7d14",
+            "e010fe39879d92fa21dc59d9",
+            "3b8f42f7061b1f1a8e2205a6",
+            "3d3eb164235efb301e727bfd"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "5ab56d780f65ff344900b1a2": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 120.171,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "d70540614c288a2dc8b3066f",
+            "0eb4bd6e18d599063371f51b",
+            "71a4f239a4fd7b69fdc74486",
+            "02c18b66c8c7d17fa1fb910e",
+            "5766d05fd8a6f73a1ef60b57",
+            "9cc4e5069f6287c6f33683b2",
+            "5ab56d780f65ff344900b1a2",
+            "f86d4474f6f6b987d29ada4c",
+            "2dcaa8db79f8754db213ab1c",
+            "14da1c09b687f7b48896e03a",
+            "95ae763cde2f43aec2cb7d14",
+            "48ecc091e26caaa3ccbd3be5",
+            "c10a8b3b89210595f9880fc6",
+            "1daa7b0cd5324d66d627a243",
+            "5d1e8fd617217ecea2afa2f1",
+            "e010fe39879d92fa21dc59d9",
+            "2eda6960dfbb194d0f84e4b0",
+            "81bd459de1d4e62f9428ae88",
+            "3b8f42f7061b1f1a8e2205a6",
+            "3d3eb164235efb301e727bfd"
+          ],
+          "first_relevant_rank": 7,
+          "relevant_ranks": {
+            "5ab56d780f65ff344900b1a2": 7
+          },
+          "ndcg_at_10": 0.3333333333333333,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3233.924,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "71a4f239a4fd7b69fdc74486",
+            "9cc4e5069f6287c6f33683b2",
+            "02c18b66c8c7d17fa1fb910e",
+            "5ab56d780f65ff344900b1a2",
+            "2eda6960dfbb194d0f84e4b0",
+            "5766d05fd8a6f73a1ef60b57",
+            "0eb4bd6e18d599063371f51b",
+            "81bd459de1d4e62f9428ae88",
+            "d70540614c288a2dc8b3066f",
+            "14da1c09b687f7b48896e03a",
+            "5d1e8fd617217ecea2afa2f1",
+            "f86d4474f6f6b987d29ada4c",
+            "1daa7b0cd5324d66d627a243",
+            "2dcaa8db79f8754db213ab1c",
+            "1c317b1dd2cebfbf9647d03e",
+            "48ecc091e26caaa3ccbd3be5",
+            "c10a8b3b89210595f9880fc6",
+            "95ae763cde2f43aec2cb7d14",
+            "e010fe39879d92fa21dc59d9"
+          ],
+          "first_relevant_rank": 4,
+          "relevant_ranks": {
+            "5ab56d780f65ff344900b1a2": 4
+          },
+          "ndcg_at_10": 0.43067655807339306,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 114.907,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42": {
+      "gold_case_id": "gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42",
+      "batch_id": "B07",
+      "query": "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？",
+      "question_type": "semantic",
+      "requires_all_evidence": true,
+      "relevant_chunk_ids": [
+        "38ea5e749604f43f5f040901"
+      ],
+      "required_evidence_chunk_ids": [
+        "c120df3a569ae215d69183ac",
+        "38ea5e749604f43f5f040901"
+      ],
+      "diagnostics": {
+        "keyword_tokens": [
+          "a",
+          "2",
+          "在",
+          "中国",
+          "国移",
+          "移动",
+          "动智",
+          "智慧",
+          "慧家",
+          "家庭",
+          "庭全",
+          "全光"
+        ],
+        "token_match_count": 447,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "38ea5e749604f43f5f040901": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "38ea5e749604f43f5f040901": true
+        },
+        "semantic_score_of_relevant": {
+          "38ea5e749604f43f5f040901": 0.822277
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "5b25186e3e9342c92e5a3670",
+            "958047c40a522ec22f73e5a5",
+            "3b1f839571de44bb1abd2f94",
+            "7bd438a6e96bd608918543bc"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 80.397,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "c120df3a569ae215d69183ac",
+            "38ea5e749604f43f5f040901",
+            "0b2bc61ba6e04bf37c779232",
+            "9b5d9b92dc528a1c594e3ec2",
+            "e69ef87cafd302938c765e20",
+            "acbdb12c2a62c12fe9787ef7",
+            "3a3f2c0bc27d1815ea693a4a",
+            "5b25186e3e9342c92e5a3670",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "3b8f42f7061b1f1a8e2205a6",
+            "c03289565d5cc78f2b44cfca",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "54615572d7bd4dde554106e9",
+            "a36043b8ee1a391f2dd1c31a",
+            "a8887b02ae32e4d4748ad264",
+            "bdc9ea567c0d78ab37c2cf77",
+            "1e2bd5122cd13762094dde86",
+            "7bd438a6e96bd608918543bc",
+            "66e41c6a6dbb49b77fb123f2",
+            "d74f298bf424e80db33f40c0"
+          ],
+          "first_relevant_rank": 2,
+          "relevant_ranks": {
+            "38ea5e749604f43f5f040901": 2
+          },
+          "ndcg_at_10": 0.6309297535714575,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 115.773,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "38ea5e749604f43f5f040901",
+            "c120df3a569ae215d69183ac",
+            "0b2bc61ba6e04bf37c779232",
+            "3a3f2c0bc27d1815ea693a4a",
+            "5b25186e3e9342c92e5a3670",
+            "e69ef87cafd302938c765e20",
+            "acbdb12c2a62c12fe9787ef7",
+            "1e2bd5122cd13762094dde86",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "9b5d9b92dc528a1c594e3ec2",
+            "3b8f42f7061b1f1a8e2205a6",
+            "7bd438a6e96bd608918543bc",
+            "bdc9ea567c0d78ab37c2cf77",
+            "a36043b8ee1a391f2dd1c31a",
+            "a8887b02ae32e4d4748ad264",
+            "c03289565d5cc78f2b44cfca",
+            "66e41c6a6dbb49b77fb123f2",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "d74f298bf424e80db33f40c0",
+            "54615572d7bd4dde554106e9"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "38ea5e749604f43f5f040901": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 123.674,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "c120df3a569ae215d69183ac",
+            "38ea5e749604f43f5f040901",
+            "a36043b8ee1a391f2dd1c31a",
+            "3a3f2c0bc27d1815ea693a4a",
+            "a8887b02ae32e4d4748ad264",
+            "0b2bc61ba6e04bf37c779232",
+            "acbdb12c2a62c12fe9787ef7",
+            "e69ef87cafd302938c765e20",
+            "3b8f42f7061b1f1a8e2205a6",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "1e2bd5122cd13762094dde86",
+            "9b5d9b92dc528a1c594e3ec2",
+            "66e41c6a6dbb49b77fb123f2",
+            "d74f298bf424e80db33f40c0",
+            "c03289565d5cc78f2b44cfca",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "5b25186e3e9342c92e5a3670",
+            "bdc9ea567c0d78ab37c2cf77",
+            "7bd438a6e96bd608918543bc",
+            "54615572d7bd4dde554106e9"
+          ],
+          "first_relevant_rank": 2,
+          "relevant_ranks": {
+            "38ea5e749604f43f5f040901": 2
+          },
+          "ndcg_at_10": 0.6309297535714575,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3258.914,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "38ea5e749604f43f5f040901",
+            "3a3f2c0bc27d1815ea693a4a",
+            "c120df3a569ae215d69183ac",
+            "0b2bc61ba6e04bf37c779232",
+            "958047c40a522ec22f73e5a5",
+            "5b25186e3e9342c92e5a3670",
+            "4f32247f7a6d7526df77bddd",
+            "3b1f839571de44bb1abd2f94",
+            "7bd438a6e96bd608918543bc",
+            "e69ef87cafd302938c765e20",
+            "4723262fed91f6b5026a5480",
+            "a7db14a3391bc332376a980d",
+            "1e2bd5122cd13762094dde86",
+            "54615572d7bd4dde554106e9",
+            "b0b4d01dbf2c0c1e81eb2229",
+            "bdc9ea567c0d78ab37c2cf77",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "66e41c6a6dbb49b77fb123f2",
+            "06e68d69881bfa6bffefd124",
+            "bbeae10790f98769a3820459"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "38ea5e749604f43f5f040901": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 97.1,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch01-sha256:d398b06298f36c11da17723f8a1765f3580d9cab8d4393f6f9742f07d3e2c6bc": {
+      "gold_case_id": "gold-batch01-sha256:d398b06298f36c11da17723f8a1765f3580d9cab8d4393f6f9742f07d3e2c6bc",
+      "batch_id": "B09",
+      "query": "在室温 25±2℃ 的情况下，非嵌入式全光组网终端表面温度不得超过多少℃？",
+      "question_type": "semantic",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "9b5d9b92dc528a1c594e3ec2"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "25",
+          "2",
+          "在室",
+          "室温",
+          "的情",
+          "情况",
+          "况下",
+          "非嵌",
+          "嵌入",
+          "入式",
+          "式全",
+          "全光"
+        ],
+        "token_match_count": 420,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "9b5d9b92dc528a1c594e3ec2": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "9b5d9b92dc528a1c594e3ec2": true
+        },
+        "semantic_score_of_relevant": {
+          "9b5d9b92dc528a1c594e3ec2": 0.689164
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "2a7f16b2864963c72902351f",
+            "040027c36550d1be45910c33",
+            "5b25186e3e9342c92e5a3670",
+            "c03289565d5cc78f2b44cfca"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 80.018,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "a8887b02ae32e4d4748ad264",
+            "9b5d9b92dc528a1c594e3ec2",
+            "acbdb12c2a62c12fe9787ef7",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "d74f298bf424e80db33f40c0",
+            "e69ef87cafd302938c765e20",
+            "a36043b8ee1a391f2dd1c31a",
+            "44f638f745282f4192dcd963",
+            "3ef6f0c2eb6c280b4b3a262b",
+            "3c9c81f21d4df15d5cb812c4",
+            "5b25186e3e9342c92e5a3670",
+            "a3aa8e54c36d3fa235c9a6c1",
+            "66e41c6a6dbb49b77fb123f2",
+            "8e0f763bb003a20ec8b5f6b2",
+            "c03289565d5cc78f2b44cfca",
+            "8a7f78eaa2ea7985e75538ec",
+            "72fa8e10c0e1591665ff1d32",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "13b449a7300569643ee21bd4",
+            "d1d75534f8865f49c152b4dd"
+          ],
+          "first_relevant_rank": 2,
+          "relevant_ranks": {
+            "9b5d9b92dc528a1c594e3ec2": 2
+          },
+          "ndcg_at_10": 0.6309297535714575,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 58.48,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "9b5d9b92dc528a1c594e3ec2",
+            "a8887b02ae32e4d4748ad264",
+            "44f638f745282f4192dcd963",
+            "acbdb12c2a62c12fe9787ef7",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "d74f298bf424e80db33f40c0",
+            "e69ef87cafd302938c765e20",
+            "a36043b8ee1a391f2dd1c31a",
+            "5b25186e3e9342c92e5a3670",
+            "3ef6f0c2eb6c280b4b3a262b",
+            "3c9c81f21d4df15d5cb812c4",
+            "a3aa8e54c36d3fa235c9a6c1",
+            "c03289565d5cc78f2b44cfca",
+            "8e0f763bb003a20ec8b5f6b2",
+            "72fa8e10c0e1591665ff1d32",
+            "13b449a7300569643ee21bd4",
+            "66e41c6a6dbb49b77fb123f2",
+            "8a7f78eaa2ea7985e75538ec",
+            "d1d75534f8865f49c152b4dd",
+            "5d5fd6cf18ea4e313fdc45b5"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "9b5d9b92dc528a1c594e3ec2": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 120.645,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "9b5d9b92dc528a1c594e3ec2",
+            "13b449a7300569643ee21bd4",
+            "a3aa8e54c36d3fa235c9a6c1",
+            "a8887b02ae32e4d4748ad264",
+            "44f638f745282f4192dcd963",
+            "72fa8e10c0e1591665ff1d32",
+            "a36043b8ee1a391f2dd1c31a",
+            "0a4d3ca37e5dd0727f0df0b7",
+            "acbdb12c2a62c12fe9787ef7",
+            "3ef6f0c2eb6c280b4b3a262b",
+            "8a7f78eaa2ea7985e75538ec",
+            "3c9c81f21d4df15d5cb812c4",
+            "d74f298bf424e80db33f40c0",
+            "e69ef87cafd302938c765e20",
+            "d1d75534f8865f49c152b4dd",
+            "66e41c6a6dbb49b77fb123f2",
+            "8e0f763bb003a20ec8b5f6b2",
+            "c03289565d5cc78f2b44cfca",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "5b25186e3e9342c92e5a3670"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "9b5d9b92dc528a1c594e3ec2": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3385.603,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "9b5d9b92dc528a1c594e3ec2",
+            "44f638f745282f4192dcd963"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "9b5d9b92dc528a1c594e3ec2": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 100.782,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch01-sha256:fb01c2c2f5f0a5c0359778f2525216af20a933851661902b83de6a48c53f30aa": {
+      "gold_case_id": "gold-batch01-sha256:fb01c2c2f5f0a5c0359778f2525216af20a933851661902b83de6a48c53f30aa",
+      "batch_id": "B12",
+      "query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？",
+      "question_type": "confusable",
+      "requires_all_evidence": true,
+      "relevant_chunk_ids": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ],
+      "required_evidence_chunk_ids": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ],
+      "diagnostics": {
+        "keyword_tokens": [
+          "3",
+          "2",
+          "2",
+          "3",
+          "2",
+          "3",
+          "根据",
+          "智慧",
+          "慧家",
+          "家庭",
+          "庭装",
+          "装维"
+        ],
+        "token_match_count": 439,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "48ecc091e26caaa3ccbd3be5": false,
+          "c10a8b3b89210595f9880fc6": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "48ecc091e26caaa3ccbd3be5": true,
+          "c10a8b3b89210595f9880fc6": true
+        },
+        "semantic_score_of_relevant": {
+          "48ecc091e26caaa3ccbd3be5": 0.757096,
+          "c10a8b3b89210595f9880fc6": 0.732648
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "469978708f9fe4506fc1fa7f",
+            "bdc9ea567c0d78ab37c2cf77",
+            "d349f789d2e652960680ae1c",
+            "3b1f839571de44bb1abd2f94",
+            "06e68d69881bfa6bffefd124",
+            "040027c36550d1be45910c33",
+            "3b8f42f7061b1f1a8e2205a6",
+            "958047c40a522ec22f73e5a5",
+            "2d70309c35065f6a38c507ed",
+            "4723262fed91f6b5026a5480"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 78.865,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "48ecc091e26caaa3ccbd3be5",
+            "e010fe39879d92fa21dc59d9",
+            "c10a8b3b89210595f9880fc6",
+            "1daa7b0cd5324d66d627a243",
+            "0eb4bd6e18d599063371f51b",
+            "5d1e8fd617217ecea2afa2f1",
+            "f86d4474f6f6b987d29ada4c",
+            "5766d05fd8a6f73a1ef60b57",
+            "2dcaa8db79f8754db213ab1c",
+            "5ab56d780f65ff344900b1a2",
+            "95ae763cde2f43aec2cb7d14",
+            "14da1c09b687f7b48896e03a",
+            "a42aa1211b15c9b97d77cd11",
+            "02c18b66c8c7d17fa1fb910e",
+            "2eda6960dfbb194d0f84e4b0",
+            "9cc4e5069f6287c6f33683b2",
+            "71a4f239a4fd7b69fdc74486",
+            "3c9c81f21d4df15d5cb812c4",
+            "d70540614c288a2dc8b3066f",
+            "84139f0d408339d51910bb1e"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "48ecc091e26caaa3ccbd3be5": 1,
+            "c10a8b3b89210595f9880fc6": 3
+          },
+          "ndcg_at_10": 0.9197207891481876,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 73.931,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "48ecc091e26caaa3ccbd3be5",
+            "e010fe39879d92fa21dc59d9",
+            "c10a8b3b89210595f9880fc6",
+            "0eb4bd6e18d599063371f51b",
+            "02c18b66c8c7d17fa1fb910e",
+            "5766d05fd8a6f73a1ef60b57",
+            "f86d4474f6f6b987d29ada4c",
+            "1daa7b0cd5324d66d627a243",
+            "5ab56d780f65ff344900b1a2",
+            "5d1e8fd617217ecea2afa2f1",
+            "9cc4e5069f6287c6f33683b2",
+            "2dcaa8db79f8754db213ab1c",
+            "14da1c09b687f7b48896e03a",
+            "2eda6960dfbb194d0f84e4b0",
+            "71a4f239a4fd7b69fdc74486",
+            "95ae763cde2f43aec2cb7d14",
+            "d70540614c288a2dc8b3066f",
+            "a42aa1211b15c9b97d77cd11",
+            "84139f0d408339d51910bb1e",
+            "3c9c81f21d4df15d5cb812c4"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "48ecc091e26caaa3ccbd3be5": 1,
+            "c10a8b3b89210595f9880fc6": 3
+          },
+          "ndcg_at_10": 0.9197207891481876,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 133.327,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "c10a8b3b89210595f9880fc6",
+            "0eb4bd6e18d599063371f51b",
+            "48ecc091e26caaa3ccbd3be5",
+            "02c18b66c8c7d17fa1fb910e",
+            "95ae763cde2f43aec2cb7d14",
+            "1daa7b0cd5324d66d627a243",
+            "5d1e8fd617217ecea2afa2f1",
+            "f86d4474f6f6b987d29ada4c",
+            "14da1c09b687f7b48896e03a",
+            "d70540614c288a2dc8b3066f",
+            "e010fe39879d92fa21dc59d9",
+            "2dcaa8db79f8754db213ab1c",
+            "9cc4e5069f6287c6f33683b2",
+            "5ab56d780f65ff344900b1a2",
+            "5766d05fd8a6f73a1ef60b57",
+            "71a4f239a4fd7b69fdc74486",
+            "2eda6960dfbb194d0f84e4b0",
+            "84139f0d408339d51910bb1e",
+            "3c9c81f21d4df15d5cb812c4",
+            "a42aa1211b15c9b97d77cd11"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "48ecc091e26caaa3ccbd3be5": 3,
+            "c10a8b3b89210595f9880fc6": 1
+          },
+          "ndcg_at_10": 0.9197207891481876,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3289.119,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "0eb4bd6e18d599063371f51b",
+            "02c18b66c8c7d17fa1fb910e",
+            "9cc4e5069f6287c6f33683b2",
+            "5766d05fd8a6f73a1ef60b57",
+            "48ecc091e26caaa3ccbd3be5",
+            "71a4f239a4fd7b69fdc74486",
+            "2eda6960dfbb194d0f84e4b0",
+            "c10a8b3b89210595f9880fc6",
+            "f86d4474f6f6b987d29ada4c",
+            "5ab56d780f65ff344900b1a2",
+            "e010fe39879d92fa21dc59d9",
+            "1daa7b0cd5324d66d627a243",
+            "5d1e8fd617217ecea2afa2f1",
+            "14da1c09b687f7b48896e03a",
+            "2dcaa8db79f8754db213ab1c",
+            "1c317b1dd2cebfbf9647d03e",
+            "d70540614c288a2dc8b3066f",
+            "81bd459de1d4e62f9428ae88",
+            "95ae763cde2f43aec2cb7d14"
+          ],
+          "first_relevant_rank": 5,
+          "relevant_ranks": {
+            "48ecc091e26caaa3ccbd3be5": 5,
+            "c10a8b3b89210595f9880fc6": 8
+          },
+          "ndcg_at_10": 0.430624116386567,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 160.662,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:cb6c1fd465588112ef0e370268ad0183ee9da3679bcfc5cccee37d207f360e49": {
+      "gold_case_id": "gold-batch02-sha256:cb6c1fd465588112ef0e370268ad0183ee9da3679bcfc5cccee37d207f360e49",
+      "batch_id": "B13",
+      "query": "《智慧家庭装维工程与管理职业技能等级标准》第 5.7 节规定，安全作业知识包括哪五项？",
+      "question_type": "semantic",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "0eb4bd6e18d599063371f51b"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "5",
+          "7",
+          "智慧",
+          "慧家",
+          "家庭",
+          "庭装",
+          "装维",
+          "维工",
+          "工程",
+          "程与",
+          "与管",
+          "管理"
+        ],
+        "token_match_count": 429,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "0eb4bd6e18d599063371f51b": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "0eb4bd6e18d599063371f51b": true
+        },
+        "semantic_score_of_relevant": {
+          "0eb4bd6e18d599063371f51b": 0.87874
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "4723262fed91f6b5026a5480",
+            "5b25186e3e9342c92e5a3670",
+            "c03289565d5cc78f2b44cfca",
+            "3b1f839571de44bb1abd2f94",
+            "06e68d69881bfa6bffefd124",
+            "2509d80e408074ca90ad79a6",
+            "7bd438a6e96bd608918543bc",
+            "2a7f16b2864963c72902351f",
+            "2d70309c35065f6a38c507ed",
+            "bdc9ea567c0d78ab37c2cf77"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 132.732,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "0eb4bd6e18d599063371f51b",
+            "02c18b66c8c7d17fa1fb910e",
+            "5766d05fd8a6f73a1ef60b57",
+            "f86d4474f6f6b987d29ada4c",
+            "2dcaa8db79f8754db213ab1c",
+            "2eda6960dfbb194d0f84e4b0",
+            "1daa7b0cd5324d66d627a243",
+            "48ecc091e26caaa3ccbd3be5",
+            "5d1e8fd617217ecea2afa2f1",
+            "14da1c09b687f7b48896e03a",
+            "95ae763cde2f43aec2cb7d14",
+            "c10a8b3b89210595f9880fc6",
+            "71a4f239a4fd7b69fdc74486",
+            "e010fe39879d92fa21dc59d9",
+            "d70540614c288a2dc8b3066f",
+            "9cc4e5069f6287c6f33683b2",
+            "5ab56d780f65ff344900b1a2",
+            "6c076494dcdde27c7a669efb",
+            "1c317b1dd2cebfbf9647d03e",
+            "81bd459de1d4e62f9428ae88"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "0eb4bd6e18d599063371f51b": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 79.465,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "0eb4bd6e18d599063371f51b",
+            "02c18b66c8c7d17fa1fb910e",
+            "5766d05fd8a6f73a1ef60b57",
+            "2eda6960dfbb194d0f84e4b0",
+            "5d1e8fd617217ecea2afa2f1",
+            "9cc4e5069f6287c6f33683b2",
+            "48ecc091e26caaa3ccbd3be5",
+            "2dcaa8db79f8754db213ab1c",
+            "95ae763cde2f43aec2cb7d14",
+            "71a4f239a4fd7b69fdc74486",
+            "14da1c09b687f7b48896e03a",
+            "d70540614c288a2dc8b3066f",
+            "f86d4474f6f6b987d29ada4c",
+            "1daa7b0cd5324d66d627a243",
+            "5ab56d780f65ff344900b1a2",
+            "c10a8b3b89210595f9880fc6",
+            "1c317b1dd2cebfbf9647d03e",
+            "81bd459de1d4e62f9428ae88",
+            "e010fe39879d92fa21dc59d9",
+            "6c076494dcdde27c7a669efb"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "0eb4bd6e18d599063371f51b": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 120.064,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "0eb4bd6e18d599063371f51b",
+            "02c18b66c8c7d17fa1fb910e",
+            "5d1e8fd617217ecea2afa2f1",
+            "95ae763cde2f43aec2cb7d14",
+            "d70540614c288a2dc8b3066f",
+            "f86d4474f6f6b987d29ada4c",
+            "1daa7b0cd5324d66d627a243",
+            "2dcaa8db79f8754db213ab1c",
+            "c10a8b3b89210595f9880fc6",
+            "14da1c09b687f7b48896e03a",
+            "48ecc091e26caaa3ccbd3be5",
+            "5766d05fd8a6f73a1ef60b57",
+            "2eda6960dfbb194d0f84e4b0",
+            "e010fe39879d92fa21dc59d9",
+            "1c317b1dd2cebfbf9647d03e",
+            "5ab56d780f65ff344900b1a2",
+            "9cc4e5069f6287c6f33683b2",
+            "81bd459de1d4e62f9428ae88",
+            "71a4f239a4fd7b69fdc74486",
+            "6c076494dcdde27c7a669efb"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "0eb4bd6e18d599063371f51b": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3431.056,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "02c18b66c8c7d17fa1fb910e",
+            "0eb4bd6e18d599063371f51b",
+            "9cc4e5069f6287c6f33683b2",
+            "5766d05fd8a6f73a1ef60b57",
+            "2eda6960dfbb194d0f84e4b0",
+            "71a4f239a4fd7b69fdc74486",
+            "5d1e8fd617217ecea2afa2f1",
+            "5ab56d780f65ff344900b1a2",
+            "81bd459de1d4e62f9428ae88",
+            "14da1c09b687f7b48896e03a",
+            "d70540614c288a2dc8b3066f",
+            "f86d4474f6f6b987d29ada4c",
+            "2dcaa8db79f8754db213ab1c",
+            "1daa7b0cd5324d66d627a243",
+            "1c317b1dd2cebfbf9647d03e",
+            "48ecc091e26caaa3ccbd3be5",
+            "95ae763cde2f43aec2cb7d14",
+            "c10a8b3b89210595f9880fc6",
+            "e010fe39879d92fa21dc59d9"
+          ],
+          "first_relevant_rank": 2,
+          "relevant_ranks": {
+            "0eb4bd6e18d599063371f51b": 2
+          },
+          "ndcg_at_10": 0.6309297535714575,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 109.993,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c": {
+      "gold_case_id": "gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c",
+      "batch_id": "B14",
+      "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，中级人员在“智能家居（控制）技术”项下对系统架构有什么要求？",
+      "question_type": "semantic",
+      "requires_all_evidence": true,
+      "relevant_chunk_ids": [
+        "e010fe39879d92fa21dc59d9"
+      ],
+      "required_evidence_chunk_ids": [
+        "0eb4bd6e18d599063371f51b",
+        "e010fe39879d92fa21dc59d9"
+      ],
+      "diagnostics": {
+        "keyword_tokens": [
+          "1",
+          "在",
+          "智慧",
+          "慧家",
+          "家庭",
+          "庭装",
+          "装维",
+          "维工",
+          "工程",
+          "程与",
+          "与管",
+          "管理"
+        ],
+        "token_match_count": 440,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "e010fe39879d92fa21dc59d9": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "e010fe39879d92fa21dc59d9": true
+        },
+        "semantic_score_of_relevant": {
+          "e010fe39879d92fa21dc59d9": 0.769111
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "4723262fed91f6b5026a5480",
+            "bdc9ea567c0d78ab37c2cf77",
+            "3b1f839571de44bb1abd2f94",
+            "d349f789d2e652960680ae1c",
+            "958047c40a522ec22f73e5a5",
+            "e69ef87cafd302938c765e20",
+            "2d70309c35065f6a38c507ed",
+            "cdcc369a72b7aaa79fefb319",
+            "a36043b8ee1a391f2dd1c31a",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "06e68d69881bfa6bffefd124"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 90.248,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "1daa7b0cd5324d66d627a243",
+            "f86d4474f6f6b987d29ada4c",
+            "e010fe39879d92fa21dc59d9",
+            "5766d05fd8a6f73a1ef60b57",
+            "2dcaa8db79f8754db213ab1c",
+            "c10a8b3b89210595f9880fc6",
+            "2eda6960dfbb194d0f84e4b0",
+            "5d1e8fd617217ecea2afa2f1",
+            "71a4f239a4fd7b69fdc74486",
+            "0eb4bd6e18d599063371f51b",
+            "9cc4e5069f6287c6f33683b2",
+            "02c18b66c8c7d17fa1fb910e",
+            "d70540614c288a2dc8b3066f",
+            "14da1c09b687f7b48896e03a",
+            "48ecc091e26caaa3ccbd3be5",
+            "81bd459de1d4e62f9428ae88",
+            "95ae763cde2f43aec2cb7d14",
+            "5ab56d780f65ff344900b1a2",
+            "06e68d69881bfa6bffefd124",
+            "5b25186e3e9342c92e5a3670"
+          ],
+          "first_relevant_rank": 3,
+          "relevant_ranks": {
+            "e010fe39879d92fa21dc59d9": 3
+          },
+          "ndcg_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 65.468,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "1daa7b0cd5324d66d627a243",
+            "f86d4474f6f6b987d29ada4c",
+            "e010fe39879d92fa21dc59d9",
+            "5766d05fd8a6f73a1ef60b57",
+            "2eda6960dfbb194d0f84e4b0",
+            "02c18b66c8c7d17fa1fb910e",
+            "2dcaa8db79f8754db213ab1c",
+            "5d1e8fd617217ecea2afa2f1",
+            "9cc4e5069f6287c6f33683b2",
+            "c10a8b3b89210595f9880fc6",
+            "71a4f239a4fd7b69fdc74486",
+            "0eb4bd6e18d599063371f51b",
+            "14da1c09b687f7b48896e03a",
+            "5ab56d780f65ff344900b1a2",
+            "d70540614c288a2dc8b3066f",
+            "48ecc091e26caaa3ccbd3be5",
+            "81bd459de1d4e62f9428ae88",
+            "95ae763cde2f43aec2cb7d14",
+            "06e68d69881bfa6bffefd124",
+            "5b25186e3e9342c92e5a3670"
+          ],
+          "first_relevant_rank": 3,
+          "relevant_ranks": {
+            "e010fe39879d92fa21dc59d9": 3
+          },
+          "ndcg_at_10": 0.5,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 171.488,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "c10a8b3b89210595f9880fc6",
+            "0eb4bd6e18d599063371f51b",
+            "1daa7b0cd5324d66d627a243",
+            "48ecc091e26caaa3ccbd3be5",
+            "02c18b66c8c7d17fa1fb910e",
+            "f86d4474f6f6b987d29ada4c",
+            "d70540614c288a2dc8b3066f",
+            "14da1c09b687f7b48896e03a",
+            "e010fe39879d92fa21dc59d9",
+            "2dcaa8db79f8754db213ab1c",
+            "5d1e8fd617217ecea2afa2f1",
+            "2eda6960dfbb194d0f84e4b0",
+            "95ae763cde2f43aec2cb7d14",
+            "5766d05fd8a6f73a1ef60b57",
+            "9cc4e5069f6287c6f33683b2",
+            "5ab56d780f65ff344900b1a2",
+            "71a4f239a4fd7b69fdc74486",
+            "81bd459de1d4e62f9428ae88",
+            "06e68d69881bfa6bffefd124",
+            "5b25186e3e9342c92e5a3670"
+          ],
+          "first_relevant_rank": 9,
+          "relevant_ranks": {
+            "e010fe39879d92fa21dc59d9": 9
+          },
+          "ndcg_at_10": 0.3010299956639812,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3226.709,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "02c18b66c8c7d17fa1fb910e",
+            "9cc4e5069f6287c6f33683b2",
+            "71a4f239a4fd7b69fdc74486",
+            "2eda6960dfbb194d0f84e4b0",
+            "f86d4474f6f6b987d29ada4c",
+            "5766d05fd8a6f73a1ef60b57",
+            "1daa7b0cd5324d66d627a243",
+            "0eb4bd6e18d599063371f51b",
+            "5ab56d780f65ff344900b1a2",
+            "5d1e8fd617217ecea2afa2f1",
+            "e010fe39879d92fa21dc59d9",
+            "2dcaa8db79f8754db213ab1c",
+            "c10a8b3b89210595f9880fc6",
+            "14da1c09b687f7b48896e03a",
+            "81bd459de1d4e62f9428ae88",
+            "d70540614c288a2dc8b3066f",
+            "1c317b1dd2cebfbf9647d03e",
+            "48ecc091e26caaa3ccbd3be5",
+            "95ae763cde2f43aec2cb7d14"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {
+            "e010fe39879d92fa21dc59d9": 11
+          },
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 97.267,
+          "failure": {
+            "stage": "not_in_full_corpus_ranking",
+            "detail": "全库 BM25 未进入 Top10"
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf": {
+      "gold_case_id": "gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf",
+      "batch_id": "B15",
+      "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，高级人员在“物联网接入业务运维”项下对网关组网方法的要求是什么？",
+      "question_type": "semantic",
+      "requires_all_evidence": true,
+      "relevant_chunk_ids": [
+        "1c317b1dd2cebfbf9647d03e"
+      ],
+      "required_evidence_chunk_ids": [
+        "0eb4bd6e18d599063371f51b",
+        "1c317b1dd2cebfbf9647d03e"
+      ],
+      "diagnostics": {
+        "keyword_tokens": [
+          "1",
+          "在",
+          "智慧",
+          "慧家",
+          "家庭",
+          "庭装",
+          "装维",
+          "维工",
+          "工程",
+          "程与",
+          "与管",
+          "管理"
+        ],
+        "token_match_count": 440,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "1c317b1dd2cebfbf9647d03e": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "1c317b1dd2cebfbf9647d03e": true
+        },
+        "semantic_score_of_relevant": {
+          "1c317b1dd2cebfbf9647d03e": 0.707752
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "4723262fed91f6b5026a5480",
+            "e69ef87cafd302938c765e20",
+            "2d70309c35065f6a38c507ed",
+            "958047c40a522ec22f73e5a5",
+            "5b25186e3e9342c92e5a3670"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 81.72,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "48ecc091e26caaa3ccbd3be5",
+            "c10a8b3b89210595f9880fc6",
+            "5d1e8fd617217ecea2afa2f1",
+            "f86d4474f6f6b987d29ada4c",
+            "5766d05fd8a6f73a1ef60b57",
+            "e010fe39879d92fa21dc59d9",
+            "2dcaa8db79f8754db213ab1c",
+            "95ae763cde2f43aec2cb7d14",
+            "1c317b1dd2cebfbf9647d03e",
+            "1daa7b0cd5324d66d627a243",
+            "2eda6960dfbb194d0f84e4b0",
+            "0eb4bd6e18d599063371f51b",
+            "5ab56d780f65ff344900b1a2",
+            "0b2bc61ba6e04bf37c779232",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "02c18b66c8c7d17fa1fb910e",
+            "e69ef87cafd302938c765e20",
+            "a36043b8ee1a391f2dd1c31a",
+            "71a4f239a4fd7b69fdc74486",
+            "d349f789d2e652960680ae1c"
+          ],
+          "first_relevant_rank": 9,
+          "relevant_ranks": {
+            "1c317b1dd2cebfbf9647d03e": 9
+          },
+          "ndcg_at_10": 0.3010299956639812,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 78.676,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "1c317b1dd2cebfbf9647d03e",
+            "48ecc091e26caaa3ccbd3be5",
+            "c10a8b3b89210595f9880fc6",
+            "5766d05fd8a6f73a1ef60b57",
+            "95ae763cde2f43aec2cb7d14",
+            "02c18b66c8c7d17fa1fb910e",
+            "0eb4bd6e18d599063371f51b",
+            "2eda6960dfbb194d0f84e4b0",
+            "5d1e8fd617217ecea2afa2f1",
+            "f86d4474f6f6b987d29ada4c",
+            "5ab56d780f65ff344900b1a2",
+            "e010fe39879d92fa21dc59d9",
+            "71a4f239a4fd7b69fdc74486",
+            "2dcaa8db79f8754db213ab1c",
+            "1daa7b0cd5324d66d627a243",
+            "e69ef87cafd302938c765e20",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "0b2bc61ba6e04bf37c779232",
+            "d349f789d2e652960680ae1c",
+            "a36043b8ee1a391f2dd1c31a"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "1c317b1dd2cebfbf9647d03e": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 113.995,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "c10a8b3b89210595f9880fc6",
+            "48ecc091e26caaa3ccbd3be5",
+            "0eb4bd6e18d599063371f51b",
+            "f86d4474f6f6b987d29ada4c",
+            "1c317b1dd2cebfbf9647d03e",
+            "1daa7b0cd5324d66d627a243",
+            "02c18b66c8c7d17fa1fb910e",
+            "95ae763cde2f43aec2cb7d14",
+            "5d1e8fd617217ecea2afa2f1",
+            "2dcaa8db79f8754db213ab1c",
+            "e010fe39879d92fa21dc59d9",
+            "5766d05fd8a6f73a1ef60b57",
+            "2eda6960dfbb194d0f84e4b0",
+            "5ab56d780f65ff344900b1a2",
+            "71a4f239a4fd7b69fdc74486",
+            "a36043b8ee1a391f2dd1c31a",
+            "e69ef87cafd302938c765e20",
+            "d349f789d2e652960680ae1c",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "0b2bc61ba6e04bf37c779232"
+          ],
+          "first_relevant_rank": 5,
+          "relevant_ranks": {
+            "1c317b1dd2cebfbf9647d03e": 5
+          },
+          "ndcg_at_10": 0.38685280723454163,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3296.54,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "1c317b1dd2cebfbf9647d03e",
+            "02c18b66c8c7d17fa1fb910e",
+            "9cc4e5069f6287c6f33683b2",
+            "0eb4bd6e18d599063371f51b",
+            "5766d05fd8a6f73a1ef60b57",
+            "71a4f239a4fd7b69fdc74486",
+            "2eda6960dfbb194d0f84e4b0",
+            "48ecc091e26caaa3ccbd3be5",
+            "c10a8b3b89210595f9880fc6",
+            "95ae763cde2f43aec2cb7d14",
+            "5ab56d780f65ff344900b1a2",
+            "5d1e8fd617217ecea2afa2f1",
+            "14da1c09b687f7b48896e03a",
+            "f86d4474f6f6b987d29ada4c",
+            "81bd459de1d4e62f9428ae88",
+            "d70540614c288a2dc8b3066f",
+            "1daa7b0cd5324d66d627a243",
+            "e010fe39879d92fa21dc59d9",
+            "2dcaa8db79f8754db213ab1c"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "1c317b1dd2cebfbf9647d03e": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 103.515,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:50d51edece13e19c9b0461c5d28612c2bd57007a19ab3987f4a5506865d5e31e": {
+      "gold_case_id": "gold-batch02-sha256:50d51edece13e19c9b0461c5d28612c2bd57007a19ab3987f4a5506865d5e31e",
+      "batch_id": "B16",
+      "query": "《电信基础设施维护规程》表 10.3.3.4 中，安装波分复用器这一子项包含哪些工作？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "10",
+          "3",
+          "3",
+          "4",
+          "电信",
+          "信基",
+          "基础",
+          "础设",
+          "设施",
+          "施维",
+          "维护",
+          "护规"
+        ],
+        "token_match_count": 444,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "92108b5bb6dcc5b2227d531c": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "92108b5bb6dcc5b2227d531c": true
+        },
+        "semantic_score_of_relevant": {
+          "92108b5bb6dcc5b2227d531c": 0.894524
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "e69ef87cafd302938c765e20",
+            "3b1f839571de44bb1abd2f94",
+            "469978708f9fe4506fc1fa7f",
+            "2d70309c35065f6a38c507ed",
+            "958047c40a522ec22f73e5a5",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "a36043b8ee1a391f2dd1c31a",
+            "5b25186e3e9342c92e5a3670",
+            "cdcc369a72b7aaa79fefb319",
+            "d349f789d2e652960680ae1c",
+            "3b8f42f7061b1f1a8e2205a6",
+            "2509d80e408074ca90ad79a6",
+            "bdc9ea567c0d78ab37c2cf77"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 101.966,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "8d6a3993748474ddec52ba5c",
+            "abee735aa9c981d3bebcae9f",
+            "c1e482df686f369f344cd4d9",
+            "fc7d5eed0b515cf1096fd166",
+            "eced514a8afb5d6002fb7c2a",
+            "258ef2b78ff022814a5dd780",
+            "da52c850bc7f4f88d00cb3f7",
+            "4fce0b1cd8d9e372161536d0",
+            "9c667e81ac27ccd4a9cf5124",
+            "1a00f58577a947664b68d1b0",
+            "53d5b679c6d5759fca64305a",
+            "c4d77a21e79acbe5209fb5f1",
+            "6bf394ec756103a82e9f6e9c",
+            "89660c696070f901737bdc4b",
+            "e923e34b9a1de0e90ff1ef3b",
+            "3d3eb164235efb301e727bfd",
+            "b2edc2384d6b845e0005973a",
+            "e506905f675cde3307e868b8",
+            "83662a0e45a5c68760ffd3be"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 64.132,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "258ef2b78ff022814a5dd780",
+            "89660c696070f901737bdc4b",
+            "fc7d5eed0b515cf1096fd166",
+            "8d6a3993748474ddec52ba5c",
+            "c1e482df686f369f344cd4d9",
+            "e506905f675cde3307e868b8",
+            "abee735aa9c981d3bebcae9f",
+            "53d5b679c6d5759fca64305a",
+            "da52c850bc7f4f88d00cb3f7",
+            "b2edc2384d6b845e0005973a",
+            "1a00f58577a947664b68d1b0",
+            "c4d77a21e79acbe5209fb5f1",
+            "9c667e81ac27ccd4a9cf5124",
+            "3d3eb164235efb301e727bfd",
+            "eced514a8afb5d6002fb7c2a",
+            "6bf394ec756103a82e9f6e9c",
+            "4fce0b1cd8d9e372161536d0",
+            "83662a0e45a5c68760ffd3be",
+            "e923e34b9a1de0e90ff1ef3b"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 117.934,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "53d5b679c6d5759fca64305a",
+            "fc7d5eed0b515cf1096fd166",
+            "b2edc2384d6b845e0005973a",
+            "8d6a3993748474ddec52ba5c",
+            "9c667e81ac27ccd4a9cf5124",
+            "da52c850bc7f4f88d00cb3f7",
+            "258ef2b78ff022814a5dd780",
+            "abee735aa9c981d3bebcae9f",
+            "1a00f58577a947664b68d1b0",
+            "c1e482df686f369f344cd4d9",
+            "3d3eb164235efb301e727bfd",
+            "6bf394ec756103a82e9f6e9c",
+            "4fce0b1cd8d9e372161536d0",
+            "e923e34b9a1de0e90ff1ef3b",
+            "89660c696070f901737bdc4b",
+            "c4d77a21e79acbe5209fb5f1",
+            "83662a0e45a5c68760ffd3be",
+            "e506905f675cde3307e868b8",
+            "eced514a8afb5d6002fb7c2a"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3218.785,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "258ef2b78ff022814a5dd780",
+            "89660c696070f901737bdc4b"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 97.937,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:b084448f7e7645c2707588f54535d32b68eb9065c1c88e40589d1d9e429577e4": {
+      "gold_case_id": "gold-batch02-sha256:b084448f7e7645c2707588f54535d32b68eb9065c1c88e40589d1d9e429577e4",
+      "batch_id": "B17",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，编码 WH23105001 对应的防雷箱子项名称是什么？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "10",
+          "3",
+          "3",
+          "5",
+          "wh23105001",
+          "电信",
+          "信基",
+          "基础",
+          "础设",
+          "设施",
+          "施维",
+          "维护"
+        ],
+        "token_match_count": 446,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "03e5582a4a0f7d3c76a33e66": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "03e5582a4a0f7d3c76a33e66": true
+        },
+        "semantic_score_of_relevant": {
+          "03e5582a4a0f7d3c76a33e66": 0.785242
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "e69ef87cafd302938c765e20",
+            "5b25186e3e9342c92e5a3670",
+            "3b8f42f7061b1f1a8e2205a6",
+            "3b1f839571de44bb1abd2f94",
+            "040027c36550d1be45910c33",
+            "d349f789d2e652960680ae1c",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "2509d80e408074ca90ad79a6",
+            "a36043b8ee1a391f2dd1c31a",
+            "06e68d69881bfa6bffefd124"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 92.883,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "3f406ad653cd6ded7e011a40",
+            "6f4bd67e8abf6dcfdde54829",
+            "21af3c6b5c15e291ec09a05b",
+            "7be85324f4abe1131327119e",
+            "740b1efb4588db4307be1a0f",
+            "ed99004421c5de5fdf2e6cbf",
+            "36e3ca9051c2b34c98aa9fca",
+            "1a00f58577a947664b68d1b0",
+            "7b51e76d302604e5c182f040",
+            "6195d7f4165dbac176d2e9d9",
+            "8294eda000c1fa18ec81773e",
+            "b2edc2384d6b845e0005973a",
+            "4a65d0d3ead0bc841b1b28f8",
+            "8d6a3993748474ddec52ba5c",
+            "fe0efc14933cd5d787519744",
+            "9c667e81ac27ccd4a9cf5124",
+            "73988b3bb3ed3d5eba984089",
+            "cf90c1ae88395ad7d4a617c2",
+            "3fcd612549a4e58e909deb0e"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 61.237,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "740b1efb4588db4307be1a0f",
+            "36e3ca9051c2b34c98aa9fca",
+            "7be85324f4abe1131327119e",
+            "ed99004421c5de5fdf2e6cbf",
+            "6f4bd67e8abf6dcfdde54829",
+            "21af3c6b5c15e291ec09a05b",
+            "73988b3bb3ed3d5eba984089",
+            "8d6a3993748474ddec52ba5c",
+            "3f406ad653cd6ded7e011a40",
+            "8294eda000c1fa18ec81773e",
+            "1a00f58577a947664b68d1b0",
+            "7b51e76d302604e5c182f040",
+            "3fcd612549a4e58e909deb0e",
+            "b2edc2384d6b845e0005973a",
+            "4a65d0d3ead0bc841b1b28f8",
+            "fe0efc14933cd5d787519744",
+            "6195d7f4165dbac176d2e9d9",
+            "cf90c1ae88395ad7d4a617c2",
+            "9c667e81ac27ccd4a9cf5124"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 119.309,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "740b1efb4588db4307be1a0f",
+            "36e3ca9051c2b34c98aa9fca",
+            "7be85324f4abe1131327119e",
+            "3fcd612549a4e58e909deb0e",
+            "6f4bd67e8abf6dcfdde54829",
+            "fe0efc14933cd5d787519744",
+            "4a65d0d3ead0bc841b1b28f8",
+            "8d6a3993748474ddec52ba5c",
+            "b2edc2384d6b845e0005973a",
+            "9c667e81ac27ccd4a9cf5124",
+            "6195d7f4165dbac176d2e9d9",
+            "8294eda000c1fa18ec81773e",
+            "7b51e76d302604e5c182f040",
+            "1a00f58577a947664b68d1b0",
+            "21af3c6b5c15e291ec09a05b",
+            "73988b3bb3ed3d5eba984089",
+            "cf90c1ae88395ad7d4a617c2",
+            "ed99004421c5de5fdf2e6cbf",
+            "3f406ad653cd6ded7e011a40"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3147.065,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "740b1efb4588db4307be1a0f",
+            "36e3ca9051c2b34c98aa9fca",
+            "ed99004421c5de5fdf2e6cbf",
+            "f905f78a0e9accb6f33d77ff",
+            "14c9c83470f749b59631d18b",
+            "1b2149ec028f9c253059616f",
+            "7be85324f4abe1131327119e",
+            "25680e892d4e58e2a06452dc",
+            "2eda6960dfbb194d0f84e4b0",
+            "0d566943b2449adc9c533446",
+            "31ca53eabc210bec4a94da9e",
+            "73988b3bb3ed3d5eba984089",
+            "e2a1564228636e4c45cc4fc7",
+            "73cbecc1788e5f99763cf41a",
+            "8d6a3993748474ddec52ba5c",
+            "e26363b7706a06140b8d2a72",
+            "2707d31582919e6bbefecedc",
+            "c4d77a21e79acbe5209fb5f1",
+            "206d11a37b452206c3d2fc95"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 111.346,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:ab3b66a0a8ccc60a2d24f08a125fcbfff193b42877b83821acb4b8a8e26af2e8": {
+      "gold_case_id": "gold-batch02-sha256:ab3b66a0a8ccc60a2d24f08a125fcbfff193b42877b83821acb4b8a8e26af2e8",
+      "batch_id": "B18",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，室外塔上防雷箱（WH23105003）的综合单价列标了多少元？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "10",
+          "3",
+          "3",
+          "5",
+          "wh23105003",
+          "电信",
+          "信基",
+          "基础",
+          "础设",
+          "设施",
+          "施维",
+          "维护"
+        ],
+        "token_match_count": 446,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "03e5582a4a0f7d3c76a33e66": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "03e5582a4a0f7d3c76a33e66": true
+        },
+        "semantic_score_of_relevant": {
+          "03e5582a4a0f7d3c76a33e66": 0.804088
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "e69ef87cafd302938c765e20",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "5b25186e3e9342c92e5a3670",
+            "3b1f839571de44bb1abd2f94",
+            "2509d80e408074ca90ad79a6",
+            "06e68d69881bfa6bffefd124",
+            "2a7f16b2864963c72902351f",
+            "2d70309c35065f6a38c507ed",
+            "c03289565d5cc78f2b44cfca"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 79.981,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "3f406ad653cd6ded7e011a40",
+            "ed99004421c5de5fdf2e6cbf",
+            "7be85324f4abe1131327119e",
+            "900318d0652d107eb78caf26",
+            "87a89b911a3dff048d569b86",
+            "0482cd9fc76bb3bffb641705",
+            "611a9eb6554a2b482561c775",
+            "6f4bd67e8abf6dcfdde54829",
+            "e453e5772f5dbf9883660bbe",
+            "68a1c1448a91e95c36a18aa3",
+            "24b9568940a267e369d3c91b",
+            "5dde5ed6e53f62177672e78b",
+            "36e3ca9051c2b34c98aa9fca",
+            "31ca53eabc210bec4a94da9e",
+            "620acaeddf52599dd4ae377d",
+            "32ba458098b543078b9c3916",
+            "740b1efb4588db4307be1a0f",
+            "fc7d5eed0b515cf1096fd166",
+            "5997209344e1edab17af1a36"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 56.567,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "87a89b911a3dff048d569b86",
+            "3f406ad653cd6ded7e011a40",
+            "7be85324f4abe1131327119e",
+            "31ca53eabc210bec4a94da9e",
+            "36e3ca9051c2b34c98aa9fca",
+            "740b1efb4588db4307be1a0f",
+            "900318d0652d107eb78caf26",
+            "ed99004421c5de5fdf2e6cbf",
+            "5dde5ed6e53f62177672e78b",
+            "6f4bd67e8abf6dcfdde54829",
+            "68a1c1448a91e95c36a18aa3",
+            "611a9eb6554a2b482561c775",
+            "620acaeddf52599dd4ae377d",
+            "24b9568940a267e369d3c91b",
+            "fc7d5eed0b515cf1096fd166",
+            "5997209344e1edab17af1a36",
+            "0482cd9fc76bb3bffb641705",
+            "32ba458098b543078b9c3916",
+            "e453e5772f5dbf9883660bbe"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 112.168,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "740b1efb4588db4307be1a0f",
+            "36e3ca9051c2b34c98aa9fca",
+            "5997209344e1edab17af1a36",
+            "6f4bd67e8abf6dcfdde54829",
+            "68a1c1448a91e95c36a18aa3",
+            "5dde5ed6e53f62177672e78b",
+            "611a9eb6554a2b482561c775",
+            "7be85324f4abe1131327119e",
+            "620acaeddf52599dd4ae377d",
+            "fc7d5eed0b515cf1096fd166",
+            "31ca53eabc210bec4a94da9e",
+            "900318d0652d107eb78caf26",
+            "0482cd9fc76bb3bffb641705",
+            "87a89b911a3dff048d569b86",
+            "3f406ad653cd6ded7e011a40",
+            "e453e5772f5dbf9883660bbe",
+            "24b9568940a267e369d3c91b",
+            "ed99004421c5de5fdf2e6cbf",
+            "32ba458098b543078b9c3916"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3361.374,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "8d6a3993748474ddec52ba5c"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 123.966,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:b4b194da3f8a23a7d4bfa98f30393ba5402f27c1e527513bc033dcf6b653e9b0": {
+      "gold_case_id": "gold-batch02-sha256:b4b194da3f8a23a7d4bfa98f30393ba5402f27c1e527513bc033dcf6b653e9b0",
+      "batch_id": "B19",
+      "query": "安装防雷接地装置的工作内容有哪些？",
+      "question_type": "semantic",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "安装",
+          "装防",
+          "防雷",
+          "雷接",
+          "接地",
+          "地装",
+          "装置",
+          "置的",
+          "的工",
+          "工作",
+          "作内",
+          "内容"
+        ],
+        "token_match_count": 342,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "03e5582a4a0f7d3c76a33e66": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "03e5582a4a0f7d3c76a33e66": true
+        },
+        "semantic_score_of_relevant": {
+          "03e5582a4a0f7d3c76a33e66": 0.794596
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "63cc4ceb1bdbab4ee0bb6159",
+            "859e0391143c967ade455f91",
+            "84139f0d408339d51910bb1e",
+            "d349f789d2e652960680ae1c",
+            "7bd438a6e96bd608918543bc",
+            "4f32247f7a6d7526df77bddd",
+            "5b25186e3e9342c92e5a3670",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "c03289565d5cc78f2b44cfca"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 124.602,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "7be85324f4abe1131327119e",
+            "7b51e76d302604e5c182f040",
+            "258c7fc658713fa5e7898751",
+            "73cbecc1788e5f99763cf41a",
+            "430ee9a3369049d150e98b57",
+            "bdc63252519a88c47595f747",
+            "73988b3bb3ed3d5eba984089",
+            "c075dc68d46c245c3f7a221f",
+            "2707d31582919e6bbefecedc",
+            "83662a0e45a5c68760ffd3be",
+            "28093ca7aacb5499631b4ee5",
+            "c0820f0b44f44c84e0b54e3d",
+            "a14cc56868b469462940f2a4",
+            "36e3ca9051c2b34c98aa9fca",
+            "895557a41828559b59f3680a",
+            "740b1efb4588db4307be1a0f",
+            "14c9c83470f749b59631d18b",
+            "e655b93658f6e506d322bef6",
+            "fe0efc14933cd5d787519744"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 57.916,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "7be85324f4abe1131327119e",
+            "7b51e76d302604e5c182f040",
+            "73cbecc1788e5f99763cf41a",
+            "430ee9a3369049d150e98b57",
+            "36e3ca9051c2b34c98aa9fca",
+            "740b1efb4588db4307be1a0f",
+            "73988b3bb3ed3d5eba984089",
+            "fe0efc14933cd5d787519744",
+            "14c9c83470f749b59631d18b",
+            "258c7fc658713fa5e7898751",
+            "28093ca7aacb5499631b4ee5",
+            "c075dc68d46c245c3f7a221f",
+            "bdc63252519a88c47595f747",
+            "c0820f0b44f44c84e0b54e3d",
+            "a14cc56868b469462940f2a4",
+            "2707d31582919e6bbefecedc",
+            "83662a0e45a5c68760ffd3be",
+            "895557a41828559b59f3680a",
+            "e655b93658f6e506d322bef6"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 152.538,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "7be85324f4abe1131327119e",
+            "740b1efb4588db4307be1a0f",
+            "36e3ca9051c2b34c98aa9fca",
+            "fe0efc14933cd5d787519744",
+            "7b51e76d302604e5c182f040",
+            "28093ca7aacb5499631b4ee5",
+            "14c9c83470f749b59631d18b",
+            "430ee9a3369049d150e98b57",
+            "2707d31582919e6bbefecedc",
+            "73cbecc1788e5f99763cf41a",
+            "c075dc68d46c245c3f7a221f",
+            "73988b3bb3ed3d5eba984089",
+            "895557a41828559b59f3680a",
+            "c0820f0b44f44c84e0b54e3d",
+            "a14cc56868b469462940f2a4",
+            "e655b93658f6e506d322bef6",
+            "bdc63252519a88c47595f747",
+            "83662a0e45a5c68760ffd3be",
+            "258c7fc658713fa5e7898751"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3304.557,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "5997209344e1edab17af1a36",
+            "7be85324f4abe1131327119e",
+            "4ea66e8600e99421cfbd255c",
+            "10a74c8f34167d5eafc1a95e",
+            "430ee9a3369049d150e98b57",
+            "b9c803791b9d1fcf29a91c22"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 112.32,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:74d3dfa33289009b189597355bbb9cb5852fdad9ad135fcaebf18261f4a9c632": {
+      "gold_case_id": "gold-batch02-sha256:74d3dfa33289009b189597355bbb9cb5852fdad9ad135fcaebf18261f4a9c632",
+      "batch_id": "B20",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，室内防雷箱（WH23105001）的综合单价列标了多少元？",
+      "question_type": "semantic",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "10",
+          "3",
+          "3",
+          "5",
+          "wh23105001",
+          "电信",
+          "信基",
+          "基础",
+          "础设",
+          "设施",
+          "施维",
+          "维护"
+        ],
+        "token_match_count": 446,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "03e5582a4a0f7d3c76a33e66": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "03e5582a4a0f7d3c76a33e66": true
+        },
+        "semantic_score_of_relevant": {
+          "03e5582a4a0f7d3c76a33e66": 0.798468
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "e69ef87cafd302938c765e20",
+            "c03289565d5cc78f2b44cfca",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "5b25186e3e9342c92e5a3670",
+            "3b1f839571de44bb1abd2f94",
+            "2509d80e408074ca90ad79a6",
+            "06e68d69881bfa6bffefd124",
+            "2a7f16b2864963c72902351f",
+            "2d70309c35065f6a38c507ed"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 88.278,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "3f406ad653cd6ded7e011a40",
+            "7be85324f4abe1131327119e",
+            "6f4bd67e8abf6dcfdde54829",
+            "7b51e76d302604e5c182f040",
+            "36e3ca9051c2b34c98aa9fca",
+            "900318d0652d107eb78caf26",
+            "ed99004421c5de5fdf2e6cbf",
+            "740b1efb4588db4307be1a0f",
+            "5dde5ed6e53f62177672e78b",
+            "620acaeddf52599dd4ae377d",
+            "73988b3bb3ed3d5eba984089",
+            "31ca53eabc210bec4a94da9e",
+            "3fcd612549a4e58e909deb0e",
+            "4a65d0d3ead0bc841b1b28f8",
+            "87a89b911a3dff048d569b86",
+            "8dfd7acc3a5fcf416e5ca637",
+            "fc16bde58b2e5f6168fc4bba",
+            "8d6a3993748474ddec52ba5c",
+            "171ed5189044950f8d71ff34"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 86.415,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "3f406ad653cd6ded7e011a40",
+            "8d6a3993748474ddec52ba5c",
+            "7be85324f4abe1131327119e",
+            "87a89b911a3dff048d569b86",
+            "740b1efb4588db4307be1a0f",
+            "36e3ca9051c2b34c98aa9fca",
+            "31ca53eabc210bec4a94da9e",
+            "7b51e76d302604e5c182f040",
+            "8dfd7acc3a5fcf416e5ca637",
+            "fc16bde58b2e5f6168fc4bba",
+            "73988b3bb3ed3d5eba984089",
+            "ed99004421c5de5fdf2e6cbf",
+            "5dde5ed6e53f62177672e78b",
+            "6f4bd67e8abf6dcfdde54829",
+            "900318d0652d107eb78caf26",
+            "3fcd612549a4e58e909deb0e",
+            "620acaeddf52599dd4ae377d",
+            "171ed5189044950f8d71ff34",
+            "4a65d0d3ead0bc841b1b28f8"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 121.586,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "8dfd7acc3a5fcf416e5ca637",
+            "740b1efb4588db4307be1a0f",
+            "fc16bde58b2e5f6168fc4bba",
+            "3fcd612549a4e58e909deb0e",
+            "6f4bd67e8abf6dcfdde54829",
+            "7b51e76d302604e5c182f040",
+            "36e3ca9051c2b34c98aa9fca",
+            "8d6a3993748474ddec52ba5c",
+            "5dde5ed6e53f62177672e78b",
+            "4a65d0d3ead0bc841b1b28f8",
+            "620acaeddf52599dd4ae377d",
+            "900318d0652d107eb78caf26",
+            "7be85324f4abe1131327119e",
+            "31ca53eabc210bec4a94da9e",
+            "73988b3bb3ed3d5eba984089",
+            "87a89b911a3dff048d569b86",
+            "3f406ad653cd6ded7e011a40",
+            "171ed5189044950f8d71ff34",
+            "ed99004421c5de5fdf2e6cbf"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3213.496,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "03e5582a4a0f7d3c76a33e66",
+            "f905f78a0e9accb6f33d77ff",
+            "8d6a3993748474ddec52ba5c",
+            "740b1efb4588db4307be1a0f",
+            "36e3ca9051c2b34c98aa9fca",
+            "14c9c83470f749b59631d18b",
+            "95cb40813342a7e91c27e7d3",
+            "ece98e71fe682adf424c53af",
+            "48e4aa1fce9c20c3d6f6339f",
+            "31ca53eabc210bec4a94da9e",
+            "17f4459a19c40feda838debf",
+            "7be85324f4abe1131327119e",
+            "6b980f4f3b783a0bcb029caf",
+            "ed99004421c5de5fdf2e6cbf",
+            "8dfd7acc3a5fcf416e5ca637",
+            "25680e892d4e58e2a06452dc",
+            "65d56221b5022e39fbfc90ae",
+            "7b51e76d302604e5c182f040",
+            "25dbfdd0ca53797cd2b6becf",
+            "0d566943b2449adc9c533446"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "03e5582a4a0f7d3c76a33e66": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 150.684,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:f2a4f74b711f2413b1402f768300d60583f1057569aa22e97a24ab2789b01491": {
+      "gold_case_id": "gold-batch02-sha256:f2a4f74b711f2413b1402f768300d60583f1057569aa22e97a24ab2789b01491",
+      "batch_id": "B21",
+      "query": "《电信基础设施维护规程》表 10.3.3.4 中，测试波分复用器 1:6 以下（WH23104004）的综合单价是多少（元/个）？",
+      "question_type": "semantic",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "10",
+          "3",
+          "3",
+          "4",
+          "1",
+          "6",
+          "wh23104004",
+          "电信",
+          "信基",
+          "基础",
+          "础设",
+          "设施"
+        ],
+        "token_match_count": 447,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "92108b5bb6dcc5b2227d531c": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "92108b5bb6dcc5b2227d531c": true
+        },
+        "semantic_score_of_relevant": {
+          "92108b5bb6dcc5b2227d531c": 0.865914
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "e69ef87cafd302938c765e20",
+            "2a7f16b2864963c72902351f",
+            "3b1f839571de44bb1abd2f94",
+            "06e68d69881bfa6bffefd124",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "469978708f9fe4506fc1fa7f",
+            "5b25186e3e9342c92e5a3670",
+            "bdc9ea567c0d78ab37c2cf77",
+            "a36043b8ee1a391f2dd1c31a",
+            "2d70309c35065f6a38c507ed",
+            "c03289565d5cc78f2b44cfca",
+            "2509d80e408074ca90ad79a6"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 81.445,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "8d6a3993748474ddec52ba5c",
+            "e8513e8aa3405fff338783f1",
+            "e38adab63c7209471e644981",
+            "95380ab0ebb17410a5f37707",
+            "3c2858dbe1cd343a54ca2904",
+            "73988b3bb3ed3d5eba984089",
+            "2dd16c7ac2fac611ae6bf362",
+            "eced514a8afb5d6002fb7c2a",
+            "53d5b679c6d5759fca64305a",
+            "fc7d5eed0b515cf1096fd166",
+            "2467800bf8ef29b6791440b4",
+            "3fcd612549a4e58e909deb0e",
+            "b2edc2384d6b845e0005973a",
+            "4a65d0d3ead0bc841b1b28f8",
+            "3d3eb164235efb301e727bfd",
+            "abee735aa9c981d3bebcae9f",
+            "31ca53eabc210bec4a94da9e",
+            "6ef6abcdb9faa71cd577015c",
+            "3f406ad653cd6ded7e011a40"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 59.496,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "8d6a3993748474ddec52ba5c",
+            "e8513e8aa3405fff338783f1",
+            "95380ab0ebb17410a5f37707",
+            "2dd16c7ac2fac611ae6bf362",
+            "2467800bf8ef29b6791440b4",
+            "73988b3bb3ed3d5eba984089",
+            "31ca53eabc210bec4a94da9e",
+            "53d5b679c6d5759fca64305a",
+            "6ef6abcdb9faa71cd577015c",
+            "fc7d5eed0b515cf1096fd166",
+            "3fcd612549a4e58e909deb0e",
+            "e38adab63c7209471e644981",
+            "b2edc2384d6b845e0005973a",
+            "4a65d0d3ead0bc841b1b28f8",
+            "3f406ad653cd6ded7e011a40",
+            "3d3eb164235efb301e727bfd",
+            "3c2858dbe1cd343a54ca2904",
+            "eced514a8afb5d6002fb7c2a",
+            "abee735aa9c981d3bebcae9f"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 125.453,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "e8513e8aa3405fff338783f1",
+            "2dd16c7ac2fac611ae6bf362",
+            "6ef6abcdb9faa71cd577015c",
+            "b2edc2384d6b845e0005973a",
+            "31ca53eabc210bec4a94da9e",
+            "4a65d0d3ead0bc841b1b28f8",
+            "3fcd612549a4e58e909deb0e",
+            "fc7d5eed0b515cf1096fd166",
+            "95380ab0ebb17410a5f37707",
+            "8d6a3993748474ddec52ba5c",
+            "53d5b679c6d5759fca64305a",
+            "2467800bf8ef29b6791440b4",
+            "73988b3bb3ed3d5eba984089",
+            "abee735aa9c981d3bebcae9f",
+            "3f406ad653cd6ded7e011a40",
+            "e38adab63c7209471e644981",
+            "3d3eb164235efb301e727bfd",
+            "eced514a8afb5d6002fb7c2a",
+            "3c2858dbe1cd343a54ca2904"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3195.001,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "92108b5bb6dcc5b2227d531c",
+            "258ef2b78ff022814a5dd780"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "92108b5bb6dcc5b2227d531c": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 110.461,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206": {
+      "gold_case_id": "gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206",
+      "batch_id": "B22",
+      "query": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0 第 4.8.2 节，全光组网终端出厂后可以保留什么账号？",
+      "question_type": "semantic",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "81951fb8b5e157346ed83d77"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "v2",
+          "0",
+          "0",
+          "4",
+          "8",
+          "2",
+          "按",
+          "中国",
+          "国移",
+          "移动",
+          "动智",
+          "智慧"
+        ],
+        "token_match_count": 443,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "81951fb8b5e157346ed83d77": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "81951fb8b5e157346ed83d77": true
+        },
+        "semantic_score_of_relevant": {
+          "81951fb8b5e157346ed83d77": 0.851118
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "c03289565d5cc78f2b44cfca",
+            "3b1f839571de44bb1abd2f94",
+            "5b25186e3e9342c92e5a3670",
+            "d349f789d2e652960680ae1c",
+            "cdcc369a72b7aaa79fefb319",
+            "e69ef87cafd302938c765e20",
+            "a36043b8ee1a391f2dd1c31a",
+            "3b8f42f7061b1f1a8e2205a6",
+            "06e68d69881bfa6bffefd124",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "2d70309c35065f6a38c507ed",
+            "958047c40a522ec22f73e5a5",
+            "4723262fed91f6b5026a5480",
+            "2a7f16b2864963c72902351f"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 85.917,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "81951fb8b5e157346ed83d77",
+            "a7db14a3391bc332376a980d",
+            "e69ef87cafd302938c765e20",
+            "191a50b73b555de5c289dca6",
+            "958047c40a522ec22f73e5a5",
+            "c120df3a569ae215d69183ac",
+            "d74f298bf424e80db33f40c0",
+            "06e68d69881bfa6bffefd124",
+            "0b2bc61ba6e04bf37c779232",
+            "5183d18205e64c4836ba9020",
+            "9b5d9b92dc528a1c594e3ec2",
+            "b656aa1e5d609e2de7a81a0d",
+            "859e0391143c967ade455f91",
+            "3c9c81f21d4df15d5cb812c4",
+            "2d70309c35065f6a38c507ed",
+            "a36043b8ee1a391f2dd1c31a",
+            "4723262fed91f6b5026a5480",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "3a3f2c0bc27d1815ea693a4a",
+            "d1d75534f8865f49c152b4dd"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "81951fb8b5e157346ed83d77": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 58.672,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "81951fb8b5e157346ed83d77",
+            "191a50b73b555de5c289dca6",
+            "d74f298bf424e80db33f40c0",
+            "b656aa1e5d609e2de7a81a0d",
+            "5183d18205e64c4836ba9020",
+            "0b2bc61ba6e04bf37c779232",
+            "e69ef87cafd302938c765e20",
+            "c120df3a569ae215d69183ac",
+            "a7db14a3391bc332376a980d",
+            "a36043b8ee1a391f2dd1c31a",
+            "06e68d69881bfa6bffefd124",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "958047c40a522ec22f73e5a5",
+            "9b5d9b92dc528a1c594e3ec2",
+            "d1d75534f8865f49c152b4dd",
+            "2d70309c35065f6a38c507ed",
+            "3c9c81f21d4df15d5cb812c4",
+            "859e0391143c967ade455f91",
+            "4723262fed91f6b5026a5480",
+            "3a3f2c0bc27d1815ea693a4a"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "81951fb8b5e157346ed83d77": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 116.182,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "b656aa1e5d609e2de7a81a0d",
+            "c120df3a569ae215d69183ac",
+            "e69ef87cafd302938c765e20",
+            "4723262fed91f6b5026a5480",
+            "5183d18205e64c4836ba9020",
+            "0b2bc61ba6e04bf37c779232",
+            "06e68d69881bfa6bffefd124",
+            "81951fb8b5e157346ed83d77",
+            "191a50b73b555de5c289dca6",
+            "a36043b8ee1a391f2dd1c31a",
+            "958047c40a522ec22f73e5a5",
+            "d74f298bf424e80db33f40c0",
+            "d1d75534f8865f49c152b4dd",
+            "859e0391143c967ade455f91",
+            "2d70309c35065f6a38c507ed",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "a7db14a3391bc332376a980d",
+            "9b5d9b92dc528a1c594e3ec2",
+            "3c9c81f21d4df15d5cb812c4",
+            "3a3f2c0bc27d1815ea693a4a"
+          ],
+          "first_relevant_rank": 8,
+          "relevant_ranks": {
+            "81951fb8b5e157346ed83d77": 8
+          },
+          "ndcg_at_10": 0.31546487678572877,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3115.684,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "4f32247f7a6d7526df77bddd",
+            "38fdd5ab96a7a1c7db0c03c0",
+            "958047c40a522ec22f73e5a5",
+            "3b1f839571de44bb1abd2f94",
+            "81951fb8b5e157346ed83d77",
+            "191a50b73b555de5c289dca6",
+            "5b25186e3e9342c92e5a3670",
+            "b656aa1e5d609e2de7a81a0d",
+            "4723262fed91f6b5026a5480",
+            "06e68d69881bfa6bffefd124",
+            "54615572d7bd4dde554106e9",
+            "c03289565d5cc78f2b44cfca",
+            "7bd438a6e96bd608918543bc",
+            "d1d75534f8865f49c152b4dd",
+            "a7db14a3391bc332376a980d",
+            "9a35c463bb86d1e7617aaa22",
+            "3a3f2c0bc27d1815ea693a4a",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "e69ef87cafd302938c765e20",
+            "44f638f745282f4192dcd963"
+          ],
+          "first_relevant_rank": 5,
+          "relevant_ranks": {
+            "81951fb8b5e157346ed83d77": 5
+          },
+          "ndcg_at_10": 0.38685280723454163,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 103.643,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:5d0db5acf870d6545edfa8cf4b6a57f9208ffe39b392c47c0d6acb2d21f96e33": {
+      "gold_case_id": "gold-batch02-sha256:5d0db5acf870d6545edfa8cf4b6a57f9208ffe39b392c47c0d6acb2d21f96e33",
+      "batch_id": "B25",
+      "query": "铁塔专项维修的工作内容包括哪些？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "611a9eb6554a2b482561c775",
+        "4931f1a7b903ba2672bbb512"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "铁塔",
+          "塔专",
+          "专项",
+          "项维",
+          "维修",
+          "修的",
+          "的工",
+          "工作",
+          "作内",
+          "内容",
+          "容包",
+          "包括"
+        ],
+        "token_match_count": 326,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "611a9eb6554a2b482561c775": false,
+          "4931f1a7b903ba2672bbb512": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "611a9eb6554a2b482561c775": true,
+          "4931f1a7b903ba2672bbb512": true
+        },
+        "semantic_score_of_relevant": {
+          "611a9eb6554a2b482561c775": 0.833355,
+          "4931f1a7b903ba2672bbb512": 0.786461
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "5b25186e3e9342c92e5a3670",
+            "84139f0d408339d51910bb1e",
+            "2d70309c35065f6a38c507ed",
+            "546f017c81972bb8f8da4d1d",
+            "7bd438a6e96bd608918543bc",
+            "144e5bb0bd204af1664a969c",
+            "a36043b8ee1a391f2dd1c31a",
+            "06e68d69881bfa6bffefd124",
+            "4723262fed91f6b5026a5480",
+            "4f32247f7a6d7526df77bddd",
+            "cdcc369a72b7aaa79fefb319"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 126.639,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "611a9eb6554a2b482561c775",
+            "4931f1a7b903ba2672bbb512",
+            "5997209344e1edab17af1a36",
+            "14596d4e75ad163dd5bfc2e2",
+            "85a662e14c735b039ce0bda4",
+            "68a1c1448a91e95c36a18aa3",
+            "900318d0652d107eb78caf26",
+            "895557a41828559b59f3680a",
+            "ce70fb71bf86c85077ccfe2a",
+            "2eba19749f227b187f776ada",
+            "bd8d47c0d639799b2872480c",
+            "70202f4f6bd327b7effcf732",
+            "f36f0fdfe7175fc0075cb3e8",
+            "2e7a7cc3c6d7a7d5b13dc46f",
+            "5ff993981f8c903c3752685e",
+            "2ec236820167f2d1a720a4a9",
+            "ac420694498f6bc389a85f68",
+            "1c13f42ad07f8eb382c975f1",
+            "35d1c580ad97ff30923c9af2",
+            "de4a5a6d54ff71267ce9263d"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "611a9eb6554a2b482561c775": 1,
+            "4931f1a7b903ba2672bbb512": 2
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 84.114,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "611a9eb6554a2b482561c775",
+            "4931f1a7b903ba2672bbb512",
+            "5997209344e1edab17af1a36",
+            "68a1c1448a91e95c36a18aa3",
+            "900318d0652d107eb78caf26",
+            "14596d4e75ad163dd5bfc2e2",
+            "85a662e14c735b039ce0bda4",
+            "de4a5a6d54ff71267ce9263d",
+            "2eba19749f227b187f776ada",
+            "1c13f42ad07f8eb382c975f1",
+            "895557a41828559b59f3680a",
+            "ce70fb71bf86c85077ccfe2a",
+            "70202f4f6bd327b7effcf732",
+            "ac420694498f6bc389a85f68",
+            "2e7a7cc3c6d7a7d5b13dc46f",
+            "5ff993981f8c903c3752685e",
+            "2ec236820167f2d1a720a4a9",
+            "bd8d47c0d639799b2872480c",
+            "35d1c580ad97ff30923c9af2",
+            "f36f0fdfe7175fc0075cb3e8"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "611a9eb6554a2b482561c775": 1,
+            "4931f1a7b903ba2672bbb512": 2
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 189.679,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "611a9eb6554a2b482561c775",
+            "5997209344e1edab17af1a36",
+            "4931f1a7b903ba2672bbb512",
+            "85a662e14c735b039ce0bda4",
+            "14596d4e75ad163dd5bfc2e2",
+            "68a1c1448a91e95c36a18aa3",
+            "35d1c580ad97ff30923c9af2",
+            "2eba19749f227b187f776ada",
+            "1c13f42ad07f8eb382c975f1",
+            "2e7a7cc3c6d7a7d5b13dc46f",
+            "de4a5a6d54ff71267ce9263d",
+            "ac420694498f6bc389a85f68",
+            "ce70fb71bf86c85077ccfe2a",
+            "900318d0652d107eb78caf26",
+            "70202f4f6bd327b7effcf732",
+            "895557a41828559b59f3680a",
+            "bd8d47c0d639799b2872480c",
+            "2ec236820167f2d1a720a4a9",
+            "5ff993981f8c903c3752685e",
+            "f36f0fdfe7175fc0075cb3e8"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "611a9eb6554a2b482561c775": 1,
+            "4931f1a7b903ba2672bbb512": 3
+          },
+          "ndcg_at_10": 0.9197207891481876,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3084.725,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "611a9eb6554a2b482561c775",
+            "4931f1a7b903ba2672bbb512"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "611a9eb6554a2b482561c775": 1,
+            "4931f1a7b903ba2672bbb512": 2
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 144.719,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:4fe9bbf65368789a96fec628474fc6bfc870786f30c9c305f0da4cd8df09375a": {
+      "gold_case_id": "gold-batch02-sha256:4fe9bbf65368789a96fec628474fc6bfc870786f30c9c305f0da4cd8df09375a",
+      "batch_id": "B26",
+      "query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "a264a91966d85e2ec3b52e02"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "10",
+          "3",
+          "3",
+          "30",
+          "wh23130",
+          "电信",
+          "信基",
+          "基础",
+          "础设",
+          "设施",
+          "施维",
+          "维护"
+        ],
+        "token_match_count": 440,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "a264a91966d85e2ec3b52e02": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "a264a91966d85e2ec3b52e02": true
+        },
+        "semantic_score_of_relevant": {
+          "a264a91966d85e2ec3b52e02": 0.909969
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "c03289565d5cc78f2b44cfca",
+            "e69ef87cafd302938c765e20",
+            "5d5fd6cf18ea4e313fdc45b5",
+            "5b25186e3e9342c92e5a3670",
+            "84139f0d408339d51910bb1e",
+            "2509d80e408074ca90ad79a6",
+            "7bd438a6e96bd608918543bc",
+            "a36043b8ee1a391f2dd1c31a",
+            "cdcc369a72b7aaa79fefb319"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 89.224,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "a264a91966d85e2ec3b52e02",
+            "c663286c5bf2258dc95cdc2c",
+            "28093ca7aacb5499631b4ee5",
+            "17785f58dbcac4ec7a2bd8fc",
+            "a35ce6281114244d6406886e",
+            "4931f1a7b903ba2672bbb512",
+            "895557a41828559b59f3680a",
+            "c1e482df686f369f344cd4d9",
+            "b0853194f2355b3b11af2a9c",
+            "cf90c1ae88395ad7d4a617c2",
+            "95cb40813342a7e91c27e7d3",
+            "ad8e07f5c6236a0b7c42bd25",
+            "65d56221b5022e39fbfc90ae",
+            "9b303888818da7d18fda6e00",
+            "14c9c83470f749b59631d18b",
+            "cf6d46d3f0c0cd4d2e7b2422",
+            "1b2149ec028f9c253059616f",
+            "ece98e71fe682adf424c53af",
+            "7f6ed021bd179555bbd1c859",
+            "2ec236820167f2d1a720a4a9"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "a264a91966d85e2ec3b52e02": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 62.045,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "a264a91966d85e2ec3b52e02",
+            "c663286c5bf2258dc95cdc2c",
+            "4931f1a7b903ba2672bbb512",
+            "17785f58dbcac4ec7a2bd8fc",
+            "a35ce6281114244d6406886e",
+            "b0853194f2355b3b11af2a9c",
+            "895557a41828559b59f3680a",
+            "c1e482df686f369f344cd4d9",
+            "28093ca7aacb5499631b4ee5",
+            "14c9c83470f749b59631d18b",
+            "65d56221b5022e39fbfc90ae",
+            "ad8e07f5c6236a0b7c42bd25",
+            "cf90c1ae88395ad7d4a617c2",
+            "ece98e71fe682adf424c53af",
+            "95cb40813342a7e91c27e7d3",
+            "7f6ed021bd179555bbd1c859",
+            "2ec236820167f2d1a720a4a9",
+            "1b2149ec028f9c253059616f",
+            "cf6d46d3f0c0cd4d2e7b2422",
+            "9b303888818da7d18fda6e00"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "a264a91966d85e2ec3b52e02": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 137.05,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "a264a91966d85e2ec3b52e02",
+            "c663286c5bf2258dc95cdc2c",
+            "95cb40813342a7e91c27e7d3",
+            "b0853194f2355b3b11af2a9c",
+            "a35ce6281114244d6406886e",
+            "17785f58dbcac4ec7a2bd8fc",
+            "65d56221b5022e39fbfc90ae",
+            "ece98e71fe682adf424c53af",
+            "4931f1a7b903ba2672bbb512",
+            "7f6ed021bd179555bbd1c859",
+            "ad8e07f5c6236a0b7c42bd25",
+            "c1e482df686f369f344cd4d9",
+            "28093ca7aacb5499631b4ee5",
+            "895557a41828559b59f3680a",
+            "cf90c1ae88395ad7d4a617c2",
+            "14c9c83470f749b59631d18b",
+            "2ec236820167f2d1a720a4a9",
+            "1b2149ec028f9c253059616f",
+            "cf6d46d3f0c0cd4d2e7b2422",
+            "9b303888818da7d18fda6e00"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "a264a91966d85e2ec3b52e02": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3372.392,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "a264a91966d85e2ec3b52e02",
+            "c663286c5bf2258dc95cdc2c",
+            "4931f1a7b903ba2672bbb512",
+            "87a89b911a3dff048d569b86",
+            "895557a41828559b59f3680a"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "a264a91966d85e2ec3b52e02": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 122.422,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    },
+    "gold-batch02-sha256:f60c41c855e4aca2f381666e34c23cc4466e2291b004c8c55340a4709193cea3": {
+      "gold_case_id": "gold-batch02-sha256:f60c41c855e4aca2f381666e34c23cc4466e2291b004c8c55340a4709193cea3",
+      "batch_id": "B27",
+      "query": "WH23131004项目对应的防水处理范围是什么？",
+      "question_type": "exact_entity",
+      "requires_all_evidence": false,
+      "relevant_chunk_ids": [
+        "95cb40813342a7e91c27e7d3"
+      ],
+      "required_evidence_chunk_ids": [],
+      "diagnostics": {
+        "keyword_tokens": [
+          "wh23131004",
+          "项目",
+          "目对",
+          "对应",
+          "应的",
+          "的防",
+          "防水",
+          "水处",
+          "处理",
+          "理范",
+          "范围",
+          "围是"
+        ],
+        "token_match_count": 320,
+        "keyword_pool_size": 20,
+        "keyword_pool_contains_relevant": {
+          "95cb40813342a7e91c27e7d3": false
+        },
+        "semantic_pool_size": 20,
+        "semantic_pool_contains_relevant": {
+          "95cb40813342a7e91c27e7d3": true
+        },
+        "semantic_score_of_relevant": {
+          "95cb40813342a7e91c27e7d3": 0.667832
+        }
+      },
+      "methods": {
+        "bm25_only": {
+          "ranked_chunk_ids": [
+            "040027c36550d1be45910c33",
+            "1e2bd5122cd13762094dde86",
+            "d60c3992acb84d003c25c027",
+            "2a7f16b2864963c72902351f",
+            "3ef6f0c2eb6c280b4b3a262b",
+            "a8887b02ae32e4d4748ad264",
+            "3b1f839571de44bb1abd2f94"
+          ],
+          "first_relevant_rank": null,
+          "relevant_ranks": {},
+          "ndcg_at_10": 0.0,
+          "recall_at_10": 0.0,
+          "retrieval_latency_ms": 127.882,
+          "failure": {
+            "stage": "candidate_pool_miss",
+            "detail": "相关 Chunk 没有进入该方法的候选池"
+          }
+        },
+        "vector_only": {
+          "ranked_chunk_ids": [
+            "95cb40813342a7e91c27e7d3",
+            "ece98e71fe682adf424c53af",
+            "a264a91966d85e2ec3b52e02",
+            "9278fc1fa10e15baa1de8ec1",
+            "7b51e76d302604e5c182f040",
+            "3d3eb164235efb301e727bfd",
+            "79906d3f54cc4f882fd8c7fb",
+            "a35ce6281114244d6406886e",
+            "cf90c1ae88395ad7d4a617c2",
+            "3f406ad653cd6ded7e011a40",
+            "7f6ed021bd179555bbd1c859",
+            "db85cd8d317a59c32679393f",
+            "17785f58dbcac4ec7a2bd8fc",
+            "7be85324f4abe1131327119e",
+            "740b1efb4588db4307be1a0f",
+            "65af106efc532138e75dad76",
+            "b0853194f2355b3b11af2a9c",
+            "755703e2be3f7e101dd7eccc",
+            "8dfd7acc3a5fcf416e5ca637",
+            "d8732d372789df9517c5bdcc"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "95cb40813342a7e91c27e7d3": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 82.608,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid": {
+          "ranked_chunk_ids": [
+            "95cb40813342a7e91c27e7d3",
+            "ece98e71fe682adf424c53af",
+            "9278fc1fa10e15baa1de8ec1",
+            "7b51e76d302604e5c182f040",
+            "7be85324f4abe1131327119e",
+            "3d3eb164235efb301e727bfd",
+            "8dfd7acc3a5fcf416e5ca637",
+            "a264a91966d85e2ec3b52e02",
+            "79906d3f54cc4f882fd8c7fb",
+            "cf90c1ae88395ad7d4a617c2",
+            "a35ce6281114244d6406886e",
+            "7f6ed021bd179555bbd1c859",
+            "17785f58dbcac4ec7a2bd8fc",
+            "755703e2be3f7e101dd7eccc",
+            "65af106efc532138e75dad76",
+            "740b1efb4588db4307be1a0f",
+            "d8732d372789df9517c5bdcc",
+            "b0853194f2355b3b11af2a9c",
+            "3f406ad653cd6ded7e011a40",
+            "db85cd8d317a59c32679393f"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "95cb40813342a7e91c27e7d3": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 179.641,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "hybrid_rerank": {
+          "ranked_chunk_ids": [
+            "95cb40813342a7e91c27e7d3",
+            "65af106efc532138e75dad76",
+            "740b1efb4588db4307be1a0f",
+            "8dfd7acc3a5fcf416e5ca637",
+            "a264a91966d85e2ec3b52e02",
+            "ece98e71fe682adf424c53af",
+            "b0853194f2355b3b11af2a9c",
+            "7f6ed021bd179555bbd1c859",
+            "79906d3f54cc4f882fd8c7fb",
+            "7be85324f4abe1131327119e",
+            "17785f58dbcac4ec7a2bd8fc",
+            "7b51e76d302604e5c182f040",
+            "cf90c1ae88395ad7d4a617c2",
+            "9278fc1fa10e15baa1de8ec1",
+            "a35ce6281114244d6406886e",
+            "db85cd8d317a59c32679393f",
+            "755703e2be3f7e101dd7eccc",
+            "3d3eb164235efb301e727bfd",
+            "3f406ad653cd6ded7e011a40",
+            "d8732d372789df9517c5bdcc"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "95cb40813342a7e91c27e7d3": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 3380.781,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        },
+        "bm25_full_corpus": {
+          "ranked_chunk_ids": [
+            "95cb40813342a7e91c27e7d3",
+            "ece98e71fe682adf424c53af",
+            "4931f1a7b903ba2672bbb512",
+            "895557a41828559b59f3680a",
+            "db8a91a8aa6eed3abf6b5879",
+            "2eda6960dfbb194d0f84e4b0",
+            "65fc736cd1de828260bd32a9",
+            "9278fc1fa10e15baa1de8ec1",
+            "040027c36550d1be45910c33",
+            "206d11a37b452206c3d2fc95",
+            "28093ca7aacb5499631b4ee5",
+            "76ed396c75bf9d41c1b6e3e5"
+          ],
+          "first_relevant_rank": 1,
+          "relevant_ranks": {
+            "95cb40813342a7e91c27e7d3": 1
+          },
+          "ndcg_at_10": 1.0,
+          "recall_at_10": 1.0,
+          "retrieval_latency_ms": 99.713,
+          "failure": {
+            "stage": "hit",
+            "detail": null
+          }
+        }
+      }
+    }
+  }
+}

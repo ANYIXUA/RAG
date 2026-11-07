@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:23.164788+08:00",
+  "conservative_cost_yuan": 0.00249525,
+  "error": null,
+  "latency_ms": 6638.67749995552,
+  "list_price_estimate_yuan": 0.00151875,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]明确包含'WHJY-030 无人机 30 分钟续航、8km 传输 套 3512'，与silver_reference一致，且回答中准确提取了30分钟续航信息，无偏差。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n内容：...WHJY-030 无人机 30 分钟续航、8km 传输 套 3512...\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有陈述（续航30分钟、支持8km传输、型号WHJY-030、标准配置参数）均有[1]上下文直接支持，未引入额外未提及信息。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n内容：...WHJY-030 无人机 30 分钟续航、8km 传输 套 3512...\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问续航时间，回答聚焦于该核心事实，未遗漏必要条件或步骤；虽补充了其他相关属性（如传输距离、型号），但均来自同一来源，不构成冗余或偏离。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n内容：...WHJY-030 无人机 30 分钟续航、8km 传输 套 3512...\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个关键陈述后均正确标注[1]，且[1]确实包含对应信息。引用编号与上下文片段一一匹配，无错引或漏引。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n内容：...WHJY-030 无人机 30 分钟续航、8km 传输 套 3512...\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，上下文存在有效答案，无需拒答。模型已正确作答，符合要求。\",\n    \"evidence\": \"实际LLM上下文包含明确答案，且模型给出具体回答\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881396,
+    "id": "chatcmpl-51dfc5c3-119c-9cb2-9bcd-9e642ec5f018",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 651,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3615,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4266
+    }
+  },
+  "usage_known": true
+}

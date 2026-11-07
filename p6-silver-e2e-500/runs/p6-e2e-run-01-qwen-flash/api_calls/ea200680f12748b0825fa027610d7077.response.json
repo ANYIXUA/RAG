@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:25.484042+08:00",
+  "conservative_cost_yuan": 0.0015561,
+  "error": null,
+  "latency_ms": 3789.5241999067366,
+  "list_price_estimate_yuan": 0.0010535999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文一致，覆盖全部要点。\",\n    \"evidence\": \"安全生产费是指维护企业按照国家有关规定和维护作业安全标准，购置防护用具、落实安全作业措施、改善安全生产条件以及加强安全生产管理等所需的各项费用。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持。\",\n    \"evidence\": \"安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需内容。\",\n    \"evidence\": \"用于购置防护用具、落实安全作业措施、改善安全生产条件以及加强安全生产管理等所需的各项费用。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持所述内容。\",\n    \"evidence\": \"安全生产费是指维护企业按照国家有关规定和维护作业安全标准，购置防护用具、落实安全作业措施、改善安全生产条件以及加强安全生产管理等所需的各项费用。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881941,
+    "id": "chatcmpl-949f0a4e-932e-9d24-9d9e-cf2feb061d52",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 335,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3674,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4009
+    }
+  },
+  "usage_known": true
+}

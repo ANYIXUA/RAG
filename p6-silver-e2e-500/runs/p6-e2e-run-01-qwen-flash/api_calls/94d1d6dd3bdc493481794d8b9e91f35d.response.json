@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:36.944486+08:00",
+  "conservative_cost_yuan": 0.0006288,
+  "error": null,
+  "latency_ms": 950.8545999415219,
+  "list_price_estimate_yuan": 0.0005193,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 确认工单信息并准备所需器材。[1]  \n2. 查明宽带障碍的具体原因。[1]  \n3. 进行障碍维修操作。[1]  \n4. 完成业务恢复后的确认工作。[1]  \n5. 提交障碍处理回单完成闭环。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881176,
+    "id": "chatcmpl-9594f86c-b991-9ea5-aa83-0671f6108a5a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 73,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2732,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2805
+    }
+  },
+  "usage_known": true
+}

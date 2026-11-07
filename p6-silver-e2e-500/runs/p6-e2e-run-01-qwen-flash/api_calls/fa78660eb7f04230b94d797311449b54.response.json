@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:34.013081+08:00",
+  "conservative_cost_yuan": 0.00068715,
+  "error": null,
+  "latency_ms": 1333.276699995622,
+  "list_price_estimate_yuan": 0.00053415,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 装维人员绩效未在上下文中明确与家庭服务绑定方式。[1]  \n2. 绩效可能关联服务能力、交付技巧及故障处理能力。[2]  \n3. 服务礼仪、沟通技巧和维护技巧是考核要素之一。[2]  \n4. 故障处理能力涵盖光纤到户、智能组网等业务。[1]  \n5. 具体绑定机制需参考更详细的绩效管理制度。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881112,
+    "id": "chatcmpl-2ef9aa06-7fa4-9986-843a-5f20647c5aa1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2541,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2643
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:13.584018+08:00",
+  "conservative_cost_yuan": 0.0007377000000000001,
+  "error": null,
+  "latency_ms": 1537.080500042066,
+  "list_price_estimate_yuan": 0.0005877,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 24V铅酸蓄电池600Ah以下的综合单价为488.83元。[1]  \n2. 该价格包含人工、企业管理费及利润。[1]  \n3. 计量单位为“组”，对应安装作业。[1]  \n4. 与第307页内容一致，数据相同。[2]  \n5. 无其他规格或价格信息支持。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880972,
+    "id": "chatcmpl-1cf3d349-6fb0-9020-aacd-44768ebb46db",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2918,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3018
+    }
+  },
+  "usage_known": true
+}

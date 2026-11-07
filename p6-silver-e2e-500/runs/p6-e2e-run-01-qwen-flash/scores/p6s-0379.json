@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0379",
+  "citation_correctness": {
+    "evidence": "服务交付与沟通技巧与业务运维挂钩。[3]",
+    "reason": "引用编号与来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "设备装维与故障处理能力影响岗位绩效评估。[3]",
+    "reason": "覆盖问题核心要素",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "智能组网及物联网知识为职业技能考核内容。[2]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3db8190a621d46eba2d22b6a37d5e6c1",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "非拒答场景，无需评分",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

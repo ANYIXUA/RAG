@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:21.257916+08:00",
+  "conservative_cost_yuan": 0.0007749,
+  "error": null,
+  "latency_ms": 1269.285400165245,
+  "list_price_estimate_yuan": 0.0006263999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 楼顶铁杆歪斜可能与拉线松动有关。[1]  \n2. 应检查拉线塔的支撑结构及拉线紧固情况。[4]  \n3. 铁塔专项维修包含塔体结构检查和螺丝紧固。[4]  \n4. 建议进行塔体结构检查以确认问题。[4]  \n5. 若异常需按规程开展专项维修。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881160,
+    "id": "chatcmpl-afb2dc45-fa83-9953-a2fd-907f20831e92",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 99,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3186,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3285
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:29.440037+08:00",
+  "conservative_cost_yuan": 0.000909,
+  "error": null,
+  "latency_ms": 1336.6128001362085,
+  "list_price_estimate_yuan": 0.0006885,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区单管塔天馈线系统巡检综合单价为136.80元/站·次。[1]  \n2. 该费用包含人工、企业管理费及利润，对应技工0.75工日。[1]  \n3. 巡检内容包括天线外观、固定情况、馈线接地与标签检查等。[1]  \n4. 若含GPS天线巡检，山区单价为43.78元/套·次。[2]  \n5. 铁塔整体巡检山区单价为93.02元/座·次，不包含天馈线专项。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881168,
+    "id": "chatcmpl-c87ce493-0b1c-92b4-986d-a5c80fd828ec",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 147,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3120,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3267
+    }
+  },
+  "usage_known": true
+}

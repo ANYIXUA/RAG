@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:03.145675+08:00",
+  "conservative_cost_yuan": 0.00227625,
+  "error": null,
+  "latency_ms": 4690.958600025624,
+  "list_price_estimate_yuan": 0.00143925,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际上下文[1]明确显示水泥帮桩的消耗量为1.29，与silver_reference一致。模型回答准确引用了该数据，并正确说明其来源和单位。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第206页\\n定位信息：206\\n... WH12016001 帮桩 水泥帮桩 331.65 225.00 61.65 45.00 消耗量 1.29 1.29 ...\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均在上下文[1]中得到支持。包括消耗量数值1.29、单位‘根’、来源页码206、表10.2.2.16以及与木帮桩对比的信息（虽未直接提及，但通过上下文可合理推断）。所有陈述均有对应原文支持。\",\n    \"evidence\": \"[1] ... 消耗量 1.29 1.29 ...\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问水泥帮桩的消耗量，模型完整回答了该核心信息，并补充了单位、来源页码及标准背景，无遗漏必要条件或步骤。\",\n    \"evidence\": \"[1] ... 消耗量 1.29 1.29 ...\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应上下文片段[1]，且该片段确实支持所陈述的事实。引用格式规范，无错误引用或自创编号。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第206页\\n定位信息：206\\n... 消耗量 1.29 1.29 ...\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，上下文中有清晰答案，无需拒答。模型已正确作答，故此项不适用。\",\n    \"evidence\": \"无\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881438,
+    "id": "chatcmpl-92c77924-3e59-9a38-9703-4ea14dafdf67",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 558,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4015,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4573
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:08.309684+08:00",
+  "conservative_cost_yuan": 0.0007029,
+  "error": null,
+  "latency_ms": 1064.6669999696314,
+  "list_price_estimate_yuan": 0.0005604,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 评估满意度需结合服务交付技巧与沟通技巧表现。[3]  \n2. 通过用户对智能家居场景设置的反馈判断满意度。[3]  \n3. 关注用户对智能组网及故障处理的体验评价。[3]  \n4. 依据服务能力中的沟通与维护技巧进行综合评估。[2]  \n5. 满意度评估应贯穿于业务开通与运维全过程。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881027,
+    "id": "chatcmpl-31414786-edde-9ab3-b6e0-75f07f0edf32",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 95,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2786,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2881
+    }
+  },
+  "usage_known": true
+}

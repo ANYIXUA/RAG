@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:12:13.509689+08:00",
+  "conservative_cost_yuan": 0.0008454,
+  "error": null,
+  "latency_ms": 1508.9755000080913,
+  "list_price_estimate_yuan": 0.0006669,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 水泥杆另缠法装7/2.2单股拉线，平原地区人工消耗量为1.00工日。[1]  \n2. 普工人工消耗量为0.50工日。[1]  \n3. 该数据来自综合单价表中WH12009010项目。[1]  \n4. 项目适用于平原地区水泥杆另缠法安装。[1]  \n5. 人工费包含技工与普工两部分。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880732,
+    "id": "chatcmpl-219fd8f8-3b2e-9b6b-bf85-f3ab0c9c9cbe",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 119,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3256,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3375
+    }
+  },
+  "usage_known": true
+}

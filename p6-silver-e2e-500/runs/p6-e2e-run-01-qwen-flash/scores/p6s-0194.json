@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "人工费单价为：技工为114 元/工日；普工为61 元/工日。",
+    "reason": "混淆工日单价与人工费单价",
+    "score": 0
+  },
+  "case_id": "p6s-0194",
+  "citation_correctness": {
+    "evidence": "人工费单价为：技工为114 元/工日；普工为61 元/工日。",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "铺水泥盖板 1.92 1.30 0.36 0.26 消耗量 0.00 0.02",
+    "reason": "覆盖所有必要信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "人工费单价为：技工为114 元/工日；普工为61 元/工日。",
+    "reason": "将工日单价误作人工费单价",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_unit_interpretation",
+    "misattribution_of_cost_component"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "461a3c093ce94297b14978e505f59521",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

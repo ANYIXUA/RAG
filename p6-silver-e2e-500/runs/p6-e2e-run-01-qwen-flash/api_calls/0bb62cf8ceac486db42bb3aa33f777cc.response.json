@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:04.235218+08:00",
+  "conservative_cost_yuan": 0.0007518,
+  "error": null,
+  "latency_ms": 1643.6809999868274,
+  "list_price_estimate_yuan": 0.0006002999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 敷设塑料线槽综合单价为64.65元/十米。[1]  \n2. 消耗量为0.38工日/十米。[1]  \n3. 不区分线槽宽度，按实际长度计列。[1]  \n4. 工作内容包括线槽检查、测位、安装及挫锐等。[1]  \n5. 计量单位为十米。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881082,
+    "id": "chatcmpl-5d38cf8f-6ba0-967d-8e78-f72a198a686f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2992,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3093
+    }
+  },
+  "usage_known": true
+}

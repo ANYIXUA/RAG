@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "b68f9a933c3f19f5ca2d52cfd2696ed16c782a81d9cd30bfafb409c206ddb87d",
+  "record": {
+    "batch": 18,
+    "candidates": [
+      {
+        "answer": "91.20 元",
+        "evidence": [
+          {
+            "excerpt": "WH33111002 温湿、烟感、水浸监控单元 91.20 57.00 17.10 17.10 0.50 —",
+            "passage_id": "bd3f6dadfe0d04f74ad28895"
+          }
+        ],
+        "question": "WH33111002 温湿、烟感、水浸监控单元的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "0.20 —",
+        "evidence": [
+          {
+            "excerpt": "WH33112002 35mm 2以下 36.48 22.80 6.84 6.84 0.20 —",
+            "passage_id": "17f4459a19c40feda838debf"
+          }
+        ],
+        "question": "WH33112002 35mm²以下电力电缆的消耗量是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "1.20 —",
+        "evidence": [
+          {
+            "excerpt": "WH33114001 制作抗震机座 218.88 136.80 41.04 41.04 消耗量 1.20 —",
+            "passage_id": "7b51e76d302604e5c182f040"
+          }
+        ],
+        "question": "WH33114001 制作抗震机座的消耗量是多少？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

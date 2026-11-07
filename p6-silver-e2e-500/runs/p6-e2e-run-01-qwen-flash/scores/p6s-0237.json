@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0237",
+  "citation_correctness": {
+    "evidence": "初级人员重点考核职业道德与通信基础知识。[3]",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "员工绩效评估基于理论知识与技能实操两部分。[7]",
+    "reason": "部分覆盖但缺核心评估流程",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "安全作业知识在各等级中均占15%权重。[3]",
+    "reason": "所有事实均来自上下文",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "981a03692a284e0da93025b1404a4b52",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "应拒答却给出推测性回答",
+    "score": 0
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

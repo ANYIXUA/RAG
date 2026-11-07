@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "抢修车辆应集中管理、统一调配，不得擅自挪作它用。[2]",
+    "reason": "上下文明确支持管理要求",
+    "score": 1
+  },
+  "case_id": "p6s-0495",
+  "citation_correctness": {
+    "evidence": "抢修前应确认车辆、工器具已准备齐全并出发。[3]",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "车辆需定期保养，并按期办理相关手续，保持车况良好。[2]",
+    "reason": "覆盖了管理核心要点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "车辆出现故障必须及时修理，保持车况良好。[2]",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e39bc8b491a141dabe31c2a5c827df55",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

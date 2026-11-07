@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "Linux 内核版本宜不低于 5.10。",
+    "reason": "上下文明确支持内核版本不低于5.10",
+    "score": 1
+  },
+  "case_id": "p6s-0176",
+  "citation_correctness": {
+    "evidence": "Linux 内核版本宜不低于 5.10。",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "Linux 内核版本宜不低于 5.10。",
+    "reason": "完整覆盖问题所需信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "Linux 内核版本宜不低于 5.10。",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ad6c4a39b90b4eb98b6085506e297222",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

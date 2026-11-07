@@ -1,0 +1,153 @@
+Could not reach the Hub (Cannot reach https://huggingface.co/api/models/cross-encoder/mmarco-mMiniLMv2-L12-H384-v1: offline mode is enabled. To disable it, please unset the `HF_HUB_OFFLINE` environment variable.). Using cached commit hash for 'cross-encoder/mmarco-mMiniLMv2-L12-H384-v1'.
+
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]
+Loading weights:  31%|������       | 62/201 [00:00<00:00, 601.56it/s]
+Loading weights:  62%|��������������   | 124/201 [00:00<00:00, 603.18it/s]
+Loading weights: 100%|��������������������| 201/201 [00:00<00:00, 792.61it/s]
+Reranked 20 candidates: 65a56fcff7b2
+Reranked 20 candidates: cdeafee92a38
+Reranked 20 candidates: bac0cc416b25
+Reranked 20 candidates: d938801f7476
+Reranked 20 candidates: 49665530ab14
+Reranked 20 candidates: 693d24d10ff4
+Reranked 20 candidates: c5b9f4275ed0
+Reranked 20 candidates: 9bc133171fcc
+Reranked 20 candidates: 652980f550de
+Reranked 20 candidates: cdaf486fc47b
+Reranked 20 candidates: 33d0c59c1efd
+Reranked 20 candidates: 0d0014d80cbc
+Reranked 20 candidates: 3d4461264bbc
+Reranked 20 candidates: 84f536ce2237
+Reranked 20 candidates: 8bb3646e0b76
+Reranked 20 candidates: c6dddb7b1a53
+Reranked 20 candidates: 3bcf1d245441
+Reranked 20 candidates: 68a680a866ae
+Reranked 20 candidates: fdec27570df6
+Reranked 20 candidates: 6cbf157eb9da
+Reranked 20 candidates: 0b5b3aeef6fb
+Reranked 20 candidates: 51f758973f9e
+Reranked 20 candidates: c83e00ef9bf3
+Reranked 20 candidates: 8728a519a82a
+Reranked 20 candidates: 703db851705a
+Reranked 20 candidates: 89567913fe42
+Reranked 20 candidates: 1d500725e009
+Reranked 20 candidates: afc2ff0b0f7c
+Reranked 20 candidates: af6222560e24
+{
+  "out_dir": "D:\\AgentAIProgect\\RAG\\p5-benchmark-01\\runs\\run2",
+  "cases": 28,
+  "active_methods": [
+    "bm25_only",
+    "vector_only",
+    "hybrid",
+    "hybrid_rerank"
+  ],
+  "rerank": {
+    "requested": true,
+    "available": true,
+    "reason": null,
+    "model_name": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "resolved_model_name_or_path": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "hf_snapshot_revisions": [
+      "1427fd652930e4ba29e8149678df786c240d8825"
+    ]
+  },
+  "metrics": {
+    "bm25_only": {
+      "method_key": "A",
+      "description": "BM25 �ؼ��ʼ�����������ѡ�أ�",
+      "mode": "bm25",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 28,
+      "hit@1": 0.75,
+      "hit@3": 0.892857,
+      "hit@5": 0.892857,
+      "hit@10": 0.964286,
+      "mrr@10": 0.826531,
+      "ndcg@10": 0.860083,
+      "recall@10": 0.964286,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 14.464,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 515.884,
+      "latency_p95_ms": 1240.085,
+      "latency_mean_ms": 625.85,
+      "required_evidence_case_count": 0,
+      "required_evidence_coverage@10": null
+    },
+    "vector_only": {
+      "method_key": "B",
+      "description": "���������ң�����",
+      "mode": "semantic",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 28,
+      "hit@1": 0.75,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr@10": 0.863095,
+      "ndcg@10": 0.89838,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 81.949,
+      "latency_p95_ms": 164.121,
+      "latency_mean_ms": 97.442,
+      "required_evidence_case_count": 0,
+      "required_evidence_coverage@10": null
+    },
+    "hybrid": {
+      "method_key": "C",
+      "description": "BM25 + ������Ȩ�ں�",
+      "mode": "hybrid",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 28,
+      "hit@1": 0.821429,
+      "hit@3": 0.964286,
+      "hit@5": 0.964286,
+      "hit@10": 1.0,
+      "mrr@10": 0.89881,
+      "ndcg@10": 0.924283,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 454.794,
+      "latency_p95_ms": 1376.111,
+      "latency_mean_ms": 603.358,
+      "required_evidence_case_count": 0,
+      "required_evidence_coverage@10": null
+    },
+    "hybrid_rerank": {
+      "method_key": "D",
+      "description": "��ϼ��� + Cross-Encoder ����",
+      "mode": "hybrid",
+      "rerank_applied": true,
+      "supplementary": false,
+      "case_count": 28,
+      "hit@1": 0.607143,
+      "hit@3": 0.821429,
+      "hit@5": 0.821429,
+      "hit@10": 0.964286,
+      "mrr@10": 0.734906,
+      "ndcg@10": 0.79014,
+      "recall@10": 0.964286,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 4352.902,
+      "latency_p95_ms": 6532.357,
+      "latency_mean_ms": 4727.877,
+      "required_evidence_case_count": 0,
+      "required_evidence_coverage@10": null
+    }
+  },
+  "fingerprints": {
+    "rankings_sha256": "ba3ba0ec7610a289deb9bf4c60db7ccfa503ac99f73b289060fda8c06fa2dae5",
+    "metrics_sha256": "43ba173f470eed55dfe6ba0e33821ec3df102038d02136105476b60a29da7680"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:05.910220+08:00",
+  "conservative_cost_yuan": 0.00076875,
+  "error": null,
+  "latency_ms": 1268.4096999000758,
+  "list_price_estimate_yuan": 0.00060225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 人孔内淤泥与杂物应清理干净，确保环境整洁。[1]  \n2. 需进行人孔内抽水，防止积水影响光缆安全。[1]  \n3. 光缆走线应重新绑扎、整理，保持排列整齐。[1]  \n4. 检查并整治托架、托板及标志，确保完好。[1]  \n5. 处理时须注意通风与防滑，保障作业人员安全。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880904,
+    "id": "chatcmpl-debb4925-4064-97e1-b42a-2cf0e9a30348",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2905,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3016
+    }
+  },
+  "usage_known": true
+}

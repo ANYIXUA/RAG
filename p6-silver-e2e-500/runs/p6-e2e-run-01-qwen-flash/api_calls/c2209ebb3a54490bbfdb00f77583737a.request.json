@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:18:08.797637+08:00",
+  "input_token_upper_bound": 1161,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0336"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "当直埋光缆与埋式电力电缆（交流36KV及以上）平行时，最小净距是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "c2209ebb3a54490bbfdb00f77583737a",
+  "reserved_yuan": 0.0005805
+}

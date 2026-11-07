@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:28.047770+08:00",
+  "conservative_cost_yuan": 0.0007345499999999999,
+  "error": null,
+  "latency_ms": 1197.151399916038,
+  "list_price_estimate_yuan": 0.0005695499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护分项作业工作量清单与计价表编号为表—04。[1]  \n2. 在维护预算表格中，该表编号为表—03。[2]  \n3. 该表用于列明维护项目名称、工作量及金额等信息。[4]  \n4. 表—04适用于维护项目费用结算场景。[1]  \n5. 编号依据来自《电信基础设施维护规程》第93页规定。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880866,
+    "id": "chatcmpl-863b7f12-0346-96f0-acab-f524c5f0d4fb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2697,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2807
+    }
+  },
+  "usage_known": true
+}

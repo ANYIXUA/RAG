@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:51.944699+08:00",
+  "conservative_cost_yuan": 0.0027546,
+  "error": null,
+  "latency_ms": 5281.689299969003,
+  "list_price_estimate_yuan": 0.0016461,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文[1]明确列出WH14002004（96芯以上割接）的利润为817.21元，与silver_reference一致，且该数据直接来自检索到的文档内容。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第225页\\n定位信息：225\\n... WH14002004 96 芯以上 6022.86 4086.07 1119.58 817.21 33.55 4.29\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实均能在上下文[1]中找到直接支持。例如利润金额、综合单价构成、项目编码和计量单位等均准确对应原文数据。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第225页\\n定位信息：225\\n... WH14002004 96 芯以上 6022.86 4086.07 1119.58 817.21 33.55 4.29\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问96芯以上割接的利润，回答聚焦于该核心信息，并补充了相关背景（如综合单价构成、项目编码、计量单位），未遗漏必要条件或步骤，符合exact_fact类型要求。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第225页\\n定位信息：225\\n... WH14002004 96 芯以上 6022.86 4086.07 1119.58 817.21 33.55 4.29\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有关键结论均正确引用自上下文[1]，且引用编号[1]与实际来源匹配。每条陈述后均有正确的引用标记，无虚构或错引。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第225页\\n定位信息：225\\n... WH14002004 96 芯以上 6022.86 4086.07 1119.58 817.21 33.55 4.29\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的exact_fact类型，且上下文中有明确答案，因此无需拒答。模型正常回答，符合要求。\",\n    \"evidence\": \"无\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881426,
+    "id": "chatcmpl-85edf1a1-926d-9d30-8196-7e2665f46f28",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 739,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3584,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4323
+    }
+  },
+  "usage_known": true
+}

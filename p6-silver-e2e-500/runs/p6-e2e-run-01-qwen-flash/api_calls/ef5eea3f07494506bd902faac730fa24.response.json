@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:28.007049+08:00",
+  "conservative_cost_yuan": 0.0014275499999999999,
+  "error": null,
+  "latency_ms": 2783.981299959123,
+  "list_price_estimate_yuan": 0.00101355,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1][2]支持电梯井安装成本翻倍\",\n    \"evidence\": \"电梯井内安装按照相应子目的综合单价乘以系数2.0。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"电梯井内安装按照相应子目的综合单价乘以系数2.0。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖价格对比与成本构成\",\n    \"evidence\": \"电梯井内安装按照相应子目的综合单价乘以系数2.0。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"电梯井内安装按照相应子目的综合单价乘以系数2.0。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882125,
+    "id": "chatcmpl-a01a8f2f-c5c2-9dad-88aa-0e41af9da0ff",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 276,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3997,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4273
+    }
+  },
+  "usage_known": true
+}

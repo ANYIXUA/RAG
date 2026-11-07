@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:33.497602+08:00",
+  "conservative_cost_yuan": 0.0018514499999999997,
+  "error": null,
+  "latency_ms": 4653.032300062478,
+  "list_price_estimate_yuan": 0.0012064499999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致，覆盖所有关键处理步骤。\",\n    \"evidence\": \"人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列，光缆除垢，按需加套塑料管，整治固定接头盒、预留光缆，补、换光缆挂牌等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持，无编造。\",\n    \"evidence\": \"人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列，光缆除垢，按需加套塑料管，整治固定接头盒、预留光缆，补、换光缆挂牌等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖走线整理、除垢、防潮、上报、挂牌等全部必要步骤。\",\n    \"evidence\": \"人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列，光缆除垢，按需加套塑料管，整治固定接头盒、预留光缆，补、换光缆挂牌等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用[4]均正确对应实际来源片段。\",\n    \"evidence\": \"人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列，光缆除垢，按需加套塑料管，整治固定接头盒、预留光缆，补、换光缆挂牌等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882068,
+    "id": "chatcmpl-a1829ac5-a843-9875-a985-b6fb051fd4cb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 430,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3743,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4173
+    }
+  },
+  "usage_known": true
+}

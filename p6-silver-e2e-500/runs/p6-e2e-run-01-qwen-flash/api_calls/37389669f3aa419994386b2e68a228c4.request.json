@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:00.504876+08:00",
+  "input_token_upper_bound": 1139,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0400"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "承包人提交维护费用支付申请时，应填写哪些金额项目？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "37389669f3aa419994386b2e68a228c4",
+  "reserved_yuan": 0.0005695
+}

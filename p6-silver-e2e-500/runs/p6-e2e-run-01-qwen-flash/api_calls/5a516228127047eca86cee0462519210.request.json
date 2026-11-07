@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:47.396050+08:00",
+  "input_token_upper_bound": 1154,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0243"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "如何提升智慧家庭设备的用户满意度？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "5a516228127047eca86cee0462519210",
+  "reserved_yuan": 0.000577
+}

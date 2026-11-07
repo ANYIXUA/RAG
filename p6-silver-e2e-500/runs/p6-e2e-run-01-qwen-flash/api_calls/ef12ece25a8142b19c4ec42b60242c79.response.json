@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:14.424545+08:00",
+  "conservative_cost_yuan": 0.0007017000000000001,
+  "error": null,
+  "latency_ms": 1251.1668000370264,
+  "list_price_estimate_yuan": 0.0005682,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装基站主设备需进行开箱检验与清洁搬运。[3]  \n2. 设备应按要求安装固定并连接线缆。[3]  \n3. 完成安装后需进行加电检查与设备开通。[3]  \n4. 最后清理现场，确保作业环境整洁。[3]  \n5. 以上流程适用于平原地区安装场景。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880913,
+    "id": "chatcmpl-af3974f1-baf7-9f95-8691-5af5dca9c3c1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 89,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2898,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2987
+    }
+  },
+  "usage_known": true
+}

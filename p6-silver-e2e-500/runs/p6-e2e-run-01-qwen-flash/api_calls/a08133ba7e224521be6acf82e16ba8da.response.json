@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:59.212982+08:00",
+  "conservative_cost_yuan": 0.0007438499999999999,
+  "error": null,
+  "latency_ms": 1448.0671999044716,
+  "list_price_estimate_yuan": 0.0005653499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 上下文未提及员工申请家庭场景设备补贴的具体流程。[1][2][3]  \n2. 无关于设备补贴申请的政策或操作指引信息。[1][2][3]  \n3. 无法确认是否支持员工在家庭场景中申请设备补贴。[1][2][3]  \n4. 建议补充相关补贴政策文档或转人工咨询。[1][2][3]  \n5. 当前资料不支持回答该问题，需进一步获取权威来源。[1][2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881077,
+    "id": "chatcmpl-43a6460c-af4f-9a5c-8c5e-b2800853e50b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 119,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2579,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2698
+    }
+  },
+  "usage_known": true
+}

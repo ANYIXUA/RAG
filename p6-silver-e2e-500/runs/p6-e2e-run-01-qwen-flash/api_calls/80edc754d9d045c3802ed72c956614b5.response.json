@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:01.125967+08:00",
+  "conservative_cost_yuan": 0.000768,
+  "error": null,
+  "latency_ms": 1383.7653999216855,
+  "list_price_estimate_yuan": 0.0006,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 管道内光缆走线混乱应重新绑扎整理，确保排列有序。[4]  \n2. 光缆发霉需进行除垢处理，必要时加套塑料管防护。[4]  \n3. 应检查管道是否潮湿，排除积水或渗水问题。[4]  \n4. 若发霉严重或存在破损，需上报并安排专业修复。[4]  \n5. 处理后应补换光缆挂牌，确保标识清晰。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881139,
+    "id": "chatcmpl-946b0887-bc4a-91d3-84d8-a21c94c2de68",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2880,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2992
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:14.899522+08:00",
+  "conservative_cost_yuan": 0.00278325,
+  "error": null,
+  "latency_ms": 7080.571400001645,
+  "list_price_estimate_yuan": 0.00164775,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际上下文[1]明确列出WH33123001封堵孔洞的消耗量为1.71，与答案一致。该信息直接来自检索到的文档片段，且无歧义。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第322页\\n定位信息：322\\n... WH33123001 封堵孔洞 288.06 195.43 53.55 39.09 消耗量 1.71 0.00\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实均能在实际上下文[1]中找到对应支持。例如‘消耗量为1.71’、‘单位为处’、‘工作内容包括清理孔洞、封堵作业’等均在原文中明确提及。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第322页\\n定位信息：322\\n... WH33123001 封堵孔洞 288.06 195.43 53.55 39.09 消耗量 1.71 0.00\\n... 工作内容：1、清理孔洞；2、封堵作业；3、安装穿墙洞板；4、清理现场等。 计量单位：处\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问WH33123001封堵孔洞的消耗量，答案完整提供了该数值（1.71）并补充了单位和来源信息，未遗漏必要条件或步骤。虽有额外解释，但均为有效补充，不构成冗余或偏离。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第322页\\n定位信息：322\\n... 消耗量 1.71 0.00\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应实际上下文中的chunk_id '79906d3f54cc4f882fd8c7fb'，且每条引用内容均被准确支持。无引用错误或自创编号。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第322页\\n定位信息：322\\n... 消耗量 1.71 0.00\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确可答的精确事实类问题，且上下文中有直接答案，因此无需拒答。模型正常回答，符合要求。\",\n    \"evidence\": \"上下文[1]中明确包含WH33123001的消耗量为1.71\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881327,
+    "id": "chatcmpl-d7e4897f-2385-96f6-a2f9-89fff221b2d1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 757,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3415,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4172
+    }
+  },
+  "usage_known": true
+}

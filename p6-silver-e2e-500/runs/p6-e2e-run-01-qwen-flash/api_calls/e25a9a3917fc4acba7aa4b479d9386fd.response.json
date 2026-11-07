@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:19.078185+08:00",
+  "conservative_cost_yuan": 0.00070185,
+  "error": null,
+  "latency_ms": 1122.367799980566,
+  "list_price_estimate_yuan": 0.0005563499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 故障抢修包括天馈系统故障抢修。[1]  \n2. 故障抢修涵盖主设备故障抢修。[1]  \n3. 故障抢修涉及配套设备故障抢修。[1]  \n4. 故障类型按实际发生次数计算，分项明确。[2]  \n5. 抢修工作内容包含到达基站、故障处理、业务恢复确认等。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880857,
+    "id": "chatcmpl-dbc97800-2f92-979c-b915-a743c69d614b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 97,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2739,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2836
+    }
+  },
+  "usage_known": true
+}

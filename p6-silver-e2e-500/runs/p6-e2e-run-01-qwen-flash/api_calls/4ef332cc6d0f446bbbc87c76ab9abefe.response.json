@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:17.305756+08:00",
+  "conservative_cost_yuan": 0.0013637999999999999,
+  "error": null,
+  "latency_ms": 2747.2637998871505,
+  "list_price_estimate_yuan": 0.0009377999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"未明确提及绩效评估标准\",\n    \"evidence\": \"智慧家庭产品线绩效评估未在上下文中明确提及。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文引用\",\n    \"evidence\": \"职业技能等级标准包含职业道德、职业规范等要求。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分回答但未完全覆盖问题\",\n    \"evidence\": \"具体绩效指标需参考其他未提供文档或制度。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"评估可能涉及岗位规范、服务流程及安全作业知识。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"明确说明未提及且提示补充\",\n    \"evidence\": \"智慧家庭产品线绩效评估未在上下文中明确提及。[1]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882174,
+    "id": "chatcmpl-69a76c1e-9d1a-90f9-8b16-4e57e6e0d80a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 284,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3412,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3696
+    }
+  },
+  "usage_known": true
+}

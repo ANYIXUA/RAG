@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "查看管道或人孔是否有沉陷、破损、井盖丢失等情况",
+    "reason": "覆盖所有检查项目且无遗漏",
+    "score": 1
+  },
+  "case_id": "p6s-0284",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "做好巡查记录，并将发现的问题及时上报",
+    "reason": "完整涵盖问题所需条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查沿线重点部位保护是否到位，沿线有无外力施工等影响线路安全的行为",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "5d426730b1ab42f3b07e1c4b0b0173eb",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

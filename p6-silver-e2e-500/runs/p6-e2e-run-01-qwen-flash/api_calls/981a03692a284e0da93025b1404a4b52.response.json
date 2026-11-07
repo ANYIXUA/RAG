@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:35.193544+08:00",
+  "conservative_cost_yuan": 0.0012774000000000001,
+  "error": null,
+  "latency_ms": 2556.116499938071,
+  "list_price_estimate_yuan": 0.0009008999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"未提供绩效评估具体方法\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文\",\n    \"evidence\": \"安全作业知识在各等级中均占15%权重。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分覆盖但缺核心评估流程\",\n    \"evidence\": \"员工绩效评估基于理论知识与技能实操两部分。[7]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"初级人员重点考核职业道德与通信基础知识。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0,\n    \"reason\": \"应拒答却给出推测性回答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881892,
+    "id": "chatcmpl-480137da-7e8d-9667-bf5c-272d879de848",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 251,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3496,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3747
+    }
+  },
+  "usage_known": true
+}

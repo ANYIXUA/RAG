@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:07.770546+08:00",
+  "conservative_cost_yuan": 0.0007178999999999999,
+  "error": null,
+  "latency_ms": 1369.5561999920756,
+  "list_price_estimate_yuan": 0.0005618999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 全光组网终端DHCPName总长度应不超过32字节。[1]  \n2. DHCPName格式为：合作伙伴-型号-YYYY。[1]  \n3. YYYY为设备MAC后四位，不可修改。[1]  \n4. 合作伙伴及型号采用智家中心标准名称。[1]  \n5. 该要求出自《中国移动智慧家庭全光组网产品技术规范V2.0.0》。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880846,
+    "id": "chatcmpl-0b213133-1b7b-93bb-87a4-0d629937f7a2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2706,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2810
+    }
+  },
+  "usage_known": true
+}

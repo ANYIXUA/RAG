@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:05.017137+08:00",
+  "conservative_cost_yuan": 0.0016001999999999998,
+  "error": null,
+  "latency_ms": 3077.8755999635905,
+  "list_price_estimate_yuan": 0.0010796999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，涵盖关键步骤。\",\n    \"evidence\": \"1.装、拆临时辅助吊线 2.拆除原吊线终端 3.延长吊线 4.制作吊线终端 5.拧紧紧固件\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"装、拆临时辅助吊线，拆除原吊线终端，延长吊线，制作吊线终端，拧紧紧固件等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题所需全部处理步骤。\",\n    \"evidence\": \"1.装、拆临时辅助吊线 2.拆除原吊线终端 3.延长吊线 4.制作吊线终端 5.拧紧紧固件\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持内容。\",\n    \"evidence\": \"1.装、拆临时辅助吊线 2.拆除原吊线终端 3.延长吊线 4.制作吊线终端 5.拧紧紧固件\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881981,
+    "id": "chatcmpl-e686d31d-2cf6-9a73-9d03-ca28c164fc60",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 347,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3728,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4075
+    }
+  },
+  "usage_known": true
+}

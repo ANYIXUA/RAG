@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:19.144738+08:00",
+  "conservative_cost_yuan": 0.0006631499999999999,
+  "error": null,
+  "latency_ms": 982.5117001309991,
+  "list_price_estimate_yuan": 0.00055065,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 开箱检验设备完整性与型号。[1]  \n2. 清理并搬运设备至安装位置。[1]  \n3. 安装并加固设备于指定位置。[1]  \n4. 通电调测并进行功率测试。[1]  \n5. 做标记并清理现场。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880918,
+    "id": "chatcmpl-29996911-405f-9aa2-a401-86e39d2b7887",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 75,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2921,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2996
+    }
+  },
+  "usage_known": true
+}

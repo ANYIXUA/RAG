@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:23.644708+08:00",
+  "conservative_cost_yuan": 0.0014064000000000001,
+  "error": null,
+  "latency_ms": 2753.622999880463,
+  "list_price_estimate_yuan": 0.0009653999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确涵盖突发事件处理流程\",\n    \"evidence\": \"4.7.0.2 突发事件发生时，维护企业技术人员应迅速赶往突发事件现场\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"重大突发事件，维护企业必须进行全天24 小时看护\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖关键处理步骤\",\n    \"evidence\": \"处理方案应按光缆线路障碍抢修流程、光缆线路割接流程、光缆线路迁移改造流程予以实施\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[4.7.0.6]格式错误\",\n    \"evidence\": \"应急预案的编制应包括以下内容： a） 应急组织方案；\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_format_issue\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882120,
+    "id": "chatcmpl-5503bf37-abc9-913e-9c7c-b46a7c7bec10",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 294,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3496,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3790
+    }
+  },
+  "usage_known": true
+}

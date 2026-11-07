@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:51.539647+08:00",
+  "conservative_cost_yuan": 0.00133305,
+  "error": null,
+  "latency_ms": 3506.331200012937,
+  "list_price_estimate_yuan": 0.0009385499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"费率5.0%在多处上下文明确支持\",\n    \"evidence\": \"CS00002 维护干扰费 5.0\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"维护干扰费的费率为5.0%。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答问题所需信息\",\n    \"evidence\": \"维护干扰费的费率为5.0%。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"CS00002 维护干扰费 5.0\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882148,
+    "id": "chatcmpl-8970b534-d64b-9ee0-99cc-3cdeafd88982",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 263,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3627,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3890
+    }
+  },
+  "usage_known": true
+}

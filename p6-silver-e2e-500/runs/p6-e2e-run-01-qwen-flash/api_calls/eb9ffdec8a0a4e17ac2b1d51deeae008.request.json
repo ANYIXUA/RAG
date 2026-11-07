@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:17.107861+08:00",
+  "input_token_upper_bound": 1148,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0063"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "无线通信基站应急维护中，故障抢修的故障类型具体包括哪些？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "eb9ffdec8a0a4e17ac2b1d51deeae008",
+  "reserved_yuan": 0.000574
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:06.630234+08:00",
+  "conservative_cost_yuan": 0.0013206,
+  "error": null,
+  "latency_ms": 2757.211900083348,
+  "list_price_estimate_yuan": 0.0009231,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"用户渗透率非运维职责，参考未确认\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文且无编造\",\n    \"evidence\": \"运维团队应掌握智能家居组网及场景设置技能。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏市场推广等关键维度\",\n    \"evidence\": \"通过销售与沟通技巧提升用户转化率。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"优化无线局域网覆盖能改善用户体验。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0,\n    \"reason\": \"应拒答但未说明无法回答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"overclaiming\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881923,
+    "id": "chatcmpl-788dc543-c4bc-9019-8769-edc178445046",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 265,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3504,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3769
+    }
+  },
+  "usage_known": true
+}

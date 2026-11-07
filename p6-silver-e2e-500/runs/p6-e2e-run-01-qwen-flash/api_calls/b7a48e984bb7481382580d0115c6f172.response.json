@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:03.856036+08:00",
+  "conservative_cost_yuan": 0.0008068499999999999,
+  "error": null,
+  "latency_ms": 1245.128900045529,
+  "list_price_estimate_yuan": 0.0006418499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH12022003 3孔（3X1）综合单价为639.74元。[1]  \n2. 该价格对应计量单位为百米。[1]  \n3. 项目包含塑料管运输、接管、铺管及堵管工作。[1]  \n4. 不包括挖沟及回填等额外作业。[1]  \n5. 与镀锌钢管管道的同类项目价格不同，需注意区分。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880902,
+    "id": "chatcmpl-5a4e9ad9-1884-9d96-94ef-a939b996dcf5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3179,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3289
+    }
+  },
+  "usage_known": true
+}

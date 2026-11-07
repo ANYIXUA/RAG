@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:15.931159+08:00",
+  "conservative_cost_yuan": 0.0017874000000000002,
+  "error": null,
+  "latency_ms": 3401.857800083235,
+  "list_price_estimate_yuan": 0.0011634000000000002,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出流水综合单价128.98元。\",\n    \"evidence\": \"WH12031002 流水 128.98 87.50 23.98 17.50 消耗量 0.5 0.5\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均在上下文中有直接支持。\",\n    \"evidence\": \"WH12031002 流水 128.98 87.50 23.98 17.50 消耗量 0.5 0.5\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答涵盖单价、单位、消耗量等关键信息。\",\n    \"evidence\": \"WH12031002 流水 128.98 87.50 23.98 17.50 消耗量 0.5 0.5\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]对应实际来源且支持该句。\",\n    \"evidence\": \"WH12031002 流水 128.98 87.50 23.98 17.50 消耗量 0.5 0.5\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881992,
+    "id": "chatcmpl-65195f91-b0db-98c0-acec-db17b8339309",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 416,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3596,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4012
+    }
+  },
+  "usage_known": true
+}

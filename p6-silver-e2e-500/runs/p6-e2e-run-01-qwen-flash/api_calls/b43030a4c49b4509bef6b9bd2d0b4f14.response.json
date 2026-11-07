@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:16.995354+08:00",
+  "conservative_cost_yuan": 0.00066585,
+  "error": null,
+  "latency_ms": 1129.8293001018465,
+  "list_price_estimate_yuan": 0.0005218499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 封面应包含维护预算总价。[1]  \n2. 总说明中维护项目概况需包括项目规模、地点、专业等要素。[2]  \n3. 项目特征、合同维护期限及实际维护周期须明确。[2]  \n4. 交通运输、自然地理条件与环保要求需列明。[2]  \n5. 维护工作内容及现场变化情况应完整填写。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881155,
+    "id": "chatcmpl-442696c8-6ea9-9afe-999a-ac32b0b22ac2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 96,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2519,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2615
+    }
+  },
+  "usage_known": true
+}

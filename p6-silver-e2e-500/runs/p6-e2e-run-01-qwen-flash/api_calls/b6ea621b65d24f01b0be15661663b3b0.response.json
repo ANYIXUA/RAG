@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:15.396798+08:00",
+  "conservative_cost_yuan": 0.00145275,
+  "error": null,
+  "latency_ms": 2874.5842000935227,
+  "list_price_estimate_yuan": 0.00098925,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确拒答且理由合理\",\n    \"evidence\": \"检索上下文未提及智慧家庭设备月费的计算方式。[1][2][3]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文\",\n    \"evidence\": \"无法根据现有资料提供月费计算规则或计费逻辑。[1][2][3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有必要信息点\",\n    \"evidence\": \"建议补充具体业务套餐或资费说明以获取准确信息。[1][2][3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"月费可能涉及设备绑定、服务包或云平台订阅，但无明确依据。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"应拒答时正确拒答\",\n    \"evidence\": \"检索上下文未提及智慧家庭设备月费的计算方式。[1][2][3]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881992,
+    "id": "chatcmpl-cc03feac-1e5f-9980-81b9-9f6b073a643b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 309,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3505,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3814
+    }
+  },
+  "usage_known": true
+}

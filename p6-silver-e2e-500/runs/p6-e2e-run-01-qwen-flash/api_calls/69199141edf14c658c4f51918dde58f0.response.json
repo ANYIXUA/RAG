@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:47.259488+08:00",
+  "conservative_cost_yuan": 0.0007648499999999999,
+  "error": null,
+  "latency_ms": 1357.4542000424117,
+  "list_price_estimate_yuan": 0.0006028499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 100A以下整流模块更换的综合单价为470.12元。[1]  \n2. 该价格包含人工、企业管理费及利润等费用。[1]  \n3. 工作内容包括安装、检查、拆除故障模块及清理现场。[1]  \n4. 计量单位为“块”，按实际维护数量计算。[1]  \n5. 项目编码为WH33120002。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880885,
+    "id": "chatcmpl-bc51a87e-574a-99c6-a966-cd3269e95bc7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 108,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2939,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3047
+    }
+  },
+  "usage_known": true
+}

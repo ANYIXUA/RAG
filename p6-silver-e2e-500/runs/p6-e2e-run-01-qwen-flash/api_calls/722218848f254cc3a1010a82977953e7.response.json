@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:57.380256+08:00",
+  "conservative_cost_yuan": 0.0017101500000000001,
+  "error": null,
+  "latency_ms": 4050.7231999654323,
+  "list_price_estimate_yuan": 0.00113415,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"混淆车辆与徒步巡回\",\n    \"evidence\": \"WH11004002 山区 36.01 24.43 6.69 4.89 0.21 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"人工费与利润来源错误\",\n    \"evidence\": \"WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键条件，部分正确\",\n    \"evidence\": \"WH11004002 山区 36.01 24.43 6.69 4.89 0.21 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[2]不支持该句\",\n    \"evidence\": \"WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_task_type\",\n    \"misattribution_of_cost_data\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881793,
+    "id": "chatcmpl-de49efcc-a999-9a6f-b53e-ed1e4fbb5b1c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 384,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3721,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4105
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:18.265590+08:00",
+  "conservative_cost_yuan": 0.0031543499999999998,
+  "error": null,
+  "latency_ms": 7545.012600021437,
+  "list_price_estimate_yuan": 0.0018658499999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际上下文[1]明确显示WH33112002 35mm²以下电力电缆的消耗量为0.20，与回答一致。银参考0.20也支持该值，尽管p6s-0473工日存在解析歧义，但此问题不涉及工日，不影响答案正确性。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第313页\\n定位信息：313\\n... WH33112002 35mm 2以下 36.48 22.80 6.84 6.84 0.20 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实均在上下文[1]和[2]中得到直接支持：0.20的消耗量、适用于室内布放、项目编码WH33112002、计量单位10米条、与表10.3.3.9中WH23109002数据一致，以及来源为第313页。所有陈述均有对应原文依据。\",\n    \"evidence\": \"[1] ... WH33112002 35mm 2以下 36.48 22.80 6.84 6.84 0.20 —\\n[2] ... WH23109002 35mm 2以下 36.48 22.80 6.84 6.84 0.20\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题询问的是WH33112002 35mm²以下电力电缆的消耗量，回答完整提供了数值0.20，并补充了相关背景（适用场景、项目编码、计量单位、一致性验证及来源页码），覆盖了问题所需全部关键信息。\",\n    \"evidence\": \"[1] ... WH33112002 35mm 2以下 36.48 22.80 6.84 6.84 0.20 —\\n[2] ... WH23109002 35mm 2以下 36.48 22.80 6.84 6.84 0.20\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个引用编号均准确对应实际上下文来源：[1]用于支持消耗量、适用范围、项目编码、单位和来源页码；[2]用于支持与另一表数据的一致性。引用编号未超出上下文范围，且每处引用均真实支撑对应语句。\",\n    \"evidence\": \"[1] ... WH33112002 35mm 2以下 36.48 22.80 6.84 6.84 0.20 —\\n[2] ... WH23109002 35mm 2以下 36.48 22.80 6.84 6.84 0.20\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，上下文中有充分信息可作答，无需拒答。模型已正确回答，因此该维度不适用。\",\n    \"evidence\": \"无\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881450,
+    "id": "chatcmpl-fc968a06-15a8-994c-95a2-cc66b6e5bb3e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 859,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3849,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4708
+    }
+  },
+  "usage_known": true
+}

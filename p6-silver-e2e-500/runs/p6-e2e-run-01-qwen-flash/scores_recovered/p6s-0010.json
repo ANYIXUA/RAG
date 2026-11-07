@@ -1,0 +1,43 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —",
+    "reason": "实际LLM输出中明确指出一个扇区以下的调测基站系统综合单价为2134.08元，并引用了[1]，该信息与silver_reference一致，且在上下文[1]中可直接验证。因此答案正确。",
+    "score": 1
+  },
+  "case_id": "p6s-0010",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第272页\n定位信息：272\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 ...",
+    "reason": "所有引用编号[1]均准确对应上下文片段[1]，且该片段内容支持所陈述的每一项事实。引用格式规范，无错误引用或缺失引用。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —",
+    "reason": "回答涵盖了问题所需的核心信息：单价数值、适用范围、费用构成、计量单位及扩展规则。虽未提及海拔或特殊地区调整系数，但这些非本题必要条件，不影响完整性。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "evaluation_normalization": "N/A no-answer dimension retains null score; null evidence canonicalized to empty string",
+  "faithfulness": {
+    "evidence": "WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —",
+    "reason": "每条事实均在上下文[1]中得到支持：2134.08元的单价、适用范围为3个扇区以下、包含人工/管理费/利润、计量单位为站或扇区、超出3个扇区需增量计价。所有陈述均有对应来源且无额外编造。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "cc501f59c2c6499bac38c92ff4bfccfe",
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题属于明确可答的精确事实类问题，且上下文提供了完整答案，无需拒答。因此该维度不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "original_failure_record": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scores\\p6s-0010.json",
+  "question_type": "exact_fact",
+  "recovered_paid_response": true,
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

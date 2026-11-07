@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:40.201484+08:00",
+  "conservative_cost_yuan": 0.00157125,
+  "error": null,
+  "latency_ms": 3389.137800084427,
+  "list_price_estimate_yuan": 0.00105225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持费用数值\",\n    \"evidence\": \"WH22104001 接地网电阻测试 （降低） 市区 9.12 5.70 1.71 1.71 消耗量 0.05 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应原文支持\",\n    \"evidence\": \"WH22102005 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题所有条件与步骤\",\n    \"evidence\": \"表10.3.2.2 WH22102 天线信号测试 工作内容：天线互调测试、天线发射功率测试等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持语句\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881956,
+    "id": "chatcmpl-fe632a81-e8e2-9b3e-b5a7-60d4c6c5345e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 346,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3555,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3901
+    }
+  },
+  "usage_known": true
+}

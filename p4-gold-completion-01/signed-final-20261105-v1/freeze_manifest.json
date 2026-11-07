@@ -1,0 +1,26 @@
+{
+  "dataset_version": "p4-holdout-v1-20261105",
+  "status": "human_signed_content_frozen",
+  "created_at_utc": "2026-11-05T07:14:45.918427+00:00",
+  "human_reviewed_date": "2026-11-05",
+  "development_count": 22,
+  "holdout_count": 28,
+  "total_content_count": 50,
+  "formal_benchmark_run": false,
+  "frozen_scope": "题目、标准答案、来源、相关ID、人工签核与lineage；执行配置仍待预注册",
+  "files": {
+    "audit/reviewed_source.xlsx": "69209e555b9e70f396ce93551d48257b914eb8544bf3f9215bf77906ea0cae20",
+    "benchmark_preflight_pending.md": "e55192f031ebabfaa1e6352ecd48943d933e882730da7bb7400a80564907f8c7",
+    "candidate_proposal_gold_lineage.json": "96ddfc7d217ec6a0813b067aed55efc022f5ab677d0e7a78b99fb2b5e039cd3f",
+    "development_22_role_manifest.json": "b9fee23b98bac75278eca24514f245cd8960913c44868dca65916a37c3235016",
+    "human_metadata_confirmation.json": "1052a762a0c2e232c8252a0ee4fb662f798ec30fc93bbbbc26299ff3128f2ac5",
+    "human_signoff_receipt_46.jsonl": "582df67a7246041b69e01f5f99a302e7bc70ecacbdab77375e18851657991973",
+    "nonprimary_dispositions_18.json": "89e7e9fe836e5d73ad41e9390d346f3373c8837a8e448bfffb5e3b2f5bad5174",
+    "retrieval_gold_holdout_28.jsonl": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c",
+    "retrieval_gold_holdout_metadata.json": "aabb8d81b3d29031bed87bf821c1a3c759044d286347cb4dff62d2e5770636d7",
+    "signoff_archive_report.md": "f589cb6656446e6942b583211f0c630f5300618e7d3b581851cfe973cfeb0509",
+    "source_integrity.json": "53a58fbc4e0e1db5e5899e223beb09a6046dc7e14a7e57935e9817bb75f9da75",
+    "validation.json": "aa7727967b12bb92043a3d9b0aa8810c9303fa563d93becf439fe3d5885c17b1",
+    "validation.md": "8c5be4328d2936596b5941066b4d80290d20e9eaef43e9e1059f44f8a7154c51"
+  }
+}

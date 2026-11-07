@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH22104002 平原、丘陵 10.94 6.84 2.05 2.05 0.06 —",
+    "reason": "上下文明确支持2.05元",
+    "score": 1
+  },
+  "case_id": "p6s-0094",
+  "citation_correctness": {
+    "evidence": "WH22104002 平原、丘陵 10.94 6.84 2.05 2.05 0.06 —",
+    "reason": "引用编号[1]准确对应来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH22104002 平原、丘陵 10.94 6.84 2.05 2.05 0.06 —",
+    "reason": "涵盖所有必要条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH22104002 平原、丘陵 10.94 6.84 2.05 2.05 0.06 —",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "426df4f186e44f1c886aaac512a466b6",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

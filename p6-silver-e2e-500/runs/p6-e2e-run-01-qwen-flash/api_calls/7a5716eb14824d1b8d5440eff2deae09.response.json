@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:25.783644+08:00",
+  "conservative_cost_yuan": 0.0007104,
+  "error": null,
+  "latency_ms": 1266.091699944809,
+  "list_price_estimate_yuan": 0.0005469,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 采用VoIP（Voice over Internet Protocol）技术实现语音通话与视频会议。[1]  \n2. VoIP通过IP网络传输语音和多媒体数据，适用于家庭网络环境。[1]  \n3. 需确保家庭网络具备稳定带宽与低延迟支持。[3]  \n4. 建议使用全光组网提升网络质量以保障通信效果。[3]  \n5. 优先部署高优先级QoS策略保障音视频业务。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880984,
+    "id": "chatcmpl-66040ca1-44e0-9281-9f38-8e8b06897027",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 109,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2556,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2665
+    }
+  },
+  "usage_known": true
+}

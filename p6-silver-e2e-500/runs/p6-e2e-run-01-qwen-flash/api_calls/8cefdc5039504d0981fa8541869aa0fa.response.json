@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:24.493100+08:00",
+  "conservative_cost_yuan": 0.00144855,
+  "error": null,
+  "latency_ms": 3991.5642999112606,
+  "list_price_estimate_yuan": 0.00099105,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确拒答且理由充分。\",\n    \"evidence\": \"缺乏品牌间费用对比依据，无法作答。[1][2][3]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持。\",\n    \"evidence\": \"装维材料管理及维护作业耗材费用可估列，但未说明具体标准。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题核心，无遗漏。\",\n    \"evidence\": \"未提供不同品牌装维服务费用标准的对比信息。[1][2][3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容。\",\n    \"evidence\": \"服务范围以分光器或信息点为界，不涉及收费差异。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"正确拒答，符合规则。\",\n    \"evidence\": \"缺乏品牌间费用对比依据，无法作答。[1][2][3]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882060,
+    "id": "chatcmpl-0462ec2c-307f-9a0e-bbe7-fef11b82ab7d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 305,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3557,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3862
+    }
+  },
+  "usage_known": true
+}

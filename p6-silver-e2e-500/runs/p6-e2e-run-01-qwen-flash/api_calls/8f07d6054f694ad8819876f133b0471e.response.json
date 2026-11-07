@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:45.737347+08:00",
+  "conservative_cost_yuan": 0.00138825,
+  "error": null,
+  "latency_ms": 2271.3818000629544,
+  "list_price_estimate_yuan": 0.00094575,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"符合上下文尺寸要求\",\n    \"evidence\": \"（3）尺寸大小：不小于17×17mm（公差：±1mm)，正方形；\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"（3）尺寸大小：不小于17×17mm（公差：±1mm)，正方形；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要条件\",\n    \"evidence\": \"（3）尺寸大小：不小于17×17mm（公差：±1mm)，正方形；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"（3）尺寸大小：不小于17×17mm（公差：±1mm)，正方形；\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881723,
+    "id": "chatcmpl-8ab20ae6-ddbd-94a2-8145-a0eb9002f3a0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 295,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3355,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3650
+    }
+  },
+  "usage_known": true
+}

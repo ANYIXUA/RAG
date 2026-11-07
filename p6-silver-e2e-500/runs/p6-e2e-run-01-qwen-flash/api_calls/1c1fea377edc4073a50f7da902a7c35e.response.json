@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:14.575072+08:00",
+  "conservative_cost_yuan": 0.00146835,
+  "error": null,
+  "latency_ms": 3227.5919001549482,
+  "list_price_estimate_yuan": 0.00101535,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持三台巡检费用为18.24元\",\n    \"evidence\": \"基站主设备巡检按三台为计量单位，市区综合单价为18.24元/次。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"三台设备定期巡检费用约为18.24元每次。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖费用计算核心条件且无遗漏\",\n    \"evidence\": \"维护费用以“三台·次”为单位计算，不足三台按三台计。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致且支持内容\",\n    \"evidence\": \"三台设备定期巡检费用约为18.24元每次。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882111,
+    "id": "chatcmpl-caee1ce5-4d89-95e1-8970-10439c3ad669",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 302,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3749,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4051
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,23 @@
+{
+  "at": "2026-11-05T20:10:54.181603+08:00",
+  "budget_yuan_total_including_prior": 20,
+  "data_export_authorization": {
+    "authorization_date": "2026-11-05",
+    "authorized_data": [
+      "500 Silver question texts",
+      "retrieved frozen corpus context",
+      "Silver reference answers and evidence for judging",
+      "actual RAG answers for judging"
+    ],
+    "budget_yuan": 20,
+    "destination": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "not_authorized": [
+      "secrets",
+      "human review records",
+      "P5 Holdout execution"
+    ],
+    "user_budget_reply": "上限 ¥20，达到即停止",
+    "user_data_export_reply": "授权上述数据发送，继续真实执行"
+  },
+  "user_model_change": "改成qwen-flash模型"
+}

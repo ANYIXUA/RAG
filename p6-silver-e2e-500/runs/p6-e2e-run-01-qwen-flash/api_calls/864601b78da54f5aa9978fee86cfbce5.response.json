@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:30.961964+08:00",
+  "conservative_cost_yuan": 0.0013951500000000002,
+  "error": null,
+  "latency_ms": 3036.973200039938,
+  "list_price_estimate_yuan": 0.00094515,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"答案错误，应为表—03\",\n    \"evidence\": \"1 维护分项作业费 1.1 表—03 合计\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"事实与上下文矛盾\",\n    \"evidence\": \"1 维护分项作业费 1.1 表—03 合计\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分回答但遗漏关键信息\",\n    \"evidence\": \"1 维护分项作业费 1.1 表—03 合计\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"[2] 1 维护分项作业费 1.1 表—03 合计\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_table_reference\",\n    \"contradiction_with_context\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881947,
+    "id": "chatcmpl-8328264e-0341-9f9f-bf08-5c649e4ffdc0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 300,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3301,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3601
+    }
+  },
+  "usage_known": true
+}

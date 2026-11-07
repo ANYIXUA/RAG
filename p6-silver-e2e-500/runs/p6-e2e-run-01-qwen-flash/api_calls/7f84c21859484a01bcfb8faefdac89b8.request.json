@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:52.610289+08:00",
+  "input_token_upper_bound": 1185,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0108"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在2.5G非对称模式下，光路由上行光口的发送光功率范围是多少？ 收光功率 光衰 光信号强度 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "7f84c21859484a01bcfb8faefdac89b8",
+  "reserved_yuan": 0.0005925
+}

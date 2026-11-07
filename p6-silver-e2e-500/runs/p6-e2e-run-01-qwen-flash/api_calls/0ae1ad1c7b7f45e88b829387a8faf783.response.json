@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:40.912506+08:00",
+  "conservative_cost_yuan": 0.00132405,
+  "error": null,
+  "latency_ms": 2485.647900030017,
+  "list_price_estimate_yuan": 0.00094305,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文\",\n    \"evidence\": \"高速公路中人孔的检修按需进行\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏‘半年’周期关键信息\",\n    \"evidence\": \"高速公路中人孔的检修按需进行\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"人孔内抽水、整理光缆走线等属日常维护内容。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"multiple_references_in_one_point\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881718,
+    "id": "chatcmpl-d10429b7-d468-9084-95c1-7348f08d347b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 254,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3747,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4001
+    }
+  },
+  "usage_known": true
+}

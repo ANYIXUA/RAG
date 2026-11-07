@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:32.055125+08:00",
+  "conservative_cost_yuan": 0.0008840999999999999,
+  "error": null,
+  "latency_ms": 1583.355699898675,
+  "list_price_estimate_yuan": 0.0006785999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 在拉线塔上安装小型化定向通信天线，技工人工费与利润之和为96.10元。[1]  \n2. 该费用对应项目编码WH23111011，适用于拉线塔（支撑杆、桅杆）上安装场景。[1]  \n3. 人工费包含技工与普工成本，利润部分已单独列示。[1]  \n4. 该单价为综合单价，含人工、管理费及利润。[1]  \n5. 若需其他高度或环境的报价，需参考对应分项。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881110,
+    "id": "chatcmpl-114fc23d-947d-92bf-a2ce-9fdf7e242a89",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 137,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3154,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3291
+    }
+  },
+  "usage_known": true
+}

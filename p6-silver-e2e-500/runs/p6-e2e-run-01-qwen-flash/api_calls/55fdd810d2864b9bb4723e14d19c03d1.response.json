@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:33.197728+08:00",
+  "conservative_cost_yuan": 0.00072105,
+  "error": null,
+  "latency_ms": 1174.0802000276744,
+  "list_price_estimate_yuan": 0.00057405,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 镀锌层应无剥离、凸起，附着性良好。[1]  \n2. 检查时需确认镀锌层无起泡、翘皮现象。[1]  \n3. 发现异常须及时处理，确保无返锈。[1]  \n4. 属于塔体构件半年检查项目之一。[1]  \n5. 重点检查部位包括塔件表面及焊接处。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880872,
+    "id": "chatcmpl-3f55983c-8c50-9ba5-a8e9-d1285291f566",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 98,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2847,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2945
+    }
+  },
+  "usage_known": true
+}

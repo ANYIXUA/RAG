@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:16.389224+08:00",
+  "conservative_cost_yuan": 0.000687,
+  "error": null,
+  "latency_ms": 1236.2240999937057,
+  "list_price_estimate_yuan": 0.0005115,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 市内街道架空通信线路最低缆线到屋脊的垂直净距为1.5米。[1]  \n2. 此标准出自《电信基础设施维护规程》第343页表D.0.2。[1]  \n3. 该距离适用于市内街道的架空通信线路。[1]  \n4. 屋脊指建筑物最高点，需确保缆线不接触。[1]  \n5. 若有特殊建筑或环境，应参照具体规范执行。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880855,
+    "id": "chatcmpl-ca46956b-03ae-9acc-8cdf-95e94f8a4d5a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2240,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2357
+    }
+  },
+  "usage_known": true
+}

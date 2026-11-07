@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:21.351467+08:00",
+  "conservative_cost_yuan": 0.0007155,
+  "error": null,
+  "latency_ms": 1111.4562000147998,
+  "list_price_estimate_yuan": 0.0005775,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 电缆操作及走线架作业包括开箱检验与清洁搬运。[1]  \n2. 需进行打孔并固定吊挂活支架。[1]  \n3. 组装电缆走道并调整其垂直与水平度。[1]  \n4. 完成安装固定后清理现场。[1]  \n5. 作业流程以实际发生次数或数量为准。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881100,
+    "id": "chatcmpl-d95073fd-eaf5-9ccd-bbf1-8df58f0382a7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 92,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2930,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3022
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0447",
+  "citation_correctness": {
+    "evidence": "装维服务内容涉及智能组网、家庭总线等技术要求。[3]",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "无明确品牌间价格差异的官方数据支持。[3]",
+    "reason": "涵盖问题核心，无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "服务标准包括故障处理、布线安装及场景设置等技能。[2]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "77c9d7becfe04176b9e459ddbcb43259",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "当前资料未提及不同品牌装维服务的价格信息。[1]",
+    "reason": "明确说明无相关信息",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

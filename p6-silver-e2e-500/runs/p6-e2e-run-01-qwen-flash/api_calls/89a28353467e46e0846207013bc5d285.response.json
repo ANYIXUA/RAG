@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:38.326344+08:00",
+  "conservative_cost_yuan": 0.0007622999999999999,
+  "error": null,
+  "latency_ms": 1194.6592000313103,
+  "list_price_estimate_yuan": 0.0006033,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 高速公路中人孔的检修周期为半年。[1]  \n2. 人孔检修按需进行，可结合实际情况缩短周期。[1]  \n3. 人孔内抽水、整理光缆走线等属日常维护内容。[3]  \n4. 检修工作包括清理淤泥、杂物及更换井盖等。[2]  \n5. 井号油漆、描字需及时完成，确保清晰可见。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880877,
+    "id": "chatcmpl-ddd2e971-996b-9212-982f-6d6a0e7f92bc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2962,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3068
+    }
+  },
+  "usage_known": true
+}

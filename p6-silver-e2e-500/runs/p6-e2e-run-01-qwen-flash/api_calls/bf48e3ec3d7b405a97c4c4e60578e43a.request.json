@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:15.197545+08:00",
+  "input_token_upper_bound": 1117,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0060"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "WH33121 更换单体电池的容量门槛是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "bf48e3ec3d7b405a97c4c4e60578e43a",
+  "reserved_yuan": 0.0005585
+}

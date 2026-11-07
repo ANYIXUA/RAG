@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:39.315259+08:00",
+  "conservative_cost_yuan": 0.00121605,
+  "error": null,
+  "latency_ms": 2355.1036999560893,
+  "list_price_estimate_yuan": 0.00079755,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"未提供参考证据支持\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文[1]\",\n    \"evidence\": \"服务能力 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖关键评估维度\",\n    \"evidence\": \"包括故障处理、服务礼仪及沟通技巧等综合服务能力。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"服务能力 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可部分回答，非拒答场景\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_coverage\",\n    \"repeated_citation\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882017,
+    "id": "chatcmpl-85e18eb6-b3ee-96b8-a50c-fafcdd2f20e5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 279,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2527,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2806
+    }
+  },
+  "usage_known": true
+}

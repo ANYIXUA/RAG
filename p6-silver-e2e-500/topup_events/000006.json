@@ -1,0 +1,143 @@
+{
+  "previous_sha256": "3a28edddf0f71696cfaf3c95120bb6fb48a43ae4f45870b38950ccf00d1991ef",
+  "record": {
+    "batch": 3,
+    "candidates": [
+      {
+        "answer": "应检查防雷箱连接处部件无锈蚀，接地连线齐全、接头紧固。",
+        "evidence": [
+          {
+            "excerpt": "防雷箱工作正常，连接处部件无锈蚀，接地连线齐全、接头紧固。",
+            "passage_id": "ed99004421c5de5fdf2e6cbf"
+          }
+        ],
+        "question": "防雷箱连接处部件的锈蚀情况应如何处理？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "允许误差≤5°",
+        "evidence": [
+          {
+            "excerpt": "天线方位角测试 允许误差≤5° 季度",
+            "passage_id": "ed99004421c5de5fdf2e6cbf"
+          }
+        ],
+        "question": "基站天线方位角测试的允许误差是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "铁塔中心整体垂直偏差≤1/1500",
+        "evidence": [
+          {
+            "excerpt": "四角塔垂直度测量 铁塔中心整体垂直偏差≤1/1500 半年",
+            "passage_id": "ac420694498f6bc389a85f68"
+          }
+        ],
+        "question": "铁塔中心整体垂直偏差的指标是怎样的？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0467",
+          "expected_behavior": "answer",
+          "generation_batch": 3,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271109,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "防雷箱连接处部件的锈蚀情况应如何处理？",
+          "question_type": "exact_fact",
+          "reference_answer": "应检查防雷箱连接处部件无锈蚀，接地连线齐全、接头紧固。",
+          "source_chunk_ids": [
+            "ed99004421c5de5fdf2e6cbf"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "ed99004421c5de5fdf2e6cbf",
+              "excerpt": "防雷箱工作正常，连接处部件无锈蚀，接地连线齐全、接头紧固。"
+            }
+          ],
+          "source_page": 56,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0468",
+          "expected_behavior": "answer",
+          "generation_batch": 3,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271109,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "基站天线方位角测试的允许误差是多少？",
+          "question_type": "exact_fact",
+          "reference_answer": "允许误差≤5°",
+          "source_chunk_ids": [
+            "ed99004421c5de5fdf2e6cbf"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "ed99004421c5de5fdf2e6cbf",
+              "excerpt": "天线方位角测试 允许误差≤5° 季度"
+            }
+          ],
+          "source_page": 56,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0469",
+          "expected_behavior": "answer",
+          "generation_batch": 3,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271109,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "铁塔中心整体垂直偏差的指标是怎样的？",
+          "question_type": "exact_fact",
+          "reference_answer": "铁塔中心整体垂直偏差≤1/1500",
+          "source_chunk_ids": [
+            "ac420694498f6bc389a85f68"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "ac420694498f6bc389a85f68",
+              "excerpt": "四角塔垂直度测量 铁塔中心整体垂直偏差≤1/1500 半年"
+            }
+          ],
+          "source_page": 57,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

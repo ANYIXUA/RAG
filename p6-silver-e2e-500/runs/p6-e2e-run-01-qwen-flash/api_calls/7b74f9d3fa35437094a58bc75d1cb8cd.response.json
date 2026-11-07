@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:35.144570+08:00",
+  "conservative_cost_yuan": 0.0008108999999999999,
+  "error": null,
+  "latency_ms": 1625.3714999184012,
+  "list_price_estimate_yuan": 0.0006009,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH12006002直埋式电杆地线消耗量为0.29条。[1]  \n2. 该数据来源于《电信基础设施维护规程》第192页表10.2.2.6。[1]  \n3. 项目编码WH12006002对应直埋式地线安装。[1]  \n4. 消耗量单位为“条”，适用于直埋式电杆地线施工。[1]  \n5. 其他相关项目如更换或安装地线的消耗量可参考其他条目。[2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880933,
+    "id": "chatcmpl-317e1bd0-9c35-903a-9897-686d41d15671",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 140,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2606,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2746
+    }
+  },
+  "usage_known": true
+}

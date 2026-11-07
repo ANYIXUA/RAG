@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "WH41105001 敷设硬质PVC 管 47.58 32.28 8.84 6.46 消耗量 0.28 —",
+    "reason": "上下文支持47.58元与0.28消耗量",
+    "score": 1
+  },
+  "case_id": "p6s-0097",
+  "citation_correctness": {
+    "evidence": "WH41105001 敷设硬质PVC 管 47.58 32.28 8.84 6.46 消耗量 0.28 —",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "另一参考项显示单价31.01元/十米，消耗量0.17。[2]",
+    "reason": "涵盖单价与消耗量，且指出差异",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH41105001 敷设硬质PVC 管 47.58 32.28 8.84 6.46 消耗量 0.28 —",
+    "reason": "每项事实均有对应原文支持",
+    "score": 1
+  },
+  "flags": [
+    "multi_source_discrepancy_noted",
+    "unit_consistency_flagged"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "72d61a12180541ccb7a85a35a6e8733e",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

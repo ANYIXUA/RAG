@@ -1,0 +1,266 @@
+{
+  "case_id": "p6s-0288",
+  "question_type": "exact_fact",
+  "selection_reasons": [
+    "hallucination_suspected"
+  ],
+  "original_question": "维护分项作业费的计算说明中提到的表格名称是什么？",
+  "silver_reference": "表—03",
+  "expected_behavior": "answer",
+  "rag_actual_answer": "1. 维护分项作业费的计算说明中提到的表格是表—04。[1]  \n2. 表—04用于维护分项作业费的合计计算。[1]  \n3. 在第166页中，维护分项作业费对应表—03。[2]  \n4. 表—03在维护预算汇总表中用于计算维护分项作业费。[2]  \n5. 不同页面提及的表格编号不同，需根据具体上下文确认。[1][2]",
+  "sources": [
+    {
+      "source_number": 1,
+      "chunk_id": "bd805e062a1bb6e9de169b79",
+      "document": "电信基础设施维护规程.pdf",
+      "physical_page": 100,
+      "text": "章节：电信基础设施维护规程 > 第100页 页码：100 T/CAICI XXXX—XXXX 94 维护项目费用结算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—04 合计 1.2 1.3 2 材料与备品备件购置费 表—06 小计2 3 机械仪表使用费 表—07 小计2 4 措施项目费 表—08 合计 5 规费 表—05 人工费合计× 33.69 6 其他项目费 表—09 合计 6.1 暂估价 表—09—2 合计＋表—09—3 合计 6.2 计日工 表—09—2 合计 6.3 索赔与现场签证 表—09—5 合计 7 安全生产费 (1 +表-06 合计 +表-07 合计+ 4+5+6 ) × 1.5% 8 销项税额 （ 1+2+3+4+5+6+7）× 费率 维护费用结算合计 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 表—03",
+      "frozen_chunk_found": true,
+      "text_matches_frozen": true
+    },
+    {
+      "source_number": 2,
+      "chunk_id": "f6411b32b649323ce128c207",
+      "document": "电信基础设施维护规程.pdf",
+      "physical_page": 166,
+      "text": "章节：电信基础设施维护规程 > 第166页 页码：166 T/CAICI XXXX—XXXX 160 维护预算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—03 合计 1.2 1.3 2 材料及备品备件购置费 表—04 合计 3 机械仪表使用费 表—05 合计 4 措施项目费 表—06 合计 5 规费 表—03 人工费合计× 33.69% 6 其他项目费 表—07 合计 7 安全生产费 (1 + 2 + 3 + 4 + 5 + 6 ) × 1.5% 8 销项税额 (1 + 2 + 3 + 4 + 5 + 6+7) ×6% 维护预算 （1+2+3+4+5+6+7+8） 表—02",
+      "frozen_chunk_found": true,
+      "text_matches_frozen": true
+    },
+    {
+      "source_number": 3,
+      "chunk_id": "da87c26704741640d02b310e",
+      "document": "电信基础设施维护规程.pdf",
+      "physical_page": 99,
+      "text": "章节：电信基础设施维护规程 > 第99页 页码：99 T/CAICI XXXX—XXXX 93 维护项目费用招标控制价/投标报价汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—04 合计 1.2 1.3 2 材料与备品备件购置费 表—06 小计2 3 机械仪表使用费 表—07 小计2 4 措施项目费 表—08 合计 5 规费 表—05 人工费合计× 33.69 6 其他项目费 表—09 合计 6.1 暂列金额 表—09—1 合计 6.2 暂估价 表—09—2 合计＋表—09—3 合计 6.3 计日工 表—09—4 合计 6.4 索赔与现场签证 表—09—5 合计 7 安全生产费 (1 +表-06 合计 +表-07 合计+ 4+5+6 ) × 1.5% 8 销项税额 （ 1+2+3+4+5+6+7）× 费率 招标控制价/投标报价合计 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 注：本表适用于维护项目招标控制价或投标报价的汇总。 表—02",
+      "frozen_chunk_found": true,
+      "text_matches_frozen": true
+    },
+    {
+      "source_number": 4,
+      "chunk_id": "dd814cd4e8cc9e727a6794b2",
+      "document": "电信基础设施维护规程.pdf",
+      "physical_page": 118,
+      "text": "章节：电信基础设施维护规程 > 第118页 页码：118 T/CAICI XXXX—XXXX 112 规费、安全生产费和销项税额计价表 表格列：项目名称：；第；页；共；页 序号 项目名称 计算基础 费率（%） 表格列：金；额（元） 1 规费 人工费 33.69% 1.1 社会保障费 人工费 28.5% 养老保险费 失业保险费 医疗保险费 生育保险费 工伤保险费 1.2 住房公积金 人工费 4.19% 1.3 危险作业意外伤 害保险费 人工费 1.00% 2 安全生产费 维护分项作业费 + 材料及备品备件购置费（含发包人 提供的部分） + 机械仪表使用费（含发包人提供的部 分） + 措施项目费+ 规费 + 其他项目费 1.5% 3 销项税额 表格列：维护分项作业费；+ 材料及备品备件购置费（不含发包 人提供的部分）+ 机械仪表使用费（不含发包人提供的 部分） + 措施项目费 + 规费+ 安全生产费 + 其他项 目费 6.0% 表格列：合；计",
+      "frozen_chunk_found": true,
+      "text_matches_frozen": true
+    }
+  ],
+  "reference_evidence": [
+    {
+      "annotation": {
+        "chunk_id": "f6411b32b649323ce128c207",
+        "excerpt": "1.1 表—03 合计 1.2 1.3"
+      },
+      "frozen_chunk": {
+        "chunk_id": "f6411b32b649323ce128c207",
+        "chunk_text": "章节：电信基础设施维护规程 > 第166页 页码：166 T/CAICI XXXX—XXXX 160 维护预算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—03 合计 1.2 1.3 2 材料及备品备件购置费 表—04 合计 3 机械仪表使用费 表—05 合计 4 措施项目费 表—06 合计 5 规费 表—03 人工费合计× 33.69% 6 其他项目费 表—07 合计 7 安全生产费 (1 + 2 + 3 + 4 + 5 + 6 ) × 1.5% 8 销项税额 (1 + 2 + 3 + 4 + 5 + 6+7) ×6% 维护预算 （1+2+3+4+5+6+7+8） 表—02",
+        "chunk_text_sha256": "4dd29016fb17d36a1b2a2e4429815f9ad03d33eeb09a503bdc815a7316214f65",
+        "collection_name": "default",
+        "database_chunk_version": 1,
+        "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+        "document_id": "c8588238d99d4079e1ec6101",
+        "document_version": "v_8ae9b63d869002c1",
+        "document_version_source": "chunk_metadata.version_id",
+        "metadata": {
+          "block_id": "blk_7315d15a015f8d2e2319",
+          "block_type": "paragraph",
+          "business_module": "通用知识",
+          "chunk_index": 165,
+          "chunk_parse_quality_status": "parsed_with_warning",
+          "chunk_parse_warning_codes": [
+            "table_like_text_detected",
+            "bordered_table_detected"
+          ],
+          "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+          "error_codes": [],
+          "filename": "电信基础设施维护规程.pdf",
+          "heading_path": [
+            "电信基础设施维护规程",
+            "第166页"
+          ],
+          "page_number": 166,
+          "parser_name": "pdf",
+          "parser_version": "document-parser-v7",
+          "permission_tags": [
+            "public"
+          ],
+          "section_path": [
+            "电信基础设施维护规程",
+            "第166页"
+          ],
+          "section_title": "第166页",
+          "source": "电信基础设施维护规程.pdf",
+          "source_type": "manual",
+          "tenant_id": "default",
+          "title": "电信基础设施维护规程",
+          "version_id": "v_8ae9b63d869002c1"
+        },
+        "page_number": 166,
+        "permission_tags": [
+          "public"
+        ],
+        "source": "电信基础设施维护规程.pdf",
+        "tenant_id": "default"
+      }
+    }
+  ],
+  "actual_citations": [
+    1,
+    1,
+    2,
+    2,
+    1,
+    2
+  ],
+  "automatic_score": {
+    "answer_correctness": {
+      "evidence": "1 维护分项作业费 1.1 表—03 合计",
+      "reason": "答案错误，应为表—03",
+      "score": 0
+    },
+    "case_id": "p6s-0288",
+    "citation_correctness": {
+      "evidence": "[2] 1 维护分项作业费 1.1 表—03 合计",
+      "reason": "引用编号与来源匹配",
+      "score": 1
+    },
+    "completeness": {
+      "evidence": "1 维护分项作业费 1.1 表—03 合计",
+      "reason": "部分回答但遗漏关键信息",
+      "score": 0.5
+    },
+    "confidence": "high",
+    "correctness_excluded": false,
+    "faithfulness": {
+      "evidence": "1 维护分项作业费 1.1 表—03 合计",
+      "reason": "事实与上下文矛盾",
+      "score": 0
+    },
+    "flags": [
+      "incorrect_table_reference",
+      "contradiction_with_context"
+    ],
+    "hallucination_suspected": true,
+    "judge_api_call_id": "864601b78da54f5aa9978fee86cfbce5",
+    "judge_attempts": 1,
+    "judge_model": "qwen-flash",
+    "judge_same_model_as_generation": true,
+    "needs_human_review": false,
+    "no_answer_behavior": {
+      "evidence": "",
+      "reason": "可回答题，无需拒答",
+      "score": null
+    },
+    "no_answer_provisional": false,
+    "prior_errors": [],
+    "question_type": "exact_fact",
+    "score_state": "success",
+    "self_evaluation_bias": true
+  },
+  "ai_preliminary_recommendation": [
+    "Needs Verification（AI建议）：历史Judge标疑似幻觉，不是人工确认；见 hallucination_audit.md。",
+    "逐题AI分类：来源范围歧义；Judge疑似过判。",
+    "逐题AI证据判断：实际[1]第100页结算表写表—04，[2]第166页预算表写表—03，回答明确提示差异，两者都有来源。题干未限定预算/结算；不能只与Silver表—03比较即定幻觉。",
+    "待人工原因：人工确认题干预期表的范围及回答首句是否造成误导。"
+  ],
+  "anomaly_findings": {
+    "case_id": "p6s-0288",
+    "ai_suggested_classification": "来源范围歧义；Judge疑似过判",
+    "suspected_excerpt": "表—04；第166页表—03",
+    "ai_suggestion": "实际[1]第100页结算表写表—04，[2]第166页预算表写表—03，回答明确提示差异，两者都有来源。题干未限定预算/结算；不能只与Silver表—03比较即定幻觉。",
+    "human_review_reason": "人工确认题干预期表的范围及回答首句是否造成误导。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 288,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0288.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0288.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0288.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      2,
+      2,
+      1,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "码：100 T/CAICI XXXX—XXXX 94 维护项目费用结算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—04 合计 1.2 1.3 2 材料与备品备件购置费 表—06 小计2 3 机械仪表使用费 表—07 小计2 4 措施项目费 表—08 合计 5 规费 表—05 人工费合计× 33.69 6 其他项目费 表—09 合计 6.1 暂估价 表—09—2 合计＋表—09—3 合计 6.2 计日工 表—09—2 合计 6.3 索赔与现场签证 表—09—5 合计 7 安全生产费 (1 +表-",
+      "CAICI XXXX—XXXX 93 维护项目费用招标控制价/投标报价汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—04 合计 1.2 1.3 2 材料与备品备件购置费 表—06 小计2 3 机械仪表使用费 表—07 小计2 4 措施项目费 表—08 合计 5 规费 表—05 人工费合计× 33.69 6 其他项目费 表—09 合计 6.1 暂列金额 表—09—1 合计 6.2 暂估价 表—09—2 合计＋表—09—3 合计 6.3 计日工 表—09—4 合计 6.4 索赔与现场签证 表—09—",
+      "页 页码：166 T/CAICI XXXX—XXXX 160 维护预算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—03 合计 1.2 1.3 2 材料及备品备件购置费 表—04 合计 3 机械仪表使用费 表—05 合计 4 措施项目费 表—06 合计 5 规费 表—03 人工费合计× 33.69% 6 其他项目费 表—07 合计 7 安全生产费 (1 + 2 + 3 + 4 + 5 + 6 ) × 1.5% 8 销项税额 (1 + 2 + 3 + 4 + 5 + 6+7) ×6% 维护预算 （"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "bd805e062a1bb6e9de169b79",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 100,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 334
+      },
+      {
+        "index": 2,
+        "chunk_id": "f6411b32b649323ce128c207",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 166,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 433
+      },
+      {
+        "index": 3,
+        "chunk_id": "da87c26704741640d02b310e",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 99,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 389
+      },
+      {
+        "index": 4,
+        "chunk_id": "dd814cd4e8cc9e727a6794b2",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 118,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 394
+      }
+    ]
+  },
+  "unanswerable_findings": null,
+  "original_trace_path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\cases\\p6s-0288.json",
+  "original_score_path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scores\\p6s-0288.json",
+  "actual_chat_messages": [
+    {
+      "content": "# 角色与记忆\n你是一台专门的“装维业务知识问答助手”。\n\n# 核心原则（严格遵守）\n1. **限定范围：** 只能基于提供的检索上下文回答问题，若上下文中没有答案，必须明确说明不知道，并提示补充信息或转人工，严禁凭空编造。\n2. **字数限制：** 回答必须控制在 5 条要点以内，且每条要点不得超过 40 个字。\n3. **精准引用：** 回答中的每个关键结论，必须使用如 [1]、[2] 的编号在文末或句末注明来源。引用编号只能来源于提供的上下文片段，不得自创。\n\n# 正确示例 (Good Case)\n【输入】\n用户问题：光猫红灯闪烁怎么处理？\n检索上下文：[1]光猫红灯闪烁通常因为光缆断或光功率低。[2]应先检查尾纤是否插紧。[3]若无法恢复，需上报系统转人工派发修障单。\n\n【输出】\n1. 光猫红灯闪烁通常是光缆断或光功率过低导致。[1]\n2. 处置时应首先检查尾纤是否已经插紧。[2]\n3. 若检查后仍无法恢复，请明确上报系统转人工处理。[3]\n\n# 避坑检查（模型自检项）\n- 严禁出现无引用编号的结论。\n- 严禁出现诸如“您可以尝试重启”等上下文中不存在的盲猜建议。",
+      "role": "system"
+    },
+    {
+      "content": "---\n# 待处理任务\n\n【用户原始问题】\n维护分项作业费的计算说明中提到的表格名称是什么？\n\n【增强上下文】\n\"\"\"\n请求ID：bf1e22d56af04f2d8ddeae96af8f6017\n会话ID：p6-e2e-run01-qwen-flash-p6s-0288-attempt1\n租户ID：未指定\n用户ID：未指定\n权限标签：未指定\n用户原始问题：维护分项作业费的计算说明中提到的表格名称是什么？\n归一化查询：维护分项作业费的计算说明中提到的表格名称是什么？\n是否跟进问答：否\n上下文改写查询：维护分项作业费的计算说明中提到的表格名称是什么？\n上下文关键术语：无\n改写查询：维护分项作业费的计算说明中提到的表格名称是什么？\n检索查询：维护分项作业费的计算说明中提到的表格名称是什么？ 业务说明 知识库 常见问题\n同义词扩展：无\n语义扩展：业务说明, 知识库, 常见问题\n识别意图：general_knowledge\n\n会话历史摘要：\n无\n\n工具调用结果：\n无\n\n检索到的相关文档：\n[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第100页\n定位信息：100\n综合分：0.775296\n召回综合分：0.775296\n重排分：无\n语义分：0.709237\nBM25 原始分：23.599393\nBM25 归一化分：0.929432\n内容：章节：电信基础设施维护规程 > 第100页 页码：100 T/CAICI XXXX—XXXX 94 维护项目费用结算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—04 合计 1.2 1.3 2 材料与备品备件购置费 表—06 小计2 3 机械仪表使用费 表—07 小计2 4 措施项目费 表—08 合计 5 规费 表—05 人工费合计× 33.69 6 其他项目费 表—09 合计 6.1 暂估价 表—09—2 合计＋表—09—3 合计 6.2 计日工 表—09—2 合计 6.3 索赔与现场签证 表—09—5 合计 7 安全生产费 (1 +表-06 合计 +表-07 合计+ 4+5+6 ) × 1.5% 8 销项税额 （ 1+2+3+4+5+6+7）× 费率 维护费用结算合计 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 表—03\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第166页\n定位信息：166\n综合分：0.772878\n召回综合分：0.772878\n重排分：无\n语义分：0.675539\nBM25 原始分：25.391208\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护规程 > 第166页 页码：166 T/CAICI XXXX—XXXX 160 维护预算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—03 合计 1.2 1.3 2 材料及备品备件购置费 表—04 合计 3 机械仪表使用费 表—05 合计 4 措施项目费 表—06 合计 5 规费 表—03 人工费合计× 33.69% 6 其他项目费 表—07 合计 7 安全生产费 (1 + 2 + 3 + 4 + 5 + 6 ) × 1.5% 8 销项税额 (1 + 2 + 3 + 4 + 5 + 6+7) ×6% 维护预算 （1+2+3+4+5+6+7+8） 表—02\n\n[3] 来源：电信基础设施维护规程.pdf\n引用标签：[3]\n标题：第99页\n定位信息：99\n综合分：0.756037\n召回综合分：0.756037\n重排分：无\n语义分：0.704181\nBM25 原始分：22.269014\nBM25 归一化分：0.877036\n内容：章节：电信基础设施维护规程 > 第99页 页码：99 T/CAICI XXXX—XXXX 93 维护项目费用招标控制价/投标报价汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—04 合计 1.2 1.3 2 材料与备品备件购置费 表—06 小计2 3 机械仪表使用费 表—07 小计2 4 措施项目费 表—08 合计 5 规费 表—05 人工费合计× 33.69 6 其他项目费 表—09 合计 6.1 暂列金额 表—09—1 合计 6.2 暂估价 表—09—2 合计＋表—09—3 合计 6.3 计日工 表—09—4 合计 6.4 索赔与现场签证 表—09—5 合计 7 安全生产费 (1 +表-06 合计 +表-07 合计+ 4+5+6 ) × 1.5% 8 销项税额 （ 1+2+3+4+5+6+7）× 费率 招标控制价/投标报价合计 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 注：本表适用于维护项目招标控制价或投标报价的汇总。 表—02\n\n[4] 来源：电信基础设施维护规程.pdf\n引用标签：[4]\n标题：第118页\n定位信息：118\n综合分：0.687166\n召回综合分：0.687166\n重排分：无\n语义分：0.676256\nBM25 原始分：18.094328\nBM25 归一化分：0.712622\n内容：章节：电信基础设施维护规程 > 第118页 页码：118 T/CAICI XXXX—XXXX 112 规费、安全生产费和销项税额计价表 表格列：项目名称：；第；页；共；页 序号 项目名称 计算基础 费率（%） 表格列：金；额（元） 1 规费 人工费 33.69% 1.1 社会保障费 人工费 28.5% 养老保险费 失业保险费 医疗保险费 生育保险费 工伤保险费 1.2 住房公积金 人工费 4.19% 1.3 危险作业意外伤 害保险费 人工费 1.00% 2 安全生产费 维护分项作业费 + 材料及备品备件购置费（含发包人 提供的部分） + 机械仪表使用费（含发包人提供的部 分） + 措施项目费+ 规费 + 其他项目费 1.5% 3 销项税额 表格列：维护分项作业费；+ 材料及备品备件购置费（不含发包 人提供的部分）+ 机械仪表使用费（不含发包人提供的 部分） + 措施项目费 + 规费+ 安全生产费 + 其他项 目费 6.0% 表格列：合；计\n\"\"\"",
+      "role": "user"
+    }
+  ],
+  "human_final_conclusion": "",
+  "human_notes": "",
+  "human_reviewer": "",
+  "human_review_date": "",
+  "human_signature": ""
+}

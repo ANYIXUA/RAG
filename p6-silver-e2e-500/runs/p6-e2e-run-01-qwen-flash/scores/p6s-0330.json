@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "计量单位：工日、 站·次 维护分项作业",
+    "reason": "单位与单价与上下文一致",
+    "score": 1
+  },
+  "case_id": "p6s-0330",
+  "citation_correctness": {
+    "evidence": "站·次 次 38.30 23.94 7.18 7.18 0.21 —",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "站址业主维系:站址业主回访和满意度调查等。",
+    "reason": "涵盖问题所有条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH24103003 站址业主维系 站·次 次 38.30",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "correct_unit_and_price",
+    "proper_citation",
+    "complete_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "833082e7d0db49ec931b3cca43603cce",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

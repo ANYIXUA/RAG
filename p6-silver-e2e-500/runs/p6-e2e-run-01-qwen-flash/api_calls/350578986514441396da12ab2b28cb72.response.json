@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:37.826503+08:00",
+  "conservative_cost_yuan": 0.0007310999999999999,
+  "error": null,
+  "latency_ms": 1349.7969000600278,
+  "list_price_estimate_yuan": 0.0005660999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 突发事件发生时，技术人员应迅速赶赴现场并判断事件性质。[1]  \n2. 一般突发事件由维护企业现场处理并通报结果。[1]  \n3. 重大突发事件需全天看护，并立即通知运营企业确认。[2]  \n4. 处理方案应按抢修、割接或迁移流程实施。[2]  \n5. 应依据应急预案开展应急处置，包含组织、分工与资源配置。[4.7.0.6]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881176,
+    "id": "chatcmpl-58509917-2630-9ba1-9432-a9a2be429f5b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2674,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2784
+    }
+  },
+  "usage_known": true
+}

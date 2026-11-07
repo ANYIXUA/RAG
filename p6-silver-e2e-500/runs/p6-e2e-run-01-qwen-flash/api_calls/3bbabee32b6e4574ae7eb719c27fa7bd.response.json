@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:37.259117+08:00",
+  "conservative_cost_yuan": 0.0008648999999999999,
+  "error": null,
+  "latency_ms": 2152.849599951878,
+  "list_price_estimate_yuan": 0.0006579,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护分项作业名称含“光缆接头”的项目编码为WH12021。[3]  \n2. 该编码对应的工作内容包括挖、松填光缆沟及接头坑。[3]  \n3. 项目编码WH12021适用于光缆接头坑的开挖与回填作业。[3]  \n4. 光缆接头相关维护工作归类于挖填接头坑类项目。[3]  \n5. 项目编码WH12021在表10.2.2.21中明确列出。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881115,
+    "id": "chatcmpl-84610580-a401-9503-a85d-e95304498ab0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 138,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3006,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3144
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "检测制冷剂压力和制冷效果，根据检测结果及时上报，并通知专业维修队伍补加制冷剂。",
+    "reason": "上下文明确支持检测与补加措施",
+    "score": 1
+  },
+  "case_id": "p6s-0088",
+  "citation_correctness": {
+    "evidence": "检测制冷剂压力和制冷效果，根据检测结果及时上报，并通知专业维修队伍补加制冷剂。",
+    "reason": "引用编号[6]对应实际来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检测制冷剂压力和制冷效果，根据检测结果及时上报，并通知专业维修队伍补加制冷剂。",
+    "reason": "覆盖压力异常处理全流程",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检测制冷剂压力和制冷效果，根据检测结果及时上报，并通知专业维修队伍补加制冷剂。",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [
+    "multiple_citations_same_chunk"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "97a5442941904ad199ee251d6d340d9f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,64 @@
+{
+  "previous_sha256": "e6c2fe316ba295eda3f5515c8e0c3c85b0c02e5f8ac494f15c8fa0338f1b27e3",
+  "record": {
+    "batch": 14,
+    "candidates": [
+      {
+        "assumed_out_of_scope": "涉及跨品牌设备对比，超出现有知识范围",
+        "category": "其他产品线",
+        "question": "智慧家庭场景下如何选择最优的设备组合？"
+      },
+      {
+        "assumed_out_of_scope": "用户满意度属于市场运营范畴，不在运维文档内",
+        "category": "计划与市场",
+        "question": "装维服务中如何提升用户满意度？"
+      },
+      {
+        "assumed_out_of_scope": "体验优化涉及人员绩效管理，超出运维职责范围",
+        "category": "人事与考核",
+        "question": "运维团队如何优化智慧家庭产品的使用体验？"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "answerability_verification": "not_semantically_verified",
+          "assumed_out_of_scope_reason": "体验优化涉及人员绩效管理，超出运维职责范围",
+          "case_id": "p6s-0483",
+          "expected_behavior": "refuse_or_qualify",
+          "generation_batch": 14,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271120,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "out_of_scope_category": "人事与考核",
+          "prompt_version": "p6-silver-generate-v1",
+          "quality_risks": [
+            "Unanswerability has only passed the original automated token overlap screen; corpus-wide semantic answerability and human review remain pending."
+          ],
+          "question": "运维团队如何优化智慧家庭产品的使用体验？",
+          "question_type": "unanswerable",
+          "reference_answer": null,
+          "source_chunk_ids": [],
+          "source_document": null,
+          "source_evidence": [],
+          "source_page": null,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

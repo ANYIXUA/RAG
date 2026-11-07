@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:17.871749+08:00",
+  "conservative_cost_yuan": 0.0014356500000000001,
+  "error": null,
+  "latency_ms": 2674.7103000525385,
+  "list_price_estimate_yuan": 0.00102165,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"完全匹配上下文内容\",\n    \"evidence\": \"检查清洁天线外观、固定情况、标志标识。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"检查射频单元设备运行状态；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有关键操作步骤\",\n    \"evidence\": \"清理天线工作扇区遮挡物；检查记录检查天线水平方位角、垂直俯仰角。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文一致且支持所述内容\",\n    \"evidence\": \"检查同轴馈线、馈线光缆、馈线电缆外观、安装情况、接地和馈线标签，与设备连接情况等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881995,
+    "id": "chatcmpl-f4ff66f7-1f64-9689-b77e-d47e8defa25a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 276,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4051,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4327
+    }
+  },
+  "usage_known": true
+}

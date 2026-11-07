@@ -1,0 +1,20 @@
+{
+  "previous_sha256": "7eb897aa605d3417df9796411f9369407ce9ae48df65d429e1d8f8e6b9184ba7",
+  "record": {
+    "batch": 31,
+    "candidates": [
+      {
+        "assumed_out_of_scope": "联动触发属于产品功能，非价格促销范畴",
+        "category": "价格与促销",
+        "question": "如何设置智慧家庭场景的联动触发条件？"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

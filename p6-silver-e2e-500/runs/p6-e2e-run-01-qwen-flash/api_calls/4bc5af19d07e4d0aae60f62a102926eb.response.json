@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:10.367559+08:00",
+  "conservative_cost_yuan": 0.00073125,
+  "error": null,
+  "latency_ms": 1294.545500073582,
+  "list_price_estimate_yuan": 0.00057075,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 小型局站有线设备维护中，用于传输的数字传输分析仪型号为10G及以下。[1]  \n2. 该仪器属于维护常用仪表，配套使用于光传输设备测试。[1]  \n3. 未提及具体品牌或详细型号信息。[1]  \n4. 维护规程中明确列出该设备为必备工具之一。[1]  \n5. 具体型号需结合实际采购或配置确定。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880909,
+    "id": "chatcmpl-b2095dcd-04c2-9cd6-8e7c-b680d50175bd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2735,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2842
+    }
+  },
+  "usage_known": true
+}

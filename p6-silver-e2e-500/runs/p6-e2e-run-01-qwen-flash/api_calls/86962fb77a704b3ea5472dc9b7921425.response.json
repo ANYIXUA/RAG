@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:42.737587+08:00",
+  "conservative_cost_yuan": 0.0007392000000000001,
+  "error": null,
+  "latency_ms": 1442.7704000845551,
+  "list_price_estimate_yuan": 0.0005847000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 变压器冒烟需立即断电，进行外观及接线柱检查。[1]  \n2. 检查变压器油质与油面，必要时更换。[3]  \n3. 查看呼吸器硅胶是否失效，及时更换。[1]  \n4. 检查防爆管和绝缘套管状态，确保无破损。[3]  \n5. 确认接地状况，排除电气隐患。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881121,
+    "id": "chatcmpl-a7d7bb8a-bceb-99cd-8444-df2c7c33f87d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 103,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2868,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2971
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,5 @@
+{
+  "checks": "28 signed cases, receipt equality, frozen hashes, corpus DB equivalence, no Development duplicate queries or evidence, exact Pilot implementation hash and packages",
+  "ok": true,
+  "at": "2026-11-05T07:29:01.617034+00:00"
+}

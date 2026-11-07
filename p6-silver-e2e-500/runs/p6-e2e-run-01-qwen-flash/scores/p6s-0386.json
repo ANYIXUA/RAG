@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：设备外观检查及清洁，检查核对设备运行情况，检查防雷保护设备运行情况等。",
+    "reason": "答案与上下文一致，覆盖关键步骤。",
+    "score": 1
+  },
+  "case_id": "p6s-0386",
+  "citation_correctness": {
+    "evidence": "检查防雷保护设备运行状态。[1]",
+    "reason": "引用编号与上下文来源匹配且支持所述内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检查引线接头、电缆及母线连接状况。[3]",
+    "reason": "涵盖所有必要巡检步骤，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查设备外观状态及清洁工作。[1]",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "7adcbeb8ebcb4e3ab887580c4e32f8f4",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

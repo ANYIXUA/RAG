@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:06.921825+08:00",
+  "conservative_cost_yuan": 0.0007913999999999999,
+  "error": null,
+  "latency_ms": 1666.5807999670506,
+  "list_price_estimate_yuan": 0.0005813999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 北京省级数字家庭管理平台域名：jtwlgl.bj.chinamobile.com:9005(TCP)。[1]  \n2. 北京省平台智能组网模块端口：9007(UDP)。[1]  \n3. 域名与端口配置依据为《中国移动智慧家庭全光组网产品技术规范V2.0.0》。[1]  \n4. 该信息在第64页的省份列表中明确列出。[1]  \n5. 省级平台通过IF6接口与终端连接实现远程管理功能。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880845,
+    "id": "chatcmpl-22c55983-f5fa-9651-bf80-649168b882ff",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 140,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2476,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2616
+    }
+  },
+  "usage_known": true
+}

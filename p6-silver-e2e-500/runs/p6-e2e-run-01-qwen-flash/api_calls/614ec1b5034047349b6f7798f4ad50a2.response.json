@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:52.846016+08:00",
+  "conservative_cost_yuan": 0.00068625,
+  "error": null,
+  "latency_ms": 942.3324000090361,
+  "list_price_estimate_yuan": 0.00055575,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查并清洁开关电源设备外观。[1]  \n2. 检查调整设备运行参数，紧固电源线连接。[1]  \n3. 检查防雷保护设备运行情况。[1]  \n4. 清洁整流模块。[1]  \n5. 检查电源线接头防腐处理及标签标识。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881131,
+    "id": "chatcmpl-b0dfe2dd-3189-9e8e-8d3c-2c4683cc81ec",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 87,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2835,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2922
+    }
+  },
+  "usage_known": true
+}

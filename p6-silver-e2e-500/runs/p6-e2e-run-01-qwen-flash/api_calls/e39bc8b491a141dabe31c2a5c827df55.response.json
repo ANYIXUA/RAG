@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:22.454546+08:00",
+  "conservative_cost_yuan": 0.00133575,
+  "error": null,
+  "latency_ms": 2538.3035000413656,
+  "list_price_estimate_yuan": 0.00093225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持管理要求\",\n    \"evidence\": \"抢修车辆应集中管理、统一调配，不得擅自挪作它用。[2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"车辆出现故障必须及时修理，保持车况良好。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖了管理核心要点\",\n    \"evidence\": \"车辆需定期保养，并按期办理相关手续，保持车况良好。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"抢修前应确认车辆、工器具已准备齐全并出发。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882179,
+    "id": "chatcmpl-f1804d97-a9ac-96cf-a5bf-be54df74ae3b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 269,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3525,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3794
+    }
+  },
+  "usage_known": true
+}

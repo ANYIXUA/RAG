@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "返修板件时，必须填写返修原因、故障诊断、故障时间等关键信息",
+    "reason": "准确涵盖返修关键信息",
+    "score": 1
+  },
+  "case_id": "p6s-0328",
+  "citation_correctness": {
+    "evidence": "返修板件时，必须填写返修原因、故障诊断、故障时间等关键信息",
+    "reason": "引用编号与来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "返修板件时，必须填写返修原因、故障诊断、故障时间等关键信息",
+    "reason": "覆盖问题所有必要条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "返修板件时，必须填写返修原因、故障诊断、故障时间等关键信息",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "citation_consistent",
+    "content_aligned_with_context"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "a04a0a136cb047669bf1fc672eec242b",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

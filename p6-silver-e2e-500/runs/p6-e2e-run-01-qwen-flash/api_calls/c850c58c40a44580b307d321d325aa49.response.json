@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:37.623750+08:00",
+  "conservative_cost_yuan": 0.00081,
+  "error": null,
+  "latency_ms": 1690.8576001878828,
+  "list_price_estimate_yuan": 0.000591,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 故障抢修综合单价根据项目类型不同，分别为182.40元、156.86元等。[1][2]  \n2. 信息通信光缆线路故障抢通按“处”计价，管道类为1217.10元/处。[3]  \n3. 综合单价包含人工费、企业管理费及利润等构成。[1][2][3]  \n4. 不同作业场景（如机房、基站、光缆）对应不同单价标准。[1][2][3]  \n5. 具体单价需依据故障类型和作业地点确定。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880875,
+    "id": "chatcmpl-a0fb9ab9-ee13-95e0-82da-053e111d2fd5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 146,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2480,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2626
+    }
+  },
+  "usage_known": true
+}

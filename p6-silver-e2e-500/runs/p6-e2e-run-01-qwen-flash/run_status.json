@@ -1,0 +1,23 @@
+{
+  "actual_cases": 500,
+  "actual_provider_bill_verified": false,
+  "all_frozen_inputs_unchanged": true,
+  "budget_cap_yuan": 20,
+  "client_completion_date": "2026-11-06",
+  "conservative_total_yuan": 1.4827180500000015,
+  "execution_failure": 0,
+  "execution_retries": 0,
+  "execution_success": 500,
+  "execution_timeouts": 0,
+  "human_signoff": "pending_not_performed",
+  "judge_failure": 10,
+  "judge_success": 490,
+  "known_usage_list_price_estimate_yuan_including_prior": 0.9412915499999996,
+  "model": "qwen-flash",
+  "no_commit_or_push": true,
+  "no_holdout_run": true,
+  "old_model_failure_run": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01",
+  "silver_sha256": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+  "status": "completed_with_judge_failures",
+  "target_cases": 500
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:07.420041+08:00",
+  "input_token_upper_bound": 1160,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0410"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在安装室外塔上防雷箱时，若需配合敷设钢管，其综合单价应如何计算？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "3bd401084fd84dbc89541e34489dcd0f",
+  "reserved_yuan": 0.00058
+}

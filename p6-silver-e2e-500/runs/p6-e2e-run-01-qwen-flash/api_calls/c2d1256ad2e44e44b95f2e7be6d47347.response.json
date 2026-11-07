@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:17.886607+08:00",
+  "conservative_cost_yuan": 0.0007741499999999999,
+  "error": null,
+  "latency_ms": 1258.3739999681711,
+  "list_price_estimate_yuan": 0.0006076499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 接地线松动应立即紧固，确保连接可靠。[1]  \n2. 检查接地引下线无断股、损伤，卡子牢固无锈蚀。[1]  \n3. 测量输入电压，确认是否在380V±10%范围内。[1]  \n4. 若电压不稳，排查供电线路及电源设备异常。[1]  \n5. 必要时进行接地电阻测试，确保符合规定值。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881096,
+    "id": "chatcmpl-9d107ddd-25ef-9ff3-804a-db55f115669b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2941,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3052
+    }
+  },
+  "usage_known": true
+}

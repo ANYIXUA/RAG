@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:53.224053+08:00",
+  "conservative_cost_yuan": 0.0019535999999999998,
+  "error": null,
+  "latency_ms": 4668.955900007859,
+  "list_price_estimate_yuan": 0.0012860999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"人工费与利润应为723.90与217.17，非217.17\",\n    \"evidence\": \"WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"将利润误作人工费，事实错误\",\n    \"evidence\": \"WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有必要信息点\",\n    \"evidence\": \"WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]对应正确上下文\",\n    \"evidence\": \"WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_fact\",\n    \"misattribution\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882028,
+    "id": "chatcmpl-40f5a521-8bd7-9c9c-9909-2e2a0afa48c7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 445,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4124,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4569
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:34.383223+08:00",
+  "conservative_cost_yuan": 0.0007040999999999999,
+  "error": null,
+  "latency_ms": 1177.4722998961806,
+  "list_price_estimate_yuan": 0.0005585999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH12014003石笼的综合单价为1539.42元。[1]  \n2. 该单价适用于平原地区。[1]  \n3. 丘陵、城区需乘以1.2倍系数。[1]  \n4. 山区需乘以1.5倍系数。[1]  \n5. 单价包含人工、材料及管理费用。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880873,
+    "id": "chatcmpl-855226da-4997-9402-9d44-660dd812b258",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 97,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2754,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2851
+    }
+  },
+  "usage_known": true
+}

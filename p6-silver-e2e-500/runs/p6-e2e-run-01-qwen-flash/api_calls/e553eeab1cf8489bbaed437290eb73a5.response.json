@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:49.377260+08:00",
+  "conservative_cost_yuan": 0.0017329499999999998,
+  "error": null,
+  "latency_ms": 3601.293300045654,
+  "list_price_estimate_yuan": 0.0011299499999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用内容与上下文一致，数据准确。\",\n    \"evidence\": \"WH23104002 室外波分复用器 207.94 129.96 38.99 38.99 1.14 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"WH23104002 室外波分复用器 207.94 129.96 38.99 38.99 1.14 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有要素，无遗漏。\",\n    \"evidence\": \"WH23104002 室外波分复用器 207.94 129.96 38.99 38.99 1.14 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]正确对应来源。\",\n    \"evidence\": \"WH23104002 室外波分复用器 207.94 129.96 38.99 38.99 1.14 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881725,
+    "id": "chatcmpl-d60dc3c6-ffe0-9810-9a03-25e86cd623d4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 402,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3513,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3915
+    }
+  },
+  "usage_known": true
+}

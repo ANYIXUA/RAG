@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:33.806130+08:00",
+  "input_token_upper_bound": 1151,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0298"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在机房室外环境清理中，针对一体化机房的作业应遵循哪些步骤？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "f4d0d82fc9224a4b838d53b7e0e7d735",
+  "reserved_yuan": 0.0005755
+}

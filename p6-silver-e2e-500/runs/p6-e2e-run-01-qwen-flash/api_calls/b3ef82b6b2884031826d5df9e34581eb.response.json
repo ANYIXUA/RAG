@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:27.170352+08:00",
+  "conservative_cost_yuan": 0.0014068499999999999,
+  "error": null,
+  "latency_ms": 2740.2292999904603,
+  "list_price_estimate_yuan": 0.00098685,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，覆盖关键点。\",\n    \"evidence\": \"4.4.2 能用相关软件画出功能拓扑图\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"3.4.2 能设计家庭复合总线方案\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖接入与拓展核心要求。\",\n    \"evidence\": \"4.5.2 能采用智能家居常用协议进行智能终端联调适配\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容。\",\n    \"evidence\": \"4.3.1 物联网基础知识\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_consistent\",\n    \"content_aligned\",\n    \"complete_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881824,
+    "id": "chatcmpl-5f5d57a0-775b-9ae9-85de-356a2713e11e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 280,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3779,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4059
+    }
+  },
+  "usage_known": true
+}

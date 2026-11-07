@@ -1,0 +1,47 @@
+{
+  "answer_correctness": {
+    "evidence": "WH12029001 更换井盖 54.17",
+    "reason": "项目编码应为WH12029001，非WH12029",
+    "score": 0
+  },
+  "case_id": "p6s-0321",
+  "citation_correctness": {
+    "evidence": "WH12029 更换井盖 工作内容：清理、回收旧井盖",
+    "reason": "引用[1]支持WH12029，但不支持主结论",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "WH12029001 更换井盖 54.17",
+    "reason": "部分回答但核心信息错误",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH12029 更换井盖 工作内容：清理、回收旧井盖",
+    "reason": "将WH12029误作项目编码",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_project_code",
+    "misattribution_of_code"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "4084913c2e594583baa42f60a65914f5",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答题，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:07.420661+08:00",
+  "conservative_cost_yuan": 0.0007123499999999999,
+  "error": null,
+  "latency_ms": 1339.4111001398414,
+  "list_price_estimate_yuan": 0.0005608499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 承包人应在收到通知后填写现场签证表。[1]  \n2. 需注明发包人姓名、日期及口头/书面通知内容。[1]  \n3. 填写应支付价款金额，含大写与小写。[1]  \n4. 附上签证事由、原因及附图计算式。[1]  \n5. 一式三份，各方各存一份。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880906,
+    "id": "chatcmpl-89f5997d-a399-907c-ac48-8e151ba765b6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2729,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2830
+    }
+  },
+  "usage_known": true
+}

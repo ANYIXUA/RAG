@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:15.152807+08:00",
+  "conservative_cost_yuan": 0.000678,
+  "error": null,
+  "latency_ms": 1340.7986999955028,
+  "list_price_estimate_yuan": 0.0005385,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 抢修车辆应定期检查，损坏及时维修。[1]  \n2. 确保车辆处于可随时投入使用状态，满足抢修需求。[1]  \n3. 车辆维护需符合安全生产技术保障措施要求。[1]  \n4. 严禁使用存在安全隐患的抢修车辆。[1]  \n5. 车辆管理须遵守相关安全与操作规范。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880853,
+    "id": "chatcmpl-d9c00519-08c3-9bc4-b2b9-828b35120555",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 93,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2660,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2753
+    }
+  },
+  "usage_known": true
+}

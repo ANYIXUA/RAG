@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH42101001 拆除跳线 3.60 2.44 0.67 0.49 消耗量 0.02 —",
+    "reason": "引用内容与证据一致",
+    "score": 1
+  },
+  "case_id": "p6s-0068",
+  "citation_correctness": {
+    "evidence": "WH42101001 拆除跳线 3.60 2.44 0.67 0.49 消耗量 0.02 —",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH42101001 拆除跳线 3.60 2.44 0.67 0.49 消耗量 0.02 —",
+    "reason": "涵盖问题所需全部信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH42101001 拆除跳线 3.60 2.44 0.67 0.49 消耗量 0.02 —",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "9079f49af46b461787fbcfee3120d46d",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

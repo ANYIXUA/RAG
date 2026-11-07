@@ -1,0 +1,55 @@
+{
+  "previous_sha256": "0cb06d360cf9a6e38d79fb16428c267a12d2667898e7b7f090767b630ba87441",
+  "record": {
+    "batch": 30,
+    "candidates": [
+      {
+        "assumed_out_of_scope": "问题涉及市场推广，超出计划与市场主题范围",
+        "category": "计划与市场",
+        "question": "如何优化智慧家庭场景下的市场推广策略？"
+      },
+      {
+        "assumed_out_of_scope": "涉及价格对比，属于价格与促销范畴",
+        "category": "价格与促销",
+        "question": "不同品牌的智慧家庭产品在价格上如何对比？"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "answerability_verification": "not_semantically_verified",
+          "assumed_out_of_scope_reason": "涉及价格对比，属于价格与促销范畴",
+          "case_id": "p6s-0496",
+          "expected_behavior": "refuse_or_qualify",
+          "generation_batch": 30,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271136,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "out_of_scope_category": "价格与促销",
+          "prompt_version": "p6-silver-generate-v1",
+          "quality_risks": [
+            "Unanswerability has only passed the original automated token overlap screen; corpus-wide semantic answerability and human review remain pending."
+          ],
+          "question": "不同品牌的智慧家庭产品在价格上如何对比？",
+          "question_type": "unanswerable",
+          "reference_answer": null,
+          "source_chunk_ids": [],
+          "source_document": null,
+          "source_evidence": [],
+          "source_page": null,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:36.640149+08:00",
+  "conservative_cost_yuan": 0.001476,
+  "error": null,
+  "latency_ms": 2688.7355998624116,
+  "list_price_estimate_yuan": 0.001026,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"内容与上下文完全一致，无遗漏或错误。\",\n    \"evidence\": \"开箱检验、清洁搬运、安装固定、线缆连接、清理现场。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"检查导线；检查接地装置；检查标志；检查清理线路沿线环境；做好巡查记录；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有问题所需条件与步骤。\",\n    \"evidence\": \"管道： 检查导线； 检查接地装置；检 查标志；检查清理线路沿线环境；做好巡查 记录；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持对应句。\",\n    \"evidence\": \"[1] 开箱检验、清洁搬运、安装固定、线缆连接、清理现场。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882013,
+    "id": "chatcmpl-a6414d51-36f2-9fd7-87a4-00300fcf81f4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 300,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3840,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4140
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23123002 24V 铅酸蓄电池600Ah 以下 488.83",
+    "reason": "上下文明确给出488.83元",
+    "score": 1
+  },
+  "case_id": "p6s-0198",
+  "citation_correctness": {
+    "evidence": "WH23123002 24V 铅酸蓄电池600Ah 以下 488.83",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "该价格包含人工、企业管理费及利润。[1]",
+    "reason": "涵盖价格、单位、费用构成",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23123002 24V 铅酸蓄电池600Ah 以下 488.83",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "4489c4c9b99a4f8bac7bf19809f907da",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

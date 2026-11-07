@@ -1,0 +1,11 @@
+{
+  "case_id": "p6s-0195",
+  "errors": [
+    "ValueError",
+    "ValueError",
+    "ValueError"
+  ],
+  "needs_human_review": true,
+  "question_type": "multi_condition",
+  "score_state": "failed"
+}

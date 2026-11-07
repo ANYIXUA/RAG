@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:12.642389+08:00",
+  "conservative_cost_yuan": 0.0007308,
+  "error": null,
+  "latency_ms": 1352.402799995616,
+  "list_price_estimate_yuan": 0.0005688,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 接到工单后，首先确认工单信息并准备相应器材。[1]  \n2. 根据规范确定障碍原因，开展障碍维修工作。[1]  \n3. 完成维修后，进行业务恢复确认。[1]  \n4. 确保业务正常后，完成障碍回单操作。[3]  \n5. 多障碍时应遵循“先重点、后一般”和“先抢通、后修复”原则。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881031,
+    "id": "chatcmpl-2f21536f-eeaf-9591-8595-fd03a3d90489",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 108,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2712,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2820
+    }
+  },
+  "usage_known": true
+}

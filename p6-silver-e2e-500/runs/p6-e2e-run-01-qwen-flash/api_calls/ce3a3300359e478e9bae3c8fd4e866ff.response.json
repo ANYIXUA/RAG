@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:31.772660+08:00",
+  "conservative_cost_yuan": 0.00137535,
+  "error": null,
+  "latency_ms": 2337.3665001709014,
+  "list_price_estimate_yuan": 0.0009418499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文一致，明确提及按月召开。\",\n    \"evidence\": \"装维企业应按月召开生产质量分析会，并作专门记录。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"装维企业应按月召开生产质量分析会，并作专门记录。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖频率、记录、上报等关键点。\",\n    \"evidence\": \"每月生产质量分析内容均应进行简要的书面小结，上报上级机构。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持所述内容。\",\n    \"evidence\": \"各级质量管理部门每月至少一次。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"correct_citation\",\n    \"complete_response\",\n    \"consistent_with_context\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882009,
+    "id": "chatcmpl-ddc74e08-7b6c-9294-8f70-52368c59b019",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 289,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3389,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3678
+    }
+  },
+  "usage_known": true
+}

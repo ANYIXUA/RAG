@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:20.349096+08:00",
+  "conservative_cost_yuan": 0.0016367999999999999,
+  "error": null,
+  "latency_ms": 4043.2756999507546,
+  "list_price_estimate_yuan": 0.0011283,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未直接提及树叶遮挡处理\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分建议无上下文支持\",\n    \"evidence\": \"建议检查天线安装位置是否易受植被遮挡，必要时调整高度或角度。[无直接依据]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键处理步骤\",\n    \"evidence\": \"清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签，与设备连接情况等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用编号不匹配实际来源\",\n    \"evidence\": \"4. 请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0.5,\n    \"reason\": \"未明确拒答且提示补充信息\",\n    \"evidence\": \"> 注：检索内容未明确提及“树叶遮挡”的处理办法，以上建议基于规程中关于智慧灯杆安装与维护的通用原则推断，非直接引用。\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"partial_citation\",\n    \"inferred_recommendation\",\n    \"missing_direct_evidence\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882056,
+    "id": "chatcmpl-5f39a530-2855-95a1-a19c-4cd5e1fd7a60",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 339,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4132,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4471
+    }
+  },
+  "usage_known": true
+}

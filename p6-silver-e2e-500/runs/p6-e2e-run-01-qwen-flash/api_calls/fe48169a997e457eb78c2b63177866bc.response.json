@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:13.966000+08:00",
+  "conservative_cost_yuan": 0.00141255,
+  "error": null,
+  "latency_ms": 2568.3089001104236,
+  "list_price_estimate_yuan": 0.0010045499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持处理步骤与安全措施\",\n    \"evidence\": \"人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"清理井内淤泥、杂物；整治人孔内的托架、托板和标志\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有关键处理与安全措施\",\n    \"evidence\": \"清除人孔内光缆上的污垢，抽除人孔内的积水\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持内容\",\n    \"evidence\": \"清理井内淤泥、杂物[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881751,
+    "id": "chatcmpl-ba2c4926-133b-97a2-84de-d7523ed30f32",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 272,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3977,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4249
+    }
+  },
+  "usage_known": true
+}

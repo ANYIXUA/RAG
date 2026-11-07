@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:49.052365+08:00",
+  "conservative_cost_yuan": 0.00159885,
+  "error": null,
+  "latency_ms": 3279.9072000198066,
+  "list_price_estimate_yuan": 0.0010813499999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持计算公式与参数\",\n    \"evidence\": \"机械仪表按5 年使用期（车辆为6 年），维修费为2%，残值3% 年使用费=（原值× 97%/5+原值× 2%）+维护仪表计量检定费\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"年使用费=（原值×97%÷5 + 原值×2%）+计量检定费。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖使用期、维修费、残值及公式\",\n    \"evidence\": \"机械仪表按5 年使用期（车辆为6 年），维修费为2%，残值3%\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"年使用费=（原值×97%÷5 + 原值×2%）+计量检定费。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882085,
+    "id": "chatcmpl-23edf540-3bd9-9300-bdf6-7326c3fa34e9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 345,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3759,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4104
+    }
+  },
+  "usage_known": true
+}

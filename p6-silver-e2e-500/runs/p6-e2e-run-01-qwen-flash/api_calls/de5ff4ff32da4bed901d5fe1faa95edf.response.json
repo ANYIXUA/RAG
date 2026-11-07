@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:23.821753+08:00",
+  "conservative_cost_yuan": 0.00302205,
+  "error": null,
+  "latency_ms": 7160.5787998996675,
+  "list_price_estimate_yuan": 0.00177105,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"实际上下文仅在[1]中明确提到‘须支持MCS15，推荐支持MCS14’，但实际答案中引用的[6]在source_index_mapping中未对应任何chunk_id，且上下文片段中无[6]来源。因此无法确认该句是否由实际LLM上下文支持，故answer_correctness无法判断。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n内容：...须支持MCS15，推荐支持MCS14。\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有陈述均引用[6]，但上下文片段中不存在[6]这一引用编号。实际上下文仅提供[1][2][3]三个引用，且[1]中确实包含‘须支持MCS15，推荐支持MCS14’，但模型错误地将该信息归为[6]，属于虚构引用，违反了faithfulness原则。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n内容：...须支持MCS15，推荐支持MCS14。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题为精确事实类问题，只需判断是否推荐支持MCS14。回答中准确指出‘推荐支持MCS14’，并补充其作用（增强覆盖与兼容性）及协议背景，信息完整，未遗漏必要条件或步骤。\",\n    \"evidence\": \"1. 支持MCS15的全光组网终端，推荐支持MCS14。[6]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有语句均标注引用[6]，但实际检索上下文中无[6]对应的chunk_id或内容。source_index_mapping中列出的chunk_id分别为[4812f97659f77c46891223fa]、[e69ef87cafd302938c765e20]等，而[6]未出现在其中，且上下文未提供任何[6]来源，故引用不正确。\",\n    \"evidence\": \"source_index_mapping: [{\\\"index\\\": 1, \\\"chunk_id\\\": \\\"4812f97659f77c46891223fa\\\"}, {\\\"index\\\": 2, \\\"chunk_id\\\": \\\"e69ef87cafd302938c765e20\\\"}, {\\\"index\\\": 3, \\\"chunk_id\\\": \\\"a36043b8ee1a391f2dd1c31a\\\"}, {\\\"index\\\": 4, \\\"chunk_id\\\": \\\"acbdb12c2a62c12fe9787ef7\\\"}]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为可回答的精确事实类问题，且上下文存在相关证据，不应拒答。模型虽有错误引用，但提供了具体回答，故不适用拒答行为评分。\",\n    \"evidence\": \"上下文存在[1]明确说明‘须支持MCS15，推荐支持MCS14’\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"invalid_citation\",\n    \"fabricated_reference\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881456,
+    "id": "chatcmpl-e6fd454e-5a7b-9361-ae2a-759d31e6eb20",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 834,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3467,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3456
+      },
+      "total_tokens": 4301
+    }
+  },
+  "usage_known": true
+}

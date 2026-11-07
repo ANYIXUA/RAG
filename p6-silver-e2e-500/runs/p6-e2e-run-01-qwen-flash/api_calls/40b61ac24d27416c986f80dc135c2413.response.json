@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:35.837000+08:00",
+  "conservative_cost_yuan": 0.0015289499999999998,
+  "error": null,
+  "latency_ms": 2877.1384998690337,
+  "list_price_estimate_yuan": 0.0010444499999999997,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文一致，覆盖关键点。\",\n    \"evidence\": \"馈线接头紧固无松动、无划伤、无露铜、无变形，密封良好、无积水。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"馈线接头紧固无松动、无划伤、无露铜、无变形，密封良好、无积水。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖连接牢固与密封要求。\",\n    \"evidence\": \"馈线接头紧固无松动、无划伤、无露铜、无变形，密封良好、无积水。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[4]未在上下文中出现。\",\n    \"evidence\": \"馈线接头紧固无松动、无划伤、无露铜、无变形，密封良好、无积水。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_mismatch\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881712,
+    "id": "chatcmpl-c1b79049-e1b1-9d67-867f-ab57e783b7b7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 323,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3733,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4056
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:51.154702+08:00",
+  "conservative_cost_yuan": 0.0007974,
+  "error": null,
+  "latency_ms": 1188.6386000551283,
+  "list_price_estimate_yuan": 0.0006429,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 拉线埋设不牢需按规程重新安装或更换拉线。[2]  \n2. 应挖坑并埋设地锚，确保拉线稳固。[2]  \n3. 回填后需夯实，并做中、上把处理。[2]  \n4. 若地锚松动，可考虑制作新横木地锚加固。[3]  \n5. 作业应依据标准流程执行，避免安全隐患。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881069,
+    "id": "chatcmpl-d944ed33-9b88-90ce-969a-fa039f157584",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 103,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3256,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3359
+    }
+  },
+  "usage_known": true
+}

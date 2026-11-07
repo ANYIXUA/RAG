@@ -1,0 +1,20 @@
+{
+  "run1": {
+    "records": 112,
+    "denominator_per_method": 28,
+    "independent_metrics_match": true,
+    "rerank_inputs_match_hybrid": true
+  },
+  "run2": {
+    "records": 112,
+    "denominator_per_method": 28,
+    "independent_metrics_match": true,
+    "rerank_inputs_match_hybrid": true
+  },
+  "repeatability": {
+    "all_112_rankings_and_scores_equal": true,
+    "quality_metrics_equal": true,
+    "precision": "scores archived to six decimals by original evaluator",
+    "latencies_expected_equal": false
+  }
+}

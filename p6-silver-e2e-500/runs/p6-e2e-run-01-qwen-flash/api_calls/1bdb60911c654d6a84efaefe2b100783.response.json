@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:33.383567+08:00",
+  "conservative_cost_yuan": 0.00132,
+  "error": null,
+  "latency_ms": 3455.9867999050766,
+  "list_price_estimate_yuan": 0.000918,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"无具体套餐信息，无法判断正确性\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文引用\",\n    \"evidence\": \"智能组网及家庭总线技术知识[3]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"未涵盖价格/用户需求等关键因素\",\n    \"evidence\": \"应综合考虑光纤到户、无线局域网与物联网接入能力。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"优先匹配智能家居场景设置与联动需求。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0,\n    \"reason\": \"未拒答，应明确表示无法回答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"overconfident_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881889,
+    "id": "chatcmpl-7719cdf2-fb92-9c09-b217-bf1544cad3d9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 268,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3440,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3708
+    }
+  },
+  "usage_known": true
+}

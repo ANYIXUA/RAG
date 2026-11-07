@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:02.316110+08:00",
+  "conservative_cost_yuan": 0.0018633,
+  "error": null,
+  "latency_ms": 3537.3723001684994,
+  "list_price_estimate_yuan": 0.0012182999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"内容与上下文完全一致\",\n    \"evidence\": \"工作内容：1、环境安全检查；2、道路巡检；3、造物杂草、杂物清理；4、机房主体机构、地基和围墙巡查；5、机房主体结构内部巡查；6、情况记录等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"工作内容：1、环境安全检查；2、道路巡检；3、造物杂草、杂物清理；4、机房主体机构、地基和围墙巡查；5、机房主体结构内部巡查；6、情况记录等。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏了‘机房主体结构内部巡查’\",\n    \"evidence\": \"工作内容：1、环境安全检查；2、道路巡检；3、造物杂草、杂物清理；4、机房主体机构、地基和围墙巡查；5、机房主体结构内部巡查；6、情况记录等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"工作内容：1、环境安全检查；2、道路巡检；3、造物杂草、杂物清理；4、机房主体机构、地基和围墙巡查；5、机房主体结构内部巡查；6、情况记录等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"missing_internal_inspection\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882038,
+    "id": "chatcmpl-a5565b0b-2f70-9e27-b2ab-d60064f4ef79",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 430,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3822,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4252
+    }
+  },
+  "usage_known": true
+}

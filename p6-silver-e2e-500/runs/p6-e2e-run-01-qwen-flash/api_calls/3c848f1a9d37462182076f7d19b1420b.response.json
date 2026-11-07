@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:54.263644+08:00",
+  "conservative_cost_yuan": 0.00128985,
+  "error": null,
+  "latency_ms": 2394.722400000319,
+  "list_price_estimate_yuan": 0.00090735,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题超范围，无法判断正确性\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文引用\",\n    \"evidence\": \"应掌握智能家居单品控制及通讯配置方法。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分覆盖但未明确拒答\",\n    \"evidence\": \"设置时应依据物联网接入业务运维规范。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"设置时应依据物联网接入业务运维规范。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0.5,\n    \"reason\": \"未明确拒答但提示不足\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"partial_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881911,
+    "id": "chatcmpl-48d9aa46-e0e2-9536-87d9-de54cab9c78f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 255,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3499,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3754
+    }
+  },
+  "usage_known": true
+}

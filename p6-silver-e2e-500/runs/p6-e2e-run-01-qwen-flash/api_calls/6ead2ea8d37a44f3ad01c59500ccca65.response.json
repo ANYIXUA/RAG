@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:05.728853+08:00",
+  "conservative_cost_yuan": 0.0014734499999999998,
+  "error": null,
+  "latency_ms": 3048.4098000451922,
+  "list_price_estimate_yuan": 0.00101145,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确给出每小时发电与抢修费用\",\n    \"evidence\": \"WH24101001 应急发电 市区、2 小时以下 138.62\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH24101001 应急发电 市区、2 小时以下 138.62\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所有条件\",\n    \"evidence\": \"计量单位：次 按实际发电次数和时长计算\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"[3] WH24101001 应急发电 市区、2 小时以下 138.62\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882042,
+    "id": "chatcmpl-b4a93289-3824-94d7-bde0-6f0872f70107",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 308,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3663,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3971
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0243",
+  "citation_correctness": {
+    "evidence": "服务交付中注重沟通与维护技巧，提升用户满意度",
+    "reason": "第5条引用[5]不存在于上下文",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "装维人员应掌握智能组网故障处理技能，快速响应问题",
+    "reason": "部分回答涉及运维操作，但未完整覆盖用户满意度维度",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "和家亲APP接收平台推送的家庭组网终端上报信息，提示用户",
+    "reason": "所有事实均来自上下文且无矛盾",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "incorrect_citation",
+    "overreach_in_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3019c7fb54364299b56a68da42c6d301",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "应拒答却给出建议，违反限定范围原则",
+    "score": 0
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:41.287667+08:00",
+  "conservative_cost_yuan": 0.0007453499999999999,
+  "error": null,
+  "latency_ms": 1189.0366999432445,
+  "list_price_estimate_yuan": 0.0005818499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 夜间维护作业增加费按人工费的2.3%计取。[1]  \n2. 维护干扰费按人工费的5.0%计取。[2]  \n3. 维护干扰费适用于受交通管制、人流密集等影响的作业。[3]  \n4. 夜间维护作业增加费包含照明用电及工效降低补偿。[3]  \n5. 两项费用均以人工费为计算基础。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881000,
+    "id": "chatcmpl-d1fcb79e-5184-9a5d-b069-c2b171ceaec3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 109,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2789,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2898
+    }
+  },
+  "usage_known": true
+}

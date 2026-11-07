@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:48.389612+08:00",
+  "conservative_cost_yuan": 0.00294525,
+  "error": null,
+  "latency_ms": 7342.2075000125915,
+  "list_price_estimate_yuan": 0.00172275,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际上下文[1]明确指出：'因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。' 回答第一点直接对应此事实，且与silver_reference一致。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第91页\\n定位信息：91\\n内容：...8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每项事实均能在上下文[1]中找到直接支持。第一点为原文核心结论；第二、三、四、五点虽未在原句中完整出现，但均基于[1]中关于调整机制的描述进行合理推导，且未引入外部信息。所有陈述均可由[1]支持。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第91页\\n定位信息：91\\n内容：...8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。...8.4.7.4 ...根据原备品备件购置清单和机械仪表使用清单的价格进行调整；...由承包人根据维护作业变更情况，提出适当的费用变更，经发包人确认后调整。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"回答覆盖了核心处理方式（调整综合单价），但遗漏了关键条件：‘超出合同约定幅度’这一前提必须被明确提及。虽然上下文已说明该前提，但回答中仅在第一点隐含表达，其余要点未强调此条件，存在部分不完整风险。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第91页\\n定位信息：91\\n内容：...该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应到上下文片段[1]，且该片段包含所引用内容。尽管多个要点共用同一来源，但符合规则中‘引用编号只能来源于提供的上下文片段’的要求，且每个引用均能支持对应句子。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第91页\\n定位信息：91\\n内容：...8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的exact_fact类型，且上下文提供明确答案，无需拒答。因此该维度不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881361,
+    "id": "chatcmpl-24341293-3e90-95a7-806e-777e8ee7462e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 815,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3335,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4150
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,452 @@
+{
+  "case_id": "p6s-0243",
+  "question": "如何提升智慧家庭设备的用户满意度？",
+  "answer": "1. 通过和家亲APP实现设备绑定与状态监控，提升用户掌控感。[1]  \n2. 提供Wi-Fi质量分析功能，帮助用户优化网络体验。[1]  \n3. 确保全光组网终端支持EasyMeshTM，保障无缝漫游。[1]  \n4. 装维人员应掌握智能组网故障处理技能，快速响应问题。[2]  \n5. 服务交付中注重沟通与维护技巧，提升用户满意度。[5]",
+  "silver_reference_answer": null,
+  "silver_source_evidence": [],
+  "original_score": {
+    "answer_correctness": {
+      "evidence": "",
+      "reason": "Unanswerable label not human verified",
+      "score": null
+    },
+    "case_id": "p6s-0243",
+    "citation_correctness": {
+      "evidence": "服务交付中注重沟通与维护技巧，提升用户满意度",
+      "reason": "第5条引用[5]不存在于上下文",
+      "score": 0.5
+    },
+    "completeness": {
+      "evidence": "装维人员应掌握智能组网故障处理技能，快速响应问题",
+      "reason": "部分回答涉及运维操作，但未完整覆盖用户满意度维度",
+      "score": 0.5
+    },
+    "confidence": "high",
+    "correctness_excluded": true,
+    "faithfulness": {
+      "evidence": "和家亲APP接收平台推送的家庭组网终端上报信息，提示用户",
+      "reason": "所有事实均来自上下文且无矛盾",
+      "score": 1
+    },
+    "flags": [
+      "unanswerable_question",
+      "incorrect_citation",
+      "overreach_in_response"
+    ],
+    "hallucination_suspected": false,
+    "judge_api_call_id": "3019c7fb54364299b56a68da42c6d301",
+    "judge_attempts": 1,
+    "judge_model": "qwen-flash",
+    "judge_same_model_as_generation": true,
+    "needs_human_review": true,
+    "no_answer_behavior": {
+      "evidence": "",
+      "reason": "应拒答却给出建议，违反限定范围原则",
+      "score": 0
+    },
+    "no_answer_provisional": true,
+    "prior_errors": [],
+    "question_type": "unanswerable",
+    "score_state": "success",
+    "self_evaluation_bias": true
+  },
+  "original_diagnostic": {
+    "actual_prompt_chars": 3751,
+    "case_id": "p6s-0243",
+    "citation_index_and_context_valid_count": 4,
+    "citation_index_valid_count": 4,
+    "citation_markers": [
+      1,
+      1,
+      1,
+      2,
+      5
+    ],
+    "context_verification": "full normalized Silver quotation in actual rendered request; absence does not rule out alternative support",
+    "diagnosis_is_exploratory": true,
+    "primary_failure_bucket": "8_judge_unreliable",
+    "question_type": "unanswerable",
+    "reference_all_quotes_in_actual_prompt": null,
+    "reference_all_retrieved": null,
+    "reference_chunk_ids": [],
+    "reference_quote_context_hit_ids": [],
+    "retrieved_chunk_ids": [
+      "1c317b1dd2cebfbf9647d03e",
+      "3b1f839571de44bb1abd2f94",
+      "48ecc091e26caaa3ccbd3be5",
+      "5d1e8fd617217ecea2afa2f1"
+    ],
+    "unanswerable_provisional": true
+  },
+  "actual_generation_api_call_id": "2f3f3df44ad0488e88b8d8b04aea7898",
+  "actual_generation_prompt": "# 角色与记忆\n你是一台专门的“装维业务知识问答助手”。\n\n# 核心原则（严格遵守）\n1. **限定范围：** 只能基于提供的检索上下文回答问题，若上下文中没有答案，必须明确说明不知道，并提示补充信息或转人工，严禁凭空编造。\n2. **字数限制：** 回答必须控制在 5 条要点以内，且每条要点不得超过 40 个字。\n3. **精准引用：** 回答中的每个关键结论，必须使用如 [1]、[2] 的编号在文末或句末注明来源。引用编号只能来源于提供的上下文片段，不得自创。\n\n# 正确示例 (Good Case)\n【输入】\n用户问题：光猫红灯闪烁怎么处理？\n检索上下文：[1]光猫红灯闪烁通常因为光缆断或光功率低。[2]应先检查尾纤是否插紧。[3]若无法恢复，需上报系统转人工派发修障单。\n\n【输出】\n1. 光猫红灯闪烁通常是光缆断或光功率过低导致。[1]\n2. 处置时应首先检查尾纤是否已经插紧。[2]\n3. 若检查后仍无法恢复，请明确上报系统转人工处理。[3]\n\n# 避坑检查（模型自检项）\n- 严禁出现无引用编号的结论。\n- 严禁出现诸如“您可以尝试重启”等上下文中不存在的盲猜建议。\n---\n# 待处理任务\n\n【用户原始问题】\n如何提升智慧家庭设备的用户满意度？\n\n【增强上下文】\n\"\"\"\n请求ID：722cae2976e944c5aed0657004e8a492\n会话ID：p6-e2e-run01-qwen-flash-p6s-0243-attempt1\n租户ID：未指定\n用户ID：未指定\n权限标签：未指定\n用户原始问题：如何提升智慧家庭设备的用户满意度？\n归一化查询：如何提升智慧家庭设备的用户满意度？\n是否跟进问答：否\n上下文改写查询：如何提升智慧家庭设备的用户满意度？\n上下文关键术语：无\n改写查询：如何提升智慧家庭设备的用户满意度？\n检索查询：如何提升智慧家庭设备的用户满意度？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题\n同义词扩展：终端设备, 设备信息, 设备状态\n语义扩展：业务说明, 知识库, 常见问题\n识别意图：general_knowledge\n\n会话历史摘要：\n无\n\n工具调用结果：\n无\n\n检索到的相关文档：\n[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\n引用标签：[1]\n标题：第13页\n定位信息：13\n综合分：0.732465\n召回综合分：0.732465\n重排分：无\n语义分：0.617807\nBM25 原始分：27.950943\nBM25 归一化分：1.000000\n内容：章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第13页 页码：13 8 2. 家庭网络诊断功能； 3. 全光组网终端网络质量统计； 3.2.4. 和家亲APP 提供家庭全光组网终端的用户操控界面，用户通过和家亲APP执行的操作包括： 1. 确认家庭全光组网终端的快速入网，实现用户同全光组网终端的关系绑定/解绑； 用户控制家庭全光组网终端执行相应的操作； 2. 和家亲APP接收平台推送的家庭组网终端上报信息，提示用户； 3. Wi-Fi质量分析； 3.2.5. 全光组网终端 全光组网终端包含光网关和光路由端两大类，负责增大家庭网络的覆盖范围和信号 强度，提升家庭网络的整体通信性能。 为确保多个全光组网终端之间相互组网及互操作性，全光组网终端之间应通过 《Multi-AP_Specification R2》规范实现EasyMeshTM 要求的网络拓扑、漫游、频段切换、 角色选择等功能，并支持使用WPS或DPP功能。 光网关应承担Controller角色，用于家庭Wi-Fi网络的覆盖和回传链路的控制逻辑策略； 光路由应承担Agent角色，接受Controller的控制指令、将设备状态信息，链路状态信息等 返回给Controller。 3.2.6. 全光组网软件及云服务 全光组网软件及云服务，可以实现以下功能： 1.支持基础纳管、智能应用、插件容器及容器管理等功能，满足《中国移动智慧家庭 全光组网产品接口规范》验收标准； 2. 接受省级数字家庭管理平台、一级家庭开平台、组网云平台管理。 3.2.7. 组网质量探针插件 组网质量探针通过IF8接口和智能组网云平台交互。组网质量探针插件需要满足《中 国移动智能组网终端质量管理接口规范》。\n\n[2] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\n引用标签：[2]\n标题：第16页\n定位信息：16\n综合分：0.654546\n召回综合分：0.654546\n重排分：无\n语义分：0.595787\nBM25 原始分：22.127374\nBM25 归一化分：0.791650\n内容：章节：智慧家庭装维工程与管理职业技能等级标准 > 第16页 页码：16 T/CAICIXXXX—XX 15 3.智能组网 3.1 初级的工作内容 3.1.1 初级技能要求 3.1.1 初级知识要求 3.2 基础网络质量检测 3.2.1 能对电缆链路进行巡线/检测 3.2.3 能对无线局域网信号进行检测 3.2.1 光纤入户施工及验收规范 3.2.2 无线局域网相关基础知识 3.3 智能家居布线 3.3.1 能操作有线控制网布线、联接 3.3.2 能操作无线控制网组网、联接 3.3.1 通信网（含无线局域网）基础 知识 3.3.2 物联网基础知识 4.4 家庭总线组网 3.4.1 能操作家庭总线平行布放 3.4.2 能操作家庭总线复合布放 3.4.3 能操作家庭总线混合组网 3.4.1 接入网基础知识 3.4.2 家庭复合总线基础知识 3.4.3 计算机网络基础知识 4.业务开通 和业务运维 4.1 初级的工作内容 4.1.1 初级技能要求 4.1.1 初级知识要求 4.2 基础业务运维 4.2.1 能进行光纤到户的一般故障 处理 4.2.2 能进行交互式网络电视的一般 故障处理 4.2.3 能进行基础网一般故障处理 4.2.1 无源光网络基础知识 4.2.2 运营商视听业务基础知识 4.2.3 接入网基础知识 4.3 物联网接入业务运维 4.3.1 能设置网关的接入业务 4.3.2 能处理网关的常见故障 4.3.1 物联网基础知识 4.3.2 计算机网络基础知识 4.4 家庭复合总线接入业务运维 4.4.1 能处理家庭复合总线的常见故 障 4.4.1 运营商视听业务基础知识 4.4.2 网络基础知识 4.4.3 智能家居基础知识 4.5 智能家居的业务运维 4.5.1 能进行智能家居场景设置 4.5.2 能处理智能家居的简单故障 4.5.1 物联网基础知识 4.5.2 计算机网络基础知识 4.5.2 智能家具基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识\n\n[3] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\n引用标签：[3]\n标题：第12页\n定位信息：12\n综合分：0.651849\n召回综合分：0.651849\n重排分：无\n语义分：0.556017\nBM25 原始分：24.469815\nBM25 归一化分：0.875456\n内容：章节：智慧家庭装维工程与管理职业技能等级标准 > 第12页 页码：12 T/CAICIXXXX—XX 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 物联网接入业务运维： 1.掌握物联网接入业务的设置 2.了解常见网关故障 物联网接入业务运维： 1.掌握常见网关故障 2.了解网关组网方法 物联网接入业务运维： 1.掌握网关组网方法 2.熟悉路由协议等 家庭复合总线接入业务运维： 1.熟悉家庭复合总线的设置 家庭复合总线接入业务运维： 1.熟悉家庭复合总线常见故障处理 家庭复合总线接入业务运维： 1.掌握家庭复合总线常见故障处理\n\n[上下文已截断，请优先依据已保留片段回答。]\n\"\"\"",
+  "actual_source_labels": [
+    1,
+    2,
+    3
+  ],
+  "sources": [
+    {
+      "index": 1,
+      "chunk_id": "3b1f839571de44bb1abd2f94",
+      "document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "page": 13,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 110,
+      "text": "章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第13页 页码：13 8 2. 家庭网络诊断功能； 3. 全光组网终端网络质量统计； 3.2.4. 和家亲APP 提供家庭全光组网终端的用户操控界面，用户通过和家亲APP执行的操作包括： 1. 确认家庭全光组网终端的快速入网，实现用户同全光组网终端的关系绑定/解绑； 用户控制家庭全光组网终端执行相应的操作； 2. 和家亲APP接收平台推送的家庭组网终端上报信息，提示用户； 3. Wi-Fi质量分析； 3.2.5. 全光组网终端 全光组网终端包含光网关和光路由端两大类，负责增大家庭网络的覆盖范围和信号 强度，提升家庭网络的整体通信性能。 为确保多个全光组网终端之间相互组网及互操作性，全光组网终端之间应通过 《Multi-AP_Specification R2》规范实现EasyMeshTM 要求的网络拓扑、漫游、频段切换、 角色选择等功能，并支持使用WPS或DPP功能。 光网关应承担Controller角色，用于家庭Wi-Fi网络的覆盖和回传链路的控制逻辑策略； 光路由应承担Agent角色，接受Controller的控制指令、将设备状态信息，链路状态信息等 返回给Controller。 3.2.6. 全光组网软件及云服务 全光组网软件及云服务，可以实现以下功能： 1.支持基础纳管、智能应用、插件容器及容器管理等功能，满足《中国移动智慧家庭 全光组网产品接口规范》验收标准； 2. 接受省级数字家庭管理平台、一级家庭开平台、组网云平台管理。 3.2.7. 组网质量探针插件 组网质量探针通过IF8接口和智能组网云平台交互。组网质量探针插件需要满足《中 国移动智能组网终端质量管理接口规范》。"
+    },
+    {
+      "index": 2,
+      "chunk_id": "48ecc091e26caaa3ccbd3be5",
+      "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "page": 16,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 136,
+      "text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第16页 页码：16 T/CAICIXXXX—XX 15 3.智能组网 3.1 初级的工作内容 3.1.1 初级技能要求 3.1.1 初级知识要求 3.2 基础网络质量检测 3.2.1 能对电缆链路进行巡线/检测 3.2.3 能对无线局域网信号进行检测 3.2.1 光纤入户施工及验收规范 3.2.2 无线局域网相关基础知识 3.3 智能家居布线 3.3.1 能操作有线控制网布线、联接 3.3.2 能操作无线控制网组网、联接 3.3.1 通信网（含无线局域网）基础 知识 3.3.2 物联网基础知识 4.4 家庭总线组网 3.4.1 能操作家庭总线平行布放 3.4.2 能操作家庭总线复合布放 3.4.3 能操作家庭总线混合组网 3.4.1 接入网基础知识 3.4.2 家庭复合总线基础知识 3.4.3 计算机网络基础知识 4.业务开通 和业务运维 4.1 初级的工作内容 4.1.1 初级技能要求 4.1.1 初级知识要求 4.2 基础业务运维 4.2.1 能进行光纤到户的一般故障 处理 4.2.2 能进行交互式网络电视的一般 故障处理 4.2.3 能进行基础网一般故障处理 4.2.1 无源光网络基础知识 4.2.2 运营商视听业务基础知识 4.2.3 接入网基础知识 4.3 物联网接入业务运维 4.3.1 能设置网关的接入业务 4.3.2 能处理网关的常见故障 4.3.1 物联网基础知识 4.3.2 计算机网络基础知识 4.4 家庭复合总线接入业务运维 4.4.1 能处理家庭复合总线的常见故 障 4.4.1 运营商视听业务基础知识 4.4.2 网络基础知识 4.4.3 智能家居基础知识 4.5 智能家居的业务运维 4.5.1 能进行智能家居场景设置 4.5.2 能处理智能家居的简单故障 4.5.1 物联网基础知识 4.5.2 计算机网络基础知识 4.5.2 智能家具基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识"
+    },
+    {
+      "index": 3,
+      "chunk_id": "1c317b1dd2cebfbf9647d03e",
+      "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "page": 12,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": false,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 49,
+      "text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第12页 页码：12 T/CAICIXXXX—XX 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 物联网接入业务运维： 1.掌握物联网接入业务的设置 2.了解常见网关故障 物联网接入业务运维： 1.掌握常见网关故障 2.了解网关组网方法 物联网接入业务运维： 1.掌握网关组网方法 2.熟悉路由协议等 家庭复合总线接入业务运维： 1.熟悉家庭复合总线的设置 家庭复合总线接入业务运维： 1.熟悉家庭复合总线常见故障处理 家庭复合总线接入业务运维： 1.掌握家庭复合总线常见故障处理 智能家居业务运维： 1.了解智能家居组网及场景设置 智能家居业务运维： 1.熟悉智能家居组网及场景设置 2.了解常见智能家居故障 智能家居业务运维： 1.熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关知识要求 1.职业道德 1.1 职业道德 1.1.1 能进行职业道德描述 1.1.2 能进行职业道德展示 1.1.1 职业道德规范知识 1.1.2 职业道德内容知识"
+    },
+    {
+      "index": 4,
+      "chunk_id": "5d1e8fd617217ecea2afa2f1",
+      "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "page": 9,
+      "present_label_in_actual_prompt": false,
+      "full_source_text_in_actual_prompt": false,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 166,
+      "text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第9页 页码：9 T/CAICIXXXX—XX 8 b）电子电路基础知识； c）物联网基础知识； d）通信及信息化新技术基础知识； e）矢量制图设计基础知识； f）电气照明等相关基础知识； 5.4 智能组网专业知识 智能组网专业基础知识应包括下列内容： a）综合布线知识； b）通信网络技术及光纤到户业务知识； c）无线局域网技术知识； d）视听业务技术知识； e）智能控制技术知识； f）智能组网及家庭总线（数据、视听、控制）技术知识； g）智能家居、智能家电及联网、联动技术知识 h） 家庭业务云平台及智能门户技术知识 5.5 全屋智能专业知识 全屋智能专业知识应包括下列内容： a）全屋智能综合布线知识； b）互联网、视听等（运营商业务）接入专业知识； c）家庭网络、智能组网及智能家居控制技术基础知识； d）智能单品、智能家居（本地控制）、智能家居（网关及云平台控制）及场景设置与操作知识； e）智慧家庭业务综合管理平台操作与应用知识； f）智慧家庭产品装维与故障处理知识； g）智能家电装维、联网/联动设置与操作知识。 5.6 终端和计算机知识 计算机知识应包括下列内容： a）计算机硬件基础知识； b）操作系统与办公应用软件知识； c）计算机防病毒基础知识；"
+    }
+  ],
+  "retrieval_observation_summary": [
+    {
+      "kind": "search",
+      "request": {
+        "bm25_weight": 0.3,
+        "candidate_k": 20,
+        "keyword_weight": 0.3,
+        "min_score": 0.05,
+        "mode": "hybrid",
+        "permission_tags": [],
+        "query_text": "如何提升智慧家庭设备的用户满意度？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题",
+        "relative_score_threshold": 0.35,
+        "semantic_weight": 0.7,
+        "tenant_id": null,
+        "top_k": 4
+      },
+      "results": [
+        {
+          "bm25_score": 27.950942537939028,
+          "chunk": {
+            "document_id": "a2053ec18f1415e4912c510f",
+            "id": "3b1f839571de44bb1abd2f94",
+            "metadata": {
+              "block_id": "blk_6ac81620a795fd075f87",
+              "block_index": 12,
+              "block_type": "paragraph",
+              "business_module": "设备维护",
+              "chunk_index": 12,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [],
+              "content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 6,
+              "end_unit": 42,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+                "第13页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_6d86eaf1ae9b537e44e5",
+              "page_number": 13,
+              "page_warning_codes": [],
+              "parent_block_id": "blk_c0b4d267f69226b9452e",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_c0b4d267f69226b9452e",
+              "review_status": "approved",
+              "section_path": [
+                "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+                "第13页"
+              ],
+              "section_title": "第13页",
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "source_block_ids": [
+                "blk_6ac81620a795fd075f87"
+              ],
+              "source_path": "/app/data/中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "中国移动智慧家庭全光组网产品技术规范V2.0.0",
+              "version_id": "v_ab72ce00c904f060"
+            },
+            "text": "章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第13页 页码：13 8 2. 家庭网络诊断功能； 3. 全光组网终端网络质量统计； 3.2.4. 和家亲APP 提供家庭全光组网终端的用户操控界面，用户通过和家亲APP执行的操作包括： 1. 确认家庭全光组网终端的快速入网，实现用户同全光组网终端的关系绑定/解绑； 用户控制家庭全光组网终端执行相应的操作； 2. 和家亲APP接收平台推送的家庭组网终端上报信息，提示用户； 3. Wi-Fi质量分析； 3.2.5. 全光组网终端 全光组网终端包含光网关和光路由端两大类，负责增大家庭网络的覆盖范围和信号 强度，提升家庭网络的整体通信性能。 为确保多个全光组网终端之间相互组网及互操作性，全光组网终端之间应通过 《Multi-AP_Specification R2》规范实现EasyMeshTM 要求的网络拓扑、漫游、频段切换、 角色选择等功能，并支持使用WPS或DPP功能。 光网关应承担Controller角色，用于家庭Wi-Fi网络的覆盖和回传链路的控制逻辑策略； 光路由应承担Agent角色，接受Controller的控制指令、将设备状态信息，链路状态信息等 返回给Controller。 3.2.6. 全光组网软件及云服务 全光组网软件及云服务，可以实现以下功能： 1.支持基础纳管、智能应用、插件容器及容器管理等功能，满足《中国移动智慧家庭 全光组网产品接口规范》验收标准； 2. 接受省级数字家庭管理平台、一级家庭开平台、组网云平台管理。 3.2.7. 组网质量探针插件 组网质量探针通过IF8接口和智能组网云平台交互。组网质量探针插件需要满足《中 国移动智能组网终端质量管理接口规范》。"
+          },
+          "keyword_score": 1.0,
+          "normalized_bm25_score": 1.0,
+          "rerank_score": null,
+          "retrieval_score": 0.732464973028302,
+          "score": 0.732464973028302,
+          "semantic_score": 0.6178071043261458
+        },
+        {
+          "bm25_score": 22.127373701280238,
+          "chunk": {
+            "document_id": "5256824b6b72b3f03d9c7a2c",
+            "id": "48ecc091e26caaa3ccbd3be5",
+            "metadata": {
+              "block_id": "blk_e36c72ccc5520e715c62",
+              "block_index": 15,
+              "block_type": "paragraph",
+              "business_module": "通用知识",
+              "chunk_index": 15,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 4,
+              "end_unit": 141,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "智慧家庭装维工程与管理职业技能等级标准",
+                "第16页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_f27fb5ecdc0f80b520b4",
+              "page_number": 16,
+              "page_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "parent_block_id": "blk_f3354526470c30758f5c",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_f3354526470c30758f5c",
+              "review_status": "approved",
+              "section_path": [
+                "智慧家庭装维工程与管理职业技能等级标准",
+                "第16页"
+              ],
+              "section_title": "第16页",
+              "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "source_block_ids": [
+                "blk_e36c72ccc5520e715c62"
+              ],
+              "source_path": "/app/data/智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "智慧家庭装维工程与管理职业技能等级标准",
+              "version_id": "v_dcf78195a87f01f4"
+            },
+            "text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第16页 页码：16 T/CAICIXXXX—XX 15 3.智能组网 3.1 初级的工作内容 3.1.1 初级技能要求 3.1.1 初级知识要求 3.2 基础网络质量检测 3.2.1 能对电缆链路进行巡线/检测 3.2.3 能对无线局域网信号进行检测 3.2.1 光纤入户施工及验收规范 3.2.2 无线局域网相关基础知识 3.3 智能家居布线 3.3.1 能操作有线控制网布线、联接 3.3.2 能操作无线控制网组网、联接 3.3.1 通信网（含无线局域网）基础 知识 3.3.2 物联网基础知识 4.4 家庭总线组网 3.4.1 能操作家庭总线平行布放 3.4.2 能操作家庭总线复合布放 3.4.3 能操作家庭总线混合组网 3.4.1 接入网基础知识 3.4.2 家庭复合总线基础知识 3.4.3 计算机网络基础知识 4.业务开通 和业务运维 4.1 初级的工作内容 4.1.1 初级技能要求 4.1.1 初级知识要求 4.2 基础业务运维 4.2.1 能进行光纤到户的一般故障 处理 4.2.2 能进行交互式网络电视的一般 故障处理 4.2.3 能进行基础网一般故障处理 4.2.1 无源光网络基础知识 4.2.2 运营商视听业务基础知识 4.2.3 接入网基础知识 4.3 物联网接入业务运维 4.3.1 能设置网关的接入业务 4.3.2 能处理网关的常见故障 4.3.1 物联网基础知识 4.3.2 计算机网络基础知识 4.4 家庭复合总线接入业务运维 4.4.1 能处理家庭复合总线的常见故 障 4.4.1 运营商视听业务基础知识 4.4.2 网络基础知识 4.4.3 智能家居基础知识 4.5 智能家居的业务运维 4.5.1 能进行智能家居场景设置 4.5.2 能处理智能家居的简单故障 4.5.1 物联网基础知识 4.5.2 计算机网络基础知识 4.5.2 智能家具基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识"
+          },
+          "keyword_score": 0.7916503592408661,
+          "normalized_bm25_score": 0.7916503592408661,
+          "rerank_score": null,
+          "retrieval_score": 0.6545463336729098,
+          "score": 0.6545463336729098,
+          "semantic_score": 0.5957874655723572
+        },
+        {
+          "bm25_score": 24.46981544128918,
+          "chunk": {
+            "document_id": "5256824b6b72b3f03d9c7a2c",
+            "id": "1c317b1dd2cebfbf9647d03e",
+            "metadata": {
+              "block_id": "blk_e4bef2211b5bd8cddc76",
+              "block_index": 11,
+              "block_type": "paragraph",
+              "business_module": "通用知识",
+              "chunk_index": 11,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 4,
+              "end_unit": 96,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "智慧家庭装维工程与管理职业技能等级标准",
+                "第12页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_7678536353d72d515bc9",
+              "page_number": 12,
+              "page_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "parent_block_id": "blk_941760edda054c582a94",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_941760edda054c582a94",
+              "review_status": "approved",
+              "section_path": [
+                "智慧家庭装维工程与管理职业技能等级标准",
+                "第12页"
+              ],
+              "section_title": "第12页",
+              "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "source_block_ids": [
+                "blk_e4bef2211b5bd8cddc76"
+              ],
+              "source_path": "/app/data/智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "智慧家庭装维工程与管理职业技能等级标准",
+              "version_id": "v_dcf78195a87f01f4"
+            },
+            "text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第12页 页码：12 T/CAICIXXXX—XX 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 物联网接入业务运维： 1.掌握物联网接入业务的设置 2.了解常见网关故障 物联网接入业务运维： 1.掌握常见网关故障 2.了解网关组网方法 物联网接入业务运维： 1.掌握网关组网方法 2.熟悉路由协议等 家庭复合总线接入业务运维： 1.熟悉家庭复合总线的设置 家庭复合总线接入业务运维： 1.熟悉家庭复合总线常见故障处理 家庭复合总线接入业务运维： 1.掌握家庭复合总线常见故障处理 智能家居业务运维： 1.了解智能家居组网及场景设置 智能家居业务运维： 1.熟悉智能家居组网及场景设置 2.了解常见智能家居故障 智能家居业务运维： 1.熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关知识要求 1.职业道德 1.1 职业道德 1.1.1 能进行职业道德描述 1.1.2 能进行职业道德展示 1.1.1 职业道德规范知识 1.1.2 职业道德内容知识"
+          },
+          "keyword_score": 0.875455824363534,
+          "normalized_bm25_score": 0.875455824363534,
+          "rerank_score": null,
+          "retrieval_score": 0.6518488430465175,
+          "score": 0.6518488430465175,
+          "semantic_score": 0.556017279624939
+        },
+        {
+          "bm25_score": 18.87240344537535,
+          "chunk": {
+            "document_id": "5256824b6b72b3f03d9c7a2c",
+            "id": "5d1e8fd617217ecea2afa2f1",
+            "metadata": {
+              "block_id": "blk_9a89f1bb7cefe9455e61",
+              "block_index": 8,
+              "block_type": "paragraph",
+              "business_module": "通用知识",
+              "chunk_index": 8,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [],
+              "content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 4,
+              "end_unit": 39,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "智慧家庭装维工程与管理职业技能等级标准",
+                "第9页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_3acdfbf60b3f244896eb",
+              "page_number": 9,
+              "page_warning_codes": [],
+              "parent_block_id": "blk_7cc29887c3519bb245b1",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_7cc29887c3519bb245b1",
+              "review_status": "approved",
+              "section_path": [
+                "智慧家庭装维工程与管理职业技能等级标准",
+                "第9页"
+              ],
+              "section_title": "第9页",
+              "source": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "source_block_ids": [
+                "blk_9a89f1bb7cefe9455e61"
+              ],
+              "source_path": "/app/data/智慧家庭装维工程与管理职业技能等级标准.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "智慧家庭装维工程与管理职业技能等级标准",
+              "version_id": "v_dcf78195a87f01f4"
+            },
+            "text": "章节：智慧家庭装维工程与管理职业技能等级标准 > 第9页 页码：9 T/CAICIXXXX—XX 8 b）电子电路基础知识； c）物联网基础知识； d）通信及信息化新技术基础知识； e）矢量制图设计基础知识； f）电气照明等相关基础知识； 5.4 智能组网专业知识 智能组网专业基础知识应包括下列内容： a）综合布线知识； b）通信网络技术及光纤到户业务知识； c）无线局域网技术知识； d）视听业务技术知识； e）智能控制技术知识； f）智能组网及家庭总线（数据、视听、控制）技术知识； g）智能家居、智能家电及联网、联动技术知识 h） 家庭业务云平台及智能门户技术知识 5.5 全屋智能专业知识 全屋智能专业知识应包括下列内容： a）全屋智能综合布线知识； b）互联网、视听等（运营商业务）接入专业知识； c）家庭网络、智能组网及智能家居控制技术基础知识； d）智能单品、智能家居（本地控制）、智能家居（网关及云平台控制）及场景设置与操作知识； e）智慧家庭业务综合管理平台操作与应用知识； f）智慧家庭产品装维与故障处理知识； g）智能家电装维、联网/联动设置与操作知识。 5.6 终端和计算机知识 计算机知识应包括下列内容： a）计算机硬件基础知识； b）操作系统与办公应用软件知识； c）计算机防病毒基础知识；"
+          },
+          "keyword_score": 0.6751973898468367,
+          "normalized_bm25_score": 0.6751973898468367,
+          "rerank_score": null,
+          "retrieval_score": 0.651438941695033,
+          "score": 0.651438941695033,
+          "semantic_score": 0.6412567496299744
+        }
+      ]
+    }
+  ],
+  "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0243.json",
+  "trace_sha256": "75ff4cf9734f361fc39c9c12907c403d52e86ebc497c171a1bf336b055b447b3"
+}

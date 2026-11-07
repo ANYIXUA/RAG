@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:01.385577+08:00",
+  "conservative_cost_yuan": 0.00149565,
+  "error": null,
+  "latency_ms": 4094.044999917969,
+  "list_price_estimate_yuan": 0.00098565,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用内容明确支持单价114.00元\",\n    \"evidence\": \"技工 普工 单位 工日 单价(元) 114.00 61.00\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"技工 普工 单位 工日 单价(元) 114.00 61.00\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、项目编码、工作内容等\",\n    \"evidence\": \"计量单位：千米²次 维护分项作业 项目编码 项目名称\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]对应实际来源\",\n    \"evidence\": \"WH11006001 管道光缆线路车辆巡回 24.01 16.29 4.46 3.26 消耗量 0.14 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881677,
+    "id": "chatcmpl-49d76d52-274c-9b75-93e4-893ae5c2433e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 340,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3171,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3511
+    }
+  },
+  "usage_known": true
+}

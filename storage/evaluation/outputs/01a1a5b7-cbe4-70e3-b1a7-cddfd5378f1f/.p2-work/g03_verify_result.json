@@ -1,0 +1,112 @@
+[
+  {
+    "name": "g03 草稿可正常打开（openpyxl 加载成功）",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "工作表名与尺寸一致",
+    "ok": true,
+    "detail": "候选审核 61x13"
+  },
+  {
+    "name": "全簿逐格 diff 仅 4 授权格（行11/16 × H/J）",
+    "ok": true,
+    "detail": "diff=[(11, 8), (11, 10), (16, 8), (16, 10)]"
+  },
+  {
+    "name": "第 17–61 行（其余 45 条与表注）零差异",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "行 11/16 行高只增不减（540→769.2，729→999.6）",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "行 11/16 H/J wrap_text=True",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "原始 review.xlsx 逐格未变（对比本会话早前快照）",
+    "ok": true,
+    "detail": "[]"
+  },
+  {
+    "name": "F 列 57 条全部 pending_review",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "G 列保持 human 占位",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "H 列 B01–B12 非空",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "I 列仅行 12/14/15",
+    "ok": true,
+    "detail": "[12, 14, 15]"
+  },
+  {
+    "name": "J 列仅行 5/6/8/10/11/13/16",
+    "ok": true,
+    "detail": "[5, 6, 8, 10, 11, 13, 16]"
+  },
+  {
+    "name": "候选 JSONL 总数 57",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "57 条全部 review_status=pending_review",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "candidate_id 集合与工作簿一致",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "B07/B12 父候选原始 question/answer/supporting_chunk_ids 未被改动",
+    "ok": true,
+    "detail": "B07:q_ok=True,support_ok=True,chunks=['38ea5e749604f43f5f040901']; B12:q_ok=True,support_ok=True,chunks=['48ecc091e26caaa3ccbd3be5', 'c10a8b3b89210595f9880fc6']"
+  },
+  {
+    "name": "B07 意见含来源 Chunk 核验结论",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "B12 推荐问题不含两个答案短语（含解析空格变体）",
+    "ok": true,
+    "detail": "'根据《智慧家庭装维工程与管理职业技能等级标准》，初级基础网络质量检测与中级基础网络优化，对无线局域网知识的要求分别是什么'…"
+  },
+  {
+    "name": "B12 推荐答案同时含 初级/中级 两部分",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "B12 意见含 any-hit 口径记录",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "B12 意见含中级三项口径说明",
+    "ok": true,
+    "detail": ""
+  },
+  {
+    "name": "Git 无已跟踪文件改动、无 commit",
+    "ok": true,
+    "detail": "'?? \"-files \\\\357\\\\201\\\\274 Select-String -Pattern \\\\357\\\\200\\\\242.(json\\\\357\\\\201\\\\274jsonl\\\\357\\\\201\\\\274csv)$\\\\357\\\\200\\\\242\" | ?? retrieval_eval_20261103_134741.json | '"
+  }
+]

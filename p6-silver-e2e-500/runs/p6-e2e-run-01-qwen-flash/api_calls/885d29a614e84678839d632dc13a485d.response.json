@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:42.111162+08:00",
+  "conservative_cost_yuan": 0.0007518,
+  "error": null,
+  "latency_ms": 1480.4115002043545,
+  "list_price_estimate_yuan": 0.0005778,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 平原地区基站主设备故障时，需同时进行应急发电。[1]  \n2. 平原、2小时以下应急发电综合单价为167.81元/次。[2]  \n3. 超出2小时部分，每增加1小时加收52.90元。[2]  \n4. 应急发电包含器材准备、发电、恢复现场等操作。[2]  \n5. 综合单价按实际发电次数和时长计算。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881120,
+    "id": "chatcmpl-0fdd8c40-a71f-9538-9fdb-c335cfdc4926",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 116,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2692,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2808
+    }
+  },
+  "usage_known": true
+}

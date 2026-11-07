@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH21102009 山区 136.80 85.50 25.65 25.65 0.75 —",
+    "reason": "参考证据支持单价136.80元",
+    "score": 1
+  },
+  "case_id": "p6s-0433",
+  "citation_correctness": {
+    "evidence": "WH21102009 山区 136.80 85.50 25.65 25.65 0.75 —",
+    "reason": "引用编号与上下文匹配且支持句意",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH21102009 山区 136.80 85.50 25.65 25.65 0.75 —",
+    "reason": "涵盖价格、工日、内容等关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH21102009 山区 136.80 85.50 25.65 25.65 0.75 —",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "01dfb2b961b34da997d1af17630c0e5b",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "发包人提供的材料、备品备件和机械仪表应在招标文件中按照本规则表-06和表07规定，填写《材料和备品备件购置清单与计价表》、《机械仪表使用清单与计价表》中发包人提供的部分",
+    "reason": "上下文明确支持计价方式一致",
+    "score": 1
+  },
+  "case_id": "p6s-0242",
+  "citation_correctness": {
+    "evidence": "8.2.2.1 发包人提供的甲供用品应在招标文件中...",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "两者均需在《计价表》中列明编号、名称、规格、单位、数量及单价",
+    "reason": "覆盖问题所有关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "8.2.2.1 发包人提供的甲供用品应在招标文件中...填写《材料和备品备件购置清单与计价表》",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "357745f821ec4c119f0e29d820565f9b",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

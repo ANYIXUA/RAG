@@ -1,0 +1,99 @@
+diff --git a/rag_app/indexing/vector_store.py b/rag_app/indexing/vector_store.py
+index 4e2e072..9827314 100644
+--- a/rag_app/indexing/vector_store.py
++++ b/rag_app/indexing/vector_store.py
+@@ -1,4 +1,4 @@
+-﻿"""向量存储和混合检索实现。"""
++"""向量存储和混合检索实现。"""
+ 
+ from __future__ import annotations
+ 
+@@ -17,6 +17,13 @@ from rag_app.core.text_utils import tokenize_for_keyword_search
+ BM25_K1 = 1.5
+ BM25_B = 0.75
+ 
++#: keyword(ILIKE) 候选在交给 BM25 截断前允许扫描的最大行数。
++#:
++#: ILIKE 谓词只负责“把字面相关的 Chunk 捞回来”，真正的候选截断必须由 BM25 完成。
++#: 这个上界只是给宽泛查询兜底，不参与最终排序；达到上界时按命中 token 数降序，
++#: 因此不会退化成 priority/updated_at 的物理顺序。
++KEYWORD_CANDIDATE_SCAN_LIMIT = 2000
++
+ 
+ @dataclass(frozen=True)
+ class VectorRecord:
+@@ -193,7 +200,7 @@ class PostgresVectorStore:
+                 records,
+                 self._query_keyword_candidates(
+                     query_text=query_text or "",
+-                    limit=actual_candidate_k,
++                    scan_limit=min(record_count, KEYWORD_CANDIDATE_SCAN_LIMIT),
+                 ),
+             )
+         if not records:
+@@ -380,15 +387,33 @@ class PostgresVectorStore:
+         }
+         return records, scores
+ 
+-    def _query_keyword_candidates(self, query_text: str, limit: int) -> list[VectorRecord]:
++    def _query_keyword_candidates(self, query_text: str, scan_limit: int) -> list[VectorRecord]:
++        """取 keyword(ILIKE) 命中集，供后续 BM25 截断。
++
++        历史实现用 ``ORDER BY priority DESC, updated_at DESC LIMIT candidate_k`` 直接
++        截断：当 priority/updated_at 无区分度时，这一步等价于按物理顺序随机取前 N 行，
++        相关 Chunk 在 BM25 见到它之前就被丢掉了。这里改为：
++
++        1. ILIKE OR 只做召回过滤（保留原有 collection/status 规则）；
++        2. 先按命中 token 数排序，作为扫描上界触发时的相关性兜底；
++        3. 最多扫描 ``scan_limit`` 行，真正的前 N 条由调用方的 BM25 打分决定。
++        """
++
+         tokens = tokenize_for_keyword_search(query_text)[:12]
+         if not tokens:
+             return []
++        if scan_limit <= 0:
++            return []
+         predicates = " OR ".join(["chunk_text ILIKE %s"] * len(tokens))
++        # 命中 token 数：仅用于扫描上界触发时保持“字面更相关者优先”，不参与 BM25 打分。
++        lexical_hits = " + ".join(
++            ["(CASE WHEN chunk_text ILIKE %s THEN 1 ELSE 0 END)"] * len(tokens)
++        )
+         params: list[Any] = [
+             self.collection_name,
+             *[f"%{token}%" for token in tokens],
+-            limit,
++            *[f"%{token}%" for token in tokens],
++            scan_limit,
+         ]
+         psycopg, dict_row, _ = _import_psycopg()
+         with psycopg.connect(self.dsn, row_factory=dict_row) as connection:
+@@ -402,7 +427,8 @@ class PostgresVectorStore:
+                     WHERE collection_name = %s
+                       AND status = 'active'
+                       AND ({predicates})
+-                    ORDER BY priority DESC, updated_at DESC
++                    ORDER BY ({lexical_hits}) DESC, priority DESC, updated_at DESC,
++                             chunk_id ASC
+                     LIMIT %s
+                     """,
+                     tuple(params),
+@@ -547,7 +573,6 @@ def _rank_vector_records(
+         for record in records
+     }
+     bm25_scores = _bm25_scores(query_tokens, records)
+-    normalized_bm25_scores = _normalize_positive_scores(bm25_scores)
+ 
+     # 先分别取语义候选和 BM25 候选，再按检索模式合并，避免纯关键词命中的业务词被语义召回漏掉。
+     semantic_ids = _top_ids(
+@@ -565,6 +590,11 @@ def _rank_vector_records(
+         semantic_ids=semantic_ids,
+         bm25_ids=bm25_ids,
+     )
++    # BM25 只在最终候选集内归一化：候选集之外的高分不能稀释候选内部的融合权重。
++    # 关键词候选的截断已按 BM25 完成（见 _query_keyword_candidates），这里不再用未入选记录定标。
++    normalized_bm25_scores = _normalize_positive_scores(
++        {chunk_id: bm25_scores.get(chunk_id, 0.0) for chunk_id in candidate_ids}
++    )
+     record_by_id = {record.chunk.id: record for record in records}
+ 
+     scored: list[RetrievalResult] = []

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:12.213948+08:00",
+  "conservative_cost_yuan": 0.0006828,
+  "error": null,
+  "latency_ms": 1403.6209001205862,
+  "list_price_estimate_yuan": 0.0005478,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 优化基础网络，包括带宽与无线局域网覆盖。[1]  \n2. 实施智能组网设计，提升家庭网络稳定性。[1]  \n3. 掌握常见智能家居故障处理方法。[2]  \n4. 熟悉物联网接入及网关组网配置。[2]  \n5. 采用常用协议完成智能终端联调适配。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881210,
+    "id": "chatcmpl-ddaa28c3-62b5-9808-b4a8-3b6eab0c7ece",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 90,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2752,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2842
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "1.天馈系统故障抢修。 2.主设备故障抢修。 3.配套设备故障抢修。",
+    "reason": "答案与上下文一致，准确列出故障类型。",
+    "score": 1
+  },
+  "case_id": "p6s-0063",
+  "citation_correctness": {
+    "evidence": "1.天馈系统故障抢修。 2.主设备故障抢修。 3.配套设备故障抢修。",
+    "reason": "引用编号与上下文来源匹配且支持该句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "1.天馈系统故障抢修。 2.主设备故障抢修。 3.配套设备故障抢修。",
+    "reason": "完整覆盖问题所需条件，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "1.天馈系统故障抢修。 2.主设备故障抢修。 3.配套设备故障抢修。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "1b9cba93416f4e11b474360a40fcaef5",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

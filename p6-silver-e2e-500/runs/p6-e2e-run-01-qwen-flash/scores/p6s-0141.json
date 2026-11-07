@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "销项税额 （ 1+2+3+4+5+6+7）× 费率",
+    "reason": "准确引用计算公式",
+    "score": 1
+  },
+  "case_id": "p6s-0141",
+  "citation_correctness": {
+    "evidence": "销项税额 （ 1+2+3+4+5+6+7）× 费率",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "该计算方式适用于费用结算汇总表。[1]",
+    "reason": "涵盖计算依据与适用范围",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "销项税额 （ 1+2+3+4+5+6+7）× 费率",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "acff590e548f4f52a502e327c78aab7f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答题，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

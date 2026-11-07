@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:36.221104+08:00",
+  "conservative_cost_yuan": 0.0008943,
+  "error": null,
+  "latency_ms": 1347.0159000717103,
+  "list_price_estimate_yuan": 0.0006902999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 丘陵地区施工时，综合单价按相应子目1.2倍计取。[2]  \n2. 7/3.0吊板拉线地锚在综合土条件下单价为365.13元。[2]  \n3. 调整后单价为365.13×1.2=438.16元。[2]  \n4. 此调整适用于丘陵、城区等非平原地区。[2]  \n5. 依据规程，山区需按1.5倍计取，但本题为丘陵地区。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881174,
+    "id": "chatcmpl-bc917108-c217-9856-8733-1c77eae7133f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 136,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3242,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3378
+    }
+  },
+  "usage_known": true
+}

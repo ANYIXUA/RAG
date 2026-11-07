@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:44.489806+08:00",
+  "conservative_cost_yuan": 0.0018776999999999997,
+  "error": null,
+  "latency_ms": 4246.65779992938,
+  "list_price_estimate_yuan": 0.0012356999999999997,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出777.77元，与参考一致。\",\n    \"evidence\": \"WH33104002 嵌墙式 777.77 527.66 144.58 105.53 4.63 0.00\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"WH33104002 嵌墙式 777.77 527.66 144.58 105.53 4.63 0.00\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答了单价、编码、单位及对比信息。\",\n    \"evidence\": \"WH33104002 嵌墙式 777.77 527.66 144.58 105.53 4.63 0.00\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]准确对应实际来源并支持该句。\",\n    \"evidence\": \"WH33104002 嵌墙式 777.77 527.66 144.58 105.53 4.63 0.00\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881840,
+    "id": "chatcmpl-d014c409-266c-9ff5-b9ef-e76a81ceb467",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 428,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3958,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4386
+    }
+  },
+  "usage_known": true
+}

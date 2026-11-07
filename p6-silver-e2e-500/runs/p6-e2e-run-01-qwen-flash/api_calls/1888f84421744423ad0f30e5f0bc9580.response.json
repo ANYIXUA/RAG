@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:46.188591+08:00",
+  "conservative_cost_yuan": 0.0013878,
+  "error": null,
+  "latency_ms": 2639.1751000192016,
+  "list_price_estimate_yuan": 0.0009557999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持主用按需、备用半年\",\n    \"evidence\": \"主用光纤：按需 备用光纤：半年 （特殊情况时，适当缩短周期）\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"主用光纤：按需 备用光纤：半年 （特殊情况时，适当缩短周期）\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需周期信息\",\n    \"evidence\": \"主用光纤：按需 备用光纤：半年 （特殊情况时，适当缩短周期）\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源片段\",\n    \"evidence\": \"主用光纤：按需 备用光纤：半年 （特殊情况时，适当缩短周期）\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881783,
+    "id": "chatcmpl-3735544e-32e7-9851-a03a-7061daa53aab",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 288,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3492,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3780
+    }
+  },
+  "usage_known": true
+}

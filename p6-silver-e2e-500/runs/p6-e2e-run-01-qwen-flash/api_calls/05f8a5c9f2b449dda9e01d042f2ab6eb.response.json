@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:58.884091+08:00",
+  "conservative_cost_yuan": 0.00088995,
+  "error": null,
+  "latency_ms": 1688.0429000593722,
+  "list_price_estimate_yuan": 0.00067245,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH33112002 35mm²以下电力电缆的消耗量为0.20（单位：10米条）。[1]  \n2. 该消耗量适用于室内布放电力电缆作业。[1]  \n3. 对应项目编码为WH33112002，计量单位为10米条。[1]  \n4. 与表10.3.3.9中WH23109002数据一致，均为0.20。[2]  \n5. 消耗量信息来源于《电信基础设施维护规程》第313页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880837,
+    "id": "chatcmpl-1c24247c-5879-9ce8-8a32-e3e46cf85bca",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 145,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3033,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3178
+    }
+  },
+  "usage_known": true
+}

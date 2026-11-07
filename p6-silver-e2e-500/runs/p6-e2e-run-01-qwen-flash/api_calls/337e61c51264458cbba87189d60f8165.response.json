@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:31.033208+08:00",
+  "conservative_cost_yuan": 0.0014814000000000001,
+  "error": null,
+  "latency_ms": 2758.067399961874,
+  "list_price_estimate_yuan": 0.0010164,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持16个STA\",\n    \"evidence\": \"STA模型：Wi-Fi 7 全光组网终端多用户下行并发时延测试场景的用户数为16个\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"测试Wi-Fi 7全光组网终端时，包含4个STA采用IEEE 802.11be终端\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题核心要素，无遗漏\",\n    \"evidence\": \"STA模型：Wi-Fi 7 全光组网终端多用户下行并发时延测试场景的用户数为16个\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881768,
+    "id": "chatcmpl-9e3540ca-4797-9ddd-8d14-4cf387cfb93f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 310,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3676,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3986
+    }
+  },
+  "usage_known": true
+}

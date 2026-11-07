@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:24.476684+08:00",
+  "conservative_cost_yuan": 0.0007465499999999999,
+  "error": null,
+  "latency_ms": 1414.1569999046624,
+  "list_price_estimate_yuan": 0.0005725499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护人员应立即赶往现场，判断事件为一般或重大突发事件。[1]  \n2. 一般事件由维护企业现场处理并通报结果；重大事件需通知运营企业协同处理。[1]  \n3. 现场应采取保护措施，并及时向上级上报情况。[2]  \n4. 按应急预案执行，必要时安排24小时看护直至处理完毕。[1]  \n5. 处理结束后填写《应急事件处理表》并反馈结果。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881103,
+    "id": "chatcmpl-1da24545-c641-97fd-aa9b-ab9e9901cc37",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 116,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2657,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2773
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:21.565635+08:00",
+  "conservative_cost_yuan": 0.0014996999999999999,
+  "error": null,
+  "latency_ms": 2703.783300006762,
+  "list_price_estimate_yuan": 0.0010451999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确匹配项目编码与单价\",\n    \"evidence\": \"WH11004001 直埋光缆线路车辆巡回 平原、丘陵 24.01\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH11001001 架空光缆线路徒步巡回 平原 66.01\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要条件与步骤\",\n    \"evidence\": \"两者计量单位均为千米²次，按维护周期和实际次数计算。[4]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"WH11004001 直埋光缆线路车辆巡回 平原、丘陵 24.01\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881818,
+    "id": "chatcmpl-77408c6e-94e9-94b3-b00f-701e1c14ab50",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 303,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3938,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4241
+    }
+  },
+  "usage_known": true
+}

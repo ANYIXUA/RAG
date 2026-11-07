@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:34.065552+08:00",
+  "conservative_cost_yuan": 0.0008593499999999999,
+  "error": null,
+  "latency_ms": 1657.6178001705557,
+  "list_price_estimate_yuan": 0.0006358499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）×1.5% [1]  \n2. 材料及备品备件购置费和机械仪表使用费应包括发包人提供的部分。[1]  \n3. 计算时需包含发包人提供的材料与设备费用，但不计入其费用本身。[3]  \n4. 安全生产费按国家规定计算，不得作为竞争性费用。[3]  \n5. 安全生产费的计算基础包含规费、措施项目费等全部相关费用。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880992,
+    "id": "chatcmpl-bf775394-fa2e-9bfc-aeb1-b90872af40a1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 149,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2749,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2898
+    }
+  },
+  "usage_known": true
+}

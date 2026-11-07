@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:59.403375+08:00",
+  "conservative_cost_yuan": 0.0013040999999999999,
+  "error": null,
+  "latency_ms": 2460.917599964887,
+  "list_price_estimate_yuan": 0.0009201,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确识别项目编码WH33121\",\n    \"evidence\": \"WH33121 更换单体电池\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH33121 更换单体电池\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖项目编码及关键属性\",\n    \"evidence\": \"更换单体电池的项目编码是WH33121。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"WH33121 更换单体电池\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882156,
+    "id": "chatcmpl-ad549e98-b2f8-91ef-9580-dfe1ad75ab77",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 256,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3574,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3830
+    }
+  },
+  "usage_known": true
+}

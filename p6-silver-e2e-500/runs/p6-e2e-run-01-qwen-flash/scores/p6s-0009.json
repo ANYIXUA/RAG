@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00",
+    "reason": "实际LLM上下文[1]明确列出WH23119004（室外、铁塔）安装无线局域网接入点（AP）设备的综合单价为182.40元，与问题完全匹配。该信息直接来源于检索到的文档内容。",
+    "score": 1
+  },
+  "case_id": "p6s-0009",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第276页\n定位信息：276\n... WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00",
+    "reason": "所有引用编号[1]均正确对应实际上下文片段[1]，且该片段确实支持每一条陈述。引用编号使用规范，未出现错误或冗余引用。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00",
+    "reason": "问题仅询问综合单价，回答完整提供了该数值，并补充了相关背景信息（如计量单位、人工费、项目编码等），虽非必要但未遗漏关键条件，符合精确事实类问题的完整要求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00",
+    "reason": "回答中每一项事实均能在实际上下文[1]中找到对应支持：综合单价182.40元、包含安装与调测、计量单位为套、人工费114.00元、项目编码WH23119004，所有陈述均有原文依据且无添加或扭曲。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "04af9e3838b14b749ea0177f5fbf62c1",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00",
+    "reason": "问题为可回答的精确事实类问题，且上下文中有明确答案，无需拒答。模型正常作答，行为合理。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:02.753623+08:00",
+  "conservative_cost_yuan": 0.000762,
+  "error": null,
+  "latency_ms": 1491.925099864602,
+  "list_price_estimate_yuan": 0.000606,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查机房外部环境安全及上站道路状况。[2]  \n2. 清除机房周边杂草、杂物，保持环境整洁。[2]  \n3. 检查机房主体结构外观与地基围墙情况。[2]  \n4. 清洁机房内部卫生，确保无积尘杂物。[1]  \n5. 确认走线架、照明插座、消防设施等完好。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880961,
+    "id": "chatcmpl-16dcee5a-66ef-91c0-a383-79530d2dfe1c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3000,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3104
+    }
+  },
+  "usage_known": true
+}

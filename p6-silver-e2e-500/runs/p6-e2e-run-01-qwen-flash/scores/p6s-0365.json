@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0365",
+  "citation_correctness": {
+    "evidence": "服务礼仪、沟通技巧和维护技巧是考核要素之一。[2]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "具体绑定机制需参考更详细的绩效管理制度。[1]",
+    "reason": "覆盖问题核心且无遗漏关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "绩效可能关联服务能力、交付技巧及故障处理能力。[2]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "c3649c0917ab4e75aa8c0a3bc9d90739",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "具体绑定机制需参考更详细的绩效管理制度。[1]",
+    "reason": "问题不可答时明确拒答并提示",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:00.694492+08:00",
+  "conservative_cost_yuan": 0.00084105,
+  "error": null,
+  "latency_ms": 1468.9933999907225,
+  "list_price_estimate_yuan": 0.0006445499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 更换井盖的综合单价为54.17元/个。[2]  \n2. 人井清淤作业中技工人工费为99.73元/个。[1]  \n3. 技工人工费占人井清淤综合单价的比例约为67.8%。[1]  \n4. 人井清淤综合单价为147.00元/个。[1]  \n5. 技工人工费按0.42工日计算，单价114.00元/工日。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881019,
+    "id": "chatcmpl-777a9e00-fb0e-9630-8c1b-d5bbb80e3747",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 131,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2987,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3118
+    }
+  },
+  "usage_known": true
+}

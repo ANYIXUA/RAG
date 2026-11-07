@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "4.6 职业能力特征 .................................................................... 6",
+    "reason": "回答覆盖职业能力特征核心要求",
+    "score": 1
+  },
+  "case_id": "p6s-0417",
+  "citation_correctness": {
+    "evidence": "4.6 职业能力特征 .................................................................... 6",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "4.6 职业能力特征 .................................................................... 6",
+    "reason": "涵盖基本要求且无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "4.6 职业能力特征 .................................................................... 6",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3186cf7c7cfd4db4901e60545cb51d1e",
+  "judge_attempts": 3,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答题，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError",
+    "ValueError"
+  ],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

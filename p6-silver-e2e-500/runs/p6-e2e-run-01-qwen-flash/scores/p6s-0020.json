@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第318页\n定位信息：318\n... WH33118003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —",
+    "reason": "实际LLM上下文[1]明确列出WH33118003项目中太阳能光伏离网发电系统的综合单价为33.02元，与silver_reference一致，且该信息在上下文中可直接支持。",
+    "score": 1
+  },
+  "case_id": "p6s-0020",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第318页\n定位信息：318\n... WH33118003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —",
+    "reason": "所有关键结论均正确引用自上下文[1]，且引用编号[1]与实际来源匹配。虽然其他片段也提及类似内容，但核心数据来自[1]，引用正确。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第318页\n定位信息：318\n... WH33118003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —",
+    "reason": "问题仅询问综合单价，回答准确给出33.02元，并补充了相关背景信息（如计量单位、费用构成、项目类别），虽略超基本要求但未遗漏必要条件，符合问题需求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第318页\n定位信息：318\n... WH33118003 太阳能光伏离网发电系统 33.02 20.64 6.19 6.19 0.43 —\n... 计量单位：台·次\n... 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元)",
+    "reason": "回答中的每一项事实（如综合单价33.02元、计量单位台·次、包含人工费等、属于发电设备专项检修类别）均能在上下文[1]中找到对应支持，无虚构或超出原文内容的陈述。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "09321c28362e4bacb97f80311f2c399f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "无",
+    "reason": "问题为明确的精确事实类问题，上下文中有明确答案，无需拒答，因此该维度不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

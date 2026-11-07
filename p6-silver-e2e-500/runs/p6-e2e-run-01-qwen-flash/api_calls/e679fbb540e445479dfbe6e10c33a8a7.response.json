@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:10.746038+08:00",
+  "conservative_cost_yuan": 0.0007344,
+  "error": null,
+  "latency_ms": 1454.9586998764426,
+  "list_price_estimate_yuan": 0.0005694,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查箱体安装是否牢固，箱盖、门锁是否完好。[1]  \n2. 确保箱内清洁无杂物，无异物堆积。[1]  \n3. 核查电源电压、指示灯是否正常，箱门密封及风扇散热情况。[1]  \n4. 检查线缆走线与绑扎是否符合规范要求。[1]  \n5. 确认线缆标识齐全且准确无误。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881029,
+    "id": "chatcmpl-b2dfb178-77ed-95c0-b796-394e53ad449e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2696,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2806
+    }
+  },
+  "usage_known": true
+}

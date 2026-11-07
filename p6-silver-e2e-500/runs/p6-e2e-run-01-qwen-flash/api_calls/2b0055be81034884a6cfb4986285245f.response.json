@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:56.623164+08:00",
+  "conservative_cost_yuan": 0.00082575,
+  "error": null,
+  "latency_ms": 1333.4899998735636,
+  "list_price_estimate_yuan": 0.00064125,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH21115004漏泄式同轴电缆巡检的计量单位是百米·次。[1]  \n2. 该单位用于统计巡检作业量，按每百米计算一次。[1]  \n3. 巡检工作内容包括外观、固定情况检查等。[1]  \n4. 与馈线系统调测单位“百米条”类似但不相同。[3]  \n5. 项目编码为WH21115004，对应维护分项作业。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881015,
+    "id": "chatcmpl-c2151c8c-2978-90a2-bf4b-d0162b4ace7f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 123,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3045,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3168
+    }
+  },
+  "usage_known": true
+}

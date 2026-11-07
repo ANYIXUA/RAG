@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:16.870087+08:00",
+  "conservative_cost_yuan": 0.0016501500000000002,
+  "error": null,
+  "latency_ms": 3416.1886998917907,
+  "list_price_estimate_yuan": 0.00111465,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确引用WH11003003单价标准\",\n    \"evidence\": \"WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有条件与步骤\",\n    \"evidence\": \"检查沿线标石、宣传牌、标志牌、警示牌是否歪斜或缺漏\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881813,
+    "id": "chatcmpl-ea554e6c-07cd-9a79-87c4-96297fb6a255",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 357,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3861,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4218
+    }
+  },
+  "usage_known": true
+}

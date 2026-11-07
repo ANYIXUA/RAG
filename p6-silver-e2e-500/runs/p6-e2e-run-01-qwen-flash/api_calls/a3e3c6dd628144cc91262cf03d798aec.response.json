@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:44.115520+08:00",
+  "conservative_cost_yuan": 0.0007474500000000001,
+  "error": null,
+  "latency_ms": 1307.2102998849005,
+  "list_price_estimate_yuan": 0.0005854500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 小型离网风力发电机组需进行停车检查与回转体检修。[2]  \n2. 应清洁并添加设备轴承润滑油。[2]  \n3. 检查发电机输电线插接头是否松动或氧化，必要时更换。[2]  \n4. 查看风机立柱、基础是否下沉、倾斜或锈蚀。[4]  \n5. 检查拉索及地锚是否牢固，确保结构稳定。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881122,
+    "id": "chatcmpl-39cab663-9501-9f35-9603-fbc2bf69c581",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 108,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2823,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2931
+    }
+  },
+  "usage_known": true
+}

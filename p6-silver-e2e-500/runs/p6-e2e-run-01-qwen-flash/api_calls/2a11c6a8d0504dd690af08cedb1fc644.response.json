@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:27.586685+08:00",
+  "conservative_cost_yuan": 0.0013845,
+  "error": null,
+  "latency_ms": 3242.290999973193,
+  "list_price_estimate_yuan": 0.0009705,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持终端配置与流程要求\",\n    \"evidence\": \"掌握交互式网络电视机顶盒配置。[2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"应熟悉交互式网络电视开通业务流程。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖终端配置与安全规范\",\n    \"evidence\": \"操作中须遵守装维作业安全操作规范。[4.2.2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[4.5.1]未在上下文中出现\",\n    \"evidence\": \"终端配置需符合运营商视听业务基础知识要求。[4.5.1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_mismatch\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881824,
+    "id": "chatcmpl-5536e711-ba06-9cd4-93d2-f28c63c23f92",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 276,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3710,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3986
+    }
+  },
+  "usage_known": true
+}

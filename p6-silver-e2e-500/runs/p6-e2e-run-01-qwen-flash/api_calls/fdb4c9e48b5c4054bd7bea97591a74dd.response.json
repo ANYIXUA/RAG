@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:35.645960+08:00",
+  "conservative_cost_yuan": 0.0006039,
+  "error": null,
+  "latency_ms": 1206.1721999198198,
+  "list_price_estimate_yuan": 0.0004614,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检索结果中未提及“振动监测仪”的规格型号。[1]  \n2. 表格中列出的仪表均不包含“振动监测仪”。[1]  \n3. 无相关文档明确说明该仪器的规格型号。[1]  \n4. 建议补充具体设备信息或转人工查询。[1]  \n5. 当前知识库无法提供该问题的答案。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881114,
+    "id": "chatcmpl-83958e16-982c-97e6-88f0-8dfb155a64a1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 95,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2126,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2221
+    }
+  },
+  "usage_known": true
+}

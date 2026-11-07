@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:15:42.309310+08:00",
+  "input_token_upper_bound": 1173,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0162"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在山区进行应急发电，且发电时间超过2小时的情况下，每小时需要多少人工工日？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "27c98150105045e4b75c17e44f07dab5",
+  "reserved_yuan": 0.0005865
+}

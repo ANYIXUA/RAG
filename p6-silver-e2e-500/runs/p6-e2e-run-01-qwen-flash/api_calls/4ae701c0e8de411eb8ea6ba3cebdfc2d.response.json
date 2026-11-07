@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:00.460370+08:00",
+  "conservative_cost_yuan": 0.0018633,
+  "error": null,
+  "latency_ms": 3448.066500015557,
+  "list_price_estimate_yuan": 0.0012468,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0157的114工日存在解析歧义，不得因与此参考不一致而判错\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误，未准确对应上下文\",\n    \"evidence\": \"WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键费用项，未完整覆盖条件\",\n    \"evidence\": \"WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]对应错误条目，不支持该句\",\n    \"evidence\": \"WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"普通可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_citation\",\n    \"partial_fact\",\n    \"misaligned_reference\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881797,
+    "id": "chatcmpl-cc2fabc0-47b8-9d75-944d-911d7d75dbe5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 411,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4202,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4613
+    }
+  },
+  "usage_known": true
+}

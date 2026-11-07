@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:56.984409+08:00",
+  "conservative_cost_yuan": 0.001512,
+  "error": null,
+  "latency_ms": 3639.1980999615043,
+  "list_price_estimate_yuan": 0.0010185,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题涉及跨品牌对比，上下文未提供推荐依据。\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文且无编造。\",\n    \"evidence\": \"光网关应支持XG-PON接入及多WAN连接配置[1]。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分回答了技术要求，但未说明无法推荐品牌。\",\n    \"evidence\": \"中国移动推荐使用支持Wi-Fi 7和EasyMesh功能的全光组网终端[3]。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致且支持对应句。\",\n    \"evidence\": \"设备需通过CQC、SRRC等认证，建议通过WAA认证[4]。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0.5,\n    \"reason\": \"未明确拒答，但提及推荐标准，可视为部分回应。\",\n    \"evidence\": \"中国移动推荐使用支持Wi-Fi 7和EasyMesh功能的全光组网终端[3]。\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"partial_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881913,
+    "id": "chatcmpl-cfc77369-97ab-9c08-8f41-91186aaee16c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 329,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3500,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3829
+    }
+  },
+  "usage_known": true
+}

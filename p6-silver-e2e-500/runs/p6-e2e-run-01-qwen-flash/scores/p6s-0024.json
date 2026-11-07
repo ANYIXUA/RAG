@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。",
+    "reason": "实际LLM上下文中的[1]明确指出：'因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以外的，其综合单价应予以调整'，与问题完全对应，且与silver_reference一致。",
+    "score": 1
+  },
+  "case_id": "p6s-0024",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第91页\n定位信息：91\n...8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。 8.4.7.4 ...原备品备件购置清单和机械仪表使用清单中没有的内容，由承包人根据维护作业变更情况，提出适当的费用变更，经发包人确认后调整。",
+    "reason": "所有引用编号[1]均正确对应到上下文片段[1]，且该片段包含所引用的具体内容。尽管第2、3、4、5点引用了同一来源[1]，但该来源确实支持这些陈述，因此引用正确。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "8.4.7.6 ...其综合单价应予以调整。",
+    "reason": "回答涵盖了核心处理方式（调整综合单价）及部分流程（提出变更、发包人确认、按程序执行），但未完整覆盖‘超出合同约定幅度时应调整’这一关键条件本身，虽有提及但未作为首要结论突出。此外，第2点关于‘原清单价格进行对应变更’虽相关，但并非对‘综合单价’调整的直接说明，存在轻微偏离。",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。 8.4.7.4 ...原备品备件购置清单和机械仪表使用清单中没有的内容，由承包人根据维护作业变更情况，提出适当的费用变更，经发包人确认后调整。",
+    "reason": "回答中每条事实均能在上下文[1]中找到直接支持，无额外编造内容。例如‘综合单价应予以调整’、‘由承包人提出费用变更并经发包人确认’等均来自原文。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "f5721584e23d457ead9da9786a84dd47",
+  "judge_attempts": 3,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "无",
+    "reason": "问题为可回答的exact_fact类型，且上下文中有明确答案，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError",
+    "ValueError"
+  ],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

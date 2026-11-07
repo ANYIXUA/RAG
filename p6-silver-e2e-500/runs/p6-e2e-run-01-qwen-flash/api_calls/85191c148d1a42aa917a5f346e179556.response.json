@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:30.970939+08:00",
+  "conservative_cost_yuan": 0.00072825,
+  "error": null,
+  "latency_ms": 1499.899199930951,
+  "list_price_estimate_yuan": 0.00058125,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 防雷箱连接处部件不允许存在锈蚀。[1]  \n2. 维护规程明确要求连接处部件无锈蚀。[2]  \n3. 接地连线需齐全且接头紧固，避免锈蚀影响性能。[3]  \n4. 锈蚀可能影响电气连接可靠性，须及时处理。[2]  \n5. 该要求在多个维护周期中均被强调。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880809,
+    "id": "chatcmpl-9fed592b-18f7-9711-9dbe-86fca0800af6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 98,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2895,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2993
+    }
+  },
+  "usage_known": true
+}

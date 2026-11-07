@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:19.246622+08:00",
+  "conservative_cost_yuan": 0.0007503,
+  "error": null,
+  "latency_ms": 1447.5852001924068,
+  "list_price_estimate_yuan": 0.0005702999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 拉线式安装电杆地线人工费为10.53元/条。[2]  \n2. 更换电杆地线（拉线式）人工费为10.03元/条。[1]  \n3. 两项工作均按“条”为计量单位计价。[1][2]  \n4. 人工费包含技工与普工成本。[1][2]  \n5. 数据依据《电信基础设施维护规程》相关表格。[1][2][3][4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881157,
+    "id": "chatcmpl-39ad1e03-0836-9849-8f6c-db61fba149e8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 120,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2602,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2722
+    }
+  },
+  "usage_known": true
+}

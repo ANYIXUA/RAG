@@ -1,0 +1,48 @@
+{
+  "answer_correctness": {
+    "evidence": "WH21111009 山区 47.42 29.64 8.89 8.89 0.26 —",
+    "reason": "太阳能人工费错误，应为29.64元",
+    "score": 0
+  },
+  "case_id": "p6s-0313",
+  "citation_correctness": {
+    "evidence": "WH21111009 山区 47.42 29.64 8.89 8.89 0.26 —",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "直流拉远供电设备未在文档中明确列出对应人工费用。[1]",
+    "reason": "遗漏直流设备费用，未说明无法回答",
+    "score": 0
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "文档中无“直流拉远供电设备”的巡检项目及人工费信息。[1]",
+    "reason": "直流设备无对应信息，却声称未列出",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_cost",
+    "missing_reference",
+    "false_claim"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "cf11e727c78f460ca697048a3f827f6c",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未拒答且提供错误信息",
+    "score": 0
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

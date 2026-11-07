@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:55.055269+08:00",
+  "conservative_cost_yuan": 0.0007255499999999999,
+  "error": null,
+  "latency_ms": 1109.0877999085933,
+  "list_price_estimate_yuan": 0.00058605,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 天线松动需检查其固定情况是否牢固。[4]  \n2. 应确认天线外壳无破损、无污垢，安装平稳。[4]  \n3. 检查周围是否有障碍物阻挡信号覆盖。[4]  \n4. 确认馈线连接牢固，无松动或变形。[4]  \n5. 若发现异常，应及时上报处理。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881133,
+    "id": "chatcmpl-d16ff6dc-498d-9177-b958-2318189ae5ad",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 93,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2977,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3070
+    }
+  },
+  "usage_known": true
+}

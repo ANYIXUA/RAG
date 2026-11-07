@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:52.408238+08:00",
+  "conservative_cost_yuan": 0.00207525,
+  "error": null,
+  "latency_ms": 5265.221199952066,
+  "list_price_estimate_yuan": 0.00135525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出单价268.78元\",\n    \"evidence\": \"WH12009040 更换木杆另缠法 装7/2.6 单股拉线 平原 268.78 182.35 49.96 36.47 1.26 0.63\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均在上下文中有对应支持\",\n    \"evidence\": \"WH12009040 更换木杆另缠法 装7/2.6 单股拉线 平原 268.78 182.35 49.96 36.47 1.26 0.63\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"WH12009040 更换木杆另缠法 装7/2.6 单股拉线 平原 268.78 182.35 49.96 36.47 1.26 0.63\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"WH12009040 更换木杆另缠法 装7/2.6 单股拉线 平原 268.78 182.35 49.96 36.47 1.26 0.63\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881967,
+    "id": "chatcmpl-b449d275-c008-9fec-b2d9-5bda3cc6cb5a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 480,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4235,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4715
+    }
+  },
+  "usage_known": true
+}

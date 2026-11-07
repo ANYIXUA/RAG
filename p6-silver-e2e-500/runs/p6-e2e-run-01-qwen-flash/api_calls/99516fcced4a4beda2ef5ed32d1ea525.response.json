@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:21.575205+08:00",
+  "conservative_cost_yuan": 0.00074625,
+  "error": null,
+  "latency_ms": 1752.6531000621617,
+  "list_price_estimate_yuan": 0.00057975,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 中距离信号强度的RSSI阈值为-55±2dBm。[2]  \n2. 该值适用于4K视频、下载及云游戏等业务场景。[2]  \n3. 多个文档中均明确提及此范围。[2]  \n4. 与近距离（-45dBm）和远距离（-65±2dBm）形成对比。[1]  \n5. RSSI指STA侧探测到的AP信号强度。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880919,
+    "id": "chatcmpl-638e060e-0b04-948b-9caa-f07c6e4e5273",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2755,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2866
+    }
+  },
+  "usage_known": true
+}

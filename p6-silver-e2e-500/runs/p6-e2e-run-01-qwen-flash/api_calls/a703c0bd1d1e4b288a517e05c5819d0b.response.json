@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:13.968679+08:00",
+  "conservative_cost_yuan": 0.0007524,
+  "error": null,
+  "latency_ms": 1471.1387001443654,
+  "list_price_estimate_yuan": 0.0005708999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 宽带装维障碍处理流程见附录N。[1]  \n2. 附录N为资料性内容，标题为“宽带安装和维护装维故障处理流程”。[2]  \n3. 该附录详细说明了装维故障的处理步骤与要求。[2]  \n4. 附录N位于《电信基础设施维护规程》第360页。[2]  \n5. 处理流程需遵循“先重点、后一般”和“先抢通、后修复”原则。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881092,
+    "id": "chatcmpl-a86d774a-fc42-9eac-9e76-71feceebd362",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2596,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2717
+    }
+  },
+  "usage_known": true
+}

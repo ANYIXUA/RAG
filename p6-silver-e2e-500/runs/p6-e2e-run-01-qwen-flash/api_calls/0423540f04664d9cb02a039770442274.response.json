@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:49.227856+08:00",
+  "conservative_cost_yuan": 0.0008724,
+  "error": null,
+  "latency_ms": 1839.2115999013186,
+  "list_price_estimate_yuan": 0.0006579,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区太阳能光伏离网发电系统巡检人工费为29.64元/台·次。[1]  \n2. 直流拉远供电设备未在文档中明确列出对应人工费用。[1]  \n3. 文档中无“直流拉远供电设备”的巡检项目及人工费信息。[1]  \n4. 太阳能光伏系统山区巡检综合单价为47.42元，其中人工费29.64元。[1]  \n5. 无法提供直流拉远供电设备的巡检人工费，建议补充具体设备类型或转人工确认。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881067,
+    "id": "chatcmpl-f81d7a76-4166-9f7f-80a6-57280e9b4bb0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 143,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2956,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3099
+    }
+  },
+  "usage_known": true
+}

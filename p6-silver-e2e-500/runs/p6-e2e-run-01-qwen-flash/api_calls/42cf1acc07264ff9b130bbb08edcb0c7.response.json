@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:48.898302+08:00",
+  "conservative_cost_yuan": 0.0007845,
+  "error": null,
+  "latency_ms": 1429.2991000693291,
+  "list_price_estimate_yuan": 0.000639,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 按规范挖坑并埋设地锚，确保基础稳固。[1]  \n2. 使用水泥杆夹板法安装7/2.6单股拉线。[1]  \n3. 紧拉拉线至规定张力后固定。[1]  \n4. 回填土壤并分层夯实。[1]  \n5. 安装中把、上把及警示保护装置。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880947,
+    "id": "chatcmpl-0f8cd2bb-0d35-99de-9f02-8121b38874c5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 97,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3290,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3387
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,75 @@
+{
+  "run_a": "p3-pilot-01\\runs\\run1",
+  "run_b": "p3-pilot-02\\runs\\before",
+  "records_run_a": 110,
+  "records_run_b": 110,
+  "missing_in_b": [],
+  "missing_in_a": [],
+  "canonical_digest_run_a": "3cbf93d00970c71cd4b23c939cbb6e6bb9b1b93e928c6bb3fdebbed8f238c8ce",
+  "canonical_digest_run_b": "3cbf93d00970c71cd4b23c939cbb6e6bb9b1b93e928c6bb3fdebbed8f238c8ce",
+  "rankings_identical": true,
+  "differing_records": [],
+  "differing_record_count": 0,
+  "metric_blocks": [
+    {
+      "method": "bm25_only",
+      "identical": true,
+      "differences": {},
+      "latency_run_a": [
+        89.974,
+        132.605
+      ],
+      "latency_run_b": [
+        278.544,
+        468.253
+      ]
+    },
+    {
+      "method": "hybrid",
+      "identical": true,
+      "differences": {},
+      "latency_run_a": [
+        124.564,
+        189.396
+      ],
+      "latency_run_b": [
+        355.072,
+        717.2
+      ]
+    },
+    {
+      "method": "hybrid_rerank",
+      "identical": true,
+      "differences": {},
+      "latency_run_a": [
+        3292.829,
+        3552.936
+      ],
+      "latency_run_b": [
+        7909.901,
+        9800.644
+      ]
+    },
+    {
+      "method": "vector_only",
+      "identical": true,
+      "differences": {},
+      "latency_run_a": [
+        76.273,
+        92.708
+      ],
+      "latency_run_b": [
+        166.026,
+        414.983
+      ]
+    }
+  ],
+  "metrics_identical_excluding_latency": true,
+  "gold_case_ids_match": true,
+  "corpus_sha256_run_a": null,
+  "corpus_sha256_run_b": null,
+  "corpus_hash_match": true,
+  "gold_sources_hash_match": true,
+  "config_fingerprint_run_a": "a79ed9000b6114da",
+  "config_fingerprint_run_b": "a79ed9000b6114da"
+}

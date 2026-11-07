@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:08.432352+08:00",
+  "conservative_cost_yuan": 0.0019426500000000002,
+  "error": null,
+  "latency_ms": 4446.486399974674,
+  "list_price_estimate_yuan": 0.0012151500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]明确列出表格列包含'综合单价（元） （除税价）'，且该列名称与问题中'综合单价（元）'完全对应，直接支持答案。引用来源正确，内容一致。\",\n    \"evidence\": \"综合单价（元） （除税价）\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均在实际上下文[1]中找到直接支持：列名、位置顺序、核心字段属性及对应表格编号均有原文依据，无虚构或夸大。\",\n    \"evidence\": \"综合单价（元） （除税价）；位于“实际数量”之后、“合价”之前；计价核心字段之一；表—09—4\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答完整覆盖了问题所需信息——列名称及其在表格中的位置、功能属性和对应表格编号，未遗漏关键条件或步骤。\",\n    \"evidence\": \"综合单价（元） （除税价）；位于“实际数量”之后、“合价”之前；计价核心字段之一；表—09—4\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均来自实际上下文片段[1]，且该片段确实支持所陈述的每一句内容，引用准确无误。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第114页\\n定位信息：114\\n...综合单价（元） （除税价）... 表格列：合；计（一＋二）\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确可答的精确事实类问题，上下文提供充分信息，无需拒答，因此不适用此维度。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881264,
+    "id": "chatcmpl-470dd402-4e7a-93ad-9128-1008e6619731",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 485,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3251,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3736
+    }
+  },
+  "usage_known": true
+}

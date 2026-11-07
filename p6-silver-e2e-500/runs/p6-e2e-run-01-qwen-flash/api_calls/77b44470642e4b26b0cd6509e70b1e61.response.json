@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:59.997919+08:00",
+  "conservative_cost_yuan": 0.0014679,
+  "error": null,
+  "latency_ms": 3245.4919000156224,
+  "list_price_estimate_yuan": 0.0010089,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，流程完整。\",\n    \"evidence\": \"工作内容：抢修准备、到达基站、故障抢修、业务恢复确认、清理现场，返回驻地等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"故障抢修应按准备、到达基站、抢修、确认恢复、清理现场等流程操作。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有关键步骤，无遗漏。\",\n    \"evidence\": \"工作内容：抢修准备、到达基站、故障抢修、业务恢复确认、清理现场，返回驻地等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持所述内容。\",\n    \"evidence\": \"天馈系线系统故障抢修属于WH24102编码下的维护项目。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882036,
+    "id": "chatcmpl-e38646e5-3dce-90e6-a221-cb5b03cc7c95",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 306,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3666,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3972
+    }
+  },
+  "usage_known": true
+}

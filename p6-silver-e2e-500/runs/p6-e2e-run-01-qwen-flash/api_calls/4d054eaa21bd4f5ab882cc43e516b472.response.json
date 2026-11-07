@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:55.716246+08:00",
+  "conservative_cost_yuan": 0.00085275,
+  "error": null,
+  "latency_ms": 1340.4043999034911,
+  "list_price_estimate_yuan": 0.00065625,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH41110自承式蝶形引入光缆布放和测试的计量单位是百米条。[1]  \n2. 该计量单位适用于按实际长度计列的维护作业。[2]  \n3. 与钉固式蝶形光缆（十米条）不同，此项目以百米为单位。[2]  \n4. 计量单位在规程第331页明确列出。[1]  \n5. 项目编码为WH41110001和WH41110002。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881134,
+    "id": "chatcmpl-9e66db06-fa74-9df6-b971-11bc8861e69d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 131,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3065,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3196
+    }
+  },
+  "usage_known": true
+}

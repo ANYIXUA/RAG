@@ -1,0 +1,9 @@
+{
+  "at": "2026-11-05T19:58:50.292743+08:00",
+  "conservative_cost_yuan": 0.0036423,
+  "error": "RateLimitError",
+  "latency_ms": 56.86070001684129,
+  "list_price_estimate_yuan": null,
+  "response": null,
+  "usage_known": false
+}

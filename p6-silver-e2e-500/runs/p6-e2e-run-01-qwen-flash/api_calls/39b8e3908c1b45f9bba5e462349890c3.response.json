@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:51.801694+08:00",
+  "conservative_cost_yuan": 0.00268695,
+  "error": null,
+  "latency_ms": 7236.065000062808,
+  "list_price_estimate_yuan": 0.0016234499999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]和[2]均明确列出WH33109004直流远供电远端模块壁挂的综合单价为359.33元，与silver_reference一致，且该信息在多个上下文片段中重复验证，证据充分。\",\n    \"evidence\": \" [1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第310页\\n定位信息：310\\n... WH33109004 直流远供电远端模块壁挂 359.33 224.58 67.37 67.37 1.97\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每项事实（单价、计量单位、项目编码、作业内容）均有对应上下文支持，且引用编号准确匹配实际来源。例如，359.33元来自[1]，计量单位‘台、个’来自[1]，项目编码WH33109004来自[1]，安装固定与接线内容来自[1]和[3]。\",\n    \"evidence\": \"[1] WH33109004 直流远供电远端模块壁挂 359.33 224.58 67.37 67.37 1.97\\n[3] WH33109 安装配电换流设备 ... 直流远供电局端、远端模块：开箱检验、清洁搬运、安装固定、接线等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题为精确事实查询，仅需提供综合单价即可。模型已准确给出核心答案，并补充了相关属性（计量单位、项目编码、作业内容），覆盖了用户可能关心的完整信息点，无遗漏必要条件或步骤。\",\n    \"evidence\": \"实际回答包含单价、单位、编码、作业内容，全部源自上下文，且未引入无关信息。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1][2]均正确对应实际上下文来源，且每个引用所支持的内容与原文一致。例如，[1]支持单价、单位、编码及作业内容；[2]支持数据一致性说明，且其内容与[1]完全一致。\",\n    \"evidence\": \"[1] 和 [2] 内容完全一致，均显示WH33109004的综合单价为359.33元，且[2]中也包含相同条目。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的exact_fact类型，上下文中有明确答案，无需拒答。模型已正确作答，因此该维度不适用。\",\n    \"evidence\": \"无\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881484,
+    "id": "chatcmpl-f1c42304-9172-9750-b13b-ea88738027dc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 709,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3733,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4442
+    }
+  },
+  "usage_known": true
+}

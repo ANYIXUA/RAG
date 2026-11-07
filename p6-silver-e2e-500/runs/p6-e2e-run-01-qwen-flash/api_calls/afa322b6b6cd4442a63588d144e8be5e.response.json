@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:28.593461+08:00",
+  "conservative_cost_yuan": 0.000816,
+  "error": null,
+  "latency_ms": 1171.6988999396563,
+  "list_price_estimate_yuan": 0.0006405,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 35米以下角钢塔天馈线系统巡检费用为94.85元/站·次。[1]  \n2. 巡检内容包括天线外观、馈线安装及接地检查等。[1]  \n3. 市区环境下，该巡检项目综合单价已明确。[1]  \n4. 此费用适用于角钢塔、三管塔、四管塔35m以下。[1]  \n5. 不包含铁塔结构专项维修费用。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881167,
+    "id": "chatcmpl-651f4a94-8bad-9b62-bd3c-d4eb12daffe9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3100,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3217
+    }
+  },
+  "usage_known": true
+}

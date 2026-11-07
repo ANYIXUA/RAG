@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:08.395519+08:00",
+  "conservative_cost_yuan": 0.0013545,
+  "error": null,
+  "latency_ms": 2507.341300137341,
+  "list_price_estimate_yuan": 0.0009525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"完全匹配参考证据内容\",\n    \"evidence\": \"工作内容：1、检查箱体安装是否牢固，箱盖、门锁是否完好；\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"检查电源电压、指示灯是否正常，箱门是否密封，风扇是否正常、散热是否良好；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有关键检查点\",\n    \"evidence\": \"检查线缆标识是否齐全准确；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文一致且支持内容\",\n    \"evidence\": \"检查箱体安装是否牢固，箱盖、门锁是否完好。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881925,
+    "id": "chatcmpl-f7db7f34-2bbc-9006-b0d0-9442a3f29305",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 268,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3670,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3938
+    }
+  },
+  "usage_known": true
+}

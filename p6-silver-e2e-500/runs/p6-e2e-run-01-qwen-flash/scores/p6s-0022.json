@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "8.4.4.1 实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。",
+    "reason": "实际LLM上下文中的[1]明确指出‘实行招标的维护合同价款应在中标通知书发出之日起30天内，由发、承包双方依据招标文件和中标人的投标文件在书面合同中约定’，与问题完全匹配，且与silver_reference一致。",
+    "score": 1
+  },
+  "case_id": "p6s-0022",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第89页\n定位信息：89\n...8.4.4.1 实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。",
+    "reason": "所有引用编号[1]均正确对应于上下文片段[1]，且该片段包含所引用的具体内容。未出现引用错误或无来源引用。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "8.4.4.1 实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。",
+    "reason": "问题仅要求回答时间期限，回答准确给出30天，并补充了关键条件（依据招标与投标文件），未遗漏必要信息，且未引入无关内容。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "8.4.4.1 实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。 8.4.4.2 实行招标的维护项目，合同约定不得违背招、投标文件中关于维护周期、维护价格、维护质量等 方面的实质性内容。招标文件与中标人投标文件不一致的地方，以投标文件为准。",
+    "reason": "回答中每一项事实均直接来源于上下文[1]，无任何编造或偏离。例如‘30天内约定’‘依据招标文件和投标文件’‘以投标文件为准’等均在原文中有对应表述。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "5269225679644add92a37854f23d8905",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "无",
+    "reason": "问题为明确可答的精确事实类问题，且上下文提供完整答案，无需拒答。模型正常作答，符合要求。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

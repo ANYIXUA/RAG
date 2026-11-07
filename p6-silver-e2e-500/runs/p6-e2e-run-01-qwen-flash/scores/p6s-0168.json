@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。",
+    "reason": "步骤与上下文一致，覆盖关键操作。",
+    "score": 1
+  },
+  "case_id": "p6s-0168",
+  "citation_correctness": {
+    "evidence": "工作内容：挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。",
+    "reason": "引用编号[1]准确对应来源。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "工作内容：挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。",
+    "reason": "涵盖所有必要步骤，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "工作内容：挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ba7c3aaf79334d0982252d1caae1c2ac",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

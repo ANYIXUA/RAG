@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:23.286750+08:00",
+  "conservative_cost_yuan": 0.0006927000000000001,
+  "error": null,
+  "latency_ms": 1131.8838999141008,
+  "list_price_estimate_yuan": 0.0005562000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查变压器外观状态是否完好无损。[1]  \n2. 确认外壳有无变形、锈蚀或渗油现象。[3]  \n3. 核查标识标签是否清晰完整。[2]  \n4. 观察是否有异物附着或积尘影响散热。[1]  \n5. 检查安装固定情况是否牢固稳定。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881222,
+    "id": "chatcmpl-066958f2-b853-9b11-ba8c-8d1ad871370b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 91,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2798,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2889
+    }
+  },
+  "usage_known": true
+}

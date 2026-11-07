@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:40.004903+08:00",
+  "conservative_cost_yuan": 0.00208755,
+  "error": null,
+  "latency_ms": 4145.371499937028,
+  "list_price_estimate_yuan": 0.00136155,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"回答错误，未匹配问题\",\n    \"evidence\": \"WH12009016 水泥杆另缠法装 7/3.0 单股拉线 平原 299.20 202.99 55.62 40.60 1.40 0.70\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"事实与上下文不符\",\n    \"evidence\": \"WH12009010 更换拉线 水泥杆另缠法装 7/2.2 单股拉线 平原 212.99 144.50 39.59 28.90 消耗量 1.00 0.50\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏关键条件\",\n    \"evidence\": \"水泥杆另缠法装 7/3.0 单股拉线 平原 299.20 202.99 55.62 40.60 1.40 0.70\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用编号不对应\",\n    \"evidence\": \"WH12009010 更换拉线 水泥杆另缠法装 7/2.2 单股拉线 平原 212.99 144.50 39.59 28.90 消耗量 1.00 0.50\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"非拒答场景\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_fact\",\n    \"wrong_citation\",\n    \"misaligned_query\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881715,
+    "id": "chatcmpl-d30fb2ff-36c0-95e7-83bb-9ab9511093e6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 484,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4237,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4721
+    }
+  },
+  "usage_known": true
+}

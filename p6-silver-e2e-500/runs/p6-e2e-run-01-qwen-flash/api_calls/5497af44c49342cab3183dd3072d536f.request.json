@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:27.521596+08:00",
+  "input_token_upper_bound": 1136,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0433"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在山区，一个单管塔要检查天线和馈线，大概多少钱？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "5497af44c49342cab3183dd3072d536f",
+  "reserved_yuan": 0.000568
+}

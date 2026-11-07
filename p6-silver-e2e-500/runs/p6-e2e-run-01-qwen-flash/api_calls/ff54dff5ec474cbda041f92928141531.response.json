@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:55.452414+08:00",
+  "conservative_cost_yuan": 0.00071355,
+  "error": null,
+  "latency_ms": 1445.7587997894734,
+  "list_price_estimate_yuan": 0.0005530499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. Linux内核版本宜不低于5.10。[1]  \n2. 应选择官方发布的较新的稳定LTS版本。[1]  \n3. 需及时修复高危漏洞，避免90天内公布的CNVD/CNNVD漏洞。[1]  \n4. 内核应使能地址随机化（KALSR）等安全功能。[1]  \n5. 操作系统应对内核进行裁剪，保留必要功能模块。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880954,
+    "id": "chatcmpl-e233f1cf-c832-9cbb-af66-e3e1848bb4df",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2617,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2724
+    }
+  },
+  "usage_known": true
+}

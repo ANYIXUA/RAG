@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:53.480447+08:00",
+  "conservative_cost_yuan": 0.0008034,
+  "error": null,
+  "latency_ms": 1187.4631000682712,
+  "list_price_estimate_yuan": 0.0006173999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 吊线松动需按规程进行紧固，包括拆除原终端、延长吊线等操作。[4]  \n2. 紧固吊线工作应根据地貌类型（平原、丘陵等）执行相应作业流程。[4]  \n3. 作业内容包含装拆临时辅助吊线及拧紧紧固件等步骤。[4]  \n4. 若现场无法处理，应上报系统并安排专业人员修复。[3]  \n5. 维护企业须在规定时限内完成故障处理，确保通信畅通。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881072,
+    "id": "chatcmpl-01e2b47a-c31f-9828-8ee6-682cb3e31c8c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 124,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2876,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3000
+    }
+  },
+  "usage_known": true
+}

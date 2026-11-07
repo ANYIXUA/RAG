@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:12.828139+08:00",
+  "conservative_cost_yuan": 0.0007635,
+  "error": null,
+  "latency_ms": 1379.8339001368731,
+  "list_price_estimate_yuan": 0.0005805,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 更换吊线保护装置的综合单价为24.57元/米。[1]  \n2. 工作内容包括拆除旧套管、安装新套管及绑扎等。[1]  \n3. 计量单位为米，对应项目编码WH12018001。[1]  \n4. 该价格包含人工费、企业管理费及利润。[1]  \n5. 与“安装”类项目（如WH12008）价格不同，属更换作业。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881211,
+    "id": "chatcmpl-0a18f245-7010-9c38-a237-386d20029623",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 122,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2650,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2772
+    }
+  },
+  "usage_known": true
+}

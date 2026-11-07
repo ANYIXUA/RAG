@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "维护干扰费按人工费的5.0%计取。[2]",
+    "reason": "正确引用费率与计算基础",
+    "score": 1
+  },
+  "case_id": "p6s-0231",
+  "citation_correctness": {
+    "evidence": "维护干扰费按人工费的5.0%计取。[2]",
+    "reason": "引用编号与来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "维护干扰费适用于受交通管制、人流密集等影响的作业。[3]",
+    "reason": "涵盖计算方法与适用场景",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "维护干扰费按人工费的5.0%计取。[2]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "9551bae7b58e4451ba4e1e26beb7b8e9",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

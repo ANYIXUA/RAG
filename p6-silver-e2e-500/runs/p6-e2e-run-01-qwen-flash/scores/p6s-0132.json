@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "1.开箱检验。2.清理搬运。3.安装加固。4.通电调测。5.清理现场等。",
+    "reason": "与上下文一致，步骤完整。",
+    "score": 1
+  },
+  "case_id": "p6s-0132",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与来源匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "1.开箱检验。2.清理搬运。3.安装加固。4.通电调测。5.清理现场等。",
+    "reason": "覆盖所有必要步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "1.开箱检验。2.清理搬运。3.安装加固。4.通电调测。5.清理现场等。",
+    "reason": "每项事实均有上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "acd887a47fd04f0f9671a538447a2b9a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

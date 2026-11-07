@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:51.789562+08:00",
+  "conservative_cost_yuan": 0.0008183999999999999,
+  "error": null,
+  "latency_ms": 1422.9375999420881,
+  "list_price_estimate_yuan": 0.0006263999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 城区架空光缆线路车辆巡回的人工费单价为3.91元/工日。[1]  \n2. 该费用对应项目编码WH11002003，适用于城区路段。[1]  \n3. 综合单价为5.76元，其中人工费占3.91元。[1]  \n4. 计量单位为千米²次，按实际维护次数计算。[3]  \n5. 吊线垂度变化属巡查内容，需上报但不单独计费。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880950,
+    "id": "chatcmpl-41a18911-8b7e-9a37-84f2-552a8b2063b2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 128,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2896,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3024
+    }
+  },
+  "usage_known": true
+}

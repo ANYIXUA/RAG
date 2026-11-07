@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "1.开箱检验。2.清洁搬运。3.安装固定。4.线缆连接。5.设备开通。6.清理现场。",
+    "reason": "流程与上下文一致，覆盖关键步骤。",
+    "score": 1
+  },
+  "case_id": "p6s-0131",
+  "citation_correctness": {
+    "evidence": "1.开箱检验。2.清洁搬运。3.安装固定。4.线缆连接。5.设备开通。6.清理现场。",
+    "reason": "引用编号准确对应来源。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "1.开箱检验。2.清洁搬运。3.安装固定。4.线缆连接。5.设备开通。6.清理现场。",
+    "reason": "完整覆盖问题所需流程。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "1.开箱检验。2.清洁搬运。3.安装固定。4.线缆连接。5.设备开通。6.清理现场。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "332b64608f444e55a2a4bd89cf243e15",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

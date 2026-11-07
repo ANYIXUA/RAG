@@ -1,0 +1,313 @@
+{
+  "pilot": "P3-Pilot-01",
+  "label": "probe_full",
+  "case_count": 22,
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "max_k": 10,
+  "retrieval_top_k": 20,
+  "metrics": {
+    "bm25_only": {
+      "method_key": "A",
+      "description": "BM25 关键词检索（生产候选池）",
+      "mode": "bm25",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.681818,
+      "hit@3": 0.772727,
+      "hit@5": 0.954545,
+      "hit@10": 0.954545,
+      "mrr@10": 0.768182,
+      "ndcg@10": 0.815486,
+      "recall@10": 0.954545,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 11.091,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 686.872,
+      "latency_p95_ms": 1344.928,
+      "latency_mean_ms": 826.218,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    },
+    "vector_only": {
+      "method_key": "B",
+      "description": "向量（余弦）检索",
+      "mode": "semantic",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.863636,
+      "hit@5": 0.909091,
+      "hit@10": 0.954545,
+      "mrr@10": 0.80202,
+      "ndcg@10": 0.834976,
+      "recall@10": 0.954545,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 89.001,
+      "latency_p95_ms": 308.887,
+      "latency_mean_ms": 126.514,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    },
+    "hybrid": {
+      "method_key": "C",
+      "description": "BM25 + 向量加权融合",
+      "mode": "hybrid",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.818182,
+      "hit@3": 0.863636,
+      "hit@5": 0.909091,
+      "hit@10": 1.0,
+      "mrr@10": 0.864448,
+      "ndcg@10": 0.894761,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 637.713,
+      "latency_p95_ms": 911.668,
+      "latency_mean_ms": 739.82,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 1.0
+    }
+  },
+  "supplementary_metrics": {
+    "bm25_full_corpus": {
+      "method_key": "A2",
+      "description": "诊断组（不计入四组对照）：绕过生产 keyword 候选池，在全部 447 个冻结 Chunk 上直接算同一套 BM25",
+      "mode": "bm25_full_corpus",
+      "rerank_applied": false,
+      "supplementary": true,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.818182,
+      "hit@5": 0.954545,
+      "hit@10": 0.954545,
+      "mrr@10": 0.802273,
+      "ndcg@10": 0.841364,
+      "recall@10": 0.954545,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 11.227,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 135.915,
+      "latency_p95_ms": 258.392,
+      "latency_mean_ms": 145.049,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    }
+  },
+  "deltas": {
+    "vector_only_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.045455,
+        "relative_percent": 6.667
+      },
+      "hit@3": {
+        "absolute": 0.090909,
+        "relative_percent": 11.765
+      },
+      "hit@5": {
+        "absolute": -0.045454,
+        "relative_percent": -4.762
+      },
+      "hit@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "mrr@10": {
+        "absolute": 0.033838,
+        "relative_percent": 4.405
+      },
+      "ndcg@10": {
+        "absolute": 0.01949,
+        "relative_percent": 2.39
+      },
+      "recall@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "latency_p50_ms": {
+        "absolute": -597.871,
+        "relative_percent": -87.043
+      },
+      "latency_p95_ms": {
+        "absolute": -1036.041,
+        "relative_percent": -77.033
+      }
+    },
+    "hybrid_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.136364,
+        "relative_percent": 20.0
+      },
+      "hit@3": {
+        "absolute": 0.090909,
+        "relative_percent": 11.765
+      },
+      "hit@5": {
+        "absolute": -0.045454,
+        "relative_percent": -4.762
+      },
+      "hit@10": {
+        "absolute": 0.045455,
+        "relative_percent": 4.762
+      },
+      "mrr@10": {
+        "absolute": 0.096266,
+        "relative_percent": 12.532
+      },
+      "ndcg@10": {
+        "absolute": 0.079275,
+        "relative_percent": 9.721
+      },
+      "recall@10": {
+        "absolute": 0.045455,
+        "relative_percent": 4.762
+      },
+      "latency_p50_ms": {
+        "absolute": -49.159,
+        "relative_percent": -7.157
+      },
+      "latency_p95_ms": {
+        "absolute": -433.26,
+        "relative_percent": -32.214
+      }
+    },
+    "bm25_only_vs_vector_only": {
+      "hit@1": {
+        "absolute": -0.045455,
+        "relative_percent": -6.25
+      },
+      "hit@3": {
+        "absolute": -0.090909,
+        "relative_percent": -10.526
+      },
+      "hit@5": {
+        "absolute": 0.045454,
+        "relative_percent": 5.0
+      },
+      "hit@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "mrr@10": {
+        "absolute": -0.033838,
+        "relative_percent": -4.219
+      },
+      "ndcg@10": {
+        "absolute": -0.01949,
+        "relative_percent": -2.334
+      },
+      "recall@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "latency_p50_ms": {
+        "absolute": 597.871,
+        "relative_percent": 671.758
+      },
+      "latency_p95_ms": {
+        "absolute": 1036.041,
+        "relative_percent": 335.411
+      }
+    },
+    "hybrid_vs_vector_only": {
+      "hit@1": {
+        "absolute": 0.090909,
+        "relative_percent": 12.5
+      },
+      "hit@3": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "hit@5": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "hit@10": {
+        "absolute": 0.045455,
+        "relative_percent": 4.762
+      },
+      "mrr@10": {
+        "absolute": 0.062428,
+        "relative_percent": 7.784
+      },
+      "ndcg@10": {
+        "absolute": 0.059785,
+        "relative_percent": 7.16
+      },
+      "recall@10": {
+        "absolute": 0.045455,
+        "relative_percent": 4.762
+      },
+      "latency_p50_ms": {
+        "absolute": 548.712,
+        "relative_percent": 616.523
+      },
+      "latency_p95_ms": {
+        "absolute": 602.781,
+        "relative_percent": 195.146
+      }
+    },
+    "bm25_full_corpus_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.045455,
+        "relative_percent": 6.667
+      },
+      "hit@3": {
+        "absolute": 0.045455,
+        "relative_percent": 5.882
+      },
+      "hit@5": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "hit@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "mrr@10": {
+        "absolute": 0.034091,
+        "relative_percent": 4.438
+      },
+      "ndcg@10": {
+        "absolute": 0.025878,
+        "relative_percent": 3.173
+      },
+      "recall@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "latency_p50_ms": {
+        "absolute": -550.957,
+        "relative_percent": -80.212
+      },
+      "latency_p95_ms": {
+        "absolute": -1086.536,
+        "relative_percent": -80.788
+      }
+    }
+  },
+  "active_methods": [
+    "bm25_only",
+    "vector_only",
+    "hybrid",
+    "bm25_full_corpus"
+  ],
+  "unavailable_methods": [
+    {
+      "name": "hybrid_rerank",
+      "reason": "OSError: [Errno 22] Invalid argument"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:05.574712+08:00",
+  "conservative_cost_yuan": 0.0014038499999999999,
+  "error": null,
+  "latency_ms": 3106.43730009906,
+  "list_price_estimate_yuan": 0.00098385,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确列出两项指标均属季度维护\",\n    \"evidence\": \"两项指标均在“季度”维护项目中明确列出。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"整流模块之间输出电流不平衡度应低于±5%。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有条件与步骤\",\n    \"evidence\": \"检查要求为整流模块间输出电流不平衡度低于±5%。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分引用编号不匹配实际来源\",\n    \"evidence\": \"整流模块之间输出电流不平衡度应低于±5%。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_mismatch\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881982,
+    "id": "chatcmpl-512d2fc2-1d66-90c6-a4a4-f37adc67f30c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 280,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3759,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4039
+    }
+  },
+  "usage_known": true
+}

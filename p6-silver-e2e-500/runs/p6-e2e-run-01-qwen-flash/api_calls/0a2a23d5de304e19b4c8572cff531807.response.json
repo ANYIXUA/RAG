@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:26.354214+08:00",
+  "conservative_cost_yuan": 0.0008247,
+  "error": null,
+  "latency_ms": 1583.4756002295762,
+  "list_price_estimate_yuan": 0.0006372000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 砌漫水坡是石护坡、坎、堵塞、封石沟砌筑工作的重要步骤之一。[2]  \n2. 砌斜坡堵塞属于该类工作的标准作业内容。[2]  \n3. 石砌护坎为石护坡、坎、堵塞、封石沟施工的必要环节。[2]  \n4. 封石沟是独立且明确列出的施工项目。[2]  \n5. 挖土石方与砌石墙、勾缝等也包含在整体工作流程中。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880984,
+    "id": "chatcmpl-d1962511-918a-9eb1-b7e5-e51cb73dc7ef",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 125,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2998,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3123
+    }
+  },
+  "usage_known": true
+}

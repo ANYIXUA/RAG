@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:27:56.181573+08:00",
+  "conservative_cost_yuan": 0.0014559,
+  "error": null,
+  "latency_ms": 2813.5804999619722,
+  "list_price_estimate_yuan": 0.0009939,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持32字节限制。\",\n    \"evidence\": \"DHCPName 总长度应不超32 字节。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"合作伙伴-型号 -YYYY（例如：CMHI-AN1202L-0000，DHCPName 总长度应不超32 字节）。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要条件与格式要求。\",\n    \"evidence\": \"DHCPName 总长度应不超32 字节。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源。\",\n    \"evidence\": \"合作伙伴-型号 -YYYY（例如：CMHI-AN1202L-0000，DHCPName 总长度应不超32 字节）。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881673,
+    "id": "chatcmpl-af101fe1-f3f7-95de-a602-416fc7cfda2c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 308,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3546,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3854
+    }
+  },
+  "usage_known": true
+}

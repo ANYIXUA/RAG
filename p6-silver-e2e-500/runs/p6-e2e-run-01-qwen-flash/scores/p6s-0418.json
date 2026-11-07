@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0418",
+  "citation_correctness": {
+    "evidence": "产品需符合统一编码规范，但未涉及市场定价机制。[1]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "缺少关于市场推广定价的直接信息，建议补充或转人工。[1]",
+    "reason": "完整覆盖问题缺失信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "设备编码由智家中心统一分配，厂家编码区分品牌。[1]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "b5fa883c886d493aba33dc70880a5d74",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "缺少关于市场推广定价的直接信息，建议补充或转人工。[1]",
+    "reason": "明确拒答并建议转人工",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

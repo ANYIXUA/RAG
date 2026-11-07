@@ -1,0 +1,18 @@
+{
+  "api_call_id": "4f1d18f36231496289b3a52216140a3a",
+  "finish_reason": "stop",
+  "requested_model": "qwen-flash",
+  "returned_model": "qwen-flash",
+  "status": "available",
+  "text": "OK",
+  "usage": {
+    "completion_tokens": 1,
+    "completion_tokens_details": null,
+    "prompt_tokens": 12,
+    "prompt_tokens_details": {
+      "audio_tokens": null,
+      "cached_tokens": 0
+    },
+    "total_tokens": 13
+  }
+}

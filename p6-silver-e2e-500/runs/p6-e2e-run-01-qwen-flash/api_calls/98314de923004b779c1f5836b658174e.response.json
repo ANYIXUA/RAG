@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:49.375121+08:00",
+  "conservative_cost_yuan": 0.00074265,
+  "error": null,
+  "latency_ms": 1199.2529998533428,
+  "list_price_estimate_yuan": 0.00059265,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 布放软光纤需执行放绑、固定及预留保护操作。[1]  \n2. 应按测量定位、量裁、安装固定流程进行。[2]  \n3. 安装后需清理现场，确保整洁规范。[2]  \n4. 操作前应检查软光纤状态与走线槽条件。[2]  \n5. 作业内容包含放绑、固定与预留保护三步骤。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881188,
+    "id": "chatcmpl-5a242ee9-8381-937c-8a27-f74a61716d0f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2951,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3051
+    }
+  },
+  "usage_known": true
+}

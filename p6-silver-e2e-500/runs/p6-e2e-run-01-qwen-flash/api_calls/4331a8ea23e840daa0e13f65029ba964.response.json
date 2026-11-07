@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:18.113201+08:00",
+  "conservative_cost_yuan": 0.0004695,
+  "error": null,
+  "latency_ms": 1163.7741001322865,
+  "list_price_estimate_yuan": 0.00033,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 职业能力特征需具备相应的职业素养与专业技能。[1]  \n2. 需掌握通信、智能组网及全屋智能等专业知识。[1]  \n3. 应具备安全操作与规范执行的能力。[1]  \n4. 具备良好的服务意识与沟通协调能力。[1]  \n5. 能适应智慧家庭装维的现场工作环境。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881157,
+    "id": "chatcmpl-8532164e-d69e-9031-b7fb-952fa39b58e1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 93,
+      "completion_tokens_details": null,
+      "prompt_tokens": 1270,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 1363
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,211 @@
+{
+  "pilot": "P3-Pilot-01",
+  "label": "smoke",
+  "started_at": "2026-11-04T16:37:58.260169+00:00",
+  "finished_at": "2026-11-04T16:38:17.589764+00:00",
+  "wall_seconds": 19.331,
+  "evaluation_scope": "exploratory_22_gold_not_official_50_benchmark",
+  "dataset": {
+    "gold_cases": 22,
+    "batches": [
+      "batch01(9)",
+      "batch02(13)"
+    ],
+    "sources": {
+      "batch01_jsonl": {
+        "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_9.jsonl",
+        "sha256": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a"
+      },
+      "batch01_metadata": {
+        "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/retrieval_gold_batch01_metadata.json",
+        "sha256": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39"
+      },
+      "batch01_manifest": {
+        "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-04/gold_batch01_manifest.json",
+        "sha256": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493"
+      },
+      "batch02_jsonl": {
+        "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-06/retrieval_gold_batch02_13.jsonl",
+        "sha256": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9"
+      },
+      "batch02_metadata": {
+        "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-06/retrieval_gold_batch02_metadata.json",
+        "sha256": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3"
+      },
+      "batch02_manifest": {
+        "path": "storage/evaluation/outputs/01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f/p2-gold-06/gold_batch02_manifest.json",
+        "sha256": "6fda108ba2d8f42a72fb5e16a735d4b9253a8c5200fa381472a6beab8ba036e1"
+      }
+    },
+    "batch01_cases": 9,
+    "batch02_cases": 13,
+    "merged_cases": 22,
+    "batch01_manifest_gold_version": "p2-gold-04-batch01-v1",
+    "batch02_manifest_gold_version": "p2-gold-06-batch02-v1",
+    "batch02_manifest_gold_file_sha256": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9"
+  },
+  "corpus": {
+    "path": "storage/evaluation/corpus/p1-20261104-v2/corpus.jsonl",
+    "sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+    "record_count": 447,
+    "snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+    "manifest_sha256_field": "0ddcdfe183ab387767065dcf029dd31ba5cdf0088ee9dc7e3501254d72223827",
+    "document_count": 3,
+    "created_at": "2026-11-04T07:46:52.693843+00:00"
+  },
+  "corpus_database_equivalence": {
+    "database_active_chunks": 447,
+    "corpus_chunks": 447,
+    "id_sets_equal": true,
+    "only_in_database": [],
+    "only_in_corpus": [],
+    "text_sha256_mismatches": [],
+    "text_sha256_mismatch_count": 0,
+    "consistent": true
+  },
+  "gold_checks": {
+    "cases": 22,
+    "questions_present": true,
+    "expected_present": true,
+    "relevant_ids_missing_from_corpus": [],
+    "cases_without_relevant_ids": [],
+    "excluded_batch_ids_present": [],
+    "duplicate_batch_ids": [],
+    "duplicate_queries": [],
+    "batch_ids": [
+      "B01",
+      "B02",
+      "B03",
+      "B04",
+      "B05",
+      "B06",
+      "B07",
+      "B09",
+      "B12",
+      "B13",
+      "B14",
+      "B15",
+      "B16",
+      "B17",
+      "B18",
+      "B19",
+      "B20",
+      "B21",
+      "B22",
+      "B25",
+      "B26",
+      "B27"
+    ],
+    "batch_ids_match_expected": true,
+    "relevant_chunk_ids_total": 24,
+    "requires_all_evidence_cases": 4,
+    "ok": true
+  },
+  "retrieval": {
+    "implementation": "rag_app.indexing.vector_store.PostgresVectorStore.search",
+    "vector_store_provider": "postgresql",
+    "collection_name": "default",
+    "retrieval_top_k": 20,
+    "retrieval_candidate_k": 20,
+    "evaluation_k_values": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "evaluation_max_k": 10,
+    "truncation_rule": "先按生产排序取前 retrieval_top_k 条，再按评估 K 截断；截断只丢尾部，不重排、不补位。",
+    "fusion_algorithm": "加权线性融合：score = semantic_weight/sum_weight * cosine + bm25_weight/sum_weight * max_normalized_bm25；非 RRF、非排名倒数融合。",
+    "fusion_parameters": {
+      "semantic_weight": 0.7,
+      "bm25_weight": 0.3,
+      "normalized_by": "bm25 / 本候选池内最大 bm25"
+    },
+    "candidate_pool": "semantic top-N 与 keyword(ILIKE) top-N 的并集，N = retrieval_candidate_k",
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "rag_app.core.text_utils.tokenize_for_keyword_search（ASCII 词 + 中文二字组）"
+    },
+    "filters": {
+      "min_similarity_score": 0.05,
+      "relative_score_threshold": 0.35,
+      "applied_to": "四组完全相同"
+    },
+    "query_rewriting": "未启用：四组都直接用 Gold 原句做 query 文本与查询向量，以隔离查询改写/意图路由的影响。",
+    "tenant_id": null,
+    "permission_tags": null
+  },
+  "rerank": {
+    "provider": "cross-encoder",
+    "model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "candidate_count": 20,
+    "status": {
+      "requested": false,
+      "available": false,
+      "reason": "skip_rerank"
+    }
+  },
+  "models": {
+    "embedding_provider": "openai",
+    "embedding_model": "text-embedding-v4",
+    "embedding_dimension": 1024,
+    "embedding_endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "chat_model_unused": "qwen-turbo",
+    "rerank_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1"
+  },
+  "environment": {
+    "packages": {
+      "python": "3.12.14",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "psycopg": "3.3.4",
+      "torch": "2.15.0+cpu",
+      "sentence_transformers": "unavailable(ModuleNotFoundError)",
+      "transformers": "unavailable(ModuleNotFoundError)",
+      "openai": "2.41.1"
+    },
+    "config_fingerprint": "a79ed9000b6114da",
+    "config_sources": [
+      "D:\\AgentAIProgect\\RAG\\config\\api.json",
+      "D:\\AgentAIProgect\\RAG\\config\\knowledge.json",
+      "D:\\AgentAIProgect\\RAG\\config\\model.json",
+      "D:\\AgentAIProgect\\RAG\\config\\retrieval.json",
+      "D:\\AgentAIProgect\\RAG\\config\\storage.json"
+    ],
+    "dsn_redacted": "postgresql://rag:***@127.0.0.1:15432/rag",
+    "seed": 0,
+    "randomness": "检索排序为确定性打分（无采样）；重排为 CPU 前向推理，无 dropout；已固定 random.seed 与 PYTHONHASHSEED，结果不受随机性影响。"
+  },
+  "methods": [
+    {
+      "key": "A",
+      "name": "bm25_only",
+      "mode": "bm25",
+      "rerank": false,
+      "description": "BM25 关键词检索"
+    },
+    {
+      "key": "B",
+      "name": "vector_only",
+      "mode": "semantic",
+      "rerank": false,
+      "description": "向量（余弦）检索"
+    },
+    {
+      "key": "C",
+      "name": "hybrid",
+      "mode": "hybrid",
+      "rerank": false,
+      "description": "BM25 + 向量加权融合"
+    }
+  ],
+  "metrics_definitions": {
+    "relevance": "二元：chunk_id ∈ retrieval_relevant_chunk_ids 即相关；多相关 Chunk 用集合语义。",
+    "hit@k": "Top-k 内至少一个相关 Chunk 记为 1，按 22 题求均值。",
+    "mrr@10": "首个相关 Chunk 名次的倒数；Top10 未命中记 0；按 22 题求均值。",
+    "ndcg@10": "二元增益 DCG@10 / IDCG@10；IDCG 取 min(|相关集合|, 10) 个理想位置。",
+    "recall@10": "Top10 覆盖的相关 Chunk 数 / 该题相关 Chunk 总数；按 22 题求均值。",
+    "required_evidence_coverage@10": "补充指标：requires_all_evidence 的题，Top10 覆盖 evidence_chunk_ids 的比例。",
+    "latency": "单次检索调用耗时（含重排时为检索+重排）；p50/p95 用线性插值分位数。"
+  }
+}

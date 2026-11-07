@@ -1,0 +1,47 @@
+{
+  "answer_correctness": {
+    "evidence": "给水管（管径大于500mm) 1.5 0.5",
+    "reason": "交越时净距应为1.5米，非0.5米",
+    "score": 0
+  },
+  "case_id": "p6s-0276",
+  "citation_correctness": {
+    "evidence": "给水管（管径大于500mm) 1.5 0.5",
+    "reason": "引用[1]对应正确来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "给水管（管径大于500mm) 1.5 0.5",
+    "reason": "覆盖问题核心要求",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "给水管（管径大于500mm) 1.5 0.5",
+    "reason": "关键事实与上下文矛盾",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_fact",
+    "citation_mismatch"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "6cc6eca2be644f0aba99e7d45fd9961b",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答题，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

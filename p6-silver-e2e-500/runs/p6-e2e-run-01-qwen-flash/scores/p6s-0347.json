@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "开箱检验、清洁搬运、安装固定、线缆连接、清理现场。",
+    "reason": "内容与上下文完全一致，无遗漏或错误。",
+    "score": 1
+  },
+  "case_id": "p6s-0347",
+  "citation_correctness": {
+    "evidence": "[1] 开箱检验、清洁搬运、安装固定、线缆连接、清理现场。",
+    "reason": "引用编号与上下文来源匹配且支持对应句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "管道： 检查导线； 检查接地装置；检 查标志；检查清理线路沿线环境；做好巡查 记录；",
+    "reason": "涵盖所有问题所需条件与步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查导线；检查接地装置；检查标志；检查清理线路沿线环境；做好巡查记录；",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "10c417d890844da399aafb346d8ecd37",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

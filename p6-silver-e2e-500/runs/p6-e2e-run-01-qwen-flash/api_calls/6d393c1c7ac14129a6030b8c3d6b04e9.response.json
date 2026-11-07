@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:44.735643+08:00",
+  "conservative_cost_yuan": 0.0008043,
+  "error": null,
+  "latency_ms": 1518.3643999043852,
+  "list_price_estimate_yuan": 0.0006182999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 敷设硬质PVC管综合单价为47.58元/十米。[1]  \n2. 其消耗量为0.28（按实计列）。[1]  \n3. 另一参考项显示单价31.01元/十米，消耗量0.17。[2]  \n4. 项目编码WH41105001对应此数据。[1]  \n5. 不同表格中数据存在差异，需确认具体计量单位与项目定义。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880883,
+    "id": "chatcmpl-eb5a202a-15b5-909d-b8e7-c773b7f02949",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 124,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2882,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3006
+    }
+  },
+  "usage_known": true
+}

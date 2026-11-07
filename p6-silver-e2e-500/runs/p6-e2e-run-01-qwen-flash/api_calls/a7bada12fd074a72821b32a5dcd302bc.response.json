@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:50.891002+08:00",
+  "conservative_cost_yuan": 0.00082965,
+  "error": null,
+  "latency_ms": 1433.4505998995155,
+  "list_price_estimate_yuan": 0.00063015,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 平原、丘陵地区开关电源设备巡检的技工人工费为13.68元。[1]  \n2. 该费用对应项目编码WH21107002，计量单位为台·次。[1]  \n3. 综合单价为21.89元，其中技工人工费占13.68元。[1]  \n4. 巡检工作内容包括检查清洁外观、紧固连接等。[1]  \n5. 此标准依据《电信基础设施维护规程》第233页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880829,
+    "id": "chatcmpl-c33b381a-a46f-9bc9-b833-df55ad672ed5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 133,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2871,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3004
+    }
+  },
+  "usage_known": true
+}

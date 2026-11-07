@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "装维人员需穿戴整齐工作服、绝缘鞋、安全帽、工号牌，携带工具齐全的工具包和终端、线材等。",
+    "reason": "回答基于上下文，准确说明需携带工具包和防护装备。",
+    "score": 1
+  },
+  "case_id": "p6s-0333",
+  "citation_correctness": {
+    "evidence": "无需自备车辆，由公司统一调度派车[无直接依据]。",
+    "reason": "第3条引用[无直接依据]，其余正确。",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "无需自备车辆，由公司统一调度派车[无直接依据]。",
+    "reason": "未明确说明是否需自备车辆，仅推测无需自备但无直接依据。",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "装维人员需穿戴整齐工作服、绝缘鞋、安全帽、工号牌，携带工具齐全的工具包和终端、线材等。",
+    "reason": "每项事实均有对应上下文支持，无编造。",
+    "score": 1
+  },
+  "flags": [
+    "citation_missing_for_vehicle_info",
+    "partial_completeness_due_to_implicit_assumption"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "5e85df9088a24bd0a369577ea9d136fb",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，非拒答场景。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

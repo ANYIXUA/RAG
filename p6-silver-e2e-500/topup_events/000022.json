@@ -1,0 +1,85 @@
+{
+  "previous_sha256": "69709826f96e19e17243c56b096cfcd759ceb36855fed2e126d40663c36fbc83",
+  "record": {
+    "batch": 11,
+    "candidates": [
+      {
+        "answer": "30 天",
+        "evidence": [
+          {
+            "excerpt": "实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。",
+            "passage_id": "954e132c1a9b0c26daaabf9f"
+          }
+        ],
+        "question": "实行招标的维护合同价款应在中标通知书发出之日起多少天内由发承包双方约定？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "由承包人承担",
+        "evidence": [
+          {
+            "excerpt": "承包人的维护用机械（仪表）设备损坏及停工损失，由承包人承担；",
+            "passage_id": "48e4aa1fce9c20c3d6f6339f"
+          }
+        ],
+        "question": "维护工作价款调整中，因不可抗力导致的承包人维护用机械（仪表）设备损坏及停工损失由谁承担？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "按新的项目特征确定工作量清单项目的综合单价",
+        "evidence": [
+          {
+            "excerpt": "若维护作业中出现维护工作与工作量清单项目特征描述不符的，发、承包双方应按新的项目特征确定工作量清单项目的综合单价。",
+            "passage_id": "48e4aa1fce9c20c3d6f6339f"
+          }
+        ],
+        "question": "当维护作业与工作量清单项目特征描述不符时，发承包双方应如何确定综合单价？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0479",
+          "expected_behavior": "answer",
+          "generation_batch": 11,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271117,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "维护工作价款调整中，因不可抗力导致的承包人维护用机械（仪表）设备损坏及停工损失由谁承担？",
+          "question_type": "exact_fact",
+          "reference_answer": "由承包人承担",
+          "source_chunk_ids": [
+            "48e4aa1fce9c20c3d6f6339f"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "48e4aa1fce9c20c3d6f6339f",
+              "excerpt": "承包人的维护用机械（仪表）设备损坏及停工损失，由承包人承担；"
+            }
+          ],
+          "source_page": 91,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

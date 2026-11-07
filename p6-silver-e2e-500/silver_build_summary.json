@@ -1,0 +1,55 @@
+{
+  "label_type": "silver",
+  "prompt_version": "p6-silver-generate-v1",
+  "model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+  "seed": 20261106,
+  "accepted": 466,
+  "by_type": {
+    "exact_fact": 180,
+    "procedure": 96,
+    "multi_condition": 99,
+    "unanswerable": 41,
+    "colloquial": 50
+  },
+  "targets": {
+    "exact_fact": 200,
+    "procedure": 100,
+    "multi_condition": 100,
+    "colloquial": 50,
+    "unanswerable": 50
+  },
+  "shortfall": {
+    "exact_fact": 20,
+    "procedure": 4,
+    "multi_condition": 1,
+    "colloquial": 0,
+    "unanswerable": 9
+  },
+  "duplicates_rejected": 39,
+  "gold_prior_query_count": 50,
+  "raw_available_by_type": {
+    "exact_fact": 204,
+    "procedure": 100,
+    "multi_condition": 100,
+    "unanswerable": 51,
+    "colloquial": 51
+  },
+  "inputs": {
+    "corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+    "generation_raw_sha256": "435735956a3d748f8c9e61c677b7a7f7647bc56132e886ff4fd6fe2be446b9d9",
+    "gold_sources_sha256": [
+      {
+        "path": "storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-04\\retrieval_gold_batch01_9.jsonl",
+        "sha256": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a"
+      },
+      {
+        "path": "storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-06\\retrieval_gold_batch02_13.jsonl",
+        "sha256": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9"
+      },
+      {
+        "path": "p4-gold-completion-01\\signed-final-20261105-v1\\retrieval_gold_holdout_28.jsonl",
+        "sha256": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c"
+      }
+    ]
+  }
+}

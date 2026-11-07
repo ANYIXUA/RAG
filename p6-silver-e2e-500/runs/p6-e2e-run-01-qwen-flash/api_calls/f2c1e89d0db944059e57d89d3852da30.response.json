@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:25.551168+08:00",
+  "conservative_cost_yuan": 0.00072885,
+  "error": null,
+  "latency_ms": 1196.081900037825,
+  "list_price_estimate_yuan": 0.0005953499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装拉线隔电子后需进行绑扎固定。[2]  \n2. 绑扎应按规范操作，确保牢固可靠。[2]  \n3. 清理现场包括移除施工垃圾与工具。[2]  \n4. 工作内容包含绑扎与清理现场等步骤。[1]  \n5. 作业完成后须恢复现场原状。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881164,
+    "id": "chatcmpl-b6874d8e-eea3-926d-adf3-0c3d76d59c1d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 89,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3079,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3168
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:12.985657+08:00",
+  "conservative_cost_yuan": 0.0007543499999999999,
+  "error": null,
+  "latency_ms": 1391.537600196898,
+  "list_price_estimate_yuan": 0.0005953499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 人孔内应抽水并清理淤泥及杂物。[2]  \n2. 重新绑扎、整理光缆走线排列。[1]  \n3. 对光缆进行除垢处理，必要时加套塑料管。[1]  \n4. 整治固定接头盒与预留光缆，补换光缆挂牌。[1]  \n5. 检查并修复托架、托板及标志，确保完好清晰。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881031,
+    "id": "chatcmpl-ca119fd6-a57c-944c-bb1b-2068bbb7b253",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2909,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3015
+    }
+  },
+  "usage_known": true
+}

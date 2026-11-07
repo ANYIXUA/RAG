@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:58.080436+08:00",
+  "conservative_cost_yuan": 0.00134205,
+  "error": null,
+  "latency_ms": 2328.6168999038637,
+  "list_price_estimate_yuan": 0.00091455,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"未提供具体型号，回答准确\",\n    \"evidence\": \"所有文档均未提供“光纤熔接机”的确切规格型号。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"文档[2]提及“带状光纤熔接机”和“光纤熔接机”，但未给出具体型号。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有相关上下文并指出缺失\",\n    \"evidence\": \"无法确定具体型号，建议补充厂家或设备标识信息。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"文档[2]提及“带状光纤熔接机”和“光纤熔接机”，但未给出具体型号。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"非拒答场景，无需评分\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882035,
+    "id": "chatcmpl-c9c968e1-bd5c-936b-80be-03ee58c2f98d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 285,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3247,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3532
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:56.594762+08:00",
+  "conservative_cost_yuan": 0.0007272,
+  "error": null,
+  "latency_ms": 1236.547000007704,
+  "list_price_estimate_yuan": 0.0005712,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 技工的人工费单价为114元/工日。[1]  \n2. 该单价依据《信息通信建设工程费用定额》规定。[1]  \n3. 人工费包含在综合单价中，用于直接维护作业人员开支。[1]  \n4. 普工单价为61元/工日，作为对比参考。[1]  \n5. 综合单价还包含企业管理费和利润等。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881195,
+    "id": "chatcmpl-c4492105-6ec1-9ab1-98d0-6f37ae27f272",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2768,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2872
+    }
+  },
+  "usage_known": true
+}

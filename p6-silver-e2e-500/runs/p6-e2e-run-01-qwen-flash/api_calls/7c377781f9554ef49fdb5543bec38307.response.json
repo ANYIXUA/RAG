@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:08.868020+08:00",
+  "conservative_cost_yuan": 0.000771,
+  "error": null,
+  "latency_ms": 1559.9014000035822,
+  "list_price_estimate_yuan": 0.0005895,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 平原地区架空光缆日常检修综合单价为36.85元/千米²次。[1]  \n2. 该单价适用于整治固定接头盒、补换挂钩及标识牌等工作。[1]  \n3. 计量单位为千米²次，对应维护作业频次。[1]  \n4. 项目编码为WH11007001，属平原区域标准。[1]  \n5. 不同地形（城区、山区）单价不同，需区分计列。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880847,
+    "id": "chatcmpl-58c81e64-1dba-9978-8c7c-5f5ecde9f6cb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2720,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2841
+    }
+  },
+  "usage_known": true
+}

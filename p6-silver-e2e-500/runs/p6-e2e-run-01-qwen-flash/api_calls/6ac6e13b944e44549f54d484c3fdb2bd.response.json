@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:59.521212+08:00",
+  "conservative_cost_yuan": 0.0008682000000000001,
+  "error": null,
+  "latency_ms": 1817.3050999175757,
+  "list_price_estimate_yuan": 0.0006597,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH33113001安装室内接地排的消耗量为0.69个。[1]  \n2. 该消耗量单位为“个”，适用于室内接地排安装作业。[1]  \n3. 项目编码WH33113001对应的工作内容包括安装固定、涂漆等。[1]  \n4. 消耗量数据来源于《电信基础设施维护规程》第314页表10.4.3.13。[1]  \n5. 与同表中其他项目（如抗震机座）的消耗量无直接关联。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880837,
+    "id": "chatcmpl-6c690aff-a4e1-93a2-960b-58040cd76974",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 139,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3008,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3147
+    }
+  },
+  "usage_known": true
+}

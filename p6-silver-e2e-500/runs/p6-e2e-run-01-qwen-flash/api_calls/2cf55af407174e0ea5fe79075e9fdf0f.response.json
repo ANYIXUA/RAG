@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:19.504963+08:00",
+  "conservative_cost_yuan": 0.0014224499999999998,
+  "error": null,
+  "latency_ms": 2547.515300102532,
+  "list_price_estimate_yuan": 0.00098745,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确指出规格未在上下文列出\",\n    \"evidence\": \"敷设镀锌钢管管道时，钢管规格未在上下文中明确列出。[2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"项目编码WH12023涉及敷设镀锌钢管管道，但未说明具体规格参数。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"当前检索内容中无明确的钢管规格参数信息。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"[2] 钢管的规格 百 米·条 条\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，非拒答场景\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"explicit_no_info_claim\",\n    \"correct_citation_usage\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881696,
+    "id": "chatcmpl-a7a04d9b-3b2a-9eb2-bc8c-3b5bb407884c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 290,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3683,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3973
+    }
+  },
+  "usage_known": true
+}

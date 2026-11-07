@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:01.752353+08:00",
+  "conservative_cost_yuan": 0.0007884,
+  "error": null,
+  "latency_ms": 1400.9842998348176,
+  "list_price_estimate_yuan": 0.0006099,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 11ax WLAN 2×2在20M频宽下，吞吐量要求不低于180Mbps。[1]  \n2. 此要求基于大字节（1518字节）随机包长测试条件。[1]  \n3. 该标准适用于理想环境下的吞吐量性能。[1]  \n4. 与5GHz频段的其他配置一致，符合表4-2规定。[1]  \n5. 若为实际场景，需考虑干扰及覆盖影响。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881200,
+    "id": "chatcmpl-8ad18e36-a5c6-9bbe-b925-e257088a6c6d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 119,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2876,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2995
+    }
+  },
+  "usage_known": true
+}

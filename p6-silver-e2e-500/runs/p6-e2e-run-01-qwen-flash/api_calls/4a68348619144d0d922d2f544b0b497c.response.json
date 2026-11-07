@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:48.154834+08:00",
+  "conservative_cost_yuan": 0.0007505999999999999,
+  "error": null,
+  "latency_ms": 1112.6894999761134,
+  "list_price_estimate_yuan": 0.0005810999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. Wi-Fi信号在客厅与卧室间波动，可能因设备间存在干扰或覆盖不均。[3]  \n2. 建议检查光网关与光路由间是否存在无线干扰问题。[3]  \n3. 可通过检测无线局域网信号强度优化布局。[1]  \n4. 若为FTTR组网，需关注多用户并发时延及信号重传情况。[3]  \n5. 请结合现场环境进行信号检测并调整设备位置。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881187,
+    "id": "chatcmpl-0f4f7c80-263d-92f2-9459-5b391ce2b67c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2744,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2857
+    }
+  },
+  "usage_known": true
+}

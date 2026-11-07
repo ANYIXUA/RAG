@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:55.203117+08:00",
+  "conservative_cost_yuan": 0.0006402000000000001,
+  "error": null,
+  "latency_ms": 1584.8205001093447,
+  "list_price_estimate_yuan": 0.0005022,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 厂家编码和设备编码由智家中心统一分配。[1]  \n2. 厂家编码用于区分产品品牌。[1]  \n3. 设备编码用于区分设备型号。[1]  \n4. 设备编码信息参考章节1.4.3定义的产品名称码。[1]  \n5. 厂家编码及设备编码由中国移动统一分配。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881013,
+    "id": "chatcmpl-33df81dc-154d-9362-b8ff-8978925456b3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 92,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2428,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2520
+    }
+  },
+  "usage_known": true
+}

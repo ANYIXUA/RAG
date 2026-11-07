@@ -1,0 +1,1983 @@
+{
+  "status": "AUDIT_PREPARED",
+  "human_review_status": "HUMAN_REVIEW_PENDING",
+  "categories": {
+    "格式错误": 2,
+    "证据不足": 4,
+    "评分逻辑问题": 4
+  },
+  "cases": [
+    {
+      "case_id": "p6s-0023",
+      "question": "维护工作价款调整的基准日，招标项目以什么时间为基准？",
+      "question_type": "exact_fact",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0023",
+        "errors": [
+          "JSONDecodeError",
+          "JSONDecodeError",
+          "JSONDecodeError"
+        ],
+        "needs_human_review": true,
+        "question_type": "exact_fact",
+        "score_state": "failed"
+      },
+      "primary_attribution": "格式错误",
+      "attribution_note": "三次均finish_reason=length，JSON字符串未闭合；输出达到1600 token上限。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "8278daada6bb46f08e2a494d65930919",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/8278daada6bb46f08e2a494d65930919.request.json",
+          "request_sha256": "70af9f2cf5f42c64d090f1e56a6d28fab88c44e3588b6cfec92e55a2b90bbaac",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/8278daada6bb46f08e2a494d65930919.response.json",
+          "response_exists": true,
+          "response_sha256": "95839b7d5901c04f36b20964ab891fef3a51a3b9e50fd044f3b5c77f4e9e29f9",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": "length",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 1600,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3337,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4937
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出‘招标维护项目以投标截止日前28天为基准日’，与问题完全匹配，且该信息在原文中直接支持。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第90页\\n定位信息：90\\n综合分：0.698972\\n召回综合分：0.698972\\n重排分：无\\n语义分：0.569960\\nBM25 原始分：42.375942\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第90页 页码：90 T/CAICI XXXX—XXXX 84 f） 应增加和扣减的索赔金额； g） 应抵扣的预付款； h） 应扣减的质量保证金； i） 根据合同应增加和扣减的其他金额； j） 本付款周期实际支付的维护工作价款。 8.4.5.6 发包人在收到承包人递交的进度款支付申请及相应的证明文件后，应在合同约定时间内核对和支 付进度款。发包人应扣回的预付款，与进度款同期结算抵扣。 8.4.5.7 发包人未在合同约定时间内支付进度款，承包人应及时向发包人发出要求付款的通知，发包人收 到承包人通知后仍不按要求付款，可与承包人协商签订延期付款协议，经承包人同意后延期支付。协议应 明确延期支付的时间和从付款申请生效后按同期银行贷款利率计算应付款的利息。 8.4.5.8 发包人不按合同约定支付进度款，双方又未达成延期付款协议，导致维护工作无法进行时，承包 人可停止维护，由发包人承担违约责任。 8.4.6 索赔与现场签证 8.4.6.1 合同一方向另一方提出索赔时，应有正当的索赔理由和有效证据，并应符合合同的相关约定。 8.4.6.2 若承包人认为非承包人原因发生的事件造成了承包人的经济损失，承包人应在确认该事件发生后， 按合同约定向发包人发出索赔通知。 发包人在收到最终索赔报告后并在合同约定时间内，未向承包人做出答复，视为该项索赔已经认可。 8.4.6.3 承包人索赔按下列程序处理： a） 承包人在合同约定的时间内向发包人递交费用索赔意向通知书； b） 发包人指定专人收集与索赔有关的资料； c） 承包人在合同约定的时间内向发包人递交费用索赔申请表； d） 发包人指定的专人初步审查费用索赔申请表，符合本规则第8.4.6.1 条规定的条件时予以受理； e） 发包人指定的专人进行费用索赔核对，经复核索赔金额后，与承包人协商确定并由发包人批准； f） 发包人指定的专人应在合同约定的时间内签署费用索赔审批表，或发出要求承包人提交有关索赔 的进一步详细资料的通知，待收到承包人提交的详细资料后，按本条第4、5 款的程序进行。 8.4.6.4 若承包人的费用索赔与维护工作延期索赔要求相关联时，发包人在作出费用索赔的批准决定时， 应结合维护工作延期的批准，综合做出费用索赔和维护工作延期的决定。 8.4.6.5 若发包人认为由于承包人的原因造成额外损失，发包人应在确认引起索赔的事件后，按合同约定 向承包人发出索赔通知。 承包人在收到发包人索赔通知后并在合同约定时间内，未向发包人作出答复，视为该项索赔已经认可。 8.4.6.6 承包人应发包人要求完成合同以外的零星工作或非承包人责任事件发生时，承包人应按合同约定 及时向发包人提出现场签证。 8.4.6.7 发、承包双方确认的索赔与现场签证费用与维护工作进度款同期支付。 8.4.7 维护工作价款调整 8.4.7.1 招标维护项目以投标截止日前28 天为基准日，非招标维护项目以合同签订前28 天为基准日，其 后国家的法律、法规、规章和政策发生变化影响维护价款的，应按通信行业主管部门或其授权的机构发布 的规定调整合同价款。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有回答中的事实均来自上下文[1]，且每项陈述均可在原文中找到对应依据，无虚构或推断内容。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第90页\\n定位信息：90\\n综合分：0.698972\\n召回综合分：0.698972\\n重排分：无\\n语义分：0.569960\\nBM25 原始分：42.375942\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第90页 页码：90 T/CAICI XXXX—XXXX 84 f） 应增加和扣减的索赔金额； g） 应抵扣的预付款； h） 应扣减的质量保证金； i） 根据合同应增加和扣减的其他金额； j） 本付款周期实际支付的维护工作价款。 8.4.5.6 发包人在收到承包人递交的进度款支付申请及相应的证明文件后，应在合同约定时间内核对和支 付进度款。发包人应扣回的预付款，与进度款同期结算抵扣。 8.4.5.7 发包人未在合同约定时间内支付进度款，承包人应及时向发包人发出要求付款的通知，发包人收 到承包人通知后仍不按要求付款，可与承包人协商签订延期付款协议，经承包人同意后延期支付。协议应 明确延期支付的时间和从付款申请生效后按同期银行贷款利率计算应付款的利息。 8.4.5.8 发包人不按合同约定支付进度款，双方又未达成延期付款协议，导致维护工作无法进行时，承包 人可停止维护，由发包人承担违约责任。 8.4.6 索赔与现场签证 8.4.6.1 合同一方向另一方提出索赔时，应有正当的索赔理由和有效证据，并应符合合同的相关约定。 8.4.6.2 若承包人认为非承包人原因发生的事件",
+          "parsed_json": null,
+          "json_parse_error": {
+            "type": "JSONDecodeError",
+            "message": "Unterminated string starting at: line 10 column 17 (char 1713)"
+          },
+          "independent_validation_errors": [],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "db64044171bb41a1bfbc59c657099f35",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/db64044171bb41a1bfbc59c657099f35.request.json",
+          "request_sha256": "a73c74cb210c275d846f00dd75dd904b019bbb5d93eb8f38d9d9d2dd1f161672",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/db64044171bb41a1bfbc59c657099f35.response.json",
+          "response_exists": true,
+          "response_sha256": "428e467156acc8d471a190673d9c65cc3faa4986609f343dd8be4521972f587c",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": "length",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 1600,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3337,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 4937
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出'招标维护项目以投标截止日前28天为基准日'，与问题直接对应，且内容准确无误。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第90页\\n定位信息：90\\n综合分：0.698972\\n召回综合分：0.698972\\n重排分：无\\n语义分：0.569960\\nBM25 原始分：42.375942\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第90页 页码：90 T/CAICI XXXX—XXXX 84 f） 应增加和扣减的索赔金额； g） 应抵扣的预付款； h） 应扣减的质量保证金； i） 根据合同应增加和扣减的其他金额； j） 本付款周期实际支付的维护工作价款。 8.4.5.6 发包人在收到承包人递交的进度款支付申请及相应的证明文件后，应在合同约定时间内核对和支 付进度款。发包人应扣回的预付款，与进度款同期结算抵扣。 8.4.5.7 发包人未在合同约定时间内支付进度款，承包人应及时向发包人发出要求付款的通知，发包人收 到承包人通知后仍不按要求付款，可与承包人协商签订延期付款协议，经承包人同意后延期支付。协议应 明确延期支付的时间和从付款申请生效后按同期银行贷款利率计算应付款的利息。 8.4.5.8 发包人不按合同约定支付进度款，双方又未达成延期付款协议，导致维护工作无法进行时，承包 人可停止维护，由发包人承担违约责任。 8.4.6 索赔与现场签证 8.4.6.1 合同一方向另一方提出索赔时，应有正当的索赔理由和有效证据，并应符合合同的相关约定。 8.4.6.2 若承包人认为非承包人原因发生的事件造成了承包人的经济损失，承包人应在确认该事件发生后， 按合同约定向发包人发出索赔通知。 发包人在收到最终索赔报告后并在合同约定时间内，未向承包人做出答复，视为该项索赔已经认可。 8.4.6.3 承包人索赔按下列程序处理： a） 承包人在合同约定的时间内向发包人递交费用索赔意向通知书； b） 发包人指定专人收集与索赔有关的资料； c） 承包人在合同约定的时间内向发包人递交费用索赔申请表； d） 发包人指定的专人初步审查费用索赔申请表，符合本规则第8.4.6.1 条规定的条件时予以受理； e） 发包人指定的专人进行费用索赔核对，经复核索赔金额后，与承包人协商确定并由发包人批准； f） 发包人指定的专人应在合同约定的时间内签署费用索赔审批表，或发出要求承包人提交有关索赔 的进一步详细资料的通知，待收到承包人提交的详细资料后，按本条第4、5 款的程序进行。 8.4.6.4 若承包人的费用索赔与维护工作延期索赔要求相关联时，发包人在作出费用索赔的批准决定时， 应结合维护工作延期的批准，综合做出费用索赔和维护工作延期的决定。 8.4.6.5 若发包人认为由于承包人的原因造成额外损失，发包人应在确认引起索赔的事件后，按合同约定 向承包人发出索赔通知。 承包人在收到发包人索赔通知后并在合同约定时间内，未向发包人作出答复，视为该项索赔已经认可。 8.4.6.6 承包人应发包人要求完成合同以外的零星工作或非承包人责任事件发生时，承包人应按合同约定 及时向发包人提出现场签证。 8.4.6.7 发、承包双方确认的索赔与现场签证费用与维护工作进度款同期支付。 8.4.7 维护工作价款调整 8.4.7.1 招标维护项目以投标截止日前28 天为基准日，非招标维护项目以合同签订前28 天为基准日，其 后国家的法律、法规、规章和政策发生变化影响维护价款的，应按通信行业主管部门或其授权的机构发布 的规定调整合同价款。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文[1]，且表述与原文一致，无添加或扭曲。例如‘投标截止日前28天’‘政策变化可调整’等均直接源自原文。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第90页\\n定位信息：90\\n综合分：0.698972\\n召回综合分：0.698972\\n重排分：无\\n语义分：0.569960\\nBM25 原始分：42.375942\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第90页 页码：90 T/CAICI XXXX—XXXX 84 f） 应增加和扣减的索赔金额； g） 应抵扣的预付款； h） 应扣减的质量保证金； i） 根据合同应增加和扣减的其他金额； j） 本付款周期实际支付的维护工作价款。 8.4.5.6 发包人在收到承包人递交的进度款支付申请及相应的证明文件后，应在合同约定时间内核对和支 付进度款。发包人应扣回的预付款，与进度款同期结算抵扣。 8.4.5.7 发包人未在合同约定时间内支付进度款，承包人应及时向发包人发出要求付款的通知，发包人收 到承包人通知后仍不按要求付款，可与承包人协商签订延期付款协议，经承包人同意后延期支付。协议应 明确延期支付的时间和从付款申请生效后按同期银行贷款利率计算应付款的利息。 8.4.5.8 发包人不按合同约定支付进度款，双方又未达成延期付款协议，导致维护工作无法进行时，承包 人可停止维护，由发包人承担违约责任。 8.4.6 索赔与现场签证 8.4.6.1 合同一方向另一方提出索赔时，应有正当的索赔理由和有效证据，并应符合合同的相关约定。 8.4.6.2 若",
+          "parsed_json": null,
+          "json_parse_error": {
+            "type": "JSONDecodeError",
+            "message": "Unterminated string starting at: line 10 column 17 (char 1724)"
+          },
+          "independent_validation_errors": [],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "51d01cb6b0d9431ba48b51e6654ea6e2",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/51d01cb6b0d9431ba48b51e6654ea6e2.request.json",
+          "request_sha256": "31c0a7d28c07acf5eca8252df0711ae6566e89d6dc7a4ea347a02010c56faf58",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/51d01cb6b0d9431ba48b51e6654ea6e2.response.json",
+          "response_exists": true,
+          "response_sha256": "32cb7475ef78eb67dd85ef538328a91242b28793da006bb30efd9204a750821d",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": "length",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 1600,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3337,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4937
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]明确指出'招标维护项目以投标截止日前28天为基准日'，与问题直接对应，且内容完整准确。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第90页\\n定位信息：90\\n综合分：0.698972\\n召回综合分：0.698972\\n重排分：无\\n语义分：0.569960\\nBM25 原始分：42.375942\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第90页 页码：90 T/CAICI XXXX—XXXX 84 f） 应增加和扣减的索赔金额； g） 应抵扣的预付款； h） 应扣减的质量保证金； i） 根据合同应增加和扣减的其他金额； j） 本付款周期实际支付的维护工作价款。 8.4.5.6 发包人在收到承包人递交的进度款支付申请及相应的证明文件后，应在合同约定时间内核对和支 付进度款。发包人应扣回的预付款，与进度款同期结算抵扣。 8.4.5.7 发包人未在合同约定时间内支付进度款，承包人应及时向发包人发出要求付款的通知，发包人收 到承包人通知后仍不按要求付款，可与承包人协商签订延期付款协议，经承包人同意后延期支付。协议应 明确延期支付的时间和从付款申请生效后按同期银行贷款利率计算应付款的利息。 8.4.5.8 发包人不按合同约定支付进度款，双方又未达成延期付款协议，导致维护工作无法进行时，承包 人可停止维护，由发包人承担违约责任。 8.4.6 索赔与现场签证 8.4.6.1 合同一方向另一方提出索赔时，应有正当的索赔理由和有效证据，并应符合合同的相关约定。 8.4.6.2 若承包人认为非承包人原因发生的事件造成了承包人的经济损失，承包人应在确认该事件发生后， 按合同约定向发包人发出索赔通知。 发包人在收到最终索赔报告后并在合同约定时间内，未向承包人做出答复，视为该项索赔已经认可。 8.4.6.3 承包人索赔按下列程序处理： a） 承包人在合同约定的时间内向发包人递交费用索赔意向通知书； b） 发包人指定专人收集与索赔有关的资料； c） 承包人在合同约定的时间内向发包人递交费用索赔申请表； d） 发包人指定的专人初步审查费用索赔申请表，符合本规则第8.4.6.1 条规定的条件时予以受理； e） 发包人指定的专人进行费用索赔核对，经复核索赔金额后，与承包人协商确定并由发包人批准； f） 发包人指定的专人应在合同约定的时间内签署费用索赔审批表，或发出要求承包人提交有关索赔 的进一步详细资料的通知，待收到承包人提交的详细资料后，按本条第4、5 款的程序进行。 8.4.6.4 若承包人的费用索赔与维护工作延期索赔要求相关联时，发包人在作出费用索赔的批准决定时， 应结合维护工作延期的批准，综合做出费用索赔和维护工作延期的决定。 8.4.6.5 若发包人认为由于承包人的原因造成额外损失，发包人应在确认引起索赔的事件后，按合同约定 向承包人发出索赔通知。 承包人在收到发包人索赔通知后并在合同约定时间内，未向发包人作出答复，视为该项索赔已经认可。 8.4.6.6 承包人应发包人要求完成合同以外的零星工作或非承包人责任事件发生时，承包人应按合同约定 及时向发包人提出现场签证。 8.4.6.7 发、承包双方确认的索赔与现场签证费用与维护工作进度款同期支付。 8.4.7 维护工作价款调整 8.4.7.1 招标维护项目以投标截止日前28 天为基准日，非招标维护项目以合同签订前28 天为基准日，其 后国家的法律、法规、规章和政策发生变化影响维护价款的，应按通信行业主管部门或其授权的机构发布 的规定调整合同价款。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自实际上下文[1]，且表述与原文一致，无添加或扭曲。例如‘投标截止日前28天’‘政策变化可调整价款’等均直接出自原文。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第90页\\n定位信息：90\\n综合分：0.698972\\n召回综合分：0.698972\\n重排分：无\\n语义分：0.569960\\nBM25 原始分：42.375942\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第90页 页码：90 T/CAICI XXXX—XXXX 84 f） 应增加和扣减的索赔金额； g） 应抵扣的预付款； h） 应扣减的质量保证金； i） 根据合同应增加和扣减的其他金额； j） 本付款周期实际支付的维护工作价款。 8.4.5.6 发包人在收到承包人递交的进度款支付申请及相应的证明文件后，应在合同约定时间内核对和支 付进度款。发包人应扣回的预付款，与进度款同期结算抵扣。 8.4.5.7 发包人未在合同约定时间内支付进度款，承包人应及时向发包人发出要求付款的通知，发包人收 到承包人通知后仍不按要求付款，可与承包人协商签订延期付款协议，经承包人同意后延期支付。协议应 明确延期支付的时间和从付款申请生效后按同期银行贷款利率计算应付款的利息。 8.4.5.8 发包人不按合同约定支付进度款，双方又未达成延期付款协议，导致维护工作无法进行时，承包 人可停止维护，由发包人承担违约责任。 8.4.6 索赔与现场签证 8.4.6.1 合同一方向另一方提出索赔时，应有正当的索赔理由和有效证据，并应符合合同的相关约定。 8.4.6",
+          "parsed_json": null,
+          "json_parse_error": {
+            "type": "JSONDecodeError",
+            "message": "Unterminated string starting at: line 10 column 17 (char 1730)"
+          },
+          "independent_validation_errors": [],
+          "missing_response_interpretation": null
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0037",
+      "question": "支持MCS15的全光组网终端，推荐支持MCS14吗？",
+      "question_type": "exact_fact",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0037",
+        "errors": [
+          "ValueError",
+          "ValueError",
+          "ValueError"
+        ],
+        "needs_human_review": true,
+        "question_type": "exact_fact",
+        "score_state": "failed"
+      },
+      "primary_attribution": "证据不足",
+      "attribution_note": "三次JSON可解析，但Judge因不存在的[6]引用将正确性设null；与普通题必填分数校验冲突。其理由同时承认[1]有相关事实，证据不足是Judge判断，不是人工事实裁决。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "63f748c469ac455fbd6d6164ca338343",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/63f748c469ac455fbd6d6164ca338343.request.json",
+          "request_sha256": "164d80a04e696361aa9f89f62e3c54f9b6e905b7595ff23b699ec29dc7728eee",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/63f748c469ac455fbd6d6164ca338343.response.json",
+          "response_exists": true,
+          "response_sha256": "7a13ee346a2de1712fd6cbf5684e10ce075564d893dbf67fab6f2cd1cd9d0642",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 890,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3467,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4357
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"实际上下文[1]明确指出‘须支持MCS15，推荐支持MCS14’，与问题直接相关。但模型在回答中引用了[6]，而实际上下文仅包含[1][2][3]，无[6]。尽管内容正确，但引用编号错误，且未在任何chunk中出现，导致无法确认其来源。因此，因引用不匹配，无法判断答案是否基于真实上下文，故answer_correctness为null。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第25页\\n定位信息：25\\n... 6. 须支持覆盖增强相关技术，须支持MCS15，推荐支持MCS14。\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"模型声称‘推荐支持MCS14’的事实虽在上下文[1]中存在，但其引用编号为[6]，而实际上下文仅提供[1][2][3]，无[6]。其余所有陈述（如MCS14为可选推荐功能、出自V2.0.0等）均未在任一chunk中出现或支持。因此，所有事实均无实际上下文支持，属于虚构引用和编造内容。\",\n    \"evidence\": \"实际上下文仅包含[1][2][3]，无[6]；且[6]未在任何chunk中出现。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"回答中包含了核心事实‘推荐支持MCS14’，并提及MCS15为必选，基本覆盖了问题所需条件。但遗漏了关键细节：该要求出自IEEE 802.11be协议下的具体条款，且未准确说明MCS15与MCS14的层级关系（必选 vs 推荐）。此外，部分描述如‘用于增强覆盖与兼容性’虽合理，但未在上下文中找到依据，属推测。因此，虽有部分完整，但存在缺失与推断。\",\n    \"evidence\": \"[1] ... 须支持MCS15，推荐支持MCS14。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有句子均引用[6]，但实际检索上下文仅包含[1][2][3]，无[6]。引用编号[6]不存在于任何chunk中，且source_index_mapping中也未映射到[6]。因此，引用完全错误，无法对应任何实际来源。\",\n    \"evidence\": \"source_index_mapping: [{\\\"index\\\": 1, \\\"chunk_id\\\": \\\"4812f97659f77c46891223fa\\\"}, {\\\"index\\\": 2, \\\"chunk_id\\\": \\\"e69ef87cafd302938c765e20\\\"}, {\\\"index\\\": 3, \\\"chunk_id\\\": \\\"a36043b8ee1a391f2dd1c31a\\\"}, {\\\"index\\\": 4, \\\"chunk_id\\\": \\\"acbdb12c2a62c12fe9787ef7\\\"}] —— 无[6]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，上下文中有明确答案。模型应答而非拒答，符合预期行为。因此无需评分拒答行为。\",\n    \"evidence\": \"问题类型为exact_fact，上下文存在明确答案\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_citation\",\n    \"unreferenced_claim\",\n    \"overclaim\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "实际上下文[1]明确指出‘须支持MCS15，推荐支持MCS14’，与问题直接相关。但模型在回答中引用了[6]，而实际上下文仅包含[1][2][3]，无[6]。尽管内容正确，但引用编号错误，且未在任何chunk中出现，导致无法确认其来源。因此，因引用不匹配，无法判断答案是否基于真实上下文，故answer_correctness为null。",
+              "evidence": "[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\n引用标签：[1]\n标题：第25页\n定位信息：25\n... 6. 须支持覆盖增强相关技术，须支持MCS15，推荐支持MCS14。"
+            },
+            "faithfulness": {
+              "score": 0,
+              "reason": "模型声称‘推荐支持MCS14’的事实虽在上下文[1]中存在，但其引用编号为[6]，而实际上下文仅提供[1][2][3]，无[6]。其余所有陈述（如MCS14为可选推荐功能、出自V2.0.0等）均未在任一chunk中出现或支持。因此，所有事实均无实际上下文支持，属于虚构引用和编造内容。",
+              "evidence": "实际上下文仅包含[1][2][3]，无[6]；且[6]未在任何chunk中出现。"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "回答中包含了核心事实‘推荐支持MCS14’，并提及MCS15为必选，基本覆盖了问题所需条件。但遗漏了关键细节：该要求出自IEEE 802.11be协议下的具体条款，且未准确说明MCS15与MCS14的层级关系（必选 vs 推荐）。此外，部分描述如‘用于增强覆盖与兼容性’虽合理，但未在上下文中找到依据，属推测。因此，虽有部分完整，但存在缺失与推断。",
+              "evidence": "[1] ... 须支持MCS15，推荐支持MCS14。"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "回答中所有句子均引用[6]，但实际检索上下文仅包含[1][2][3]，无[6]。引用编号[6]不存在于任何chunk中，且source_index_mapping中也未映射到[6]。因此，引用完全错误，无法对应任何实际来源。",
+              "evidence": "source_index_mapping: [{\"index\": 1, \"chunk_id\": \"4812f97659f77c46891223fa\"}, {\"index\": 2, \"chunk_id\": \"e69ef87cafd302938c765e20\"}, {\"index\": 3, \"chunk_id\": \"a36043b8ee1a391f2dd1c31a\"}, {\"index\": 4, \"chunk_id\": \"acbdb12c2a62c12fe9787ef7\"}] —— 无[6]"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "问题为明确的精确事实类问题，上下文中有明确答案。模型应答而非拒答，符合预期行为。因此无需评分拒答行为。",
+              "evidence": "问题类型为exact_fact，上下文存在明确答案"
+            },
+            "confidence": "low",
+            "hallucination_suspected": true,
+            "flags": [
+              "incorrect_citation",
+              "unreferenced_claim",
+              "overclaim"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "38a47c5e217842138cc2835153d5b913",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/38a47c5e217842138cc2835153d5b913.request.json",
+          "request_sha256": "942a119e6273fa87674df6620c79b417e440dcfea807af43d8b1c9b6f2f71f29",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/38a47c5e217842138cc2835153d5b913.response.json",
+          "response_exists": true,
+          "response_sha256": "8549aa928fef386d81caf5c6f7e99fc08bc9b4d87b1dde06882af921d048bf67",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 691,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3467,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4158
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未提供关于MCS14与MCS15支持关系的直接说明，仅在[1]中提到'须支持MCS15，推荐支持MCS14'，但实际答案引用了[6]，而[6]不存在于提供的上下文片段中。因此无法判断答案是否正确，且因引用编号错误导致事实来源不可靠。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第25页\\n定位信息：25\\n... 6. 须支持覆盖增强相关技术，须支持MCS15，推荐支持MCS14。\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有陈述均引用[6]，但上下文仅包含[1][2][3]三个chunk，无[6]。模型虚构引用编号，违反Faithfulness原则，属于严重幻觉。\",\n    \"evidence\": \"上下文片段中唯一有效引用为[1][2][3]，未出现[6]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"回答涵盖了问题核心（推荐支持MCS14），并补充了背景信息（如协议归属、功能分类），但因引用错误导致部分信息不可信。若忽略引用问题，内容基本完整，但存在关键事实支撑缺失。\",\n    \"evidence\": \"回答中提及MCS15为必选、MCS14为推荐，符合[1]中'须支持MCS15，推荐支持MCS14'的表述\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有句子均标注[6]，但上下文无任何chunk对应[6]。引用编号与实际上下文来源不匹配，且[6]不存在于检索结果中，属于虚假引用。\",\n    \"evidence\": \"实际chunk_id列表为['4812f97659f77c46891223fa', 'e69ef87cafd302938c765e20', 'a36043b8ee1a391f2dd1c31a', 'acbdb12c2a62c12fe9787ef7']，无[6]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，且上下文存在相关信息，不应拒答。模型虽回答了问题，但因引用错误导致整体不可信，故不适用拒答行为评分。\",\n    \"evidence\": \"问题为明确的精确事实类问题，上下文[1]中存在直接支持答案的信息\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"invalid_citation\",\n    \"fabricated_reference\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "上下文未提供关于MCS14与MCS15支持关系的直接说明，仅在[1]中提到'须支持MCS15，推荐支持MCS14'，但实际答案引用了[6]，而[6]不存在于提供的上下文片段中。因此无法判断答案是否正确，且因引用编号错误导致事实来源不可靠。",
+              "evidence": "[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\n引用标签：[1]\n标题：第25页\n定位信息：25\n... 6. 须支持覆盖增强相关技术，须支持MCS15，推荐支持MCS14。"
+            },
+            "faithfulness": {
+              "score": 0,
+              "reason": "回答中所有陈述均引用[6]，但上下文仅包含[1][2][3]三个chunk，无[6]。模型虚构引用编号，违反Faithfulness原则，属于严重幻觉。",
+              "evidence": "上下文片段中唯一有效引用为[1][2][3]，未出现[6]"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "回答涵盖了问题核心（推荐支持MCS14），并补充了背景信息（如协议归属、功能分类），但因引用错误导致部分信息不可信。若忽略引用问题，内容基本完整，但存在关键事实支撑缺失。",
+              "evidence": "回答中提及MCS15为必选、MCS14为推荐，符合[1]中'须支持MCS15，推荐支持MCS14'的表述"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "回答中所有句子均标注[6]，但上下文无任何chunk对应[6]。引用编号与实际上下文来源不匹配，且[6]不存在于检索结果中，属于虚假引用。",
+              "evidence": "实际chunk_id列表为['4812f97659f77c46891223fa', 'e69ef87cafd302938c765e20', 'a36043b8ee1a391f2dd1c31a', 'acbdb12c2a62c12fe9787ef7']，无[6]"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "问题可回答，且上下文存在相关信息，不应拒答。模型虽回答了问题，但因引用错误导致整体不可信，故不适用拒答行为评分。",
+              "evidence": "问题为明确的精确事实类问题，上下文[1]中存在直接支持答案的信息"
+            },
+            "confidence": "low",
+            "hallucination_suspected": true,
+            "flags": [
+              "invalid_citation",
+              "fabricated_reference"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "de5ff4ff32da4bed901d5fe1faa95edf",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/de5ff4ff32da4bed901d5fe1faa95edf.request.json",
+          "request_sha256": "5a0ae3ad8f0145759afd56e670e3670b39df885ef9ae04e55772420c13831e38",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/de5ff4ff32da4bed901d5fe1faa95edf.response.json",
+          "response_exists": true,
+          "response_sha256": "d8f3848f92ab20f245e8c7d8d5012f549601ccf58a244db6b504a249bca8a8db",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 834,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3467,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 3456
+            },
+            "total_tokens": 4301
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"实际上下文仅在[1]中明确提到‘须支持MCS15，推荐支持MCS14’，但实际答案中引用的[6]在source_index_mapping中未对应任何chunk_id，且上下文片段中无[6]来源。因此无法确认该句是否由实际LLM上下文支持，故answer_correctness无法判断。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n内容：...须支持MCS15，推荐支持MCS14。\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有陈述均引用[6]，但上下文片段中不存在[6]这一引用编号。实际上下文仅提供[1][2][3]三个引用，且[1]中确实包含‘须支持MCS15，推荐支持MCS14’，但模型错误地将该信息归为[6]，属于虚构引用，违反了faithfulness原则。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n内容：...须支持MCS15，推荐支持MCS14。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题为精确事实类问题，只需判断是否推荐支持MCS14。回答中准确指出‘推荐支持MCS14’，并补充其作用（增强覆盖与兼容性）及协议背景，信息完整，未遗漏必要条件或步骤。\",\n    \"evidence\": \"1. 支持MCS15的全光组网终端，推荐支持MCS14。[6]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有语句均标注引用[6]，但实际检索上下文中无[6]对应的chunk_id或内容。source_index_mapping中列出的chunk_id分别为[4812f97659f77c46891223fa]、[e69ef87cafd302938c765e20]等，而[6]未出现在其中，且上下文未提供任何[6]来源，故引用不正确。\",\n    \"evidence\": \"source_index_mapping: [{\\\"index\\\": 1, \\\"chunk_id\\\": \\\"4812f97659f77c46891223fa\\\"}, {\\\"index\\\": 2, \\\"chunk_id\\\": \\\"e69ef87cafd302938c765e20\\\"}, {\\\"index\\\": 3, \\\"chunk_id\\\": \\\"a36043b8ee1a391f2dd1c31a\\\"}, {\\\"index\\\": 4, \\\"chunk_id\\\": \\\"acbdb12c2a62c12fe9787ef7\\\"}]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为可回答的精确事实类问题，且上下文存在相关证据，不应拒答。模型虽有错误引用，但提供了具体回答，故不适用拒答行为评分。\",\n    \"evidence\": \"上下文存在[1]明确说明‘须支持MCS15，推荐支持MCS14’\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"invalid_citation\",\n    \"fabricated_reference\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "实际上下文仅在[1]中明确提到‘须支持MCS15，推荐支持MCS14’，但实际答案中引用的[6]在source_index_mapping中未对应任何chunk_id，且上下文片段中无[6]来源。因此无法确认该句是否由实际LLM上下文支持，故answer_correctness无法判断。",
+              "evidence": "[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\n引用标签：[1]\n内容：...须支持MCS15，推荐支持MCS14。"
+            },
+            "faithfulness": {
+              "score": 0,
+              "reason": "回答中所有陈述均引用[6]，但上下文片段中不存在[6]这一引用编号。实际上下文仅提供[1][2][3]三个引用，且[1]中确实包含‘须支持MCS15，推荐支持MCS14’，但模型错误地将该信息归为[6]，属于虚构引用，违反了faithfulness原则。",
+              "evidence": "[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\n引用标签：[1]\n内容：...须支持MCS15，推荐支持MCS14。"
+            },
+            "completeness": {
+              "score": 1,
+              "reason": "问题为精确事实类问题，只需判断是否推荐支持MCS14。回答中准确指出‘推荐支持MCS14’，并补充其作用（增强覆盖与兼容性）及协议背景，信息完整，未遗漏必要条件或步骤。",
+              "evidence": "1. 支持MCS15的全光组网终端，推荐支持MCS14。[6]"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "回答中所有语句均标注引用[6]，但实际检索上下文中无[6]对应的chunk_id或内容。source_index_mapping中列出的chunk_id分别为[4812f97659f77c46891223fa]、[e69ef87cafd302938c765e20]等，而[6]未出现在其中，且上下文未提供任何[6]来源，故引用不正确。",
+              "evidence": "source_index_mapping: [{\"index\": 1, \"chunk_id\": \"4812f97659f77c46891223fa\"}, {\"index\": 2, \"chunk_id\": \"e69ef87cafd302938c765e20\"}, {\"index\": 3, \"chunk_id\": \"a36043b8ee1a391f2dd1c31a\"}, {\"index\": 4, \"chunk_id\": \"acbdb12c2a62c12fe9787ef7\"}]"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "问题为可回答的精确事实类问题，且上下文存在相关证据，不应拒答。模型虽有错误引用，但提供了具体回答，故不适用拒答行为评分。",
+              "evidence": "上下文存在[1]明确说明‘须支持MCS15，推荐支持MCS14’"
+            },
+            "confidence": "low",
+            "hallucination_suspected": true,
+            "flags": [
+              "invalid_citation",
+              "fabricated_reference"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0041",
+      "question": "Wi-Fi 7光网关的WLAN接口支持的2.4GHz频段标准是什么？",
+      "question_type": "exact_fact",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0041",
+        "errors": [],
+        "needs_human_review": true,
+        "question_type": "exact_fact",
+        "score_state": "failed"
+      },
+      "primary_attribution": "格式错误",
+      "attribution_note": "前两次length截断JSON；第三次只有请求、没有持久响应，追加标记调用证据缺失/中断，不据此断言网络或服务端故障。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "b18e9f60a5704b5c94fa0c882dc3ffc8",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/b18e9f60a5704b5c94fa0c882dc3ffc8.request.json",
+          "request_sha256": "e3bdb8e1b8a230097649daddc898ce790e9afa04ad1c04a150c60ed1df9ea55f",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/b18e9f60a5704b5c94fa0c882dc3ffc8.response.json",
+          "response_exists": true,
+          "response_sha256": "f55dd75d9787b3b9c0eb1cbb234b0f9c62620366a1f07583a25ffcc14b2c8d21",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": "length",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 1600,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3552,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 5152
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出'WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz'，与回答中'Wi-Fi 7光网关的2.4GHz频段支持802.11be标准'一致。该信息直接来自证据片段，且符合问题所问的2.4GHz频段标准。\",\n    \"evidence\": \"WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实均在实际LLM上下文中得到支持：1) 2.4GHz支持802.11be [1]；2) 2×2天线模式 [1]；3) 802.11be即Wi-Fi 7 [1]。所有陈述均有对应引用来源，无额外编造内容。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第15页\\n定位信息：15\\n综合分：0.741719\\n召回综合分：0.741719\\n重排分：无\\n语义分：0.631027\\nBM25 原始分：52.302255\\nBM25 归一化分：1.000000\\n内容：章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第15页 页码：15 10 4. 产品入库要求 4.1. 基本要求 4.1.1. 接入要求 全光组网终端均需支持EasyMesh 功能，其中光网关的Mesh 角色为Controller，光路 由的Mesh 角色为Agent。 光网关在遵循本规范基础上，需同步遵循最新版本《中国移动智能家庭网关技术规范》 和相关管理接口要求，实现RMS 平台纳管。 光网关应支持基于光路由的逻辑标识对光路由合法性进行认证的能力，应拒绝非法光 路由接入。 4.2. 设备形态 全光组网终端主要用于家庭用户和泛家庭用户，提供以太网/IP 类业务接入能力。全 光组网终端设备的硬件设计、天线连接等应稳定可靠。 表4-1 设备形态 产品类型 光网关 光路由 产品名称 Wi-Fi 7 光网关 Wi-Fi 6 光网关 Wi-Fi 7 光路由 Wi-Fi 6 光路由 网络侧接口 (WAN 口) 不低于XG-PON 推荐支持XG-PON Combo 2.5G 非对称 推荐支持2.5G 对称 用户 侧接 口 网络 接口 1 个光口 最大物理分光比不低于支持1:8 面板式：不少于1×GE 其他：不少于2×GE，至 少有1 个网口支持2.5GE 面板式：不少于1×GE 其他：不少于2×GE 不少于2×GE，至少有 1 个网口支持2.5GE 不少于2×GE WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz 2.4GHz 802.11ax （2×2） + 5GHz 2.4GHz 802.11be （2×2） + 5GHz 2.4GHz 802.11ax （2×2） + 5GHz\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问2.4GHz频段的标准，回答准确聚焦于该部分，未遗漏必要条件或步骤。虽提及了2×2天线模式，但此信息亦属于WLAN接口配置的一部分，且在原文中存在，不构成冗余或偏离。\",\n    \"evidence\": \"WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答中所有引用均正确对应实际上下文来源：[1] 是唯一支持该信息的片段，且其内容完全匹配。三个要点均标注[1]，且该引用编号在上下文中真实存在并支持所述内容。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第15页\\n定位信息：15\\n综合分：0.741719\\n召回综合分：0.741719\\n重排分：无\\n语义分：0.631027\\nBM25 原始分：52.302255\\nBM25 归一化分：1.000000\\n内容：章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第15页 页码：15 10 4. 产品入库要求 4.1. 基本要求 4.1.1. 接入要求 全光组网终端均需支持EasyMesh 功能，其中光网关的Mesh 角色为Controller，光路 由的Mesh 角色为Agent。 光网关在遵循本规范基础上，需同步遵循最新版本《中国移动智能家庭网关技术规范》 和相关管理接口要求，实现RMS 平台纳管。 光网关应支持基于光路由的逻辑标识对光路由合法性进行认证的能力，应拒绝非法光 路由接入。 4.2. 设备形态 全光组网终端主要用于家庭用户和泛家庭用户，提供以太网/IP 类业务接入能力。全 光组网终端设备的硬件设计、天线连接等应稳定可靠。 表4-1 设备形态 产品类型 光网关 光路由 产品名称 Wi-Fi 7 光网关 Wi-Fi 6 光网关 Wi-Fi 7 光路由 Wi-Fi 6 光路由 网络侧接口 (WAN 口) 不低于XG-PON 推荐支持XG-PON Combo 2.5G 非对称 推荐支持2.5G 对称 用户 侧接 口 网络 接口 1 个光口 最大物理分光比不低于支持1:8 面板式：不少于1×GE 其他：不少于2×GE，至 少有1 个网口支持2.5GE 面板式：不少于1×",
+          "parsed_json": null,
+          "json_parse_error": {
+            "type": "JSONDecodeError",
+            "message": "Unterminated string starting at: line 20 column 17 (char 1668)"
+          },
+          "independent_validation_errors": [],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "0f5d418fea6645ba9c8e729791c4a349",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/0f5d418fea6645ba9c8e729791c4a349.request.json",
+          "request_sha256": "f44e29749444f8fb54fa055cca9cd45f1c0cf2d72ce3d1c1e54c32ad09dfc865",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/0f5d418fea6645ba9c8e729791c4a349.response.json",
+          "response_exists": true,
+          "response_sha256": "508e9da879f807a7c62feaf34cf7181525c48e4454fef62d5f4620f3e523a9f1",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": "length",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 1600,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3552,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 5152
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际上下文[1]明确指出WLAN接口2.4GHz支持802.11be（2×2）+5GHz，与回答中'Wi-Fi 7光网关的2.4GHz频段支持802.11be标准'及'该频段配置为2×2天线模式'完全一致，且引用编号[1]正确对应来源。虽然silver_reference中提及'802.11be （2×2） + 5GHz'，但其表述不完整，而实际答案更准确地反映了原文内容。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第15页\\n定位信息：15\\n综合分：0.741719\\n召回综合分：0.741719\\n重排分：无\\n语义分：0.631027\\nBM25 原始分：52.302255\\nBM25 归一化分：1.000000\\n内容：章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第15页 页码：15 10 4. 产品入库要求 4.1. 基本要求 4.1.1. 接入要求 全光组网终端均需支持EasyMesh 功能，其中光网关的Mesh 角色为Controller，光路 由的Mesh 角色为Agent。 光网关在遵循本规范基础上，需同步遵循最新版本《中国移动智能家庭网关技术规范》 和相关管理接口要求，实现RMS 平台纳管。 光网关应支持基于光路由的逻辑标识对光路由合法性进行认证的能力，应拒绝非法光 路由接入。 4.2. 设备形态 全光组网终端主要用于家庭用户和泛家庭用户，提供以太网/IP 类业务接入能力。全 光组网终端设备的硬件设计、天线连接等应稳定可靠。 表4-1 设备形态 产品类型 光网关 光路由 产品名称 Wi-Fi 7 光网关 Wi-Fi 6 光网关 Wi-Fi 7 光路由 Wi-Fi 6 光路由 网络侧接口 (WAN 口) 不低于XG-PON 推荐支持XG-PON Combo 2.5G 非对称 推荐支持2.5G 对称 用户 侧接 口 网络 接口 1 个光口 最大物理分光比不低于支持1:8 面板式：不少于1×GE 其他：不少于2×GE，至 少有1 个网口支持2.5GE 面板式：不少于1×GE 其他：不少于2×GE 不少于2×GE，至少有 1 个网口支持2.5GE 不少于2×GE WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz 2.4GHz 802.11ax （2×2） + 5GHz 2.4GHz 802.11be （2×2） + 5GHz 2.4GHz 802.11ax （2×2） + 5GHz\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有直接上下文支持：1. '支持802.11be标准'来自[1]中的'2.4GHz 802.11be （2×2） + 5GHz'；2. '2×2天线模式'同样来自同一句；3. '802.11be即Wi-Fi 7'虽为常识性解释，但未超出上下文范围，且在行业语境中可接受为合理推断，未引入额外虚构信息。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第15页\\n定位信息：15\\n综合分：0.741719\\n召回综合分：0.741719\\n重排分：无\\n语义分：0.631027\\nBM25 原始分：52.302255\\nBM25 归一化分：1.000000\\n内容：章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第15页 页码：15 10 4. 产品入库要求 4.1. 基本要求 4.1.1. 接入要求 全光组网终端均需支持EasyMesh 功能，其中光网关的Mesh 角色为Controller，光路 由的Mesh 角色为Agent。 光网关在遵循本规范基础上，需同步遵循最新版本《中国移动智能家庭网关技术规范》 和相关管理接口要求，实现RMS 平台纳管。 光网关应支持基于光路由的逻辑标识对光路由合法性进行认证的能力，应拒绝非法光 路由接入。 4.2. 设备形态 全光组网终端主要用于家庭用户和泛家庭用户，提供以太网/IP 类业务接入能力。全 光组网终端设备的硬件设计、天线连接等应稳定可靠。 表4-1 设备形态 产品类型 光网关 光路由 产品名称 Wi-Fi 7 光网关 Wi-Fi 6 光网关 Wi-Fi 7 光路由 Wi-Fi 6 光路由 网络侧接口 (WAN 口) 不低于XG-PON 推荐支持XG-PON Combo 2.5G 非对称 推荐支持2.5G 对称 用户 侧接 口 网络 接口 1 个光口 最大物理分光比不低于支持1:8 面板式：不少于1×GE 其他：不少于2×GE，至 少有1 个网口支持2.5GE 面板式：不少于1×GE 其他：不少于2×GE 不少于2×GE，至少有 1 个网口支持2.5GE 不少于2×GE WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz 2.4GHz 802.11ax （2×2） + 5GHz 2.4GHz 802.11be （2×2） + 5GHz 2.4GHz 802.11ax （2×2） + 5GHz\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"",
+          "parsed_json": null,
+          "json_parse_error": {
+            "type": "JSONDecodeError",
+            "message": "Unterminated string starting at: line 14 column 15 (char 2306)"
+          },
+          "independent_validation_errors": [],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "637b4720ef444598809dab2eb5155cfd",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/637b4720ef444598809dab2eb5155cfd.request.json",
+          "request_sha256": "13fe9bb67f01288e7ab137dff972763d667b2f61f6f8b988911d1b7a63561844",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/637b4720ef444598809dab2eb5155cfd.response.json",
+          "response_exists": false,
+          "response_sha256": null,
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。",
+          "finish_reason": null,
+          "response_error": null,
+          "usage": null,
+          "raw_content_exact": null,
+          "parsed_json": null,
+          "json_parse_error": null,
+          "independent_validation_errors": [],
+          "missing_response_interpretation": "interrupted_request_without_durable_response; transport/root cause unknown"
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0053",
+      "question": "山区直埋光缆日常检修的利润是多少元？",
+      "question_type": "exact_fact",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0053",
+        "errors": [
+          "ValueError",
+          "ValueError",
+          "ValueError"
+        ],
+        "needs_human_review": true,
+        "question_type": "exact_fact",
+        "score_state": "failed"
+      },
+      "primary_attribution": "评分逻辑问题",
+      "attribution_note": "三次正确性null；第三次理由直接错引p6s-0473工日歧义，前两次声称本题利润歧义但未给证据。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "f6d1855657d04b1ea5a2e50c0dd3801d",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/f6d1855657d04b1ea5a2e50c0dd3801d.request.json",
+          "request_sha256": "dbb7bc667d34858a3bb7d633b3e120816f1692433702598ba131a2786d0fbf04",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/f6d1855657d04b1ea5a2e50c0dd3801d.response.json",
+          "response_exists": true,
+          "response_sha256": "c1c9ce17ef02f507a8b46be049b6ca62f109eefd78e4ddd1fe0855eb63a1f804",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 343,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3858,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4201
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0053利润值存在歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文[1]\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键信息点且无遗漏\",\n    \"evidence\": \"山区直埋光缆日常检修的利润为25.45元/千米²次。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"profit_value_discrepancy\",\n    \"multiple_profit_values_present\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0053利润值存在歧义，无法判断",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 1,
+              "reason": "所有事实均来自上下文[1]",
+              "evidence": "WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32"
+            },
+            "completeness": {
+              "score": 1,
+              "reason": "涵盖关键信息点且无遗漏",
+              "evidence": "山区直埋光缆日常检修的利润为25.45元/千米²次。[1]"
+            },
+            "citation_correctness": {
+              "score": 1,
+              "reason": "引用编号与来源一致",
+              "evidence": "WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "high",
+            "hallucination_suspected": false,
+            "flags": [
+              "profit_value_discrepancy",
+              "multiple_profit_values_present"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "1dc098bb5b6c4e6bb7835c3f30b78d3c",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/1dc098bb5b6c4e6bb7835c3f30b78d3c.request.json",
+          "request_sha256": "5f9291a108579a7d1e821067b0d0b6d37b2eb32c6d600ff186c02088a1c36477",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/1dc098bb5b6c4e6bb7835c3f30b78d3c.response.json",
+          "response_exists": true,
+          "response_sha256": "fbe401cdbd67706ae6ab2df2caffb96fc06e22f24e67283b2a614d567e17931f",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 321,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3858,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4179
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0053利润值歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题所需全部条件\",\n    \"evidence\": \"山区直埋光缆日常检修的利润为25.45元/千米²次。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0053利润值歧义，无法判断",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 1,
+              "reason": "每项事实均有上下文支持",
+              "evidence": "WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32"
+            },
+            "completeness": {
+              "score": 1,
+              "reason": "覆盖问题所需全部条件",
+              "evidence": "山区直埋光缆日常检修的利润为25.45元/千米²次。[1]"
+            },
+            "citation_correctness": {
+              "score": 1,
+              "reason": "引用编号与来源一致",
+              "evidence": "WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "high",
+            "hallucination_suspected": false,
+            "flags": []
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "7517c9891c824c9e964183632517797b",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/7517c9891c824c9e964183632517797b.request.json",
+          "request_sha256": "732891c208246cd49eb70e650b0f2b31cb9e11514bbdca9766e54cca78ff0b48",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/7517c9891c824c9e964183632517797b.response.json",
+          "response_exists": true,
+          "response_sha256": "fdd3852150e72b474bb51045458e23d9c491ef6eae9b9dca2c3c2bb95d9b3e39",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 346,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3858,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4204
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文[1]\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖利润值及关键属性\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0473工日歧义，无法判断",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 1,
+              "reason": "所有事实均来自上下文[1]",
+              "evidence": "WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32"
+            },
+            "completeness": {
+              "score": 1,
+              "reason": "涵盖利润值及关键属性",
+              "evidence": "WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32"
+            },
+            "citation_correctness": {
+              "score": 1,
+              "reason": "引用编号与来源一致",
+              "evidence": "WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "high",
+            "hallucination_suspected": false,
+            "flags": []
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0157",
+      "question": "在智慧灯杆（视频监控杆）15m以上每增加1m时，安装扩装设备板件的费用是多少？",
+      "question_type": "multi_condition",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0157",
+        "errors": [
+          "ValueError",
+          "ValueError",
+          "ValueError"
+        ],
+        "needs_human_review": true,
+        "question_type": "multi_condition",
+        "score_state": "failed"
+      },
+      "primary_attribution": "评分逻辑问题",
+      "attribution_note": "三次正确性null；后两次将114工日歧义写到p6s-0157。疑似全局0473例外提示串扰，不能当作本题已证实歧义。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "d7a62d4820a544d6bdac8d4d2736ec33",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/d7a62d4820a544d6bdac8d4d2736ec33.request.json",
+          "request_sha256": "0bf95e58ed4dc3a42f2bf7db529f139e5423ed5cae35feb28ebaa498b1dae87a",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/d7a62d4820a544d6bdac8d4d2736ec33.response.json",
+          "response_exists": true,
+          "response_sha256": "87716ddd371187f8061ea82c4bb485140a0392f51800b04eb494a94560ea71aa",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 388,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4202,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 4590
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0157费用歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"费用91.20元无上下文支持\",\n    \"evidence\": \"WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏关键计价项，未区分板件与模块\",\n    \"evidence\": \"WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]不支持91.20元结论\",\n    \"evidence\": \"WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"非拒答场景，无需评分\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_cost_value\",\n    \"misattribution_of_citation\",\n    \"incomplete_comparison\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0157费用歧义，无法判断",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0,
+              "reason": "费用91.20元无上下文支持",
+              "evidence": "WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50"
+            },
+            "completeness": {
+              "score": 0,
+              "reason": "遗漏关键计价项，未区分板件与模块",
+              "evidence": "WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[1]不支持91.20元结论",
+              "evidence": "WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "非拒答场景，无需评分",
+              "evidence": ""
+            },
+            "confidence": "low",
+            "hallucination_suspected": true,
+            "flags": [
+              "incorrect_cost_value",
+              "misattribution_of_citation",
+              "incomplete_comparison"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "4ae701c0e8de411eb8ea6ba3cebdfc2d",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/4ae701c0e8de411eb8ea6ba3cebdfc2d.request.json",
+          "request_sha256": "564b267b29aaed960fe6af9740dd0a8736af9a8387ea992196ee938dfc502f4c",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/4ae701c0e8de411eb8ea6ba3cebdfc2d.response.json",
+          "response_exists": true,
+          "response_sha256": "714701412ffc7756c9a43d516f9034ca62d492c10b47ea2bb63e96ece64691cf",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 411,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4202,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4613
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0157的114工日存在解析歧义，不得因与此参考不一致而判错\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误，未准确对应上下文\",\n    \"evidence\": \"WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键费用项，未完整覆盖条件\",\n    \"evidence\": \"WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]对应错误条目，不支持该句\",\n    \"evidence\": \"WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"普通可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_citation\",\n    \"partial_fact\",\n    \"misaligned_reference\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0157的114工日存在解析歧义，不得因与此参考不一致而判错",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实引用错误，未准确对应上下文",
+              "evidence": "WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏关键费用项，未完整覆盖条件",
+              "evidence": "WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[1]对应错误条目，不支持该句",
+              "evidence": "WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "普通可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "incorrect_citation",
+              "partial_fact",
+              "misaligned_reference"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "e00f6389d98348eba3e5b45df89d4347",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/e00f6389d98348eba3e5b45df89d4347.request.json",
+          "request_sha256": "37ca5351d6ef943a05d5a70ea5e2e24664a15e5db6cc056534efaca11226e784",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/e00f6389d98348eba3e5b45df89d4347.response.json",
+          "response_exists": true,
+          "response_sha256": "a44d2ddcf37d6e497979bfcee199216e344c218875c21776f494ee18f00ddacc",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 396,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4202,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4598
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0157的114工日存在解析歧义\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误，费用不一致\",\n    \"evidence\": \"WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键费用项，未区分项目\",\n    \"evidence\": \"WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]对应错误条目\",\n    \"evidence\": \"WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_cost_value\",\n    \"misattribution_of_citation\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0157的114工日存在解析歧义",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实引用错误，费用不一致",
+              "evidence": "WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏关键费用项，未区分项目",
+              "evidence": "WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[1]对应错误条目",
+              "evidence": "WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "incorrect_cost_value",
+              "misattribution_of_citation"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0195",
+      "question": "当用户反馈交互式网络电视无法正常播放时，如何结合故障处理能力与网络基础技术进行排查？",
+      "question_type": "multi_condition",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0195",
+        "errors": [
+          "ValueError",
+          "ValueError",
+          "ValueError"
+        ],
+        "needs_human_review": true,
+        "question_type": "multi_condition",
+        "score_state": "failed"
+      },
+      "primary_attribution": "证据不足",
+      "attribution_note": "三次正确性null；一次明确称实际上下文未支持交互式网络电视处理步骤；另两次混入工日/参考不一致措辞，兼有评分逻辑可疑。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "c41afbc4289f4c54a22ebe0d9dc3f570",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/c41afbc4289f4c54a22ebe0d9dc3f570.request.json",
+          "request_sha256": "579c341b2193e44471c89b3caa654b2ca7efca56bc9da7936717db988554a70f",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/c41afbc4289f4c54a22ebe0d9dc3f570.response.json",
+          "response_exists": true,
+          "response_sha256": "3b439712bc15e45b67fddbe24a33fc1b2aa62c3ee8b4a161af066ce872f91443",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 267,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3597,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 3864
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0195工日无解析歧义，但参考不一致\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实无上下文支持\",\n    \"evidence\": \"4.2.1 能进行光纤到户的一般故障处理\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键排查步骤\",\n    \"evidence\": \"熟悉交互式网络电视的常见故障处理方法\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[4]不存在于上下文\",\n    \"evidence\": \"4.2.1 能进行光纤到户的一般故障处理\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"citation_mismatch\",\n    \"missing_context_support\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0195工日无解析歧义，但参考不一致",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实无上下文支持",
+              "evidence": "4.2.1 能进行光纤到户的一般故障处理"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏关键排查步骤",
+              "evidence": "熟悉交互式网络电视的常见故障处理方法"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[4]不存在于上下文",
+              "evidence": "4.2.1 能进行光纤到户的一般故障处理"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "citation_mismatch",
+              "missing_context_support"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "b1f718ea027e47e5a004d25b8897cf0e",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/b1f718ea027e47e5a004d25b8897cf0e.request.json",
+          "request_sha256": "759b085d687443b9afc1cc49e099d2b1a0304a48360f3d7516943dfeb86c96fd",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/b1f718ea027e47e5a004d25b8897cf0e.response.json",
+          "response_exists": true,
+          "response_sha256": "6a53c22bd24ca44f72464dc3a238c11f06dca5ee5524835d6277f4ab2a09f3a3",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 285,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3597,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 3882
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未明确支持‘交互式网络电视’故障处理步骤\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实无对应引用，如[4]不存在\",\n    \"evidence\": \"2. 验证光猫及路由器连接状态，确认宽带网络正常。[4]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键排查步骤如信号源检测\",\n    \"evidence\": \"3. 使用光功率计检测入户光纤光功率是否达标。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[4]在上下文中不存在\",\n    \"evidence\": \"2. 验证光猫及路由器连接状态，确认宽带网络正常。[4]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"citation_error\",\n    \"unreferenced_fact\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "上下文未明确支持‘交互式网络电视’故障处理步骤",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实无对应引用，如[4]不存在",
+              "evidence": "2. 验证光猫及路由器连接状态，确认宽带网络正常。[4]"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏关键排查步骤如信号源检测",
+              "evidence": "3. 使用光功率计检测入户光纤光功率是否达标。[3]"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[4]在上下文中不存在",
+              "evidence": "2. 验证光猫及路由器连接状态，确认宽带网络正常。[4]"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "问题可回答，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "citation_error",
+              "unreferenced_fact"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "0a7c707c1d4043a889eac863a78cb1b6",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/0a7c707c1d4043a889eac863a78cb1b6.request.json",
+          "request_sha256": "50a4be820e13e24178bb14d3196b00b3d346c051e25b8d5c632c4ae0a3149371",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/0a7c707c1d4043a889eac863a78cb1b6.response.json",
+          "response_exists": true,
+          "response_sha256": "30ba3fe354ed4f7579b1651a3a689a8fb11717bd395c645caf1f550546152a49",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 269,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3597,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 3866
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0195无解析歧义，但实际答案未完全匹配参考\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误或无依据\",\n    \"evidence\": \"4.3.1 能熟练进行计算机操作\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键排查步骤如信号源检测\",\n    \"evidence\": \"4.2.1 能操作交互式网络电视业务的 APP\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[4]不存在于上下文\",\n    \"evidence\": \"4.3.1 能熟练进行计算机操作\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"citation_error\",\n    \"missing_evidence\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0195无解析歧义，但实际答案未完全匹配参考",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实引用错误或无依据",
+              "evidence": "4.3.1 能熟练进行计算机操作"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏关键排查步骤如信号源检测",
+              "evidence": "4.2.1 能操作交互式网络电视业务的 APP"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[4]不存在于上下文",
+              "evidence": "4.3.1 能熟练进行计算机操作"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "问题可回答，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "citation_error",
+              "missing_evidence"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0230",
+      "question": "在FTTH场景下，若用户端安装了无源光网络单元，其维护作业的综合单价应包含哪些费用？",
+      "question_type": "multi_condition",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0230",
+        "errors": [
+          "ValueError",
+          "ValueError",
+          "ValueError"
+        ],
+        "needs_human_review": true,
+        "question_type": "multi_condition",
+        "score_state": "failed"
+      },
+      "primary_attribution": "证据不足",
+      "attribution_note": "三次正确性null，理由均指上下文未定义或未提及综合单价构成；普通题null触发校验失败。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "e09e316399054d55922a69b7a6fb8d14",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/e09e316399054d55922a69b7a6fb8d14.request.json",
+          "request_sha256": "22a6e6d3ad22aa729540ac1ea0a876d5f90abc800da9e103fce6b2de36fe2c01",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/e09e316399054d55922a69b7a6fb8d14.response.json",
+          "response_exists": true,
+          "response_sha256": "6210cfa8aebc60f3c0a0b952e380c98ea9674850a3c0718e01641a2d99d546e6",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 319,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3602,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 3921
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未直接定义综合单价构成\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实有引用支持，但不完整\",\n    \"evidence\": \"7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏人工费等核心费用项\",\n    \"evidence\": \"3.58 综合单价 Composite Unit Price 完成一个规定计量单位的维护分项作业工作量清单项目所需的人工费、企业管理费和利润\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_support\",\n    \"missing_core_cost_components\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "上下文未直接定义综合单价构成",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实有引用支持，但不完整",
+              "evidence": "7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏人工费等核心费用项",
+              "evidence": "3.58 综合单价 Composite Unit Price 完成一个规定计量单位的维护分项作业工作量清单项目所需的人工费、企业管理费和利润"
+            },
+            "citation_correctness": {
+              "score": 1,
+              "reason": "引用编号与上下文匹配且支持内容",
+              "evidence": "7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "问题可回答，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": false,
+            "flags": [
+              "partial_support",
+              "missing_core_cost_components"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "c6e5cb21714041d9895d68c4466c4f52",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/c6e5cb21714041d9895d68c4466c4f52.request.json",
+          "request_sha256": "cc58d2571637fd3024aa70291a72496b6b8c87c227d0139b13fc798a8380b885",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/c6e5cb21714041d9895d68c4466c4f52.response.json",
+          "response_exists": true,
+          "response_sha256": "e619ad3c250c5c45648c9b81e3c6407247be103309a2cf28c07de1c174b448a3",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 315,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3602,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 3917
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"未提及综合单价构成\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实有上下文支持\",\n    \"evidence\": \"7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏核心费用项\",\n    \"evidence\": \"3.58 综合单价 Composite Unit Price 完成一个规定计量单位的维护分项作业工作量清单项目所需的人工费、企业管理费和利润，以及一定范围内的风险费用。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"[3] 7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"partial_factual_support\",\n    \"missing_core_definition\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "未提及综合单价构成",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实有上下文支持",
+              "evidence": "7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试"
+            },
+            "completeness": {
+              "score": 0,
+              "reason": "遗漏核心费用项",
+              "evidence": "3.58 综合单价 Composite Unit Price 完成一个规定计量单位的维护分项作业工作量清单项目所需的人工费、企业管理费和利润，以及一定范围内的风险费用。"
+            },
+            "citation_correctness": {
+              "score": 1,
+              "reason": "引用编号与来源匹配",
+              "evidence": "[3] 7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题无需拒答",
+              "evidence": ""
+            },
+            "confidence": "low",
+            "hallucination_suspected": true,
+            "flags": [
+              "partial_factual_support",
+              "missing_core_definition"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "40c3db2a5f2249a99e2bb16a5954b032",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/40c3db2a5f2249a99e2bb16a5954b032.request.json",
+          "request_sha256": "49c264f11c961807dbc8ee2c20dc559a2f3a349f97e9d5b428ae59d08dff9cbb",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/40c3db2a5f2249a99e2bb16a5954b032.response.json",
+          "response_exists": true,
+          "response_sha256": "cc9586b421938fbf2daa661b906f1d3b7c9ff2bae675e99df95992764ca100d6",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 327,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3602,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 3584
+            },
+            "total_tokens": 3929
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"未提及综合单价构成\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实有上下文支持，但不完整\",\n    \"evidence\": \"7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏核心费用项，如人工费等\",\n    \"evidence\": \"3.58 综合单价 Composite Unit Price 完成一个规定计量单位的维护分项作业工作量清单项目所需的人工费、企业管理费和利润，以及一定 范围内的风险费用。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_support\",\n    \"missing_core_elements\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "未提及综合单价构成",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实有上下文支持，但不完整",
+              "evidence": "7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试"
+            },
+            "completeness": {
+              "score": 0,
+              "reason": "遗漏核心费用项，如人工费等",
+              "evidence": "3.58 综合单价 Composite Unit Price 完成一个规定计量单位的维护分项作业工作量清单项目所需的人工费、企业管理费和利润，以及一定 范围内的风险费用。"
+            },
+            "citation_correctness": {
+              "score": 1,
+              "reason": "引用编号与上下文匹配且支持内容",
+              "evidence": "7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "问题可回答，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "high",
+            "hallucination_suspected": false,
+            "flags": [
+              "partial_support",
+              "missing_core_elements"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0389",
+      "question": "这根灯杆上的天线老是被树叶挡着，该咋办？",
+      "question_type": "colloquial",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0389",
+        "errors": [
+          "ValueError",
+          "ValueError",
+          "ValueError"
+        ],
+        "needs_human_review": true,
+        "question_type": "colloquial",
+        "score_state": "failed"
+      },
+      "primary_attribution": "证据不足",
+      "attribution_note": "三次正确性null，理由均指上下文未提树叶遮挡处理；普通题null触发校验失败。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "2dd94b0ef69b4de9b8eb6f4a1cda5b16",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/2dd94b0ef69b4de9b8eb6f4a1cda5b16.request.json",
+          "request_sha256": "37537d155616ee8f279cc3c36e3fbfc43aceaa9e7b598a5b79761b5eb604b165",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/2dd94b0ef69b4de9b8eb6f4a1cda5b16.response.json",
+          "response_exists": true,
+          "response_sha256": "7d6e94971f86bbd3cd7566992d47d9ede36d1bd5e8af897a638e6e8d1d474124",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 339,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4132,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4471
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未直接提及树叶遮挡处理\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分建议无上下文支持\",\n    \"evidence\": \"建议检查天线安装位置是否易受植被遮挡，必要时调整高度或角度。[无直接依据]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键处理步骤\",\n    \"evidence\": \"清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签，与设备连接情况等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用编号不匹配实际来源\",\n    \"evidence\": \"4. 请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0.5,\n    \"reason\": \"未明确拒答且提示补充信息\",\n    \"evidence\": \"> 注：检索内容未明确提及“树叶遮挡”的处理办法，以上建议基于规程中关于智慧灯杆安装与维护的通用原则推断，非直接引用。\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"partial_citation\",\n    \"inferred_recommendation\",\n    \"missing_direct_evidence\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "上下文未直接提及树叶遮挡处理",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分建议无上下文支持",
+              "evidence": "建议检查天线安装位置是否易受植被遮挡，必要时调整高度或角度。[无直接依据]"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏关键处理步骤",
+              "evidence": "清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签，与设备连接情况等。"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用编号不匹配实际来源",
+              "evidence": "4. 请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]"
+            },
+            "no_answer_behavior": {
+              "score": 0.5,
+              "reason": "未明确拒答且提示补充信息",
+              "evidence": "> 注：检索内容未明确提及“树叶遮挡”的处理办法，以上建议基于规程中关于智慧灯杆安装与维护的通用原则推断，非直接引用。"
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "partial_citation",
+              "inferred_recommendation",
+              "missing_direct_evidence"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "79df1dcb518545bb80a635f6ce9c84fc",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/79df1dcb518545bb80a635f6ce9c84fc.request.json",
+          "request_sha256": "815cf78d60125f9aaec4198e6d42524f94ee21b7d5732e4f50a9ba820ef3bce5",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/79df1dcb518545bb80a635f6ce9c84fc.response.json",
+          "response_exists": true,
+          "response_sha256": "899282698b8353592f862589fd9e4e89e25d60f5149944235a0cff0db5dc219e",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 297,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4132,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4429
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未提树叶遮挡处理\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分建议无依据，引用不匹配\",\n    \"evidence\": \"请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键处理步骤\",\n    \"evidence\": \"清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用编号与内容不匹配\",\n    \"evidence\": \"请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0.5,\n    \"reason\": \"未明确拒答且提示补充\",\n    \"evidence\": \"检索内容未明确提及“树叶遮挡”的处理办法\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"partial_citation\",\n    \"unverified_recommendation\",\n    \"missing_direct_evidence\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "上下文未提树叶遮挡处理",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分建议无依据，引用不匹配",
+              "evidence": "请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏关键处理步骤",
+              "evidence": "清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用编号与内容不匹配",
+              "evidence": "请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]"
+            },
+            "no_answer_behavior": {
+              "score": 0.5,
+              "reason": "未明确拒答且提示补充",
+              "evidence": "检索内容未明确提及“树叶遮挡”的处理办法"
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "partial_citation",
+              "unverified_recommendation",
+              "missing_direct_evidence"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "29e2ffe68d3d49ad937666ed4ac6f0b5",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/29e2ffe68d3d49ad937666ed4ac6f0b5.request.json",
+          "request_sha256": "d0331b153b6c2d5e8612386e19ea159a21ad6e0197b1bc81a18f37301429e4bf",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/29e2ffe68d3d49ad937666ed4ac6f0b5.response.json",
+          "response_exists": true,
+          "response_sha256": "6f14ade8bdd49c5e4071af8dcc494cc7f8c66dff747957de33991379da74253c",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 297,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4132,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 4429
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未直接提及树叶遮挡处理\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分建议无引用支持\",\n    \"evidence\": \"1. 天线被树叶遮挡属外部环境影响，需定期清理障碍物。[无直接依据]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏具体操作步骤\",\n    \"evidence\": \"清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签，与设备连接情况等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[2]不支持该句\",\n    \"evidence\": \"请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"部分事实无引用支持\",\n    \"引用错误\",\n    \"推断性建议未标注\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "上下文未直接提及树叶遮挡处理",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分建议无引用支持",
+              "evidence": "1. 天线被树叶遮挡属外部环境影响，需定期清理障碍物。[无直接依据]"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏具体操作步骤",
+              "evidence": "清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签，与设备连接情况等。"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[2]不支持该句",
+              "evidence": "请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "问题可回答，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "部分事实无引用支持",
+              "引用错误",
+              "推断性建议未标注"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0420",
+      "question": "直埋式延伸式安装与更换电杆地线的综合单价分别是多少？",
+      "question_type": "multi_condition",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0420",
+        "errors": [
+          "ValueError",
+          "ValueError",
+          "ValueError"
+        ],
+        "needs_human_review": true,
+        "question_type": "multi_condition",
+        "score_state": "failed"
+      },
+      "primary_attribution": "评分逻辑问题",
+      "attribution_note": "前两次将p6s-0473工日歧义用于本题且正确性null；第三次正确性有值但no_answer_behavior.reason空字符串，触发字段校验失败，兼有格式错误。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "d98413f4698d456fa15ee2e8948926ea",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/d98413f4698d456fa15ee2e8948926ea.request.json",
+          "request_sha256": "a66a7d36e577510dd49269aa620bcd408d7387f947dd6fc2508c50104ee99553",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/d98413f4698d456fa15ee2e8948926ea.response.json",
+          "response_exists": true,
+          "response_sha256": "db2e061a10582634f8b3e939bca0f403490f8b30d52ca7e6050f131f36eaa544",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 383,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3585,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 3968
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误，如安装单价\",\n    \"evidence\": \"WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏更换电杆地线直埋式单价\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[1]未覆盖所有结论\",\n    \"evidence\": \"WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_installation_cost\",\n    \"missing_replacement_cost\",\n    \"citation_mismatch\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0473工日歧义，无法判断",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实引用错误，如安装单价",
+              "evidence": "WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏更换电杆地线直埋式单价",
+              "evidence": "WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24"
+            },
+            "citation_correctness": {
+              "score": 0.5,
+              "reason": "引用[1]未覆盖所有结论",
+              "evidence": "WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "incorrect_installation_cost",
+              "missing_replacement_cost",
+              "citation_mismatch"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "5e989e6eca71494aa3e47397e20bb455",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/5e989e6eca71494aa3e47397e20bb455.request.json",
+          "request_sha256": "a7559b8b92953186910f061c39c449637a865345dddd803631985c5823e6be0f",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/5e989e6eca71494aa3e47397e20bb455.response.json",
+          "response_exists": true,
+          "response_sha256": "d815cab201d2039d92876fff95876b3e8ccc394e21099e0732a6a51ed6e8342e",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 376,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3585,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 3961
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误，单价不一致\",\n    \"evidence\": \"WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏更换电杆地线直埋式单价\",\n    \"evidence\": \"WH12006002 直埋式 76.00 51.56 14.13 10.31 0.29 0.29\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[1]未覆盖所有结论\",\n    \"evidence\": \"WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_unit\",\n    \"misattributed_value\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0473工日歧义，无法判断",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "部分事实引用错误，单价不一致",
+              "evidence": "WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏更换电杆地线直埋式单价",
+              "evidence": "WH12006002 直埋式 76.00 51.56 14.13 10.31 0.29 0.29"
+            },
+            "citation_correctness": {
+              "score": 0.5,
+              "reason": "引用[1]未覆盖所有结论",
+              "evidence": "WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "incorrect_unit",
+              "misattributed_value"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "cf4e5d34f3ca4cab87f357599b1dc897",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/cf4e5d34f3ca4cab87f357599b1dc897.request.json",
+          "request_sha256": "0ebe08d27236d8df4e53230e579729ab3af5d02c5a5a1bdc8190f3d3d6986e94",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/cf4e5d34f3ca4cab87f357599b1dc897.response.json",
+          "response_exists": true,
+          "response_sha256": "bb5b9b0fbd1ade5b7566d50808d4217c92c9a69cce27aea1b91a0ca63d792f9b",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 386,
+            "completion_tokens_details": null,
+            "prompt_tokens": 3585,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 3971
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"安装与更换单价混淆，错误匹配\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"将安装价误作更换价，事实不支持\",\n    \"evidence\": \"WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏更换电杆地线直埋式单价\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文一致且支持句意\",\n    \"evidence\": \"WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_mapping\",\n    \"misattribution\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": 0,
+              "reason": "安装与更换单价混淆，错误匹配",
+              "evidence": "WH12020002 直埋式 62.42 42.35 11.60 8.47"
+            },
+            "faithfulness": {
+              "score": 0,
+              "reason": "将安装价误作更换价，事实不支持",
+              "evidence": "WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51"
+            },
+            "completeness": {
+              "score": 0,
+              "reason": "遗漏更换电杆地线直埋式单价",
+              "evidence": "WH12020002 直埋式 62.42 42.35 11.60 8.47"
+            },
+            "citation_correctness": {
+              "score": 1,
+              "reason": "引用编号与上下文一致且支持句意",
+              "evidence": "WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "",
+              "evidence": ""
+            },
+            "confidence": "high",
+            "hallucination_suspected": true,
+            "flags": [
+              "incorrect_mapping",
+              "misattribution"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "no_answer_behavior",
+              "error": "judge field missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        }
+      ]
+    },
+    {
+      "case_id": "p6s-0454",
+      "question": "壁挂式数字配线架的安装人工费是多少，其消耗量是多少，是否包含线缆连接作业？",
+      "question_type": "multi_condition",
+      "execution_state": "success",
+      "score_state": "failed",
+      "original_failure_record_exact": {
+        "case_id": "p6s-0454",
+        "errors": [
+          "ValueError",
+          "ValueError",
+          "ValueError"
+        ],
+        "needs_human_review": true,
+        "question_type": "multi_condition",
+        "score_state": "failed"
+      },
+      "primary_attribution": "评分逻辑问题",
+      "attribution_note": "前两次将p6s-0473歧义用于本题；第三次说明本题数据一致但线缆连接判断错误却仍给正确性null。",
+      "attribution_status": "AI_PRELIMINARY_NOT_HUMAN_SIGNOFF",
+      "human_review_status": "HUMAN_REVIEW_PENDING",
+      "attempts": [
+        {
+          "attempt": "judge-1",
+          "api_call_id": "4f850ef3187b4d0bb1c66e5c5bc0d666",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/4f850ef3187b4d0bb1c66e5c5bc0d666.request.json",
+          "request_sha256": "aae9aaf799930f2e1fc0146e6b2b1e9bc2acfb52dd7d17cfdf49be7073b8588e",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/4f850ef3187b4d0bb1c66e5c5bc0d666.response.json",
+          "response_exists": true,
+          "response_sha256": "da99bd57deb5a33dbdfbe88e41f945ec56bab68ba66db311b711a0f8db4d6c8f",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 312,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4151,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 256
+            },
+            "total_tokens": 4463
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日存在解析歧义\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"线缆连接描述矛盾，部分支持\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏线缆连接作业明确说明\",\n    \"evidence\": \"1、安装电源分配架（柜）、箱：开箱检验、清洁搬运、安装固定、线缆连接、清理现场；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]未支持线缆连接不包含\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"contradictory_facts\",\n    \"misattribution\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0473工日存在解析歧义",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "线缆连接描述矛盾，部分支持",
+              "evidence": "工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏线缆连接作业明确说明",
+              "evidence": "1、安装电源分配架（柜）、箱：开箱检验、清洁搬运、安装固定、线缆连接、清理现场；"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[1]未支持线缆连接不包含",
+              "evidence": "工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "contradictory_facts",
+              "misattribution"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-2",
+          "api_call_id": "471d8c5fb078465f9b60dc3b63826b99",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/471d8c5fb078465f9b60dc3b63826b99.request.json",
+          "request_sha256": "fcc3ef95ca844985d1286a34b624eab1174ef2c7fd941f267975492e9d17ca91",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/471d8c5fb078465f9b60dc3b63826b99.response.json",
+          "response_exists": true,
+          "response_sha256": "7c8a6bde234c5f5af3aba79046a4ec7848f84191d57c54b9c36d1e09a1dcfec2",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 305,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4151,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4456
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"线缆连接描述矛盾，部分支持\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏线缆连接包含信息\",\n    \"evidence\": \"工作内容：1、安装电源分配架（柜）、箱：...线缆连接、清理现场；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]不支持线缆连接排除\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"citation_mismatch\",\n    \"contradictory_facts\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0473工日歧义，无法判断",
+              "evidence": ""
+            },
+            "faithfulness": {
+              "score": 0.5,
+              "reason": "线缆连接描述矛盾，部分支持",
+              "evidence": "工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏线缆连接包含信息",
+              "evidence": "工作内容：1、安装电源分配架（柜）、箱：...线缆连接、清理现场；"
+            },
+            "citation_correctness": {
+              "score": 0,
+              "reason": "引用[1]不支持线缆连接排除",
+              "evidence": "工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "medium",
+            "hallucination_suspected": true,
+            "flags": [
+              "citation_mismatch",
+              "contradictory_facts"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        },
+        {
+          "attempt": "judge-3",
+          "api_call_id": "bbb6f71cde0e491787b6209b3acc22b6",
+          "request_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/bbb6f71cde0e491787b6209b3acc22b6.request.json",
+          "request_sha256": "f58c0dfaefcd6a4e65d358c386f15779d2f306926df818e71b77912d93974b74",
+          "response_file": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/api_calls/bbb6f71cde0e491787b6209b3acc22b6.response.json",
+          "response_exists": true,
+          "response_sha256": "4e23313cabcaa0bcaaf4725e3b37772cf96232e57ad5bf065c4272cb2735deab",
+          "request_max_tokens": 1600,
+          "request_instruction_before_payload": "对以下RAG实际输出评分。每项给score(0/0.5/1，确实无法判断用null)、reason和原文evidence。\nanswer_correctness: 参考证据支持下是否正确回答；faithfulness: 每项事实是否由实际LLM上下文支持；\ncompleteness: 是否遗漏问题所需条件/步骤；citation_correctness: 回答中[n]是否对应实际上下文来源并支持该句；\nno_answer_behavior: 应拒答时是否拒答或限定说明，普通可回答题用null。\nunanswerable标签尚未人工确认，拒答评分仅暂定；若上下文能部分回答，明确指出，不能强行判拒答为正确。\np6s-0473的114工日存在解析歧义，不得因与此参考不一致而判错，其answer_correctness用null。\n不给未出现的引用补分；不给模型的常识补证据。输出还需confidence(high/medium/low)、hallucination_suspected(bool)、flags(array)。\nJSON的五个维度均为{score,reason,evidence}对象。\n格式限制：每项reason不超过40字；evidence仅摘一句且不超过80字，禁止复制大段上下文。\n不适用时写score:null、简短reason、evidence:\"\"；必须输出flags数组。整份JSON保持简短。",
+          "finish_reason": "stop",
+          "response_error": null,
+          "usage": {
+            "completion_tokens": 432,
+            "completion_tokens_details": null,
+            "prompt_tokens": 4151,
+            "prompt_tokens_details": {
+              "audio_tokens": null,
+              "cached_tokens": 0
+            },
+            "total_tokens": 4583
+          },
+          "raw_content_exact": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0454人工费与消耗量数据一致，但线缆连接判断错误\",\n    \"evidence\": \"WH23103001 安装配线架、箱 壁挂式数字配线架、箱 319.20 199.50 59.85 59.85 消耗量 1.75 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"线缆连接被错误描述为不包含\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏线缆连接包含在工作内容中\",\n    \"evidence\": \"工作内容：1、安装电源分配架（柜）、箱：开箱检验、清洁搬运、安装固定、线缆连接、清理现场；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[1]未支持线缆连接不包含\",\n    \"evidence\": \"WH23103001 安装配线架、箱 壁挂式数字配线架、箱 319.20 199.50 59.85 59.85 消耗量 1.75 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_citation\",\n    \"misleading_statement\",\n    \"partial_factual_error\"\n  ]\n}",
+          "parsed_json": {
+            "answer_correctness": {
+              "score": null,
+              "reason": "p6s-0454人工费与消耗量数据一致，但线缆连接判断错误",
+              "evidence": "WH23103001 安装配线架、箱 壁挂式数字配线架、箱 319.20 199.50 59.85 59.85 消耗量 1.75 —"
+            },
+            "faithfulness": {
+              "score": 0,
+              "reason": "线缆连接被错误描述为不包含",
+              "evidence": "工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。"
+            },
+            "completeness": {
+              "score": 0.5,
+              "reason": "遗漏线缆连接包含在工作内容中",
+              "evidence": "工作内容：1、安装电源分配架（柜）、箱：开箱检验、清洁搬运、安装固定、线缆连接、清理现场；"
+            },
+            "citation_correctness": {
+              "score": 0.5,
+              "reason": "引用[1]未支持线缆连接不包含",
+              "evidence": "WH23103001 安装配线架、箱 壁挂式数字配线架、箱 319.20 199.50 59.85 59.85 消耗量 1.75 —"
+            },
+            "no_answer_behavior": {
+              "score": null,
+              "reason": "可回答题，无需拒答",
+              "evidence": ""
+            },
+            "confidence": "high",
+            "hallucination_suspected": true,
+            "flags": [
+              "incorrect_citation",
+              "misleading_statement",
+              "partial_factual_error"
+            ]
+          },
+          "json_parse_error": null,
+          "independent_validation_errors": [
+            {
+              "field": "answer_correctness",
+              "error": "judge required score missing"
+            }
+          ],
+          "missing_response_interpretation": null
+        }
+      ]
+    }
+  ]
+}

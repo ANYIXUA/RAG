@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:01.202896+08:00",
+  "conservative_cost_yuan": 0.0007243499999999999,
+  "error": null,
+  "latency_ms": 1385.2467997930944,
+  "list_price_estimate_yuan": 0.0005653499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 返修板件需填写返修原因、故障诊断、故障时间等关键信息。[2]  \n2. 必须做好返修板件的登记与交接记录。[2]  \n3. 接收和回收备品备件需进行检验并办理相关手续。[1]  \n4. 信息应确保准确完整，便于后续追溯与管理。[3]  \n5. 需按规范建立台账，保证帐物相符。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881079,
+    "id": "chatcmpl-6a52e80c-e647-9c29-aac0-20b143a3f374",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2709,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2815
+    }
+  },
+  "usage_known": true
+}

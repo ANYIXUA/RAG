@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:40.634425+08:00",
+  "conservative_cost_yuan": 0.0007719,
+  "error": null,
+  "latency_ms": 1347.2668998874724,
+  "list_price_estimate_yuan": 0.0006039,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 架顶式机架安装综合单价为109.44元/架。[1]  \n2. 该价格包含开箱检验、搬运、定位、固定等工序。[1]  \n3. 计量单位为“架”，适用于架顶式安装场景。[1]  \n4. 人工费占比约62.5%（68.40元）。[1]  \n5. 项目编码为WH23102003。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880819,
+    "id": "chatcmpl-59695fc5-0db5-9e34-ab9b-5edb0ff0474b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2906,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3018
+    }
+  },
+  "usage_known": true
+}

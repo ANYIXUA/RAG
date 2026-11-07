@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:25.933767+08:00",
+  "conservative_cost_yuan": 0.0015107999999999999,
+  "error": null,
+  "latency_ms": 2564.3559000454843,
+  "list_price_estimate_yuan": 0.0010653,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未直接提及树叶遮挡处理\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分建议无引用支持\",\n    \"evidence\": \"1. 天线被树叶遮挡属外部环境影响，需定期清理障碍物。[无直接依据]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏具体操作步骤\",\n    \"evidence\": \"清理GPS天线遮挡物。检查同轴馈线外观、固定情况、接地和馈线标签，与设备连接情况等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[2]不支持该句\",\n    \"evidence\": \"请参照智慧灯杆维护标准，评估现场环境与设备布局。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"部分事实无引用支持\",\n    \"引用错误\",\n    \"推断性建议未标注\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882063,
+    "id": "chatcmpl-b2a82c15-40ac-9fbf-ad85-08576c5129ec",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 297,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4132,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4429
+    }
+  },
+  "usage_known": true
+}

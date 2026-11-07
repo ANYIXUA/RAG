@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:36.173645+08:00",
+  "conservative_cost_yuan": 0.0007550999999999999,
+  "error": null,
+  "latency_ms": 1287.6665000803769,
+  "list_price_estimate_yuan": 0.0005916,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 轴承润滑油的添加属于小型离网风力发电机组的专项检修内容。[1]  \n2. 具体工作包括停车检查、检修回转体及清洁添加润滑油。[2]  \n3. 该操作是维护规程中明确列出的标准化作业项。[3]  \n4. 属于发电设备专项检修中的关键润滑维护环节。[1]  \n5. 与发电机输电线插接头清洁更换同属一类维护项目。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880995,
+    "id": "chatcmpl-df8c9134-2aef-9070-9126-bb598e6cef54",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 109,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2854,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2963
+    }
+  },
+  "usage_known": true
+}

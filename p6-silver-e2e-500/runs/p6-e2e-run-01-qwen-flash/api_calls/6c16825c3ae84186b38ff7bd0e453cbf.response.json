@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:24.790070+08:00",
+  "conservative_cost_yuan": 0.001452,
+  "error": null,
+  "latency_ms": 2327.5867998600006,
+  "list_price_estimate_yuan": 0.0010245,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均与上下文一致\",\n    \"evidence\": \"四角塔垂直度测量 铁塔中心整体垂直偏差≤1/1500 半年\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"塔身每段上下层平面中心线偏差≤层间高/1500\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖周期与各塔型要求\",\n    \"evidence\": \"单管塔/景观塔中心整体垂直偏差应≤全塔高度的1/750\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"三管塔节段垂直度偏差≤节高的1/1000。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881942,
+    "id": "chatcmpl-cdae0aaa-eb30-9ea1-86d5-f58e49183ba2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 285,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3980,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4265
+    }
+  },
+  "usage_known": true
+}

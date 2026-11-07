@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:10.839252+08:00",
+  "conservative_cost_yuan": 0.00171825,
+  "error": null,
+  "latency_ms": 3008.6497999727726,
+  "list_price_estimate_yuan": 0.00115275,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]明确给出山区人工费27.36元\",\n    \"evidence\": \"WH21103003 山区 43.78 27.36 8.21 4.10 0.24 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均在[1]中可验证\",\n    \"evidence\": \"WH21103003 山区 43.78 27.36 8.21 4.10 0.24 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖费用、编码、单位、内容、来源\",\n    \"evidence\": \"WH21103003 山区 43.78 27.36 8.21 4.10 0.24 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用对应实际上下文片段\",\n    \"evidence\": \"WH21103003 山区 43.78 27.36 8.21 4.10 0.24 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881807,
+    "id": "chatcmpl-fbb45fea-fb63-9a20-a629-beedad4d7c36",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 377,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3915,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4292
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:14.369186+08:00",
+  "conservative_cost_yuan": 0.00081825,
+  "error": null,
+  "latency_ms": 1674.7532000299543,
+  "list_price_estimate_yuan": 0.00063525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 带电更换熔断器/空开的消耗量为0.96只。[1]  \n2. 该数据来源于《电信基础设施维护规程》第306页表10.4.3.5。[1]  \n3. 同一规程第278页也确认该消耗量为0.96只。[2]  \n4. 消耗量单位为“只”，适用于带电更换作业。[1]  \n5. 该数值为综合单价对应的材料消耗标准。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880972,
+    "id": "chatcmpl-f548d4fb-f1ed-9374-ad81-9fdb68fa847f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 122,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3015,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3137
+    }
+  },
+  "usage_known": true
+}

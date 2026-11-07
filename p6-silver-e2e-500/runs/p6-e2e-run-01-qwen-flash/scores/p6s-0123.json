@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "销项税额=（维护分项作业费+材料及备品备件购置费（不含甲供部分）+机械仪表使用费（不含甲供部分）+措施项目+规费+安全生产费+其他项目费）× 6%",
+    "reason": "上下文明确列出计算基础",
+    "score": 1
+  },
+  "case_id": "p6s-0123",
+  "citation_correctness": {
+    "evidence": "销项税额=（维护分项作业费+材料及备品备件购置费（不含甲供部分）+机械仪表使用费（不含甲供部分）+措施项目+规费+安全生产费+其他项目费）× 6%",
+    "reason": "引用编号与来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "销项税额=（维护分项作业费+材料及备品备件购置费（不含甲供部分）+机械仪表使用费（不含甲供部分）+措施项目+规费+安全生产费+其他项目费）× 6%",
+    "reason": "涵盖所有必要费用项",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "销项税额=（维护分项作业费+材料及备品备件购置费（不含甲供部分）+机械仪表使用费（不含甲供部分）+措施项目+规费+安全生产费+其他项目费）× 6%",
+    "reason": "每项事实均有对应原文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e910c53d6eca49cb86f02388328a04b8",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

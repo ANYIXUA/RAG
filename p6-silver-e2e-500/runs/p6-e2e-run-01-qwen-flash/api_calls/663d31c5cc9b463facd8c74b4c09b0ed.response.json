@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:23.510778+08:00",
+  "conservative_cost_yuan": 0.0007614,
+  "error": null,
+  "latency_ms": 1384.7004000563174,
+  "list_price_estimate_yuan": 0.0005993999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH33119001空调检修的综合单价为54.53元。[1]  \n2. 该单价对应计量单位为台·次。[1]  \n3. 工作内容包括清洁室内外机及检修排水等。[1]  \n4. 综合单价中人工费为34.08元。[1]  \n5. 项目编码WH33119001属于空调检修类别。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881162,
+    "id": "chatcmpl-28ae400f-adc5-9c05-a19c-c2f470dc67a2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 108,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2916,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3024
+    }
+  },
+  "usage_known": true
+}

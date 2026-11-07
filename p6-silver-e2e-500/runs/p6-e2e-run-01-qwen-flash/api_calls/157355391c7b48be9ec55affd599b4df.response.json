@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:06.880735+08:00",
+  "conservative_cost_yuan": 0.0013576500000000002,
+  "error": null,
+  "latency_ms": 2942.373799858615,
+  "list_price_estimate_yuan": 0.00093015,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确拒答且理由充分。\",\n    \"evidence\": \"未提供不同品牌智能设备的价格信息。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持。\",\n    \"evidence\": \"所有文档聚焦于技术规范与组网要求，无价格数据。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需条件。\",\n    \"evidence\": \"无法基于现有内容进行品牌设备价格对比。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持语句。\",\n    \"evidence\": \"建议补充具体设备型号或价格来源信息。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"应拒答时明确拒答并提示。\",\n    \"evidence\": \"建议补充具体设备型号或价格来源信息。[1]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"correct_rejection\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882164,
+    "id": "chatcmpl-56c193b7-ac0c-9741-aae8-7784471fcbb5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 285,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3351,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3636
+    }
+  },
+  "usage_known": true
+}

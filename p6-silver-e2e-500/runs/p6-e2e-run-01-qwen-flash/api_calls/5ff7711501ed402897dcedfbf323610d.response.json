@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:15.887416+08:00",
+  "conservative_cost_yuan": 0.00077145,
+  "error": null,
+  "latency_ms": 1601.1570000555366,
+  "list_price_estimate_yuan": 0.0006034500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 计日工表中‘综合单价（元）’的单位是“元”。[2]  \n2. 该字段对应的是除税价，单位为人民币元。[2]  \n3. 表格中“综合单价（元）”用于计算合价，单位明确为元。[2]  \n4. 单价由投标人自主报价，单位为元。[2]  \n5. 所有计日工费用均以“元”为单位进行结算。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881094,
+    "id": "chatcmpl-3c185498-53fb-9e60-b9b8-493cc8789264",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2903,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3015
+    }
+  },
+  "usage_known": true
+}

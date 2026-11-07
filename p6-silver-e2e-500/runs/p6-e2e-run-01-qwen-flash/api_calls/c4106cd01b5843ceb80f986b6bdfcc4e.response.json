@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:11.551834+08:00",
+  "conservative_cost_yuan": 0.0013591500000000002,
+  "error": null,
+  "latency_ms": 2960.412099957466,
+  "list_price_estimate_yuan": 0.00093615,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确提及用户满意度评估方式\",\n    \"evidence\": \"要对施工的经济性、安全性以及将来维护的便捷性和用户满意度进行综合判断。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"用户签署完工确认单，并在确认单上记录入户光缆段的光衰减测定值\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题所需关键点\",\n    \"evidence\": \"服务过程中需向用户明确设备使用、故障申告等流程。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"用户签署完工确认单，并在确认单上记录入户光缆段的光衰减测定值\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882048,
+    "id": "chatcmpl-5cf39e8e-b8db-9851-b868-683727e3d3d0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 282,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3421,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3703
+    }
+  },
+  "usage_known": true
+}

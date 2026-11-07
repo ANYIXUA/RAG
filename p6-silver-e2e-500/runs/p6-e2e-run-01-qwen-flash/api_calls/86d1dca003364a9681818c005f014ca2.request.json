@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:12.357489+08:00",
+  "input_token_upper_bound": 1186,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0412"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "基站那边突然信号断了，得赶紧派人去现场看看，怎么处理流程？ 故障原因 排查步骤 处理步骤 解决办法 现场处理建议"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "86d1dca003364a9681818c005f014ca2",
+  "reserved_yuan": 0.000593
+}

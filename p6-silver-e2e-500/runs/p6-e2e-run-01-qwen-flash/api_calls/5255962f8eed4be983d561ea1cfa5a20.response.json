@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:33.679459+08:00",
+  "conservative_cost_yuan": 0.0007550999999999999,
+  "error": null,
+  "latency_ms": 1368.3664998970926,
+  "list_price_estimate_yuan": 0.0005736,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 跨品牌协同需通过《Multi-AP_Specification》规范实现EasyMeshTM功能。[1]  \n2. 光网关作为Controller，光路由作为Agent，实现统一控制与状态反馈。[3]  \n3. 支持WPS或DPP方式完成设备快速入网与绑定。[1]  \n4. 多终端组网时优先使用光纤回传链路，避免环路。[3]  \n5. 通过和家亲APP统一管理全光组网终端及网络状态。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881112,
+    "id": "chatcmpl-b008ce6f-c567-93e7-83e3-d0466d5077da",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2614,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2735
+    }
+  },
+  "usage_known": true
+}

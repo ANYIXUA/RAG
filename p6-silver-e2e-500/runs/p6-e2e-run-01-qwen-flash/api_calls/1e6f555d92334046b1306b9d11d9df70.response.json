@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:03.994000+08:00",
+  "conservative_cost_yuan": 0.0007535999999999999,
+  "error": null,
+  "latency_ms": 1504.4609000906348,
+  "list_price_estimate_yuan": 0.0005990999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 壁挂式交流配电箱的消耗量为1.42台/个。[1]  \n2. 该数据来源于安装配电换流设备作业项。[1]  \n3. 消耗量单位为“台”或“个”，按实际维护数量计算。[3]  \n4. 多份规程中均一致记录此数值。[2]  \n5. 适用于壁挂式交流配电箱安装场景。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880842,
+    "id": "chatcmpl-b6ab7c3d-fed6-966e-b2c1-eb663dc8a191",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 103,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2964,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3067
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:48.835802+08:00",
+  "conservative_cost_yuan": 0.0007968,
+  "error": null,
+  "latency_ms": 1494.1665998194367,
+  "list_price_estimate_yuan": 0.0006018,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 发包人提供材料与机械仪表的计价均采用综合单价计价方式。[2]  \n2. 两者均需在《计价表》中列明编号、名称、规格、单位、数量及单价。[2]  \n3. 材料和机械仪表的计价均纳入安全生产费计算基础。[2]  \n4. 计价依据统一遵循《电信基础设施维护费用编制办法》相关规定。[1]  \n5. 两类清单均按“发包人提供”和“承包人代购/自备”分项编制。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881007,
+    "id": "chatcmpl-55a7f3be-00f4-914e-800b-6937796f2ea7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 130,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2712,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2842
+    }
+  },
+  "usage_known": true
+}

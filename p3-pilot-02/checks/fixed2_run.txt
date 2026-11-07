@@ -1,0 +1,147 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]
+Loading weights:  26%|������       | 53/201 [00:00<00:00, 526.84it/s]
+Loading weights: 100%|��������������������| 201/201 [00:00<00:00, 1246.21it/s]
+Reranked 20 candidates: 65a56fcff7b2
+Reranked 20 candidates: cb199fb05d22
+Reranked 20 candidates: ff712f1bb98e
+Reranked 20 candidates: 1a024760adb2
+Reranked 20 candidates: 8d7b6608140e
+Reranked 20 candidates: 318d9f817b33
+Reranked 20 candidates: 424691b6c017
+Reranked 20 candidates: c059317b4f2e
+Reranked 20 candidates: 6042e6bfbaa2
+Reranked 20 candidates: 8b8f4fb4a454
+Reranked 20 candidates: d78e3ae0f517
+Reranked 20 candidates: 7440b9d11148
+Reranked 20 candidates: 1cb5b16180e1
+Reranked 20 candidates: b0b4e5b756b5
+Reranked 20 candidates: 5624e43ece75
+Reranked 20 candidates: 60fc9025e372
+Reranked 20 candidates: 82c953007d28
+Reranked 20 candidates: 16495580589d
+Reranked 20 candidates: c4d5385942ee
+Reranked 20 candidates: 10e40ec176d2
+Reranked 20 candidates: 416ede422345
+Reranked 20 candidates: 0eca0d157fdc
+Reranked 20 candidates: e21ed136e026
+{
+  "out_dir": "D:\\AgentAIProgect\\RAG\\p3-pilot-02\\runs\\fixed2",
+  "cases": 22,
+  "active_methods": [
+    "bm25_only",
+    "vector_only",
+    "hybrid",
+    "hybrid_rerank",
+    "bm25_full_corpus"
+  ],
+  "rerank": {
+    "requested": true,
+    "available": true,
+    "reason": null,
+    "model_name": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "resolved_model_name_or_path": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "hf_snapshot_revisions": [
+      "1427fd652930e4ba29e8149678df786c240d8825"
+    ]
+  },
+  "metrics": {
+    "bm25_only": {
+      "method_key": "A",
+      "description": "BM25 �ؼ��ʼ�����������ѡ�أ�",
+      "mode": "bm25",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.681818,
+      "hit@3": 0.818182,
+      "hit@5": 0.954545,
+      "hit@10": 0.954545,
+      "mrr@10": 0.77197,
+      "ndcg@10": 0.818637,
+      "recall@10": 0.954545,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 11.091,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 494.155,
+      "latency_p95_ms": 841.619,
+      "latency_mean_ms": 569.493,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    },
+    "vector_only": {
+      "method_key": "B",
+      "description": "���������ң�����",
+      "mode": "semantic",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.863636,
+      "hit@5": 0.909091,
+      "hit@10": 0.954545,
+      "mrr@10": 0.80202,
+      "ndcg@10": 0.834976,
+      "recall@10": 0.954545,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 74.308,
+      "latency_p95_ms": 194.043,
+      "latency_mean_ms": 96.316,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    },
+    "hybrid": {
+      "method_key": "C",
+      "description": "BM25 + ������Ȩ�ں�",
+      "mode": "hybrid",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.818182,
+      "hit@3": 0.863636,
+      "hit@5": 0.909091,
+      "hit@10": 1.0,
+      "mrr@10": 0.864448,
+      "ndcg@10": 0.894761,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 437.39,
+      "latency_p95_ms": 675.652,
+      "latency_mean_ms": 498.917,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 1.0
+    },
+    "hybrid_rerank": {
+      "method_key": "D",
+      "description": "��ϼ��� + Cross-Encoder ����",
+      "mode": "hybrid",
+      "rerank_applied": true,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.818182,
+      "hit@5": 0.863636,
+      "hit@10": 1.0,
+      "mrr@10": 0.799044,
+      "ndcg@10": 0.83809,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 4382.754,
+      "latency_p95_ms": 7760.894,
+      "latency_mean_ms": 4743.212,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 1.0
+    }
+  },
+  "fingerprints": {
+    "rankings_sha256": "1ae263d5baf129f34db5aa3ddb7b62909a2717cc5c7d6cee32176446f75cbce1",
+    "metrics_sha256": "3928abaecd82a56a2d0e08dfbb407e991ae3762dd46be3aec75d724570e550e5"
+  }
+}

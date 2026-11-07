@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "2.4.3 有线系统和无线系统拓展应用",
+    "reason": "上下文明确支持协同控制设计规范",
+    "score": 1
+  },
+  "case_id": "p6s-0196",
+  "citation_correctness": {
+    "evidence": "[2] 能进行有线系统和无线系统拓展应用",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "2.4.3 有线系统和无线系统拓展应用",
+    "reason": "涵盖所有必要技术规范点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "2.4.2 能进行有线系统和无线系统拓展应用",
+    "reason": "每项事实均有对应原文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "fe3a4f2044d24bd4a14fd861ea832878",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

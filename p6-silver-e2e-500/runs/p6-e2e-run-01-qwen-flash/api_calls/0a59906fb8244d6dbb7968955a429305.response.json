@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:17.440834+08:00",
+  "conservative_cost_yuan": 0.0016091999999999999,
+  "error": null,
+  "latency_ms": 3448.97949998267,
+  "list_price_estimate_yuan": 0.0010737,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确匹配上下文填写要求\",\n    \"evidence\": \"本表一式三份，由承包人在收到发包人（监理人）的口头或书面通知后填写，发包人、咨询人、承包人各存一份。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"本表一式三份，由承包人在收到发包人（监理人）的口头或书面通知后填写，发包人、咨询人、承包人各存一份。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有关键填写步骤\",\n    \"evidence\": \"本表一式三份，由承包人在收到发包人（监理人）的口头或书面通知后填写，发包人、咨询人、承包人各存一份。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文一致且支持内容\",\n    \"evidence\": \"本表一式三份，由承包人在收到发包人（监理人）的口头或书面通知后填写，发包人、咨询人、承包人各存一份。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881754,
+    "id": "chatcmpl-e8912424-25a9-9e08-abf6-88b66c285e28",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 357,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3588,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3945
+    }
+  },
+  "usage_known": true
+}

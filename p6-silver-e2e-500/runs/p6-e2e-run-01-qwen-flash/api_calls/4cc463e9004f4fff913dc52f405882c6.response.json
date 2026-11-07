@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:30.477137+08:00",
+  "conservative_cost_yuan": 0.0013875,
+  "error": null,
+  "latency_ms": 2868.469800101593,
+  "list_price_estimate_yuan": 0.000978,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持山区测试执行方式\",\n    \"evidence\": \"山区天线发射功率测试应按规程执行，工作量为0.15工日/扇区。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"测试内容包括发射功率测量，结果应不低于设备规定值。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖测试流程与周期等关键点\",\n    \"evidence\": \"测试周期为季度，需定期开展。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"作业类型属“天线信号测试”，适用于山区地貌。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881827,
+    "id": "chatcmpl-6426f2f0-044e-9088-9567-3cabd7a2de28",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 273,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3790,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4063
+    }
+  },
+  "usage_known": true
+}

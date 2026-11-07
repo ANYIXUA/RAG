@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:17.213007+08:00",
+  "conservative_cost_yuan": 0.00153225,
+  "error": null,
+  "latency_ms": 3304.92000002414,
+  "list_price_estimate_yuan": 0.00105825,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文一致，覆盖全部关键操作。\",\n    \"evidence\": \"工作内容：检查清洁开关电源设备外观；检查调整设备运行参数，检查紧固电源线连接；检查防雷保护设备运行情况；清洁整流模块等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"检查调整设备运行参数，检查紧固电源线连接。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要巡检操作。\",\n    \"evidence\": \"检查清洁开关电源设备外观；检查调整设备运行参数，检查紧固电源线连接；检查防雷保护设备运行情况；清洁整流模块等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"第5点引用[2]但内容不匹配。\",\n    \"evidence\": \"检查电源线接头的防腐处理；检查标签标识等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_mismatch\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882053,
+    "id": "chatcmpl-3c2f15a0-5d54-9fbc-a2b2-ef252d531cf6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 316,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3895,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4211
+    }
+  },
+  "usage_known": true
+}

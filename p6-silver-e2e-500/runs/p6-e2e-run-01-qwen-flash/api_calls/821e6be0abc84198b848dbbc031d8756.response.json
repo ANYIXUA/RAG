@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:21.209482+08:00",
+  "conservative_cost_yuan": 0.0006379500000000001,
+  "error": null,
+  "latency_ms": 1137.5477998517454,
+  "list_price_estimate_yuan": 0.00051345,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护人员应在第一时间内通知运营企业。[1]  \n2. 重大突发事件需立即通报，确保及时响应。[1]  \n3. 通知应在事件发生后第一时间完成。[1]  \n4. 现场处理同时须迅速上报运营企业。[1]  \n5. “第一时间内”即为最快速度通报。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880860,
+    "id": "chatcmpl-0b1e3bb0-44b6-9761-86de-23f6fe63b3d6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 83,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2593,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2676
+    }
+  },
+  "usage_known": true
+}

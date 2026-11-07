@@ -1,0 +1,420 @@
+{
+ "B28": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [
+   "611a9eb6554a2b482561c775"
+  ],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.3404,
+    "gold_group": "B13-B27",
+    "gold_query": "铁塔专项维修的工作内容包括哪些？"
+   },
+   {
+    "ratio": 0.2529,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.5 中，室外塔上防雷箱（WH23105003）的综合单价列标了多少元？"
+   },
+   {
+    "ratio": 0.25,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.4 中，测试波分复用器 1:6 以下（WH23104004）的综合单价是多少（元/个）？"
+   }
+  ],
+  "shared_chunks_in_batch": {}
+ },
+ "B29": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [
+   {
+    "chunk_id": "a264a91966d85e2ec3b52e02",
+    "value": "18.24",
+    "occurrences": 2
+   }
+  ],
+  "shared_chunks_with_gold": [
+   "a264a91966d85e2ec3b52e02"
+  ],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.2895,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？"
+   },
+   {
+    "ratio": 0.2564,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.5 中，室内防雷箱（WH23105001）的综合单价列标了多少元？"
+   },
+   {
+    "ratio": 0.25,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.5 中，室外塔上防雷箱（WH23105003）的综合单价列标了多少元？"
+   }
+  ],
+  "shared_chunks_in_batch": {}
+ },
+ "B30": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.2174,
+    "gold_group": "B13-B27",
+    "gold_query": "铁塔专项维修的工作内容包括哪些？"
+   },
+   {
+    "ratio": 0.1702,
+    "gold_group": "B13-B27",
+    "gold_query": "安装防雷接地装置的工作内容有哪些？"
+   },
+   {
+    "ratio": 0.1687,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.5 中，编码 WH23105001 对应的防雷箱子项名称是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {}
+ },
+ "B31": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.2778,
+    "gold_group": "B01-B12",
+    "gold_query": "智慧家庭全光组网产品技术规范的版本是什么？"
+   },
+   {
+    "ratio": 0.25,
+    "gold_group": "B13-B27",
+    "gold_query": "WH23131004项目对应的防水处理范围是什么？"
+   },
+   {
+    "ratio": 0.2373,
+    "gold_group": "B01-B12",
+    "gold_query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {}
+ },
+ "B32": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.1791,
+    "gold_group": "B01-B12",
+    "gold_query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？"
+   },
+   {
+    "ratio": 0.1515,
+    "gold_group": "B13-B27",
+    "gold_query": "《智慧家庭装维工程与管理职业技能等级标准》第 5.7 节规定，安全作业知识包括哪五项？"
+   },
+   {
+    "ratio": 0.1455,
+    "gold_group": "B01-B12",
+    "gold_query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "5766d05fd8a6f73a1ef60b57": [
+    "B33"
+   ]
+  }
+ },
+ "B33": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.2029,
+    "gold_group": "B13-B27",
+    "gold_query": "《智慧家庭装维工程与管理职业技能等级标准》第 5.7 节规定，安全作业知识包括哪五项？"
+   },
+   {
+    "ratio": 0.1947,
+    "gold_group": "B01-B12",
+    "gold_query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？"
+   },
+   {
+    "ratio": 0.1714,
+    "gold_group": "B01-B12",
+    "gold_query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "5766d05fd8a6f73a1ef60b57": [
+    "B32"
+   ]
+  }
+ },
+ "B34": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [
+   {
+    "chunk_id": "d8dfa78cb9362f0d69cd659c",
+    "value": "3.0",
+    "occurrences": 3
+   }
+  ],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.2745,
+    "gold_group": "B01-B12",
+    "gold_query": "非高速公路场景下，管道线路的人（手）孔检修周期是多久？"
+   },
+   {
+    "ratio": 0.1818,
+    "gold_group": "B01-B12",
+    "gold_query": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？"
+   },
+   {
+    "ratio": 0.15,
+    "gold_group": "B13-B27",
+    "gold_query": "铁塔专项维修的工作内容包括哪些？"
+   }
+  ],
+  "shared_chunks_in_batch": {}
+ },
+ "B35": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.2353,
+    "gold_group": "B13-B27",
+    "gold_query": "铁塔专项维修的工作内容包括哪些？"
+   },
+   {
+    "ratio": 0.1967,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.4 中，安装波分复用器这一子项包含哪些工作？"
+   },
+   {
+    "ratio": 0.1714,
+    "gold_group": "B13-B27",
+    "gold_query": "安装防雷接地装置的工作内容有哪些？"
+   }
+  ],
+  "shared_chunks_in_batch": {}
+ },
+ "B36": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [
+   {
+    "chunk_id": "02c18b66c8c7d17fa1fb910e",
+    "value": "35",
+    "occurrences": 2
+   }
+  ],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.617,
+    "gold_group": "B01-B12",
+    "gold_query": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？"
+   },
+   {
+    "ratio": 0.4554,
+    "gold_group": "B13-B27",
+    "gold_query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，高级人员在“物联网接入业务运维”项下对网关组网方法的要求是什么？"
+   },
+   {
+    "ratio": 0.4235,
+    "gold_group": "B01-B12",
+    "gold_query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "02c18b66c8c7d17fa1fb910e": [
+    "B37"
+   ]
+  }
+ },
+ "B37": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [
+   {
+    "chunk_id": "02c18b66c8c7d17fa1fb910e",
+    "value": "25",
+    "occurrences": 4
+   }
+  ],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.25,
+    "gold_group": "B01-B12",
+    "gold_query": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？"
+   },
+   {
+    "ratio": 0.1975,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.5 中，室内防雷箱（WH23105001）的综合单价列标了多少元？"
+   },
+   {
+    "ratio": 0.1957,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.4 中，测试波分复用器 1:6 以下（WH23104004）的综合单价是多少（元/个）？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "02c18b66c8c7d17fa1fb910e": [
+    "B36"
+   ]
+  }
+ },
+ "B38": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.3529,
+    "gold_group": "B13-B27",
+    "gold_query": "安装防雷接地装置的工作内容有哪些？"
+   },
+   {
+    "ratio": 0.28,
+    "gold_group": "B13-B27",
+    "gold_query": "铁塔专项维修的工作内容包括哪些？"
+   },
+   {
+    "ratio": 0.2558,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "4a65d0d3ead0bc841b1b28f8": [
+    "B41"
+   ],
+   "647c44016cd2e8fabe51f5de": [
+    "B39",
+    "B40"
+   ]
+  }
+ },
+ "B39": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.2963,
+    "gold_group": "B13-B27",
+    "gold_query": "铁塔专项维修的工作内容包括哪些？"
+   },
+   {
+    "ratio": 0.2909,
+    "gold_group": "B13-B27",
+    "gold_query": "安装防雷接地装置的工作内容有哪些？"
+   },
+   {
+    "ratio": 0.2667,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "647c44016cd2e8fabe51f5de": [
+    "B38",
+    "B40"
+   ],
+   "d2df450647a1e967aa910201": [
+    "B42"
+   ]
+  }
+ },
+ "B40": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.4681,
+    "gold_group": "B13-B27",
+    "gold_query": "铁塔专项维修的工作内容包括哪些？"
+   },
+   {
+    "ratio": 0.4167,
+    "gold_group": "B13-B27",
+    "gold_query": "安装防雷接地装置的工作内容有哪些？"
+   },
+   {
+    "ratio": 0.2892,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "647c44016cd2e8fabe51f5de": [
+    "B38",
+    "B39"
+   ]
+  }
+ },
+ "B41": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.4314,
+    "gold_group": "B13-B27",
+    "gold_query": "WH23131004项目对应的防水处理范围是什么？"
+   },
+   {
+    "ratio": 0.3721,
+    "gold_group": "B13-B27",
+    "gold_query": "安装防雷接地装置的工作内容有哪些？"
+   },
+   {
+    "ratio": 0.359,
+    "gold_group": "B13-B27",
+    "gold_query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "4a65d0d3ead0bc841b1b28f8": [
+    "B38"
+   ]
+  }
+ },
+ "B42": {
+  "answer_in_any_supporting_chunk": true,
+  "answer_value_repeated_in_evidence_chunk": [],
+  "shared_chunks_with_gold": [],
+  "gold_similarity_top3": [
+   {
+    "ratio": 0.619,
+    "gold_group": "B13-B27",
+    "gold_query": "铁塔专项维修的工作内容包括哪些？"
+   },
+   {
+    "ratio": 0.3721,
+    "gold_group": "B13-B27",
+    "gold_query": "安装防雷接地装置的工作内容有哪些？"
+   },
+   {
+    "ratio": 0.3137,
+    "gold_group": "B13-B27",
+    "gold_query": "WH23131004项目对应的防水处理范围是什么？"
+   }
+  ],
+  "shared_chunks_in_batch": {
+   "d2df450647a1e967aa910201": [
+    "B39"
+   ]
+  }
+ }
+}

@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "维护分项作业工作量清单费用由维护分项作业费、材料费等构成。[3]",
+    "reason": "部分正确但未明确费用构成项",
+    "score": 0.5
+  },
+  "case_id": "p6s-0222",
+  "citation_correctness": {
+    "evidence": "8.4.1.1 采用工作量清单计价，电信基础设施维护费由维护分项作业费、材料及备品备件购置费、机械仪表使用费、措施费、规费、利润、安全生产费、其他项目费和销项税额构成。",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "维护分项作业工作量清单费用由维护分项作业费、材料费等构成。[3]",
+    "reason": "遗漏关键费用项如规费、销项税额",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "采用工作量清单计价，电信基础设施维护费由维护分项作业费、材料及备品备件购置费、机械仪表使用费、措施费、规费、利润、安全生产费、其他项目费和销项税额构成。",
+    "reason": "每项事实均来自上下文",
+    "score": 1
+  },
+  "flags": [
+    "partial_completeness",
+    "incomplete_cost_breakdown"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "dafe96bc6f694178a7adcee9d3ae8bfb",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

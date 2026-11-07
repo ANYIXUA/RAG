@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:12:19.187923+08:00",
+  "input_token_upper_bound": 1106,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0237"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "装维服务中如何评估员工绩效？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "c756680210fa4054aaad6873fbf0cf89",
+  "reserved_yuan": 0.000553
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容应列示在“维护分项作业清单综合单价分析表”中。[1]",
+    "reason": "准确列示工作内容位置及要求",
+    "score": 1
+  },
+  "case_id": "p6s-0452",
+  "citation_correctness": {
+    "evidence": "未填写视为费用已包含在其他单价中。[3]",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "编制时应依据总说明中的维护工作内容填写。[3]",
+    "reason": "涵盖列示方式与填写要求",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "表格中“工作内容”为必填项，需明确描述具体作业内容。[1]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "7a2abf5e7e2841a08e6d90dfd7283ca2",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

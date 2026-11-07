@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:57.525514+08:00",
+  "conservative_cost_yuan": 0.0008055,
+  "error": null,
+  "latency_ms": 1436.3285000436008,
+  "list_price_estimate_yuan": 0.0006405,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH21116009山区单管塔巡检综合单价为93.02元。[1]  \n2. 该单价适用于单管塔在山区的巡检工作。[1]  \n3. 计量单位为“座·次”。[1]  \n4. 项目编码WH21116009对应山区单管塔巡检。[1]  \n5. 综合单价包含人工、管理费及利润。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881016,
+    "id": "chatcmpl-3b7b0bfb-6fe1-9018-80cb-8da42d6a8a93",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3170,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3280
+    }
+  },
+  "usage_known": true
+}

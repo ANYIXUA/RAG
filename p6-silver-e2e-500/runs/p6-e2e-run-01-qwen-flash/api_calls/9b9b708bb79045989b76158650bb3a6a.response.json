@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:12:02.000742+08:00",
+  "conservative_cost_yuan": 0.0007059,
+  "error": null,
+  "latency_ms": 1433.8509000372142,
+  "list_price_estimate_yuan": 0.0005334,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 计日工表中，综合单价（元）对应的列名为“综合单价（元）（除税价）”。[1]  \n2. 该列位于“实际数量”之后、“合价”之前。[1]  \n3. 表格中“综合单价（元）”为计价核心字段之一。[1]  \n4. 此列由招标人或投标人根据计价规定填写。[1]  \n5. 对应表格编号为表—09—4。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880720,
+    "id": "chatcmpl-ba2a95ed-bffd-94a0-a9df-df63584ec5d8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 115,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2406,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2521
+    }
+  },
+  "usage_known": true
+}

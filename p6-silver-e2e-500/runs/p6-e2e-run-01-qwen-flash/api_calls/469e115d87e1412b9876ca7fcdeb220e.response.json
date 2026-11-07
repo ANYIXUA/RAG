@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:16.912771+08:00",
+  "conservative_cost_yuan": 0.0012447,
+  "error": null,
+  "latency_ms": 2272.7981000207365,
+  "list_price_estimate_yuan": 0.0008472,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致，明确支持大于300dpi。\",\n    \"evidence\": \"（5）打印分辨率：大于300dpi；\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文且无编造。\",\n    \"evidence\": \"（5）打印分辨率：大于300dpi；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息，无遗漏。\",\n    \"evidence\": \"（5）打印分辨率：大于300dpi；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]对应实际来源且支持该句。\",\n    \"evidence\": \"（5）打印分辨率：大于300dpi；\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882174,
+    "id": "chatcmpl-99ab4cf5-dd9e-9a87-a328-2a765e18d071",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 265,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2998,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3263
+    }
+  },
+  "usage_known": true
+}

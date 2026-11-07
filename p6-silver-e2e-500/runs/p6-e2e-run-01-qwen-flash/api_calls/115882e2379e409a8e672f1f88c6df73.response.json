@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:06.449626+08:00",
+  "conservative_cost_yuan": 0.00076395,
+  "error": null,
+  "latency_ms": 1361.6990000009537,
+  "list_price_estimate_yuan": 0.0005824500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 通过和家亲APP可进行Wi-Fi质量分析，定位信号波动问题。[2]  \n2. 全光组网终端支持网络质量统计，可查看各设备连接状态。[2]  \n3. 5GHz频段具备自动信道跳转功能，遇干扰时会主动切换信道。[3]  \n4. 建议使用和家亲APP检查关联设备的信号强度与干扰情况。[2]  \n5. 多设备间可通过EasyMeshTM协同优化，减少相互影响。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881025,
+    "id": "chatcmpl-1bb51e67-bc02-981a-aa68-5075f3a7406c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2673,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2794
+    }
+  },
+  "usage_known": true
+}

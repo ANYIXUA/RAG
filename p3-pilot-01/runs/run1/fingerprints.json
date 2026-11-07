@@ -1,0 +1,15 @@
+{
+  "rankings_sha256": "2e79d7719ed1f0bd76df7da1bc15b9c66007cf4a329595fbaecd352fbdd9c075",
+  "metrics_sha256": "983c50508adda0fbf6fbe8a36274c5041d09056a4aefcf1d0cd052d7b40bc3cd",
+  "run_config_sha256": "ada8720950b0ab3244e78600ad2cdf73f18a89da9b99f1688f9f8f97bf8e48df",
+  "preflight_sha256": "d609c9fc66cf184942b6c58ec9b2bbd8aa848ef6b6d71d9c31181fd076c45724",
+  "gold_sources_sha256": {
+    "batch01_jsonl": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+    "batch01_metadata": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+    "batch01_manifest": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493",
+    "batch02_jsonl": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+    "batch02_metadata": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3",
+    "batch02_manifest": "6fda108ba2d8f42a72fb5e16a735d4b9253a8c5200fa381472a6beab8ba036e1"
+  },
+  "corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6"
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:50.520165+08:00",
+  "conservative_cost_yuan": 0.00138645,
+  "error": null,
+  "latency_ms": 2679.2798000387847,
+  "list_price_estimate_yuan": 0.00094395,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"未提及定价策略，正确拒答\",\n    \"evidence\": \"不同品牌设备定价未在上下文中提及，无法提供具体策略。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"设备编码由智家中心统一分配，厂家编码区分品牌。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题缺失信息\",\n    \"evidence\": \"缺少关于市场推广定价的直接信息，建议补充或转人工。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"产品需符合统一编码规范，但未涉及市场定价机制。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"明确拒答并建议转人工\",\n    \"evidence\": \"缺少关于市场推广定价的直接信息，建议补充或转人工。[1]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882087,
+    "id": "chatcmpl-732c2329-17af-9e17-89d5-0a3b1754c30c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 295,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3343,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3638
+    }
+  },
+  "usage_known": true
+}

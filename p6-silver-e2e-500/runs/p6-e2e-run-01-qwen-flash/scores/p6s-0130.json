@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "1.开箱检验。2.清洁搬运。3.吊装加固天线。4.调整方位角及俯仰角。5.清理现场。",
+    "reason": "答案与上下文一致，覆盖关键步骤。",
+    "score": 1
+  },
+  "case_id": "p6s-0130",
+  "citation_correctness": {
+    "evidence": "[3] 馈线布放需进行防水与连接固定。",
+    "reason": "引用编号与上下文来源匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "1.开箱检验。2.清洁搬运。3.吊装加固天线。4.调整方位角及俯仰角。5.清理现场。",
+    "reason": "完整覆盖问题所需操作步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "1.开箱检验。2.清洁搬运。3.吊装加固天线。4.调整方位角及俯仰角。5.清理现场。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "68465ede21a346e1ba94fe54f797fb90",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

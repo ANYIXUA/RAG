@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "稳压设备安装应符合设备图纸及施工规范要求。[3]",
+    "reason": "回答符合上下文标准要求",
+    "score": 1
+  },
+  "case_id": "p6s-0300",
+  "citation_correctness": {
+    "evidence": "安装时应确保熔丝容量与设计图纸一致。[3]",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "设备接地、线缆安装须符合相关施工标准。[3]",
+    "reason": "涵盖安装关键点，无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "电源系统需检查双路供电与主备切换功能是否正常。[3]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "fcfe60d9cbb44c4db72fe1fa738a6957",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

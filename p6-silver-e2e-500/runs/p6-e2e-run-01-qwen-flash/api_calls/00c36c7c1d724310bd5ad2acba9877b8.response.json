@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:05.322314+08:00",
+  "conservative_cost_yuan": 0.0013674000000000002,
+  "error": null,
+  "latency_ms": 2653.6554999183863,
+  "list_price_estimate_yuan": 0.0009429,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持抢修车辆需定期检查、及时维修。\",\n    \"evidence\": \"抢修车辆应定期检查，损坏要及时维修，确保抢修需要。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持，无虚构内容。\",\n    \"evidence\": \"抢修车辆应定期检查，损坏要及时维修，确保抢修需要。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答覆盖了关键条件，未遗漏必要信息。\",\n    \"evidence\": \"抢修车辆应定期检查，损坏要及时维修，确保抢修需要。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应实际来源片段。\",\n    \"evidence\": \"抢修车辆应定期检查，损坏要及时维修，确保抢修需要。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881682,
+    "id": "chatcmpl-c36ab70d-65ef-9d6c-9e70-98f9a6473764",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 283,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3456,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3739
+    }
+  },
+  "usage_known": true
+}

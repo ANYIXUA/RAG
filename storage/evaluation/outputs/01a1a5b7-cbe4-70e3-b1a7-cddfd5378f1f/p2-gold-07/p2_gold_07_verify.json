@@ -1,0 +1,2368 @@
+{
+ "summary": {
+  "checks_total": 381,
+  "checks_passed": 381,
+  "checks_failed": 0,
+  "failed": [],
+  "counts": {
+   "Accept": 8,
+   "Revise": 5,
+   "Reject": 2,
+   "Needs Verification": 0
+  },
+  "records": 15,
+  "evidence_chunks": 12
+ },
+ "checks": [
+  {
+   "check": "frozen:candidates.jsonl",
+   "passed": true,
+   "detail": {
+    "expected": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120",
+    "actual": "31df78af2c96afd25f9221034ab47bbd965f7cb1a5e182dc8c1560cc3f9cf120"
+   }
+  },
+  {
+   "check": "frozen:corpus.jsonl",
+   "passed": true,
+   "detail": {
+    "expected": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+    "actual": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6"
+   }
+  },
+  {
+   "check": "frozen:batch01_gold",
+   "passed": true,
+   "detail": {
+    "expected": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+    "actual": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a"
+   }
+  },
+  {
+   "check": "frozen:batch01_metadata",
+   "passed": true,
+   "detail": {
+    "expected": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+    "actual": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39"
+   }
+  },
+  {
+   "check": "frozen:batch01_rejected",
+   "passed": true,
+   "detail": {
+    "expected": "3bbeec82efe9ad5fc646479056cf189985314fadb8f5670ea164e28869c1ed91",
+    "actual": "3bbeec82efe9ad5fc646479056cf189985314fadb8f5670ea164e28869c1ed91"
+   }
+  },
+  {
+   "check": "frozen:batch01_manifest",
+   "passed": true,
+   "detail": {
+    "expected": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493",
+    "actual": "f1384386520a69e48ef9038faf7a108a11fa5288a17a709282a7d68816398493"
+   }
+  },
+  {
+   "check": "frozen:batch02_gold",
+   "passed": true,
+   "detail": {
+    "expected": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+    "actual": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9"
+   }
+  },
+  {
+   "check": "frozen:batch02_metadata",
+   "passed": true,
+   "detail": {
+    "expected": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3",
+    "actual": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3"
+   }
+  },
+  {
+   "check": "frozen:batch02_rejected",
+   "passed": true,
+   "detail": {
+    "expected": "aa0e784949e0d3ff535e57b510b8111fbbe6d869752292a613f80836409aff73",
+    "actual": "aa0e784949e0d3ff535e57b510b8111fbbe6d869752292a613f80836409aff73"
+   }
+  },
+  {
+   "check": "frozen:batch02_unsigned",
+   "passed": true,
+   "detail": {
+    "expected": "4cd8ddc233c9a3f54b10fca609f388bf616d7653665d8a9accc5e69ca04e1cee",
+    "actual": "4cd8ddc233c9a3f54b10fca609f388bf616d7653665d8a9accc5e69ca04e1cee"
+   }
+  },
+  {
+   "check": "frozen:packet_batch02",
+   "passed": true,
+   "detail": {
+    "expected": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+    "actual": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8"
+   }
+  },
+  {
+   "check": "frozen:proposal_batch02",
+   "passed": true,
+   "detail": {
+    "expected": "8811414d2c6447662a0ab4cbad45d60524b475543003fc5af575c32fe3cc8dc2",
+    "actual": "8811414d2c6447662a0ab4cbad45d60524b475543003fc5af575c32fe3cc8dc2"
+   }
+  },
+  {
+   "check": "frozen:review_xlsx",
+   "passed": true,
+   "detail": {
+    "expected": "df13e2755786cfb7f4d30e44d6323463ce6cbfe49c99a2b5ae87dfeec369d5ea",
+    "actual": "df13e2755786cfb7f4d30e44d6323463ce6cbfe49c99a2b5ae87dfeec369d5ea"
+   }
+  },
+  {
+   "check": "frozen:draft_batch02_xlsx",
+   "passed": true,
+   "detail": {
+    "expected": "12f4a4acbb176590de732a7c92c0c620f03ac8376edda10ade52989a96c060b7",
+    "actual": "12f4a4acbb176590de732a7c92c0c620f03ac8376edda10ade52989a96c060b7"
+   }
+  },
+  {
+   "check": "frozen:pdf_dianxin",
+   "passed": true,
+   "detail": {
+    "expected": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+    "actual": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58"
+   }
+  },
+  {
+   "check": "frozen:pdf_biaozhun",
+   "passed": true,
+   "detail": {
+    "expected": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+    "actual": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c"
+   }
+  },
+  {
+   "check": "frozen:pdf_quanguang",
+   "passed": true,
+   "detail": {
+    "expected": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+    "actual": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032"
+   }
+  },
+  {
+   "check": "frozen:batch02_manifest_sidecar",
+   "passed": true,
+   "detail": {
+    "sidecar": "6fda108ba2d8f42a72fb5e16a735d4b9253a8c5200fa381472a6beab8ba036e1"
+   }
+  },
+  {
+   "check": "candidate_count",
+   "passed": true,
+   "detail": 57
+  },
+  {
+   "check": "corpus_chunks",
+   "passed": true,
+   "detail": 447
+  },
+  {
+   "check": "corpus_documents",
+   "passed": true,
+   "detail": [
+    "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+    "智慧家庭装维工程与管理职业技能等级标准.pdf",
+    "电信基础设施维护规程.pdf"
+   ]
+  },
+  {
+   "check": "gold_batch01_count",
+   "passed": true,
+   "detail": 9
+  },
+  {
+   "check": "gold_batch02_count",
+   "passed": true,
+   "detail": 13
+  },
+  {
+   "check": "b23_unsigned_present",
+   "passed": true,
+   "detail": [
+    "B23"
+   ]
+  },
+  {
+   "check": "b23_still_null_gold_id",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "b23_status_unsigned",
+   "passed": true,
+   "detail": "unsigned_pending_clarification"
+  },
+  {
+   "check": "b23_not_in_gold_files",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "packet_record_count",
+   "passed": true,
+   "detail": 15
+  },
+  {
+   "check": "packet_ids_exact",
+   "passed": true,
+   "detail": [
+    "B28",
+    "B29",
+    "B30",
+    "B31",
+    "B32",
+    "B33",
+    "B34",
+    "B35",
+    "B36",
+    "B37",
+    "B38",
+    "B39",
+    "B40",
+    "B41",
+    "B42"
+   ]
+  },
+  {
+   "check": "packet_ids_unique",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "packet_heading_matches_batch_id",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "packet_id_matches_workbook:B28",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:9a72d01ef8f3b",
+    "workbook": "sha256:9a72d01ef8f3b"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B29",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:2769ae9af89aa",
+    "workbook": "sha256:2769ae9af89aa"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B30",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:0691d0137cbe7",
+    "workbook": "sha256:0691d0137cbe7"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B31",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:e74e638637904",
+    "workbook": "sha256:e74e638637904"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B32",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:86abb5904cd3b",
+    "workbook": "sha256:86abb5904cd3b"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B33",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:85516c936d8fe",
+    "workbook": "sha256:85516c936d8fe"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B34",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:a9065f265727f",
+    "workbook": "sha256:a9065f265727f"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B35",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:64e18eda64f9e",
+    "workbook": "sha256:64e18eda64f9e"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B36",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:5d42c5b4ccd00",
+    "workbook": "sha256:5d42c5b4ccd00"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B37",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:7fe4ebfaf574e",
+    "workbook": "sha256:7fe4ebfaf574e"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B38",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:2bbfb4a82fec1",
+    "workbook": "sha256:2bbfb4a82fec1"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B39",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:d2bbc8a14069a",
+    "workbook": "sha256:d2bbc8a14069a"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B40",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:bc83c840f1e8d",
+    "workbook": "sha256:bc83c840f1e8d"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B41",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:b4948d39941b4",
+    "workbook": "sha256:b4948d39941b4"
+   }
+  },
+  {
+   "check": "packet_id_matches_workbook:B42",
+   "passed": true,
+   "detail": {
+    "packet": "sha256:8b2d213a6a85d",
+    "workbook": "sha256:8b2d213a6a85d"
+   }
+  },
+  {
+   "check": "original_question_unchanged:B28",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B28",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B28",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "611a9eb6554a2b482561c775"
+    ],
+    "candidate": [
+     "611a9eb6554a2b482561c775"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B28",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B29",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B29",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B29",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "a264a91966d85e2ec3b52e02"
+    ],
+    "candidate": [
+     "a264a91966d85e2ec3b52e02"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B29",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B30",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B30",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B30",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "c120df3a569ae215d69183ac"
+    ],
+    "candidate": [
+     "c120df3a569ae215d69183ac"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B30",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B31",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B31",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B31",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "71a4f239a4fd7b69fdc74486"
+    ],
+    "candidate": [
+     "71a4f239a4fd7b69fdc74486"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B31",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B32",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B32",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B32",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "5766d05fd8a6f73a1ef60b57"
+    ],
+    "candidate": [
+     "5766d05fd8a6f73a1ef60b57"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B32",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B33",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B33",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B33",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "5766d05fd8a6f73a1ef60b57"
+    ],
+    "candidate": [
+     "5766d05fd8a6f73a1ef60b57"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B33",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B34",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B34",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B34",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "d8dfa78cb9362f0d69cd659c"
+    ],
+    "candidate": [
+     "d8dfa78cb9362f0d69cd659c"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B34",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B35",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B35",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B35",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "5d5fd6cf18ea4e313fdc45b5"
+    ],
+    "candidate": [
+     "5d5fd6cf18ea4e313fdc45b5"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B35",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B36",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B36",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B36",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "02c18b66c8c7d17fa1fb910e"
+    ],
+    "candidate": [
+     "02c18b66c8c7d17fa1fb910e"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B36",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B37",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B37",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B37",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "02c18b66c8c7d17fa1fb910e"
+    ],
+    "candidate": [
+     "02c18b66c8c7d17fa1fb910e"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B37",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B38",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B38",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B38",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "4a65d0d3ead0bc841b1b28f8",
+     "647c44016cd2e8fabe51f5de"
+    ],
+    "candidate": [
+     "4a65d0d3ead0bc841b1b28f8",
+     "647c44016cd2e8fabe51f5de"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B38",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B39",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B39",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B39",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "647c44016cd2e8fabe51f5de",
+     "d2df450647a1e967aa910201"
+    ],
+    "candidate": [
+     "647c44016cd2e8fabe51f5de",
+     "d2df450647a1e967aa910201"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B39",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B40",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B40",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B40",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "647c44016cd2e8fabe51f5de"
+    ],
+    "candidate": [
+     "647c44016cd2e8fabe51f5de"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B40",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B41",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B41",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B41",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "4a65d0d3ead0bc841b1b28f8"
+    ],
+    "candidate": [
+     "4a65d0d3ead0bc841b1b28f8"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B41",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "original_question_unchanged:B42",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_answer_unchanged:B42",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "original_chunks_unchanged:B42",
+   "passed": true,
+   "detail": {
+    "packet": [
+     "d2df450647a1e967aa910201"
+    ],
+    "candidate": [
+     "d2df450647a1e967aa910201"
+    ]
+   }
+  },
+  {
+   "check": "candidate_status_pending:B42",
+   "passed": true,
+   "detail": "pending_review"
+  },
+  {
+   "check": "classification_present:B28",
+   "passed": true,
+   "detail": "Accept"
+  },
+  {
+   "check": "review_reason_present:B28",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B29",
+   "passed": true,
+   "detail": "Accept"
+  },
+  {
+   "check": "review_reason_present:B29",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B30",
+   "passed": true,
+   "detail": "Accept"
+  },
+  {
+   "check": "review_reason_present:B30",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B31",
+   "passed": true,
+   "detail": "Reject"
+  },
+  {
+   "check": "review_reason_present:B31",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B32",
+   "passed": true,
+   "detail": "Revise"
+  },
+  {
+   "check": "review_reason_present:B32",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B33",
+   "passed": true,
+   "detail": "Revise"
+  },
+  {
+   "check": "review_reason_present:B33",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B34",
+   "passed": true,
+   "detail": "Revise"
+  },
+  {
+   "check": "review_reason_present:B34",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B35",
+   "passed": true,
+   "detail": "Revise"
+  },
+  {
+   "check": "review_reason_present:B35",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B36",
+   "passed": true,
+   "detail": "Accept"
+  },
+  {
+   "check": "review_reason_present:B36",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B37",
+   "passed": true,
+   "detail": "Accept"
+  },
+  {
+   "check": "review_reason_present:B37",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B38",
+   "passed": true,
+   "detail": "Revise"
+  },
+  {
+   "check": "review_reason_present:B38",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B39",
+   "passed": true,
+   "detail": "Reject"
+  },
+  {
+   "check": "review_reason_present:B39",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B40",
+   "passed": true,
+   "detail": "Accept"
+  },
+  {
+   "check": "review_reason_present:B40",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B41",
+   "passed": true,
+   "detail": "Accept"
+  },
+  {
+   "check": "review_reason_present:B41",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_present:B42",
+   "passed": true,
+   "detail": "Accept"
+  },
+  {
+   "check": "review_reason_present:B42",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "classification_counts_sum",
+   "passed": true,
+   "detail": {
+    "Accept": 8,
+    "Revise": 5,
+    "Reject": 2,
+    "Needs Verification": 0
+   }
+  },
+  {
+   "check": "classification_counts_expected",
+   "passed": true,
+   "detail": {
+    "Accept": 8,
+    "Revise": 5,
+    "Reject": 2,
+    "Needs Verification": 0
+   }
+  },
+  {
+   "check": "chunk_exists:B28:611a9eb6554a2b482561c775",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B28:611a9eb6554a2b482561c775",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B28:611a9eb6554a2b482561c775",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B28:611a9eb6554a2b482561c775",
+   "passed": true,
+   "detail": {
+    "page": 286,
+    "source_pages": "电信基础设施维护规程.pdf 286（印刷 280）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B28",
+   "passed": true,
+   "detail": [
+    "611a9eb6554a2b482561c775"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B28:611a9eb6554a2b482561c775",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B28:611a9eb6554a2b482561c775",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_no_revision:B28",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_answer_verbatim_in_evidence:B28",
+   "passed": true,
+   "detail": {
+    "answer_head": "291.84"
+   }
+  },
+  {
+   "check": "chunk_exists:B29:a264a91966d85e2ec3b52e02",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B29:a264a91966d85e2ec3b52e02",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B29:a264a91966d85e2ec3b52e02",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B29:a264a91966d85e2ec3b52e02",
+   "passed": true,
+   "detail": {
+    "page": 287,
+    "source_pages": "电信基础设施维护规程.pdf 287（印刷 281）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B29",
+   "passed": true,
+   "detail": [
+    "a264a91966d85e2ec3b52e02"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B29:a264a91966d85e2ec3b52e02",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B29:a264a91966d85e2ec3b52e02",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_no_revision:B29",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_answer_verbatim_in_evidence:B29",
+   "passed": true,
+   "detail": {
+    "answer_head": "18.24"
+   }
+  },
+  {
+   "check": "chunk_exists:B30:c120df3a569ae215d69183ac",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B30:c120df3a569ae215d69183ac",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B30:c120df3a569ae215d69183ac",
+   "passed": true,
+   "detail": {
+    "chunk": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+    "packet": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B30:c120df3a569ae215d69183ac",
+   "passed": true,
+   "detail": {
+    "page": 61,
+    "source_pages": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf 61（印刷 56）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B30",
+   "passed": true,
+   "detail": [
+    "c120df3a569ae215d69183ac"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B30:c120df3a569ae215d69183ac",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B30:c120df3a569ae215d69183ac",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_no_revision:B30",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_answer_verbatim_in_evidence:B30",
+   "passed": true,
+   "detail": {
+    "answer_head": "默认无线网络名称"
+   }
+  },
+  {
+   "check": "chunk_exists:B31:71a4f239a4fd7b69fdc74486",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B31:71a4f239a4fd7b69fdc74486",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B31:71a4f239a4fd7b69fdc74486",
+   "passed": true,
+   "detail": {
+    "chunk": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+    "packet": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B31:71a4f239a4fd7b69fdc74486",
+   "passed": true,
+   "detail": {
+    "page": 1,
+    "source_pages": "智慧家庭装维工程与管理职业技能等级标准.pdf 1"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B31",
+   "passed": true,
+   "detail": [
+    "71a4f239a4fd7b69fdc74486"
+   ]
+  },
+  {
+   "check": "reject_no_retrieval_target:B31",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "reject_no_revision:B31",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_exists:B32:d70540614c288a2dc8b3066f",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B32:d70540614c288a2dc8b3066f",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B32:d70540614c288a2dc8b3066f",
+   "passed": true,
+   "detail": {
+    "chunk": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+    "packet": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B32:d70540614c288a2dc8b3066f",
+   "passed": true,
+   "detail": {
+    "page": 7,
+    "source_pages": "智慧家庭装维工程与管理职业技能等级标准.pdf 7（印刷 6）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B32",
+   "passed": true,
+   "detail": [
+    "d70540614c288a2dc8b3066f"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B32:d70540614c288a2dc8b3066f",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B32:d70540614c288a2dc8b3066f",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_question:B32",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_answer:B32",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_reason:B32",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_exists:B33:14da1c09b687f7b48896e03a",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B33:14da1c09b687f7b48896e03a",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B33:14da1c09b687f7b48896e03a",
+   "passed": true,
+   "detail": {
+    "chunk": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+    "packet": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B33:14da1c09b687f7b48896e03a",
+   "passed": true,
+   "detail": {
+    "page": 8,
+    "source_pages": "智慧家庭装维工程与管理职业技能等级标准.pdf 8（印刷 7）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B33",
+   "passed": true,
+   "detail": [
+    "14da1c09b687f7b48896e03a"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B33:14da1c09b687f7b48896e03a",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B33:14da1c09b687f7b48896e03a",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_question:B33",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_answer:B33",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_reason:B33",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_exists:B34:d8dfa78cb9362f0d69cd659c",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B34:d8dfa78cb9362f0d69cd659c",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B34:d8dfa78cb9362f0d69cd659c",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B34:d8dfa78cb9362f0d69cd659c",
+   "passed": true,
+   "detail": {
+    "page": 343,
+    "source_pages": "电信基础设施维护规程.pdf 343（印刷 337）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B34",
+   "passed": true,
+   "detail": [
+    "d8dfa78cb9362f0d69cd659c"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B34:d8dfa78cb9362f0d69cd659c",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B34:d8dfa78cb9362f0d69cd659c",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_question:B34",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_answer:B34",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_reason:B34",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_exists:B35:e69ef87cafd302938c765e20",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B35:e69ef87cafd302938c765e20",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B35:e69ef87cafd302938c765e20",
+   "passed": true,
+   "detail": {
+    "chunk": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+    "packet": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B35:e69ef87cafd302938c765e20",
+   "passed": true,
+   "detail": {
+    "page": 15,
+    "source_pages": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf 15（印刷 10）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B35",
+   "passed": true,
+   "detail": [
+    "e69ef87cafd302938c765e20"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B35:e69ef87cafd302938c765e20",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B35:e69ef87cafd302938c765e20",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_question:B35",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_answer:B35",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_reason:B35",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_exists:B36:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B36:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B36:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": {
+    "chunk": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+    "packet": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B36:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": {
+    "page": 19,
+    "source_pages": "智慧家庭装维工程与管理职业技能等级标准.pdf 19（印刷 18）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B36",
+   "passed": true,
+   "detail": [
+    "02c18b66c8c7d17fa1fb910e"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B36:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B36:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_no_revision:B36",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_answer_verbatim_in_evidence:B36",
+   "passed": true,
+   "detail": {
+    "answer_head": "35"
+   }
+  },
+  {
+   "check": "chunk_exists:B37:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B37:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B37:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": {
+    "chunk": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+    "packet": "智慧家庭装维工程与管理职业技能等级标准.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B37:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": {
+    "page": 19,
+    "source_pages": "智慧家庭装维工程与管理职业技能等级标准.pdf 19（印刷 18）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B37",
+   "passed": true,
+   "detail": [
+    "02c18b66c8c7d17fa1fb910e"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B37:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B37:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_no_revision:B37",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_answer_verbatim_in_evidence:B37",
+   "passed": true,
+   "detail": {
+    "answer_head": "25"
+   }
+  },
+  {
+   "check": "chunk_exists:B38:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B38:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B38:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B38:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "page": 277,
+    "source_pages": "电信基础设施维护规程.pdf 277（印刷 271）, 278（印刷 272）"
+   }
+  },
+  {
+   "check": "chunk_exists:B38:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B38:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B38:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B38:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": {
+    "page": 278,
+    "source_pages": "电信基础设施维护规程.pdf 277（印刷 271）, 278（印刷 272）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B38",
+   "passed": true,
+   "detail": [
+    "647c44016cd2e8fabe51f5de",
+    "4a65d0d3ead0bc841b1b28f8"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B38:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B38:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_chunk_exists:B38:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B38:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_question:B38",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_answer:B38",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "revise_has_reason:B38",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_exists:B39:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B39:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B39:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B39:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "page": 277,
+    "source_pages": "电信基础设施维护规程.pdf 277（印刷 271）, 279（印刷 273）"
+   }
+  },
+  {
+   "check": "chunk_exists:B39:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B39:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B39:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B39:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": {
+    "page": 279,
+    "source_pages": "电信基础设施维护规程.pdf 277（印刷 271）, 279（印刷 273）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B39",
+   "passed": true,
+   "detail": [
+    "647c44016cd2e8fabe51f5de",
+    "d2df450647a1e967aa910201"
+   ]
+  },
+  {
+   "check": "reject_no_retrieval_target:B39",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "reject_no_revision:B39",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_exists:B40:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B40:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B40:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B40:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "page": 277,
+    "source_pages": "电信基础设施维护规程.pdf 277（印刷 271）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B40",
+   "passed": true,
+   "detail": [
+    "647c44016cd2e8fabe51f5de"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B40:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B40:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_no_revision:B40",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_answer_verbatim_in_evidence:B40",
+   "passed": true,
+   "detail": {
+    "answer_head": "工作内容：1、器检修：断电外观检查、接线柱及绝缘"
+   }
+  },
+  {
+   "check": "chunk_exists:B41:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B41:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B41:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B41:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": {
+    "page": 278,
+    "source_pages": "电信基础设施维护规程.pdf 278（印刷 272）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B41",
+   "passed": true,
+   "detail": [
+    "4a65d0d3ead0bc841b1b28f8"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B41:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B41:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_no_revision:B41",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_answer_verbatim_in_evidence:B41",
+   "passed": true,
+   "detail": {
+    "answer_head": "工作内容：开箱检验、安装固定、附件检查与安装、连"
+   }
+  },
+  {
+   "check": "chunk_exists:B42:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "chunk_sha:B42:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "source_document_match:B42:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": {
+    "chunk": "电信基础设施维护规程.pdf",
+    "packet": "电信基础设施维护规程.pdf"
+   }
+  },
+  {
+   "check": "page_in_source_pages:B42:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": {
+    "page": 279,
+    "source_pages": "电信基础设施维护规程.pdf 279（印刷 273）"
+   }
+  },
+  {
+   "check": "evidence_nonempty:B42",
+   "passed": true,
+   "detail": [
+    "d2df450647a1e967aa910201"
+   ]
+  },
+  {
+   "check": "relevant_chunk_exists:B42:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "relevant_subset_of_evidence:B42:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_no_revision:B42",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "accept_answer_verbatim_in_evidence:B42",
+   "passed": true,
+   "detail": {
+    "answer_head": "工作内容：1、发电机组：检查清洁发动机和发电机外"
+   }
+  },
+  {
+   "check": "b34_corrected_value_supported",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "b32_revision_supported",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "b33_revision_supported",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "b35_revision_supported",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "b38_revision_supported",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "b31_placeholder_is_only_date_source",
+   "passed": true,
+   "detail": [
+    [
+     "智慧家庭装维工程与管理职业技能等级标准.pdf",
+     1
+    ]
+   ]
+  },
+  {
+   "check": "b31_no_real_date_in_doc",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B28:611a9eb6554a2b482561c775",
+   "passed": true,
+   "detail": {
+    "page": 286,
+    "head": "T/CAICIXXXX—XXXX280表10.3.3.29WH23126铁塔专项"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B29:a264a91966d85e2ec3b52e02",
+   "passed": true,
+   "detail": {
+    "page": 287,
+    "head": "T/CAICIXXXX—XXXX281表10.3.3.30WH23130机房室外"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B30:c120df3a569ae215d69183ac",
+   "passed": true,
+   "detail": {
+    "page": 61,
+    "head": "56A.2光路由终端二维码标识要求二维码内容：（1）ssid1：设备的Wi-Fi"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B31:71a4f239a4fd7b69fdc74486",
+   "passed": true,
+   "detail": {
+    "page": 1,
+    "head": "ICS33.180.01CCSCAICIM11中国通信企业协会团体标准T/CAI"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B32:d70540614c288a2dc8b3066f",
+   "passed": true,
+   "detail": {
+    "page": 7,
+    "head": "T/CAICIXXXX—XX6职业技能等级应包括初级、中级、高级。4.5职业环境"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B33:14da1c09b687f7b48896e03a",
+   "passed": true,
+   "detail": {
+    "page": 8,
+    "head": "T/CAICIXXXX—XX74.9.2.1鉴定方式应分为理论知识考试、技能考核"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B34:d8dfa78cb9362f0d69cd659c",
+   "passed": true,
+   "detail": {
+    "page": 343,
+    "head": "T/CAICIXXXX—XXXX3372）D.0.2架空通信线路与其他建筑物的最"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B35:e69ef87cafd302938c765e20",
+   "passed": true,
+   "detail": {
+    "page": 15,
+    "head": "104.产品入库要求4.1.基本要求4.1.1.接入要求全光组网终端均需支持Ea"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B36:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": {
+    "page": 19,
+    "head": "T/CAICIXXXX—XX186.安全作业6.1施工作业安全6.1.1能安全施"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B37:02c18b66c8c7d17fa1fb910e",
+   "passed": true,
+   "detail": {
+    "page": 19,
+    "head": "T/CAICIXXXX—XX186.安全作业6.1施工作业安全6.1.1能安全施"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B38:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "page": 277,
+    "head": "T/CAICIXXXX—XXXX271表10.3.3.20WH23120安装、调"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B38:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": {
+    "page": 278,
+    "head": "T/CAICIXXXX—XXXX272表10.3.3.21WH23121安装与调"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B39:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "page": 277,
+    "head": "T/CAICIXXXX—XXXX271表10.3.3.20WH23120安装、调"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B39:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": {
+    "page": 279,
+    "head": "T/CAICIXXXX—XXXX273表10.3.3.22WH23122发电设备"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B40:647c44016cd2e8fabe51f5de",
+   "passed": true,
+   "detail": {
+    "page": 277,
+    "head": "T/CAICIXXXX—XXXX271表10.3.3.20WH23120安装、调"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B41:4a65d0d3ead0bc841b1b28f8",
+   "passed": true,
+   "detail": {
+    "page": 278,
+    "head": "T/CAICIXXXX—XXXX272表10.3.3.21WH23121安装与调"
+   }
+  },
+  {
+   "check": "pdf_page_contains_chunk_body:B42:d2df450647a1e967aa910201",
+   "passed": true,
+   "detail": {
+    "page": 279,
+    "head": "T/CAICIXXXX—XXXX273表10.3.3.22WH23122发电设备"
+   }
+  },
+  {
+   "check": "human_field_empty:B28:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B28:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B28:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B28:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B29:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B29:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B29:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B29:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B30:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B30:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B30:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B30:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B31:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B31:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B31:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B31:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B32:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B32:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B32:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B32:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B33:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B33:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B33:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B33:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B34:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B34:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B34:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B34:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B35:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B35:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B35:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B35:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B36:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B36:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B36:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B36:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B37:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B37:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B37:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B37:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B38:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B38:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B38:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B38:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B39:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B39:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B39:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B39:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B40:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B40:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B40:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B40:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B41:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B41:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B41:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B41:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B42:human_decision",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B42:human_reviewer",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B42:human_reviewed_at",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "human_field_empty:B42:human_comment",
+   "passed": true,
+   "detail": ""
+  },
+  {
+   "check": "no_metric_claims:p2_gold_07_b23_recheck.md",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "no_metric_claims:p2_gold_07_duplicate_check.md",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "no_metric_claims:p2_gold_07_review_proposal.md",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "no_metric_claims:p2_gold_07_reviewer_audit.md",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "no_metric_claims:p2_gold_07_signoff_packet.md",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "no_metric_claims:p2_gold_07_validation.md",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "no_new_gold_exported",
+   "passed": true,
+   "detail": []
+  },
+  {
+   "check": "deliverable_present:p2_gold_07_review_proposal.md",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "deliverable_present:p2_gold_07_signoff_packet.md",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "deliverable_present:p2_gold_07_b23_recheck.md",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "deliverable_present:p2_gold_07_reviewer_audit.md",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "deliverable_present:p2_gold_07_duplicate_check.md",
+   "passed": true,
+   "detail": null
+  },
+  {
+   "check": "deliverable_present:p2_gold_07_validation.md",
+   "passed": true,
+   "detail": null
+  }
+ ]
+}

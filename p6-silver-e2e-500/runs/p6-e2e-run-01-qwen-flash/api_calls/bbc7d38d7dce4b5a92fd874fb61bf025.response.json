@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:41.143213+08:00",
+  "conservative_cost_yuan": 0.00134205,
+  "error": null,
+  "latency_ms": 3159.338900120929,
+  "list_price_estimate_yuan": 0.00093405,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题涉及跨品牌对比，上下文未覆盖\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"优先掌握基础网络质量检测与无线信号评估能力。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分覆盖技能要求但缺优化策略\",\n    \"evidence\": \"根据用户需求选择对应业务运维技能，如光纤到户或智能组网。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持句义\",\n    \"evidence\": \"熟悉智能家居场景设置及常见故障处理方法。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"未强行编造，符合拒答原则\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_query\",\n    \"partial_coverage\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882078,
+    "id": "chatcmpl-c9308928-d7e9-90c2-a6f0-3a119f924d3c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 272,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3507,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3779
+    }
+  },
+  "usage_known": true
+}

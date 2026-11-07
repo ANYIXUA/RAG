@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:59.742387+08:00",
+  "conservative_cost_yuan": 0.0017595,
+  "error": null,
+  "latency_ms": 3450.380800059065,
+  "list_price_estimate_yuan": 0.0011745,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持0.62消耗量\",\n    \"evidence\": \"WH21102002 平原、丘陵 113.82 71.14 21.34 21.34 0.62 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH21102002 平原、丘陵 113.82 71.14 21.34 21.34 0.62 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键数据与单位信息\",\n    \"evidence\": \"WH21102002 平原、丘陵 113.82 71.14 21.34 21.34 0.62 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源\",\n    \"evidence\": \"WH21102002 平原、丘陵 113.82 71.14 21.34 21.34 0.62 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881856,
+    "id": "chatcmpl-d052a2a0-1551-9321-b211-600f1067d852",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 390,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3930,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4320
+    }
+  },
+  "usage_known": true
+}

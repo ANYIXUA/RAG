@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "跳线与馈线的接头处应固定牢靠，密封良好、无积水。",
+    "reason": "上下文支持接头松动需检查固定与密封",
+    "score": 1
+  },
+  "case_id": "p6s-0443",
+  "citation_correctness": {
+    "evidence": "接头处需固定牢靠，密封良好，避免积水。[3]",
+    "reason": "引用编号与上下文来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "建议检查接头是否氧化、锈蚀或漏铜。[3]",
+    "reason": "覆盖问题核心条件与处理建议",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "接头处需固定牢靠，密封良好，避免积水。[3]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "5f3886a7ed924d7498aca4e46ddeaa68",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0409",
+  "citation_correctness": {
+    "evidence": "[2] 光纤入户施工及验收规范",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "成本包含智能组网布线及无线信号检测工作。[3]",
+    "reason": "部分覆盖但未完整回答成本结构",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "装维服务成本涉及光缆布放与端接等施工环节。[2]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [
+    "partial_answer",
+    "context_limitation"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "dba3eaa70a274142961a543fa9121c4c",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未虚构信息，基于上下文回应",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

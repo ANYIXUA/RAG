@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:19.384468+08:00",
+  "conservative_cost_yuan": 0.0005562000000000001,
+  "error": null,
+  "latency_ms": 882.4816001579165,
+  "list_price_estimate_yuan": 0.0004122,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 装维人员绩效评估应基于职业技能等级标准中的能力要求。[1]  \n2. 重点考核业务开通与运维技能掌握情况。[1]  \n3. 包括故障处理、服务礼仪及沟通技巧等综合服务能力。[1]  \n4. 需评估施工安全与用户信息安全执行情况。[1]  \n5. 绩效需结合职业道德与交付能力进行综合评定。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881098,
+    "id": "chatcmpl-f2aa2a35-1f28-99d7-88c4-9401de81afdb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 96,
+      "completion_tokens_details": null,
+      "prompt_tokens": 1788,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 1884
+    }
+  },
+  "usage_known": true
+}

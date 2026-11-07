@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0291",
+  "citation_correctness": {
+    "evidence": "智能家居场景设置包含语音助手唤醒词配置。[2]",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "具体操作需参考设备厂商提供的设置指南。[3]",
+    "reason": "部分覆盖问题但缺具体操作",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "智能家居场景设置包含语音助手唤醒词配置。[2]",
+    "reason": "每项事实均来自上下文引用",
+    "score": 1
+  },
+  "flags": [
+    "partial_coverage",
+    "external_dependency"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "279f9a3ca16847c086483432eee2ffcd",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "具体操作需参考设备厂商提供的设置指南。[3]",
+    "reason": "未强行编造，提示参考指南",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

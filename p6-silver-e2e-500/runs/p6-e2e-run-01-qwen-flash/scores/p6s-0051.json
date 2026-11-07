@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "DHCPName 总长度应不超32 字节。",
+    "reason": "上下文明确支持32字节限制。",
+    "score": 1
+  },
+  "case_id": "p6s-0051",
+  "citation_correctness": {
+    "evidence": "合作伙伴-型号 -YYYY（例如：CMHI-AN1202L-0000，DHCPName 总长度应不超32 字节）。",
+    "reason": "引用编号[1]准确对应来源。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "DHCPName 总长度应不超32 字节。",
+    "reason": "涵盖所有必要条件与格式要求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "合作伙伴-型号 -YYYY（例如：CMHI-AN1202L-0000，DHCPName 总长度应不超32 字节）。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "fcdb47a063ee4ae684797eb37b9a9ad2",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

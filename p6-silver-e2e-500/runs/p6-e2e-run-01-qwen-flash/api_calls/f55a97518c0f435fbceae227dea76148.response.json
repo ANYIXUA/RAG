@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:32.513375+08:00",
+  "conservative_cost_yuan": 0.0017859,
+  "error": null,
+  "latency_ms": 3706.9782000035048,
+  "list_price_estimate_yuan": 0.0011724,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出207.94元\",\n    \"evidence\": \"WH34101003 山区、2 小时以下 207.94 129.96 38.99 38.99 1.14 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"WH34101003 山区、2 小时以下 207.94 129.96 38.99 38.99 1.14 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、组成、工作内容等\",\n    \"evidence\": \"WH34101003 山区、2 小时以下 207.94 129.96 38.99 38.99 1.14 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"WH34101003 山区、2 小时以下 207.94 129.96 38.99 38.99 1.14 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881708,
+    "id": "chatcmpl-f2f4c382-f4d9-9dca-bf7e-76507cdcac0f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 409,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3726,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4135
+    }
+  },
+  "usage_known": true
+}

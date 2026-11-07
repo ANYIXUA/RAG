@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "检修防雹保护设施、光伏板支架和基础、密封胶条",
+    "reason": "准确匹配上下文内容",
+    "score": 1
+  },
+  "case_id": "p6s-0226",
+  "citation_correctness": {
+    "evidence": "检修防雹保护设施、光伏板支架和基础、密封胶条",
+    "reason": "引用编号与上下文一致且支持所述内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检修防雹保护设施、光伏板支架和基础、密封胶条",
+    "reason": "涵盖问题所需全部内容",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查清洁太阳能光伏板阵列；检修防雹保护设施、光伏板支架和基础、密封胶条",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "b4c788b7b6894766a4c76a46c0a029aa",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

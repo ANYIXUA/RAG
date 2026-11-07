@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:52.587309+08:00",
+  "conservative_cost_yuan": 0.0007746,
+  "error": null,
+  "latency_ms": 1360.47950014472,
+  "list_price_estimate_yuan": 0.0005870999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 现场干活的人头费按技工114元/工日、普工61元/工日计取。[1]  \n2. 人工费是综合单价的组成部分，不包含企业管理费和利润。[1]  \n3. 无固定比例，费用依据工种和工日标准确定。[1]  \n4. 人头费计算需参照《信息通信建设工程费用定额》规定。[1]  \n5. 企业管理费为人工费的27.4%，利润为20%。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881011,
+    "id": "chatcmpl-4ce8ccf4-af39-9d1a-aa49-b503333abe41",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 125,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2664,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2789
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:42.884172+08:00",
+  "conservative_cost_yuan": 0.00138435,
+  "error": null,
+  "latency_ms": 2539.6676000673324,
+  "list_price_estimate_yuan": 0.00097185,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确列出八项费用构成\",\n    \"evidence\": \"电信基础设施维护费用由维护分项作业费、材料及备品备件购置费、机械仪表使用费、措施项目费、规费、安全生产费、其他项目费和销项税额构成。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"措施项目费=∑〔人工费×费率 费率〕。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有关键费用项\",\n    \"evidence\": \"维护分项作业费=综合单价×数量；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"引用标签：[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881900,
+    "id": "chatcmpl-5ff003c4-2dc6-9073-b48a-cd644440c5de",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 275,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3729,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4004
+    }
+  },
+  "usage_known": true
+}

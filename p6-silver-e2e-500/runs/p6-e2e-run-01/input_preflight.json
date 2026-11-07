@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "silver_count": 500,
+  "silver_sha256": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+  "unique_case_ids": 500,
+  "protected_checks": {
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\generation_raw.jsonl": {
+      "sha256": "435735956a3d748f8c9e61c677b7a7f7647bc56132e886ff4fd6fe2be446b9d9",
+      "expected": "435735956a3d748f8c9e61c677b7a7f7647bc56132e886ff4fd6fe2be446b9d9",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\generation_summary.json": {
+      "sha256": "dc532f0068b8df297f39b9ba8be019116d3c7d4373d4e5dac7ef53eb2c695250",
+      "expected": "dc532f0068b8df297f39b9ba8be019116d3c7d4373d4e5dac7ef53eb2c695250",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\silver_cases.jsonl": {
+      "sha256": "ce4a5d9b42ac3786e049ac331047150245b8431745badfd75512fb0119e5346f",
+      "expected": "ce4a5d9b42ac3786e049ac331047150245b8431745badfd75512fb0119e5346f",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\silver_build_summary.json": {
+      "sha256": "d2037dae1951b360469f0435156f46e727d59d452c59da5d689c3e47111cf73c",
+      "expected": "d2037dae1951b360469f0435156f46e727d59d452c59da5d689c3e47111cf73c",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\generate_silver.py": {
+      "sha256": "e828ba082ed197e021259077e8d9042c480d72761315b1907aee6da3a6938d06",
+      "expected": "e828ba082ed197e021259077e8d9042c480d72761315b1907aee6da3a6938d06",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\generation_raw_debug.jsonl": {
+      "sha256": "ecf942c50335c427dbc7d56eea729f3b6d98703c118f8b07001a9d92848428a0",
+      "expected": "ecf942c50335c427dbc7d56eea729f3b6d98703c118f8b07001a9d92848428a0",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\corpus\\p1-20261104-v2\\corpus.jsonl": {
+      "sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+      "expected": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-04\\retrieval_gold_batch01_9.jsonl": {
+      "sha256": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+      "expected": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-06\\retrieval_gold_batch02_13.jsonl": {
+      "sha256": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+      "expected": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p4-gold-completion-01\\signed-final-20261105-v1\\retrieval_gold_holdout_28.jsonl": {
+      "sha256": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c",
+      "expected": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p3-pilot-01\\pilot_config.json": {
+      "sha256": "d7a60b553eb6388eb32bb48617546749e79e6ee18f857366055af1dfa3ceb2bc",
+      "expected": "d7a60b553eb6388eb32bb48617546749e79e6ee18f857366055af1dfa3ceb2bc",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\data\\中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf": {
+      "sha256": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "expected": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\data\\智慧家庭装维工程与管理职业技能等级标准.pdf": {
+      "sha256": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "expected": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\data\\电信基础设施维护规程.pdf": {
+      "sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "expected": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-04\\retrieval_gold_batch01_metadata.json": {
+      "sha256": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+      "expected": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-06\\retrieval_gold_batch02_metadata.json": {
+      "sha256": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3",
+      "expected": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3",
+      "matches": true
+    }
+  },
+  "risks": [
+    "50 unanswerable labels lack human validation",
+    "p6s-0473 reference 114 person-days has source parsing ambiguity; correctness must not be marked wrong against it"
+  ],
+  "p5_holdout_executed": false,
+  "model_calls_started": false
+}

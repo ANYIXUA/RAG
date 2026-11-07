@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:21.670928+08:00",
+  "conservative_cost_yuan": 0.00152805,
+  "error": null,
+  "latency_ms": 3425.822300137952,
+  "list_price_estimate_yuan": 0.00104505,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分正确但引用错误，防雷模块未提及\",\n    \"evidence\": \"检查防雷箱（单元）及防雷模块状态，记录计数器读数。\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实无上下文支持，如OTDR检测\",\n    \"evidence\": \"当发现光纤通道损耗增大或后向散射信号曲线上有大台阶时，应适当增加检查次数\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖了主要排查步骤\",\n    \"evidence\": \"确认防雷接地电阻是否符合标准（≤100Ω）。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[3]支持非相关句，[2]未支持抢修流程\",\n    \"evidence\": \"中继段光纤的损耗测量：1)仪表的测试状态应与前次的测试状态相同。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"citation_mismatch\",\n    \"overgeneralization\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881938,
+    "id": "chatcmpl-5932ee1d-8efa-9242-9407-dcff0e2c807d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 322,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3747,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4069
+    }
+  },
+  "usage_known": true
+}

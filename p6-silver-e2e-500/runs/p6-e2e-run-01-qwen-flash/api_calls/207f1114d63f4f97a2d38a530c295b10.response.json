@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:46.903664+08:00",
+  "conservative_cost_yuan": 0.0011583,
+  "error": null,
+  "latency_ms": 2339.9102000985295,
+  "list_price_estimate_yuan": 0.0007262999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确列出4.8.5对应设备端口安全要求。\",\n    \"evidence\": \"4.8.5. 设备端口安全要求 ......................................................................................... 47\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文，无额外编造。\",\n    \"evidence\": \"4.8.5. 设备端口安全要求 ......................................................................................... 47\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答问题所需条目编号。\",\n    \"evidence\": \"4.8.5. 设备端口安全要求 ......................................................................................... 47\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]准确对应该句内容。\",\n    \"evidence\": \"4.8.5. 设备端口安全要求 ......................................................................................... 47\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881964,
+    "id": "chatcmpl-53be174a-d812-9025-81fb-c132ace51b33",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 288,
+      "completion_tokens_details": null,
+      "prompt_tokens": 1962,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2250
+    }
+  },
+  "usage_known": true
+}

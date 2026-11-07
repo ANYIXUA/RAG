@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:40.317443+08:00",
+  "conservative_cost_yuan": 0.0015275999999999998,
+  "error": null,
+  "latency_ms": 4217.670800164342,
+  "list_price_estimate_yuan": 0.0010520999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持表—06为计价依据。\",\n    \"evidence\": \"表—06 械仪表使用清单与计价表 表格列：项目名称：；第；页；共；页\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"表—06 械仪表使用清单与计价表 表格列：项目名称：；第；页；共；页\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖计价表格、周期与金额信息。\",\n    \"evidence\": \"维护周期（年）和金额（元）等信息。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容。\",\n    \"evidence\": \"表—06 械仪表使用清单与计价表 表格列：项目名称：；第；页；共；页\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881896,
+    "id": "chatcmpl-47c581eb-badd-9256-a971-f3555750ed42",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 317,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3844,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4161
+    }
+  },
+  "usage_known": true
+}

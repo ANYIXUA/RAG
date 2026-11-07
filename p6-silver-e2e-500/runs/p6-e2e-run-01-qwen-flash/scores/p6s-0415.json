@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "机械仪表按5 年使用期（车辆为6 年），维修费为2%，残值3% 年使用费=（原值× 97%/5+原值× 2%）+维护仪表计量检定费",
+    "reason": "上下文明确支持计算公式与参数",
+    "score": 1
+  },
+  "case_id": "p6s-0415",
+  "citation_correctness": {
+    "evidence": "年使用费=（原值×97%÷5 + 原值×2%）+计量检定费。[1]",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "机械仪表按5 年使用期（车辆为6 年），维修费为2%，残值3%",
+    "reason": "涵盖使用期、维修费、残值及公式",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "年使用费=（原值×97%÷5 + 原值×2%）+计量检定费。[1]",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ea2ea52a64a14d4a8a44772a4b95c401",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

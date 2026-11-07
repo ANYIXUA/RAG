@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:57.546024+08:00",
+  "conservative_cost_yuan": 0.0034046999999999997,
+  "error": null,
+  "latency_ms": 9815.370700089261,
+  "list_price_estimate_yuan": 0.0019796999999999996,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出WH23116001调测基站系统（3个扇区以下）的综合单价为2134.08元，与问题‘一个扇区以下的调测基站系统’完全匹配，且该信息在原文中直接支持。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实均能在实际LLM上下文中找到对应来源。例如，2134.08元、3个扇区以下、包含人工费等均来自[1]；计量单位‘站’或‘扇区’也出自[1]；增量计价说明虽未在[1]中详细展开，但‘3个扇区以上每增加一个扇区’的规则在[1]中已有体现，因此可合理推断。所有陈述均有上下文支持。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\\n... WH23116002 3 个扇区以上每增加一个扇区 326.50 204.06 61.22 61.22 1.79\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问‘一个扇区以下的调测基站系统’的综合单价，回答准确提供了该价格，并补充了相关背景信息（如适用范围、费用构成、计量单位和增量规则），虽略超必要信息，但无遗漏关键条件或步骤，符合完整性要求。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个关键结论后均正确标注了引用编号[1]，且该编号对应的实际上下文片段[1]确实支持该句内容。例如，2134.08元、3个扇区以下、费用构成、计量单位及增量规则均在[1]中可查，引用准确无误。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的精确事实类问题，且上下文中有明确答案，无需拒答。模型已正确作答，故此项不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881307,
+    "id": "chatcmpl-3b1bec7f-fdd2-936b-aed3-70aa68a02c37",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 950,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3698,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4648
+    }
+  },
+  "usage_known": true
+}

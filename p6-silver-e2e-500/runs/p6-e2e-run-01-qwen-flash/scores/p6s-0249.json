@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "光网关终端应支持通过二维码实现放装零配置功能，在设备上展示张贴二维码标识，",
+    "reason": "回答与证据一致，覆盖核心功能。",
+    "score": 1
+  },
+  "case_id": "p6s-0249",
+  "citation_correctness": {
+    "evidence": "二维码内容以英文半角&连接，格式为字段=值&字段=值形式。[3]",
+    "reason": "引用编号与上下文匹配且支持所述内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "具备扫码直接连接该台设备Wi-Fi 并进行POST 配置的功能",
+    "reason": "涵盖关键参数与流程，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "二维码内容所有符号为英文半角；用“&”把所有字段连起来",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "430ed1f9e4ed48b7838f7b995c49d45a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

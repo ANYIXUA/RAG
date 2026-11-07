@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:58.729406+08:00",
+  "conservative_cost_yuan": 0.0007255499999999999,
+  "error": null,
+  "latency_ms": 1353.2059001736343,
+  "list_price_estimate_yuan": 0.0005695499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 家庭复合总线接入需设计合理组网方案并布放线路。[2]  \n2. 智能设备接入应通过适配常用协议完成联调与配置。[2]  \n3. 上层平台拓展依赖物联网接入业务管理平台支持。[2]  \n4. 可使用制图软件绘制功能拓扑图以实现可视化管理。[2]  \n5. 需掌握智能家居常用协议及网络基础知识。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880957,
+    "id": "chatcmpl-426802b7-c63c-981b-93e7-5d9eeddf8bc7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2757,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2861
+    }
+  },
+  "usage_known": true
+}

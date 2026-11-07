@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "（5）打印分辨率：大于300dpi；",
+    "reason": "答案与上下文一致，明确支持大于300dpi。",
+    "score": 1
+  },
+  "case_id": "p6s-0489",
+  "citation_correctness": {
+    "evidence": "（5）打印分辨率：大于300dpi；",
+    "reason": "引用[1]对应实际来源且支持该句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "（5）打印分辨率：大于300dpi；",
+    "reason": "完整覆盖问题所需信息，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "（5）打印分辨率：大于300dpi；",
+    "reason": "每项事实均来自上下文且无编造。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "469e115d87e1412b9876ca7fcdeb220e",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

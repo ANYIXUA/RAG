@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:54.357194+08:00",
+  "conservative_cost_yuan": 0.00248625,
+  "error": null,
+  "latency_ms": 5950.2695999108255,
+  "list_price_estimate_yuan": 0.00149325,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]明确指出：'因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。' 这与问题直接对应，且与silver_reference一致。\",\n    \"evidence\": \"8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每项事实均来自实际上下文[1]，且无额外编造内容。例如，'综合单价应予以调整'、'依据原清单价格变更'、'承包人提出并经确认'等均在原文中有据可循。\",\n    \"evidence\": \"8.4.7.6 ...其综合单价应予以调整。...根据原备品备件购置清单和机械仪表使用清单的价格进行调整；...由承包人根据维护作业变更情况，提出适当的费用变更，经发包人确认后调整。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"回答覆盖了核心处理方式（调整综合单价），但遗漏了关键条件：仅当工作量变化超出合同约定幅度时才需调整。虽然第1条提及‘超出合同约定幅度’，但未在其他要点中强调该前提，存在部分信息不完整风险。\",\n    \"evidence\": \"8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应到实际上下文片段[1]，且该片段支持所引用的每一句内容。无引用错误或自创编号。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第91页\\n定位信息：91\\n...8.4.7.6 因非承包人原因引起的工作量增减，该项工作量变化在合同约定幅度以内的，应执行原有的综合 单价；该项工作量变化在合同约定幅度以外的，其综合单价应予以调整。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的exact_fact类型，且上下文有清晰答案，无需拒答。模型已正确作答，故此维度不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881368,
+    "id": "chatcmpl-8f92a8db-b02c-96d0-b51e-8e0b570536c7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 662,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3335,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3997
+    }
+  },
+  "usage_known": true
+}

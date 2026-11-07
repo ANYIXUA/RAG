@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:21.109309+08:00",
+  "conservative_cost_yuan": 0.0015591,
+  "error": null,
+  "latency_ms": 2832.2212998755276,
+  "list_price_estimate_yuan": 0.0010895999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"单位与单价与上下文一致\",\n    \"evidence\": \"计量单位：工日、 站·次 维护分项作业\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH24103003 站址业主维系 站·次 次 38.30\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有条件\",\n    \"evidence\": \"站址业主维系:站址业主回访和满意度调查等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"站·次 次 38.30 23.94 7.18 7.18 0.21 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"correct_unit_and_price\",\n    \"proper_citation\",\n    \"complete_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881998,
+    "id": "chatcmpl-7041d9f3-a0b2-9720-85d0-a50a7fc95952",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 313,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4134,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4447
+    }
+  },
+  "usage_known": true
+}

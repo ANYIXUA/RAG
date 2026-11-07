@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:09.827057+08:00",
+  "input_token_upper_bound": 1225,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0196"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在智能家居系统部署中，若需实现有线与无线系统协同控制，应依据哪些技术规范进行设计与实施？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "502254b827b24180b830f3825f092bba",
+  "reserved_yuan": 0.0006125
+}

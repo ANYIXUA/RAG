@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:47.159739+08:00",
+  "input_token_upper_bound": 1189,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0456"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "家里总线控制设备老出毛病，咋排查？ 终端设备 设备信息 设备状态 故障原因 排查步骤 处理步骤 解决办法 现场处理建议"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "23469b28407541969b1227c9e338dd32",
+  "reserved_yuan": 0.0005945
+}

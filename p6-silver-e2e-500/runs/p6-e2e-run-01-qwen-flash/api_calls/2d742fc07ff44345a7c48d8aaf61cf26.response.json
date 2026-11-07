@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:40.300487+08:00",
+  "conservative_cost_yuan": 0.0008330999999999999,
+  "error": null,
+  "latency_ms": 1564.2126000020653,
+  "list_price_estimate_yuan": 0.0006635999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 丘陵地区人工工日消耗量按平原标准的1.2倍计取。[1]  \n2. 此系数适用于城区及丘陵地区综合单价调整。[1]  \n3. 拆除拉线人工工日按安装条目的0.6倍计取。[1]  \n4. 该规定出自《电信基础设施维护规程》第196页。[1]  \n5. 作业类型为单股拉线更换，适用此倍率。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881058,
+    "id": "chatcmpl-99530e01-6056-9303-9cc4-5fa369411721",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3294,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3407
+    }
+  },
+  "usage_known": true
+}

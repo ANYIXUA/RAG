@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "冬雨季维护作业增加费指防冻、保温、防雨防滑等措施及工效降低所增费用。[1]",
+    "reason": "准确描述费用定义与计算方式",
+    "score": 1
+  },
+  "case_id": "p6s-0232",
+  "citation_correctness": {
+    "evidence": "该费用属于措施项目费，需按实计列。[1]",
+    "reason": "引用编号与来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "具体金额依据人工费×费率（2.5%）计算得出。[3]",
+    "reason": "涵盖关键条件与计算逻辑",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "费率按2.5%计取，计算基础为人工费合计。[3]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "54b4846c3acd458fad092fd32aba99cf",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

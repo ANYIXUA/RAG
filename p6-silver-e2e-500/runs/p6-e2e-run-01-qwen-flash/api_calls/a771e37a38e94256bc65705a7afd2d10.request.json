@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:48.655470+08:00",
+  "input_token_upper_bound": 1209,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0105"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在城区，应急发电的时长以2小时为起点，超出部分如何计工日，同时机房土建零星维修是否包含防盗门更换？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "a771e37a38e94256bc65705a7afd2d10",
+  "reserved_yuan": 0.0006045
+}

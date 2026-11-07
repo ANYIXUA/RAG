@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:08.177949+08:00",
+  "conservative_cost_yuan": 0.00198255,
+  "error": null,
+  "latency_ms": 4498.203400056809,
+  "list_price_estimate_yuan": 0.00130155,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"数据与上下文一致，无歧义。\",\n    \"evidence\": \"WH23117001 安装美化天线罩 方柱形 729.60 456.00 136.80 136.80 消耗量 4.00 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"WH23117001 安装美化天线罩 方柱形 729.60 456.00 136.80 136.80 消耗量 4.00 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有问题要素，无遗漏。\",\n    \"evidence\": \"WH23117001 安装美化天线罩 方柱形 729.60 456.00 136.80 136.80 消耗量 4.00 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源片段。\",\n    \"evidence\": \"WH23117001 安装美化天线罩 方柱形 729.60 456.00 136.80 136.80 消耗量 4.00 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"correct_answer\",\n    \"accurate_citation\",\n    \"complete_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881983,
+    "id": "chatcmpl-530670bf-4f84-93a3-9a9c-82e55fd119a5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 454,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4137,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4591
+    }
+  },
+  "usage_known": true
+}

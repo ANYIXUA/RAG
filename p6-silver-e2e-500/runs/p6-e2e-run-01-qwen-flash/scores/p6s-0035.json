@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第207页\n定位信息：207\n... WH12018001 更换吊线保护装置 24.57 16.67 4.57 3.33 消耗量 0.10 0.10",
+    "reason": "实际LLM上下文[1]明确显示更换吊线保护装置的消耗量为0.10，与silver_reference一致，且该信息在原文中直接支持。",
+    "score": 1
+  },
+  "case_id": "p6s-0035",
+  "citation_correctness": {
+    "evidence": "[1] ... 消耗量 0.10 0.10\n[2] ... 消耗量 0.07 0.07\n[3] ... 更换吊线保护装置",
+    "reason": "所有引用编号[n]均正确对应实际上下文来源，且所引内容支持对应句子。例如[1]支持消耗量0.10，[2]支持对比数据，[3]支持项目名称。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "[1] ... 消耗量 0.10 0.10\n[1] ... WH12018001\n[1] ... 第207页\n[2] ... 消耗量 0.07 0.07\n[3] ... 更换吊线保护装置",
+    "reason": "回答完整覆盖了问题所需的核心信息：消耗量数值、单位、项目编码、来源页码，并对比了类似项（安装），无遗漏关键条件或步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[1] ... 消耗量 0.10 0.10\n[2] ... 消耗量 0.07 0.07\n[3] ... 更换吊线保护装置 米",
+    "reason": "每项事实均在实际上下文中找到对应支持。例如，消耗量0.10、单位米、项目编码WH12018001、来源第207页、与安装装置不同等，均有对应原文依据。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "b4d08fe03d014a3b9db05ffae1a4f65a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "无",
+    "reason": "问题可回答，且模型已给出明确答案，无需拒答，因此该维度不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

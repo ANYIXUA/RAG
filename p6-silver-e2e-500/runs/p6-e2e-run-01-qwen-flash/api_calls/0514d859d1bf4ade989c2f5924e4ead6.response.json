@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:51.576286+08:00",
+  "conservative_cost_yuan": 0.0008208,
+  "error": null,
+  "latency_ms": 1856.3284000847489,
+  "list_price_estimate_yuan": 0.0006272999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区直埋光缆线路徒步巡回的综合单价为108.02元/千米²次。[1]  \n2. 该单价适用于巡查警示牌歪斜或外力施工等发现的问题。[3]  \n3. 计量单位为千米²次，按实际维护次数计算费用。[3]  \n4. 执行标准依据表10.2.1.3中WH11003003项目编码。[1]  \n5. 人工费、管理费、利润均包含在综合单价内。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880949,
+    "id": "chatcmpl-61456e4c-5bc9-9db5-91bc-694b80b45376",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 129,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2892,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3021
+    }
+  },
+  "usage_known": true
+}

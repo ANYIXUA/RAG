@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:24.932699+08:00",
+  "conservative_cost_yuan": 0.0007647,
+  "error": null,
+  "latency_ms": 1251.4698999002576,
+  "list_price_estimate_yuan": 0.0005982,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 应急发电工作内容包括器材准备、发电、恢复现场及记录时间。[1]  \n2. 平原地区应急发电按实际次数和时长计，2小时以内按次计算。[2]  \n3. 发电操作需优先保障重要站点供电需求。[4]  \n4. 维护企业应配备专用器材与车辆，确保随时待命。[4]  \n5. 多故障时应遵循“先重点、后一般”原则处理。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881223,
+    "id": "chatcmpl-7f76dd0a-ca08-9dd9-a857-547964c600c7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2878,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2989
+    }
+  },
+  "usage_known": true
+}

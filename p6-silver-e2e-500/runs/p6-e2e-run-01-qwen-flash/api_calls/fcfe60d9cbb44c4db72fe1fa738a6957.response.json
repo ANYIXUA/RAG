@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:44.387819+08:00",
+  "conservative_cost_yuan": 0.0013584,
+  "error": null,
+  "latency_ms": 2801.697100047022,
+  "list_price_estimate_yuan": 0.0009639,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答符合上下文标准要求\",\n    \"evidence\": \"稳压设备安装应符合设备图纸及施工规范要求。[3]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"电源系统需检查双路供电与主备切换功能是否正常。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖安装关键点，无遗漏\",\n    \"evidence\": \"设备接地、线缆安装须符合相关施工标准。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"安装时应确保熔丝容量与设计图纸一致。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881961,
+    "id": "chatcmpl-4a7b7baf-160c-9a35-bd2f-2d3f39cec2ef",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 263,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3796,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4059
+    }
+  },
+  "usage_known": true
+}

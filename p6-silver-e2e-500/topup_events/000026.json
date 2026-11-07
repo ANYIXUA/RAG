@@ -1,0 +1,114 @@
+{
+  "previous_sha256": "13ff74020f04fdfcfb3927c7c4d60af8b002f4ec43c335b533674d4e7bb9b7b2",
+  "record": {
+    "batch": 13,
+    "candidates": [
+      {
+        "answer": "台 33749",
+        "evidence": [
+          {
+            "excerpt": "WHJY-020 光谱分析仪 台 33749",
+            "passage_id": "3c2858dbe1cd343a54ca2904"
+          }
+        ],
+        "question": "WHJY-020 光谱分析仪的台数是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "30 分钟续航",
+        "evidence": [
+          {
+            "excerpt": "WHJY-030 无人机 30 分钟续航、8km 传输 套 3512",
+            "passage_id": "3c2858dbe1cd343a54ca2904"
+          }
+        ],
+        "question": "无人机的续航时间是多少分钟？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "1.5t",
+        "evidence": [
+          {
+            "excerpt": "维护作业生产用车 1.5t 辆 83389",
+            "passage_id": "3c2858dbe1cd343a54ca2904"
+          }
+        ],
+        "question": "维护作业生产用车的吨位是多少？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0481",
+          "expected_behavior": "answer",
+          "generation_batch": 13,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271119,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "WHJY-020 光谱分析仪的台数是多少？",
+          "question_type": "exact_fact",
+          "reference_answer": "台 33749",
+          "source_chunk_ids": [
+            "3c2858dbe1cd343a54ca2904"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "3c2858dbe1cd343a54ca2904",
+              "excerpt": "WHJY-020 光谱分析仪 台 33749"
+            }
+          ],
+          "source_page": 162,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0482",
+          "expected_behavior": "answer",
+          "generation_batch": 13,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271119,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "维护作业生产用车的吨位是多少？",
+          "question_type": "exact_fact",
+          "reference_answer": "1.5t",
+          "source_chunk_ids": [
+            "3c2858dbe1cd343a54ca2904"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "3c2858dbe1cd343a54ca2904",
+              "excerpt": "维护作业生产用车 1.5t 辆 83389"
+            }
+          ],
+          "source_page": 162,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

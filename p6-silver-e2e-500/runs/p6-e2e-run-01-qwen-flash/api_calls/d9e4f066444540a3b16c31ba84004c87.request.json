@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:46.666372+08:00",
+  "input_token_upper_bound": 1226,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0313"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在山区，对直流拉远供电设备和太阳能光伏离网发电系统分别进行巡检，人工费各是多少元？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "d9e4f066444540a3b16c31ba84004c87",
+  "reserved_yuan": 0.000613
+}

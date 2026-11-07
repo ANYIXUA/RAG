@@ -1,0 +1,31 @@
+{
+  "previous_sha256": "c5cc84bf4a2c7a82ca12629dd2fc1a0b49832cd54d166c6081c18338bf774e2e",
+  "record": {
+    "batch": 44,
+    "candidates": [
+      {
+        "answer": "一般情况不宜超过85℃",
+        "evidence": [],
+        "question": "变压器温度计确保油不超过厂家允许范围，一般情况不宜超过多少度？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "应在380V +/-10%范围内",
+        "evidence": [],
+        "question": "交流配电设备中，输入的交流电压范围应在多少范围内？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "missing_evidence",
+        "status": "rejected"
+      },
+      {
+        "reason": "missing_evidence",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

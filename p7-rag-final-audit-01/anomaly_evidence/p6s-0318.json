@@ -1,0 +1,472 @@
+{
+  "case_id": "p6s-0318",
+  "question": "交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？",
+  "answer": "1. 交流配电设备输入电压检查属于季度维护内容。[1]  \n2. 整流模块输出电流不平衡度测试属于季度维护内容。[1]  \n3. 两项指标均在“季度”维护项目中明确列出。[1]  \n4. 检查要求为整流模块间输出电流不平衡度低于±5%。[1]  \n5. 两者均需在季度维护时核对并记录。[1]",
+  "silver_reference_answer": "是，交流配电电压范围与整流模块间输出电流不平衡度均属于季度维护内容。",
+  "silver_source_evidence": [
+    {
+      "chunk_id": "73cbecc1788e5f99763cf41a",
+      "excerpt": "2. 查看、记录核对设备参数：信号指示正常，无告警。测量核对交流输电 电压，输入的交流电压的范围应在380V +/-10%范围内。"
+    },
+    {
+      "chunk_id": "f18f80360faf91047b301b2d",
+      "excerpt": "12. 检查各整流模块的负载均分性能。各模块超过半载时，整流模块之间 输出电流不平衡度应低于±5%（节能模式开启除外）。"
+    }
+  ],
+  "original_score": {
+    "answer_correctness": {
+      "evidence": "两项指标均在“季度”维护项目中明确列出。[1]",
+      "reason": "上下文明确列出两项指标均属季度维护",
+      "score": 1
+    },
+    "case_id": "p6s-0318",
+    "citation_correctness": {
+      "evidence": "整流模块之间输出电流不平衡度应低于±5%。[1]",
+      "reason": "部分引用编号不匹配实际来源",
+      "score": 0.5
+    },
+    "completeness": {
+      "evidence": "检查要求为整流模块间输出电流不平衡度低于±5%。[1]",
+      "reason": "涵盖问题所有条件与步骤",
+      "score": 1
+    },
+    "confidence": "high",
+    "correctness_excluded": false,
+    "faithfulness": {
+      "evidence": "整流模块之间输出电流不平衡度应低于±5%。[1]",
+      "reason": "每项事实均有对应上下文支持",
+      "score": 1
+    },
+    "flags": [
+      "citation_mismatch"
+    ],
+    "hallucination_suspected": false,
+    "judge_api_call_id": "8e10889e88fd40d792d54ddd77c8f72f",
+    "judge_attempts": 1,
+    "judge_model": "qwen-flash",
+    "judge_same_model_as_generation": true,
+    "needs_human_review": false,
+    "no_answer_behavior": {
+      "evidence": "",
+      "reason": "问题可回答，无需拒答",
+      "score": null
+    },
+    "no_answer_provisional": false,
+    "prior_errors": [],
+    "question_type": "multi_condition",
+    "score_state": "success",
+    "self_evaluation_bias": true
+  },
+  "original_diagnostic": {
+    "actual_prompt_chars": 3805,
+    "case_id": "p6s-0318",
+    "citation_index_and_context_valid_count": 5,
+    "citation_index_valid_count": 5,
+    "citation_markers": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "context_verification": "full normalized Silver quotation in actual rendered request; absence does not rule out alternative support",
+    "diagnosis_is_exploratory": true,
+    "primary_failure_bucket": "6_citation_mismatch",
+    "question_type": "multi_condition",
+    "reference_all_quotes_in_actual_prompt": false,
+    "reference_all_retrieved": false,
+    "reference_chunk_ids": [
+      "73cbecc1788e5f99763cf41a",
+      "f18f80360faf91047b301b2d"
+    ],
+    "reference_quote_context_hit_ids": [
+      "f18f80360faf91047b301b2d"
+    ],
+    "retrieved_chunk_ids": [
+      "24eee89226cb4ed3d2cf2167",
+      "af73a48f2b73692fcdc056b5",
+      "f18f80360faf91047b301b2d",
+      "f91d0554c4ebdc49ac3c94bc"
+    ],
+    "unanswerable_provisional": false
+  },
+  "actual_generation_api_call_id": "697b01928a5346c78682db5746afe1ce",
+  "actual_generation_prompt": "# 角色与记忆\n你是一台专门的“装维业务知识问答助手”。\n\n# 核心原则（严格遵守）\n1. **限定范围：** 只能基于提供的检索上下文回答问题，若上下文中没有答案，必须明确说明不知道，并提示补充信息或转人工，严禁凭空编造。\n2. **字数限制：** 回答必须控制在 5 条要点以内，且每条要点不得超过 40 个字。\n3. **精准引用：** 回答中的每个关键结论，必须使用如 [1]、[2] 的编号在文末或句末注明来源。引用编号只能来源于提供的上下文片段，不得自创。\n\n# 正确示例 (Good Case)\n【输入】\n用户问题：光猫红灯闪烁怎么处理？\n检索上下文：[1]光猫红灯闪烁通常因为光缆断或光功率低。[2]应先检查尾纤是否插紧。[3]若无法恢复，需上报系统转人工派发修障单。\n\n【输出】\n1. 光猫红灯闪烁通常是光缆断或光功率过低导致。[1]\n2. 处置时应首先检查尾纤是否已经插紧。[2]\n3. 若检查后仍无法恢复，请明确上报系统转人工处理。[3]\n\n# 避坑检查（模型自检项）\n- 严禁出现无引用编号的结论。\n- 严禁出现诸如“您可以尝试重启”等上下文中不存在的盲猜建议。\n---\n# 待处理任务\n\n【用户原始问题】\n交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？\n\n【增强上下文】\n\"\"\"\n请求ID：456405e6fb7e4293a8a5deb37e08447b\n会话ID：p6-e2e-run01-qwen-flash-p6s-0318-attempt1\n租户ID：未指定\n用户ID：未指定\n权限标签：未指定\n用户原始问题：交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？\n归一化查询：交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？\n是否跟进问答：否\n上下文改写查询：交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？\n上下文关键术语：无\n改写查询：交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？\n检索查询：交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题\n同义词扩展：终端设备, 设备信息, 设备状态\n语义扩展：业务说明, 知识库, 常见问题\n识别意图：general_knowledge\n\n会话历史摘要：\n无\n\n工具调用结果：\n无\n\n检索到的相关文档：\n[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第70页\n定位信息：70\n综合分：0.802708\n召回综合分：0.802708\n重排分：无\n语义分：0.718154\nBM25 原始分：84.086967\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护规程 > 第70页 页码：70 T/CAICI XXXX—XXXX 64 直流配电 系统 高频开关电 源 季度 1. 设备外观检查及清洁。 2. 查看、记录核对设备参数：均、浮充电压，限流值、电池容量、过压 保护值、欠压保护值、二次下电值、电池保护电压等、温度补偿等参 数设置正确，如变化需立即核实更正。 3. 检查各种自动、告警和保护功能均应正常，无故障和报警信息。 4. 测量检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值 （80 摄氏度）。测量汇流排的温升小于规定值（80 摄氏度）。 5. 检查继电器、断路器、风扇运行正常。 6. 检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7. 检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8. 检查各种开关、熔断器、插接件、接线端子等部位，接触良好，无电 蚀。 9. 检查接地保护，测量地线电阻（干燥季节），机壳应有良好的接地。 10. 检查充放电电路运行正常。 11. 检查整流模块工作状态，风扇运转正常，容量满足设备负载要求。 12. 检查各整流模块的负载均分性能。各模块超过半载时，整流模块之间 输出电流不平衡度应低于±5%（节能模式开启除外）。 蓄电池 季度 1. 检查电池组表面干净无灰尘，电池壳体有无渗漏和变形，极柱、安全 阀周围无酸雾酸液溢出。 2. 检查电池极柱、连接条，无氧化或腐蚀现象，连接牢固、手拧无松动。 3. 检查电池组架，无腐蚀，耐酸漆无脱落、剥皮，稳固、地脚螺丝无松 动。 4. 测量电池组总电压及每个单体电池端电压，做好记录。单体电池浮充 电压要求范围2.23V～2. 28V，端电压平均值±0.05V，电池组浮充电 压54V～-54.5V（－48V 系统），27V～27.3V（24V 系统）。如发现不 符合要求的蓄电池需及时上报进行处理。 每年 1. 对蓄电池做核对性放电，并将放出电量进行记录存档，估算后备时长。 2. 测量每个单体电池的内阻/电导值，测试数据保存分析。 不间断供 电系统 UPS 整流器、逆变 器、交流静态 开关、交流配 电设备、直流 季度 1. 设备外观检查及清洁。 2. 查看、记录核对参数：均、浮充电压，限流值、电池容量、过压保护 值、欠压保护值、电池保护电压等、温度补偿等参数设置正确，如变 化需立即核实更正。 3. 检查各种自动、旁路、告警和保护功能均应正常，无故障和报警信息。 检查防雷保护。\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第48页\n定位信息：48\n综合分：0.732406\n召回综合分：0.732406\n重排分：无\n语义分：0.710955\nBM25 原始分：65.794558\nBM25 归一化分：0.782458\n内容：章节：电信基础设施维护规程 > 第48页 页码：48 T/CAICI XXXX—XXXX 42 2.直流远程供电设备检查： （1）检查设备运行，设备指示灯显示正常。 （2）测量输出电压和电流，在正常范围。 （3）检查防雷保护及保护接地，连接牢固。防雷器损坏需立即更换。 （4）外箱防水检查，螺丝紧固，密闭无漏水。 （5）清洁设备。 3.线缆检查： （1）检查线缆环境是否存在安全隐患。 （2）检查供电线缆外皮，完好无老化破损，绑扎牢固安全可靠。 （3）线缆和设备端口连接可靠，接地牢固。 不间断供 电系统 UPS 整流器、逆 变器、交流 静态开关、 交流配电设 备、直流（DC －DC）变换 器 季度 1.设备外观检查及清洁。 2.核对记录设备参数，在规定范围内，无故障和报警信息。 3.自动、旁路、告警和保护功能正常。 4.检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值。测量汇 流排的温升小于规定值。 5.检查开关、熔断器、继电器、断路器、插接器运行正常。接线端子接触良 好，无电蚀。 6.检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7.检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8.检查充放电电路运行正常。 9.检查整流模块工作状态，风扇运转正常。容量满足设备负载要求。 发电 设备 燃油发电 机组（固定 和移动） 月 1.检查和清洁外观。机组上的部件应完好无损，接线牢靠，仪表齐全、指示 准确，无螺丝松动。 2.检查发动机系统：冷冻液和机油液面正常，不足应及时补充；燃油充足。 启动电池电压正常，不足应补充充电，线路及接线端子紧固、接触良好无锈 蚀。 3.检查发电机系统：电机滑环、激磁机的换向器和电刷接触良好。发电机和 控制配电屏连接线连接可靠，熔丝规格符合标定电流。 4.空载运行检查，空载试机3～5min，无漏油、漏水、漏气、漏电现象，交流 电压输出正常。 5.加载试机10~15min。\n\n[3] 来源：电信基础设施维护规程.pdf\n引用标签：[3]\n标题：第71页\n定位信息：71\n综合分：0.690134\n召回综合分：0.690134\n重排分：无\n语义分：0.681539\nBM25 原始分：59.717552\nBM25 归一化分：0.710188\n内容：章节：电信基础设施维护规程 > 第71页 页码：71 T/CAICI XXXX—XXXX 65 （DC－DC）变 换器 4. 测量检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值 （80 摄氏度）。测量汇流排的温升小于规定值（80 摄氏度）。 5. 检查继电器、断路器、风扇和电容运行正常。 6. 检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7. 检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8. 检查各种开关、熔断器、插接件、接线端子等部位，接触良好，无电 蚀。检查接地保护，测量\n\n[上下文已截断，请优先依据已保留片段回答。]\n\"\"\"",
+  "actual_source_labels": [
+    1,
+    2,
+    3
+  ],
+  "sources": [
+    {
+      "index": 1,
+      "chunk_id": "f18f80360faf91047b301b2d",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 70,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 427,
+      "text": "章节：电信基础设施维护规程 > 第70页 页码：70 T/CAICI XXXX—XXXX 64 直流配电 系统 高频开关电 源 季度 1. 设备外观检查及清洁。 2. 查看、记录核对设备参数：均、浮充电压，限流值、电池容量、过压 保护值、欠压保护值、二次下电值、电池保护电压等、温度补偿等参 数设置正确，如变化需立即核实更正。 3. 检查各种自动、告警和保护功能均应正常，无故障和报警信息。 4. 测量检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值 （80 摄氏度）。测量汇流排的温升小于规定值（80 摄氏度）。 5. 检查继电器、断路器、风扇运行正常。 6. 检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7. 检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8. 检查各种开关、熔断器、插接件、接线端子等部位，接触良好，无电 蚀。 9. 检查接地保护，测量地线电阻（干燥季节），机壳应有良好的接地。 10. 检查充放电电路运行正常。 11. 检查整流模块工作状态，风扇运转正常，容量满足设备负载要求。 12. 检查各整流模块的负载均分性能。各模块超过半载时，整流模块之间 输出电流不平衡度应低于±5%（节能模式开启除外）。 蓄电池 季度 1. 检查电池组表面干净无灰尘，电池壳体有无渗漏和变形，极柱、安全 阀周围无酸雾酸液溢出。 2. 检查电池极柱、连接条，无氧化或腐蚀现象，连接牢固、手拧无松动。 3. 检查电池组架，无腐蚀，耐酸漆无脱落、剥皮，稳固、地脚螺丝无松 动。 4. 测量电池组总电压及每个单体电池端电压，做好记录。单体电池浮充 电压要求范围2.23V～2. 28V，端电压平均值±0.05V，电池组浮充电 压54V～-54.5V（－48V 系统），27V～27.3V（24V 系统）。如发现不 符合要求的蓄电池需及时上报进行处理。 每年 1. 对蓄电池做核对性放电，并将放出电量进行记录存档，估算后备时长。 2. 测量每个单体电池的内阻/电导值，测试数据保存分析。 不间断供 电系统 UPS 整流器、逆变 器、交流静态 开关、交流配 电设备、直流 季度 1. 设备外观检查及清洁。 2. 查看、记录核对参数：均、浮充电压，限流值、电池容量、过压保护 值、欠压保护值、电池保护电压等、温度补偿等参数设置正确，如变 化需立即核实更正。 3. 检查各种自动、旁路、告警和保护功能均应正常，无故障和报警信息。 检查防雷保护。"
+    },
+    {
+      "index": 2,
+      "chunk_id": "af73a48f2b73692fcdc056b5",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 48,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 314,
+      "text": "章节：电信基础设施维护规程 > 第48页 页码：48 T/CAICI XXXX—XXXX 42 2.直流远程供电设备检查： （1）检查设备运行，设备指示灯显示正常。 （2）测量输出电压和电流，在正常范围。 （3）检查防雷保护及保护接地，连接牢固。防雷器损坏需立即更换。 （4）外箱防水检查，螺丝紧固，密闭无漏水。 （5）清洁设备。 3.线缆检查： （1）检查线缆环境是否存在安全隐患。 （2）检查供电线缆外皮，完好无老化破损，绑扎牢固安全可靠。 （3）线缆和设备端口连接可靠，接地牢固。 不间断供 电系统 UPS 整流器、逆 变器、交流 静态开关、 交流配电设 备、直流（DC －DC）变换 器 季度 1.设备外观检查及清洁。 2.核对记录设备参数，在规定范围内，无故障和报警信息。 3.自动、旁路、告警和保护功能正常。 4.检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值。测量汇 流排的温升小于规定值。 5.检查开关、熔断器、继电器、断路器、插接器运行正常。接线端子接触良 好，无电蚀。 6.检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7.检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8.检查充放电电路运行正常。 9.检查整流模块工作状态，风扇运转正常。容量满足设备负载要求。 发电 设备 燃油发电 机组（固定 和移动） 月 1.检查和清洁外观。机组上的部件应完好无损，接线牢靠，仪表齐全、指示 准确，无螺丝松动。 2.检查发动机系统：冷冻液和机油液面正常，不足应及时补充；燃油充足。 启动电池电压正常，不足应补充充电，线路及接线端子紧固、接触良好无锈 蚀。 3.检查发电机系统：电机滑环、激磁机的换向器和电刷接触良好。发电机和 控制配电屏连接线连接可靠，熔丝规格符合标定电流。 4.空载运行检查，空载试机3～5min，无漏油、漏水、漏气、漏电现象，交流 电压输出正常。 5.加载试机10~15min。"
+    },
+    {
+      "index": 3,
+      "chunk_id": "24eee89226cb4ed3d2cf2167",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 71,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": false,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 64,
+      "text": "章节：电信基础设施维护规程 > 第71页 页码：71 T/CAICI XXXX—XXXX 65 （DC－DC）变 换器 4. 测量检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值 （80 摄氏度）。测量汇流排的温升小于规定值（80 摄氏度）。 5. 检查继电器、断路器、风扇和电容运行正常。 6. 检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7. 检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8. 检查各种开关、熔断器、插接件、接线端子等部位，接触良好，无电 蚀。检查接地保护，测量地线电阻（干燥季节），机壳应有良好的接 地。 9. 检查充放电电路运行正常。 10. 检查整流模块工作状态，风扇运转正常。容量满足设备负载要求。 11. 检查UPS 是否处在市电逆变状态，记录UPS 的输入输出电压、电流及 负载百分比。 蓄电池 季度 1. 按照直流配电系统蓄电池维护内容维护。 发电 设备 燃油发电 机组（固定和 移动） 月 1. 检查和清洁外观。机组上的部件应完好无损，接线牢靠，仪表齐全、指 示准确，无螺丝松动。 2. 检查发动机系统：冷冻液和机油液面正常，不足应及时补充；燃油充足。 启动电池电压正常，不足应补充充电，线路及接线端子紧固、接触良好 无锈蚀。 3. 检查发电机系统：电机滑环、激磁机的换向器和电刷接触良好。发电机 和控制配电屏连接线连接可靠，熔丝规格符合标定电流。 4. 空载运行检查，空载试机3～5min，无漏油、漏水、漏气、漏电（简称 四漏）现象，交流电压输出正常。 5. 加载试机10~15min。 6. 检查保护接地完好。 按需 1. 一级技术保养。每累计运转100 小时进行一次。 （1）清洁机油、空气、燃油滤清器网及补充新机油。 （2）检查调整风扇皮带松紧度。 （3）检查调速机构全部运动部分及注油。 （4）检查启动蓄电池。 （5）检查油泵、气门、摇臂润滑情况及补充或更换润滑油。 （6）气门间隙检查调整 2. 二级技术保养。每累计运转150～300 小时进行一次 （1）清洗燃油箱、燃油滤清器、输油管。 （2）检查喷油泵、喷油器运转情况及调整，更换喷油头。 （3）清洗润滑器及换油。 （4）检查气门、排气管及清除积炭、烟灰。 （5）检查连杆轴承配气机构、冷却水泵、调速器等。"
+    },
+    {
+      "index": 4,
+      "chunk_id": "f91d0554c4ebdc49ac3c94bc",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 47,
+      "present_label_in_actual_prompt": false,
+      "full_source_text_in_actual_prompt": false,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 439,
+      "text": "章节：电信基础设施维护规程 > 第47页 页码：47 T/CAICI XXXX—XXXX 41 直流配电 系统 高频 开关电源 季度 1.设备外观检查、清洁。 2.核对记录设备参数，在规定范围内，无故障和报警信息 3.自动、告警和保护功能正常。 4.测量检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值。测 量汇流排的温升小于规定值。 5.检查继电器、断路器、风扇运行正常。 6.检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7.检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8.检查各种开关、熔断器、插接件、接线端子等部位，接触良好，无电蚀。 9.检查接地保护，测量地线电阻（干燥季节），机壳应有良好的接地。 10.检查充放电电路运行正常。 11.检查整流模块工作状态，风扇运转正常，容量满足设备负载要求。 12.检查各整流模块的负载均分性能。 蓄电池 季度 1.检查电池组表面干净无灰尘，电池壳体有无渗漏和变形，极柱、安全阀周 围无酸雾酸液溢出。 2.检查电池极柱、连接条，无氧化或腐蚀现象，连接牢固、手拧无松动。 3.检查电池组架，无腐蚀，耐酸漆无脱落、剥皮，稳固、地脚螺丝无松动。 4.测量电池组总电压及每个单体电池端电压，做好记录。发现不符合要求的 蓄电池需及时上报进行处理。 年 1.对蓄电池做核对性放电，并将放出电量进行记录存档，估算后备时长。 2.测量分析每个单体电池的内阻和电导值。 直流 拉远供电 季度 1.直流端局设备检查 （1）检查各种告警和保护功能，正常。告警信息处理。 （2）测量检查直流熔断器和断路器，压降或温升小于规定值。 （3）检查接地保护，测量地线电阻，机壳应有良好的接地。 （4）检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。接线端子 接触良好，无电蚀。 （5）检查接地防雷模块，记录工作状态，损坏需立即更换。 （6）检查设备散热风扇，运转正常。 （7）清洁设备"
+    }
+  ],
+  "retrieval_observation_summary": [
+    {
+      "kind": "search",
+      "request": {
+        "bm25_weight": 0.3,
+        "candidate_k": 20,
+        "keyword_weight": 0.3,
+        "min_score": 0.05,
+        "mode": "hybrid",
+        "permission_tags": [],
+        "query_text": "交流配电设备的输入电压应在380V±10%范围内，同时直流系统中整流模块间输出电流不平衡度应低于±5%，这两个技术指标是否均属于季度维护内容？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题",
+        "relative_score_threshold": 0.35,
+        "semantic_weight": 0.7,
+        "tenant_id": null,
+        "top_k": 4
+      },
+      "results": [
+        {
+          "bm25_score": 84.08696717299647,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "f18f80360faf91047b301b2d",
+            "metadata": {
+              "block_id": "blk_4091da891e447ed0b14b",
+              "block_index": 69,
+              "block_type": "paragraph",
+              "business_module": "设备维护",
+              "chunk_index": 69,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 83,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第70页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_133ec99452181c9b8c9e",
+              "page_number": 70,
+              "page_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "parent_block_id": "blk_e8b24a35aa5e3a4e20fb",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_e8b24a35aa5e3a4e20fb",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第70页"
+              ],
+              "section_title": "第70页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_4091da891e447ed0b14b"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第70页 页码：70 T/CAICI XXXX—XXXX 64 直流配电 系统 高频开关电 源 季度 1. 设备外观检查及清洁。 2. 查看、记录核对设备参数：均、浮充电压，限流值、电池容量、过压 保护值、欠压保护值、二次下电值、电池保护电压等、温度补偿等参 数设置正确，如变化需立即核实更正。 3. 检查各种自动、告警和保护功能均应正常，无故障和报警信息。 4. 测量检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值 （80 摄氏度）。测量汇流排的温升小于规定值（80 摄氏度）。 5. 检查继电器、断路器、风扇运行正常。 6. 检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7. 检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8. 检查各种开关、熔断器、插接件、接线端子等部位，接触良好，无电 蚀。 9. 检查接地保护，测量地线电阻（干燥季节），机壳应有良好的接地。 10. 检查充放电电路运行正常。 11. 检查整流模块工作状态，风扇运转正常，容量满足设备负载要求。 12. 检查各整流模块的负载均分性能。各模块超过半载时，整流模块之间 输出电流不平衡度应低于±5%（节能模式开启除外）。 蓄电池 季度 1. 检查电池组表面干净无灰尘，电池壳体有无渗漏和变形，极柱、安全 阀周围无酸雾酸液溢出。 2. 检查电池极柱、连接条，无氧化或腐蚀现象，连接牢固、手拧无松动。 3. 检查电池组架，无腐蚀，耐酸漆无脱落、剥皮，稳固、地脚螺丝无松 动。 4. 测量电池组总电压及每个单体电池端电压，做好记录。单体电池浮充 电压要求范围2.23V～2. 28V，端电压平均值±0.05V，电池组浮充电 压54V～-54.5V（－48V 系统），27V～27.3V（24V 系统）。如发现不 符合要求的蓄电池需及时上报进行处理。 每年 1. 对蓄电池做核对性放电，并将放出电量进行记录存档，估算后备时长。 2. 测量每个单体电池的内阻/电导值，测试数据保存分析。 不间断供 电系统 UPS 整流器、逆变 器、交流静态 开关、交流配 电设备、直流 季度 1. 设备外观检查及清洁。 2. 查看、记录核对参数：均、浮充电压，限流值、电池容量、过压保护 值、欠压保护值、电池保护电压等、温度补偿等参数设置正确，如变 化需立即核实更正。 3. 检查各种自动、旁路、告警和保护功能均应正常，无故障和报警信息。 检查防雷保护。"
+          },
+          "keyword_score": 1.0,
+          "normalized_bm25_score": 1.0,
+          "rerank_score": null,
+          "retrieval_score": 0.8027081247916108,
+          "score": 0.8027081247916108,
+          "semantic_score": 0.7181544639880155
+        },
+        {
+          "bm25_score": 65.79455755681258,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "af73a48f2b73692fcdc056b5",
+            "metadata": {
+              "block_id": "blk_294e1b0655b76b5102ef",
+              "block_index": 47,
+              "block_type": "paragraph",
+              "business_module": "设备维护",
+              "chunk_index": 47,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 55,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第48页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_1650f25a3e16ce265419",
+              "page_number": 48,
+              "page_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "parent_block_id": "blk_591af4e23627bdad492e",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_591af4e23627bdad492e",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第48页"
+              ],
+              "section_title": "第48页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_294e1b0655b76b5102ef"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第48页 页码：48 T/CAICI XXXX—XXXX 42 2.直流远程供电设备检查： （1）检查设备运行，设备指示灯显示正常。 （2）测量输出电压和电流，在正常范围。 （3）检查防雷保护及保护接地，连接牢固。防雷器损坏需立即更换。 （4）外箱防水检查，螺丝紧固，密闭无漏水。 （5）清洁设备。 3.线缆检查： （1）检查线缆环境是否存在安全隐患。 （2）检查供电线缆外皮，完好无老化破损，绑扎牢固安全可靠。 （3）线缆和设备端口连接可靠，接地牢固。 不间断供 电系统 UPS 整流器、逆 变器、交流 静态开关、 交流配电设 备、直流（DC －DC）变换 器 季度 1.设备外观检查及清洁。 2.核对记录设备参数，在规定范围内，无故障和报警信息。 3.自动、旁路、告警和保护功能正常。 4.检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值。测量汇 流排的温升小于规定值。 5.检查开关、熔断器、继电器、断路器、插接器运行正常。接线端子接触良 好，无电蚀。 6.检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7.检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8.检查充放电电路运行正常。 9.检查整流模块工作状态，风扇运转正常。容量满足设备负载要求。 发电 设备 燃油发电 机组（固定 和移动） 月 1.检查和清洁外观。机组上的部件应完好无损，接线牢靠，仪表齐全、指示 准确，无螺丝松动。 2.检查发动机系统：冷冻液和机油液面正常，不足应及时补充；燃油充足。 启动电池电压正常，不足应补充充电，线路及接线端子紧固、接触良好无锈 蚀。 3.检查发电机系统：电机滑环、激磁机的换向器和电刷接触良好。发电机和 控制配电屏连接线连接可靠，熔丝规格符合标定电流。 4.空载运行检查，空载试机3～5min，无漏油、漏水、漏气、漏电现象，交流 电压输出正常。 5.加载试机10~15min。"
+          },
+          "keyword_score": 0.7824584447367454,
+          "normalized_bm25_score": 0.7824584447367454,
+          "rerank_score": null,
+          "retrieval_score": 0.7324057552224095,
+          "score": 0.7324057552224095,
+          "semantic_score": 0.7109546025734084
+        },
+        {
+          "bm25_score": 59.71755230070118,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "24eee89226cb4ed3d2cf2167",
+            "metadata": {
+              "block_id": "blk_f2b2d884118d1f205669",
+              "block_index": 70,
+              "block_type": "paragraph",
+              "business_module": "设备维护",
+              "chunk_index": 70,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 78,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第71页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_c2ee5a42922f4d6a6e37",
+              "page_number": 71,
+              "page_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "parent_block_id": "blk_133ec99452181c9b8c9e",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_133ec99452181c9b8c9e",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第71页"
+              ],
+              "section_title": "第71页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_f2b2d884118d1f205669"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第71页 页码：71 T/CAICI XXXX—XXXX 65 （DC－DC）变 换器 4. 测量检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值 （80 摄氏度）。测量汇流排的温升小于规定值（80 摄氏度）。 5. 检查继电器、断路器、风扇和电容运行正常。 6. 检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7. 检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8. 检查各种开关、熔断器、插接件、接线端子等部位，接触良好，无电 蚀。检查接地保护，测量地线电阻（干燥季节），机壳应有良好的接 地。 9. 检查充放电电路运行正常。 10. 检查整流模块工作状态，风扇运转正常。容量满足设备负载要求。 11. 检查UPS 是否处在市电逆变状态，记录UPS 的输入输出电压、电流及 负载百分比。 蓄电池 季度 1. 按照直流配电系统蓄电池维护内容维护。 发电 设备 燃油发电 机组（固定和 移动） 月 1. 检查和清洁外观。机组上的部件应完好无损，接线牢靠，仪表齐全、指 示准确，无螺丝松动。 2. 检查发动机系统：冷冻液和机油液面正常，不足应及时补充；燃油充足。 启动电池电压正常，不足应补充充电，线路及接线端子紧固、接触良好 无锈蚀。 3. 检查发电机系统：电机滑环、激磁机的换向器和电刷接触良好。发电机 和控制配电屏连接线连接可靠，熔丝规格符合标定电流。 4. 空载运行检查，空载试机3～5min，无漏油、漏水、漏气、漏电（简称 四漏）现象，交流电压输出正常。 5. 加载试机10~15min。 6. 检查保护接地完好。 按需 1. 一级技术保养。每累计运转100 小时进行一次。 （1）清洁机油、空气、燃油滤清器网及补充新机油。 （2）检查调整风扇皮带松紧度。 （3）检查调速机构全部运动部分及注油。 （4）检查启动蓄电池。 （5）检查油泵、气门、摇臂润滑情况及补充或更换润滑油。 （6）气门间隙检查调整 2. 二级技术保养。每累计运转150～300 小时进行一次 （1）清洗燃油箱、燃油滤清器、输油管。 （2）检查喷油泵、喷油器运转情况及调整，更换喷油头。 （3）清洗润滑器及换油。 （4）检查气门、排气管及清除积炭、烟灰。 （5）检查连杆轴承配气机构、冷却水泵、调速器等。"
+          },
+          "keyword_score": 0.710187967391441,
+          "normalized_bm25_score": 0.710187967391441,
+          "rerank_score": null,
+          "retrieval_score": 0.6901335217501247,
+          "score": 0.6901335217501247,
+          "semantic_score": 0.6815387593324177
+        },
+        {
+          "bm25_score": 48.0615454799209,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "f91d0554c4ebdc49ac3c94bc",
+            "metadata": {
+              "block_id": "blk_fb6fd7d101bc55b35229",
+              "block_index": 46,
+              "block_type": "paragraph",
+              "business_module": "设备维护",
+              "chunk_index": 46,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 48,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第47页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_591af4e23627bdad492e",
+              "page_number": 47,
+              "page_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "parent_block_id": "blk_c834a1ee62b7ff33c5d6",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_c834a1ee62b7ff33c5d6",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第47页"
+              ],
+              "section_title": "第47页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_fb6fd7d101bc55b35229"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第47页 页码：47 T/CAICI XXXX—XXXX 41 直流配电 系统 高频 开关电源 季度 1.设备外观检查、清洁。 2.核对记录设备参数，在规定范围内，无故障和报警信息 3.自动、告警和保护功能正常。 4.测量检查直流熔断器，卡口紧固无松动，测量压降或温升小于规定值。测 量汇流排的温升小于规定值。 5.检查继电器、断路器、风扇运行正常。 6.检查接地防雷设备及各避雷模块，记录工作状态，损坏需立即更换。 7.检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。 8.检查各种开关、熔断器、插接件、接线端子等部位，接触良好，无电蚀。 9.检查接地保护，测量地线电阻（干燥季节），机壳应有良好的接地。 10.检查充放电电路运行正常。 11.检查整流模块工作状态，风扇运转正常，容量满足设备负载要求。 12.检查各整流模块的负载均分性能。 蓄电池 季度 1.检查电池组表面干净无灰尘，电池壳体有无渗漏和变形，极柱、安全阀周 围无酸雾酸液溢出。 2.检查电池极柱、连接条，无氧化或腐蚀现象，连接牢固、手拧无松动。 3.检查电池组架，无腐蚀，耐酸漆无脱落、剥皮，稳固、地脚螺丝无松动。 4.测量电池组总电压及每个单体电池端电压，做好记录。发现不符合要求的 蓄电池需及时上报进行处理。 年 1.对蓄电池做核对性放电，并将放出电量进行记录存档，估算后备时长。 2.测量分析每个单体电池的内阻和电导值。 直流 拉远供电 季度 1.直流端局设备检查 （1）检查各种告警和保护功能，正常。告警信息处理。 （2）测量检查直流熔断器和断路器，压降或温升小于规定值。 （3）检查接地保护，测量地线电阻，机壳应有良好的接地。 （4）检查柜间布线，整齐，绝缘线无老化，与连接部件连接紧固。接线端子 接触良好，无电蚀。 （5）检查接地防雷模块，记录工作状态，损坏需立即更换。 （6）检查设备散热风扇，运转正常。 （7）清洁设备"
+          },
+          "keyword_score": 0.5715694963886782,
+          "normalized_bm25_score": 0.5715694963886782,
+          "rerank_score": null,
+          "retrieval_score": 0.6792571517470286,
+          "score": 0.6792571517470286,
+          "semantic_score": 0.7254090040434645
+        }
+      ]
+    }
+  ],
+  "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0318.json",
+  "trace_sha256": "1a7f758aebbcf97f18c0bce2f906acbc39fc17cf7ffdf5b55e4664ceb443a624"
+}

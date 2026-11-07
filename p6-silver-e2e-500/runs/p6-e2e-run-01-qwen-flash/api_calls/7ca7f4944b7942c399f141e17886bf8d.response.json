@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:01.025278+08:00",
+  "conservative_cost_yuan": 0.0005885999999999999,
+  "error": null,
+  "latency_ms": 840.3098999988288,
+  "list_price_estimate_yuan": 0.0005061,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 人井清淤人工消耗量为技工0.42工日、普工0.85工日。[2]  \n2. 临时抽水积水场景人工消耗量为0.25工日。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881020,
+    "id": "chatcmpl-309ecc67-2f53-9ab3-8f28-0769917ef2a8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 55,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2824,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2879
+    }
+  },
+  "usage_known": true
+}

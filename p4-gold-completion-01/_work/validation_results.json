@@ -1,0 +1,385 @@
+{
+  "status": "passed",
+  "checks_passed": 35,
+  "checks_total": 35,
+  "checks": [
+    {
+      "check": "protected_files_unchanged",
+      "passed": true,
+      "details": {
+        "files_checked": 236,
+        "changed": []
+      }
+    },
+    {
+      "check": "corpus_hash_matches_pilot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "pilot_gold_source_batch01_jsonl",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "pilot_gold_source_batch01_metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "pilot_gold_source_batch01_manifest",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "pilot_gold_source_batch02_jsonl",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "pilot_gold_source_batch02_metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "pilot_gold_source_batch02_manifest",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "corpus_counts",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "chunk_text_hashes",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "B_ids_match_current_source_workbook",
+      "passed": true,
+      "details": {
+        "mapped": 57
+      }
+    },
+    {
+      "check": "candidate_counts_unique",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "review_scope_complete",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "B28_B42_prior_conclusions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "B43_B57_audit_conclusions",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "human_fields_blank_in_new_material",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "no_new_gold_or_frozen_holdout",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "primary_28_excludes_development_chunks",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "primary_27_unique_chunks",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all_evidence_in_frozen_corpus",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "source_and_page_metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "new_no_price_queries",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "new_ids_reproducible",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "new_anchors_in_PDF_and_chunk",
+      "passed": true,
+      "details": {
+        "anchors": 32,
+        "failures": []
+      }
+    },
+    {
+      "check": "evidence_catalog_byte_exact_text",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "evidence_catalog_includes_original_and_revised",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "workbook_46_rows_unique",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "workbook_human_fields_blank",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "workbook_no_test_identity_leak",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "workbook_caches_initial_state",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "workbook_original_and_proposal_ids_match",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "workbook_human_decision_validation",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "workbook_freezes_headers",
+      "passed": true,
+      "details": "B11"
+    },
+    {
+      "check": "workbook_all_formulas_no_error",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "markdown_link_targets",
+      "passed": true,
+      "details": []
+    }
+  ],
+  "anchor_checks": [
+    {
+      "review_id": "P4-N01",
+      "anchor": "不同WAN 连接之间的数据",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N01",
+      "anchor": "应支持完全隔离",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N01",
+      "anchor": "网络侧和用户侧ARP 报文的隔离",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N02",
+      "anchor": "2 分钟内协商好加密算法",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N02",
+      "anchor": "WPS 过程不应影响已连接无线客户端设备的连接状态和数据传送",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N03",
+      "anchor": "智能重启功能禁止采用固定重启时间",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N03",
+      "anchor": "用户通过和家亲APP 或本地Web 设置定时重启任务除外",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N04",
+      "anchor": "链路平均时延须小于5ms",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N04",
+      "anchor": "链路TP99时延须小于25ms",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N05",
+      "anchor": "上行光信号状态灯",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N05",
+      "anchor": "熄灭：接收光功率正常",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N05",
+      "anchor": "闪烁：接收光功率异常",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N06",
+      "anchor": "校验通过后方可执行下一个启动过程",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N06",
+      "anchor": "否则设备停止启动或进入修复流程",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N07",
+      "anchor": "容错校验功能",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N07",
+      "anchor": "恢复到原来的软件版本或者连接管理平台接受再次升级",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N08",
+      "anchor": "职业技能培训、考核与评价",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N08",
+      "anchor": "人员聘用、培训与考核可参照执行",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N09",
+      "anchor": "5.4 智能组网专业知识",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N09",
+      "anchor": "家庭业务云平台及智能门户技术知识",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N10",
+      "anchor": "能进行智能家居集中控制",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N10",
+      "anchor": "能进行有线系统和无线系统拓展应用",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N11",
+      "anchor": "水线两侧各100 米",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N11",
+      "anchor": "海缆两侧各2 海里",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N12",
+      "anchor": "新技术、新材料、新工艺、新设备",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N13",
+      "anchor": "进行割接操作前必须经运营企业网管人员确认",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N13",
+      "anchor": "割接完毕后必须经运营企业网管人员确认后",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N14",
+      "anchor": "以传输线路局站内ODF 架或ODF 单元成端为界",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N14",
+      "anchor": "光缆线路成端（含终端盒、法兰盘等）",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N15",
+      "anchor": "基于SDH 平台",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N15",
+      "anchor": "以光传送网（OTN）为基础",
+      "chunk": true,
+      "pdf": true
+    },
+    {
+      "review_id": "P4-N15",
+      "anchor": "引入控制平面",
+      "chunk": true,
+      "pdf": true
+    }
+  ],
+  "scope": "Offline static/data and workbook validation only; no retrieval, models, database connection or Benchmark."
+}

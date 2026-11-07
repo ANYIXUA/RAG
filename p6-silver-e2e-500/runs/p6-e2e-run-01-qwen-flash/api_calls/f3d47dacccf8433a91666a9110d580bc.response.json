@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:05.292747+08:00",
+  "conservative_cost_yuan": 0.0007355999999999999,
+  "error": null,
+  "latency_ms": 1571.9316999893636,
+  "list_price_estimate_yuan": 0.0005540999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. AAU是5G基站主要设备，集成多个T/R单元实现大规模天线阵列。[1]  \n2. T/R单元即射频收发单元，负责信号的收发处理。[1]  \n3. AAU可视为RRU与天线的组合体，集中完成射频功能。[1]  \n4. 大规模天线阵列通过AAU内多T/R单元协同工作实现。[1]  \n5. 该设计支持5G波束赋形与高容量传输需求。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880963,
+    "id": "chatcmpl-5dd99fc4-fb5f-98d8-8421-5a21295253a3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2484,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2605
+    }
+  },
+  "usage_known": true
+}

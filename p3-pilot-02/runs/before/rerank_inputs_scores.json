@@ -1,0 +1,3567 @@
+[
+  {
+    "query": "预热检索链路，不参与评测",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "8aa58e78fb1164af31d04320b5216a2d934723c3f2ae477c3632ac2a10af190b",
+        "score": -4.748434066772461
+      },
+      {
+        "chunk_id": "2eda6960dfbb194d0f84e4b0",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "054404e680aa577e1ee7250150aaf8c2ba021afacf69cd07214c40dd3b09a155",
+        "score": -6.288466453552246
+      },
+      {
+        "chunk_id": "54a02e5f45fc6e7ece60b404",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "9f2df0274f6773f57d42955b7b861293b7659c4dec5a6970b4e1cdbd90f8463f",
+        "score": -8.396099090576172
+      },
+      {
+        "chunk_id": "73988b3bb3ed3d5eba984089",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "f2a65bf123ebb82518eee6868d7a13cd7bfabd52db2a3501aaa4f0f7757336b3",
+        "score": -9.0985107421875
+      },
+      {
+        "chunk_id": "2707d31582919e6bbefecedc",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "b8f54629d5dad292375b0485ca90ea50bf17c6f7d5966caeea8ef3cef7c64422",
+        "score": -3.641245126724243
+      },
+      {
+        "chunk_id": "d4ec1b5b416523a95a0435cc",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "e65dd4c3ccd94f3b8628f3705a800cf5be272c2d911c0bc17e2a4963a6929809",
+        "score": -8.019125938415527
+      },
+      {
+        "chunk_id": "368975b6cfb340ec94be2b5d",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "1aac5407ec1ae6996006586a5e38f178a22e762c98dbbac78f890d65c86a6a1f",
+        "score": -8.27731990814209
+      },
+      {
+        "chunk_id": "901684f8902440d567a21566",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "3f9ea4020e697e90d3b6080b7dbb81a5dfd6baf60f160517132cf46f499fe1ff",
+        "score": -6.908210754394531
+      },
+      {
+        "chunk_id": "eced514a8afb5d6002fb7c2a",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "c4fc94feab27c6e3c735b2b7c0ca6ac10d0a676218a647972a2bcdb60dd5b3a6",
+        "score": -8.92105770111084
+      },
+      {
+        "chunk_id": "74a531a7af4a27cd02a5f285",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "1d723c879f2119c6bf378774e6ec0620004ce192adf72e0ec6820673e7c92869",
+        "score": -4.582446575164795
+      },
+      {
+        "chunk_id": "2fb2e0fc0370ea838a472466",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "3360fb1b67aa09c290153d7f508c990f593a0bb50527c41fc1cef1f32f048920",
+        "score": -8.137988090515137
+      },
+      {
+        "chunk_id": "823d1d04036b14e9b9ccac9e",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "f2d4ab3020b43c6acb2dfe6f8d6165f746f096f945d4a709622a2772c0349155",
+        "score": -6.544538497924805
+      },
+      {
+        "chunk_id": "65d56221b5022e39fbfc90ae",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "d7bcece720ae8180261a6d874032ef1bcd65591a2f1f84381924fef036a8cd30",
+        "score": -7.462174892425537
+      },
+      {
+        "chunk_id": "97ca7c74495fc6a9f3202fb5",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "b715e601d752f12a8435efef421ea027693e0345ff7a829c97855fe7750827b8",
+        "score": -5.096027851104736
+      },
+      {
+        "chunk_id": "a7db14a3391bc332376a980d",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "a700f82b2532148b719f0242b40e77252ef7e1e4de4e6cd7dd67a2a4d689839e",
+        "score": -4.300961971282959
+      },
+      {
+        "chunk_id": "2dd16c7ac2fac611ae6bf362",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "3bd43dace15febc210c65cceee426fece8303f78befd964da2a399cd8762ef0c",
+        "score": -6.748783588409424
+      },
+      {
+        "chunk_id": "c379e9fa43fe7ee20946d7ab",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "3c9cf45d536f479b1de394107b466f663d332a3e39a759da3b3f06243b358719",
+        "score": -7.415639400482178
+      },
+      {
+        "chunk_id": "278e9527673079316ba5d37e",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "aca881ac25d0102f361e7ea0590ff8975caf59a3675c79986594f779c2634a40",
+        "score": -7.807365894317627
+      },
+      {
+        "chunk_id": "d3e3f69ff07c4d7974ea7013",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "6691842bf43f253080c299a7653b0bfaa7ae3f90c417da1cc3319c03366bb58a",
+        "score": -3.6044232845306396
+      },
+      {
+        "chunk_id": "5396ea9eec4125daa7f95045",
+        "query_sha256": "65a56fcff7b2353e7b0fe04d21071800f7ab3dcf2ba6cfe391436134ba0b3f80",
+        "chunk_sha256": "66aefac6a4d5cb7369fa8d5dbe6e0c8dd50641392e1e58888d3c6cebb02d91ac",
+        "score": -8.317028045654297
+      }
+    ],
+    "output_ids": [
+      "d3e3f69ff07c4d7974ea7013",
+      "2707d31582919e6bbefecedc",
+      "a7db14a3391bc332376a980d",
+      "74a531a7af4a27cd02a5f285",
+      "48ecc091e26caaa3ccbd3be5",
+      "97ca7c74495fc6a9f3202fb5",
+      "2eda6960dfbb194d0f84e4b0",
+      "823d1d04036b14e9b9ccac9e",
+      "2dd16c7ac2fac611ae6bf362",
+      "901684f8902440d567a21566",
+      "c379e9fa43fe7ee20946d7ab",
+      "65d56221b5022e39fbfc90ae",
+      "278e9527673079316ba5d37e",
+      "d4ec1b5b416523a95a0435cc",
+      "2fb2e0fc0370ea838a472466",
+      "368975b6cfb340ec94be2b5d",
+      "5396ea9eec4125daa7f95045",
+      "54a02e5f45fc6e7ece60b404",
+      "eced514a8afb5d6002fb7c2a",
+      "73988b3bb3ed3d5eba984089"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "非高速公路场景下，管道线路的人（手）孔检修周期是多久？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "831af7c41fd776db6b5b3ff9",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "cb194002751f1959144888940433c103bb543560edf93cad7e6a612b224a46d1",
+        "score": 4.363147258758545
+      },
+      {
+        "chunk_id": "c2b948d56e35be96db3d5500",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "1dfb55cbd6793b2f0ecdd0bd40535471e9f19a0f791c70b3b531ae1ca899b6b2",
+        "score": -3.8210501670837402
+      },
+      {
+        "chunk_id": "bae1b3473d922bce016eb32f",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "84f2352d7248121763372fdbbb3f4f62c51108aa743236b37ee68abf6a457275",
+        "score": -0.13227593898773193
+      },
+      {
+        "chunk_id": "c3ecd4637056aff1167beaf5",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "0435b5e4d682424470d98a99d35f3e853bfb7713d9dae3ce1367a28dd335e94f",
+        "score": -4.165620803833008
+      },
+      {
+        "chunk_id": "901684f8902440d567a21566",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "3f9ea4020e697e90d3b6080b7dbb81a5dfd6baf60f160517132cf46f499fe1ff",
+        "score": -5.893189907073975
+      },
+      {
+        "chunk_id": "823d1d04036b14e9b9ccac9e",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "f2d4ab3020b43c6acb2dfe6f8d6165f746f096f945d4a709622a2772c0349155",
+        "score": -7.526228427886963
+      },
+      {
+        "chunk_id": "a04a5aeb2ab4fbd5df07dfbf",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "cc63291a0040f649c22ff8eac45314bedd11db612b8941d50037fb7fd29d7408",
+        "score": -4.390293121337891
+      },
+      {
+        "chunk_id": "321dd6d7b5fe1fa2c0277758",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "800814cb1b4d14f3e6f67961cf0aadce5eb6a360753e27f20d03badc3a205058",
+        "score": -3.2317872047424316
+      },
+      {
+        "chunk_id": "256632ea7d6f5a2319f44fb9",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "bb39493cc768692937f17ef5d67ab3a36a2073313b21184889b6b3d5e837371b",
+        "score": -2.195368766784668
+      },
+      {
+        "chunk_id": "362c9e604739de54353d1864",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "78b1de0d41c5d8f729037e42fd754267e080f04641b00ed225811eacc61a2494",
+        "score": -1.8185279369354248
+      },
+      {
+        "chunk_id": "cbbeb4430a68f9c32c878010",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "7d8a61862a7de7b2c67ef5b457fe2dbd425173356c7cb4277f0d6a668f40d30d",
+        "score": -7.3508219718933105
+      },
+      {
+        "chunk_id": "0989de782fe9da63db0ee42f",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "23740050ef8d7c6ba5c9d9a35244fed296b8ee265b675a8c439446847c089f17",
+        "score": -7.85123348236084
+      },
+      {
+        "chunk_id": "9970d3dcdf2c44cdaefecd51",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "260c499331474ba1282272ab3a39b91a92b1a6429a1ca643d9b137d3c0eb35a3",
+        "score": -9.906777381896973
+      },
+      {
+        "chunk_id": "9832f94c5c169b4751480ff2",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "21ff03907b5f93d3e662d90db94d334d44f2632db18ef475951442139373f8b7",
+        "score": -7.4189677238464355
+      },
+      {
+        "chunk_id": "70202f4f6bd327b7effcf732",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "591c887857ad091045e2249b085e63855367d3dbbf90d12b85a3dfd8829fb2a2",
+        "score": -8.028889656066895
+      },
+      {
+        "chunk_id": "1b56cd11de85631a94e7765d",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "2f2ee02ed0f25858d1af2042cd6abb269c7347e0df61a232e741a047efd03498",
+        "score": -9.545821189880371
+      },
+      {
+        "chunk_id": "063a41b2179b75da0d47a042",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "a9f47db952ad84e07ab9bf78dc6f1d552bc4b3e57b115708bdbbe713f64858da",
+        "score": -8.810153007507324
+      },
+      {
+        "chunk_id": "dcb62613c4ce7472d33766b3",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "3bd7d5a1c4201f3608c8408ac88031e35cc842a776c093d3ee7795ba0d47c547",
+        "score": -7.417290687561035
+      },
+      {
+        "chunk_id": "eced514a8afb5d6002fb7c2a",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "c4fc94feab27c6e3c735b2b7c0ca6ac10d0a676218a647972a2bcdb60dd5b3a6",
+        "score": -8.730751037597656
+      },
+      {
+        "chunk_id": "1b2149ec028f9c253059616f",
+        "query_sha256": "cb199fb05d226fe71a9d713ff334a21cfaa6b779a95b5f8ad3f136e3d3c05faa",
+        "chunk_sha256": "58a055928668613156f3bbdd4d276f9d438e5736cb52d438208f20f8e4382a8d",
+        "score": -7.585258960723877
+      }
+    ],
+    "output_ids": [
+      "831af7c41fd776db6b5b3ff9",
+      "bae1b3473d922bce016eb32f",
+      "362c9e604739de54353d1864",
+      "256632ea7d6f5a2319f44fb9",
+      "321dd6d7b5fe1fa2c0277758",
+      "c2b948d56e35be96db3d5500",
+      "c3ecd4637056aff1167beaf5",
+      "a04a5aeb2ab4fbd5df07dfbf",
+      "901684f8902440d567a21566",
+      "cbbeb4430a68f9c32c878010",
+      "dcb62613c4ce7472d33766b3",
+      "9832f94c5c169b4751480ff2",
+      "823d1d04036b14e9b9ccac9e",
+      "1b2149ec028f9c253059616f",
+      "0989de782fe9da63db0ee42f",
+      "70202f4f6bd327b7effcf732",
+      "eced514a8afb5d6002fb7c2a",
+      "063a41b2179b75da0d47a042",
+      "1b56cd11de85631a94e7765d",
+      "9970d3dcdf2c44cdaefecd51"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "92108b5bb6dcc5b2227d531c",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "505614c9226d1251eae0f4b3b646641c39c86d46502fd0d9f1c04f0b37adf71b",
+        "score": 9.3904447555542
+      },
+      {
+        "chunk_id": "8d6a3993748474ddec52ba5c",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "e8227f912eb405ff2907a563eb11ecf8059dfff496d0feca763690a7c1cdfb16",
+        "score": 4.2051310539245605
+      },
+      {
+        "chunk_id": "e8513e8aa3405fff338783f1",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "a92fc9298fde69236d4bcf2a1fb85d18b3d0c1a3f97d0cce09ffd607cea9e3d0",
+        "score": 5.385002136230469
+      },
+      {
+        "chunk_id": "2467800bf8ef29b6791440b4",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "7a41e7fccd808dbabf90963de48b8baa9b7a1382a8836b06c88a8668577bd829",
+        "score": 5.203149795532227
+      },
+      {
+        "chunk_id": "2dd16c7ac2fac611ae6bf362",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "3bd43dace15febc210c65cceee426fece8303f78befd964da2a399cd8762ef0c",
+        "score": 6.783309459686279
+      },
+      {
+        "chunk_id": "4a65d0d3ead0bc841b1b28f8",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "8100204aabd1274cc45a3bd8a237ddddfd8edf85eeea9590326a3f6286f145a8",
+        "score": 5.715705394744873
+      },
+      {
+        "chunk_id": "8294eda000c1fa18ec81773e",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "23a3e3a272339f0f44efc2af6bfb5b376b01f000765344fa64d60c9b1d37fc8a",
+        "score": 4.970936298370361
+      },
+      {
+        "chunk_id": "73988b3bb3ed3d5eba984089",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "f2a65bf123ebb82518eee6868d7a13cd7bfabd52db2a3501aaa4f0f7757336b3",
+        "score": 4.210913181304932
+      },
+      {
+        "chunk_id": "53d5b679c6d5759fca64305a",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "a61ff97a0827de018586f8b3e5b52d2b818a6f7b3cd222b9f42fc6a3cbd269ce",
+        "score": 6.363101482391357
+      },
+      {
+        "chunk_id": "95380ab0ebb17410a5f37707",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "14a13a08bfd6d54e34f79aa7feb8195feaf87cd433953ed7f8abfa1275770c48",
+        "score": 4.422308444976807
+      },
+      {
+        "chunk_id": "b2edc2384d6b845e0005973a",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "5e59027c21534f27099d8336098ab9a37561fbcbc1d9fabfcdf67de74c7759a6",
+        "score": 6.840407848358154
+      },
+      {
+        "chunk_id": "3fcd612549a4e58e909deb0e",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "3be2b94bcaaf28da982e12681eac4303c0d98987af69e622ec95714a09db1be2",
+        "score": 5.8556694984436035
+      },
+      {
+        "chunk_id": "6b980f4f3b783a0bcb029caf",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "89a4ab581709e148ba3c6071dd463e2d68d27399af8547f4cbd7bbc58141a89b",
+        "score": 6.076160907745361
+      },
+      {
+        "chunk_id": "8dfd7acc3a5fcf416e5ca637",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "8c9d5166dcf30b1b2ba210420ae1c8b09bad9503c256dff2746abcb5933b340e",
+        "score": 7.097058296203613
+      },
+      {
+        "chunk_id": "d8732d372789df9517c5bdcc",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "924e072a7675cb5a4d6949741b9b6963b2743b33ef0acb1b03a890a8bb4a39d1",
+        "score": 4.007399082183838
+      },
+      {
+        "chunk_id": "fc16bde58b2e5f6168fc4bba",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "5bbc45049258ab0def9c008e9f8ccfd29c7c1ae1c4cb2720217c3ab17cd92d6b",
+        "score": 4.9414544105529785
+      },
+      {
+        "chunk_id": "fc7d5eed0b515cf1096fd166",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "ee3623542a7b1f674e475ddcc88fbc7289f0af7b24c4b211d6086d7f70768618",
+        "score": 5.55305814743042
+      },
+      {
+        "chunk_id": "3d3eb164235efb301e727bfd",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "d259488c06d787382de87ff314926af3f01293c444fbe514fd35f00bfefa9072",
+        "score": 0.8715122938156128
+      },
+      {
+        "chunk_id": "abee735aa9c981d3bebcae9f",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "a8bebf620ea2351540442dcb3874e12328f8786336d82b44d1dc0e3b997f0feb",
+        "score": 1.2966673374176025
+      },
+      {
+        "chunk_id": "3f406ad653cd6ded7e011a40",
+        "query_sha256": "ff712f1bb98e190d365a7a9692e319ef34ecba64b2337b5923f651397a7df380",
+        "chunk_sha256": "41d9bab425cc25420093c6e10d9f68ecb80a40a6b2afd41506c166d5657f3962",
+        "score": -2.1759073734283447
+      }
+    ],
+    "output_ids": [
+      "92108b5bb6dcc5b2227d531c",
+      "8dfd7acc3a5fcf416e5ca637",
+      "b2edc2384d6b845e0005973a",
+      "2dd16c7ac2fac611ae6bf362",
+      "53d5b679c6d5759fca64305a",
+      "6b980f4f3b783a0bcb029caf",
+      "3fcd612549a4e58e909deb0e",
+      "4a65d0d3ead0bc841b1b28f8",
+      "fc7d5eed0b515cf1096fd166",
+      "e8513e8aa3405fff338783f1",
+      "2467800bf8ef29b6791440b4",
+      "8294eda000c1fa18ec81773e",
+      "fc16bde58b2e5f6168fc4bba",
+      "95380ab0ebb17410a5f37707",
+      "73988b3bb3ed3d5eba984089",
+      "8d6a3993748474ddec52ba5c",
+      "d8732d372789df9517c5bdcc",
+      "abee735aa9c981d3bebcae9f",
+      "3d3eb164235efb301e727bfd",
+      "3f406ad653cd6ded7e011a40"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "智慧家庭全光组网产品技术规范的版本是什么？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "4723262fed91f6b5026a5480",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "0071f96aa2464aa0deb262aa028b326d5ff4d9460a98bbfafe223580c27183bd",
+        "score": 8.9114408493042
+      },
+      {
+        "chunk_id": "7bd438a6e96bd608918543bc",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "478de9e1e0a0f5539c21d8d809ed58a00789c32d3c7abaf6b256541264333f87",
+        "score": 9.898333549499512
+      },
+      {
+        "chunk_id": "e69ef87cafd302938c765e20",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "a937d5a6e757c266fe69e461079461b21f18215aef6bc592b47620c0d69d9586",
+        "score": 8.085299491882324
+      },
+      {
+        "chunk_id": "5d5fd6cf18ea4e313fdc45b5",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "778749fca041de6c41c5a4576cb33ba07317116542af12be41e7352aa292a76d",
+        "score": 7.532406330108643
+      },
+      {
+        "chunk_id": "54615572d7bd4dde554106e9",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "d3c4269734ae919ca4a7253a73049de381f02ed436315545d7757e339268f64b",
+        "score": 9.244784355163574
+      },
+      {
+        "chunk_id": "5b25186e3e9342c92e5a3670",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "0f5a83d917c150b788bdd82f87877f623bd6732288e5da708945345eb6cab681",
+        "score": 7.33465576171875
+      },
+      {
+        "chunk_id": "4f32247f7a6d7526df77bddd",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "4f74e4800c9658eb9496421a61f395b78b5fcf114f7a2269c0dd4d1cb1470423",
+        "score": 9.332296371459961
+      },
+      {
+        "chunk_id": "c03289565d5cc78f2b44cfca",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "57fdf39e387b8b69d1f4da86e009b89e95932a3d487bcd4af05330fa919fedb1",
+        "score": 7.091328144073486
+      },
+      {
+        "chunk_id": "3b8f42f7061b1f1a8e2205a6",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "59d5ec3330986e1083a2ab693a837cd40340a4a6407bf523f8e21b676cfd31e0",
+        "score": 6.962656497955322
+      },
+      {
+        "chunk_id": "0b2bc61ba6e04bf37c779232",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "e39c5600dba109b98ba1ecf21ce6f55bf93a729ee6a06e096892457d560df4c2",
+        "score": 6.268906116485596
+      },
+      {
+        "chunk_id": "a36043b8ee1a391f2dd1c31a",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "1bb44eeadcd3624e68b919dbf54270aa473e4dc32c22f64799123b960a15ff7a",
+        "score": 8.007142066955566
+      },
+      {
+        "chunk_id": "9b5d9b92dc528a1c594e3ec2",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "e655efda8be454b93fa0ca0da97bfd2d9db881923627ca7dab00a7ac89773633",
+        "score": 5.850352764129639
+      },
+      {
+        "chunk_id": "a8887b02ae32e4d4748ad264",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "d90807ffc8febe52d313df28752d5205ec76e2c76f848c60c35f0c4c0001f521",
+        "score": 7.272371292114258
+      },
+      {
+        "chunk_id": "3c9c81f21d4df15d5cb812c4",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "5d18eda318e1457571aa480fe2299db375412b7b1b10c507224dc5e544a3cf58",
+        "score": 5.483755588531494
+      },
+      {
+        "chunk_id": "2d70309c35065f6a38c507ed",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "e0e2e79265a218eb62b9de4da500852c5022a068c9224be9539018aed809a1f4",
+        "score": 6.641184329986572
+      },
+      {
+        "chunk_id": "5183d18205e64c4836ba9020",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "3537ab15ec3d0a5a3d09c4f8b0b7f0c980dd1ef0e5be278ad4b46e70becd3017",
+        "score": 8.332173347473145
+      },
+      {
+        "chunk_id": "06e68d69881bfa6bffefd124",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "b410ace2f1a1212007bad947b627b86972c2d96ef369239a6558dc9371610073",
+        "score": 7.492080211639404
+      },
+      {
+        "chunk_id": "84139f0d408339d51910bb1e",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "91bb642f4559e709e1501985c9525a75a0217a81c66cb45459a7e73322418f7a",
+        "score": 6.191500186920166
+      },
+      {
+        "chunk_id": "acbdb12c2a62c12fe9787ef7",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "144e2cd82deaa18dba6e074294ccc470f7790028b386d5897e2b45357f214fa4",
+        "score": 6.891251564025879
+      },
+      {
+        "chunk_id": "bdc9ea567c0d78ab37c2cf77",
+        "query_sha256": "1a024760adb27467643ae5d42f271975650d3033a08c7d5ae4a06f72a98953d3",
+        "chunk_sha256": "4890108dda0cba25f5b65961040834148b2e278481245acb7d10e34b41fee8b9",
+        "score": 7.4107346534729
+      }
+    ],
+    "output_ids": [
+      "7bd438a6e96bd608918543bc",
+      "4f32247f7a6d7526df77bddd",
+      "54615572d7bd4dde554106e9",
+      "4723262fed91f6b5026a5480",
+      "5183d18205e64c4836ba9020",
+      "e69ef87cafd302938c765e20",
+      "a36043b8ee1a391f2dd1c31a",
+      "5d5fd6cf18ea4e313fdc45b5",
+      "06e68d69881bfa6bffefd124",
+      "bdc9ea567c0d78ab37c2cf77",
+      "5b25186e3e9342c92e5a3670",
+      "a8887b02ae32e4d4748ad264",
+      "c03289565d5cc78f2b44cfca",
+      "3b8f42f7061b1f1a8e2205a6",
+      "acbdb12c2a62c12fe9787ef7",
+      "2d70309c35065f6a38c507ed",
+      "0b2bc61ba6e04bf37c779232",
+      "84139f0d408339d51910bb1e",
+      "9b5d9b92dc528a1c594e3ec2",
+      "3c9c81f21d4df15d5cb812c4"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+        "score": 10.590025901794434
+      },
+      {
+        "chunk_id": "9cc4e5069f6287c6f33683b2",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "2f60f0dbdb3a3ea3b1746c42196fc0fedd84c7881976ca5bcee7442a26ffe712",
+        "score": 5.339733123779297
+      },
+      {
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+        "score": 5.083707332611084
+      },
+      {
+        "chunk_id": "5766d05fd8a6f73a1ef60b57",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "e404afa1c23b6bbb8116ef68a16b89ff1ef3ff541d79271acc246f7762a52f54",
+        "score": -0.018598217517137527
+      },
+      {
+        "chunk_id": "d70540614c288a2dc8b3066f",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "bd356089e5f5701b17d7261c697bc51f3f481f25a58ec785de3ae225ce30ce49",
+        "score": 3.818826675415039
+      },
+      {
+        "chunk_id": "f86d4474f6f6b987d29ada4c",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "64920a97fac3cd393fe8bfe5e988dddf094e1938039e6e9480159e109d84ac69",
+        "score": 3.6603782176971436
+      },
+      {
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "dd4d48c087c6d31ef58357f00ba494ad126ea33182c1195f3c8ecf6d495ab041",
+        "score": 2.5330114364624023
+      },
+      {
+        "chunk_id": "14da1c09b687f7b48896e03a",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "78fa400ac856d9463f2bde00649665f36b78f8fcad7f488baa0c67b1d93216b2",
+        "score": 2.5926101207733154
+      },
+      {
+        "chunk_id": "71a4f239a4fd7b69fdc74486",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "2c69f9548f7ab5bcc9592c004701ff8e277a1e69c49f52f04089023aec4f200c",
+        "score": 0.6325903534889221
+      },
+      {
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "8aa58e78fb1164af31d04320b5216a2d934723c3f2ae477c3632ac2a10af190b",
+        "score": 2.7139554023742676
+      },
+      {
+        "chunk_id": "1daa7b0cd5324d66d627a243",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "c3e5b22daeaabfdb47d7a47182439f1534cae986fe7bc156726cbcf807a69c0d",
+        "score": 3.055636167526245
+      },
+      {
+        "chunk_id": "2eda6960dfbb194d0f84e4b0",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "054404e680aa577e1ee7250150aaf8c2ba021afacf69cd07214c40dd3b09a155",
+        "score": 0.49423927068710327
+      },
+      {
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "199c9e8bcbf5f594e9fdc522fb4e034da859195399d05225e6d5d4a47b5b689b",
+        "score": 2.8267650604248047
+      },
+      {
+        "chunk_id": "c10a8b3b89210595f9880fc6",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "b01db38172ac197963ad004b3dafca02db761c96f163f0b9848f69ede64cdc0a",
+        "score": 3.356659173965454
+      },
+      {
+        "chunk_id": "5d1e8fd617217ecea2afa2f1",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "973065d668edb4da846cd08d60dc99512b3bf237a81e278d5f02c408d07da664",
+        "score": 1.0689468383789062
+      },
+      {
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "ce80257c5b935ca75b67354da130350b418875e95585146e246921987cac7b36",
+        "score": 1.550631046295166
+      },
+      {
+        "chunk_id": "5ab56d780f65ff344900b1a2",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "15256979daa8cf286c973ef27a740f73c7c9b362f6273f01c96e50b158eae330",
+        "score": 0.045010682195425034
+      },
+      {
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "93d6bbbbb13b009a7949ff65b12feae09c209ba20dc9a6dbb27e7dffc916cb8d",
+        "score": 1.275477409362793
+      },
+      {
+        "chunk_id": "81bd459de1d4e62f9428ae88",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "7f5237e5ef1fe421d07a70582d3969a2141f5fbcdf7eea554c2c86b70526a022",
+        "score": -1.2070127725601196
+      },
+      {
+        "chunk_id": "3d3eb164235efb301e727bfd",
+        "query_sha256": "8d7b6608140ed65977bb6f7216932b98405d7c54aa61bf84717938e177c80a92",
+        "chunk_sha256": "d259488c06d787382de87ff314926af3f01293c444fbe514fd35f00bfefa9072",
+        "score": -7.819299697875977
+      }
+    ],
+    "output_ids": [
+      "02c18b66c8c7d17fa1fb910e",
+      "9cc4e5069f6287c6f33683b2",
+      "0eb4bd6e18d599063371f51b",
+      "d70540614c288a2dc8b3066f",
+      "f86d4474f6f6b987d29ada4c",
+      "c10a8b3b89210595f9880fc6",
+      "1daa7b0cd5324d66d627a243",
+      "95ae763cde2f43aec2cb7d14",
+      "48ecc091e26caaa3ccbd3be5",
+      "14da1c09b687f7b48896e03a",
+      "2dcaa8db79f8754db213ab1c",
+      "e010fe39879d92fa21dc59d9",
+      "1c317b1dd2cebfbf9647d03e",
+      "5d1e8fd617217ecea2afa2f1",
+      "71a4f239a4fd7b69fdc74486",
+      "2eda6960dfbb194d0f84e4b0",
+      "5ab56d780f65ff344900b1a2",
+      "5766d05fd8a6f73a1ef60b57",
+      "81bd459de1d4e62f9428ae88",
+      "3d3eb164235efb301e727bfd"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "全光组网终端支持IEEE 802.11ax协议时，2.4G频段应至少支持多少个RU并行调度？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "4812f97659f77c46891223fa",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "b6305d77d2676d5b3cf3ecd4874b1b46a5ea6120083e198d882c61c1ba2453b5",
+        "score": 10.443062782287598
+      },
+      {
+        "chunk_id": "a36043b8ee1a391f2dd1c31a",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "1bb44eeadcd3624e68b919dbf54270aa473e4dc32c22f64799123b960a15ff7a",
+        "score": 1.9548892974853516
+      },
+      {
+        "chunk_id": "44f638f745282f4192dcd963",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "54d33d0eb73b3295c8c659e41a3b5f6c155523af2eac3ec81430b356a33850f5",
+        "score": 4.691163539886475
+      },
+      {
+        "chunk_id": "cdcc369a72b7aaa79fefb319",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "9f9186bc611d67a1b2f9f3be1b9883e83cab675ff3469c2f52583cbf0e761446",
+        "score": 4.004836082458496
+      },
+      {
+        "chunk_id": "acbdb12c2a62c12fe9787ef7",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "144e2cd82deaa18dba6e074294ccc470f7790028b386d5897e2b45357f214fa4",
+        "score": -1.0067311525344849
+      },
+      {
+        "chunk_id": "0a4d3ca37e5dd0727f0df0b7",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "a2a669ce098c78899a9464bc8702216d373f41f4c1423f72e142003fd5a93375",
+        "score": 2.065551996231079
+      },
+      {
+        "chunk_id": "81657f3072d88fc4ffe4762b",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "54ac7ae85766c399c52fe074b84258d0f16d128262513629766d5e9c0167280c",
+        "score": 4.203175067901611
+      },
+      {
+        "chunk_id": "3c9c81f21d4df15d5cb812c4",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "5d18eda318e1457571aa480fe2299db375412b7b1b10c507224dc5e544a3cf58",
+        "score": -1.6892658472061157
+      },
+      {
+        "chunk_id": "b656aa1e5d609e2de7a81a0d",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "a78dfaab136a548cd0b90cd54711ff6de462ca2da6f328683b8bc42660d577c6",
+        "score": 4.936557292938232
+      },
+      {
+        "chunk_id": "8a7f78eaa2ea7985e75538ec",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "c91349e78ee1aa8b16cbc4bd12970dd9147d1015d837636206ea7b804e318565",
+        "score": 1.8401609659194946
+      },
+      {
+        "chunk_id": "e69ef87cafd302938c765e20",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "a937d5a6e757c266fe69e461079461b21f18215aef6bc592b47620c0d69d9586",
+        "score": 1.548691987991333
+      },
+      {
+        "chunk_id": "72fa8e10c0e1591665ff1d32",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "9180d8bc966c5e99cb1c69925ca9f34dc22420a08e2085344e31b37e45a0b515",
+        "score": 0.8124366998672485
+      },
+      {
+        "chunk_id": "8e0f763bb003a20ec8b5f6b2",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "9c1d32331206e747ad73927cc2936ea8b6ebce03252f5a913cba15effee29f77",
+        "score": 1.775977611541748
+      },
+      {
+        "chunk_id": "bbeae10790f98769a3820459",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "02b23744d0248f39994cdfabc24aea49d66f76352e1490b8e33d8e7ff4db9f9b",
+        "score": 5.086982250213623
+      },
+      {
+        "chunk_id": "84139f0d408339d51910bb1e",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "91bb642f4559e709e1501985c9525a75a0217a81c66cb45459a7e73322418f7a",
+        "score": 5.112278461456299
+      },
+      {
+        "chunk_id": "b0b4d01dbf2c0c1e81eb2229",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "6ee312dda2cfa800fbafa460ef03ad0b1add8b3588f3d6535751c084b90430dc",
+        "score": -0.5400077700614929
+      },
+      {
+        "chunk_id": "66e41c6a6dbb49b77fb123f2",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "b143e233e1df2019da5ecb837b45e35a0a43faa0b079b042749a094e0352c4c6",
+        "score": -3.170339822769165
+      },
+      {
+        "chunk_id": "5183d18205e64c4836ba9020",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "3537ab15ec3d0a5a3d09c4f8b0b7f0c980dd1ef0e5be278ad4b46e70becd3017",
+        "score": 0.29855284094810486
+      },
+      {
+        "chunk_id": "469978708f9fe4506fc1fa7f",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "9cd01e6fee6b083f0db483fff58a0527bef7b29c530bb84738b5188251ebc383",
+        "score": -7.776611328125
+      },
+      {
+        "chunk_id": "3ef6f0c2eb6c280b4b3a262b",
+        "query_sha256": "318d9f817b338ad90a78dfef3ad4cc6490945077ddbd8a20598f4398a64a8d7b",
+        "chunk_sha256": "ef0e11c30a1632be3a3eb6106e4e5071c23d855b3538477c138789344fececc0",
+        "score": -2.0859436988830566
+      }
+    ],
+    "output_ids": [
+      "4812f97659f77c46891223fa",
+      "84139f0d408339d51910bb1e",
+      "bbeae10790f98769a3820459",
+      "b656aa1e5d609e2de7a81a0d",
+      "44f638f745282f4192dcd963",
+      "81657f3072d88fc4ffe4762b",
+      "cdcc369a72b7aaa79fefb319",
+      "0a4d3ca37e5dd0727f0df0b7",
+      "a36043b8ee1a391f2dd1c31a",
+      "8a7f78eaa2ea7985e75538ec",
+      "8e0f763bb003a20ec8b5f6b2",
+      "e69ef87cafd302938c765e20",
+      "72fa8e10c0e1591665ff1d32",
+      "5183d18205e64c4836ba9020",
+      "b0b4d01dbf2c0c1e81eb2229",
+      "acbdb12c2a62c12fe9787ef7",
+      "3c9c81f21d4df15d5cb812c4",
+      "3ef6f0c2eb6c280b4b3a262b",
+      "66e41c6a6dbb49b77fb123f2",
+      "469978708f9fe4506fc1fa7f"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "5ab56d780f65ff344900b1a2",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "15256979daa8cf286c973ef27a740f73c7c9b362f6273f01c96e50b158eae330",
+        "score": 7.601419925689697
+      },
+      {
+        "chunk_id": "5766d05fd8a6f73a1ef60b57",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "e404afa1c23b6bbb8116ef68a16b89ff1ef3ff541d79271acc246f7762a52f54",
+        "score": 8.16601276397705
+      },
+      {
+        "chunk_id": "71a4f239a4fd7b69fdc74486",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "2c69f9548f7ab5bcc9592c004701ff8e277a1e69c49f52f04089023aec4f200c",
+        "score": 8.599751472473145
+      },
+      {
+        "chunk_id": "9cc4e5069f6287c6f33683b2",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "2f60f0dbdb3a3ea3b1746c42196fc0fedd84c7881976ca5bcee7442a26ffe712",
+        "score": 7.693536281585693
+      },
+      {
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+        "score": 8.514225959777832
+      },
+      {
+        "chunk_id": "2eda6960dfbb194d0f84e4b0",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "054404e680aa577e1ee7250150aaf8c2ba021afacf69cd07214c40dd3b09a155",
+        "score": 5.5194830894470215
+      },
+      {
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+        "score": 9.197710037231445
+      },
+      {
+        "chunk_id": "14da1c09b687f7b48896e03a",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "78fa400ac856d9463f2bde00649665f36b78f8fcad7f488baa0c67b1d93216b2",
+        "score": 7.292142391204834
+      },
+      {
+        "chunk_id": "d70540614c288a2dc8b3066f",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "bd356089e5f5701b17d7261c697bc51f3f481f25a58ec785de3ae225ce30ce49",
+        "score": 9.314029693603516
+      },
+      {
+        "chunk_id": "81bd459de1d4e62f9428ae88",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "7f5237e5ef1fe421d07a70582d3969a2141f5fbcdf7eea554c2c86b70526a022",
+        "score": 4.089470386505127
+      },
+      {
+        "chunk_id": "f86d4474f6f6b987d29ada4c",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "64920a97fac3cd393fe8bfe5e988dddf094e1938039e6e9480159e109d84ac69",
+        "score": 7.447386264801025
+      },
+      {
+        "chunk_id": "1daa7b0cd5324d66d627a243",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "c3e5b22daeaabfdb47d7a47182439f1534cae986fe7bc156726cbcf807a69c0d",
+        "score": 6.917755603790283
+      },
+      {
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "dd4d48c087c6d31ef58357f00ba494ad126ea33182c1195f3c8ecf6d495ab041",
+        "score": 7.4002485275268555
+      },
+      {
+        "chunk_id": "5d1e8fd617217ecea2afa2f1",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "973065d668edb4da846cd08d60dc99512b3bf237a81e278d5f02c408d07da664",
+        "score": 6.755569934844971
+      },
+      {
+        "chunk_id": "c10a8b3b89210595f9880fc6",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "b01db38172ac197963ad004b3dafca02db761c96f163f0b9848f69ede64cdc0a",
+        "score": 7.0799126625061035
+      },
+      {
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "8aa58e78fb1164af31d04320b5216a2d934723c3f2ae477c3632ac2a10af190b",
+        "score": 7.162463665008545
+      },
+      {
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "199c9e8bcbf5f594e9fdc522fb4e034da859195399d05225e6d5d4a47b5b689b",
+        "score": 7.2462358474731445
+      },
+      {
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "ce80257c5b935ca75b67354da130350b418875e95585146e246921987cac7b36",
+        "score": 5.851379871368408
+      },
+      {
+        "chunk_id": "3b8f42f7061b1f1a8e2205a6",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "59d5ec3330986e1083a2ab693a837cd40340a4a6407bf523f8e21b676cfd31e0",
+        "score": -3.1385390758514404
+      },
+      {
+        "chunk_id": "3d3eb164235efb301e727bfd",
+        "query_sha256": "424691b6c017c548e8407283d5286b4120680a08f1c7fc1a0b4e0f2394324fc5",
+        "chunk_sha256": "d259488c06d787382de87ff314926af3f01293c444fbe514fd35f00bfefa9072",
+        "score": -5.51298713684082
+      }
+    ],
+    "output_ids": [
+      "d70540614c288a2dc8b3066f",
+      "0eb4bd6e18d599063371f51b",
+      "71a4f239a4fd7b69fdc74486",
+      "02c18b66c8c7d17fa1fb910e",
+      "5766d05fd8a6f73a1ef60b57",
+      "9cc4e5069f6287c6f33683b2",
+      "5ab56d780f65ff344900b1a2",
+      "f86d4474f6f6b987d29ada4c",
+      "2dcaa8db79f8754db213ab1c",
+      "14da1c09b687f7b48896e03a",
+      "95ae763cde2f43aec2cb7d14",
+      "48ecc091e26caaa3ccbd3be5",
+      "c10a8b3b89210595f9880fc6",
+      "1daa7b0cd5324d66d627a243",
+      "5d1e8fd617217ecea2afa2f1",
+      "e010fe39879d92fa21dc59d9",
+      "2eda6960dfbb194d0f84e4b0",
+      "81bd459de1d4e62f9428ae88",
+      "3b8f42f7061b1f1a8e2205a6",
+      "3d3eb164235efb301e727bfd"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "38ea5e749604f43f5f040901",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "0b5c1dbb9bb994938af1608e9258f3fa2e44591c269833b2f725ffee77ab3b8a",
+        "score": 8.8881254196167
+      },
+      {
+        "chunk_id": "c120df3a569ae215d69183ac",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "20f3b0611832a802ce2ab30f07a0d31f662fbee5df3bdafa506d8f01934f1ca7",
+        "score": 9.745404243469238
+      },
+      {
+        "chunk_id": "0b2bc61ba6e04bf37c779232",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "e39c5600dba109b98ba1ecf21ce6f55bf93a729ee6a06e096892457d560df4c2",
+        "score": 6.50731086730957
+      },
+      {
+        "chunk_id": "3a3f2c0bc27d1815ea693a4a",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "dadb4a1ac48ef47b104d19c3b48741b280462e0c5bd2c1ae0d2d7249246f06ff",
+        "score": 6.758660793304443
+      },
+      {
+        "chunk_id": "5b25186e3e9342c92e5a3670",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "0f5a83d917c150b788bdd82f87877f623bd6732288e5da708945345eb6cab681",
+        "score": 2.4379470348358154
+      },
+      {
+        "chunk_id": "e69ef87cafd302938c765e20",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "a937d5a6e757c266fe69e461079461b21f18215aef6bc592b47620c0d69d9586",
+        "score": 5.782949924468994
+      },
+      {
+        "chunk_id": "acbdb12c2a62c12fe9787ef7",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "144e2cd82deaa18dba6e074294ccc470f7790028b386d5897e2b45357f214fa4",
+        "score": 6.436213970184326
+      },
+      {
+        "chunk_id": "1e2bd5122cd13762094dde86",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "bb7b90919570044e140b6517f12d17ed96cd3184b4dd19d81124fc50f68d8a5a",
+        "score": 4.728616237640381
+      },
+      {
+        "chunk_id": "0a4d3ca37e5dd0727f0df0b7",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "a2a669ce098c78899a9464bc8702216d373f41f4c1423f72e142003fd5a93375",
+        "score": 5.031617641448975
+      },
+      {
+        "chunk_id": "9b5d9b92dc528a1c594e3ec2",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "e655efda8be454b93fa0ca0da97bfd2d9db881923627ca7dab00a7ac89773633",
+        "score": 4.688710689544678
+      },
+      {
+        "chunk_id": "3b8f42f7061b1f1a8e2205a6",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "59d5ec3330986e1083a2ab693a837cd40340a4a6407bf523f8e21b676cfd31e0",
+        "score": 5.3455610275268555
+      },
+      {
+        "chunk_id": "7bd438a6e96bd608918543bc",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "478de9e1e0a0f5539c21d8d809ed58a00789c32d3c7abaf6b256541264333f87",
+        "score": -0.34481972455978394
+      },
+      {
+        "chunk_id": "bdc9ea567c0d78ab37c2cf77",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "4890108dda0cba25f5b65961040834148b2e278481245acb7d10e34b41fee8b9",
+        "score": 2.24773907661438
+      },
+      {
+        "chunk_id": "a36043b8ee1a391f2dd1c31a",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "1bb44eeadcd3624e68b919dbf54270aa473e4dc32c22f64799123b960a15ff7a",
+        "score": 6.990146636962891
+      },
+      {
+        "chunk_id": "a8887b02ae32e4d4748ad264",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "d90807ffc8febe52d313df28752d5205ec76e2c76f848c60c35f0c4c0001f521",
+        "score": 6.54618501663208
+      },
+      {
+        "chunk_id": "c03289565d5cc78f2b44cfca",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "57fdf39e387b8b69d1f4da86e009b89e95932a3d487bcd4af05330fa919fedb1",
+        "score": 3.271963357925415
+      },
+      {
+        "chunk_id": "66e41c6a6dbb49b77fb123f2",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "b143e233e1df2019da5ecb837b45e35a0a43faa0b079b042749a094e0352c4c6",
+        "score": 3.8392207622528076
+      },
+      {
+        "chunk_id": "5d5fd6cf18ea4e313fdc45b5",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "778749fca041de6c41c5a4576cb33ba07317116542af12be41e7352aa292a76d",
+        "score": 2.785626173019409
+      },
+      {
+        "chunk_id": "d74f298bf424e80db33f40c0",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "27ca481c24235c5056aca28f45d7df95c987e483fc910ad2f54b71222f82648e",
+        "score": 3.418081760406494
+      },
+      {
+        "chunk_id": "54615572d7bd4dde554106e9",
+        "query_sha256": "c059317b4f2e651682ab1370155c9b22ba7d20d5a256a000ec9f3696e8ba40e1",
+        "chunk_sha256": "d3c4269734ae919ca4a7253a73049de381f02ed436315545d7757e339268f64b",
+        "score": -2.458501100540161
+      }
+    ],
+    "output_ids": [
+      "c120df3a569ae215d69183ac",
+      "38ea5e749604f43f5f040901",
+      "a36043b8ee1a391f2dd1c31a",
+      "3a3f2c0bc27d1815ea693a4a",
+      "a8887b02ae32e4d4748ad264",
+      "0b2bc61ba6e04bf37c779232",
+      "acbdb12c2a62c12fe9787ef7",
+      "e69ef87cafd302938c765e20",
+      "3b8f42f7061b1f1a8e2205a6",
+      "0a4d3ca37e5dd0727f0df0b7",
+      "1e2bd5122cd13762094dde86",
+      "9b5d9b92dc528a1c594e3ec2",
+      "66e41c6a6dbb49b77fb123f2",
+      "d74f298bf424e80db33f40c0",
+      "c03289565d5cc78f2b44cfca",
+      "5d5fd6cf18ea4e313fdc45b5",
+      "5b25186e3e9342c92e5a3670",
+      "bdc9ea567c0d78ab37c2cf77",
+      "7bd438a6e96bd608918543bc",
+      "54615572d7bd4dde554106e9"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "在室温 25±2℃ 的情况下，非嵌入式全光组网终端表面温度不得超过多少℃？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "9b5d9b92dc528a1c594e3ec2",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "e655efda8be454b93fa0ca0da97bfd2d9db881923627ca7dab00a7ac89773633",
+        "score": 8.55168628692627
+      },
+      {
+        "chunk_id": "a8887b02ae32e4d4748ad264",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "d90807ffc8febe52d313df28752d5205ec76e2c76f848c60c35f0c4c0001f521",
+        "score": -3.5352110862731934
+      },
+      {
+        "chunk_id": "44f638f745282f4192dcd963",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "54d33d0eb73b3295c8c659e41a3b5f6c155523af2eac3ec81430b356a33850f5",
+        "score": -3.7627995014190674
+      },
+      {
+        "chunk_id": "acbdb12c2a62c12fe9787ef7",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "144e2cd82deaa18dba6e074294ccc470f7790028b386d5897e2b45357f214fa4",
+        "score": -4.651650905609131
+      },
+      {
+        "chunk_id": "0a4d3ca37e5dd0727f0df0b7",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "a2a669ce098c78899a9464bc8702216d373f41f4c1423f72e142003fd5a93375",
+        "score": -4.313823223114014
+      },
+      {
+        "chunk_id": "d74f298bf424e80db33f40c0",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "27ca481c24235c5056aca28f45d7df95c987e483fc910ad2f54b71222f82648e",
+        "score": -5.84605073928833
+      },
+      {
+        "chunk_id": "e69ef87cafd302938c765e20",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "a937d5a6e757c266fe69e461079461b21f18215aef6bc592b47620c0d69d9586",
+        "score": -6.041310787200928
+      },
+      {
+        "chunk_id": "a36043b8ee1a391f2dd1c31a",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "1bb44eeadcd3624e68b919dbf54270aa473e4dc32c22f64799123b960a15ff7a",
+        "score": -4.1357598304748535
+      },
+      {
+        "chunk_id": "5b25186e3e9342c92e5a3670",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "0f5a83d917c150b788bdd82f87877f623bd6732288e5da708945345eb6cab681",
+        "score": -8.251585960388184
+      },
+      {
+        "chunk_id": "3ef6f0c2eb6c280b4b3a262b",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "ef0e11c30a1632be3a3eb6106e4e5071c23d855b3538477c138789344fececc0",
+        "score": -4.772747039794922
+      },
+      {
+        "chunk_id": "3c9c81f21d4df15d5cb812c4",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "5d18eda318e1457571aa480fe2299db375412b7b1b10c507224dc5e544a3cf58",
+        "score": -5.841810703277588
+      },
+      {
+        "chunk_id": "a3aa8e54c36d3fa235c9a6c1",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "938308a7d795471a807e3737b3b233f7aad7c6a554281084c382f8d1affc8d3d",
+        "score": -3.463402509689331
+      },
+      {
+        "chunk_id": "c03289565d5cc78f2b44cfca",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "57fdf39e387b8b69d1f4da86e009b89e95932a3d487bcd4af05330fa919fedb1",
+        "score": -7.557872772216797
+      },
+      {
+        "chunk_id": "8e0f763bb003a20ec8b5f6b2",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "9c1d32331206e747ad73927cc2936ea8b6ebce03252f5a913cba15effee29f77",
+        "score": -6.519739627838135
+      },
+      {
+        "chunk_id": "72fa8e10c0e1591665ff1d32",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "9180d8bc966c5e99cb1c69925ca9f34dc22420a08e2085344e31b37e45a0b515",
+        "score": -3.8103814125061035
+      },
+      {
+        "chunk_id": "13b449a7300569643ee21bd4",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "bea13e14b5e176ef2e65d570423457c47e184f6ef4b7ec38ed2cce5ea2bfc703",
+        "score": -2.572016954421997
+      },
+      {
+        "chunk_id": "66e41c6a6dbb49b77fb123f2",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "b143e233e1df2019da5ecb837b45e35a0a43faa0b079b042749a094e0352c4c6",
+        "score": -6.4879961013793945
+      },
+      {
+        "chunk_id": "8a7f78eaa2ea7985e75538ec",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "c91349e78ee1aa8b16cbc4bd12970dd9147d1015d837636206ea7b804e318565",
+        "score": -4.9970550537109375
+      },
+      {
+        "chunk_id": "d1d75534f8865f49c152b4dd",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "16c0db3ba074419a17a4e99e03d03fcc4c545c43281a70dfac1e30eb1a69571c",
+        "score": -6.104611873626709
+      },
+      {
+        "chunk_id": "5d5fd6cf18ea4e313fdc45b5",
+        "query_sha256": "6042e6bfbaa21c93ac2b834e8a4a1c1b668cc8753d123ff983757b45e7efd8c4",
+        "chunk_sha256": "778749fca041de6c41c5a4576cb33ba07317116542af12be41e7352aa292a76d",
+        "score": -7.771583080291748
+      }
+    ],
+    "output_ids": [
+      "9b5d9b92dc528a1c594e3ec2",
+      "13b449a7300569643ee21bd4",
+      "a3aa8e54c36d3fa235c9a6c1",
+      "a8887b02ae32e4d4748ad264",
+      "44f638f745282f4192dcd963",
+      "72fa8e10c0e1591665ff1d32",
+      "a36043b8ee1a391f2dd1c31a",
+      "0a4d3ca37e5dd0727f0df0b7",
+      "acbdb12c2a62c12fe9787ef7",
+      "3ef6f0c2eb6c280b4b3a262b",
+      "8a7f78eaa2ea7985e75538ec",
+      "3c9c81f21d4df15d5cb812c4",
+      "d74f298bf424e80db33f40c0",
+      "e69ef87cafd302938c765e20",
+      "d1d75534f8865f49c152b4dd",
+      "66e41c6a6dbb49b77fb123f2",
+      "8e0f763bb003a20ec8b5f6b2",
+      "c03289565d5cc78f2b44cfca",
+      "5d5fd6cf18ea4e313fdc45b5",
+      "5b25186e3e9342c92e5a3670"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "8aa58e78fb1164af31d04320b5216a2d934723c3f2ae477c3632ac2a10af190b",
+        "score": 9.261345863342285
+      },
+      {
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "ce80257c5b935ca75b67354da130350b418875e95585146e246921987cac7b36",
+        "score": 6.387661933898926
+      },
+      {
+        "chunk_id": "c10a8b3b89210595f9880fc6",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "b01db38172ac197963ad004b3dafca02db761c96f163f0b9848f69ede64cdc0a",
+        "score": 9.83707332611084
+      },
+      {
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+        "score": 9.322230339050293
+      },
+      {
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+        "score": 8.466309547424316
+      },
+      {
+        "chunk_id": "5766d05fd8a6f73a1ef60b57",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "e404afa1c23b6bbb8116ef68a16b89ff1ef3ff541d79271acc246f7762a52f54",
+        "score": 4.193431854248047
+      },
+      {
+        "chunk_id": "f86d4474f6f6b987d29ada4c",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "64920a97fac3cd393fe8bfe5e988dddf094e1938039e6e9480159e109d84ac69",
+        "score": 6.86396598815918
+      },
+      {
+        "chunk_id": "1daa7b0cd5324d66d627a243",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "c3e5b22daeaabfdb47d7a47182439f1534cae986fe7bc156726cbcf807a69c0d",
+        "score": 7.580374240875244
+      },
+      {
+        "chunk_id": "5ab56d780f65ff344900b1a2",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "15256979daa8cf286c973ef27a740f73c7c9b362f6273f01c96e50b158eae330",
+        "score": 4.701441287994385
+      },
+      {
+        "chunk_id": "5d1e8fd617217ecea2afa2f1",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "973065d668edb4da846cd08d60dc99512b3bf237a81e278d5f02c408d07da664",
+        "score": 6.865188121795654
+      },
+      {
+        "chunk_id": "9cc4e5069f6287c6f33683b2",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "2f60f0dbdb3a3ea3b1746c42196fc0fedd84c7881976ca5bcee7442a26ffe712",
+        "score": 5.034818649291992
+      },
+      {
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "dd4d48c087c6d31ef58357f00ba494ad126ea33182c1195f3c8ecf6d495ab041",
+        "score": 6.007335662841797
+      },
+      {
+        "chunk_id": "14da1c09b687f7b48896e03a",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "78fa400ac856d9463f2bde00649665f36b78f8fcad7f488baa0c67b1d93216b2",
+        "score": 6.777678966522217
+      },
+      {
+        "chunk_id": "2eda6960dfbb194d0f84e4b0",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "054404e680aa577e1ee7250150aaf8c2ba021afacf69cd07214c40dd3b09a155",
+        "score": 2.778869390487671
+      },
+      {
+        "chunk_id": "71a4f239a4fd7b69fdc74486",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "2c69f9548f7ab5bcc9592c004701ff8e277a1e69c49f52f04089023aec4f200c",
+        "score": 3.8686864376068115
+      },
+      {
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "199c9e8bcbf5f594e9fdc522fb4e034da859195399d05225e6d5d4a47b5b689b",
+        "score": 7.725436687469482
+      },
+      {
+        "chunk_id": "d70540614c288a2dc8b3066f",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "bd356089e5f5701b17d7261c697bc51f3f481f25a58ec785de3ae225ce30ce49",
+        "score": 6.394700527191162
+      },
+      {
+        "chunk_id": "a42aa1211b15c9b97d77cd11",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "28267d40bf3890d7b7ec8433a3e5d9b1ddd6e737d70324f5342a14947d8c6c49",
+        "score": -5.14401912689209
+      },
+      {
+        "chunk_id": "84139f0d408339d51910bb1e",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "91bb642f4559e709e1501985c9525a75a0217a81c66cb45459a7e73322418f7a",
+        "score": -3.1390817165374756
+      },
+      {
+        "chunk_id": "3c9c81f21d4df15d5cb812c4",
+        "query_sha256": "8b8f4fb4a454ab90d5a0876242c92552b305f48703742fca3947b53c46f7b9df",
+        "chunk_sha256": "5d18eda318e1457571aa480fe2299db375412b7b1b10c507224dc5e544a3cf58",
+        "score": -3.1564791202545166
+      }
+    ],
+    "output_ids": [
+      "c10a8b3b89210595f9880fc6",
+      "0eb4bd6e18d599063371f51b",
+      "48ecc091e26caaa3ccbd3be5",
+      "02c18b66c8c7d17fa1fb910e",
+      "95ae763cde2f43aec2cb7d14",
+      "1daa7b0cd5324d66d627a243",
+      "5d1e8fd617217ecea2afa2f1",
+      "f86d4474f6f6b987d29ada4c",
+      "14da1c09b687f7b48896e03a",
+      "d70540614c288a2dc8b3066f",
+      "e010fe39879d92fa21dc59d9",
+      "2dcaa8db79f8754db213ab1c",
+      "9cc4e5069f6287c6f33683b2",
+      "5ab56d780f65ff344900b1a2",
+      "5766d05fd8a6f73a1ef60b57",
+      "71a4f239a4fd7b69fdc74486",
+      "2eda6960dfbb194d0f84e4b0",
+      "84139f0d408339d51910bb1e",
+      "3c9c81f21d4df15d5cb812c4",
+      "a42aa1211b15c9b97d77cd11"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "《智慧家庭装维工程与管理职业技能等级标准》第 5.7 节规定，安全作业知识包括哪五项？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+        "score": 10.818718910217285
+      },
+      {
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+        "score": 9.985021591186523
+      },
+      {
+        "chunk_id": "5766d05fd8a6f73a1ef60b57",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "e404afa1c23b6bbb8116ef68a16b89ff1ef3ff541d79271acc246f7762a52f54",
+        "score": 4.959798336029053
+      },
+      {
+        "chunk_id": "2eda6960dfbb194d0f84e4b0",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "054404e680aa577e1ee7250150aaf8c2ba021afacf69cd07214c40dd3b09a155",
+        "score": 4.602445602416992
+      },
+      {
+        "chunk_id": "5d1e8fd617217ecea2afa2f1",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "973065d668edb4da846cd08d60dc99512b3bf237a81e278d5f02c408d07da664",
+        "score": 8.016976356506348
+      },
+      {
+        "chunk_id": "9cc4e5069f6287c6f33683b2",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "2f60f0dbdb3a3ea3b1746c42196fc0fedd84c7881976ca5bcee7442a26ffe712",
+        "score": 2.0589635372161865
+      },
+      {
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "8aa58e78fb1164af31d04320b5216a2d934723c3f2ae477c3632ac2a10af190b",
+        "score": 5.274913787841797
+      },
+      {
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "dd4d48c087c6d31ef58357f00ba494ad126ea33182c1195f3c8ecf6d495ab041",
+        "score": 6.183558940887451
+      },
+      {
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "199c9e8bcbf5f594e9fdc522fb4e034da859195399d05225e6d5d4a47b5b689b",
+        "score": 7.523246765136719
+      },
+      {
+        "chunk_id": "71a4f239a4fd7b69fdc74486",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "2c69f9548f7ab5bcc9592c004701ff8e277a1e69c49f52f04089023aec4f200c",
+        "score": -0.155635267496109
+      },
+      {
+        "chunk_id": "14da1c09b687f7b48896e03a",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "78fa400ac856d9463f2bde00649665f36b78f8fcad7f488baa0c67b1d93216b2",
+        "score": 5.339500904083252
+      },
+      {
+        "chunk_id": "d70540614c288a2dc8b3066f",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "bd356089e5f5701b17d7261c697bc51f3f481f25a58ec785de3ae225ce30ce49",
+        "score": 7.184072017669678
+      },
+      {
+        "chunk_id": "f86d4474f6f6b987d29ada4c",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "64920a97fac3cd393fe8bfe5e988dddf094e1938039e6e9480159e109d84ac69",
+        "score": 6.7358479499816895
+      },
+      {
+        "chunk_id": "1daa7b0cd5324d66d627a243",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "c3e5b22daeaabfdb47d7a47182439f1534cae986fe7bc156726cbcf807a69c0d",
+        "score": 6.550089359283447
+      },
+      {
+        "chunk_id": "5ab56d780f65ff344900b1a2",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "15256979daa8cf286c973ef27a740f73c7c9b362f6273f01c96e50b158eae330",
+        "score": 2.2298600673675537
+      },
+      {
+        "chunk_id": "c10a8b3b89210595f9880fc6",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "b01db38172ac197963ad004b3dafca02db761c96f163f0b9848f69ede64cdc0a",
+        "score": 5.725778579711914
+      },
+      {
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "93d6bbbbb13b009a7949ff65b12feae09c209ba20dc9a6dbb27e7dffc916cb8d",
+        "score": 2.8216419219970703
+      },
+      {
+        "chunk_id": "81bd459de1d4e62f9428ae88",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "7f5237e5ef1fe421d07a70582d3969a2141f5fbcdf7eea554c2c86b70526a022",
+        "score": -0.059091709554195404
+      },
+      {
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "ce80257c5b935ca75b67354da130350b418875e95585146e246921987cac7b36",
+        "score": 3.857403516769409
+      },
+      {
+        "chunk_id": "6c076494dcdde27c7a669efb",
+        "query_sha256": "d78e3ae0f51772360ccd1fece9db17029d19a17ff54d64a96968015baf130d14",
+        "chunk_sha256": "7d5df8a466a3198fe0d41f8878feb0f31ebfe644a682eb01aacab36c19196f5c",
+        "score": -3.853198289871216
+      }
+    ],
+    "output_ids": [
+      "0eb4bd6e18d599063371f51b",
+      "02c18b66c8c7d17fa1fb910e",
+      "5d1e8fd617217ecea2afa2f1",
+      "95ae763cde2f43aec2cb7d14",
+      "d70540614c288a2dc8b3066f",
+      "f86d4474f6f6b987d29ada4c",
+      "1daa7b0cd5324d66d627a243",
+      "2dcaa8db79f8754db213ab1c",
+      "c10a8b3b89210595f9880fc6",
+      "14da1c09b687f7b48896e03a",
+      "48ecc091e26caaa3ccbd3be5",
+      "5766d05fd8a6f73a1ef60b57",
+      "2eda6960dfbb194d0f84e4b0",
+      "e010fe39879d92fa21dc59d9",
+      "1c317b1dd2cebfbf9647d03e",
+      "5ab56d780f65ff344900b1a2",
+      "9cc4e5069f6287c6f33683b2",
+      "81bd459de1d4e62f9428ae88",
+      "71a4f239a4fd7b69fdc74486",
+      "6c076494dcdde27c7a669efb"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，中级人员在“智能家居（控制）技术”项下对系统架构有什么要求？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "1daa7b0cd5324d66d627a243",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "c3e5b22daeaabfdb47d7a47182439f1534cae986fe7bc156726cbcf807a69c0d",
+        "score": 6.598242282867432
+      },
+      {
+        "chunk_id": "f86d4474f6f6b987d29ada4c",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "64920a97fac3cd393fe8bfe5e988dddf094e1938039e6e9480159e109d84ac69",
+        "score": 5.054126262664795
+      },
+      {
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "ce80257c5b935ca75b67354da130350b418875e95585146e246921987cac7b36",
+        "score": 4.443545341491699
+      },
+      {
+        "chunk_id": "5766d05fd8a6f73a1ef60b57",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "e404afa1c23b6bbb8116ef68a16b89ff1ef3ff541d79271acc246f7762a52f54",
+        "score": 2.435331344604492
+      },
+      {
+        "chunk_id": "2eda6960dfbb194d0f84e4b0",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "054404e680aa577e1ee7250150aaf8c2ba021afacf69cd07214c40dd3b09a155",
+        "score": 3.047471761703491
+      },
+      {
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+        "score": 5.262864589691162
+      },
+      {
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "dd4d48c087c6d31ef58357f00ba494ad126ea33182c1195f3c8ecf6d495ab041",
+        "score": 3.9938371181488037
+      },
+      {
+        "chunk_id": "5d1e8fd617217ecea2afa2f1",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "973065d668edb4da846cd08d60dc99512b3bf237a81e278d5f02c408d07da664",
+        "score": 3.6781322956085205
+      },
+      {
+        "chunk_id": "9cc4e5069f6287c6f33683b2",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "2f60f0dbdb3a3ea3b1746c42196fc0fedd84c7881976ca5bcee7442a26ffe712",
+        "score": 2.1082675457000732
+      },
+      {
+        "chunk_id": "c10a8b3b89210595f9880fc6",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "b01db38172ac197963ad004b3dafca02db761c96f163f0b9848f69ede64cdc0a",
+        "score": 7.5646233558654785
+      },
+      {
+        "chunk_id": "71a4f239a4fd7b69fdc74486",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "2c69f9548f7ab5bcc9592c004701ff8e277a1e69c49f52f04089023aec4f200c",
+        "score": 0.36340343952178955
+      },
+      {
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+        "score": 6.67766809463501
+      },
+      {
+        "chunk_id": "14da1c09b687f7b48896e03a",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "78fa400ac856d9463f2bde00649665f36b78f8fcad7f488baa0c67b1d93216b2",
+        "score": 4.728304386138916
+      },
+      {
+        "chunk_id": "5ab56d780f65ff344900b1a2",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "15256979daa8cf286c973ef27a740f73c7c9b362f6273f01c96e50b158eae330",
+        "score": 1.5657312870025635
+      },
+      {
+        "chunk_id": "d70540614c288a2dc8b3066f",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "bd356089e5f5701b17d7261c697bc51f3f481f25a58ec785de3ae225ce30ce49",
+        "score": 4.7882256507873535
+      },
+      {
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "8aa58e78fb1164af31d04320b5216a2d934723c3f2ae477c3632ac2a10af190b",
+        "score": 6.003336429595947
+      },
+      {
+        "chunk_id": "81bd459de1d4e62f9428ae88",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "7f5237e5ef1fe421d07a70582d3969a2141f5fbcdf7eea554c2c86b70526a022",
+        "score": -1.3113188743591309
+      },
+      {
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "199c9e8bcbf5f594e9fdc522fb4e034da859195399d05225e6d5d4a47b5b689b",
+        "score": 2.9855573177337646
+      },
+      {
+        "chunk_id": "06e68d69881bfa6bffefd124",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "b410ace2f1a1212007bad947b627b86972c2d96ef369239a6558dc9371610073",
+        "score": -2.9137237071990967
+      },
+      {
+        "chunk_id": "5b25186e3e9342c92e5a3670",
+        "query_sha256": "7440b9d11148370f6b6660d5aab78f7ecf45ad4fa2bbd7a0e7a44222c38df440",
+        "chunk_sha256": "0f5a83d917c150b788bdd82f87877f623bd6732288e5da708945345eb6cab681",
+        "score": -4.6259446144104
+      }
+    ],
+    "output_ids": [
+      "c10a8b3b89210595f9880fc6",
+      "0eb4bd6e18d599063371f51b",
+      "1daa7b0cd5324d66d627a243",
+      "48ecc091e26caaa3ccbd3be5",
+      "02c18b66c8c7d17fa1fb910e",
+      "f86d4474f6f6b987d29ada4c",
+      "d70540614c288a2dc8b3066f",
+      "14da1c09b687f7b48896e03a",
+      "e010fe39879d92fa21dc59d9",
+      "2dcaa8db79f8754db213ab1c",
+      "5d1e8fd617217ecea2afa2f1",
+      "2eda6960dfbb194d0f84e4b0",
+      "95ae763cde2f43aec2cb7d14",
+      "5766d05fd8a6f73a1ef60b57",
+      "9cc4e5069f6287c6f33683b2",
+      "5ab56d780f65ff344900b1a2",
+      "71a4f239a4fd7b69fdc74486",
+      "81bd459de1d4e62f9428ae88",
+      "06e68d69881bfa6bffefd124",
+      "5b25186e3e9342c92e5a3670"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，高级人员在“物联网接入业务运维”项下对网关组网方法的要求是什么？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "93d6bbbbb13b009a7949ff65b12feae09c209ba20dc9a6dbb27e7dffc916cb8d",
+        "score": 5.817199230194092
+      },
+      {
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "8aa58e78fb1164af31d04320b5216a2d934723c3f2ae477c3632ac2a10af190b",
+        "score": 7.92169713973999
+      },
+      {
+        "chunk_id": "c10a8b3b89210595f9880fc6",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "b01db38172ac197963ad004b3dafca02db761c96f163f0b9848f69ede64cdc0a",
+        "score": 8.173323631286621
+      },
+      {
+        "chunk_id": "5766d05fd8a6f73a1ef60b57",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "e404afa1c23b6bbb8116ef68a16b89ff1ef3ff541d79271acc246f7762a52f54",
+        "score": 3.181414842605591
+      },
+      {
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "199c9e8bcbf5f594e9fdc522fb4e034da859195399d05225e6d5d4a47b5b689b",
+        "score": 5.228211879730225
+      },
+      {
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+        "score": 5.2524847984313965
+      },
+      {
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+        "score": 6.510948657989502
+      },
+      {
+        "chunk_id": "2eda6960dfbb194d0f84e4b0",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "054404e680aa577e1ee7250150aaf8c2ba021afacf69cd07214c40dd3b09a155",
+        "score": 3.0732648372650146
+      },
+      {
+        "chunk_id": "5d1e8fd617217ecea2afa2f1",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "973065d668edb4da846cd08d60dc99512b3bf237a81e278d5f02c408d07da664",
+        "score": 3.7796823978424072
+      },
+      {
+        "chunk_id": "f86d4474f6f6b987d29ada4c",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "64920a97fac3cd393fe8bfe5e988dddf094e1938039e6e9480159e109d84ac69",
+        "score": 6.41052770614624
+      },
+      {
+        "chunk_id": "5ab56d780f65ff344900b1a2",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "15256979daa8cf286c973ef27a740f73c7c9b362f6273f01c96e50b158eae330",
+        "score": 2.1290085315704346
+      },
+      {
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "ce80257c5b935ca75b67354da130350b418875e95585146e246921987cac7b36",
+        "score": 3.4804909229278564
+      },
+      {
+        "chunk_id": "71a4f239a4fd7b69fdc74486",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "2c69f9548f7ab5bcc9592c004701ff8e277a1e69c49f52f04089023aec4f200c",
+        "score": 0.06495919078588486
+      },
+      {
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "dd4d48c087c6d31ef58357f00ba494ad126ea33182c1195f3c8ecf6d495ab041",
+        "score": 3.730910539627075
+      },
+      {
+        "chunk_id": "1daa7b0cd5324d66d627a243",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "c3e5b22daeaabfdb47d7a47182439f1534cae986fe7bc156726cbcf807a69c0d",
+        "score": 5.742180824279785
+      },
+      {
+        "chunk_id": "e69ef87cafd302938c765e20",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "a937d5a6e757c266fe69e461079461b21f18215aef6bc592b47620c0d69d9586",
+        "score": -1.8587806224822998
+      },
+      {
+        "chunk_id": "5d5fd6cf18ea4e313fdc45b5",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "778749fca041de6c41c5a4576cb33ba07317116542af12be41e7352aa292a76d",
+        "score": -2.660639524459839
+      },
+      {
+        "chunk_id": "0b2bc61ba6e04bf37c779232",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "e39c5600dba109b98ba1ecf21ce6f55bf93a729ee6a06e096892457d560df4c2",
+        "score": -3.0958750247955322
+      },
+      {
+        "chunk_id": "d349f789d2e652960680ae1c",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "fadd2cc3adef3e84998ef1281919681fcf033bba5792c8fd4692fbfc554644e0",
+        "score": -2.3186638355255127
+      },
+      {
+        "chunk_id": "a36043b8ee1a391f2dd1c31a",
+        "query_sha256": "1cb5b16180e10f02ce78a29c30c8a1c3945f11f716f4055ecc78ce58b54d55b2",
+        "chunk_sha256": "1bb44eeadcd3624e68b919dbf54270aa473e4dc32c22f64799123b960a15ff7a",
+        "score": -0.6090778112411499
+      }
+    ],
+    "output_ids": [
+      "c10a8b3b89210595f9880fc6",
+      "48ecc091e26caaa3ccbd3be5",
+      "0eb4bd6e18d599063371f51b",
+      "f86d4474f6f6b987d29ada4c",
+      "1c317b1dd2cebfbf9647d03e",
+      "1daa7b0cd5324d66d627a243",
+      "02c18b66c8c7d17fa1fb910e",
+      "95ae763cde2f43aec2cb7d14",
+      "5d1e8fd617217ecea2afa2f1",
+      "2dcaa8db79f8754db213ab1c",
+      "e010fe39879d92fa21dc59d9",
+      "5766d05fd8a6f73a1ef60b57",
+      "2eda6960dfbb194d0f84e4b0",
+      "5ab56d780f65ff344900b1a2",
+      "71a4f239a4fd7b69fdc74486",
+      "a36043b8ee1a391f2dd1c31a",
+      "e69ef87cafd302938c765e20",
+      "d349f789d2e652960680ae1c",
+      "5d5fd6cf18ea4e313fdc45b5",
+      "0b2bc61ba6e04bf37c779232"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "《电信基础设施维护规程》表 10.3.3.4 中，安装波分复用器这一子项包含哪些工作？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "92108b5bb6dcc5b2227d531c",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "505614c9226d1251eae0f4b3b646641c39c86d46502fd0d9f1c04f0b37adf71b",
+        "score": 10.480653762817383
+      },
+      {
+        "chunk_id": "258ef2b78ff022814a5dd780",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "8f485dbf5a3bdb057ec4ac127d92bc9cf8397d97a8b06656de4790c14fda5fb5",
+        "score": 3.263697385787964
+      },
+      {
+        "chunk_id": "89660c696070f901737bdc4b",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "452ea95dcb998ee51c0d5c7a62895593b7e7957148076b7aaf7408398f17f1ee",
+        "score": 0.43223923444747925
+      },
+      {
+        "chunk_id": "fc7d5eed0b515cf1096fd166",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "ee3623542a7b1f674e475ddcc88fbc7289f0af7b24c4b211d6086d7f70768618",
+        "score": 6.140411853790283
+      },
+      {
+        "chunk_id": "8d6a3993748474ddec52ba5c",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "e8227f912eb405ff2907a563eb11ecf8059dfff496d0feca763690a7c1cdfb16",
+        "score": 5.626079082489014
+      },
+      {
+        "chunk_id": "c1e482df686f369f344cd4d9",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "508642e7bdb99c999d6af3edddc53a00953860582c5105716eb61f91add2e40f",
+        "score": 2.103700876235962
+      },
+      {
+        "chunk_id": "e506905f675cde3307e868b8",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "c063e83ab2fc19b978984ac0227a4ae7c9d44fc065f6bd8945f2787edbc6285e",
+        "score": -0.6805675625801086
+      },
+      {
+        "chunk_id": "abee735aa9c981d3bebcae9f",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "a8bebf620ea2351540442dcb3874e12328f8786336d82b44d1dc0e3b997f0feb",
+        "score": 3.1136984825134277
+      },
+      {
+        "chunk_id": "53d5b679c6d5759fca64305a",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "a61ff97a0827de018586f8b3e5b52d2b818a6f7b3cd222b9f42fc6a3cbd269ce",
+        "score": 6.3581342697143555
+      },
+      {
+        "chunk_id": "da52c850bc7f4f88d00cb3f7",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "4ed92ebc3dfdaa58959350200da211fad527948c5f63de1a4fc6ba706271b7b7",
+        "score": 4.148143768310547
+      },
+      {
+        "chunk_id": "b2edc2384d6b845e0005973a",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "5e59027c21534f27099d8336098ab9a37561fbcbc1d9fabfcdf67de74c7759a6",
+        "score": 6.082492351531982
+      },
+      {
+        "chunk_id": "1a00f58577a947664b68d1b0",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "e626b89ad662fb952df62b361bfe3bc33150be1d6b375b9621c4266153ee602f",
+        "score": 2.968700885772705
+      },
+      {
+        "chunk_id": "c4d77a21e79acbe5209fb5f1",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "0369e668a97170c914e5629ef8973982e83471a3051af18e36a226c4cc9df41d",
+        "score": 0.34782958030700684
+      },
+      {
+        "chunk_id": "9c667e81ac27ccd4a9cf5124",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "0205f518ed4467c613ad00ad0cc8236a179ef196b0893fe765448dbea4c4f1e7",
+        "score": 5.461881637573242
+      },
+      {
+        "chunk_id": "3d3eb164235efb301e727bfd",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "d259488c06d787382de87ff314926af3f01293c444fbe514fd35f00bfefa9072",
+        "score": 1.453913927078247
+      },
+      {
+        "chunk_id": "eced514a8afb5d6002fb7c2a",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "c4fc94feab27c6e3c735b2b7c0ca6ac10d0a676218a647972a2bcdb60dd5b3a6",
+        "score": -1.9264717102050781
+      },
+      {
+        "chunk_id": "6bf394ec756103a82e9f6e9c",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "a218c3ac65128109d773025f6b16853c911002dd8dbf6a8183a2f067ef262221",
+        "score": 1.1949840784072876
+      },
+      {
+        "chunk_id": "4fce0b1cd8d9e372161536d0",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "a94526be56584d3fd97f31ebc37dc50e228cb5bf4348211413645ae3b5d02809",
+        "score": 1.1256256103515625
+      },
+      {
+        "chunk_id": "83662a0e45a5c68760ffd3be",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "03a4701d9286fbf94da2bcbb6c8bc9696cb6cbd58908288ec980196754edf5f3",
+        "score": 0.2642612159252167
+      },
+      {
+        "chunk_id": "e923e34b9a1de0e90ff1ef3b",
+        "query_sha256": "b0b4e5b756b5fb3480b011ea7b5162c7132a766084017e107fc24a0c310aa8e7",
+        "chunk_sha256": "a11613ce05e9bcb1e7d205414c5bec9ab26ef092ebf393e06e44bf3dde01ca32",
+        "score": 0.8105553984642029
+      }
+    ],
+    "output_ids": [
+      "92108b5bb6dcc5b2227d531c",
+      "53d5b679c6d5759fca64305a",
+      "fc7d5eed0b515cf1096fd166",
+      "b2edc2384d6b845e0005973a",
+      "8d6a3993748474ddec52ba5c",
+      "9c667e81ac27ccd4a9cf5124",
+      "da52c850bc7f4f88d00cb3f7",
+      "258ef2b78ff022814a5dd780",
+      "abee735aa9c981d3bebcae9f",
+      "1a00f58577a947664b68d1b0",
+      "c1e482df686f369f344cd4d9",
+      "3d3eb164235efb301e727bfd",
+      "6bf394ec756103a82e9f6e9c",
+      "4fce0b1cd8d9e372161536d0",
+      "e923e34b9a1de0e90ff1ef3b",
+      "89660c696070f901737bdc4b",
+      "c4d77a21e79acbe5209fb5f1",
+      "83662a0e45a5c68760ffd3be",
+      "e506905f675cde3307e868b8",
+      "eced514a8afb5d6002fb7c2a"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "《电信基础设施维护规程》表 10.3.3.5 中，编码 WH23105001 对应的防雷箱子项名称是什么？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "03e5582a4a0f7d3c76a33e66",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "31edc894966e35696037bc869bad3a3111aeac07efaac9e01230935ae3510af9",
+        "score": 9.513422966003418
+      },
+      {
+        "chunk_id": "740b1efb4588db4307be1a0f",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "54fe8d086b61843507407856ddadd0adbed985b407def803ac13bb3f47235a51",
+        "score": 8.27698802947998
+      },
+      {
+        "chunk_id": "36e3ca9051c2b34c98aa9fca",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "d854661d2017589bb6903d6257b540b263ec7504663a56d62d8943d577f40ae5",
+        "score": 7.0751051902771
+      },
+      {
+        "chunk_id": "7be85324f4abe1131327119e",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "a8bb365bd068e7230429f29adbc392fd471d6fda6df765842f9c71a379865b81",
+        "score": 7.05047607421875
+      },
+      {
+        "chunk_id": "ed99004421c5de5fdf2e6cbf",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "3c41f758c52e2a17027c6db7906a4abee04c0e78131ac909369dc763cbe3a7fe",
+        "score": 1.9315797090530396
+      },
+      {
+        "chunk_id": "6f4bd67e8abf6dcfdde54829",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "c95e6381fe059a3eca12c208bdd0716919bafeff415f7ff64a6259e413b0a76c",
+        "score": 6.038084506988525
+      },
+      {
+        "chunk_id": "21af3c6b5c15e291ec09a05b",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "a97289c6aa74e81f9a7eccdde27e7ad1c5d5cd86ede83f93b1580b45330ab87b",
+        "score": 4.314253807067871
+      },
+      {
+        "chunk_id": "73988b3bb3ed3d5eba984089",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "f2a65bf123ebb82518eee6868d7a13cd7bfabd52db2a3501aaa4f0f7757336b3",
+        "score": 3.8576149940490723
+      },
+      {
+        "chunk_id": "8d6a3993748474ddec52ba5c",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "e8227f912eb405ff2907a563eb11ecf8059dfff496d0feca763690a7c1cdfb16",
+        "score": 5.427643775939941
+      },
+      {
+        "chunk_id": "3f406ad653cd6ded7e011a40",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "41d9bab425cc25420093c6e10d9f68ecb80a40a6b2afd41506c166d5657f3962",
+        "score": -0.9092369675636292
+      },
+      {
+        "chunk_id": "8294eda000c1fa18ec81773e",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "23a3e3a272339f0f44efc2af6bfb5b376b01f000765344fa64d60c9b1d37fc8a",
+        "score": 4.637275218963623
+      },
+      {
+        "chunk_id": "1a00f58577a947664b68d1b0",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "e626b89ad662fb952df62b361bfe3bc33150be1d6b375b9621c4266153ee602f",
+        "score": 4.446076393127441
+      },
+      {
+        "chunk_id": "7b51e76d302604e5c182f040",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "0d64544f5f39ba8363926065adcf74e5daa84680a604e91eaadfbc0e43f41ec8",
+        "score": 4.486481666564941
+      },
+      {
+        "chunk_id": "3fcd612549a4e58e909deb0e",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "3be2b94bcaaf28da982e12681eac4303c0d98987af69e622ec95714a09db1be2",
+        "score": 6.096463680267334
+      },
+      {
+        "chunk_id": "b2edc2384d6b845e0005973a",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "5e59027c21534f27099d8336098ab9a37561fbcbc1d9fabfcdf67de74c7759a6",
+        "score": 5.3399882316589355
+      },
+      {
+        "chunk_id": "4a65d0d3ead0bc841b1b28f8",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "8100204aabd1274cc45a3bd8a237ddddfd8edf85eeea9590326a3f6286f145a8",
+        "score": 5.718644618988037
+      },
+      {
+        "chunk_id": "fe0efc14933cd5d787519744",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "b9ccf8e61769818dab57ca88980a2eaf128b6af7da4d371a6164840bc758004b",
+        "score": 6.036697864532471
+      },
+      {
+        "chunk_id": "6195d7f4165dbac176d2e9d9",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "5a34a1424c05b96fac121352962467edd059d69bdca791b15a355b2cdc837198",
+        "score": 4.76703405380249
+      },
+      {
+        "chunk_id": "cf90c1ae88395ad7d4a617c2",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "a2a29334a47242700bde607673190cfb65a85fc7ae19e7dcce9f524c638cf67a",
+        "score": 2.976682424545288
+      },
+      {
+        "chunk_id": "9c667e81ac27ccd4a9cf5124",
+        "query_sha256": "5624e43ece75d5c462282711bfff07ed37ca1badfc35d88858d3de6e566f4f06",
+        "chunk_sha256": "0205f518ed4467c613ad00ad0cc8236a179ef196b0893fe765448dbea4c4f1e7",
+        "score": 4.772061347961426
+      }
+    ],
+    "output_ids": [
+      "03e5582a4a0f7d3c76a33e66",
+      "740b1efb4588db4307be1a0f",
+      "36e3ca9051c2b34c98aa9fca",
+      "7be85324f4abe1131327119e",
+      "3fcd612549a4e58e909deb0e",
+      "6f4bd67e8abf6dcfdde54829",
+      "fe0efc14933cd5d787519744",
+      "4a65d0d3ead0bc841b1b28f8",
+      "8d6a3993748474ddec52ba5c",
+      "b2edc2384d6b845e0005973a",
+      "9c667e81ac27ccd4a9cf5124",
+      "6195d7f4165dbac176d2e9d9",
+      "8294eda000c1fa18ec81773e",
+      "7b51e76d302604e5c182f040",
+      "1a00f58577a947664b68d1b0",
+      "21af3c6b5c15e291ec09a05b",
+      "73988b3bb3ed3d5eba984089",
+      "cf90c1ae88395ad7d4a617c2",
+      "ed99004421c5de5fdf2e6cbf",
+      "3f406ad653cd6ded7e011a40"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "《电信基础设施维护规程》表 10.3.3.5 中，室外塔上防雷箱（WH23105003）的综合单价列标了多少元？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "03e5582a4a0f7d3c76a33e66",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "31edc894966e35696037bc869bad3a3111aeac07efaac9e01230935ae3510af9",
+        "score": 8.719860076904297
+      },
+      {
+        "chunk_id": "87a89b911a3dff048d569b86",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "451e3f3555cd3d1833370d9deb3c582a1c480943f37b56735200400088fd8f75",
+        "score": 2.962435007095337
+      },
+      {
+        "chunk_id": "3f406ad653cd6ded7e011a40",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "41d9bab425cc25420093c6e10d9f68ecb80a40a6b2afd41506c166d5657f3962",
+        "score": 2.8788468837738037
+      },
+      {
+        "chunk_id": "7be85324f4abe1131327119e",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "a8bb365bd068e7230429f29adbc392fd471d6fda6df765842f9c71a379865b81",
+        "score": 3.9429242610931396
+      },
+      {
+        "chunk_id": "31ca53eabc210bec4a94da9e",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "7b6d2c33d8cdc099f6944130cfb28beb303e73e3d69b0b67d40ad74bc6b18b5f",
+        "score": 3.667896032333374
+      },
+      {
+        "chunk_id": "36e3ca9051c2b34c98aa9fca",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "d854661d2017589bb6903d6257b540b263ec7504663a56d62d8943d577f40ae5",
+        "score": 5.358072280883789
+      },
+      {
+        "chunk_id": "740b1efb4588db4307be1a0f",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "54fe8d086b61843507407856ddadd0adbed985b407def803ac13bb3f47235a51",
+        "score": 5.639495372772217
+      },
+      {
+        "chunk_id": "900318d0652d107eb78caf26",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "e8815d09e813218b38d663c92c312757e183b824321b49776b46d1c46142db83",
+        "score": 3.618518114089966
+      },
+      {
+        "chunk_id": "ed99004421c5de5fdf2e6cbf",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "3c41f758c52e2a17027c6db7906a4abee04c0e78131ac909369dc763cbe3a7fe",
+        "score": -0.7624403834342957
+      },
+      {
+        "chunk_id": "5dde5ed6e53f62177672e78b",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "61a49c4669389fa00891a97393bdad3138968044096e0e47e6b3603be557438b",
+        "score": 4.3624162673950195
+      },
+      {
+        "chunk_id": "6f4bd67e8abf6dcfdde54829",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "c95e6381fe059a3eca12c208bdd0716919bafeff415f7ff64a6259e413b0a76c",
+        "score": 5.010752201080322
+      },
+      {
+        "chunk_id": "68a1c1448a91e95c36a18aa3",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "43a1843c0cc1e516ed4f9af2ffbe0fece95d6dd4cfe053bfcdfa988b344fb2b1",
+        "score": 4.4092817306518555
+      },
+      {
+        "chunk_id": "611a9eb6554a2b482561c775",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "1204e7a40daa8c5904224d5331d838dd14d3ff99d963137d94c100bc494a0b84",
+        "score": 4.01934289932251
+      },
+      {
+        "chunk_id": "620acaeddf52599dd4ae377d",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "a2e6044d1ce6fd2482cabdbf34285711d4d7a0438d32c2d2bbe940eea765d095",
+        "score": 3.8917529582977295
+      },
+      {
+        "chunk_id": "24b9568940a267e369d3c91b",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "58001635de260f6f1433fa3bc5167999cf07501ce4124ce9eadcde4a2244ed82",
+        "score": -0.5249210000038147
+      },
+      {
+        "chunk_id": "fc7d5eed0b515cf1096fd166",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "ee3623542a7b1f674e475ddcc88fbc7289f0af7b24c4b211d6086d7f70768618",
+        "score": 3.8257944583892822
+      },
+      {
+        "chunk_id": "5997209344e1edab17af1a36",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "e666e0507bafe4dc8ce554023d88f366f0618d1356096eef668053ce09d5dd64",
+        "score": 5.1279988288879395
+      },
+      {
+        "chunk_id": "0482cd9fc76bb3bffb641705",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "00bb5694525068abac17c3500d2d0887c53dc32da435f1d150c3225e3a1957e4",
+        "score": 3.154254198074341
+      },
+      {
+        "chunk_id": "32ba458098b543078b9c3916",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "2e338950f753952348ec7c31c2bac9d7c0bcc78c77092e0809df3b2ab6ccb3a3",
+        "score": -3.179323434829712
+      },
+      {
+        "chunk_id": "e453e5772f5dbf9883660bbe",
+        "query_sha256": "60fc9025e372afcf8d7592ce16066dfd48864b389c49c7debaa7e88598bc224a",
+        "chunk_sha256": "68c1a10709d299fd3cd007f3872d75ec6c68f7ab0c74a4785f48db5ed8ad4c4c",
+        "score": 1.605262041091919
+      }
+    ],
+    "output_ids": [
+      "03e5582a4a0f7d3c76a33e66",
+      "740b1efb4588db4307be1a0f",
+      "36e3ca9051c2b34c98aa9fca",
+      "5997209344e1edab17af1a36",
+      "6f4bd67e8abf6dcfdde54829",
+      "68a1c1448a91e95c36a18aa3",
+      "5dde5ed6e53f62177672e78b",
+      "611a9eb6554a2b482561c775",
+      "7be85324f4abe1131327119e",
+      "620acaeddf52599dd4ae377d",
+      "fc7d5eed0b515cf1096fd166",
+      "31ca53eabc210bec4a94da9e",
+      "900318d0652d107eb78caf26",
+      "0482cd9fc76bb3bffb641705",
+      "87a89b911a3dff048d569b86",
+      "3f406ad653cd6ded7e011a40",
+      "e453e5772f5dbf9883660bbe",
+      "24b9568940a267e369d3c91b",
+      "ed99004421c5de5fdf2e6cbf",
+      "32ba458098b543078b9c3916"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "安装防雷接地装置的工作内容有哪些？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "03e5582a4a0f7d3c76a33e66",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "31edc894966e35696037bc869bad3a3111aeac07efaac9e01230935ae3510af9",
+        "score": 9.268811225891113
+      },
+      {
+        "chunk_id": "7be85324f4abe1131327119e",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "a8bb365bd068e7230429f29adbc392fd471d6fda6df765842f9c71a379865b81",
+        "score": 2.819138288497925
+      },
+      {
+        "chunk_id": "7b51e76d302604e5c182f040",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "0d64544f5f39ba8363926065adcf74e5daa84680a604e91eaadfbc0e43f41ec8",
+        "score": 1.505784034729004
+      },
+      {
+        "chunk_id": "73cbecc1788e5f99763cf41a",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "3a3c834926530cc5985307b4707294c50aee3fdf8bd7f7381deff90fa29ad31e",
+        "score": -1.3118796348571777
+      },
+      {
+        "chunk_id": "430ee9a3369049d150e98b57",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "35b5b77687468d4dd5f1f01ff723d75c0d7754adacfe14f42d0dc378a44a0509",
+        "score": -0.5829662680625916
+      },
+      {
+        "chunk_id": "36e3ca9051c2b34c98aa9fca",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "d854661d2017589bb6903d6257b540b263ec7504663a56d62d8943d577f40ae5",
+        "score": 2.5633156299591064
+      },
+      {
+        "chunk_id": "740b1efb4588db4307be1a0f",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "54fe8d086b61843507407856ddadd0adbed985b407def803ac13bb3f47235a51",
+        "score": 2.574713945388794
+      },
+      {
+        "chunk_id": "73988b3bb3ed3d5eba984089",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "f2a65bf123ebb82518eee6868d7a13cd7bfabd52db2a3501aaa4f0f7757336b3",
+        "score": -2.2620317935943604
+      },
+      {
+        "chunk_id": "fe0efc14933cd5d787519744",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "b9ccf8e61769818dab57ca88980a2eaf128b6af7da4d371a6164840bc758004b",
+        "score": 2.165095806121826
+      },
+      {
+        "chunk_id": "14c9c83470f749b59631d18b",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "23271c0c1e77fa92fd84896ccb7f88f18e4e5eb991418611fea22b9be26371bd",
+        "score": -0.393760085105896
+      },
+      {
+        "chunk_id": "258c7fc658713fa5e7898751",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "54665917e91304d8f9f2ecde58997a36fdcf988fa5a86ad67b9db5f9fca15adc",
+        "score": -5.039369583129883
+      },
+      {
+        "chunk_id": "28093ca7aacb5499631b4ee5",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "94ec12d8aaa5bd1b4fbef78d0a4911a63d4d18a75420b1d2ab36da3694e4a447",
+        "score": 1.310970664024353
+      },
+      {
+        "chunk_id": "c075dc68d46c245c3f7a221f",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "c9b0eebdd9c0dd13f24c6992d3a9778d4b311c1875f3f0d4f5e1c862e714fb31",
+        "score": -1.504542589187622
+      },
+      {
+        "chunk_id": "bdc63252519a88c47595f747",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "3e1377d5ee6ca0061df00d144c59c8231dadede2b80306cff9e7227f1aefa658",
+        "score": -4.234313488006592
+      },
+      {
+        "chunk_id": "c0820f0b44f44c84e0b54e3d",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "17ad2b666e04cf579fb668ef429e2c2ed27d7b354574d66292e8df9c5a7b8a42",
+        "score": -2.9935009479522705
+      },
+      {
+        "chunk_id": "a14cc56868b469462940f2a4",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "da4fa68281716939e5e175cceca77455ec69bbdfc5ca16ebe50e97c7156e266c",
+        "score": -3.000722646713257
+      },
+      {
+        "chunk_id": "2707d31582919e6bbefecedc",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "b8f54629d5dad292375b0485ca90ea50bf17c6f7d5966caeea8ef3cef7c64422",
+        "score": -0.6583756804466248
+      },
+      {
+        "chunk_id": "83662a0e45a5c68760ffd3be",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "03a4701d9286fbf94da2bcbb6c8bc9696cb6cbd58908288ec980196754edf5f3",
+        "score": -4.398046970367432
+      },
+      {
+        "chunk_id": "895557a41828559b59f3680a",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "d279363e1ee33de4f54557f23232ed5fb74cc0fce2f35a79145a46b555520fe0",
+        "score": -2.356705665588379
+      },
+      {
+        "chunk_id": "e655b93658f6e506d322bef6",
+        "query_sha256": "82c953007d281f22de8b4d26a0f94e212e8bee05416060a066f37245d3e5ae26",
+        "chunk_sha256": "455001f0fe2a15dfcdc3ff8fc620327c484739724ef24932d2e5a3bd7f21677e",
+        "score": -3.169728994369507
+      }
+    ],
+    "output_ids": [
+      "03e5582a4a0f7d3c76a33e66",
+      "7be85324f4abe1131327119e",
+      "740b1efb4588db4307be1a0f",
+      "36e3ca9051c2b34c98aa9fca",
+      "fe0efc14933cd5d787519744",
+      "7b51e76d302604e5c182f040",
+      "28093ca7aacb5499631b4ee5",
+      "14c9c83470f749b59631d18b",
+      "430ee9a3369049d150e98b57",
+      "2707d31582919e6bbefecedc",
+      "73cbecc1788e5f99763cf41a",
+      "c075dc68d46c245c3f7a221f",
+      "73988b3bb3ed3d5eba984089",
+      "895557a41828559b59f3680a",
+      "c0820f0b44f44c84e0b54e3d",
+      "a14cc56868b469462940f2a4",
+      "e655b93658f6e506d322bef6",
+      "bdc63252519a88c47595f747",
+      "83662a0e45a5c68760ffd3be",
+      "258c7fc658713fa5e7898751"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "《电信基础设施维护规程》表 10.3.3.5 中，室内防雷箱（WH23105001）的综合单价列标了多少元？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "03e5582a4a0f7d3c76a33e66",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "31edc894966e35696037bc869bad3a3111aeac07efaac9e01230935ae3510af9",
+        "score": 9.125237464904785
+      },
+      {
+        "chunk_id": "3f406ad653cd6ded7e011a40",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "41d9bab425cc25420093c6e10d9f68ecb80a40a6b2afd41506c166d5657f3962",
+        "score": 3.5682172775268555
+      },
+      {
+        "chunk_id": "8d6a3993748474ddec52ba5c",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "e8227f912eb405ff2907a563eb11ecf8059dfff496d0feca763690a7c1cdfb16",
+        "score": 6.041530132293701
+      },
+      {
+        "chunk_id": "7be85324f4abe1131327119e",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "a8bb365bd068e7230429f29adbc392fd471d6fda6df765842f9c71a379865b81",
+        "score": 5.057383060455322
+      },
+      {
+        "chunk_id": "87a89b911a3dff048d569b86",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "451e3f3555cd3d1833370d9deb3c582a1c480943f37b56735200400088fd8f75",
+        "score": 3.629112720489502
+      },
+      {
+        "chunk_id": "740b1efb4588db4307be1a0f",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "54fe8d086b61843507407856ddadd0adbed985b407def803ac13bb3f47235a51",
+        "score": 6.908763408660889
+      },
+      {
+        "chunk_id": "36e3ca9051c2b34c98aa9fca",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "d854661d2017589bb6903d6257b540b263ec7504663a56d62d8943d577f40ae5",
+        "score": 6.058565616607666
+      },
+      {
+        "chunk_id": "31ca53eabc210bec4a94da9e",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "7b6d2c33d8cdc099f6944130cfb28beb303e73e3d69b0b67d40ad74bc6b18b5f",
+        "score": 4.796497821807861
+      },
+      {
+        "chunk_id": "7b51e76d302604e5c182f040",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "0d64544f5f39ba8363926065adcf74e5daa84680a604e91eaadfbc0e43f41ec8",
+        "score": 6.151795864105225
+      },
+      {
+        "chunk_id": "8dfd7acc3a5fcf416e5ca637",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "8c9d5166dcf30b1b2ba210420ae1c8b09bad9503c256dff2746abcb5933b340e",
+        "score": 8.763731002807617
+      },
+      {
+        "chunk_id": "fc16bde58b2e5f6168fc4bba",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "5bbc45049258ab0def9c008e9f8ccfd29c7c1ae1c4cb2720217c3ab17cd92d6b",
+        "score": 6.421300411224365
+      },
+      {
+        "chunk_id": "73988b3bb3ed3d5eba984089",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "f2a65bf123ebb82518eee6868d7a13cd7bfabd52db2a3501aaa4f0f7757336b3",
+        "score": 4.329062461853027
+      },
+      {
+        "chunk_id": "ed99004421c5de5fdf2e6cbf",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "3c41f758c52e2a17027c6db7906a4abee04c0e78131ac909369dc763cbe3a7fe",
+        "score": -0.9063858389854431
+      },
+      {
+        "chunk_id": "5dde5ed6e53f62177672e78b",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "61a49c4669389fa00891a97393bdad3138968044096e0e47e6b3603be557438b",
+        "score": 5.9575419425964355
+      },
+      {
+        "chunk_id": "6f4bd67e8abf6dcfdde54829",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "c95e6381fe059a3eca12c208bdd0716919bafeff415f7ff64a6259e413b0a76c",
+        "score": 6.291865825653076
+      },
+      {
+        "chunk_id": "900318d0652d107eb78caf26",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "e8815d09e813218b38d663c92c312757e183b824321b49776b46d1c46142db83",
+        "score": 5.0751166343688965
+      },
+      {
+        "chunk_id": "3fcd612549a4e58e909deb0e",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "3be2b94bcaaf28da982e12681eac4303c0d98987af69e622ec95714a09db1be2",
+        "score": 6.322122097015381
+      },
+      {
+        "chunk_id": "620acaeddf52599dd4ae377d",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "a2e6044d1ce6fd2482cabdbf34285711d4d7a0438d32c2d2bbe940eea765d095",
+        "score": 5.192416191101074
+      },
+      {
+        "chunk_id": "171ed5189044950f8d71ff34",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "7c89f2c7ab9ee3be6efaa01f0a8135aa133c0a947d9f670cbf9908fa03511a8b",
+        "score": -0.7652609348297119
+      },
+      {
+        "chunk_id": "4a65d0d3ead0bc841b1b28f8",
+        "query_sha256": "16495580589d36a55b53a751fc13f7a1cef94c180e61feefa9084716890ecdd9",
+        "chunk_sha256": "8100204aabd1274cc45a3bd8a237ddddfd8edf85eeea9590326a3f6286f145a8",
+        "score": 5.730477333068848
+      }
+    ],
+    "output_ids": [
+      "03e5582a4a0f7d3c76a33e66",
+      "8dfd7acc3a5fcf416e5ca637",
+      "740b1efb4588db4307be1a0f",
+      "fc16bde58b2e5f6168fc4bba",
+      "3fcd612549a4e58e909deb0e",
+      "6f4bd67e8abf6dcfdde54829",
+      "7b51e76d302604e5c182f040",
+      "36e3ca9051c2b34c98aa9fca",
+      "8d6a3993748474ddec52ba5c",
+      "5dde5ed6e53f62177672e78b",
+      "4a65d0d3ead0bc841b1b28f8",
+      "620acaeddf52599dd4ae377d",
+      "900318d0652d107eb78caf26",
+      "7be85324f4abe1131327119e",
+      "31ca53eabc210bec4a94da9e",
+      "73988b3bb3ed3d5eba984089",
+      "87a89b911a3dff048d569b86",
+      "3f406ad653cd6ded7e011a40",
+      "171ed5189044950f8d71ff34",
+      "ed99004421c5de5fdf2e6cbf"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "《电信基础设施维护规程》表 10.3.3.4 中，测试波分复用器 1:6 以下（WH23104004）的综合单价是多少（元/个）？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "92108b5bb6dcc5b2227d531c",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "505614c9226d1251eae0f4b3b646641c39c86d46502fd0d9f1c04f0b37adf71b",
+        "score": 9.851691246032715
+      },
+      {
+        "chunk_id": "8d6a3993748474ddec52ba5c",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "e8227f912eb405ff2907a563eb11ecf8059dfff496d0feca763690a7c1cdfb16",
+        "score": 4.464524745941162
+      },
+      {
+        "chunk_id": "e8513e8aa3405fff338783f1",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "a92fc9298fde69236d4bcf2a1fb85d18b3d0c1a3f97d0cce09ffd607cea9e3d0",
+        "score": 7.878597736358643
+      },
+      {
+        "chunk_id": "95380ab0ebb17410a5f37707",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "14a13a08bfd6d54e34f79aa7feb8195feaf87cd433953ed7f8abfa1275770c48",
+        "score": 4.77988862991333
+      },
+      {
+        "chunk_id": "2dd16c7ac2fac611ae6bf362",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "3bd43dace15febc210c65cceee426fece8303f78befd964da2a399cd8762ef0c",
+        "score": 7.362389087677002
+      },
+      {
+        "chunk_id": "2467800bf8ef29b6791440b4",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "7a41e7fccd808dbabf90963de48b8baa9b7a1382a8836b06c88a8668577bd829",
+        "score": 4.282986164093018
+      },
+      {
+        "chunk_id": "73988b3bb3ed3d5eba984089",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "f2a65bf123ebb82518eee6868d7a13cd7bfabd52db2a3501aaa4f0f7757336b3",
+        "score": 3.9068429470062256
+      },
+      {
+        "chunk_id": "31ca53eabc210bec4a94da9e",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "7b6d2c33d8cdc099f6944130cfb28beb303e73e3d69b0b67d40ad74bc6b18b5f",
+        "score": 5.143120765686035
+      },
+      {
+        "chunk_id": "53d5b679c6d5759fca64305a",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "a61ff97a0827de018586f8b3e5b52d2b818a6f7b3cd222b9f42fc6a3cbd269ce",
+        "score": 4.405764102935791
+      },
+      {
+        "chunk_id": "6ef6abcdb9faa71cd577015c",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "1b128bcb4c76de3a2a108d8041548c1668d879db80c09ce790919c0a19a95df0",
+        "score": 5.3986687660217285
+      },
+      {
+        "chunk_id": "fc7d5eed0b515cf1096fd166",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "ee3623542a7b1f674e475ddcc88fbc7289f0af7b24c4b211d6086d7f70768618",
+        "score": 4.83150053024292
+      },
+      {
+        "chunk_id": "3fcd612549a4e58e909deb0e",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "3be2b94bcaaf28da982e12681eac4303c0d98987af69e622ec95714a09db1be2",
+        "score": 5.042809963226318
+      },
+      {
+        "chunk_id": "e38adab63c7209471e644981",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "3f3c068cf7f68e42e69854b29edd3811d9422546dbbc1292fefb5adbfab58c83",
+        "score": -1.1001988649368286
+      },
+      {
+        "chunk_id": "b2edc2384d6b845e0005973a",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "5e59027c21534f27099d8336098ab9a37561fbcbc1d9fabfcdf67de74c7759a6",
+        "score": 5.359996795654297
+      },
+      {
+        "chunk_id": "4a65d0d3ead0bc841b1b28f8",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "8100204aabd1274cc45a3bd8a237ddddfd8edf85eeea9590326a3f6286f145a8",
+        "score": 5.085999965667725
+      },
+      {
+        "chunk_id": "3f406ad653cd6ded7e011a40",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "41d9bab425cc25420093c6e10d9f68ecb80a40a6b2afd41506c166d5657f3962",
+        "score": 0.44312217831611633
+      },
+      {
+        "chunk_id": "3d3eb164235efb301e727bfd",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "d259488c06d787382de87ff314926af3f01293c444fbe514fd35f00bfefa9072",
+        "score": -1.115530252456665
+      },
+      {
+        "chunk_id": "3c2858dbe1cd343a54ca2904",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "2f754c435efa6b21321f5280cc790063d595bfbe3a703bd9733d5e4cc488d0b2",
+        "score": -3.3729538917541504
+      },
+      {
+        "chunk_id": "eced514a8afb5d6002fb7c2a",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "c4fc94feab27c6e3c735b2b7c0ca6ac10d0a676218a647972a2bcdb60dd5b3a6",
+        "score": -3.190361261367798
+      },
+      {
+        "chunk_id": "abee735aa9c981d3bebcae9f",
+        "query_sha256": "c4d5385942eeaf77a0d8a708deb644d4870aba92101a8873e6ef313daff0d744",
+        "chunk_sha256": "a8bebf620ea2351540442dcb3874e12328f8786336d82b44d1dc0e3b997f0feb",
+        "score": 1.0767974853515625
+      }
+    ],
+    "output_ids": [
+      "92108b5bb6dcc5b2227d531c",
+      "e8513e8aa3405fff338783f1",
+      "2dd16c7ac2fac611ae6bf362",
+      "6ef6abcdb9faa71cd577015c",
+      "b2edc2384d6b845e0005973a",
+      "31ca53eabc210bec4a94da9e",
+      "4a65d0d3ead0bc841b1b28f8",
+      "3fcd612549a4e58e909deb0e",
+      "fc7d5eed0b515cf1096fd166",
+      "95380ab0ebb17410a5f37707",
+      "8d6a3993748474ddec52ba5c",
+      "53d5b679c6d5759fca64305a",
+      "2467800bf8ef29b6791440b4",
+      "73988b3bb3ed3d5eba984089",
+      "abee735aa9c981d3bebcae9f",
+      "3f406ad653cd6ded7e011a40",
+      "e38adab63c7209471e644981",
+      "3d3eb164235efb301e727bfd",
+      "eced514a8afb5d6002fb7c2a",
+      "3c2858dbe1cd343a54ca2904"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0 第 4.8.2 节，全光组网终端出厂后可以保留什么账号？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "81951fb8b5e157346ed83d77",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "cb16037be3a0bac7b1809c6dc845c11cd9a6487c3a8616ce26c3b0a29c9bc7e1",
+        "score": 6.092884540557861
+      },
+      {
+        "chunk_id": "191a50b73b555de5c289dca6",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "44db28bfc311b839e0cb56b88aca0d19e83e5f6d89c9f9614d0c2c57d458ba31",
+        "score": 6.032435417175293
+      },
+      {
+        "chunk_id": "d74f298bf424e80db33f40c0",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "27ca481c24235c5056aca28f45d7df95c987e483fc910ad2f54b71222f82648e",
+        "score": 5.837009429931641
+      },
+      {
+        "chunk_id": "b656aa1e5d609e2de7a81a0d",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "a78dfaab136a548cd0b90cd54711ff6de462ca2da6f328683b8bc42660d577c6",
+        "score": 8.783233642578125
+      },
+      {
+        "chunk_id": "5183d18205e64c4836ba9020",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "3537ab15ec3d0a5a3d09c4f8b0b7f0c980dd1ef0e5be278ad4b46e70becd3017",
+        "score": 6.3722429275512695
+      },
+      {
+        "chunk_id": "0b2bc61ba6e04bf37c779232",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "e39c5600dba109b98ba1ecf21ce6f55bf93a729ee6a06e096892457d560df4c2",
+        "score": 6.241552829742432
+      },
+      {
+        "chunk_id": "e69ef87cafd302938c765e20",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "a937d5a6e757c266fe69e461079461b21f18215aef6bc592b47620c0d69d9586",
+        "score": 6.475550174713135
+      },
+      {
+        "chunk_id": "c120df3a569ae215d69183ac",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "20f3b0611832a802ce2ab30f07a0d31f662fbee5df3bdafa506d8f01934f1ca7",
+        "score": 7.286545276641846
+      },
+      {
+        "chunk_id": "a7db14a3391bc332376a980d",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "a700f82b2532148b719f0242b40e77252ef7e1e4de4e6cd7dd67a2a4d689839e",
+        "score": 4.5746355056762695
+      },
+      {
+        "chunk_id": "a36043b8ee1a391f2dd1c31a",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "1bb44eeadcd3624e68b919dbf54270aa473e4dc32c22f64799123b960a15ff7a",
+        "score": 6.0194878578186035
+      },
+      {
+        "chunk_id": "06e68d69881bfa6bffefd124",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "b410ace2f1a1212007bad947b627b86972c2d96ef369239a6558dc9371610073",
+        "score": 6.12825345993042
+      },
+      {
+        "chunk_id": "5d5fd6cf18ea4e313fdc45b5",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "778749fca041de6c41c5a4576cb33ba07317116542af12be41e7352aa292a76d",
+        "score": 4.7311577796936035
+      },
+      {
+        "chunk_id": "958047c40a522ec22f73e5a5",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "8304318a91409d7dec6655a4a082b1c9c3de569c8f3bee329f912057114c37ea",
+        "score": 5.920609951019287
+      },
+      {
+        "chunk_id": "9b5d9b92dc528a1c594e3ec2",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "e655efda8be454b93fa0ca0da97bfd2d9db881923627ca7dab00a7ac89773633",
+        "score": 4.00521993637085
+      },
+      {
+        "chunk_id": "d1d75534f8865f49c152b4dd",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "16c0db3ba074419a17a4e99e03d03fcc4c545c43281a70dfac1e30eb1a69571c",
+        "score": 5.808774471282959
+      },
+      {
+        "chunk_id": "2d70309c35065f6a38c507ed",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "e0e2e79265a218eb62b9de4da500852c5022a068c9224be9539018aed809a1f4",
+        "score": 4.925546169281006
+      },
+      {
+        "chunk_id": "3c9c81f21d4df15d5cb812c4",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "5d18eda318e1457571aa480fe2299db375412b7b1b10c507224dc5e544a3cf58",
+        "score": 3.8636415004730225
+      },
+      {
+        "chunk_id": "859e0391143c967ade455f91",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "3917148a6c52ffee38ee27f5433a0a85707b719059d8f474b31ba06959358299",
+        "score": 5.405003070831299
+      },
+      {
+        "chunk_id": "4723262fed91f6b5026a5480",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "0071f96aa2464aa0deb262aa028b326d5ff4d9460a98bbfafe223580c27183bd",
+        "score": 6.399092197418213
+      },
+      {
+        "chunk_id": "3a3f2c0bc27d1815ea693a4a",
+        "query_sha256": "10e40ec176d2ccf51518b6adbdf8b1c6e1f8ed1d087a037d01648467604db403",
+        "chunk_sha256": "dadb4a1ac48ef47b104d19c3b48741b280462e0c5bd2c1ae0d2d7249246f06ff",
+        "score": 2.5936214923858643
+      }
+    ],
+    "output_ids": [
+      "b656aa1e5d609e2de7a81a0d",
+      "c120df3a569ae215d69183ac",
+      "e69ef87cafd302938c765e20",
+      "4723262fed91f6b5026a5480",
+      "5183d18205e64c4836ba9020",
+      "0b2bc61ba6e04bf37c779232",
+      "06e68d69881bfa6bffefd124",
+      "81951fb8b5e157346ed83d77",
+      "191a50b73b555de5c289dca6",
+      "a36043b8ee1a391f2dd1c31a",
+      "958047c40a522ec22f73e5a5",
+      "d74f298bf424e80db33f40c0",
+      "d1d75534f8865f49c152b4dd",
+      "859e0391143c967ade455f91",
+      "2d70309c35065f6a38c507ed",
+      "5d5fd6cf18ea4e313fdc45b5",
+      "a7db14a3391bc332376a980d",
+      "9b5d9b92dc528a1c594e3ec2",
+      "3c9c81f21d4df15d5cb812c4",
+      "3a3f2c0bc27d1815ea693a4a"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "铁塔专项维修的工作内容包括哪些？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "611a9eb6554a2b482561c775",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "1204e7a40daa8c5904224d5331d838dd14d3ff99d963137d94c100bc494a0b84",
+        "score": 8.022095680236816
+      },
+      {
+        "chunk_id": "4931f1a7b903ba2672bbb512",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "73eb9f0dce1be816a6278cb54bfb97ea07b663492d2f7a62a754d0d38bdb4bd4",
+        "score": 1.7925775051116943
+      },
+      {
+        "chunk_id": "5997209344e1edab17af1a36",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "e666e0507bafe4dc8ce554023d88f366f0618d1356096eef668053ce09d5dd64",
+        "score": 2.1102993488311768
+      },
+      {
+        "chunk_id": "68a1c1448a91e95c36a18aa3",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "43a1843c0cc1e516ed4f9af2ffbe0fece95d6dd4cfe053bfcdfa988b344fb2b1",
+        "score": 0.5554118752479553
+      },
+      {
+        "chunk_id": "900318d0652d107eb78caf26",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "e8815d09e813218b38d663c92c312757e183b824321b49776b46d1c46142db83",
+        "score": -2.973646640777588
+      },
+      {
+        "chunk_id": "14596d4e75ad163dd5bfc2e2",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "ab72c7657984a99090c8b2c8c7e07303bda3b61c790b524b1258250c64b31ca8",
+        "score": 0.5949704051017761
+      },
+      {
+        "chunk_id": "85a662e14c735b039ce0bda4",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "f4ad365be56e70c67b987bd8f52cb55ffa5de121f3c12ba62378bf20bd130864",
+        "score": 0.6060197949409485
+      },
+      {
+        "chunk_id": "de4a5a6d54ff71267ce9263d",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "bddf5b6b8a7367cbc35e15d1f381c7b16721df00360abd6bfd8b4479dc9c90b7",
+        "score": -2.264967441558838
+      },
+      {
+        "chunk_id": "2eba19749f227b187f776ada",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "06d541bb90180dbf53bd9461b53d9b1a3e23c5ac988baddf33cd96b0d7059534",
+        "score": -1.6552717685699463
+      },
+      {
+        "chunk_id": "1c13f42ad07f8eb382c975f1",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "57e024fc7c2a8a9381b97f53e69f88dce05e0970b2abc6cebaae8091344ed51e",
+        "score": -1.8956825733184814
+      },
+      {
+        "chunk_id": "895557a41828559b59f3680a",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "d279363e1ee33de4f54557f23232ed5fb74cc0fce2f35a79145a46b555520fe0",
+        "score": -3.1727466583251953
+      },
+      {
+        "chunk_id": "ce70fb71bf86c85077ccfe2a",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "714f0ad33f0aee2d0444e606cf85089aecf0af017a1b287ad509a9f9427757a2",
+        "score": -2.7475390434265137
+      },
+      {
+        "chunk_id": "70202f4f6bd327b7effcf732",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "591c887857ad091045e2249b085e63855367d3dbbf90d12b85a3dfd8829fb2a2",
+        "score": -3.097764492034912
+      },
+      {
+        "chunk_id": "ac420694498f6bc389a85f68",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "5bbf2fbb34d710055c0282461cd7056c22965949fa2dc059d6346c837c4d07c3",
+        "score": -2.6007206439971924
+      },
+      {
+        "chunk_id": "2e7a7cc3c6d7a7d5b13dc46f",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "420ae7d1a395929d1388887119bbe966d39d62894566949455f33f7e5dc66282",
+        "score": -2.229830503463745
+      },
+      {
+        "chunk_id": "5ff993981f8c903c3752685e",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "083d7dc0d21752d7c381c101e16a1c5748479563947357ffb234636eb292a277",
+        "score": -6.1330885887146
+      },
+      {
+        "chunk_id": "2ec236820167f2d1a720a4a9",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "32ac99c1c606f21e9805bf5b90e48992031cdce2618c34c0563977631d7d412d",
+        "score": -6.082468032836914
+      },
+      {
+        "chunk_id": "bd8d47c0d639799b2872480c",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "72694bc6357aa5fce9879046be8138e32022ecb7b9df26959742633821d0800b",
+        "score": -3.488950252532959
+      },
+      {
+        "chunk_id": "35d1c580ad97ff30923c9af2",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "999d10df583f82ceacaddf07251b6cf9a6ff16e7946fe6b07551e7b25ac2e698",
+        "score": -0.36807143688201904
+      },
+      {
+        "chunk_id": "f36f0fdfe7175fc0075cb3e8",
+        "query_sha256": "416ede4223457e9aadf42704a33c8711b0a95877578308ca95429f71084a7638",
+        "chunk_sha256": "c37e3ca5e6386804c8406c2e872c7cfc96ba248c68151caad68f2571a9307ae0",
+        "score": -7.01918363571167
+      }
+    ],
+    "output_ids": [
+      "611a9eb6554a2b482561c775",
+      "5997209344e1edab17af1a36",
+      "4931f1a7b903ba2672bbb512",
+      "85a662e14c735b039ce0bda4",
+      "14596d4e75ad163dd5bfc2e2",
+      "68a1c1448a91e95c36a18aa3",
+      "35d1c580ad97ff30923c9af2",
+      "2eba19749f227b187f776ada",
+      "1c13f42ad07f8eb382c975f1",
+      "2e7a7cc3c6d7a7d5b13dc46f",
+      "de4a5a6d54ff71267ce9263d",
+      "ac420694498f6bc389a85f68",
+      "ce70fb71bf86c85077ccfe2a",
+      "900318d0652d107eb78caf26",
+      "70202f4f6bd327b7effcf732",
+      "895557a41828559b59f3680a",
+      "bd8d47c0d639799b2872480c",
+      "2ec236820167f2d1a720a4a9",
+      "5ff993981f8c903c3752685e",
+      "f36f0fdfe7175fc0075cb3e8"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "a264a91966d85e2ec3b52e02",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "f24faa7022982e0091bec1ff25740cb0469982173aaa97fdfb09f4212c4192ce",
+        "score": 10.854527473449707
+      },
+      {
+        "chunk_id": "c663286c5bf2258dc95cdc2c",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "be2de7ef4f5b2844c352b3997ba76770c14c3ac99cc97c9ed616f351bc574c6d",
+        "score": 9.794075965881348
+      },
+      {
+        "chunk_id": "4931f1a7b903ba2672bbb512",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "73eb9f0dce1be816a6278cb54bfb97ea07b663492d2f7a62a754d0d38bdb4bd4",
+        "score": 6.004464626312256
+      },
+      {
+        "chunk_id": "17785f58dbcac4ec7a2bd8fc",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "f8da7bac275d16b0b0e81d73e324dd6db5dd5738454e576198cd53351d0411b3",
+        "score": 7.484810829162598
+      },
+      {
+        "chunk_id": "a35ce6281114244d6406886e",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "42208035d7753a4d012d5583721dedcbdd887f8e90d30588bfe405908cb322b2",
+        "score": 7.657158374786377
+      },
+      {
+        "chunk_id": "b0853194f2355b3b11af2a9c",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "2ffa58357e6fc87dd71a3817fcec09a4446e72405b0348ce8bf91c14b40d2fb5",
+        "score": 7.8293776512146
+      },
+      {
+        "chunk_id": "895557a41828559b59f3680a",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "d279363e1ee33de4f54557f23232ed5fb74cc0fce2f35a79145a46b555520fe0",
+        "score": 4.501012325286865
+      },
+      {
+        "chunk_id": "c1e482df686f369f344cd4d9",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "508642e7bdb99c999d6af3edddc53a00953860582c5105716eb61f91add2e40f",
+        "score": 5.022413730621338
+      },
+      {
+        "chunk_id": "28093ca7aacb5499631b4ee5",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "94ec12d8aaa5bd1b4fbef78d0a4911a63d4d18a75420b1d2ab36da3694e4a447",
+        "score": 4.994835376739502
+      },
+      {
+        "chunk_id": "14c9c83470f749b59631d18b",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "23271c0c1e77fa92fd84896ccb7f88f18e4e5eb991418611fea22b9be26371bd",
+        "score": 3.841330051422119
+      },
+      {
+        "chunk_id": "65d56221b5022e39fbfc90ae",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "d7bcece720ae8180261a6d874032ef1bcd65591a2f1f84381924fef036a8cd30",
+        "score": 6.214762210845947
+      },
+      {
+        "chunk_id": "ad8e07f5c6236a0b7c42bd25",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "8a67c51aa7f43a12c69ca9a384fe3277900837c99dd715d7bad7f46c0cf9af88",
+        "score": 5.108889102935791
+      },
+      {
+        "chunk_id": "cf90c1ae88395ad7d4a617c2",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "a2a29334a47242700bde607673190cfb65a85fc7ae19e7dcce9f524c638cf67a",
+        "score": 4.284327507019043
+      },
+      {
+        "chunk_id": "ece98e71fe682adf424c53af",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "34b0d0ce34745c119815310a7248597a8365de506570227fa91be32cec8bce8d",
+        "score": 6.205356121063232
+      },
+      {
+        "chunk_id": "95cb40813342a7e91c27e7d3",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "c634697589891c2e245697dce4711116c10945d37477b5386f071df149d37482",
+        "score": 9.037622451782227
+      },
+      {
+        "chunk_id": "7f6ed021bd179555bbd1c859",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "3655781b6132407bda47242392741f7d52f916d08c1c22a418847db33ec74fc9",
+        "score": 5.4842047691345215
+      },
+      {
+        "chunk_id": "2ec236820167f2d1a720a4a9",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "32ac99c1c606f21e9805bf5b90e48992031cdce2618c34c0563977631d7d412d",
+        "score": 3.0935370922088623
+      },
+      {
+        "chunk_id": "1b2149ec028f9c253059616f",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "58a055928668613156f3bbdd4d276f9d438e5736cb52d438208f20f8e4382a8d",
+        "score": 3.0766677856445312
+      },
+      {
+        "chunk_id": "cf6d46d3f0c0cd4d2e7b2422",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "df31285c38bd5c3fa70adac93d3ba72b82ddfb252cdd12918da1d626a26f70ef",
+        "score": 2.6709203720092773
+      },
+      {
+        "chunk_id": "9b303888818da7d18fda6e00",
+        "query_sha256": "0eca0d157fdc55a7f72a95cfb28d5036098de9958da8e3496ccb50a774c767a5",
+        "chunk_sha256": "448a37d5c765b53222f657bd12c5f8a191123ce6a35709e7cc1d6baa3e291183",
+        "score": 1.1548120975494385
+      }
+    ],
+    "output_ids": [
+      "a264a91966d85e2ec3b52e02",
+      "c663286c5bf2258dc95cdc2c",
+      "95cb40813342a7e91c27e7d3",
+      "b0853194f2355b3b11af2a9c",
+      "a35ce6281114244d6406886e",
+      "17785f58dbcac4ec7a2bd8fc",
+      "65d56221b5022e39fbfc90ae",
+      "ece98e71fe682adf424c53af",
+      "4931f1a7b903ba2672bbb512",
+      "7f6ed021bd179555bbd1c859",
+      "ad8e07f5c6236a0b7c42bd25",
+      "c1e482df686f369f344cd4d9",
+      "28093ca7aacb5499631b4ee5",
+      "895557a41828559b59f3680a",
+      "cf90c1ae88395ad7d4a617c2",
+      "14c9c83470f749b59631d18b",
+      "2ec236820167f2d1a720a4a9",
+      "1b2149ec028f9c253059616f",
+      "cf6d46d3f0c0cd4d2e7b2422",
+      "9b303888818da7d18fda6e00"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  },
+  {
+    "query": "WH23131004项目对应的防水处理范围是什么？",
+    "top_k": 20,
+    "model_max_length": 512,
+    "tokenizer_model_max_length": 512,
+    "truncation_side": "right",
+    "activation": "Identity()",
+    "inputs": [
+      {
+        "chunk_id": "95cb40813342a7e91c27e7d3",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "c634697589891c2e245697dce4711116c10945d37477b5386f071df149d37482",
+        "score": 4.666677474975586
+      },
+      {
+        "chunk_id": "ece98e71fe682adf424c53af",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "34b0d0ce34745c119815310a7248597a8365de506570227fa91be32cec8bce8d",
+        "score": -1.5514417886734009
+      },
+      {
+        "chunk_id": "9278fc1fa10e15baa1de8ec1",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "0cdaa12357120ec2b550ba060f5d47454fb5ad1c2282fa0f6dfbb3480703c5e5",
+        "score": -5.275134086608887
+      },
+      {
+        "chunk_id": "7b51e76d302604e5c182f040",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "0d64544f5f39ba8363926065adcf74e5daa84680a604e91eaadfbc0e43f41ec8",
+        "score": -4.553077697753906
+      },
+      {
+        "chunk_id": "7be85324f4abe1131327119e",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "a8bb365bd068e7230429f29adbc392fd471d6fda6df765842f9c71a379865b81",
+        "score": -4.1659674644470215
+      },
+      {
+        "chunk_id": "3d3eb164235efb301e727bfd",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "d259488c06d787382de87ff314926af3f01293c444fbe514fd35f00bfefa9072",
+        "score": -6.955852508544922
+      },
+      {
+        "chunk_id": "8dfd7acc3a5fcf416e5ca637",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "8c9d5166dcf30b1b2ba210420ae1c8b09bad9503c256dff2746abcb5933b340e",
+        "score": -0.8468945026397705
+      },
+      {
+        "chunk_id": "a264a91966d85e2ec3b52e02",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "f24faa7022982e0091bec1ff25740cb0469982173aaa97fdfb09f4212c4192ce",
+        "score": -0.8796525597572327
+      },
+      {
+        "chunk_id": "79906d3f54cc4f882fd8c7fb",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "14a16dda157afa05c6de621c221ccda7fbc97a7cade6a5c5cf22bc0e70515b34",
+        "score": -3.7986350059509277
+      },
+      {
+        "chunk_id": "cf90c1ae88395ad7d4a617c2",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "a2a29334a47242700bde607673190cfb65a85fc7ae19e7dcce9f524c638cf67a",
+        "score": -4.654378414154053
+      },
+      {
+        "chunk_id": "a35ce6281114244d6406886e",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "42208035d7753a4d012d5583721dedcbdd887f8e90d30588bfe405908cb322b2",
+        "score": -6.206067085266113
+      },
+      {
+        "chunk_id": "7f6ed021bd179555bbd1c859",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "3655781b6132407bda47242392741f7d52f916d08c1c22a418847db33ec74fc9",
+        "score": -3.514599561691284
+      },
+      {
+        "chunk_id": "17785f58dbcac4ec7a2bd8fc",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "f8da7bac275d16b0b0e81d73e324dd6db5dd5738454e576198cd53351d0411b3",
+        "score": -4.2508344650268555
+      },
+      {
+        "chunk_id": "755703e2be3f7e101dd7eccc",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "fed1382a04ddb70d841c51ed6e2d110f2c4b6ab5694e037cec7d8f56b0ab0fd2",
+        "score": -6.933830738067627
+      },
+      {
+        "chunk_id": "65af106efc532138e75dad76",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "1a3421dc511aafbc332a0ea51389f82088edf15c54142a13fb50acb637a0ee7c",
+        "score": -0.4320334792137146
+      },
+      {
+        "chunk_id": "740b1efb4588db4307be1a0f",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "54fe8d086b61843507407856ddadd0adbed985b407def803ac13bb3f47235a51",
+        "score": -0.6632043123245239
+      },
+      {
+        "chunk_id": "d8732d372789df9517c5bdcc",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "924e072a7675cb5a4d6949741b9b6963b2743b33ef0acb1b03a890a8bb4a39d1",
+        "score": -8.714405059814453
+      },
+      {
+        "chunk_id": "b0853194f2355b3b11af2a9c",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "2ffa58357e6fc87dd71a3817fcec09a4446e72405b0348ce8bf91c14b40d2fb5",
+        "score": -3.2575199604034424
+      },
+      {
+        "chunk_id": "3f406ad653cd6ded7e011a40",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "41d9bab425cc25420093c6e10d9f68ecb80a40a6b2afd41506c166d5657f3962",
+        "score": -7.8135666847229
+      },
+      {
+        "chunk_id": "db85cd8d317a59c32679393f",
+        "query_sha256": "e21ed136e026480bfc41bab968455645c9c8fdb2cae0f69f0597b272de8d8671",
+        "chunk_sha256": "6ae06a9331e5f232fde2c27ce2d807a4a65c4d52b62184608e03ab0fd0ed10f7",
+        "score": -6.763791561126709
+      }
+    ],
+    "output_ids": [
+      "95cb40813342a7e91c27e7d3",
+      "65af106efc532138e75dad76",
+      "740b1efb4588db4307be1a0f",
+      "8dfd7acc3a5fcf416e5ca637",
+      "a264a91966d85e2ec3b52e02",
+      "ece98e71fe682adf424c53af",
+      "b0853194f2355b3b11af2a9c",
+      "7f6ed021bd179555bbd1c859",
+      "79906d3f54cc4f882fd8c7fb",
+      "7be85324f4abe1131327119e",
+      "17785f58dbcac4ec7a2bd8fc",
+      "7b51e76d302604e5c182f040",
+      "cf90c1ae88395ad7d4a617c2",
+      "9278fc1fa10e15baa1de8ec1",
+      "a35ce6281114244d6406886e",
+      "db85cd8d317a59c32679393f",
+      "755703e2be3f7e101dd7eccc",
+      "3d3eb164235efb301e727bfd",
+      "3f406ad653cd6ded7e011a40",
+      "d8732d372789df9517c5bdcc"
+    ],
+    "pairs_exact": true,
+    "scores_associated": true,
+    "descending_then_topk": true
+  }
+]

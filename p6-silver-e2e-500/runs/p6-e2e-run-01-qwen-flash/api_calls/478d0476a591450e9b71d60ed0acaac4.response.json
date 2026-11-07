@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:05.587442+08:00",
+  "conservative_cost_yuan": 0.00081555,
+  "error": null,
+  "latency_ms": 1319.1995997913182,
+  "list_price_estimate_yuan": 0.0005980499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH24102001 故障抢修天馈系线系统故障的综合单价为156.86元。[1]  \n2. 该单价包含人工费98.04元、企业管理费29.41元和利润29.41元。[1]  \n3. 计量单位为“次”，工作内容包括抢修准备、到达基站等。[1]  \n4. 项目编码为WH24102001，属于故障抢修类作业。[1]  \n5. 数据来源于《电信基础设施维护规程》第290页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881144,
+    "id": "chatcmpl-fa3685a6-8083-98c1-af4e-46ea5f3a3ae1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 145,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2537,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2682
+    }
+  },
+  "usage_known": true
+}

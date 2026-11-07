@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:55.761966+08:00",
+  "conservative_cost_yuan": 0.0008795999999999999,
+  "error": null,
+  "latency_ms": 1591.2937000393867,
+  "list_price_estimate_yuan": 0.0006651,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH21114002 平原、丘陵地区防雷接地系统巡检综合单价为13.13元。[1]  \n2. 该单价对应计量单位为“站·次”。[1]  \n3. 工作内容包括接地体防腐防锈、螺栓紧固及外露回填等。[1]  \n4. 项目编码WH21114002适用于平原、丘陵地区。[1]  \n5. 综合单价中含人工费8.21元，企业管理费2.46元，利润2.46元。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881014,
+    "id": "chatcmpl-500c4a23-b649-9ba0-9889-27f068c70349",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 143,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3004,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3147
+    }
+  },
+  "usage_known": true
+}

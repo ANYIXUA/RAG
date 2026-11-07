@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:10.983904+08:00",
+  "conservative_cost_yuan": 0.0014328,
+  "error": null,
+  "latency_ms": 3658.87190005742,
+  "list_price_estimate_yuan": 0.0009708,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持4.0米要求\",\n    \"evidence\": \"110KV至220KV电力线 （含220KV） 4.0 6.0\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"110KV至220KV电力线 （含220KV） 4.0 6.0\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有关键条件与数值\",\n    \"evidence\": \"110KV至220KV电力线 （含220KV） 4.0 6.0\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"110KV至220KV电力线 （含220KV） 4.0 6.0\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881747,
+    "id": "chatcmpl-fdfe7f30-6728-980d-8fb4-a9b494a3aa1e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 308,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3392,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3700
+    }
+  },
+  "usage_known": true
+}

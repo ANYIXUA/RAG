@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "检查铁塔主体结构以及附属设施、铁塔基础、防雷接地装置。",
+    "reason": "回答与上下文一致，涵盖所有关键点。",
+    "score": 1
+  },
+  "case_id": "p6s-0360",
+  "citation_correctness": {
+    "evidence": "7.检查附属设备运行情况。 8.检查紧固连接线缆。",
+    "reason": "部分引用编号不准确，[2]未支持‘紧固连接线缆’。",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "清理铁塔周边环境卫生。",
+    "reason": "覆盖问题所需全部条件。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查铁塔主体结构以及附属设施、铁塔基础、防雷接地装置。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [
+    "citation_inconsistency"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "66e60d69a5bf4ab089811d47335cb270",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

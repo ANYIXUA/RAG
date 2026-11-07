@@ -1,0 +1,406 @@
+{
+  "status": "passed",
+  "passed": 28,
+  "total": 28,
+  "checks": [
+    {
+      "check": "236_protected_inputs_unchanged",
+      "passed": true,
+      "details": {
+        "count": 236,
+        "changed": []
+      }
+    },
+    {
+      "check": "signed_workbook_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "signed_workbook_audit_copy_exact",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "review_packet_content_unchanged",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "46_original_decisions_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "user_confirmed_metadata",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "NOW_formula_preserved_as_evidence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "28_gold_and_sidecar",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "22_development_exact_reference",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "exact_primary_membership",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "unique_gold_ids",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "no_development_evidence_overlap",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "27_distinct_chunks",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "3_document_coverage",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "18_original_10_revised",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "accepted_content_matches_signed_proposal",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "lineage_original_content_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "B32_B33_B35_retargeted_new_proposals",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "retargeting_human_comments_preserved",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "B31_B39_not_approved_or_exported",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "18_nonprimary_not_promoted",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "all_chunk_ids_in_frozen_snapshot",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "roles_signed_and_frozen",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "single_chunk_complete_evidence",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "no_single_price_queries",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "actual_loader_schema_helpers_accept_28",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "legacy_targets_resolve_exact_related_ids",
+      "passed": true,
+      "details": null
+    },
+    {
+      "check": "gold_sidecar_alignment",
+      "passed": true,
+      "details": null
+    }
+  ],
+  "pure_schema_owner_sha256": "f32a9afb6f8e35fa62502b3c1a8417eb444a81b4035fba846821ff36c42da20b",
+  "target_matches": [
+    {
+      "batch_id": "B32",
+      "matches": [
+        "d70540614c288a2dc8b3066f"
+      ],
+      "expected": [
+        "d70540614c288a2dc8b3066f"
+      ]
+    },
+    {
+      "batch_id": "B33",
+      "matches": [
+        "14da1c09b687f7b48896e03a"
+      ],
+      "expected": [
+        "14da1c09b687f7b48896e03a"
+      ]
+    },
+    {
+      "batch_id": "B34",
+      "matches": [
+        "d8dfa78cb9362f0d69cd659c"
+      ],
+      "expected": [
+        "d8dfa78cb9362f0d69cd659c"
+      ]
+    },
+    {
+      "batch_id": "B35",
+      "matches": [
+        "e69ef87cafd302938c765e20"
+      ],
+      "expected": [
+        "e69ef87cafd302938c765e20"
+      ]
+    },
+    {
+      "batch_id": "B40",
+      "matches": [
+        "647c44016cd2e8fabe51f5de"
+      ],
+      "expected": [
+        "647c44016cd2e8fabe51f5de"
+      ]
+    },
+    {
+      "batch_id": "B41",
+      "matches": [
+        "4a65d0d3ead0bc841b1b28f8"
+      ],
+      "expected": [
+        "4a65d0d3ead0bc841b1b28f8"
+      ]
+    },
+    {
+      "batch_id": "B42",
+      "matches": [
+        "d2df450647a1e967aa910201"
+      ],
+      "expected": [
+        "d2df450647a1e967aa910201"
+      ]
+    },
+    {
+      "batch_id": "B48",
+      "matches": [
+        "48e4aa1fce9c20c3d6f6339f"
+      ],
+      "expected": [
+        "48e4aa1fce9c20c3d6f6339f"
+      ]
+    },
+    {
+      "batch_id": "B49",
+      "matches": [
+        "847ed8afec9fe78a708ad65f"
+      ],
+      "expected": [
+        "847ed8afec9fe78a708ad65f"
+      ]
+    },
+    {
+      "batch_id": "B50",
+      "matches": [
+        "48e4aa1fce9c20c3d6f6339f"
+      ],
+      "expected": [
+        "48e4aa1fce9c20c3d6f6339f"
+      ]
+    },
+    {
+      "batch_id": "B53",
+      "matches": [
+        "3a3f2c0bc27d1815ea693a4a"
+      ],
+      "expected": [
+        "3a3f2c0bc27d1815ea693a4a"
+      ]
+    },
+    {
+      "batch_id": "B54",
+      "matches": [
+        "95ae763cde2f43aec2cb7d14"
+      ],
+      "expected": [
+        "95ae763cde2f43aec2cb7d14"
+      ]
+    },
+    {
+      "batch_id": "B57",
+      "matches": [
+        "9f8fb549d52c59eafb4ce394"
+      ],
+      "expected": [
+        "9f8fb549d52c59eafb4ce394"
+      ]
+    },
+    {
+      "batch_id": "P4-N01",
+      "matches": [
+        "2d70309c35065f6a38c507ed"
+      ],
+      "expected": [
+        "2d70309c35065f6a38c507ed"
+      ]
+    },
+    {
+      "batch_id": "P4-N02",
+      "matches": [
+        "84139f0d408339d51910bb1e"
+      ],
+      "expected": [
+        "84139f0d408339d51910bb1e"
+      ]
+    },
+    {
+      "batch_id": "P4-N03",
+      "matches": [
+        "38fdd5ab96a7a1c7db0c03c0"
+      ],
+      "expected": [
+        "38fdd5ab96a7a1c7db0c03c0"
+      ]
+    },
+    {
+      "batch_id": "P4-N04",
+      "matches": [
+        "c9798c374ba5448e95e08c22"
+      ],
+      "expected": [
+        "c9798c374ba5448e95e08c22"
+      ]
+    },
+    {
+      "batch_id": "P4-N05",
+      "matches": [
+        "d60c3992acb84d003c25c027"
+      ],
+      "expected": [
+        "d60c3992acb84d003c25c027"
+      ]
+    },
+    {
+      "batch_id": "P4-N06",
+      "matches": [
+        "d74f298bf424e80db33f40c0"
+      ],
+      "expected": [
+        "d74f298bf424e80db33f40c0"
+      ]
+    },
+    {
+      "batch_id": "P4-N07",
+      "matches": [
+        "d1d75534f8865f49c152b4dd"
+      ],
+      "expected": [
+        "d1d75534f8865f49c152b4dd"
+      ]
+    },
+    {
+      "batch_id": "P4-N08",
+      "matches": [
+        "2eda6960dfbb194d0f84e4b0"
+      ],
+      "expected": [
+        "2eda6960dfbb194d0f84e4b0"
+      ]
+    },
+    {
+      "batch_id": "P4-N09",
+      "matches": [
+        "5d1e8fd617217ecea2afa2f1"
+      ],
+      "expected": [
+        "5d1e8fd617217ecea2afa2f1"
+      ]
+    },
+    {
+      "batch_id": "P4-N10",
+      "matches": [
+        "f86d4474f6f6b987d29ada4c"
+      ],
+      "expected": [
+        "f86d4474f6f6b987d29ada4c"
+      ]
+    },
+    {
+      "batch_id": "P4-N11",
+      "matches": [
+        "002a1b9d6ade401fd6b92575"
+      ],
+      "expected": [
+        "002a1b9d6ade401fd6b92575"
+      ]
+    },
+    {
+      "batch_id": "P4-N12",
+      "matches": [
+        "ac65d74597a1d491a319475a"
+      ],
+      "expected": [
+        "ac65d74597a1d491a319475a"
+      ]
+    },
+    {
+      "batch_id": "P4-N13",
+      "matches": [
+        "6f33bafc20e0ad09486add1b"
+      ],
+      "expected": [
+        "6f33bafc20e0ad09486add1b"
+      ]
+    },
+    {
+      "batch_id": "P4-N14",
+      "matches": [
+        "6bf394ec756103a82e9f6e9c"
+      ],
+      "expected": [
+        "6bf394ec756103a82e9f6e9c"
+      ]
+    },
+    {
+      "batch_id": "P4-N15",
+      "matches": [
+        "258ef2b78ff022814a5dd780"
+      ],
+      "expected": [
+        "258ef2b78ff022814a5dd780"
+      ]
+    }
+  ],
+  "scope": "No retrieval ranking, database, embedding, rerank, model inference, or Benchmark."
+}

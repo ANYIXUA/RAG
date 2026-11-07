@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0408",
+  "citation_correctness": {
+    "evidence": "能进行无线局域网信号检测与覆盖优化。[3]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "服务过程中需展示专业服务礼仪与沟通技巧。[2]",
+    "reason": "遗漏用户满意度核心维度如响应速度",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "能进行智能家居场景设置 [2]",
+    "reason": "每项事实均来自上下文且无编造",
+    "score": 1
+  },
+  "flags": [
+    "partial_support",
+    "minor_completeness_gap"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "6724e0c23c394f96b106652f5bbdb952",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "非拒答场景，无需评估",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

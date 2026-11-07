@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0255",
+  "citation_correctness": {
+    "evidence": "设置时应依据物联网接入业务运维规范。[3]",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "设置时应依据物联网接入业务运维规范。[3]",
+    "reason": "部分覆盖但未明确拒答",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "应掌握智能家居单品控制及通讯配置方法。[2]",
+    "reason": "每项事实均来自上下文引用",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "partial_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3c848f1a9d37462182076f7d19b1420b",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未明确拒答但提示不足",
+    "score": 0.5
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

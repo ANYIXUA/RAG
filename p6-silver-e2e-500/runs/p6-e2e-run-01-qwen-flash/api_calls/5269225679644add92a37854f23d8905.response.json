@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:41.020655+08:00",
+  "conservative_cost_yuan": 0.00244395,
+  "error": null,
+  "latency_ms": 6406.602900009602,
+  "list_price_estimate_yuan": 0.00147045,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]明确指出‘实行招标的维护合同价款应在中标通知书发出之日起30天内，由发、承包双方依据招标文件和中标人的投标文件在书面合同中约定’，与问题完全匹配，且与silver_reference一致。\",\n    \"evidence\": \"8.4.4.1 实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实均直接来源于上下文[1]，无任何编造或偏离。例如‘30天内约定’‘依据招标文件和投标文件’‘以投标文件为准’等均在原文中有对应表述。\",\n    \"evidence\": \"8.4.4.1 实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。 8.4.4.2 实行招标的维护项目，合同约定不得违背招、投标文件中关于维护周期、维护价格、维护质量等 方面的实质性内容。招标文件与中标人投标文件不一致的地方，以投标文件为准。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅要求回答时间期限，回答准确给出30天，并补充了关键条件（依据招标与投标文件），未遗漏必要信息，且未引入无关内容。\",\n    \"evidence\": \"8.4.4.1 实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应于上下文片段[1]，且该片段包含所引用的具体内容。未出现引用错误或无来源引用。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第89页\\n定位信息：89\\n...8.4.4.1 实行招标的维护合同价款应在中标通知书发出之日起30 天内，由发、承包双方依据招标文件和 中标人的投标文件在书面合同中约定。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确可答的精确事实类问题，且上下文提供完整答案，无需拒答。模型正常作答，符合要求。\",\n    \"evidence\": \"无\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881354,
+    "id": "chatcmpl-b414ff89-2cd1-92e0-8b50-75178ffbda13",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 649,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3313,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3962
+    }
+  },
+  "usage_known": true
+}

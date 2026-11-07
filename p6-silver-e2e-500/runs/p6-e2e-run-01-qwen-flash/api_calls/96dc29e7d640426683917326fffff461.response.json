@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:12:11.150808+08:00",
+  "conservative_cost_yuan": 0.0007194,
+  "error": null,
+  "latency_ms": 1215.1223998516798,
+  "list_price_estimate_yuan": 0.0005633999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检测制冷剂压力，根据结果及时上报并通知专业维修队伍补加制冷剂。[6]  \n2. 若压力异常，需检查制冷系统是否存在泄漏或堵塞问题。[6]  \n3. 确认制冷效果是否达标，结合压力数据综合判断故障原因。[6]  \n4. 保持记录，确保维护过程可追溯。[6]  \n5. 异常情况应立即上报，不得自行处理。[6]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880729,
+    "id": "chatcmpl-70b7f03a-7935-912e-808d-39d0fb1c419a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2716,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2820
+    }
+  },
+  "usage_known": true
+}

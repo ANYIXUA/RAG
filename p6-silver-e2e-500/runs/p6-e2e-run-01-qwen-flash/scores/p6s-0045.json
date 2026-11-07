@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第286页\n定位信息：286\n内容：... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —",
+    "reason": "实际LLM上下文[1]明确指出WH23129001项下'角钢塔、三管塔、四管塔35m以下'的消耗量为1.60，与问题直接对应，且数值准确。银参考一致，证据支持。",
+    "score": 1
+  },
+  "case_id": "p6s-0045",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第286页\n定位信息：286\n内容：... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —",
+    "reason": "所有引用编号[1]均正确对应实际上下文片段[1]，且该片段确实支持所陈述的每一条结论，引用位置准确，无错引或漏引。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第286页\n定位信息：286\n内容：... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —",
+    "reason": "问题仅询问消耗量，回答聚焦于该核心信息，并补充了相关背景信息（如项目编码、计量单位、综合单价、维修内容），虽非必须，但未遗漏关键条件或步骤，符合精确事实类问题要求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第286页\n定位信息：286\n内容：... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —",
+    "reason": "回答中每一项事实（消耗量1.60、计量单位座²次、项目编码WH23129001、维修内容、综合单价）均有对应上下文来源支持，且无额外编造信息。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ea2deb5567244934a7420643c0e5a391",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题为明确可答的精确事实类问题，上下文存在完整答案，模型正常回答，无需拒答，故此项不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

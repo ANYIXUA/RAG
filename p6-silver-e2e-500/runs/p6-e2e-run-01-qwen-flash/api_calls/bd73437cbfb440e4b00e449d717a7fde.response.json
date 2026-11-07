@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:43.475860+08:00",
+  "conservative_cost_yuan": 0.00152235,
+  "error": null,
+  "latency_ms": 2313.0836999043822,
+  "list_price_estimate_yuan": 0.00107085,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确区分独立项目，未错误合并单价。\",\n    \"evidence\": \"防雷箱安装与钢管敷设为独立项目，不可合并计价。[1][2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持。\",\n    \"evidence\": \"敷设镀锌钢管管道按孔数和长度计价，如2孔（2X1）为512.14元/百米。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖计算逻辑与关键条件。\",\n    \"evidence\": \"综合单价需根据实际孔数和长度分别套用对应定额。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容。\",\n    \"evidence\": \"室外塔上防雷箱安装综合单价为519.84元/套。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882081,
+    "id": "chatcmpl-4e422e79-ca4e-9e1f-8fa9-bdd7948fd287",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 301,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4129,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4430
+    }
+  },
+  "usage_known": true
+}

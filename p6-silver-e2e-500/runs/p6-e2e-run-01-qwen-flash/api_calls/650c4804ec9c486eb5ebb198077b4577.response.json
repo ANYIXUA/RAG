@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:21.551439+08:00",
+  "conservative_cost_yuan": 0.0007186499999999999,
+  "error": null,
+  "latency_ms": 1188.9530001208186,
+  "list_price_estimate_yuan": 0.00056865,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 直流电源电压变动范围（标准电压-48V）的维护指标为-40V～-57V。[1]  \n2. 该指标的测试周期为季度。[1]  \n3. 维护时需确保电压在此范围内，避免设备异常。[1]  \n4. 若超出范围，应排查电源系统故障。[1]  \n5. 依据规程定期测试并记录结果。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880860,
+    "id": "chatcmpl-f020b073-3629-959a-9c32-128d1fffbe02",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2791,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2891
+    }
+  },
+  "usage_known": true
+}

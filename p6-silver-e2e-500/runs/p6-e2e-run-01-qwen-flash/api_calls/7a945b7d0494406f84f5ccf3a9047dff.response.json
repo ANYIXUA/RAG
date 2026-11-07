@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:46.905584+08:00",
+  "conservative_cost_yuan": 0.00070155,
+  "error": null,
+  "latency_ms": 1473.12800004147,
+  "list_price_estimate_yuan": 0.00055005,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 光分纤箱巡检的计量单位是“个²次”。[2]  \n2. 该单位按维护周期和实际巡检次数计算。[2]  \n3. “个²次”为标准计量单位，用于统计巡检工作量。[2]  \n4. 与光网络箱巡检计量单位一致。[2]  \n5. 依据《电信基础设施维护规程》第155页规定。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881125,
+    "id": "chatcmpl-bce510c1-975b-90d7-8e75-552d32582124",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2657,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2758
+    }
+  },
+  "usage_known": true
+}

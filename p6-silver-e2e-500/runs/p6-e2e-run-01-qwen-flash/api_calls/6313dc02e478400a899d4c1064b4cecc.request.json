@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:34.545981+08:00",
+  "input_token_upper_bound": 1216,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0300"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "咱们机房那块供电的稳压设备，装的时候是按什么标准来算的？ 终端设备 设备信息 设备状态 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "6313dc02e478400a899d4c1064b4cecc",
+  "reserved_yuan": 0.000608
+}

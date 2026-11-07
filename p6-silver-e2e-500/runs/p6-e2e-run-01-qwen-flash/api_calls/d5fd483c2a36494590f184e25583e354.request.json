@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:15:38.764646+08:00",
+  "input_token_upper_bound": 1210,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0157"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在智慧灯杆（视频监控杆）15m以上每增加1m时，安装扩装设备板件的费用是多少？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "d5fd483c2a36494590f184e25583e354",
+  "reserved_yuan": 0.000605
+}

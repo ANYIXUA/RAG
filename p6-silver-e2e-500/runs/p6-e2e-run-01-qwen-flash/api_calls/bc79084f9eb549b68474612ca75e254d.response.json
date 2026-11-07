@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:59.627919+08:00",
+  "conservative_cost_yuan": 0.00134385,
+  "error": null,
+  "latency_ms": 3507.545500062406,
+  "list_price_estimate_yuan": 0.00093435,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题未在上下文范围内\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"事实超出上下文范围\",\n    \"evidence\": \"装维服务计划需掌握光纤到户、物联网等新兴业务运维技能。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"未拒答且内容不相关\",\n    \"evidence\": \"装维服务计划需掌握光纤到户、物联网等新兴业务运维技能。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用与内容无关\",\n    \"evidence\": \"装维服务计划需掌握光纤到户、物联网等新兴业务运维技能。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"未提供市场趋势对齐信息，但未编造\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"overconfident_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881976,
+    "id": "chatcmpl-9748e65e-514d-9239-83e4-43a6bf30c45a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 273,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3499,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3772
+    }
+  },
+  "usage_known": true
+}

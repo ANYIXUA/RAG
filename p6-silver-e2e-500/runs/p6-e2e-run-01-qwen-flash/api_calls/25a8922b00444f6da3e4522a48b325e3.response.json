@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:19.536700+08:00",
+  "conservative_cost_yuan": 0.00143355,
+  "error": null,
+  "latency_ms": 2598.4036000445485,
+  "list_price_estimate_yuan": 0.00099705,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖核心检查点，与上下文一致。\",\n    \"evidence\": \"检查沿线重点部位保护是否到位、沿线有无外力施工影响线路安全等\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持。\",\n    \"evidence\": \"检查沿线重点部位保护是否到位、沿线有无外力施工影响线路安全等\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键检查步骤与上报要求。\",\n    \"evidence\": \"做好巡查记录，并将发现的问题及时上报等\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容。\",\n    \"evidence\": \"检查沿线重点部位保护是否到位、沿线有无外力施工影响线路安全等\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_consistent\",\n    \"content_complete\",\n    \"factually_accurate\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882177,
+    "id": "chatcmpl-af8e9a36-676d-9ccd-ab4f-4ea33e3e592a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 291,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3737,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4028
+    }
+  },
+  "usage_known": true
+}

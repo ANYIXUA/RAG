@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:07.231162+08:00",
+  "conservative_cost_yuan": 0.0007603499999999999,
+  "error": null,
+  "latency_ms": 1270.0606998987496,
+  "list_price_estimate_yuan": 0.0005848499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 小型局站有线设备维护项目接收的章节是6.4。[1]  \n2. 该章节包含资料接收、现场复核、接收报告编制提交三个环节。[1]  \n3. 维护项目移交由运营企业组织并书面提交相关资料。[1]  \n4. 维护企业需依据资料进行现场复核，核对图纸与实物是否相符。[1]  \n5. 现场复核内容详见表6.4.0.4。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880965,
+    "id": "chatcmpl-4fa468c9-9325-9428-88d2-010e64a48887",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2729,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2846
+    }
+  },
+  "usage_known": true
+}

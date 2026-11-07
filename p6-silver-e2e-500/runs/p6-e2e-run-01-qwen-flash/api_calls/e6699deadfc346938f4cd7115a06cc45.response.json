@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:18.225284+08:00",
+  "conservative_cost_yuan": 0.00146805,
+  "error": null,
+  "latency_ms": 2997.7945999708027,
+  "list_price_estimate_yuan": 0.00101505,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分信息正确但混淆了光路与防雷问题\",\n    \"evidence\": \"配电柜红灯闪烁可能表示光路异常或无光信号。[3]\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[3]未提及防雷模块检查\",\n    \"evidence\": \"确认防雷接地电阻是否符合标准（≤100Ω）。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键防雷模块状态检查\",\n    \"evidence\": \"检查防雷箱（单元）及防雷模块状态，记录计数器读数。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持对应句\",\n    \"evidence\": \"确认防雷接地电阻是否符合标准（≤100Ω）。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"confusion_between_light_indicators\",\n    \"misattribution_of_causes\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881935,
+    "id": "chatcmpl-4697ce95-4dbf-9f58-8a5d-468901d479c3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 302,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3747,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4049
+    }
+  },
+  "usage_known": true
+}

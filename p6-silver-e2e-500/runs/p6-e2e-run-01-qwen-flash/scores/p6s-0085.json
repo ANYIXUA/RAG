@@ -1,0 +1,48 @@
+{
+  "answer_correctness": {
+    "evidence": "WH34103002 电费代缴 站·次 次 31.01 19.38 5.81 5.81 0.17 —",
+    "reason": "消耗量0.17与上下文一致",
+    "score": 1
+  },
+  "case_id": "p6s-0085",
+  "citation_correctness": {
+    "evidence": "WH34103002 电费代缴 站·次 次 31.01 19.38 5.81 5.81 0.17 —",
+    "reason": "引用编号与来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH34103002 电费代缴 站·次 次 31.01 19.38 5.81 5.81 0.17 —",
+    "reason": "涵盖问题所需关键信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH34103002 电费代缴 站·次 次 31.01 19.38 5.81 5.81 0.17 —",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "correct_reference_match",
+    "consistent_citation",
+    "complete_fact_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "c4cd8b635e8b4478a0dab759c6e13d50",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

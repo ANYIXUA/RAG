@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:06.515586+08:00",
+  "conservative_cost_yuan": 0.0006843,
+  "error": null,
+  "latency_ms": 1634.0514000039548,
+  "list_price_estimate_yuan": 0.0005388,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 手机上的Wi-Fi质量报告由和家亲APP提供。[1]  \n2. 该功能属于移动全家Wi-Fi尊享版的增值应用。[1]  \n3. 报告数据来源于全光组网终端上报。[2]  \n4. 系统通过和家亲APP实现网络智能管控。[1]  \n5. 数据由光网关或光路由终端采集并上报。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881024,
+    "id": "chatcmpl-15762e7f-53ca-97d8-9e58-cc2035cd9187",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 97,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2622,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2719
+    }
+  },
+  "usage_known": true
+}

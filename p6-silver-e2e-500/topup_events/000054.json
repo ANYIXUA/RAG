@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "80a63ac25a1cb2422d2ea8441642d075e58d6cfb0d6c114819aad760a6176641",
+  "record": {
+    "batch": 27,
+    "candidates": [
+      {
+        "answer": "标石的一般埋深为60 厘米",
+        "evidence": [
+          {
+            "excerpt": "标石的一般埋深为60 厘米，出土部分为40±5 厘米，标石的周围应夯实。在农作物区，可采用高标石；",
+            "passage_id": "c2b948d56e35be96db3d5500"
+          }
+        ],
+        "question": "直埋光缆线路和长途塑料管道的标石一般埋深为多少厘米？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "同沟敷设多条缆的接头处应各自分别埋设一块接头标石，且标石的标记应有明显的区别",
+        "evidence": [
+          {
+            "excerpt": "同沟敷设多条缆的接头处应各自分别埋设一块接头标石，且标石的标记应有明显的区别；",
+            "passage_id": "c2b948d56e35be96db3d5500"
+          }
+        ],
+        "question": "同沟敷设多条缆的接头处应如何埋设标石？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "应根据现场情况，会同施工和建设部门，采取改变路由或适当的保护措施，并增加标志牌",
+        "evidence": [
+          {
+            "excerpt": "新建铁路或公路影响线路的安全时，应根据现场情况，会同施工和建设部门，采取改变路由或适当的保护措施，并增加标志牌，改道的线路非穿越铁路或公路不可时，应采取适当保护措施，并增加标志牌。",
+            "passage_id": "c2b948d56e35be96db3d5500"
+          }
+        ],
+        "question": "新建铁路或公路影响线路安全时，应采取什么措施？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:02.443419+08:00",
+  "conservative_cost_yuan": 0.001347,
+  "error": null,
+  "latency_ms": 2779.6258002053946,
+  "list_price_estimate_yuan": 0.000957,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致，覆盖关键点。\",\n    \"evidence\": \"检查并确保进出线孔封闭完好，防止进水和啮齿类动物进入箱体\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"检查光交接箱门锁应该完好，无锈蚀\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖进水与鼠患处理核心措施。\",\n    \"evidence\": \"检查并确保箱体表面清洁，无破损及其他安全隐患\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容。\",\n    \"evidence\": \"检查并确保进出线孔封闭完好\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881979,
+    "id": "chatcmpl-cd8489b2-3d3e-9bb5-b255-e5b8cf7c25c9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 260,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3780,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4040
+    }
+  },
+  "usage_known": true
+}

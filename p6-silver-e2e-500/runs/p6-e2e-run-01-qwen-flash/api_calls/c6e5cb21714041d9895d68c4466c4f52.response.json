@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:30.704677+08:00",
+  "conservative_cost_yuan": 0.0014853,
+  "error": null,
+  "latency_ms": 4232.203699881211,
+  "list_price_estimate_yuan": 0.0010128,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"未提及综合单价构成\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实有上下文支持\",\n    \"evidence\": \"7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏核心费用项\",\n    \"evidence\": \"3.58 综合单价 Composite Unit Price 完成一个规定计量单位的维护分项作业工作量清单项目所需的人工费、企业管理费和利润，以及一定范围内的风险费用。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"[3] 7.3.1.3 FTTH 接入方式应包括末级分光器至用户端光纤引入、跳接与测试\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"partial_factual_support\",\n    \"missing_core_definition\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881886,
+    "id": "chatcmpl-3c4cfc2b-0572-9d16-9fd8-e0c81dda7363",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 315,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3602,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3917
+    }
+  },
+  "usage_known": true
+}

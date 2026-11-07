@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:28.956001+08:00",
+  "conservative_cost_yuan": 0.0007347,
+  "error": null,
+  "latency_ms": 1295.34100019373,
+  "list_price_estimate_yuan": 0.0005532,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 架空光缆线路徒步巡回在平原地区的综合单价为66.01元。[1]  \n2. 计量单位为千米²次，工作内容包括沿线巡查与记录。[1]  \n3. 人工费为44.79元，含技工与普工成本。[1]  \n4. 企业管理费为12.27元，利润为8.96元。[1]  \n5. 该数据来源于《电信基础设施维护规程》第173页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880867,
+    "id": "chatcmpl-bea672ef-5906-9793-9252-d59a81e83fab",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2478,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2599
+    }
+  },
+  "usage_known": true
+}

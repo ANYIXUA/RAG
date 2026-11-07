@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:03.492450+08:00",
+  "conservative_cost_yuan": 0.0013899000000000001,
+  "error": null,
+  "latency_ms": 2753.769800066948,
+  "list_price_estimate_yuan": 0.0009534,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确指出和家亲APP提供报告\",\n    \"evidence\": \"通过和家亲APP 为用户提 供家庭网络管家、绿色上网、Wi-Fi 便捷管理\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"全光组网终端须支持组网增值应用，即通过和家亲APP\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖系统、数据源与功能\",\n    \"evidence\": \"通过和家亲APP 为用户提 供家庭网络管家、绿色上网、Wi-Fi 便捷管理\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"通过和家亲APP 为用户提 供家庭网络管家、绿色上网、Wi-Fi 便捷管理\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881920,
+    "id": "chatcmpl-d8d8a9a1-54c5-934c-a99a-207695985ea5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 291,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3446,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3737
+    }
+  },
+  "usage_known": true
+}

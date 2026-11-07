@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:43.154841+08:00",
+  "conservative_cost_yuan": 0.0008805,
+  "error": null,
+  "latency_ms": 1620.2348999213427,
+  "list_price_estimate_yuan": 0.0006465,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 当前上下文未提及装维团队绩效与财务报销流程的联动机制。[1][2][3][4]  \n2. 所有检索内容均聚焦于装维技术规范、作业流程及安全要求，无绩效考核与财务报销关联信息。[1][2][3][4]  \n3. 未见任何关于绩效评估结果影响报销审批或资金发放的描述。[1][2][3][4]  \n4. 财务报销流程相关内容在提供的文档中未被覆盖。[1][2][3][4]  \n5. 该问题超出当前知识库范围，需补充相关制度文件或转人工处理。[1][2][3][4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881181,
+    "id": "chatcmpl-8d42c874-aa64-9f0e-802c-0c61f75d363b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 156,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2750,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2906
+    }
+  },
+  "usage_known": true
+}

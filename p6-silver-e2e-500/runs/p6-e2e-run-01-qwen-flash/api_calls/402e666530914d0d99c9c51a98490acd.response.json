@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:50.682531+08:00",
+  "conservative_cost_yuan": 0.0007243499999999999,
+  "error": null,
+  "latency_ms": 1220.6841998267919,
+  "list_price_estimate_yuan": 0.0005758499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查局站内部墙面状态及走线架、照明、消防设施。[1]  \n2. 监测环境温度、湿度并记录异常情况。[1]  \n3. 清洁内部卫生并检查空调设备运行状态。[1]  \n4. 巡检机房主体结构内部及基础卫生状况。[1]  \n5. 记录巡检中发现的问题并及时处理或上报。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880949,
+    "id": "chatcmpl-0531f0a6-3307-9676-8e76-71e3033dfa72",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 99,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2849,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2948
+    }
+  },
+  "usage_known": true
+}

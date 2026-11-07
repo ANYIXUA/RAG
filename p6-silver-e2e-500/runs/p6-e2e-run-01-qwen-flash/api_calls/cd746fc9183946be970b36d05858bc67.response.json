@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:11.929524+08:00",
+  "conservative_cost_yuan": 0.0015271500000000001,
+  "error": null,
+  "latency_ms": 3305.0102000124753,
+  "list_price_estimate_yuan": 0.00102015,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题不可回答，上下文无市场策略协同信息\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自对应引用内容\",\n    \"evidence\": \"光网关应支持基于数据流分类结果的带宽保障和限制机制。[2]\"\n  },\n  \"completeness\": {\n    \"score\": null,\n    \"reason\": \"问题不可回答，无需补全\",\n    \"evidence\": \"\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致且支持对应句\",\n    \"evidence\": \"全光组网终端应能实现光和Wi-Fi 间的协同能力，根据业务需求能根据整网数据传输状态和无线通信质量进行调整，提升全光网络内Wi-Fi 无线空口调度能力，提高Wi-Fi 的 协同效率，减少漫游延迟，优化性能，实现整网空口并发吞吐性能最大化。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"未尝试编造，仅基于可得信息回应\",\n    \"evidence\": \"运维流程需通过平台实现网络状态查询与诊断，支撑策略协同。[3]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882048,
+    "id": "chatcmpl-e239a937-4514-91f2-92d3-c1ece8a3678a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 338,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3421,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3759
+    }
+  },
+  "usage_known": true
+}

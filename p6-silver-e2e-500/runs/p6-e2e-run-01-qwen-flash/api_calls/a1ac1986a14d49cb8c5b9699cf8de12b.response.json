@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:55.466511+08:00",
+  "conservative_cost_yuan": 0.0007543499999999999,
+  "error": null,
+  "latency_ms": 1335.1031001657248,
+  "list_price_estimate_yuan": 0.0005758499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 更换吊线保护装置的消耗量为0.10米。[1]  \n2. 该消耗量单位为米，对应项目编码WH12018001。[1]  \n3. 消耗量数据来源于《电信基础设施维护规程》第207页。[1]  \n4. 与安装吊线保护装置的消耗量（0.07米）不同。[2]  \n5. 项目名称“更换吊线保护装置”在文档中明确列出。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880834,
+    "id": "chatcmpl-7f721552-2608-9174-8b0d-8595c33f5530",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 119,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2649,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2768
+    }
+  },
+  "usage_known": true
+}

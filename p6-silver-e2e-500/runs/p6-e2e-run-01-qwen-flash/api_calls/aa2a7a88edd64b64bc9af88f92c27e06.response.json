@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:40.217733+08:00",
+  "conservative_cost_yuan": 0.00173025,
+  "error": null,
+  "latency_ms": 4414.918600115925,
+  "list_price_estimate_yuan": 0.00113025,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持山区单价110.55元\",\n    \"evidence\": \"WH12027003 山区 110.55 75.00 20.55 15.00 0.43 0.43\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH12027003 山区 110.55 75.00 20.55 15.00 0.43 0.43\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、构成及适用条件\",\n    \"evidence\": \"注：本条目适用于平原地区；用于丘陵、城区时综合单价按相应子目的1.2 倍计取，用于山区时综合单价按相应子目的1.5 倍计取。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"WH12027003 山区 110.55 75.00 20.55 15.00 0.43 0.43\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881835,
+    "id": "chatcmpl-043c0bcb-7032-9b88-9f95-bfd6bf29f198",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 400,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3535,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3935
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:58.206279+08:00",
+  "conservative_cost_yuan": 0.0007929,
+  "error": null,
+  "latency_ms": 1546.3503999635577,
+  "list_price_estimate_yuan": 0.0006054,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 未提供不同品牌装维服务费用标准的对比信息。[1][2][3]  \n2. 现有文档主要涉及装维操作规范与职责划分，无费用明细。[2][3]  \n3. 装维材料管理及维护作业耗材费用可估列，但未说明具体标准。[3]  \n4. 服务范围以分光器或信息点为界，不涉及收费差异。[2]  \n5. 缺乏品牌间费用对比依据，无法作答。[1][2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881136,
+    "id": "chatcmpl-1f5208fb-d23a-9691-94da-76b4f0fb905f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 125,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2786,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2911
+    }
+  },
+  "usage_known": true
+}

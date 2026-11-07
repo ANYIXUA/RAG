@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:41.374183+08:00",
+  "conservative_cost_yuan": 0.0007153499999999999,
+  "error": null,
+  "latency_ms": 1267.8202998358756,
+  "list_price_estimate_yuan": 0.0005668499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区基站配套设备故障时，需代缴电费。[3]  \n2. 代缴电费费用为每次31.01元。[3]  \n3. 费用包含人工、管理费及利润。[3]  \n4. 按“站·次”计量，每发生一次计费。[3]  \n5. 该服务属于WH24103其他维护项目。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881120,
+    "id": "chatcmpl-a62f4e64-1f31-96ce-9c18-81b30d8dfb70",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 99,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2789,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2888
+    }
+  },
+  "usage_known": true
+}

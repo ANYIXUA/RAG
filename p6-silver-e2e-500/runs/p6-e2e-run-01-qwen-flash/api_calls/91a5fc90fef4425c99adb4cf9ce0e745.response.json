@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:08.553347+08:00",
+  "conservative_cost_yuan": 0.0014150999999999999,
+  "error": null,
+  "latency_ms": 2525.7802000269294,
+  "list_price_estimate_yuan": 0.0009831,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文支持完整维修步骤\",\n    \"evidence\": \"2、小型离网风力发电机组：停车检查；检修回转体；清洁添加设备轴承润滑油；发电机输电线插接头清洁更换；\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"检查发电机输电线插接头是否松动或氧化，必要时更换。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖关键维修点且无遗漏\",\n    \"evidence\": \"检查风机立柱、基础是否下沉、倾斜或锈蚀。[4]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"检查发电机输电线插接头是否松动或氧化，必要时更换。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882046,
+    "id": "chatcmpl-560b3cfd-fffe-98ac-b04c-4027c26f7c06",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 288,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3674,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3962
+    }
+  },
+  "usage_known": true
+}

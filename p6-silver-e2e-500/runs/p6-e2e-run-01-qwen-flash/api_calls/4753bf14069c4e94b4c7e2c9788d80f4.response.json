@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:40.505842+08:00",
+  "conservative_cost_yuan": 0.0007276499999999999,
+  "error": null,
+  "latency_ms": 1544.7949001099914,
+  "list_price_estimate_yuan": 0.00055815,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护作业综合单价应包含光缆引入、跳接与测试费用。[3]  \n2. 应涵盖用户端设备安装、调测及开通维护成本。[3]  \n3. 包含备品、备件及装维材料的管理与使用费用。[3]  \n4. 涉及终端返修时的登记、交接与诊断记录成本。[3]  \n5. 覆盖日常维护中的人工、工具及安全作业支出。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880999,
+    "id": "chatcmpl-245c7986-3e92-9809-b6ac-2b3322197ac2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2591,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2704
+    }
+  },
+  "usage_known": true
+}

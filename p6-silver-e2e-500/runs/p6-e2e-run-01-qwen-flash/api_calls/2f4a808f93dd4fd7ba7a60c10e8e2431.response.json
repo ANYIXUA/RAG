@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:31.149342+08:00",
+  "conservative_cost_yuan": 0.0018219,
+  "error": null,
+  "latency_ms": 3729.8024999909103,
+  "list_price_estimate_yuan": 0.0012084,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"尺寸与单价与上下文一致。\",\n    \"evidence\": \"WH23102010 挂墙式室内有源综合机箱 218.88 136.80 41.04 41.04 1.20\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"WH23102010 挂墙式室内有源综合机箱 218.88 136.80 41.04 41.04 1.20\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖尺寸、价格、来源与类型。\",\n    \"evidence\": \"WH23102010 挂墙式室内有源综合机箱 218.88 136.80 41.04 41.04 1.20\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]对应正确来源。\",\n    \"evidence\": \"WH23102010 挂墙式室内有源综合机箱 218.88 136.80 41.04 41.04 1.20\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881947,
+    "id": "chatcmpl-659701e4-f78d-9eca-96ee-d3f28e77b82f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 409,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3966,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4375
+    }
+  },
+  "usage_known": true
+}

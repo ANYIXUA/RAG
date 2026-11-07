@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:42.115295+08:00",
+  "conservative_cost_yuan": 0.0008657999999999999,
+  "error": null,
+  "latency_ms": 1615.2872999664396,
+  "list_price_estimate_yuan": 0.0006498,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 市区天馈线驻波比测试综合单价为36.48元。[1]  \n2. 市区天线信号互调测试综合单价为18.24元。[2]  \n3. 两者单价差值为18.24元。[1][2]  \n4. 差值计算：36.48 - 18.24 = 18.24元。[1][2]  \n5. 数据来源为《电信基础设施维护规程》表10.3.2.1与表10.3.2.2。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881180,
+    "id": "chatcmpl-efc18a73-27ca-9da1-b63d-facf8d064050",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 144,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2892,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3036
+    }
+  },
+  "usage_known": true
+}

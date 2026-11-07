@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "维护分项作业工作量清单与计价表：表—04；",
+    "reason": "上下文明确支持表—04为正确编号",
+    "score": 1
+  },
+  "case_id": "p6s-0074",
+  "citation_correctness": {
+    "evidence": "维护分项作业工作量清单与计价表：表—04；",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "维护分项作业工作量清单与计价表：表—04；",
+    "reason": "完整覆盖问题所需信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "维护分项作业工作量清单与计价表：表—04；",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "multiple_sources_used",
+    "correct_citation"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "2cbe09247aa54108b1b67c72adddb77f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH11002003 城区 5.76 3.91 1.07 0.78 0.03 —",
+    "reason": "引用[1]明确支持3.91元/工日",
+    "score": 1
+  },
+  "case_id": "p6s-0172",
+  "citation_correctness": {
+    "evidence": "WH11002003 城区 5.76 3.91 1.07 0.78 0.03 —",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH11002003 城区 5.76 3.91 1.07 0.78 0.03 —",
+    "reason": "覆盖计费依据、项目编码等关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH11002003 城区 5.76 3.91 1.07 0.78 0.03 —",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "8ab707b52b894665afeae7975df017c7",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

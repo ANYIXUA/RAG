@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:22.380287+08:00",
+  "conservative_cost_yuan": 0.0007302000000000001,
+  "error": null,
+  "latency_ms": 950.8050000295043,
+  "list_price_estimate_yuan": 0.0005967,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装有源落地式柜需进行开箱检验与清洁搬运。[1]  \n2. 需划线定位后实施安装固定。[3]  \n3. 完成线缆连接作业。[1]  \n4. 最后清理现场，确保环境整洁。[1]  \n5. 整个流程包含安装固定、线缆连接等关键步骤。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881101,
+    "id": "chatcmpl-61094b4c-55e0-96d3-b5f1-7cf565ddc19f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 89,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3088,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3177
+    }
+  },
+  "usage_known": true
+}

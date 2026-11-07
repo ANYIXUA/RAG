@@ -1,0 +1,22 @@
+{
+  "snapshot_id": "sha256:d9f1fa7851b10fba00665e0478b88f136dc50879afef489ca15fee51ff704051",
+  "record_count": 447,
+  "document_count": 3,
+  "database_unchanged": true,
+  "code_provenance": {
+    "config_fingerprint": "109ffb7d38ef9a36",
+    "git_head": "d2830f6470aef4048c3380ebe589a17d5a162dca",
+    "package_root": "D:\\AgentAIProgect\\RAG\\rag_app",
+    "python_version": "3.12.14",
+    "source_sha256": {
+      "cli.py": "e06952e486628f4ae6857683cc2c65b68ce5d537475424a73ee101268910f070",
+      "core/config.py": "e5f45c18b0d3aeb0b9f0dcf9a1d8095f0c67317544b48322fdff239664824009",
+      "eval_dataset/__init__.py": "5708f59638de828b8e5d3d6fdd349e27f8918a25172cba201a3a587a2e181447",
+      "eval_dataset/corpus.py": "2f92a38a4863c92f5bc4ac6e52d3b0054c2b13384a16563e59f1795104fc0df7",
+      "eval_dataset/schemas.py": "f7bf62cfc5514968aaac7932f2c9f77460db420e995034e468516b37bfbd0e35"
+    },
+    "worktree_dirty": true
+  },
+  "readonly_integration_tests": 2,
+  "readonly_integration_skips": 0
+}

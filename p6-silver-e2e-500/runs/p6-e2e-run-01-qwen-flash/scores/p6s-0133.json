@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH22105001 铁塔技术测试 塔身垂直度 市区 69.31 43.32 13.00 13.00",
+    "reason": "上下文明确支持单价数据",
+    "score": 1
+  },
+  "case_id": "p6s-0133",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "市区铁塔塔身垂直度测试综合人工费单价为43.32元。[1]",
+    "reason": "涵盖问题所有条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH22104001 接地网电阻测试 （降低） 市区 9.12 5.70 1.71 1.71",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e9db3397131e4becbda5f4f0cbe65743",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

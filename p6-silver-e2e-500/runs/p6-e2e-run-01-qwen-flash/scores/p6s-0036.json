@@ -1,0 +1,47 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] WH12019002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24\n[3] WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24",
+    "reason": "实际上下文显示直埋式安装电杆地线的消耗量在多个来源中为0.24，但模型引用了[2]（第192页）作为主要来源，而该页数据为0.29，与正确值0.24不符。尽管[1]和[3]中均明确列出直埋式消耗量为0.24，但模型未引用这些正确来源，而是错误引用[2]，导致答案虽数值正确但来源错误。",
+    "score": 0.5
+  },
+  "case_id": "p6s-0036",
+  "citation_correctness": {
+    "evidence": "[2] WH12006002 直埋式 76.00 51.56 14.13 10.31 0.29 0.29",
+    "reason": "模型在陈述‘消耗量为0.24条’时引用[2]，但[2]中该数据为0.29，与所引内容矛盾。此外，[2]并未包含‘0.24’这一数值，因此引用完全错误。其他引用如[4]也未能支持‘0.24’这一具体数值，仅用于泛化说明，故整体引用不准确。",
+    "score": 0
+  },
+  "completeness": {
+    "evidence": "1. 直埋式安装电杆地线的消耗量为0.24条。[2]  \n2. 该数据来源于《电信基础设施维护规程》第192页表10.2.2.6。[2]  \n3. 消耗量单位为“条”，适用于直埋式地线安装作业。[2]  \n4. 不同地线类型（如拉线式、延伸式）消耗量不同。[2]  \n5. 该标准适用于合同约定维护周期内的实际发生次数计算。[4]",
+    "reason": "回答涵盖了问题所需的核心信息：消耗量数值、单位、适用类型及与其他类型的对比，且未遗漏关键条件或步骤。虽未提及所有相关上下文细节，但已满足精确事实类问题的基本完整要求。",
+    "score": 1
+  },
+  "confidence": "medium",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[2] WH12006002 直埋式 76.00 51.56 14.13 10.31 0.29 0.29",
+    "reason": "模型声称‘消耗量为0.24条’的事实由上下文支持，但其引用[2]来支持该事实是错误的。[2]中直埋式消耗量为0.29，而非0.24。因此，虽然结论本身在内容上部分正确，但其支撑依据不成立，存在事实性偏差。",
+    "score": 0.5
+  },
+  "flags": [
+    "incorrect_citation",
+    "fact_source_mismatch"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "39f30e08fc9c4f9ab61e4d04f7daac35",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "直埋式安装电杆地线的消耗量为0.24条。[2]",
+    "reason": "问题可回答，且上下文中有明确答案，无需拒答。模型已作答，行为合理。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

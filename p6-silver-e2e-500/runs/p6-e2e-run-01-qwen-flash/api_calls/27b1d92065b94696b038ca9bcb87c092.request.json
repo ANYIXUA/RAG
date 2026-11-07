@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:29.096553+08:00",
+  "input_token_upper_bound": 1154,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0293"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "装维人员如何获得家庭设备安装补贴？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "27b1d92065b94696b038ca9bcb87c092",
+  "reserved_yuan": 0.000577
+}

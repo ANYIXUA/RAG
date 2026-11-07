@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0348",
+  "citation_correctness": {
+    "evidence": "建议补充具体品牌或价格政策信息，或转人工咨询。[1][2][3]",
+    "reason": "引用编号匹配上下文来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "无法基于现有资料判断价格差异。[1][2][3]",
+    "reason": "覆盖拒答核心理由",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "所有文档聚焦于技能要求与作业规范，非定价内容。[1][2][3]",
+    "reason": "每项事实均来自上下文",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "17c0dda4959044eca0eba55f367695ac",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "建议补充具体品牌或价格政策信息，或转人工咨询。[1][2][3]",
+    "reason": "正确拒答并提示转人工",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:40.817900+08:00",
+  "conservative_cost_yuan": 0.0008095499999999999,
+  "error": null,
+  "latency_ms": 1365.0967001449317,
+  "list_price_estimate_yuan": 0.00064005,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 电梯井内安装中继器的综合单价为388.51元，是普通安装的2倍。[2]  \n2. 按照规程，电梯井内安装需乘以系数2.0，成本显著增加。[1]  \n3. 该费用包含人工、材料及管理等全部成本。[2]  \n4. 价格远高于普通位置安装，属合理溢价。[1]  \n5. 无其他信息表明价格存在额外浮动。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881179,
+    "id": "chatcmpl-25167577-122d-9b2f-ac6c-efaa578c6033",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3137,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3250
+    }
+  },
+  "usage_known": true
+}

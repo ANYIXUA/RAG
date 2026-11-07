@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:59.137564+08:00",
+  "conservative_cost_yuan": 0.00168675,
+  "error": null,
+  "latency_ms": 2823.3558998908848,
+  "list_price_estimate_yuan": 0.00110775,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出ONU综合单价28.81元\",\n    \"evidence\": \"WH33122002 ONU 28.81 19.54 5.35 3.91 0.17 0.00\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH33122002 ONU 28.81 19.54 5.35 3.91 0.17 0.00\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、单位、编码及工作内容\",\n    \"evidence\": \"WH33122002 ONU 28.81 19.54 5.35 3.91 0.17 0.00\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]准确对应相关段落\",\n    \"evidence\": \"WH33122002 ONU 28.81 19.54 5.35 3.91 0.17 0.00\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882156,
+    "id": "chatcmpl-fbc0155a-33af-9ae0-9d3d-4917be96bb25",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 386,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3525,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3911
+    }
+  },
+  "usage_known": true
+}

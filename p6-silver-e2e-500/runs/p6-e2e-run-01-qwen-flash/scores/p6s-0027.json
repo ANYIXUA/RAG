@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第162页\n定位信息：162\n综合分：0.726775\n召回综合分：0.726775\n重排分：无\n语义分：0.609678\nBM25 原始分：23.038465\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护规程 > 第162页 页码：162 T/CAICI XXXX—XXXX 156 WHJY-035 三阶互调仪 台 20292",
+    "reason": "实际LLM上下文[1]明确指出WHJY-035三阶互调仪的台数为20292，与问题直接对应，且数值一致。",
+    "score": 1
+  },
+  "case_id": "p6s-0027",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第162页\n定位信息：162\n综合分：0.726775\n召回综合分：0.726775\n重排分：无\n语义分：0.609678\nBM25 原始分：23.038465\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护规程 > 第162页 页码：162 T/CAICI XXXX—XXXX 156 WHJY-035 三阶互调仪 台 20292",
+    "reason": "引用[1]准确对应了包含‘三阶互调仪 台 20292’的上下文片段，且该句内容被正确引用。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "问题为单一事实查询，回答仅需提供台数，已满足要求。",
+    "reason": "问题仅询问三阶互调仪的台数，回答已完整提供该数值，未遗漏必要条件或步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第162页\n定位信息：162\n综合分：0.726775\n召回综合分：0.726775\n重排分：无\n语义分：0.609678\nBM25 原始分：23.038465\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护规程 > 第162页 页码：162 T/CAICI XXXX—XXXX 156 WHJY-035 三阶互调仪 台 20292",
+    "reason": "回答中‘三阶互调仪的台数为20292台’这一事实完全由上下文[1]支持，无任何额外编造或偏离。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e1ea6a72172b41c3a4d13e6c15dc58dc",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "问题可由上下文直接回答，模型未拒绝，符合预期行为。",
+    "reason": "问题为可回答的精确事实类问题，模型已正确作答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

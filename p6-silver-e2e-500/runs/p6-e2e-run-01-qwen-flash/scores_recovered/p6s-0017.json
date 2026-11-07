@@ -1,0 +1,43 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60",
+    "reason": "实际LLM上下文[1]中明确列出WH23102003架顶式机架的综合单价为109.44元，与silver_reference一致，且该信息在原文中可直接支持。",
+    "score": 1
+  },
+  "case_id": "p6s-0017",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第251页\n定位信息：251\n... WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60",
+    "reason": "所有引用编号[1]均正确对应实际上下文片段[1]，且该片段确实支持所陈述的每一条事实，引用位置恰当且唯一。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60",
+    "reason": "问题仅询问综合单价，回答准确给出数值并附带相关背景信息（如计量单位、项目编码、工序等），虽略超必要信息但未遗漏关键条件，符合问题需求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "evaluation_normalization": "N/A no-answer dimension retains null score; null evidence canonicalized to empty string",
+  "faithfulness": {
+    "evidence": "WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60",
+    "reason": "回答中的每一项事实（如综合单价、工序内容、计量单位、人工费占比、项目编码）均能在实际上下文[1]中找到对应支持，无虚构或偏差。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3508fc78fd4d4ba19873d6fb13657608",
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题为明确可答的exact_fact类型，上下文中有完整答案，无需拒答，因此该维度不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "original_failure_record": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scores\\p6s-0017.json",
+  "question_type": "exact_fact",
+  "recovered_paid_response": true,
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

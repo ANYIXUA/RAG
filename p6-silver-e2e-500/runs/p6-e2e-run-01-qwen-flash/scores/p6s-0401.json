@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "发生通信阻断和严重障碍等重大质量事故时应立即调查，及时分析。",
+    "reason": "上下文明确支持应对措施",
+    "score": 1
+  },
+  "case_id": "p6s-0401",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "必须对发生的通信阻断事件进行分析，提出防止障碍和缩短障碍历时的具体措施。",
+    "reason": "覆盖问题所需全部关键措施",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "凡发生重大通信阻断、重大工作差错和通信事故，应及时召开分析会。",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "2f9ed89cf79649b6b441878598b5ec94",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

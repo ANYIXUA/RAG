@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:23.843656+08:00",
+  "conservative_cost_yuan": 0.00083475,
+  "error": null,
+  "latency_ms": 1590.361500158906,
+  "list_price_estimate_yuan": 0.00064875,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 平原、丘陵地区天馈线系统巡检消耗量为0.62站·次。[1]  \n2. 该数据来源于《电信基础设施维护规程》第227页表10.3.1.2。[1]  \n3. 消耗量单位为“站·次”，适用于平原、丘陵地形。[1]  \n4. 与市区及其他地形类别相比，消耗量较高。[1]  \n5. 项目编码WH21102002对应此数据。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880982,
+    "id": "chatcmpl-98453f25-05e9-96df-ad53-31be3cb119bf",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 124,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3085,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3209
+    }
+  },
+  "usage_known": true
+}

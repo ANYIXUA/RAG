@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:16.511668+08:00",
+  "conservative_cost_yuan": 0.00534225,
+  "error": null,
+  "latency_ms": 14782.840800005943,
+  "list_price_estimate_yuan": 0.00294225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]明确指出'WHJY-030 无人机 30 分钟续航、8km 传输 套 3512'，与问题'无人机的续航时间是多少分钟？'直接对应，且答案中'30分钟'与原文一致。尽管silver_reference为'30 分钟续航'，但其来源与实际上下文一致，因此可判定正确。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n综合分：0.602058\\n召回综合分：0.602058\\n重排分：无\\n语义分：0.431512\\nBM25 原始分：22.044603\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第162页 页码：162 T/CAICI XXXX—XXXX 156 WHJY-019 光缆普查仪 套 6582 WHJY-020 光谱分析仪 台 33749 WHJY-021 光纤识别仪 套 1375 WHJY-022 稳定光源\\\\光功率计 套 363 WHJY-023 数字传输分析仪 100G 套 47993 WHJY-024 汽油发电机 5KW 套 1524 WHJY-025 汽油发电机 8KW 套 2279 WHJY-026 汽油发电机 10KW 套 3271 WHJY-027 汽油发电机 15KW 套 5796 WHJY-028 带状光纤熔接机 套 15122 WHJY-029 光纤熔接机 套 5810 WHJY-030 无人机 30 分钟续航、8km 传输 套 3512 WHJY-031 燃油式路面切割机 套 863 WHJY-032 抽水机 套 842 WHJY-033 标签标牌打印机 台 928 WHJY-034 操作测试终端（笔记本电脑） 台 1258 WHJY-035 三阶互调仪 台 20292 WHJY-036 维护作业生产用车 1.5t 辆 83389 注：机械仪表按5 年使用期（车辆为6 年），维修费为2%，残值3% 年使用费=（原值× 97%/5+原值× 2%）+维护仪表计量检定费\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实均能在实际上下文[1]中找到支持。'30分钟续航'、'8km传输'、'WHJY-030'型号及'标准配置参数'等均在[1]中明确提及，无虚构或夸大。所有陈述均有对应出处，且未引入额外未提及信息。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n综合分：0.602058\\n召回综合分：0.602058\\n重排分：无\\n语义分：0.431512\\nBM25 原始分：22.044603\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第162页 页码：162 T/CAICI XXXX—XXXX 156 WHJY-019 光缆普查仪 套 6582 WHJY-020 光谱分析仪 台 33749 WHJY-021 光纤识别仪 套 1375 WHJY-022 稳定光源\\\\光功率计 套 363 WHJY-023 数字传输分析仪 100G 套 47993 WHJY-024 汽油发电机 5KW 套 1524 WHJY-025 汽油发电机 8KW 套 2279 WHJY-026 汽油发电机 10KW 套 3271 WHJY-027 汽油发电机 15KW 套 5796 WHJY-028 带状光纤熔接机 套 15122 WHJY-029 光纤熔接机 套 5810 WHJY-030 无人机 30 分钟续航、8km 传输 套 3512 WHJY-031 燃油式路面切割机 套 863 WHJY-032 抽水机 套 842 WHJY-033 标签标牌打印机 台 928 WHJY-034 操作测试终端（笔记本电脑） 台 1258 WHJY-035 三阶互调仪 台 20292 WHJY-036 维护作业生产用车 1.5t 辆 83389 注：机械仪表按5 年使用期（车辆为6 年），维修费为2%，残值3% 年使用费=（原值× 97%/5+原值× 2%）+维护仪表计量检定费\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题为精确事实类问题‘无人机的续航时间是多少分钟？’，只需回答续航时间即可。模型仅用一条要点回答核心信息，并补充了来源和相关参数作为辅助说明，未遗漏必要条件或步骤。虽包含额外信息（如传输距离、型号），但属于合理扩展，不影响完整性。\",\n    \"evidence\": \"1. 无人机的续航时间为30分钟。[1]  \\n2. 该信息来源于《电信基础设施维护规程》第162页。[1]  \\n3. 无人机支持8km传输距离。[1]  \\n4. 设备型号为WHJY-03",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881381,
+    "id": "chatcmpl-3f905e20-b331-9948-b5df-98ebc9ba1d8b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1600,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3615,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 5215
+    }
+  },
+  "usage_known": true
+}

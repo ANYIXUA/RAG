@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:26.956846+08:00",
+  "conservative_cost_yuan": 0.00075825,
+  "error": null,
+  "latency_ms": 1481.4001000486314,
+  "list_price_estimate_yuan": 0.00057525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 光网关缺省LAN侧IP地址段为192.168.1.0/24。[1]  \n2. 缺省本地IPv4管理地址为192.168.1.1。[1]  \n3. 支持为家庭网络分配至少253个可选IP地址。[1]  \n4. DHCP服务器功能需支持查看已分配地址信息。[1]  \n5. 地址段配置符合中国移动技术规范V2.0.0要求。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880985,
+    "id": "chatcmpl-642f3ede-83a2-9ca3-884f-8f8eccb71b79",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 122,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2615,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2737
+    }
+  },
+  "usage_known": true
+}

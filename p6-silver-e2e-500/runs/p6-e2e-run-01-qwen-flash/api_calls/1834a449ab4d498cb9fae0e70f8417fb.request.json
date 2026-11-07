@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:13:39.807173+08:00",
+  "input_token_upper_bound": 1129,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0018"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "WH33116007 项目中防盗门更换的综合单价是多少元？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "1834a449ab4d498cb9fae0e70f8417fb",
+  "reserved_yuan": 0.0005645
+}

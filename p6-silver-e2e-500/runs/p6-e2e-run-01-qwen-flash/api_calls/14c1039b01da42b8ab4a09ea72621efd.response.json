@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:26.412831+08:00",
+  "conservative_cost_yuan": 0.0007408499999999999,
+  "error": null,
+  "latency_ms": 1560.7761000283062,
+  "list_price_estimate_yuan": 0.0005713499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 销项税额按（1+2+3+4+5+6+7）×费率计算。[1]  \n2. 计算基数包含维护分项作业费至安全生产费之和。[1]  \n3. 费率依据具体项目规定，未在文档中明确统一值。[1]  \n4. 该计算方式适用于费用结算汇总表。[1]  \n5. 表—03为维护项目费用结算汇总表的对应表格。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880924,
+    "id": "chatcmpl-005b4606-165d-9d3a-a891-74792960ed81",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2679,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2792
+    }
+  },
+  "usage_known": true
+}

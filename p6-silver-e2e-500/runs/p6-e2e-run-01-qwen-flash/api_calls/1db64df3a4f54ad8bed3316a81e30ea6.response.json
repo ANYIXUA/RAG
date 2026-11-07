@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:43.168782+08:00",
+  "conservative_cost_yuan": 0.0014328,
+  "error": null,
+  "latency_ms": 3127.412399975583,
+  "list_price_estimate_yuan": 0.0010113,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持千米²次\",\n    \"evidence\": \"WH11008 直埋光缆日常检修 地貌（平原、丘陵、城区、山区） 千米²次\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"计量单位：千米²次\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖计量单位及关键条件\",\n    \"evidence\": \"按照合同约定的维护周期和实际发生次数计算\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"WH11008 直埋光缆日常检修 地貌（平原、丘陵、城区、山区） 千米²次\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881780,
+    "id": "chatcmpl-953c7ff8-5672-9511-bd08-b12bb92cbb36",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 281,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3932,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4213
+    }
+  },
+  "usage_known": true
+}

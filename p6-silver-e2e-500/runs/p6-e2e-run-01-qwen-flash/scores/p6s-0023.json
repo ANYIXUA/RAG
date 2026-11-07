@@ -1,0 +1,11 @@
+{
+  "case_id": "p6s-0023",
+  "errors": [
+    "JSONDecodeError",
+    "JSONDecodeError",
+    "JSONDecodeError"
+  ],
+  "needs_human_review": true,
+  "question_type": "exact_fact",
+  "score_state": "failed"
+}

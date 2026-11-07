@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:26.733781+08:00",
+  "conservative_cost_yuan": 0.0013901999999999999,
+  "error": null,
+  "latency_ms": 2470.3285000286996,
+  "list_price_estimate_yuan": 0.0009672,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确描述费用定义与计算方式\",\n    \"evidence\": \"冬雨季维护作业增加费指防冻、保温、防雨防滑等措施及工效降低所增费用。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"费率按2.5%计取，计算基础为人工费合计。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键条件与计算逻辑\",\n    \"evidence\": \"具体金额依据人工费×费率（2.5%）计算得出。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"该费用属于措施项目费，需按实计列。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881884,
+    "id": "chatcmpl-fbfab4b6-9670-97d8-a569-442c79ce2653",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 282,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3628,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3910
+    }
+  },
+  "usage_known": true
+}

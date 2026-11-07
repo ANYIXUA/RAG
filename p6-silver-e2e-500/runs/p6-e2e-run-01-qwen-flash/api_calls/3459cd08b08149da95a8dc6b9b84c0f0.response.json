@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:54.790336+08:00",
+  "conservative_cost_yuan": 0.00080265,
+  "error": null,
+  "latency_ms": 1420.0659000780433,
+  "list_price_estimate_yuan": 0.00061515,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 光网关下行接口应支持100/1000Base-T以太网速率。[1]  \n2. 全光组网终端还需支持2.5G Base-T以太网接口。[1]  \n3. 接口需符合IEEE 802.3标准，支持直连网线连接。[1]  \n4. 支持自动校验连接网线功能。[1]  \n5. 2.5G以太网接口上行吞吐量不小于2200Mbps。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880893,
+    "id": "chatcmpl-fca5aedf-20c0-9a99-aff6-a68d7559c810",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 125,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2851,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2976
+    }
+  },
+  "usage_known": true
+}

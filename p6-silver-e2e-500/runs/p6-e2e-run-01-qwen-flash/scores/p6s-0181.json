@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "4.4.2 能用相关软件画出功能拓扑图",
+    "reason": "回答与上下文一致，覆盖关键点。",
+    "score": 1
+  },
+  "case_id": "p6s-0181",
+  "citation_correctness": {
+    "evidence": "4.3.1 物联网基础知识",
+    "reason": "引用编号与上下文匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "4.5.2 能采用智能家居常用协议进行智能终端联调适配",
+    "reason": "涵盖接入与拓展核心要求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "3.4.2 能设计家庭复合总线方案",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [
+    "citation_consistent",
+    "content_aligned",
+    "complete_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "b3ef82b6b2884031826d5df9e34581eb",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

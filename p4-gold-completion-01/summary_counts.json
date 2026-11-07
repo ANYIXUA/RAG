@@ -1,0 +1,30 @@
+{
+  "approved_development": 22,
+  "approved_new": 0,
+  "frozen_holdout": 0,
+  "prior_human_rejected": 4,
+  "pending_original": 31,
+  "new_candidates": 15,
+  "pending_total": 46,
+  "ai_answerable_after_revision": 44,
+  "fact_distinct_after_exclusions": 41,
+  "development_overlap_reserves": 8,
+  "holdout_eligible_after_review": 33,
+  "holdout_primary_proposed": 28,
+  "holdout_reserve_proposed": 5,
+  "primary_unique_chunks": 27,
+  "primary_document_counts": {
+    "智慧家庭装维工程与管理职业技能等级标准.pdf": 6,
+    "电信基础设施维护规程.pdf": 12,
+    "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf": 10
+  },
+  "primary_type_counts": {
+    "条款事实／定义": 2,
+    "列表／集合": 9,
+    "表格定位": 3,
+    "条件／例外": 5,
+    "时限／阈值／单位": 3,
+    "失败恢复／操作流程": 3,
+    "映射／术语／责任边界": 3
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:31.514131+08:00",
+  "conservative_cost_yuan": 0.00134925,
+  "error": null,
+  "latency_ms": 2675.07110000588,
+  "list_price_estimate_yuan": 0.00096075,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏部分金额项目\",\n    \"evidence\": \"10 本周期实际应支付的维护工作价款\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"1 累计已完成的维护工作价款\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键金额项目\",\n    \"evidence\": \"10 本周期实际应支付的维护工作价款\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"missing_items\",\n    \"partial_citation\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882068,
+    "id": "chatcmpl-df9e6859-cd2b-91e6-8fcb-241ce95a164e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 259,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3815,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4074
+    }
+  },
+  "usage_known": true
+}

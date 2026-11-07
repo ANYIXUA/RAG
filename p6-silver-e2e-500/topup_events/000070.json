@@ -1,0 +1,8 @@
+{
+  "previous_sha256": "c3e77f59400320a691af6d18dc88f89b8027f3ea7bef907c226fd7f982b331c5",
+  "record": {
+    "batch": 35,
+    "event": "error",
+    "reason": "thin_packet"
+  }
+}

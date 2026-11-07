@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:57.300063+08:00",
+  "conservative_cost_yuan": 0.00074955,
+  "error": null,
+  "latency_ms": 1582.9036000650376,
+  "list_price_estimate_yuan": 0.00055755,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH41112设备安装、调测、演示和交付的计量单位是台。[1]  \n2. 该工作内容包含设备检查、测位安装、接口检查等步骤。[1]  \n3. 项目编码为WH41112001，综合单价61.01元。[1]  \n4. 计量单位“台”适用于按实际数量计列的维护作业。[2]  \n5. 与同类设备（如WH42301）计量单位一致，均为“台”。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881135,
+    "id": "chatcmpl-34c779a7-1a3e-9dfc-8208-7a95b57ae208",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 128,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2437,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2565
+    }
+  },
+  "usage_known": true
+}

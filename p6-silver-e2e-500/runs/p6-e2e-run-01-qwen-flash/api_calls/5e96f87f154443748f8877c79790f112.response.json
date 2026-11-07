@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:33.923452+08:00",
+  "conservative_cost_yuan": 0.0013218,
+  "error": null,
+  "latency_ms": 2117.6535000558943,
+  "list_price_estimate_yuan": 0.0009392999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"问题描述与规程要求一致，判断正确。\",\n    \"evidence\": \"机房房屋、围墙无倾斜、裂缝、外砖剥落等现象\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持。\",\n    \"evidence\": \"照明设备运行正常，无损坏。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有问题点并给出处理建议。\",\n    \"evidence\": \"应立即上报并启动维修流程，确保安全。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容。\",\n    \"evidence\": \"消防设施配置满足机房消防要求，在使用有效期内。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882011,
+    "id": "chatcmpl-e1c95c56-4178-981b-bdc9-7675bc3a9ec1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 255,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3712,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3967
+    }
+  },
+  "usage_known": true
+}

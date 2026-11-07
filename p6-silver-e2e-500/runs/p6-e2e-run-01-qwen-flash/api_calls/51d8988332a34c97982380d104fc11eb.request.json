@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:56.136364+08:00",
+  "input_token_upper_bound": 1224,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0112"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "无频光网关是否需支持Wi-Fi功能？若家庭网络需多台光路由协同覆盖，其产品编码应满足哪些条件？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "51d8988332a34c97982380d104fc11eb",
+  "reserved_yuan": 0.000612
+}

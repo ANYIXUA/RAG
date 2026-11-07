@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0484",
+  "citation_correctness": {
+    "evidence": "建议补充相关信息或转人工。[1]",
+    "reason": "引用编号与来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "无法确认各品牌设备的定价机制或市场推广策略。[1]",
+    "reason": "完整覆盖问题范围并说明缺失",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "上下文仅涉及设备编码、功能要求及网络管理规范",
+    "reason": "每项事实均来自上下文",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable",
+    "correctly_refused"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "7b66a6915c5540b0aa0fbbd90ae389ee",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "建议补充相关信息或转人工。[1]",
+    "reason": "正确拒答并提示补全",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

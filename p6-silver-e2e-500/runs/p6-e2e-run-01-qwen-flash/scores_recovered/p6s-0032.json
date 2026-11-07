@@ -1,0 +1,43 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第224页\n定位信息：224\n... WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81",
+    "reason": "实际LLM上下文[1]明确列出架空方式（WH14001002）的综合单价为1622.80元，与silver_reference一致，且该信息在原文中直接可查。",
+    "score": 1
+  },
+  "case_id": "p6s-0032",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第224页\n定位信息：224\n... WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81",
+    "reason": "所有陈述均正确引用了来源[1]，且每条引用编号均对应实际上下文片段[1]，无误引、错引或自创引用编号的情况。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第224页\n定位信息：224\n... WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81",
+    "reason": "问题要求的是故障抢通中架空方式的综合单价，回答完整覆盖了单价数值、费用构成、计量单位、项目编码及材料费用说明，所有必要条件均已涵盖，未遗漏关键信息。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "evaluation_normalization": "N/A no-answer dimension retains null score; null evidence canonicalized to empty string",
+  "faithfulness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第224页\n定位信息：224\n... WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81",
+    "reason": "回答中每一项事实均能在上下文[1]中找到对应支持，包括综合单价数值、费用构成、计量单位、项目编码及材料费用另计等，无任何虚构或超出上下文的信息。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "33c5a2ae22fe457fb802a19a9e2d7986",
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题属于可回答的exact_fact类型，且上下文提供了明确答案，无需拒答。因此该维度不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "original_failure_record": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scores\\p6s-0032.json",
+  "question_type": "exact_fact",
+  "recovered_paid_response": true,
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH11008 直埋光缆日常检修 地貌（平原、丘陵、城区、山区） 千米²次",
+    "reason": "上下文明确支持千米²次",
+    "score": 1
+  },
+  "case_id": "p6s-0145",
+  "citation_correctness": {
+    "evidence": "WH11008 直埋光缆日常检修 地貌（平原、丘陵、城区、山区） 千米²次",
+    "reason": "引用编号与来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "按照合同约定的维护周期和实际发生次数计算",
+    "reason": "涵盖计量单位及关键条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "计量单位：千米²次",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "1db64df3a4f54ad8bed3316a81e30ea6",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

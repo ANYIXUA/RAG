@@ -1,0 +1,43 @@
+{
+  "answer_correctness": {
+    "evidence": "综合单价（元） （除税价）",
+    "reason": "实际LLM上下文中的[1]明确列出表格列包含'综合单价（元） （除税价）'，且该列名称与问题中'综合单价（元）'完全对应，直接支持答案。引用来源正确，内容一致。",
+    "score": 1
+  },
+  "case_id": "p6s-0001",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第114页\n定位信息：114\n...综合单价（元） （除税价）... 表格列：合；计（一＋二）",
+    "reason": "所有引用编号[1]均来自实际上下文片段[1]，且该片段确实支持所陈述的每一句内容，引用准确无误。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "综合单价（元） （除税价）；位于“实际数量”之后、“合价”之前；计价核心字段之一；表—09—4",
+    "reason": "回答完整覆盖了问题所需信息——列名称及其在表格中的位置、功能属性和对应表格编号，未遗漏关键条件或步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "evaluation_normalization": "N/A no-answer dimension retains null score; null evidence canonicalized to empty string",
+  "faithfulness": {
+    "evidence": "综合单价（元） （除税价）；位于“实际数量”之后、“合价”之前；计价核心字段之一；表—09—4",
+    "reason": "每项事实均在实际上下文[1]中找到直接支持：列名、位置顺序、核心字段属性及对应表格编号均有原文依据，无虚构或夸大。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "fcc6f6b12b7843909c4e83155bfc33ed",
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题为明确可答的精确事实类问题，上下文提供充分信息，无需拒答，因此不适用此维度。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "original_failure_record": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scores\\p6s-0001.json",
+  "question_type": "exact_fact",
+  "recovered_paid_response": true,
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

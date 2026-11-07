@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:29.691949+08:00",
+  "conservative_cost_yuan": 0.0014184,
+  "error": null,
+  "latency_ms": 2685.39460003376,
+  "list_price_estimate_yuan": 0.0009999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖外部环境与内部卫生操作\",\n    \"evidence\": \"检查机房主体结构外观、外部环境安全、走线架、照明插座、消防设施等\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"检修上站道路、清除机房外部杂物杂草、清洁机房内卫生等\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要条件与步骤\",\n    \"evidence\": \"工作内容：检查机房主体结构外观、外部环境安全、走线架、照明插座、消防设施等\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号对应实际来源\",\n    \"evidence\": \"清除机房外部杂物杂草、清洁机房内卫生等。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881827,
+    "id": "chatcmpl-0bcc37e2-11cc-9ef0-96b7-07afaca8798d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 279,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3876,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4155
+    }
+  },
+  "usage_known": true
+}

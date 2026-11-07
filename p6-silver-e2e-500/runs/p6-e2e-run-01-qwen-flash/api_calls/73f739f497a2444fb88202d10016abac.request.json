@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:15:48.951796+08:00",
+  "input_token_upper_bound": 1234,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0171"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在山区进行直埋光缆线路徒步巡回时，若发现警示牌歪斜或外力施工，应参考哪个单价标准执行费用计算？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "73f739f497a2444fb88202d10016abac",
+  "reserved_yuan": 0.000617
+}

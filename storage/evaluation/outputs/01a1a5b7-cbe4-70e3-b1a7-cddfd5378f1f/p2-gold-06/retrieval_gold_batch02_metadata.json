@@ -1,0 +1,773 @@
+{
+  "gold_version": "p2-gold-06-batch02-v1",
+  "batch": "batch02",
+  "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+  "generated_at": "2026-11-04T23:06:14+08:00",
+  "source_packet_sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+  "cases": [
+    {
+      "batch_id": "B13",
+      "parent_candidate_id": "sha256:ba50e7af3e31659d88a2d0b4937eb510a09e19e2238d1c0e93a923a1aa42fe50",
+      "question_type": "semantic",
+      "question_type_label": "标准条款／语义理解",
+      "source_document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "document_id": "5256824b6b72b3f03d9c7a2c",
+      "document_version": "v_dcf78195a87f01f4",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "evidence_chunk_ids": [
+        "0eb4bd6e18d599063371f51b"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "0eb4bd6e18d599063371f51b"
+      ],
+      "original_supporting_chunk_ids": [
+        "0eb4bd6e18d599063371f51b"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B13",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 17,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已查看PDF内容，与修订版无异"
+      },
+      "source_verification": "物理页 10 的第 5.7 节正文列出 a–e 五项，均在同一 Chunk，排除上方第 5.6 节续文和下方实操技能内容。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "0eb4bd6e18d599063371f51b",
+          "pdf_page": 10,
+          "section_title": "第10页",
+          "chunk_text_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "《智慧家庭装维工程与管理职业技能等级标准》第 5.7 节规定，安全作业知识包括哪五项？",
+      "reference_answer": "安全生产操作规程基础知识、安全用电基础知识、防火防爆基础知识、自然灾害应急基础知识、有限空间作业基础知识。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。第 5.7 节五项清单在同一 Chunk，排除上方第 5.6 节续文。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:cb6c1fd465588112ef0e370268ad0183ee9da3679bcfc5cccee37d207f360e49"
+    },
+    {
+      "batch_id": "B14",
+      "parent_candidate_id": "sha256:6b27f4cd6fb8a57d3ba3c96049bb0c8ce98b909be142ed809ab85a0bac89fba6",
+      "question_type": "semantic",
+      "question_type_label": "等级表格定位／多证据／易混淆",
+      "source_document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "document_id": "5256824b6b72b3f03d9c7a2c",
+      "document_version": "v_dcf78195a87f01f4",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "evidence_chunk_ids": [
+        "0eb4bd6e18d599063371f51b",
+        "e010fe39879d92fa21dc59d9"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "e010fe39879d92fa21dc59d9"
+      ],
+      "original_supporting_chunk_ids": [
+        "e010fe39879d92fa21dc59d9"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B14",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 18,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "10-18页的这些表格，分别对应了初级、中级、高级工程师对应要熟悉的智能家居的技能。"
+      },
+      "source_verification": "物理页 10 表 1 列头依次是初级（三级）、中级（二级）、高级（一级）。物理页 11 同一续表中间列第 1 项是“熟悉智能家居系统架构”，右列是集中控制系统架构。物理页 15 第 6.4 节另列相关知识名词，未给出本题所问的“熟悉”要求。 页 10 为必需等级列头，页 11 为必需条目正文。检索相关列表只放直接作答的页 11。单独命中页 11 只计正文命中，不能证明中级列归属。 只有同一返回集合包含两块才算完整证据覆盖，当前 Hit@K/MRR 不提供这一判断。",
+      "evidence": [
+        {
+          "chunk_id": "0eb4bd6e18d599063371f51b",
+          "pdf_page": 10,
+          "section_title": "第10页",
+          "chunk_text_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+          "role": "level_header",
+          "retrieval_relevant": false
+        },
+        {
+          "chunk_id": "e010fe39879d92fa21dc59d9",
+          "pdf_page": 11,
+          "section_title": "第11页",
+          "chunk_text_sha256": "ce80257c5b935ca75b67354da130350b418875e95585146e246921987cac7b36",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，中级人员在“智能家居（控制）技术”项下对系统架构有什么要求？",
+      "reference_answer": "熟悉智能家居系统架构。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "仅第 11 页设为检索目标。第 10 页为必需等级列头，单命中第 11 页只证明正文，不能证明中级列归属；当前 Hit@K/MRR 不检查两块是否同在一个返回集合。",
+      "requires_all_evidence": true,
+      "required_evidence_count": 1,
+      "evidence_completeness": "requires_both",
+      "gold_case_id": "gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c",
+      "distinctness_from_existing": {
+        "compared_with": [
+          "B12",
+          "B15"
+        ],
+        "basis": "与首批 B12 同为等级定位但职业功能和证据不同；与 B15 同一跨页表的不同等级和业务行。"
+      },
+      "scoring_limit": "完整证据需页 10 表头与续页正文两块，但检索目标只设正文块；Hit@K/MRR 无法判断两块是否同在一个返回集合。"
+    },
+    {
+      "batch_id": "B15",
+      "parent_candidate_id": "sha256:029aaf51ce9894999917d4730c0682047e6aee33d34f15d1bbc64e1195361c91",
+      "question_type": "semantic",
+      "question_type_label": "等级表格定位／多证据／易混淆",
+      "source_document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "document_id": "5256824b6b72b3f03d9c7a2c",
+      "document_version": "v_dcf78195a87f01f4",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "evidence_chunk_ids": [
+        "0eb4bd6e18d599063371f51b",
+        "1c317b1dd2cebfbf9647d03e"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "1c317b1dd2cebfbf9647d03e"
+      ],
+      "original_supporting_chunk_ids": [
+        "1c317b1dd2cebfbf9647d03e"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B15",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 19,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已查询PDF，与修正后的答案无异"
+      },
+      "source_verification": "物理页 10 表 1 明确右列为高级（一级），页 11 延续列序，页 12 目标行右列第 1 项为“掌握网关组网方法”，中列为“了解网关组网方法”。右列第 2 项另述路由协议。 页 10 为必需等级列头，页 12 为必需条目正文。检索相关列表只放直接作答的页 12。单独命中页 12 只计正文命中，不能证明高级列归属。 只有同一返回集合包含两块才算完整证据覆盖，当前 Hit@K/MRR 不提供这一判断。",
+      "evidence": [
+        {
+          "chunk_id": "0eb4bd6e18d599063371f51b",
+          "pdf_page": 10,
+          "section_title": "第10页",
+          "chunk_text_sha256": "4d26cfcd0bd7c2f43f69ab32533b301d46282844b4a9a723090dc3a80faee128",
+          "role": "level_header",
+          "retrieval_relevant": false
+        },
+        {
+          "chunk_id": "1c317b1dd2cebfbf9647d03e",
+          "pdf_page": 12,
+          "section_title": "第12页",
+          "chunk_text_sha256": "93d6bbbbb13b009a7949ff65b12feae09c209ba20dc9a6dbb27e7dffc916cb8d",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，高级人员在“物联网接入业务运维”项下对网关组网方法的要求是什么？",
+      "reference_answer": "掌握网关组网方法。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "仅第 12 页设为检索目标。第 10 页为必需等级列头，单命中第 12 页只证明正文，不能证明高级列归属；当前 Hit@K/MRR 不检查两块是否同在一个返回集合。",
+      "requires_all_evidence": true,
+      "required_evidence_count": 1,
+      "evidence_completeness": "requires_both",
+      "gold_case_id": "gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf",
+      "scoring_limit": "完整证据需页 10 表头与续页正文两块，但检索目标只设正文块；Hit@K/MRR 无法判断两块是否同在一个返回集合。"
+    },
+    {
+      "batch_id": "B16",
+      "parent_candidate_id": "sha256:c0ee402dcbe543fe04df844c2c9d2134f4922a88177a166d82f0e2b2cdcd37c6",
+      "question_type": "exact_entity",
+      "question_type_label": "维护作业条款／语义理解",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "original_supporting_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B16",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 20,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "原版与修正版均为正确答案"
+      },
+      "source_verification": "物理页 254 表 10.3.3.4 的工作内容分列安装与测试。安装为第 1 项四个动作，第 2 项另列连接仪表、测试插入衰耗值、填写测试表格等。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "92108b5bb6dcc5b2227d531c",
+          "pdf_page": 254,
+          "section_title": "第254页",
+          "chunk_text_sha256": "505614c9226d1251eae0f4b3b646641c39c86d46502fd0d9f1c04f0b37adf71b",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "《电信基础设施维护规程》表 10.3.3.4 中，安装波分复用器这一子项包含哪些工作？",
+      "reference_answer": "开箱检验、复核定位、安装固定、清理现场。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。与 B02、B21 共用同一 Chunk，本题只问安装工序。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:50d51edece13e19c9b0461c5d28612c2bd57007a19ab3987f4a5506865d5e31e",
+      "distinctness_from_existing": {
+        "compared_with": [
+          "B02",
+          "B21"
+        ],
+        "basis": "与 B02、B21 共用 Chunk，本题范围是安装子项四项动作，B02/B21 查测试价格。"
+      },
+      "scoring_limit": "同一 Chunk 承载多个 Gold 题，命中与排名高度相关；目标只验证 Chunk 级命中，不区分行或段落。"
+    },
+    {
+      "batch_id": "B17",
+      "parent_candidate_id": "sha256:8fcecc4204b0c7149f3d002b1b693d01b9be5a5e8930d621c5ef089f39e0585a",
+      "question_type": "exact_entity",
+      "question_type_label": "精确编码／表格定位",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "original_supporting_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B17",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 21,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "原版与修正版均为正确答案"
+      },
+      "source_verification": "物理页 255 的 WH23105001 行右侧子项格为“室内防雷箱”。“安装防雷接地装置”是纵向跨行合并的大类，室外塔下和塔上各有单独行。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "03e5582a4a0f7d3c76a33e66",
+          "pdf_page": 255,
+          "section_title": "第255页",
+          "chunk_text_sha256": "31edc894966e35696037bc869bad3a3111aeac07efaac9e01230935ae3510af9",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "《电信基础设施维护规程》表 10.3.3.5 中，编码 WH23105001 对应的防雷箱子项名称是什么？",
+      "reference_answer": "室内防雷箱。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。同一 Chunk 同时含上方工作内容段和下方单价表，按编码行定位。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:b084448f7e7645c2707588f54535d32b68eb9065c1c88e40589d1d9e429577e4",
+      "distinctness_from_existing": {
+        "compared_with": [
+          "B18",
+          "B19",
+          "B20"
+        ],
+        "basis": "与 B18 同列异行、与 B19 同 Chunk 不同段落、与 B20 同行不同属性。"
+      },
+      "scoring_limit": "同一 Chunk 承载多个 Gold 题，命中与排名高度相关；目标只验证 Chunk 级命中，不区分行或段落。"
+    },
+    {
+      "batch_id": "B18",
+      "parent_candidate_id": "sha256:b36c80cc90660614833ec0bdf464df7b4d37db9064457a2d1e2c496856ced6ba",
+      "question_type": "exact_entity",
+      "question_type_label": "数值及单位／表格定位／易混淆",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "original_supporting_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B18",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 22,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "原版与修正版均为正确答案"
+      },
+      "source_verification": "物理页 255，WH23105003 室外塔上防雷箱 × 综合单价（元）为 519.84。相邻 WH23105002 塔下为 302.78，WH23105001 室内为 271.78。表头计量单位并列套、个，本题按金额列回答。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "03e5582a4a0f7d3c76a33e66",
+          "pdf_page": 255,
+          "section_title": "第255页",
+          "chunk_text_sha256": "31edc894966e35696037bc869bad3a3111aeac07efaac9e01230935ae3510af9",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "《电信基础设施维护规程》表 10.3.3.5 中，室外塔上防雷箱（WH23105003）的综合单价列标了多少元？",
+      "reference_answer": "519.84 元。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。相邻塔下 302.78、室内 271.78 用于区分行。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:ab3b66a0a8ccc60a2d24f08a125fcbfff193b42877b83821acb4b8a8e26af2e8",
+      "scoring_limit": "同一 Chunk 承载多个 Gold 题，命中与排名高度相关；目标只验证 Chunk 级命中，不区分行或段落。"
+    },
+    {
+      "batch_id": "B19",
+      "parent_candidate_id": "sha256:4f4129854aedf46810ac9654b5e918be591a55ffb3a8bd01c24ca7aa787237de",
+      "question_type": "semantic",
+      "question_type_label": "维护作业条款／语义理解",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "original_supporting_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "review_decision": "接受原题",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B19",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 23,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "原版与修正版均为正确答案"
+      },
+      "source_verification": "物理页 255 表 10.3.3.5 上方的工作内容依次列安装防雷箱、安装接地排、安装防雷器和接地电阻测试。原答案与四项细目一致，证据在一块内。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "03e5582a4a0f7d3c76a33e66",
+          "pdf_page": 255,
+          "section_title": "第255页",
+          "chunk_text_sha256": "31edc894966e35696037bc869bad3a3111aeac07efaac9e01230935ae3510af9",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "安装防雷接地装置的工作内容有哪些？",
+      "reference_answer": "1、安装防雷箱：开箱检验、清洁搬运、定位、安装固定、连接连线、清理现场； 2、安装接地排：开箱检验、清洁搬运、划线定位、安装固定、清理现场； 3、安装防雷器：开箱检验、安装固定、连接连线、清理现场； 4、接地电阻测试：接线、测量等。",
+      "answer_variant": "original",
+      "retrieval_relevance_notes": "直接证据。目标为表 10.3.3.5 上方的工作内容段，非下方单价表。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:b4b194da3f8a23a7d4bfa98f30393ba5402f27c1e527513bc033dcf6b653e9b0",
+      "distinctness_from_existing": {
+        "compared_with": [
+          "B17",
+          "B18",
+          "B20"
+        ],
+        "basis": "同 Chunk 但定位表上方作业说明，B17/B18/B20 定位下方单价表行。"
+      },
+      "scoring_limit": "同一 Chunk 承载多个 Gold 题，命中与排名高度相关；目标只验证 Chunk 级命中，不区分行或段落。"
+    },
+    {
+      "batch_id": "B20",
+      "parent_candidate_id": "sha256:0c141695e2654b721a2a70e712bfdd9cc951d132b823ef8b710b0f07c17d7f73",
+      "question_type": "semantic",
+      "question_type_label": "数值及单位／表格定位／易混淆",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "original_supporting_chunk_ids": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B20",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 24,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "原版与修正版均为正确答案"
+      },
+      "source_verification": "重看物理页 255（印刷 249）。WH23105001 行子项列为室内防雷箱，综合单价（元）列为 271.78。相邻塔下及塔上行为 302.78 和 519.84。表头并列套、个，无逐行单位分配。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "03e5582a4a0f7d3c76a33e66",
+          "pdf_page": 255,
+          "section_title": "第255页",
+          "chunk_text_sha256": "31edc894966e35696037bc869bad3a3111aeac07efaac9e01230935ae3510af9",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "《电信基础设施维护规程》表 10.3.3.5 中，室内防雷箱（WH23105001）的综合单价列标了多少元？",
+      "reference_answer": "271.78 元。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。与 B17 同行不同属性，与 B18 同价列不同行。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:74d3dfa33289009b189597355bbb9cb5852fdad9ad135fcaebf18261f4a9c632",
+      "distinctness_from_existing": {
+        "compared_with": [
+          "B17",
+          "B18",
+          "B02"
+        ],
+        "basis": "与批内 B17 同一行（WH23105001）但查不同属性：B17 问子项名称，B20 问综合单价；与批内 B18 同类价格题但对应塔上行 WH23105003（519.84）；与首批 B02 不同文档、不同事实。三题共享 Chunk，排名结果可能相关。"
+      },
+      "scoring_limit": "同一 Chunk 承载多个 Gold 题，命中与排名高度相关；目标只验证 Chunk 级命中，不区分行或段落。"
+    },
+    {
+      "batch_id": "B21",
+      "parent_candidate_id": "sha256:af261cdb97be35e69dd294aff4351ed7ec7477048b2377adaee100697c1809d3",
+      "question_type": "semantic",
+      "question_type_label": "数值及单位／表格定位／易混淆",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "original_supporting_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B21",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 25,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已核对原始PDF。\nWH23104004与WH23104003对应不同测试规格，\n价格分别为62.02和29.18元/个。\n确认保留修订题目。"
+      },
+      "source_verification": "重看物理页 254（印刷 248）。表头计量单位为个，综合单价列为元。测试大类下 WH23104004（1:6 以下）为 62.02，首批 B02 的 WH23104003（1:2）为 29.18。WH23104001 为同价的室内安装行，须按测试大类和项目编码定位。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "92108b5bb6dcc5b2227d531c",
+          "pdf_page": 254,
+          "section_title": "第254页",
+          "chunk_text_sha256": "505614c9226d1251eae0f4b3b646641c39c86d46502fd0d9f1c04f0b37adf71b",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "《电信基础设施维护规程》表 10.3.3.4 中，测试波分复用器 1:6 以下（WH23104004）的综合单价是多少（元/个）？",
+      "reference_answer": "62.02 元/个。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。与首批 B02 同类异行；同一 Chunk 内另有同价安装行，单 Chunk 命中无法区分行。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:f2a4f74b711f2413b1402f768300d60583f1057569aa22e97a24ab2789b01491",
+      "distinctness_from_existing": {
+        "compared_with": [
+          "B02",
+          "B16"
+        ],
+        "basis": "与首批 B02 同测试大类、同综合单价列、同目标 Chunk，但 B02 查 WH23104003（1:2，29.18 元/个），B21 查 WH23104004（1:6 以下，62.02 元/个），编码、分光比与金额均不同；与批内 B16 同 Chunk 但 B16 查安装工序。单次 Chunk 命中无法区分两行。"
+      },
+      "scoring_limit": "同一 Chunk 承载多个 Gold 题，命中与排名高度相关；目标只验证 Chunk 级命中，不区分行或段落。"
+    },
+    {
+      "batch_id": "B22",
+      "parent_candidate_id": "sha256:474ea2ea4e472386215819df6edeb7f88ca3c1af3abae6259f11972588f52812",
+      "question_type": "semantic",
+      "question_type_label": "设备安全条款／语义理解",
+      "source_document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "document_id": "a2053ec18f1415e4912c510f",
+      "document_version": "v_ab72ce00c904f060",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "document_content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+      "evidence_chunk_ids": [
+        "81951fb8b5e157346ed83d77"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "81951fb8b5e157346ed83d77"
+      ],
+      "original_supporting_chunk_ids": [
+        "81951fb8b5e157346ed83d77"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B22",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 26,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已核对原始PDF，确认保留修订题目。"
+      },
+      "source_verification": "物理页 52 第 4.8.2 节第 1 项标题是“禁用调试账号”，正文明确唯一用户账号的例外和禁止范围。物理页 1 封面确认版本 V2.0.0。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "81951fb8b5e157346ed83d77",
+          "pdf_page": 52,
+          "section_title": "第52页",
+          "chunk_text_sha256": "cb16037be3a0bac7b1809c6dc845c11cd9a6487c3a8616ce26c3b0a29c9bc7e1",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0 第 4.8.2 节，全光组网终端出厂后可以保留什么账号？",
+      "reference_answer": "仅可保留为用户提供的唯一账号，禁止以任何形式预留其他账号。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。第 4.8.2 节正文明确唯一账号例外与禁止范围。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206"
+    },
+    {
+      "batch_id": "B25",
+      "parent_candidate_id": "sha256:2fa4c3c7182110647ed797c132138313300e447227199131a9731a8acd4a1afa",
+      "question_type": "exact_entity",
+      "question_type_label": "维护作业条款／等价证据",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "611a9eb6554a2b482561c775"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "611a9eb6554a2b482561c775",
+        "4931f1a7b903ba2672bbb512"
+      ],
+      "original_supporting_chunk_ids": [
+        "611a9eb6554a2b482561c775"
+      ],
+      "review_decision": "接受原题",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B25",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 29,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已核对原始PDF，确认符合。"
+      },
+      "source_verification": "物理页 286 表 10.3.3.29 的工作内容列四项。物理页 141 的 WH23123 行独立列出相同四项；两处为替代证据。页 286 原件表题标 WH23126，明细行编码为 WH23129001 等，本题只取作业内容。 页 286 和页 141 是独立充分的替代证据，任一页可支持四项答案。完整证据列出原引用页 286，检索相关收录两页。",
+      "evidence": [
+        {
+          "chunk_id": "611a9eb6554a2b482561c775",
+          "pdf_page": 286,
+          "section_title": "第286页",
+          "chunk_text_sha256": "1204e7a40daa8c5904224d5331d838dd14d3ff99d963137d94c100bc494a0b84",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        },
+        {
+          "chunk_id": "4931f1a7b903ba2672bbb512",
+          "pdf_page": 141,
+          "section_title": "第141页",
+          "chunk_text_sha256": "73eb9f0dce1be816a6278cb54bfb97ea07b663492d2f7a62a754d0d38bdb4bd4",
+          "role": "equivalent_evidence",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "铁塔专项维修的工作内容包括哪些？",
+      "reference_answer": "塔体结构检查、螺丝紧固、漆面除锈刷漆、塔基强度测试等。",
+      "answer_variant": "original",
+      "retrieval_relevance_notes": "第 286 页与第 141 页是独立充分的替代证据，任一页可支持四项答案；签核 evidence_chunk_ids 只列原引用第 286 页，第 141 页按检索目标补充为等价证据。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 2,
+      "evidence_completeness": "either_sufficient",
+      "gold_case_id": "gold-batch02-sha256:5d0db5acf870d6545edfa8cf4b6a57f9208ffe39b392c47c0d6acb2d21f96e33",
+      "equivalent_evidence_chunk_ids": [
+        "4931f1a7b903ba2672bbb512"
+      ],
+      "evidence_scope_note": "签核 evidence_chunk_ids 只列原引用页 286；第 141 页按 retrieval_relevant_chunk_ids 补充为等价证据，两页各自独立充分。",
+      "distinctness_from_existing": {
+        "compared_with": [
+          "B26"
+        ],
+        "basis": "与 B26 同为维护作业题，对象与工作内容不同。"
+      },
+      "scoring_limit": "两个目标为等价证据（OR）。任一命中即计 Hit，指标不要求同一 Top-K 同时含两页。"
+    },
+    {
+      "batch_id": "B26",
+      "parent_candidate_id": "sha256:6535e6f78dc8eeb10b933e995f8321cd01ed80d90f405c5042b7fbfccf08ac95",
+      "question_type": "exact_entity",
+      "question_type_label": "维护范围／易混淆",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "a264a91966d85e2ec3b52e02"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "a264a91966d85e2ec3b52e02"
+      ],
+      "original_supporting_chunk_ids": [
+        "a264a91966d85e2ec3b52e02"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B26",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 30,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已核对原始PDF，确认保留修订题目。"
+      },
+      "source_verification": "物理页 287 表 10.3.3.30 的工作内容与原答案一致。物理页 315 表 10.4.3.15 同句，但作业编码 WH33115。物理页 141 同名概述未列杂物，页 149 同名概述未列铁塔。推荐答案保留原件“护网外内部”的措辞。 本轮重看物理页 287 的放大渲染图并用独立 PDF 文本提取交叉核对，两处均为「护网外内部」。该措辞是 PDF 原文，语义不够顺畅，推荐答案沿用原文，不推定边界。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "a264a91966d85e2ec3b52e02",
+          "pdf_page": 287,
+          "section_title": "第287页",
+          "chunk_text_sha256": "f24faa7022982e0091bec1ff25740cb0469982173aaa97fdfb09f4212c4192ce",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？",
+      "reference_answer": "机房、铁塔、院墙、护网外内部以及周边一米杂草、杂物集中清除等。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。按推荐题面锁定表 10.3.3.30，同名作业在页 141、149、315 的表述不同。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:4fe9bbf65368789a96fec628474fc6bfc870786f30c9c305f0da4cd8df09375a"
+    },
+    {
+      "batch_id": "B27",
+      "parent_candidate_id": "sha256:0412887e0c24cae711a326d0032a59e8cce8c7618478be6748fd98c2cfc9f4bf",
+      "question_type": "exact_entity",
+      "question_type_label": "精确编码／表格定位／易混淆",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "95cb40813342a7e91c27e7d3"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "95cb40813342a7e91c27e7d3"
+      ],
+      "original_supporting_chunk_ids": [
+        "95cb40813342a7e91c27e7d3"
+      ],
+      "review_decision": "接受原题",
+      "review_source": {
+        "file": "p2_gold_05_signoff_packet.md",
+        "section": "B27",
+        "sha256": "5c9f5feaff9a281236d5ba680bf609c22c4a0c2f6355c349b3a0d10a3dd906a8",
+        "workbook_row": 31,
+        "workbook_file": "review.xlsx",
+        "human_reviewer": "systemsystem",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已核对原始PDF，确认原题。"
+      },
+      "source_verification": "物理页 288 表 10.3.3.31 的 WH23131004 行为“地面墙面防水”，WH23131003 行为“顶面防水”。工作内容第 3 项复核地板及墙面的处理范围。 目标条文或行在同一个 Chunk 内，足以证明推荐题答。",
+      "evidence": [
+        {
+          "chunk_id": "95cb40813342a7e91c27e7d3",
+          "pdf_page": 288,
+          "section_title": "第288页",
+          "chunk_text_sha256": "c634697589891c2e245697dce4711116c10945d37477b5386f071df149d37482",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "WH23131004项目对应的防水处理范围是什么？",
+      "reference_answer": "地面墙面防水",
+      "answer_variant": "original",
+      "retrieval_relevance_notes": "直接证据。相邻 WH23131003 为顶面防水，按编码定位。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "evidence_completeness": "single_sufficient",
+      "gold_case_id": "gold-batch02-sha256:f60c41c855e4aca2f381666e34c23cc4466e2291b004c8c55340a4709193cea3",
+      "signoff_warnings": [
+        "human_reviewer 值为 'systemsystem'，非规范值 system；按原样保留，建议在最终 50 条定稿前更正。"
+      ]
+    }
+  ],
+  "counts": {
+    "gold": 13,
+    "accepted_original": 3,
+    "accepted_revision": 10,
+    "cumulative_gold": 22,
+    "remaining_to_50": 28
+  }
+}

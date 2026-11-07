@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:42.822255+08:00",
+  "conservative_cost_yuan": 0.0007947000000000001,
+  "error": null,
+  "latency_ms": 1886.3558999728411,
+  "list_price_estimate_yuan": 0.0005952,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 平原、丘陵地区接地网电阻测试的企业管理费为2.05元。[1]  \n2. 该费用对应项目编码WH22104002，计量单位为站·次。[1]  \n3. 综合单价为10.94元，其中企业管理费占2.05元。[1]  \n4. 此数据来源于《电信基础设施维护规程》第248页表10.3.2.4。[1]  \n5. 未在其他文档中找到相同项目的管理费信息。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880880,
+    "id": "chatcmpl-684b0507-1af9-95d7-91e8-da24ada91083",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 133,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2638,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2771
+    }
+  },
+  "usage_known": true
+}

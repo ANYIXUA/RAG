@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:25.754319+08:00",
+  "conservative_cost_yuan": 0.0006680999999999999,
+  "error": null,
+  "latency_ms": 1080.1562999840826,
+  "list_price_estimate_yuan": 0.0005420999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 天线信号测试需使用天馈线测试仪器。[3]  \n2. 可配备频谱仪进行信号分析。[3]  \n3. 天线姿态测试仪可用于角度检测。[3]  \n4. 互调测试与发射功率测试需专用仪表支持。[2]  \n5. 测试前应完成仪表校对。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881104,
+    "id": "chatcmpl-fb347d40-4cf3-9525-ae04-b7e82c2b66a2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 84,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2774,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2858
+    }
+  },
+  "usage_known": true
+}

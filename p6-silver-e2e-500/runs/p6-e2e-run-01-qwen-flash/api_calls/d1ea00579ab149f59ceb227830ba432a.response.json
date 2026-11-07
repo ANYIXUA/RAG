@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:20.481546+08:00",
+  "conservative_cost_yuan": 0.0012948,
+  "error": null,
+  "latency_ms": 2423.2334000989795,
+  "list_price_estimate_yuan": 0.0009452999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]明确说明计量单位为百米条\",\n    \"evidence\": \"计量单位：百米条\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"计量单位：百米条\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答计量单位及依据\",\n    \"evidence\": \"计量单位：百米条\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"计量单位：百米条\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882058,
+    "id": "chatcmpl-f5d46f57-378e-9fd0-8637-d33f490030e8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 233,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3972,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4205
+    }
+  },
+  "usage_known": true
+}

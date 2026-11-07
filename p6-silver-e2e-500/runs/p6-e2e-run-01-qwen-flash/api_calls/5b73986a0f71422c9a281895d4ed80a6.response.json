@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:33.936872+08:00",
+  "conservative_cost_yuan": 0.00086655,
+  "error": null,
+  "latency_ms": 1756.218400085345,
+  "list_price_estimate_yuan": 0.0006550499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 平原丘陵地区蓄电池内阻测试综合单价为29.18元/次。[1]  \n2. 平原丘陵地区天线互调测试综合单价为21.89元/次。[2]  \n3. 两项测试均按“次”为计量单位，适用于平原丘陵地貌。[4]  \n4. 蓄电池内阻测试属WH22103005项目，对应平原丘陵区域。[1]  \n5. 天线互调测试属WH22102002项目，对应平原丘陵区域。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881052,
+    "id": "chatcmpl-8bba5045-2b5e-9089-a600-c2b6ef9706d8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 141,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2957,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3098
+    }
+  },
+  "usage_known": true
+}

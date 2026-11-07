@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:16.091862+08:00",
+  "conservative_cost_yuan": 0.0017016,
+  "error": null,
+  "latency_ms": 3911.3584000151604,
+  "list_price_estimate_yuan": 0.0011240999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分正确但未明确费用构成项\",\n    \"evidence\": \"维护分项作业工作量清单费用由维护分项作业费、材料费等构成。[3]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文\",\n    \"evidence\": \"采用工作量清单计价，电信基础设施维护费由维护分项作业费、材料及备品备件购置费、机械仪表使用费、措施费、规费、利润、安全生产费、其他项目费和销项税额构成。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键费用项如规费、销项税额\",\n    \"evidence\": \"维护分项作业工作量清单费用由维护分项作业费、材料费等构成。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"8.4.1.1 采用工作量清单计价，电信基础设施维护费由维护分项作业费、材料及备品备件购置费、机械仪表使用费、措施费、规费、利润、安全生产费、其他项目费和销项税额构成。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_completeness\",\n    \"incomplete_cost_breakdown\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881872,
+    "id": "chatcmpl-69f03088-5a02-9d7a-a7b1-94d9a5ab17c8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 385,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3644,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4029
+    }
+  },
+  "usage_known": true
+}

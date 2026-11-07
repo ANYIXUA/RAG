@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:20:23.019338+08:00",
+  "input_token_upper_bound": 1139,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0498"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在平原地区进行无线通信基站应急发电时，应如何操作？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "353f6665dea445fbbbdd93e070374982",
+  "reserved_yuan": 0.0005695
+}

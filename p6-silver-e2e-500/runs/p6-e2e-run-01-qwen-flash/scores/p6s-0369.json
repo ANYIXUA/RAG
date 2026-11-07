@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "所有文档均未提供“光纤熔接机”的确切规格型号。",
+    "reason": "未提供具体型号，回答准确",
+    "score": 1
+  },
+  "case_id": "p6s-0369",
+  "citation_correctness": {
+    "evidence": "文档[2]提及“带状光纤熔接机”和“光纤熔接机”，但未给出具体型号。",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "无法确定具体型号，建议补充厂家或设备标识信息。",
+    "reason": "覆盖所有相关上下文并指出缺失",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "文档[2]提及“带状光纤熔接机”和“光纤熔接机”，但未给出具体型号。",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "158bd6220f424d9c9a0be86103527a64",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "非拒答场景，无需评分",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

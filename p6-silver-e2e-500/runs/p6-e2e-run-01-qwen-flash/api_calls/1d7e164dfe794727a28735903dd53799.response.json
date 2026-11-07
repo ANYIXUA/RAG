@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:29.407866+08:00",
+  "conservative_cost_yuan": 0.00182205,
+  "error": null,
+  "latency_ms": 3345.4460999928415,
+  "list_price_estimate_yuan": 0.00117555,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致，准确引用费率和计算方式。\",\n    \"evidence\": \"特殊地区维护作业增加费 指在原始森林地区、海拔2000 米以上（含2000 米）的高海拔地区、化工区、核工业区、沙漠地区、山区无人值守站等特殊地区维护作业时所需增加的费用。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持，无编造。\",\n    \"evidence\": \"特殊地区维护作业增加费 指在原始森林地区、海拔2000 米以上（含2000 米）的高海拔地区、化工区、核工业区、沙漠地区、山区无人值守站等特殊地区维护作业时所需增加的费用。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖计算方法、适用范围、依据来源，无遗漏。\",\n    \"evidence\": \"特殊地区维护作业增加费 指在原始森林地区、海拔2000 米以上（含2000 米）的高海拔地区、化工区、核工业区、沙漠地区、山区无人值守站等特殊地区维护作业时所需增加的费用。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文片段匹配且支持对应语句。\",\n    \"evidence\": \"CS00010 特殊地区维护作业增加费 表-04 人工费合计 20\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881886,
+    "id": "chatcmpl-f3546139-681b-9813-8d01-4aa3b1d51594",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 431,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3527,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3958
+    }
+  },
+  "usage_known": true
+}

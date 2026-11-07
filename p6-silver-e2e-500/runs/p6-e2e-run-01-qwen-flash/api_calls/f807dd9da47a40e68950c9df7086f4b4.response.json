@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:42.952887+08:00",
+  "conservative_cost_yuan": 0.0015381,
+  "error": null,
+  "latency_ms": 3453.7831000052392,
+  "list_price_estimate_yuan": 0.0010566,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"流程完整且与上下文一致。\",\n    \"evidence\": \"工作内容：1、电缆操作及走线架：开箱检验、清洁搬运、打孔、固定吊挂活支架、组装电缆走道、调整垂直与水平、安装固定、清理现场\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持。\",\n    \"evidence\": \"开箱检验、清洁搬运、打孔、固定吊挂活支架、组装电缆走道、调整垂直与水平、安装固定、清理现场\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有关键步骤，无遗漏。\",\n    \"evidence\": \"开箱检验、清洁搬运、打孔、固定吊挂活支架、组装电缆走道、调整垂直与水平、安装固定、清理现场\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持所述内容。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882019,
+    "id": "chatcmpl-55b36bfe-b101-973d-9a3a-340729065952",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 321,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3834,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4155
+    }
+  },
+  "usage_known": true
+}

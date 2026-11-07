@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "用于山区时综合单价按相应子目的1.5倍计取。",
+    "reason": "上下文明确支持山区按1.5倍计取",
+    "score": 1
+  },
+  "case_id": "p6s-0437",
+  "citation_correctness": {
+    "evidence": "山区施工时，综合单价按相应子目1.5倍计取。[3]",
+    "reason": "引用编号与上下文来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "计量单位为“处”，按实际发生次数计算。[2]",
+    "reason": "涵盖计算方法、单价、系数、工作内容",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "安装拉线隔电子综合单价为79.87元/处。[1]",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "multi_condition"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "267a5c03b7b049e28a18d096b312f250",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

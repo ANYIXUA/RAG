@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "1.装、拆临时辅助吊线 2.拆除原吊线终端 3.延长吊线 4.制作吊线终端 5.拧紧紧固件",
+    "reason": "回答与上下文一致，涵盖关键步骤。",
+    "score": 1
+  },
+  "case_id": "p6s-0317",
+  "citation_correctness": {
+    "evidence": "1.装、拆临时辅助吊线 2.拆除原吊线终端 3.延长吊线 4.制作吊线终端 5.拧紧紧固件",
+    "reason": "引用编号与上下文来源匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "1.装、拆临时辅助吊线 2.拆除原吊线终端 3.延长吊线 4.制作吊线终端 5.拧紧紧固件",
+    "reason": "覆盖问题所需全部处理步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "装、拆临时辅助吊线，拆除原吊线终端，延长吊线，制作吊线终端，拧紧紧固件等。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "89126656c25f49159adcaf2caf0bb8ea",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

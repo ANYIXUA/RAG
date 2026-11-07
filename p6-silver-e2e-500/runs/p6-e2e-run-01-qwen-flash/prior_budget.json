@@ -1,0 +1,6 @@
+{
+  "conservative_committed_yuan": 0.10690860000000002,
+  "known_usage_list_price_estimate_yuan": 0.0001665,
+  "prior_run": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01",
+  "reason": "Carry all prior qwen-turbo failed requests and diagnostic reservations into the same user cap20"
+}

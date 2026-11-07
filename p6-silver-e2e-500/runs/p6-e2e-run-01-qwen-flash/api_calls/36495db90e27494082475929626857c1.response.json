@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:20.611836+08:00",
+  "conservative_cost_yuan": 0.0007395,
+  "error": null,
+  "latency_ms": 1170.1187000144273,
+  "list_price_estimate_yuan": 0.0005925,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 蓄电池容量试验包括放电、充电及测量记录等操作。[3]  \n2. 放电与充电应按规程进行，确保测试有效性。[3]  \n3. 测量记录需包含容量、电压、电流等关键数据。[3]  \n4. 试验后应进行清洁整理工作。[3]  \n5. 操作依据为24V以下蓄电池容量试验标准流程。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881099,
+    "id": "chatcmpl-96075b6a-0e51-9873-ab3d-13d827b4ccdc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 98,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2970,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3068
+    }
+  },
+  "usage_known": true
+}

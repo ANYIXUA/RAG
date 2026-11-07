@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:24.062868+08:00",
+  "conservative_cost_yuan": 0.00070725,
+  "error": null,
+  "latency_ms": 1252.6032000314444,
+  "list_price_estimate_yuan": 0.00056025,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 法定代表人可签字或盖章，也可由其授权人代签。[1]  \n2. 发包人、承包人需加盖单位公章。[1]  \n3. 咨询人应使用单位资质专用章。[1]  \n4. 三方法定代表人均需在文件上签字或盖章确认。[1]  \n5. 文件需按统一格式编制并由相关人员签字盖章。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880922,
+    "id": "chatcmpl-ab91f9e9-9d79-9441-ba97-7caa53e83f09",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 98,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2755,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2853
+    }
+  },
+  "usage_known": true
+}

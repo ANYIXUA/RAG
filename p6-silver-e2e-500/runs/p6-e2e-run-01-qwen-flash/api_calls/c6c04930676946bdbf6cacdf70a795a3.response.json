@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:12:09.154521+08:00",
+  "conservative_cost_yuan": 0.00077535,
+  "error": null,
+  "latency_ms": 1610.7071998994797,
+  "list_price_estimate_yuan": 0.0006043499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 馈线接头应紧固无松动、无划伤、无露铜、无变形。[4]  \n2. 接头密封良好，确保无积水、无渗漏。[4]  \n3. 使用防水胶带或密封套加强接头密封性。[4]  \n4. 检查接头处是否平直，弯曲半径符合规范要求。[4]  \n5. 定期巡检，确认接头无氧化、锈蚀现象。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880727,
+    "id": "chatcmpl-907442c5-0aa3-9528-9fa6-3aa063021ba6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 114,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2889,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3003
+    }
+  },
+  "usage_known": true
+}

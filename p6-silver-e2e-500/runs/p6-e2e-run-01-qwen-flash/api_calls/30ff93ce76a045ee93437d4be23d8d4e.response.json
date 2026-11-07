@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:54.769798+08:00",
+  "conservative_cost_yuan": 0.0008383499999999999,
+  "error": null,
+  "latency_ms": 1367.963399970904,
+  "list_price_estimate_yuan": 0.0006613499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 水泥帮桩的消耗量为1.29根。[1]  \n2. 该数据来源于电信基础设施维护规程第206页表10.2.2.16。[1]  \n3. 消耗量单位为“根”，适用于水泥帮桩安装作业。[1]  \n4. 与木帮桩（消耗量0.96根）相比，水泥帮桩用量更高。[1]  \n5. 该数值为综合单价中的材料消耗标准。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880833,
+    "id": "chatcmpl-55623e89-a0f2-91b0-8712-4b2043931633",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 118,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3229,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3347
+    }
+  },
+  "usage_known": true
+}

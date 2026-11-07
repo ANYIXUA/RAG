@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:21.361237+08:00",
+  "conservative_cost_yuan": 0.0007779,
+  "error": null,
+  "latency_ms": 1330.276499968022,
+  "list_price_estimate_yuan": 0.0006099,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区直埋光缆路由埋深探测应纳入日常检修工作内容。[2]  \n2. 须检查沟坎、护坡、漫水坝等保护措施是否损坏或缺失。[2]  \n3. 发现保护措施破损应及时修补，包括堵塞、挡水墙等。[2]  \n4. 检查沿线重点部位保护是否到位，防范外力施工影响。[2]  \n5. 巡查后需做好记录并及时上报问题。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881220,
+    "id": "chatcmpl-e137cf86-6ef0-93d0-a30e-1b23da3c31a8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2946,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3058
+    }
+  },
+  "usage_known": true
+}

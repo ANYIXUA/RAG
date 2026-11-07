@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "用于山区时综合单价按相应子目的1.5 倍计取。",
+    "reason": "上下文明确支持山区按1.5倍计取",
+    "score": 1
+  },
+  "case_id": "p6s-0305",
+  "citation_correctness": {
+    "evidence": "用于山区时综合单价按相应子目的1.5 倍计取。",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "用于山区时综合单价按相应子目的1.5 倍计取。",
+    "reason": "完整覆盖问题所需信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "用于山区时综合单价按相应子目的1.5 倍计取。",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "aa4f52542f67460da62ea5d3c7278d10",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

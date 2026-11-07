@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:30.024845+08:00",
+  "conservative_cost_yuan": 0.0013452,
+  "error": null,
+  "latency_ms": 2458.440499845892,
+  "list_price_estimate_yuan": 0.0009267,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0340跨品牌协同无明确支持\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"依托一级平台和省平台实现全网终端统一纳管与诊断。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分覆盖但未提跨品牌核心挑战\",\n    \"evidence\": \"运维需通过统一接口规范实现跨品牌设备协同管理。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"利用IF5、IF6等标准接口对接平台，支持设备状态与配置同步。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"非拒答场景，无需判别\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_support\",\n    \"interface_focus\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882007,
+    "id": "chatcmpl-072e2560-b1c6-9910-bac1-95b6a25df369",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 279,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3388,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3667
+    }
+  },
+  "usage_known": true
+}

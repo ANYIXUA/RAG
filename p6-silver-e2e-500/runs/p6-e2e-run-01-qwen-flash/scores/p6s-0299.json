@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "地面墙面防水：使用室内防水涂料对机房地板及墙面进行简易防水处理",
+    "reason": "准确匹配作业内容与计量单位",
+    "score": 1
+  },
+  "case_id": "p6s-0299",
+  "citation_correctness": {
+    "evidence": "WH33116005 地面墙面防水 平方米²次 18.24 11.40 3.42 3.42 0.10",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "地面墙面防水的计量单位为平方米²次",
+    "reason": "完整覆盖问题所需信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "使用室内防水涂料对机房地板及墙面进行简易防水处理",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "f05aec9de9a44398acfac13404cb81b3",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

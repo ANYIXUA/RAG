@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:30.453923+08:00",
+  "conservative_cost_yuan": 0.0013640999999999998,
+  "error": null,
+  "latency_ms": 2425.1406001858413,
+  "list_price_estimate_yuan": 0.0009381,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"未提及价格信息，正确拒答\",\n    \"evidence\": \"当前资料未提及不同品牌装维服务的价格信息。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"服务标准包括故障处理、布线安装及场景设置等技能。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题核心，无遗漏\",\n    \"evidence\": \"无明确品牌间价格差异的官方数据支持。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"装维服务内容涉及智能组网、家庭总线等技术要求。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"明确说明无相关信息\",\n    \"evidence\": \"当前资料未提及不同品牌装维服务的价格信息。[1]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882128,
+    "id": "chatcmpl-5eb7c3e7-5dc8-9e1d-a330-ada96712a626",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 284,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3414,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3698
+    }
+  },
+  "usage_known": true
+}

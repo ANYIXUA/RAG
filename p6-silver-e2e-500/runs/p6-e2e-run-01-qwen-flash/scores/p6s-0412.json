@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "突发事件 运营管理企业通知 维护企业 维护企业通知维护人员赶往现场",
+    "reason": "上下文完整覆盖处理流程",
+    "score": 1
+  },
+  "case_id": "p6s-0412",
+  "citation_correctness": {
+    "evidence": "双方协商、提出处理方案 实施处理 填写《应急事件处理表》",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "填写《应急事件处理表》 向运营管理企业反馈处理结果",
+    "reason": "涵盖关键步骤且无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "维护人员应立即赶往现场，判断事件为一般或重大突发事件。[1]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "01b47ad9878b4b88a4944e844f138188",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

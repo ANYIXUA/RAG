@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:32.477824+08:00",
+  "conservative_cost_yuan": 0.00227625,
+  "error": null,
+  "latency_ms": 5484.741399995983,
+  "list_price_estimate_yuan": 0.00141525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]号片段明确列出WH23102003（架顶式）的综合单价为109.44元，与问题完全匹配。银参考虽存在，但其内容与上下文一致，且无矛盾。因此答案正确。\",\n    \"evidence\": \"WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每一条回答事实均在上下文[1]中得到支持：109.44元、工序内容、计量单位、人工费金额、项目编码均有原文对应。所有陈述均可追溯至原始证据。\",\n    \"evidence\": \"WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问综合单价，模型已准确给出该数值，并补充了相关背景信息（如计量单位、项目编码等），未遗漏必要条件或步骤。虽非必须，但补充信息有助于理解，不构成冗余。\",\n    \"evidence\": \"WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有关键结论均正确引用[1]，且[1]号片段确实包含所提及的所有信息（单价、工序、单位、人工费、编码）。引用编号与上下文来源一一对应，无误引或错引。\",\n    \"evidence\": \"WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确可答的exact_fact类型，上下文中有直接答案，无需拒答。模型正常作答，符合要求。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881347,
+    "id": "chatcmpl-fcfd50fa-4f27-94c6-b5e2-03c4bcc78b41",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 574,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3695,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4269
+    }
+  },
+  "usage_known": true
+}

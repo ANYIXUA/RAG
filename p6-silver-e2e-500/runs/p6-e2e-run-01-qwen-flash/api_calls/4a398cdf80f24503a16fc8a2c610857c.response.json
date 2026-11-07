@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:34.593687+08:00",
+  "conservative_cost_yuan": 0.0017315999999999998,
+  "error": null,
+  "latency_ms": 3520.798800047487,
+  "list_price_estimate_yuan": 0.0011615999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确列出夜间维护相关费用\",\n    \"evidence\": \"CS00006 夜间维护作业增加费 项 指因夜间维护作业所发生的补助费、工效降低、照明设备摊销及照明用电等费用。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"CS00006 夜间维护作业增加费 项 指因夜间维护作业所发生的补助费、工效降低、照明设备摊销及照明用电等费用。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏部分应计费用项目\",\n    \"evidence\": \"CS00002 维护干扰费 项 指维护作业中由于受市政管理、交通管制、人流密集、现场协调等影响工效的补偿费用。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"[1] CS00006 夜间维护作业增加费 项 指因夜间维护作业所发生的补助费、工效降低、照明设备摊销及照明用电等费用。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_completeness\",\n    \"correct_citation\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881771,
+    "id": "chatcmpl-12cdddc3-6152-9a5a-9e6d-400110f9d8ac",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 380,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3944,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4324
+    }
+  },
+  "usage_known": true
+}

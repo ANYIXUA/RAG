@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%",
+    "reason": "公式与上下文完全一致",
+    "score": 1
+  },
+  "case_id": "p6s-0465",
+  "citation_correctness": {
+    "evidence": "安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%",
+    "reason": "完整覆盖问题所需公式",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "计算安全生产费时，材料及备品备件购置费和机械仪表使用费应包括发包人提供的部分。",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "263dfc3f6a9042fc859b420844524c7a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

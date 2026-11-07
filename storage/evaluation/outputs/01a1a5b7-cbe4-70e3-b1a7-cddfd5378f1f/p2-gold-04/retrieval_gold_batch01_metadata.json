@@ -1,0 +1,458 @@
+{
+  "gold_version": "p2-gold-04-batch01-v1",
+  "batch": "batch01",
+  "cases": [
+    {
+      "batch_id": "B01",
+      "parent_candidate_id": "sha256:9631dde730749e95e2c74da24726dd1d8e743b1242d189ac76034732a01fa5e9",
+      "question_type": "exact_entity",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "831af7c41fd776db6b5b3ff9"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "831af7c41fd776db6b5b3ff9"
+      ],
+      "original_supporting_chunk_ids": [
+        "831af7c41fd776db6b5b3ff9"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B01",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 5,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已确认"
+      },
+      "source_verification": "继承 P2-Gold-02 原件核验。路面维护表同一行给出半年周期，备注限定高速公路人孔按需。",
+      "evidence": [
+        {
+          "chunk_id": "831af7c41fd776db6b5b3ff9",
+          "pdf_page": 29,
+          "section_title": "第29页",
+          "chunk_text_sha256": "cb194002751f1959144888940433c103bb543560edf93cad7e6a612b224a46d1",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "非高速公路场景下，管道线路的人（手）孔检修周期是多久？",
+      "reference_answer": "半年（高速公路中人孔的检修按需进行，不适用半年周期）。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。按同一行读取检修、周期与备注。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "gold_case_id": "gold-batch01-sha256:d1fcbeb037f45ffa276e565a12f440e3812b98aef32598a2cd0fedd9810b1a06"
+    },
+    {
+      "batch_id": "B02",
+      "parent_candidate_id": "sha256:6858125cbf5e8170a757c8a812aca9d1a9b2dd23347c59d5061af9a7c0d982f0",
+      "question_type": "exact_entity",
+      "source_document": "电信基础设施维护规程.pdf",
+      "document_id": "c8588238d99d4079e1ec6101",
+      "document_version": "v_8ae9b63d869002c1",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "document_content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+      "evidence_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "original_supporting_chunk_ids": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B02",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 6,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已确认"
+      },
+      "source_verification": "继承 P2-Gold-02 原件核验。表 10.3.3.4 核对项目编码 WH23104003、综合单价 29.18 和表头单位“个”。",
+      "evidence": [
+        {
+          "chunk_id": "92108b5bb6dcc5b2227d531c",
+          "pdf_page": 254,
+          "section_title": "第254页",
+          "chunk_text_sha256": "505614c9226d1251eae0f4b3b646641c39c86d46502fd0d9f1c04f0b37adf71b",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？",
+      "reference_answer": "29.18 元/个。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。匹配测试子项及数值，区分安装项和相邻分光比。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "gold_case_id": "gold-batch01-sha256:42b8a2541ffce7ab7ef69d2f1c165500ba5af5aa949ab806a45509dc44dd0dc3"
+    },
+    {
+      "batch_id": "B03",
+      "parent_candidate_id": "sha256:31d42a216450391763336ebbd7b38604cb50a3557831669e5b3371e63ef477ed",
+      "question_type": "exact_entity",
+      "source_document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "document_id": "a2053ec18f1415e4912c510f",
+      "document_version": "v_ab72ce00c904f060",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "document_content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+      "evidence_chunk_ids": [
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "original_supporting_chunk_ids": [
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "review_decision": "接受原题",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B03",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 7,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已核对PDF"
+      },
+      "source_verification": "继承 P2-Gold-02 原件核验。封面版本号与 Chunk 一致。",
+      "evidence": [
+        {
+          "chunk_id": "4f32247f7a6d7526df77bddd",
+          "pdf_page": 1,
+          "section_title": "第1页",
+          "chunk_text_sha256": "4f74e4800c9658eb9496421a61f395b78b5fcf114f7a2269c0dd4d1cb1470423",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "智慧家庭全光组网产品技术规范的版本是什么？",
+      "reference_answer": "V2.0.0",
+      "answer_variant": "original",
+      "retrieval_relevance_notes": "直接证据。封面版本号，结合文档名区分同名版本。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "gold_case_id": "gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5"
+    },
+    {
+      "batch_id": "B04",
+      "parent_candidate_id": "sha256:4d263ebb839f347941da0bd9c9d0c11533925443e6a26519593ad7628f6c29e6",
+      "question_type": "exact_entity",
+      "source_document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "document_id": "5256824b6b72b3f03d9c7a2c",
+      "document_version": "v_dcf78195a87f01f4",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "evidence_chunk_ids": [
+        "02c18b66c8c7d17fa1fb910e"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "02c18b66c8c7d17fa1fb910e"
+      ],
+      "original_supporting_chunk_ids": [
+        "02c18b66c8c7d17fa1fb910e"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B04",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 8,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已确认"
+      },
+      "source_verification": "继承 P2-Gold-02 原件核验。实操表 7.2 安全作业行与高级列交叉为 10，表头单位为 %。",
+      "evidence": [
+        {
+          "chunk_id": "02c18b66c8c7d17fa1fb910e",
+          "pdf_page": 19,
+          "section_title": "第19页",
+          "chunk_text_sha256": "f173262d53ba80a572b4d7224ec72221af8ae11eedac57c58ad9a02bcbc9f8f9",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？",
+      "reference_answer": "10%",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。同页有 7.1、7.2 两表，审核时按实操表行列定位。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "gold_case_id": "gold-batch01-sha256:0da5c82f433a53526cacf1f533e597e0d0d56bf090a952123037a56df20813b7"
+    },
+    {
+      "batch_id": "B05",
+      "parent_candidate_id": "sha256:e3783223e572063f0a3df106a6c1c6084c99e5f2943b788dc72a6996cb96b2bf",
+      "question_type": "exact_entity",
+      "source_document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "document_id": "a2053ec18f1415e4912c510f",
+      "document_version": "v_ab72ce00c904f060",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "document_content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+      "evidence_chunk_ids": [
+        "4812f97659f77c46891223fa"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "4812f97659f77c46891223fa"
+      ],
+      "original_supporting_chunk_ids": [
+        "4812f97659f77c46891223fa"
+      ],
+      "review_decision": "接受原题",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B05",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 9,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已核对PDF"
+      },
+      "source_verification": "继承 P2-Gold-02 原件核验。4.3.4.8 的 2.4G 条款明确至少支持 4 个 RU 并行调度。",
+      "evidence": [
+        {
+          "chunk_id": "4812f97659f77c46891223fa",
+          "pdf_page": 25,
+          "section_title": "第25页",
+          "chunk_text_sha256": "b6305d77d2676d5b3cf3ecd4874b1b46a5ea6120083e198d882c61c1ba2453b5",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "全光组网终端支持IEEE 802.11ax协议时，2.4G频段应至少支持多少个RU并行调度？",
+      "reference_answer": "4",
+      "answer_variant": "original",
+      "retrieval_relevance_notes": "直接证据。区分 5G 的 8 个 RU 与相邻 802.11be 的用户数表述。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "gold_case_id": "gold-batch01-sha256:c482b83580f3fb39b560f93a43695220c7fcca57dadaf88ad7391ba8a95a5c10"
+    },
+    {
+      "batch_id": "B06",
+      "parent_candidate_id": "sha256:bfd1eea2e2dfb6cd0dbda8053b95cae3aee6dc526998a08e1da1ee5458570a41",
+      "question_type": "semantic",
+      "source_document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "document_id": "5256824b6b72b3f03d9c7a2c",
+      "document_version": "v_dcf78195a87f01f4",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "evidence_chunk_ids": [
+        "5ab56d780f65ff344900b1a2"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "5ab56d780f65ff344900b1a2"
+      ],
+      "original_supporting_chunk_ids": [
+        "5ab56d780f65ff344900b1a2"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B06",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 10,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已确认"
+      },
+      "source_verification": "继承 P2-Gold-02 原件核验。4.2 节核对编码，后续职业方向说明用于解释归属。",
+      "evidence": [
+        {
+          "chunk_id": "5ab56d780f65ff344900b1a2",
+          "pdf_page": 6,
+          "section_title": "第6页",
+          "chunk_text_sha256": "15256979daa8cf286c973ef27a740f73c7c9b362f6273f01c96e50b158eae330",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？",
+      "reference_answer": "4-04-02-012",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。以 4.2 节编码为目标。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "gold_case_id": "gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239"
+    },
+    {
+      "batch_id": "B07",
+      "parent_candidate_id": "sha256:50354083653ee2bf6b5811362051fffcabfb7895978e5d6d0004c77ad21b0622",
+      "question_type": "semantic",
+      "source_document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "document_id": "a2053ec18f1415e4912c510f",
+      "document_version": "v_ab72ce00c904f060",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "document_content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+      "evidence_chunk_ids": [
+        "c120df3a569ae215d69183ac",
+        "38ea5e749604f43f5f040901"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "38ea5e749604f43f5f040901"
+      ],
+      "original_supporting_chunk_ids": [
+        "38ea5e749604f43f5f040901"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B07",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 11,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已确认"
+      },
+      "source_verification": "本轮复核。本轮目视重核。物理 61 页标题为“A.2 光路由终端二维码标识要求”，页末列（1）（2）。物理 62 页续列（3）尺寸，页面、Chunk 正文和元数据均无该产品名。两页合读无已知证据缺口，可送人工复核。",
+      "evidence": [
+        {
+          "chunk_id": "c120df3a569ae215d69183ac",
+          "pdf_page": 61,
+          "section_title": "第61页",
+          "chunk_text_sha256": "20f3b0611832a802ce2ab30f07a0d31f662fbee5df3bdafa506d8f01934f1ca7",
+          "role": "product_attribution",
+          "retrieval_relevant": false
+        },
+        {
+          "chunk_id": "38ea5e749604f43f5f040901",
+          "pdf_page": 62,
+          "section_title": "第62页",
+          "chunk_text_sha256": "0b5c1dbb9bb994938af1608e9258f3fa2e44591c269833b2f725ffee77ab3b8a",
+          "role": "dimension_requirement",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？",
+      "reference_answer": "不小于17×17mm（公差：±1mm），正方形。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "第 62 页为直接检索目标。第 61 页是签核所需归属证据，可作检索背景。",
+      "requires_all_evidence": true,
+      "required_evidence_count": 2,
+      "gold_case_id": "gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42"
+    },
+    {
+      "batch_id": "B09",
+      "parent_candidate_id": "sha256:8d8e0f5cbd56fd6adb9ba5e09728cc911d24345d7a41f15ec0eaddc37717d1c8",
+      "question_type": "semantic",
+      "source_document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+      "document_id": "a2053ec18f1415e4912c510f",
+      "document_version": "v_ab72ce00c904f060",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "document_content_hash": "ab72ce00c904f060e1a60edb2af37b98f35cb9464f510e1022e29c657a94cf99",
+      "evidence_chunk_ids": [
+        "9b5d9b92dc528a1c594e3ec2"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "9b5d9b92dc528a1c594e3ec2"
+      ],
+      "original_supporting_chunk_ids": [
+        "9b5d9b92dc528a1c594e3ec2"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B09",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 13,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已确认"
+      },
+      "source_verification": "继承 P2-Gold-02 原件核验。4.11.2 温度要求中非嵌入式为 50℃，嵌入式为 65℃。",
+      "evidence": [
+        {
+          "chunk_id": "9b5d9b92dc528a1c594e3ec2",
+          "pdf_page": 58,
+          "section_title": "第58页",
+          "chunk_text_sha256": "e655efda8be454b93fa0ca0da97bfd2d9db881923627ca7dab00a7ac89773633",
+          "role": "direct_answer",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "在室温 25±2℃ 的情况下，非嵌入式全光组网终端表面温度不得超过多少℃？",
+      "reference_answer": "50℃",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "直接证据。使用非嵌入式条件区分嵌入式限值。",
+      "requires_all_evidence": false,
+      "required_evidence_count": 1,
+      "gold_case_id": "gold-batch01-sha256:d398b06298f36c11da17723f8a1765f3580d9cab8d4393f6f9742f07d3e2c6bc"
+    },
+    {
+      "batch_id": "B12",
+      "parent_candidate_id": "sha256:70dc300fbcd568ccd4324dd4c6a93d6e438266da789c7865f0400d0c64547d24",
+      "question_type": "confusable",
+      "source_document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+      "document_id": "5256824b6b72b3f03d9c7a2c",
+      "document_version": "v_dcf78195a87f01f4",
+      "corpus_snapshot_id": "sha256:eedd1783956ca582c1cdfbbdad486fdf1554c7dab79681bba0675eec47089fce",
+      "source_pdf_sha256": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "document_content_hash": "dcf78195a87f01f45fc99b3af1c541f948a7cc8b6578168c0cb862cf9b620277",
+      "evidence_chunk_ids": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ],
+      "retrieval_relevant_chunk_ids": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ],
+      "original_supporting_chunk_ids": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ],
+      "review_decision": "接受修订",
+      "review_source": {
+        "file": "p2_gold_03_signoff_packet.md",
+        "section": "B12",
+        "sha256": "62c3e0e0ec30beea57b8fa43d0a2bb9e298687571ed85d815d02b221afcef6fc",
+        "workbook_row": 16,
+        "human_reviewer": "system",
+        "human_reviewed_at": "2026/11/04",
+        "human_comment": "已确认"
+      },
+      "source_verification": "本轮复核。本轮目视重核。物理 16 页初级 3.2 知识 3.2.2 对应 WLAN 基础。物理 18 页中级 3.2 知识 3.2.3 对应 WLAN 网优及软件基础，且中级 3.2.2 同样列通用 WLAN 基础。",
+      "evidence": [
+        {
+          "chunk_id": "48ecc091e26caaa3ccbd3be5",
+          "pdf_page": 16,
+          "section_title": "第16页",
+          "chunk_text_sha256": "8aa58e78fb1164af31d04320b5216a2d934723c3f2ae477c3632ac2a10af190b",
+          "role": "junior_knowledge_requirement",
+          "retrieval_relevant": true
+        },
+        {
+          "chunk_id": "c10a8b3b89210595f9880fc6",
+          "pdf_page": 18,
+          "section_title": "第18页",
+          "chunk_text_sha256": "b01db38172ac197963ad004b3dafca02db761c96f163f0b9848f69ede64cdc0a",
+          "role": "intermediate_knowledge_requirement",
+          "retrieval_relevant": true
+        }
+      ],
+      "question": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？",
+      "reference_answer": "初级要求无线局域网相关基础知识。中级要求无线局域网网优及软件基础知识。",
+      "answer_variant": "signed_revision",
+      "retrieval_relevance_notes": "两页均直接相关。只命中任一页可取得现行 Hit，双证据完整召回须同时命中两页。",
+      "requires_all_evidence": true,
+      "required_evidence_count": 2,
+      "gold_case_id": "gold-batch01-sha256:fb01c2c2f5f0a5c0359778f2525216af20a933851661902b83de6a48c53f30aa"
+    }
+  ]
+}

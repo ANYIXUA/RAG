@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH33104002 嵌墙式 777.77 527.66 144.58 105.53 4.63 0.00",
+    "reason": "上下文明确给出777.77元，与参考一致。",
+    "score": 1
+  },
+  "case_id": "p6s-0197",
+  "citation_correctness": {
+    "evidence": "WH33104002 嵌墙式 777.77 527.66 144.58 105.53 4.63 0.00",
+    "reason": "引用[1]准确对应实际来源并支持该句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH33104002 嵌墙式 777.77 527.66 144.58 105.53 4.63 0.00",
+    "reason": "完整回答了单价、编码、单位及对比信息。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH33104002 嵌墙式 777.77 527.66 144.58 105.53 4.63 0.00",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3736b767e9934dcaacff6357601fc5d2",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

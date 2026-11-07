@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:44.320652+08:00",
+  "conservative_cost_yuan": 0.0013239,
+  "error": null,
+  "latency_ms": 2619.331599911675,
+  "list_price_estimate_yuan": 0.0009249,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确给出工日单价和计算依据\",\n    \"evidence\": \"技工为114 元/工日；普工为61 元/工日。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"企业管理费=人工费× 27.4%\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖人头费计算核心要素\",\n    \"evidence\": \"综合单价包括人工费、企业管理费和利润。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"人工费单价为：技工为114 元/工日\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881901,
+    "id": "chatcmpl-d81639a8-80f7-9fb4-8dbd-d59fca77ae4e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 266,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3506,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3772
+    }
+  },
+  "usage_known": true
+}

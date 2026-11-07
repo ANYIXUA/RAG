@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:24.603702+08:00",
+  "conservative_cost_yuan": 0.00162555,
+  "error": null,
+  "latency_ms": 3472.83500013873,
+  "list_price_estimate_yuan": 0.00109155,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答基于上下文，准确说明需携带工具包和防护装备。\",\n    \"evidence\": \"装维人员需穿戴整齐工作服、绝缘鞋、安全帽、工号牌，携带工具齐全的工具包和终端、线材等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持，无编造。\",\n    \"evidence\": \"装维人员需穿戴整齐工作服、绝缘鞋、安全帽、工号牌，携带工具齐全的工具包和终端、线材等。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"未明确说明是否需自备车辆，仅推测无需自备但无直接依据。\",\n    \"evidence\": \"无需自备车辆，由公司统一调度派车[无直接依据]。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"第3条引用[无直接依据]，其余正确。\",\n    \"evidence\": \"无需自备车辆，由公司统一调度派车[无直接依据]。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，非拒答场景。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_missing_for_vehicle_info\",\n    \"partial_completeness_due_to_implicit_assumption\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882001,
+    "id": "chatcmpl-7daf4e75-3de5-98f8-a443-5a432929117d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 356,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3717,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4073
+    }
+  },
+  "usage_known": true
+}

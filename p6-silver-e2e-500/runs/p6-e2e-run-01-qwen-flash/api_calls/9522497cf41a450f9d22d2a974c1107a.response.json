@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:39.832922+08:00",
+  "conservative_cost_yuan": 0.0007875,
+  "error": null,
+  "latency_ms": 1375.438999850303,
+  "list_price_estimate_yuan": 0.000621,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 接头处松动可能因固定不牢或密封不良导致。[3]  \n2. 馈线接头应保持平直，弯曲半径需符合规范要求。[3]  \n3. 接头处需固定牢靠，密封良好，避免积水。[3]  \n4. 建议检查接头是否氧化、锈蚀或漏铜。[3]  \n5. 若确认端头问题，应重新制作端头并按规程安装。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881178,
+    "id": "chatcmpl-09c8ee64-e295-9d77-affc-edbaa70f957f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3030,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3141
+    }
+  },
+  "usage_known": true
+}

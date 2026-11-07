@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:18:44.177960+08:00",
+  "input_token_upper_bound": 1112,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0381"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "运维流程如何与计划市场策略协同？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "3c814870432640eca0e4b9c8df3f952c",
+  "reserved_yuan": 0.000556
+}

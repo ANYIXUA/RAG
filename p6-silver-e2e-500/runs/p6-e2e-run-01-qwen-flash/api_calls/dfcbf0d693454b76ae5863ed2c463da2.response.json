@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:46.204600+08:00",
+  "conservative_cost_yuan": 0.0008462999999999999,
+  "error": null,
+  "latency_ms": 1752.8297998942435,
+  "list_price_estimate_yuan": 0.0006393,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 无电池不间断电源设备在平原、丘陵地区巡检综合单价为17.51元。[1]  \n2. 该单价对应项目编码WH21109005，计量单位为台·次。[1]  \n3. 工作内容包括检查设备外观、功能及告警信息等。[2]  \n4. 人工费为10.94元，企业管理费3.28元，利润3.28元。[1]  \n5. 此标准依据《电信基础设施维护规程》表10.3.1.9。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880944,
+    "id": "chatcmpl-dcda3ddc-9ef5-9572-b4ea-a01e51847325",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 138,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2882,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3020
+    }
+  },
+  "usage_known": true
+}

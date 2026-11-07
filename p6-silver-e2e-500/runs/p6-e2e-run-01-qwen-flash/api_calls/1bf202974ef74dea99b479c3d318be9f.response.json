@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:32.377946+08:00",
+  "conservative_cost_yuan": 0.00135225,
+  "error": null,
+  "latency_ms": 2326.4159001410007,
+  "list_price_estimate_yuan": 0.00096525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确说明单位为元\",\n    \"evidence\": \"综合单价（元） （除税价） 合 价\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"综合单价（元） （除税价） 合 价\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"综合单价（元） （除税价） 合 价\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"综合单价（元） （除税价） 合 价\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882010,
+    "id": "chatcmpl-c974478b-8a7e-9d26-a130-beefbbacb60a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 258,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3855,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4113
+    }
+  },
+  "usage_known": true
+}

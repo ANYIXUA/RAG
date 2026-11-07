@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0393",
+  "citation_correctness": {
+    "evidence": "服务范围以分光器或信息点为界，不涉及收费差异。[2]",
+    "reason": "引用编号与上下文匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "未提供不同品牌装维服务费用标准的对比信息。[1][2][3]",
+    "reason": "覆盖问题核心，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "装维材料管理及维护作业耗材费用可估列，但未说明具体标准。[3]",
+    "reason": "每项事实均有上下文支持。",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "8cefdc5039504d0981fa8541869aa0fa",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "缺乏品牌间费用对比依据，无法作答。[1][2][3]",
+    "reason": "正确拒答，符合规则。",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

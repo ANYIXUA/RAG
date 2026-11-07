@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:02.663110+08:00",
+  "conservative_cost_yuan": 0.0007438499999999999,
+  "error": null,
+  "latency_ms": 1447.9092000983655,
+  "list_price_estimate_yuan": 0.0005848499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 站址业主维系回访与满意度调查的计量单位为“站·次”。[1]  \n2. 对应的综合单价为38.30元。[1]  \n3. 该费用包含人工费、管理费及利润。[1]  \n4. 项目编码为WH24103003。[1]  \n5. 适用于海拔2000米以下地区，特殊地区需调整系数。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881081,
+    "id": "chatcmpl-40294a44-a0de-9266-82b1-2b7100d0a3ac",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2839,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2945
+    }
+  },
+  "usage_known": true
+}

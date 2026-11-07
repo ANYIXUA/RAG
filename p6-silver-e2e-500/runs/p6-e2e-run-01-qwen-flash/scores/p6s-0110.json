@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "嵌入式全网组网终端设备表面温度需不超过65℃。",
+    "reason": "上下文明确支持65℃上限",
+    "score": 1
+  },
+  "case_id": "p6s-0110",
+  "citation_correctness": {
+    "evidence": "嵌入式全网组网终端设备表面温度需不超过65℃。",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "在室温25±2℃的情况下，非嵌入式全光组网终端表面温度需不超过50℃，嵌入式全网组网终端设备表面温度需不超过65℃。",
+    "reason": "涵盖温度上限及适用条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "嵌入式全网组网终端设备表面温度需不超过65℃。",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "355f90ef8ee24c128855f48b868ac2fa",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21",
+    "reason": "引用[2]中混凝土墙洞为38.30元，非14.32元",
+    "score": 0
+  },
+  "case_id": "p6s-0331",
+  "citation_correctness": {
+    "evidence": "WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21",
+    "reason": "覆盖所有必要信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21",
+    "reason": "人工费与企业管理费数据错误",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_cost_data",
+    "misaligned_reference"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "e7a09f37ba40404f8f3e0afcf630e1b1",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

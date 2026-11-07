@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:17.885401+08:00",
+  "conservative_cost_yuan": 0.00130965,
+  "error": null,
+  "latency_ms": 2863.840499892831,
+  "list_price_estimate_yuan": 0.00091815,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题超范围，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"能对家居智能组网进行设计 [2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分覆盖但未完整回应推广策略\",\n    \"evidence\": \"掌握无线局域网覆盖优化与带宽指标调整技术 [2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容\",\n    \"evidence\": \"应掌握无线局域网覆盖优化与带宽指标调整技术 [2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"未强行编造，符合拒答要求\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"partial_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881935,
+    "id": "chatcmpl-80e0b200-5aea-9109-9c43-f1fda648897a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 261,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3511,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3772
+    }
+  },
+  "usage_known": true
+}

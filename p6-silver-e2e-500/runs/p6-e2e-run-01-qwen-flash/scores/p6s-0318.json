@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "两项指标均在“季度”维护项目中明确列出。[1]",
+    "reason": "上下文明确列出两项指标均属季度维护",
+    "score": 1
+  },
+  "case_id": "p6s-0318",
+  "citation_correctness": {
+    "evidence": "整流模块之间输出电流不平衡度应低于±5%。[1]",
+    "reason": "部分引用编号不匹配实际来源",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "检查要求为整流模块间输出电流不平衡度低于±5%。[1]",
+    "reason": "涵盖问题所有条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "整流模块之间输出电流不平衡度应低于±5%。[1]",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "citation_mismatch"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "8e10889e88fd40d792d54ddd77c8f72f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

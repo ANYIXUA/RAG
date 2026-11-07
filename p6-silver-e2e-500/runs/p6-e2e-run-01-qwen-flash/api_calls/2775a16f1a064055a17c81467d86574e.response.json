@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:32.718416+08:00",
+  "conservative_cost_yuan": 0.0008003999999999999,
+  "error": null,
+  "latency_ms": 1366.2958999630064,
+  "list_price_estimate_yuan": 0.0006173999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 当金属护套对地绝缘电阻低于2MΩ/单盘时，需使用故障探测仪查找外护层破损位置。[1]  \n2. 应及早修复外护层破损点，确保绝缘性能恢复。[1]  \n3. 测试时应排除直埋接头盒密封不良或进水的影响，避免误判。[1]  \n4. 该测试周期为半年，可按需适当缩短。[1]  \n5. 处理后应重新测试并记录结果，确保达标。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880931,
+    "id": "chatcmpl-48f07b02-f468-914f-8858-305afffa1e27",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 122,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2896,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3018
+    }
+  },
+  "usage_known": true
+}

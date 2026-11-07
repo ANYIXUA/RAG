@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:53.159919+08:00",
+  "conservative_cost_yuan": 0.0007067999999999999,
+  "error": null,
+  "latency_ms": 1495.969699928537,
+  "list_price_estimate_yuan": 0.0005327999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 架空方式故障抢通综合单价为1622.80元/处。[1]  \n2. 该价格包含人工、管理费及利润等费用。[1]  \n3. 计量单位为“处”，适用于架空光缆线路抢通作业。[1]  \n4. 项目编码为WH14001002，属故障抢通类别。[1]  \n5. 材料费用需另计，不包含在综合单价内。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880831,
+    "id": "chatcmpl-9d1c09bc-018e-9a53-a239-ac3abb656177",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 116,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2392,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2508
+    }
+  },
+  "usage_known": true
+}

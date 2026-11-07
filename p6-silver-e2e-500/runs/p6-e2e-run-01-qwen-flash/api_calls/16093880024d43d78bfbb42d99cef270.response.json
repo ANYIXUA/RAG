@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:12.782719+08:00",
+  "conservative_cost_yuan": 0.0007719,
+  "error": null,
+  "latency_ms": 1454.2713998816907,
+  "list_price_estimate_yuan": 0.0006129,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 70mm²电力电缆布放综合单价为52.90元/十米条。[1]  \n2. 该价格适用于室内布放单芯电力电缆。[1]  \n3. 项目编码为WH23109003。[1]  \n4. 与表10.4.3.12中数据一致。[2]  \n5. 不含电缆材料费，仅含施工综合单价。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880851,
+    "id": "chatcmpl-8b63b979-a8e9-9bcb-9d92-1da0a2e50749",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3026,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3132
+    }
+  },
+  "usage_known": true
+}

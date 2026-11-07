@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:33.961314+08:00",
+  "conservative_cost_yuan": 0.0007965,
+  "error": null,
+  "latency_ms": 1722.0163999591023,
+  "list_price_estimate_yuan": 0.0005985,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区直埋光缆线路徒步巡回人工费为73.29元/工日。[2]  \n2. 山区直埋光缆线路徒步巡回利润为14.66元/工日。[2]  \n3. 人工费用与利润依据维护项目“徒步巡回”在山区的综合单价确定。[2]  \n4. 该数据来源于《电信基础设施维护规程》第175页表10.2.1.3。[2]  \n5. 以上费用适用于山区直埋光缆线路徒步巡回作业。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880932,
+    "id": "chatcmpl-31834c18-0162-95b1-bf59-8e9eb6ce8f03",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 132,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2670,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2802
+    }
+  },
+  "usage_known": true
+}

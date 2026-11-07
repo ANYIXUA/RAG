@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:23.843656+08:00",
+  "conservative_cost_yuan": 0.00080235,
+  "error": null,
+  "latency_ms": 1370.704600121826,
+  "list_price_estimate_yuan": 0.0006163499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区基站主设备巡检技工人工费为17.10元/工日。[1]  \n2. 项目编码为WH21101003，计量单位为三台·次。[1]  \n3. 综合单价为27.36元，其中人工费含技工部分。[1]  \n4. 巡检工作包括清洁滤网、告警处理、拨打测试等。[1]  \n5. 按每三台设备为基本计量单位计算。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880982,
+    "id": "chatcmpl-d69fb301-d0fc-945d-9f0f-5f9ee37d37c4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 124,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2869,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2993
+    }
+  },
+  "usage_known": true
+}

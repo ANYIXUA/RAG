@@ -1,0 +1,1455 @@
+{
+  "db_stats": {
+    "active_chunks": 447,
+    "distinct_priority": 1,
+    "distinct_updated_at": 1,
+    "priority_min": 50,
+    "priority_max": 50,
+    "updated_at_min": "2026-06-23T14:53:31.581201+00:00",
+    "updated_at_max": "2026-06-23T14:53:31.581201+00:00",
+    "priority_distribution": [
+      [
+        50,
+        447
+      ]
+    ],
+    "updated_at_distinct_values": 1
+  },
+  "summary": {
+    "old_pool_has_relevant": 1,
+    "fix_all_pool_has_relevant": 22,
+    "fix_oversample_pool_has_relevant": 22,
+    "a2_top10_hit": 22,
+    "fix_all_top10_hit": 22,
+    "old_top10_hit": 1
+  },
+  "case_count": 22,
+  "per_case": [
+    {
+      "gold_case_id": "gold-batch01-sha256:d1fcbeb037f45ffa276e565a12f440e3812b98aef32598a2cd0fedd9810b1a06",
+      "query": "非高速公路场景下，管道线路的人（手）孔检修周期是多久？",
+      "tokens": [
+        "非高",
+        "高速",
+        "速公",
+        "公路",
+        "路场",
+        "场景",
+        "景下",
+        "管道",
+        "道线",
+        "线路",
+        "路的",
+        "的人"
+      ],
+      "token_match_count": 125,
+      "old_pool_ids": [
+        "469978708f9fe4506fc1fa7f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "cdcc369a72b7aaa79fefb319",
+        "5183d18205e64c4836ba9020",
+        "859e0391143c967ade455f91",
+        "a7db14a3391bc332376a980d",
+        "8a7f78eaa2ea7985e75538ec",
+        "66e41c6a6dbb49b77fb123f2",
+        "44f638f745282f4192dcd963",
+        "546f017c81972bb8f8da4d1d",
+        "4a06336555e25e93b35546c9",
+        "72fa8e10c0e1591665ff1d32",
+        "a3aa8e54c36d3fa235c9a6c1",
+        "890981c54bb6c50e5c0d6d8b",
+        "13b449a7300569643ee21bd4",
+        "acbdb12c2a62c12fe9787ef7",
+        "2eda6960dfbb194d0f84e4b0",
+        "5d5fd6cf18ea4e313fdc45b5"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "831af7c41fd776db6b5b3ff9": 8
+      },
+      "relevant_match_count_rank": {
+        "831af7c41fd776db6b5b3ff9": 1
+      },
+      "relevant_in_oversample": [
+        "831af7c41fd776db6b5b3ff9"
+      ],
+      "relevant_in_all": [
+        "831af7c41fd776db6b5b3ff9"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch01-sha256:42b8a2541ffce7ab7ef69d2f1c165500ba5af5aa949ab806a45509dc44dd0dc3",
+      "query": "在维护分项作业表 10.3.3.4（WH23104 安装、测试波分复用器）中，测试波分复用器 1:2（项目编码 WH23104003）的综合单价是多少（元/个）？",
+      "tokens": [
+        "10",
+        "3",
+        "3",
+        "4",
+        "wh23104",
+        "1",
+        "2",
+        "wh23104003",
+        "在维",
+        "维护",
+        "护分",
+        "分项"
+      ],
+      "token_match_count": 447,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "92108b5bb6dcc5b2227d531c": 11
+      },
+      "relevant_match_count_rank": {
+        "92108b5bb6dcc5b2227d531c": 1
+      },
+      "relevant_in_oversample": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "relevant_in_all": [
+        "92108b5bb6dcc5b2227d531c"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5",
+      "query": "智慧家庭全光组网产品技术规范的版本是什么？",
+      "tokens": [
+        "智慧",
+        "慧家",
+        "家庭",
+        "庭全",
+        "全光",
+        "光组",
+        "组网",
+        "网产",
+        "产品",
+        "品技",
+        "技术",
+        "术规"
+      ],
+      "token_match_count": 146,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_top10_ranks": [
+        5
+      ],
+      "fix_all_top10_ranks": [
+        4
+      ],
+      "fix_oversample_top10_ranks": [
+        4
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "4f32247f7a6d7526df77bddd": 12
+      },
+      "relevant_match_count_rank": {
+        "4f32247f7a6d7526df77bddd": 1
+      },
+      "relevant_in_oversample": [
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "relevant_in_all": [
+        "4f32247f7a6d7526df77bddd"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch01-sha256:0da5c82f433a53526cacf1f533e597e0d0d56bf090a952123037a56df20813b7",
+      "query": "在 7.2 智慧家庭装维工程与管理实操技能权重表中，技能等级为高级时，“安全作业”项目的权重是多少（%）？",
+      "tokens": [
+        "7",
+        "2",
+        "在",
+        "智慧",
+        "慧家",
+        "家庭",
+        "庭装",
+        "装维",
+        "维工",
+        "工程",
+        "程与",
+        "与管"
+      ],
+      "token_match_count": 432,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        2
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        2
+      ],
+      "relevant_match_count": {
+        "02c18b66c8c7d17fa1fb910e": 11
+      },
+      "relevant_match_count_rank": {
+        "02c18b66c8c7d17fa1fb910e": 6
+      },
+      "relevant_in_oversample": [
+        "02c18b66c8c7d17fa1fb910e"
+      ],
+      "relevant_in_all": [
+        "02c18b66c8c7d17fa1fb910e"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch01-sha256:c482b83580f3fb39b560f93a43695220c7fcca57dadaf88ad7391ba8a95a5c10",
+      "query": "全光组网终端支持IEEE 802.11ax协议时，2.4G频段应至少支持多少个RU并行调度？",
+      "tokens": [
+        "ieee",
+        "802",
+        "11ax",
+        "2",
+        "4g",
+        "ru",
+        "全光",
+        "光组",
+        "组网",
+        "网终",
+        "终端",
+        "端支"
+      ],
+      "token_match_count": 420,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "4812f97659f77c46891223fa": 12
+      },
+      "relevant_match_count_rank": {
+        "4812f97659f77c46891223fa": 1
+      },
+      "relevant_in_oversample": [
+        "4812f97659f77c46891223fa"
+      ],
+      "relevant_in_all": [
+        "4812f97659f77c46891223fa"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239",
+      "query": "《智慧家庭装维工程与管理职业技能等级标准》4.2 节中，智慧家庭工程师的职业编码是什么？",
+      "tokens": [
+        "4",
+        "2",
+        "智慧",
+        "慧家",
+        "家庭",
+        "庭装",
+        "装维",
+        "维工",
+        "工程",
+        "程与",
+        "与管",
+        "管理"
+      ],
+      "token_match_count": 437,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        4
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        4
+      ],
+      "relevant_match_count": {
+        "5ab56d780f65ff344900b1a2": 12
+      },
+      "relevant_match_count_rank": {
+        "5ab56d780f65ff344900b1a2": 11
+      },
+      "relevant_in_oversample": [
+        "5ab56d780f65ff344900b1a2"
+      ],
+      "relevant_in_all": [
+        "5ab56d780f65ff344900b1a2"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42",
+      "query": "在《中国移动智慧家庭全光组网产品技术规范》附录 A.2 中，光路由终端二维码的尺寸大小要求是什么？",
+      "tokens": [
+        "a",
+        "2",
+        "在",
+        "中国",
+        "国移",
+        "移动",
+        "动智",
+        "智慧",
+        "慧家",
+        "家庭",
+        "庭全",
+        "全光"
+      ],
+      "token_match_count": 447,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "38ea5e749604f43f5f040901": 10
+      },
+      "relevant_match_count_rank": {
+        "38ea5e749604f43f5f040901": 68
+      },
+      "relevant_in_oversample": [
+        "38ea5e749604f43f5f040901"
+      ],
+      "relevant_in_all": [
+        "38ea5e749604f43f5f040901"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch01-sha256:d398b06298f36c11da17723f8a1765f3580d9cab8d4393f6f9742f07d3e2c6bc",
+      "query": "在室温 25±2℃ 的情况下，非嵌入式全光组网终端表面温度不得超过多少℃？",
+      "tokens": [
+        "25",
+        "2",
+        "在室",
+        "室温",
+        "的情",
+        "情况",
+        "况下",
+        "非嵌",
+        "嵌入",
+        "入式",
+        "式全",
+        "全光"
+      ],
+      "token_match_count": 420,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "9b5d9b92dc528a1c594e3ec2": 12
+      },
+      "relevant_match_count_rank": {
+        "9b5d9b92dc528a1c594e3ec2": 1
+      },
+      "relevant_in_oversample": [
+        "9b5d9b92dc528a1c594e3ec2"
+      ],
+      "relevant_in_all": [
+        "9b5d9b92dc528a1c594e3ec2"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch01-sha256:fb01c2c2f5f0a5c0359778f2525216af20a933851661902b83de6a48c53f30aa",
+      "query": "根据《智慧家庭装维工程与管理职业技能等级标准》，初级“基础网络质量检测”的知识条目 3.2.2 和中级“基础网络优化”的知识条目 3.2.3，分别要求掌握哪些无线局域网知识？",
+      "tokens": [
+        "3",
+        "2",
+        "2",
+        "3",
+        "2",
+        "3",
+        "根据",
+        "智慧",
+        "慧家",
+        "家庭",
+        "庭装",
+        "装维"
+      ],
+      "token_match_count": 439,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        5,
+        8
+      ],
+      "fix_oversample_top10_ranks": [
+        3,
+        5
+      ],
+      "a2_top10_ranks": [
+        5,
+        8
+      ],
+      "relevant_match_count": {
+        "48ecc091e26caaa3ccbd3be5": 11,
+        "c10a8b3b89210595f9880fc6": 11
+      },
+      "relevant_match_count_rank": {
+        "48ecc091e26caaa3ccbd3be5": 8,
+        "c10a8b3b89210595f9880fc6": 16
+      },
+      "relevant_in_oversample": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ],
+      "relevant_in_all": [
+        "48ecc091e26caaa3ccbd3be5",
+        "c10a8b3b89210595f9880fc6"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:cb6c1fd465588112ef0e370268ad0183ee9da3679bcfc5cccee37d207f360e49",
+      "query": "《智慧家庭装维工程与管理职业技能等级标准》第 5.7 节规定，安全作业知识包括哪五项？",
+      "tokens": [
+        "5",
+        "7",
+        "智慧",
+        "慧家",
+        "家庭",
+        "庭装",
+        "装维",
+        "维工",
+        "工程",
+        "程与",
+        "与管",
+        "管理"
+      ],
+      "token_match_count": 429,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        2
+      ],
+      "fix_oversample_top10_ranks": [
+        2
+      ],
+      "a2_top10_ranks": [
+        2
+      ],
+      "relevant_match_count": {
+        "0eb4bd6e18d599063371f51b": 12
+      },
+      "relevant_match_count_rank": {
+        "0eb4bd6e18d599063371f51b": 3
+      },
+      "relevant_in_oversample": [
+        "0eb4bd6e18d599063371f51b"
+      ],
+      "relevant_in_all": [
+        "0eb4bd6e18d599063371f51b"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c",
+      "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，中级人员在“智能家居（控制）技术”项下对系统架构有什么要求？",
+      "tokens": [
+        "1",
+        "在",
+        "智慧",
+        "慧家",
+        "家庭",
+        "庭装",
+        "装维",
+        "维工",
+        "工程",
+        "程与",
+        "与管",
+        "管理"
+      ],
+      "token_match_count": 440,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        11
+      ],
+      "fix_oversample_top10_ranks": [
+        11
+      ],
+      "a2_top10_ranks": [
+        11
+      ],
+      "relevant_match_count": {
+        "e010fe39879d92fa21dc59d9": 11
+      },
+      "relevant_match_count_rank": {
+        "e010fe39879d92fa21dc59d9": 14
+      },
+      "relevant_in_oversample": [
+        "e010fe39879d92fa21dc59d9"
+      ],
+      "relevant_in_all": [
+        "e010fe39879d92fa21dc59d9"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf",
+      "query": "在《智慧家庭装维工程与管理职业技能等级标准》表 1 中，高级人员在“物联网接入业务运维”项下对网关组网方法的要求是什么？",
+      "tokens": [
+        "1",
+        "在",
+        "智慧",
+        "慧家",
+        "家庭",
+        "庭装",
+        "装维",
+        "维工",
+        "工程",
+        "程与",
+        "与管",
+        "管理"
+      ],
+      "token_match_count": 440,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "1c317b1dd2cebfbf9647d03e": 11
+      },
+      "relevant_match_count_rank": {
+        "1c317b1dd2cebfbf9647d03e": 13
+      },
+      "relevant_in_oversample": [
+        "1c317b1dd2cebfbf9647d03e"
+      ],
+      "relevant_in_all": [
+        "1c317b1dd2cebfbf9647d03e"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:50d51edece13e19c9b0461c5d28612c2bd57007a19ab3987f4a5506865d5e31e",
+      "query": "《电信基础设施维护规程》表 10.3.3.4 中，安装波分复用器这一子项包含哪些工作？",
+      "tokens": [
+        "10",
+        "3",
+        "3",
+        "4",
+        "电信",
+        "信基",
+        "基础",
+        "础设",
+        "设施",
+        "施维",
+        "维护",
+        "护规"
+      ],
+      "token_match_count": 444,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "92108b5bb6dcc5b2227d531c": 12
+      },
+      "relevant_match_count_rank": {
+        "92108b5bb6dcc5b2227d531c": 113
+      },
+      "relevant_in_oversample": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "relevant_in_all": [
+        "92108b5bb6dcc5b2227d531c"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:b084448f7e7645c2707588f54535d32b68eb9065c1c88e40589d1d9e429577e4",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，编码 WH23105001 对应的防雷箱子项名称是什么？",
+      "tokens": [
+        "10",
+        "3",
+        "3",
+        "5",
+        "wh23105001",
+        "电信",
+        "信基",
+        "基础",
+        "础设",
+        "设施",
+        "施维",
+        "维护"
+      ],
+      "token_match_count": 446,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "03e5582a4a0f7d3c76a33e66": 12
+      },
+      "relevant_match_count_rank": {
+        "03e5582a4a0f7d3c76a33e66": 1
+      },
+      "relevant_in_oversample": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "relevant_in_all": [
+        "03e5582a4a0f7d3c76a33e66"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:ab3b66a0a8ccc60a2d24f08a125fcbfff193b42877b83821acb4b8a8e26af2e8",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，室外塔上防雷箱（WH23105003）的综合单价列标了多少元？",
+      "tokens": [
+        "10",
+        "3",
+        "3",
+        "5",
+        "wh23105003",
+        "电信",
+        "信基",
+        "基础",
+        "础设",
+        "设施",
+        "施维",
+        "维护"
+      ],
+      "token_match_count": 446,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "03e5582a4a0f7d3c76a33e66": 12
+      },
+      "relevant_match_count_rank": {
+        "03e5582a4a0f7d3c76a33e66": 1
+      },
+      "relevant_in_oversample": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "relevant_in_all": [
+        "03e5582a4a0f7d3c76a33e66"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:b4b194da3f8a23a7d4bfa98f30393ba5402f27c1e527513bc033dcf6b653e9b0",
+      "query": "安装防雷接地装置的工作内容有哪些？",
+      "tokens": [
+        "安装",
+        "装防",
+        "防雷",
+        "雷接",
+        "接地",
+        "地装",
+        "装置",
+        "置的",
+        "的工",
+        "工作",
+        "作内",
+        "内容"
+      ],
+      "token_match_count": 342,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "d349f789d2e652960680ae1c",
+        "958047c40a522ec22f73e5a5",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "cdcc369a72b7aaa79fefb319",
+        "84139f0d408339d51910bb1e",
+        "4812f97659f77c46891223fa",
+        "5183d18205e64c4836ba9020",
+        "859e0391143c967ade455f91",
+        "546f017c81972bb8f8da4d1d",
+        "bbeae10790f98769a3820459",
+        "a3aa8e54c36d3fa235c9a6c1",
+        "c9798c374ba5448e95e08c22",
+        "a8887b02ae32e4d4748ad264",
+        "63cc4ceb1bdbab4ee0bb6159",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "03e5582a4a0f7d3c76a33e66": 10
+      },
+      "relevant_match_count_rank": {
+        "03e5582a4a0f7d3c76a33e66": 1
+      },
+      "relevant_in_oversample": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "relevant_in_all": [
+        "03e5582a4a0f7d3c76a33e66"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:74d3dfa33289009b189597355bbb9cb5852fdad9ad135fcaebf18261f4a9c632",
+      "query": "《电信基础设施维护规程》表 10.3.3.5 中，室内防雷箱（WH23105001）的综合单价列标了多少元？",
+      "tokens": [
+        "10",
+        "3",
+        "3",
+        "5",
+        "wh23105001",
+        "电信",
+        "信基",
+        "基础",
+        "础设",
+        "设施",
+        "施维",
+        "维护"
+      ],
+      "token_match_count": 446,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "03e5582a4a0f7d3c76a33e66": 12
+      },
+      "relevant_match_count_rank": {
+        "03e5582a4a0f7d3c76a33e66": 1
+      },
+      "relevant_in_oversample": [
+        "03e5582a4a0f7d3c76a33e66"
+      ],
+      "relevant_in_all": [
+        "03e5582a4a0f7d3c76a33e66"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:f2a4f74b711f2413b1402f768300d60583f1057569aa22e97a24ab2789b01491",
+      "query": "《电信基础设施维护规程》表 10.3.3.4 中，测试波分复用器 1:6 以下（WH23104004）的综合单价是多少（元/个）？",
+      "tokens": [
+        "10",
+        "3",
+        "3",
+        "4",
+        "1",
+        "6",
+        "wh23104004",
+        "电信",
+        "信基",
+        "基础",
+        "础设",
+        "设施"
+      ],
+      "token_match_count": 447,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "92108b5bb6dcc5b2227d531c": 12
+      },
+      "relevant_match_count_rank": {
+        "92108b5bb6dcc5b2227d531c": 1
+      },
+      "relevant_in_oversample": [
+        "92108b5bb6dcc5b2227d531c"
+      ],
+      "relevant_in_all": [
+        "92108b5bb6dcc5b2227d531c"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206",
+      "query": "按《中国移动智慧家庭全光组网产品技术规范》V2.0.0 第 4.8.2 节，全光组网终端出厂后可以保留什么账号？",
+      "tokens": [
+        "v2",
+        "0",
+        "0",
+        "4",
+        "8",
+        "2",
+        "按",
+        "中国",
+        "国移",
+        "移动",
+        "动智",
+        "智慧"
+      ],
+      "token_match_count": 443,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        5
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        5
+      ],
+      "relevant_match_count": {
+        "81951fb8b5e157346ed83d77": 11
+      },
+      "relevant_match_count_rank": {
+        "81951fb8b5e157346ed83d77": 44
+      },
+      "relevant_in_oversample": [
+        "81951fb8b5e157346ed83d77"
+      ],
+      "relevant_in_all": [
+        "81951fb8b5e157346ed83d77"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:5d0db5acf870d6545edfa8cf4b6a57f9208ffe39b392c47c0d6acb2d21f96e33",
+      "query": "铁塔专项维修的工作内容包括哪些？",
+      "tokens": [
+        "铁塔",
+        "塔专",
+        "专项",
+        "项维",
+        "维修",
+        "修的",
+        "的工",
+        "工作",
+        "作内",
+        "内容",
+        "容包",
+        "包括"
+      ],
+      "token_match_count": 326,
+      "old_pool_ids": [
+        "7bd438a6e96bd608918543bc",
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "2a7f16b2864963c72902351f",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "84139f0d408339d51910bb1e",
+        "4812f97659f77c46891223fa",
+        "144e5bb0bd204af1664a969c",
+        "5183d18205e64c4836ba9020",
+        "859e0391143c967ade455f91",
+        "546f017c81972bb8f8da4d1d",
+        "4f32247f7a6d7526df77bddd"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1,
+        2
+      ],
+      "fix_oversample_top10_ranks": [
+        1,
+        2
+      ],
+      "a2_top10_ranks": [
+        1,
+        2
+      ],
+      "relevant_match_count": {
+        "4931f1a7b903ba2672bbb512": 5,
+        "611a9eb6554a2b482561c775": 8
+      },
+      "relevant_match_count_rank": {
+        "611a9eb6554a2b482561c775": 1,
+        "4931f1a7b903ba2672bbb512": 6
+      },
+      "relevant_in_oversample": [
+        "4931f1a7b903ba2672bbb512",
+        "611a9eb6554a2b482561c775"
+      ],
+      "relevant_in_all": [
+        "4931f1a7b903ba2672bbb512",
+        "611a9eb6554a2b482561c775"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:4fe9bbf65368789a96fec628474fc6bfc870786f30c9c305f0da4cd8df09375a",
+      "query": "《电信基础设施维护规程》表 10.3.3.30（WH23130）规定，机房室外环境清理的工作内容是什么？",
+      "tokens": [
+        "10",
+        "3",
+        "3",
+        "30",
+        "wh23130",
+        "电信",
+        "信基",
+        "基础",
+        "础设",
+        "设施",
+        "施维",
+        "维护"
+      ],
+      "token_match_count": 440,
+      "old_pool_ids": [
+        "5d5fd6cf18ea4e313fdc45b5",
+        "c03289565d5cc78f2b44cfca",
+        "5b25186e3e9342c92e5a3670",
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "3b8f42f7061b1f1a8e2205a6",
+        "469978708f9fe4506fc1fa7f",
+        "2a7f16b2864963c72902351f",
+        "bdc9ea567c0d78ab37c2cf77",
+        "06e68d69881bfa6bffefd124",
+        "3b1f839571de44bb1abd2f94",
+        "958047c40a522ec22f73e5a5",
+        "e69ef87cafd302938c765e20",
+        "a36043b8ee1a391f2dd1c31a",
+        "2d70309c35065f6a38c507ed",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "84139f0d408339d51910bb1e",
+        "7bd438a6e96bd608918543bc"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "a264a91966d85e2ec3b52e02": 12
+      },
+      "relevant_match_count_rank": {
+        "a264a91966d85e2ec3b52e02": 1
+      },
+      "relevant_in_oversample": [
+        "a264a91966d85e2ec3b52e02"
+      ],
+      "relevant_in_all": [
+        "a264a91966d85e2ec3b52e02"
+      ]
+    },
+    {
+      "gold_case_id": "gold-batch02-sha256:f60c41c855e4aca2f381666e34c23cc4466e2291b004c8c55340a4709193cea3",
+      "query": "WH23131004项目对应的防水处理范围是什么？",
+      "tokens": [
+        "wh23131004",
+        "项目",
+        "目对",
+        "对应",
+        "应的",
+        "的防",
+        "防水",
+        "水处",
+        "处理",
+        "理范",
+        "范围",
+        "围是"
+      ],
+      "token_match_count": 320,
+      "old_pool_ids": [
+        "4723262fed91f6b5026a5480",
+        "d349f789d2e652960680ae1c",
+        "2a7f16b2864963c72902351f",
+        "3b1f839571de44bb1abd2f94",
+        "040027c36550d1be45910c33",
+        "2509d80e408074ca90ad79a6",
+        "cdcc369a72b7aaa79fefb319",
+        "84139f0d408339d51910bb1e",
+        "3c9c81f21d4df15d5cb812c4",
+        "5183d18205e64c4836ba9020",
+        "a7db14a3391bc332376a980d",
+        "81657f3072d88fc4ffe4762b",
+        "c9798c374ba5448e95e08c22",
+        "a8887b02ae32e4d4748ad264",
+        "d60c3992acb84d003c25c027",
+        "63cc4ceb1bdbab4ee0bb6159",
+        "1e2bd5122cd13762094dde86",
+        "3ef6f0c2eb6c280b4b3a262b",
+        "00f7942e754f0fcdd7c2fa53",
+        "5d5fd6cf18ea4e313fdc45b5"
+      ],
+      "old_pool_has_relevant": [],
+      "old_top10_ranks": [],
+      "fix_all_top10_ranks": [
+        1
+      ],
+      "fix_oversample_top10_ranks": [
+        1
+      ],
+      "a2_top10_ranks": [
+        1
+      ],
+      "relevant_match_count": {
+        "95cb40813342a7e91c27e7d3": 5
+      },
+      "relevant_match_count_rank": {
+        "95cb40813342a7e91c27e7d3": 1
+      },
+      "relevant_in_oversample": [
+        "95cb40813342a7e91c27e7d3"
+      ],
+      "relevant_in_all": [
+        "95cb40813342a7e91c27e7d3"
+      ]
+    }
+  ]
+}

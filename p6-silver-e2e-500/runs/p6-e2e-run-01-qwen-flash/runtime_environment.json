@@ -1,0 +1,11 @@
+{
+  "note": "Redis8.1.0 installed as declared project dependency before real processor initialization; no production code or RAG parameter changes.",
+  "packages": {
+    "openai": "2.41.1",
+    "psycopg": "3.3.4",
+    "pytest": "9.2.0",
+    "redis": "8.1.0"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

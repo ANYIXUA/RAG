@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH41103001 敷设塑料线槽 64.65 43.86 12.02 8.77 消耗量 0.38 —",
+    "reason": "综合单价与消耗量均匹配上下文",
+    "score": 1
+  },
+  "case_id": "p6s-0332",
+  "citation_correctness": {
+    "evidence": "WH41103001 敷设塑料线槽 64.65 43.86 12.02 8.77 消耗量 0.38 —",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "计量单位：十米 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41103001 敷设塑料线槽 64.65 43.86 12.02 8.77 消耗量 0.38 —",
+    "reason": "涵盖问题所需全部条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH41103001 敷设塑料线槽 64.65 43.86 12.02 8.77 消耗量 0.38 —",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "44225c08710b48f3a45f3d3389ea3962",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0434",
+  "citation_correctness": {
+    "evidence": "重点考察服务礼仪、交付技巧、沟通能力等服务能力。[1]",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "评估维度包括职业道德、职业规范及专业知识等。[3]",
+    "reason": "遗漏关键评估维度",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "人员绩效评估基于理论知识与技能实操两部分考核。[3]",
+    "reason": "部分事实有引用，但不完整",
+    "score": 0.5
+  },
+  "flags": [
+    "unanswerable_question",
+    "overconfident_response"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "b4e8d943e4744f81beeba69d9400bcc7",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "应拒答却给出推测性回答",
+    "score": 0
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

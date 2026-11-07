@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:47.108723+08:00",
+  "conservative_cost_yuan": 0.0007989,
+  "error": null,
+  "latency_ms": 1325.8184001315385,
+  "list_price_estimate_yuan": 0.0006294,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 落地式室内有源综合柜安装人工费为212.04元。[1]  \n2. 带电更换空气开关，综合单价应乘以系数2.0。[2]  \n3. 该系数适用于带电施工作业场景。[2]  \n4. 非电源分配架内更换空开单价为18.24元。[1]  \n5. 人工费包含在综合单价中，具体见项目明细。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881185,
+    "id": "chatcmpl-ba99adad-da5e-962f-b691-a8c6e180a2a9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3066,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3179
+    }
+  },
+  "usage_known": true
+}

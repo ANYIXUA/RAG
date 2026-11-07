@@ -1,0 +1,149 @@
+{
+  "status": "AUDIT_PREPARED / HUMAN_REVIEW_PENDING",
+  "silver_count": 500,
+  "unique_case_ids": 500,
+  "question_type_counts": {
+    "exact_fact": 200,
+    "procedure": 100,
+    "multi_condition": 100,
+    "unanswerable": 50,
+    "colloquial": 50
+  },
+  "silver_sha256": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+  "expected_silver_sha256": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+  "silver_sha256_matches": true,
+  "result_count": 500,
+  "results_case_id_equal_dataset": true,
+  "filename_case_id_match": true,
+  "execution_success_count": 500,
+  "all_requested_returned_models_qwen_flash": true,
+  "score_success_count": 490,
+  "score_failure_count": 10,
+  "raw_score_failure_count": 18,
+  "recovered_paid_response_count": 8,
+  "historical40_count": 40,
+  "minimum_required_review_count": 82,
+  "expanded_review_count": 94,
+  "all_human_fields_blank": true,
+  "corpus_count": 447,
+  "protected_historical_hash_checks": {
+    "D:\\AgentAIProgect\\RAG\\data\\中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf": {
+      "expected": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "actual": "21584b7e257f02871291a6dc5d84955b6ae5dc74d7dfb8e020736f575d4c6032",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\data\\智慧家庭装维工程与管理职业技能等级标准.pdf": {
+      "expected": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "actual": "fa3d041fb25b65ea0157e17b3d868e5a02e59e7ff677843ba2341af5262ae21c",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\data\\电信基础设施维护规程.pdf": {
+      "expected": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "actual": "9c8962e69d08275318a4f3c2d3e3ed00b3f06a995a54ddabce4d21d48bd18d58",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p3-pilot-01\\pilot_config.json": {
+      "expected": "d7a60b553eb6388eb32bb48617546749e79e6ee18f857366055af1dfa3ceb2bc",
+      "actual": "d7a60b553eb6388eb32bb48617546749e79e6ee18f857366055af1dfa3ceb2bc",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p4-gold-completion-01\\signed-final-20261105-v1\\retrieval_gold_holdout_28.jsonl": {
+      "expected": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c",
+      "actual": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\generate_silver.py": {
+      "expected": "e828ba082ed197e021259077e8d9042c480d72761315b1907aee6da3a6938d06",
+      "actual": "e828ba082ed197e021259077e8d9042c480d72761315b1907aee6da3a6938d06",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\generation_raw.jsonl": {
+      "expected": "435735956a3d748f8c9e61c677b7a7f7647bc56132e886ff4fd6fe2be446b9d9",
+      "actual": "435735956a3d748f8c9e61c677b7a7f7647bc56132e886ff4fd6fe2be446b9d9",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\generation_raw_debug.jsonl": {
+      "expected": "ecf942c50335c427dbc7d56eea729f3b6d98703c118f8b07001a9d92848428a0",
+      "actual": "ecf942c50335c427dbc7d56eea729f3b6d98703c118f8b07001a9d92848428a0",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\generation_summary.json": {
+      "expected": "dc532f0068b8df297f39b9ba8be019116d3c7d4373d4e5dac7ef53eb2c695250",
+      "actual": "dc532f0068b8df297f39b9ba8be019116d3c7d4373d4e5dac7ef53eb2c695250",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\silver_build_summary.json": {
+      "expected": "d2037dae1951b360469f0435156f46e727d59d452c59da5d689c3e47111cf73c",
+      "actual": "d2037dae1951b360469f0435156f46e727d59d452c59da5d689c3e47111cf73c",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\silver_cases.jsonl": {
+      "expected": "ce4a5d9b42ac3786e049ac331047150245b8431745badfd75512fb0119e5346f",
+      "actual": "ce4a5d9b42ac3786e049ac331047150245b8431745badfd75512fb0119e5346f",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\silver_cases_500.jsonl": {
+      "expected": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+      "actual": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\corpus\\p1-20261104-v2\\corpus.jsonl": {
+      "expected": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+      "actual": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-04\\retrieval_gold_batch01_9.jsonl": {
+      "expected": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+      "actual": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-04\\retrieval_gold_batch01_metadata.json": {
+      "expected": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+      "actual": "6aa3b20a867be6c2718cc6621b57b10f42029f883e14ac6be314c44a4a703e39",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-06\\retrieval_gold_batch02_13.jsonl": {
+      "expected": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+      "actual": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+      "matches": true
+    },
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-06\\retrieval_gold_batch02_metadata.json": {
+      "expected": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3",
+      "actual": "a12a31ab2f69c163b6053e66f503d4c28ce48d9322dcebaca9065a996d5211a3",
+      "matches": true
+    }
+  },
+  "projection_checks": {
+    "answers.jsonl": {
+      "count": 500,
+      "unique": 500,
+      "unknown_ids": [],
+      "missing_ids": [],
+      "mismatch_ids": []
+    },
+    "traces.jsonl": {
+      "count": 500,
+      "unique": 500,
+      "unknown_ids": [],
+      "missing_ids": [],
+      "mismatch_ids": []
+    },
+    "scores.jsonl": {
+      "count": 500,
+      "unique": 500,
+      "unknown_ids": [],
+      "missing_ids": [],
+      "mismatch_ids": []
+    }
+  },
+  "run_provenance_files": [
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\run_config.json",
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\runtime_environment.json",
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\effective_settings_redacted.json",
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\measurement_protocol.json",
+    "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\authorization.json"
+  ],
+  "historical_preservation_verification": "source_hashes_before.json compared by validate_archive.py; see static_validation.json",
+  "new_model_requests": 0,
+  "p5_holdout_executed": false
+}

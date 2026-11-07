@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:46.762538+08:00",
+  "input_token_upper_bound": 1166,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0242"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "发包人提供材料的购置清单与机械仪表的使用清单，在计价方式上是否一致？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "6293e88223de4bb9afede74854f3753e",
+  "reserved_yuan": 0.000583
+}

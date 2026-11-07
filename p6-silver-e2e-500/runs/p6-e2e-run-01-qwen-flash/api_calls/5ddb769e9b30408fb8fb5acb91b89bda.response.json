@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:25.016140+08:00",
+  "conservative_cost_yuan": 0.00162285,
+  "error": null,
+  "latency_ms": 3398.0853999964893,
+  "list_price_estimate_yuan": 0.00109185,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确提取山区人工费与利润\",\n    \"evidence\": \"WH21106003 山区 10.94 6.84 2.05 2.05 0.06 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH21106003 山区 10.94 6.84 2.05 2.05 0.06 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"WH21106003 山区 10.94 6.84 2.05 2.05 0.06 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号对应实际来源\",\n    \"evidence\": \"WH21106003 山区 10.94 6.84 2.05 2.05 0.06 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881761,
+    "id": "chatcmpl-2935f860-4874-94ad-9185-4b231c190ad5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 354,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3739,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4093
+    }
+  },
+  "usage_known": true
+}

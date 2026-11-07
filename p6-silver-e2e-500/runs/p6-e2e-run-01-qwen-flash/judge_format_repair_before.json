@@ -1,0 +1,7 @@
+{
+  "scores_written": 47,
+  "score_success": 37,
+  "score_failed": 10,
+  "script_sha256_before_repair": "5e95ed58a61d9cc3adb8b63f1b59f9b22507dcec3d53ed0e30833cea19c9f658",
+  "reason": "Technical Judge JSON truncation plus N/A no_answer_behavior null evidence rejected as schema error. No RAG reruns, grading criteria changes or overwrites."
+}

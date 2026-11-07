@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "WH11011002 丘陵、城区 44.22 30.00 8.22 6.00 0.17 0.17",
+    "reason": "上下文明确支持30.00元",
+    "score": 1
+  },
+  "case_id": "p6s-0450",
+  "citation_correctness": {
+    "evidence": "WH11011002 丘陵、城区 44.22 30.00 8.22 6.00 0.17 0.17",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH11011002 丘陵、城区 44.22 30.00 8.22 6.00 0.17 0.17",
+    "reason": "涵盖问题所有关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH11011002 丘陵、城区 44.22 30.00 8.22 6.00 0.17 0.17",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "exact_match",
+    "direct_reference"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "6cf7160deb5d424f91cc9ab02d3ca0bf",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

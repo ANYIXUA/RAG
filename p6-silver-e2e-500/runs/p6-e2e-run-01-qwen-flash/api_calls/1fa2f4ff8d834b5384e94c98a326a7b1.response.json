@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:44.409217+08:00",
+  "conservative_cost_yuan": 0.0007863,
+  "error": null,
+  "latency_ms": 1372.525499900803,
+  "list_price_estimate_yuan": 0.0006138,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 发电时间超过2小时后，每增加1小时需计0.29工日。[1]  \n2. 山区应急发电超2小时部分按每小时0.29工日计算。[2]  \n3. 该标准适用于山区且发电时长超过2小时的情况。[3]  \n4. 工日计算依据为实际发电次数与超出时长。[3]  \n5. 人工工日单位为“工日”，计量方式为每小时增量。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880943,
+    "id": "chatcmpl-0d0a4b37-a3a9-936a-a8de-ab4a1246be13",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 115,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2942,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3057
+    }
+  },
+  "usage_known": true
+}

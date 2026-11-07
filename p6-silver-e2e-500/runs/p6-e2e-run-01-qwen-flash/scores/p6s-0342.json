@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "装维企业应按月召开生产质量分析会，并作专门记录。",
+    "reason": "与上下文一致，明确提及按月召开。",
+    "score": 1
+  },
+  "case_id": "p6s-0342",
+  "citation_correctness": {
+    "evidence": "各级质量管理部门每月至少一次。",
+    "reason": "引用编号与上下文来源匹配且支持所述内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "每月生产质量分析内容均应进行简要的书面小结，上报上级机构。",
+    "reason": "涵盖频率、记录、上报等关键点。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "装维企业应按月召开生产质量分析会，并作专门记录。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [
+    "correct_citation",
+    "complete_response",
+    "consistent_with_context"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ce3a3300359e478e9bae3c8fd4e866ff",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

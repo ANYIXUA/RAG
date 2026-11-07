@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:48.076008+08:00",
+  "conservative_cost_yuan": 0.0015071999999999998,
+  "error": null,
+  "latency_ms": 3229.116599773988,
+  "list_price_estimate_yuan": 0.0010421999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，覆盖关键检查点。\",\n    \"evidence\": \"铁塔基础表面无蜂窝、麻面、无结构裂缝，基础钢筋无外露。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"塔体构件齐全，各部件连接牢固、无锈蚀。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖检查与处理流程核心步骤。\",\n    \"evidence\": \"六度以上地震或八级以上大风或重裹冰天气后，应对塔身轴线、基础及所有节点作全面观测检查和维护。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持内容。\",\n    \"evidence\": \"特殊天气灾害 按需 1.雷雨天气后，重点检查铁塔基础无下陷或山体滑坡、接地装置牢固。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882024,
+    "id": "chatcmpl-423fc353-a9a9-9e59-a8cc-0adac33e3637",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 310,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3848,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4158
+    }
+  },
+  "usage_known": true
+}

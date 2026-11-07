@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:16.210139+08:00",
+  "conservative_cost_yuan": 0.00071265,
+  "error": null,
+  "latency_ms": 1198.664499912411,
+  "list_price_estimate_yuan": 0.00054915,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 直埋式电杆地线安装流程包括挖沟、安装引接地线、回土夯实等步骤。[1]  \n2. 安装前需确保沟槽开挖符合规范，位置准确。[4]  \n3. 引接地线应牢固连接，避免松动或接触不良。[4]  \n4. 回填时须分层夯实，保证接地可靠性。[1]  \n5. 作业完成后需检查整体安装质量是否达标。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880975,
+    "id": "chatcmpl-10622a33-ae20-9fe7-93af-ad9d0aad9060",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 109,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2571,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2680
+    }
+  },
+  "usage_known": true
+}

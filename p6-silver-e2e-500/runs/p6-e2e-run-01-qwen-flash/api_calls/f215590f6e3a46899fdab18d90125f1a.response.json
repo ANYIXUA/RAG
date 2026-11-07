@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:24.284974+08:00",
+  "conservative_cost_yuan": 0.0015198,
+  "error": null,
+  "latency_ms": 2724.485999904573,
+  "list_price_estimate_yuan": 0.0010322999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文一致，正确建议5GHz频段关联\",\n    \"evidence\": \"对于支持11ax的全光组网终端，测试 STA建议通过5GHz频段与光网关或光路由建立关联\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"对于支持11ax的全光组网终端，测试 STA建议通过5GHz频段与光网关或光路由建立关联\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏部分关键条件如信号强度要求\",\n    \"evidence\": \"光网关和光路由间Wi-Fi信号相互可见，且信号强度为-60dBm±2dBm\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源\",\n    \"evidence\": \"对于支持11ax的全光组网终端，测试 STA建议通过5GHz频段与光网关或光路由建立关联\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881821,
+    "id": "chatcmpl-2740f547-0abe-9ed5-a010-763676d5d930",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 325,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3632,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3957
+    }
+  },
+  "usage_known": true
+}

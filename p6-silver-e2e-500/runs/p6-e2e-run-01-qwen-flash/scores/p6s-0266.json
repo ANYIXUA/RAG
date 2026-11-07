@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0266",
+  "citation_correctness": {
+    "evidence": "优化无线局域网覆盖能改善用户体验。[3]",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "通过销售与沟通技巧提升用户转化率。[1]",
+    "reason": "遗漏市场推广等关键维度",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "运维团队应掌握智能家居组网及场景设置技能。[1]",
+    "reason": "每项事实均来自上下文且无编造",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "overclaiming"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "f01d5359be9647bda294ddd99cc5091b",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "应拒答但未说明无法回答",
+    "score": 0
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

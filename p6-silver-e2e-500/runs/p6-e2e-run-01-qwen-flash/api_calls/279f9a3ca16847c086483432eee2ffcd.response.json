@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:34.160550+08:00",
+  "conservative_cost_yuan": 0.0013158,
+  "error": null,
+  "latency_ms": 2987.1481000445783,
+  "list_price_estimate_yuan": 0.0009153,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"唤醒词设置未在上下文明确说明\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均来自上下文引用\",\n    \"evidence\": \"智能家居场景设置包含语音助手唤醒词配置。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分覆盖问题但缺具体操作\",\n    \"evidence\": \"具体操作需参考设备厂商提供的设置指南。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"智能家居场景设置包含语音助手唤醒词配置。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"未强行编造，提示参考指南\",\n    \"evidence\": \"具体操作需参考设备厂商提供的设置指南。[3]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"partial_coverage\",\n    \"external_dependency\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881951,
+    "id": "chatcmpl-b7f39dd8-c149-976a-ad48-1bf0beb5a5ce",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 267,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3432,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3699
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:20.495983+08:00",
+  "conservative_cost_yuan": 0.0008203499999999999,
+  "error": null,
+  "latency_ms": 1603.275900008157,
+  "list_price_estimate_yuan": 0.0006043499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 直埋式延伸式安装电杆地线综合单价为62.42元/条。[1]  \n2. 延伸式安装电杆地线综合单价为86.16元/条。[1]  \n3. 更换电杆地线中直埋式综合单价为62.42元/条。[1]  \n4. 更换电杆地线中延伸式综合单价为86.16元/条。[1]  \n5. 以上数据均来自《电信基础设施维护规程》第209页表10.2.2.20。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881158,
+    "id": "chatcmpl-a934443b-b331-9fad-8c1a-43ad0d513a0e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 144,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2589,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2733
+    }
+  },
+  "usage_known": true
+}

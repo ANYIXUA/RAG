@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:20:08.027840+08:00",
+  "input_token_upper_bound": 1177,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0481"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "铁塔基础回弹均值必须符合设计要求，这个要求的周期是多久？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "32f65cf78af3412e9bda44101ab87848",
+  "reserved_yuan": 0.0005885
+}

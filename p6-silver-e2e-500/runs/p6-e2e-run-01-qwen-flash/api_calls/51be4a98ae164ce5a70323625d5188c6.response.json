@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:50.486696+08:00",
+  "conservative_cost_yuan": 0.0017353499999999999,
+  "error": null,
+  "latency_ms": 4267.775899963453,
+  "list_price_estimate_yuan": 0.00110985,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确给出54.19元，与上下文一致\",\n    \"evidence\": \"WH12004001 安装拉线隔电子、警示 保护管 安装拉线隔电子 79.87 54.19 14.85 10.84\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH12004001 安装拉线隔电子、警示 保护管 安装拉线隔电子 79.87 54.19 14.85 10.84\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答问题所需费用信息\",\n    \"evidence\": \"WH12004001 安装拉线隔电子、警示 保护管 安装拉线隔电子 79.87 54.19 14.85 10.84\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]正确对应来源\",\n    \"evidence\": \"WH12004001 安装拉线隔电子、警示 保护管 安装拉线隔电子 79.87 54.19 14.85 10.84\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881786,
+    "id": "chatcmpl-01c08464-48e9-95aa-9491-1b4e84f45c5d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 417,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3229,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3646
+    }
+  },
+  "usage_known": true
+}

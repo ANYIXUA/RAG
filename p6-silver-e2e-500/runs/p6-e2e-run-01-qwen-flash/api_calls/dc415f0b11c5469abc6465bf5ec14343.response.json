@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:42.462774+08:00",
+  "conservative_cost_yuan": 0.0007099500000000001,
+  "error": null,
+  "latency_ms": 1345.5034999642521,
+  "list_price_estimate_yuan": 0.00054345,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 光路由终端二维码尺寸不小于17×17mm，公差±1mm，为正方形。[1]  \n2. 二维码打印分辨率需大于300dpi。[1]  \n3. 二维码颜色应为黑色，黏贴于终端背面。[2]  \n4. 二维码文字为“二维码”，字号5.5PT，紧贴边缘线。[1]  \n5. 材质要求防水、防潮、防老化、防磨损。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880881,
+    "id": "chatcmpl-7b0cea0c-266b-9693-92b6-b2ca7dd50dd3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2513,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2624
+    }
+  },
+  "usage_known": true
+}

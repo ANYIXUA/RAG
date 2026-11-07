@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:10.853067+08:00",
+  "conservative_cost_yuan": 0.0006935999999999999,
+  "error": null,
+  "latency_ms": 1429.8646999523044,
+  "list_price_estimate_yuan": 0.0005435999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 优化设备联动需掌握智能家居子系统协同原理。[2]  \n2. 应熟悉有线与无线系统在家庭总线中的拓展应用。[2]  \n3. 需具备家庭网络拓扑设计与优化能力。[2]  \n4. 建议采用矢量制图设计完成智能设备模型搭建。[3]  \n5. 要求掌握智能组网方案设计及配置方法。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881089,
+    "id": "chatcmpl-237c98fb-0e1c-96df-ac65-237c99fb570e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2624,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2724
+    }
+  },
+  "usage_known": true
+}

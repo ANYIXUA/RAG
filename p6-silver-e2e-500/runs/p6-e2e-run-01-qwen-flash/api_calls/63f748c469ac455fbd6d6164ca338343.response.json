@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:10.401740+08:00",
+  "conservative_cost_yuan": 0.0031900500000000003,
+  "error": null,
+  "latency_ms": 7506.557500222698,
+  "list_price_estimate_yuan": 0.00185505,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"实际上下文[1]明确指出‘须支持MCS15，推荐支持MCS14’，与问题直接相关。但模型在回答中引用了[6]，而实际上下文仅包含[1][2][3]，无[6]。尽管内容正确，但引用编号错误，且未在任何chunk中出现，导致无法确认其来源。因此，因引用不匹配，无法判断答案是否基于真实上下文，故answer_correctness为null。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第25页\\n定位信息：25\\n... 6. 须支持覆盖增强相关技术，须支持MCS15，推荐支持MCS14。\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"模型声称‘推荐支持MCS14’的事实虽在上下文[1]中存在，但其引用编号为[6]，而实际上下文仅提供[1][2][3]，无[6]。其余所有陈述（如MCS14为可选推荐功能、出自V2.0.0等）均未在任一chunk中出现或支持。因此，所有事实均无实际上下文支持，属于虚构引用和编造内容。\",\n    \"evidence\": \"实际上下文仅包含[1][2][3]，无[6]；且[6]未在任何chunk中出现。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"回答中包含了核心事实‘推荐支持MCS14’，并提及MCS15为必选，基本覆盖了问题所需条件。但遗漏了关键细节：该要求出自IEEE 802.11be协议下的具体条款，且未准确说明MCS15与MCS14的层级关系（必选 vs 推荐）。此外，部分描述如‘用于增强覆盖与兼容性’虽合理，但未在上下文中找到依据，属推测。因此，虽有部分完整，但存在缺失与推断。\",\n    \"evidence\": \"[1] ... 须支持MCS15，推荐支持MCS14。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有句子均引用[6]，但实际检索上下文仅包含[1][2][3]，无[6]。引用编号[6]不存在于任何chunk中，且source_index_mapping中也未映射到[6]。因此，引用完全错误，无法对应任何实际来源。\",\n    \"evidence\": \"source_index_mapping: [{\\\"index\\\": 1, \\\"chunk_id\\\": \\\"4812f97659f77c46891223fa\\\"}, {\\\"index\\\": 2, \\\"chunk_id\\\": \\\"e69ef87cafd302938c765e20\\\"}, {\\\"index\\\": 3, \\\"chunk_id\\\": \\\"a36043b8ee1a391f2dd1c31a\\\"}, {\\\"index\\\": 4, \\\"chunk_id\\\": \\\"acbdb12c2a62c12fe9787ef7\\\"}] —— 无[6]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，上下文中有明确答案。模型应答而非拒答，符合预期行为。因此无需评分拒答行为。\",\n    \"evidence\": \"问题类型为exact_fact，上下文存在明确答案\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_citation\",\n    \"unreferenced_claim\",\n    \"overclaim\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881442,
+    "id": "chatcmpl-8a7153dc-6c53-94d8-8d18-85c3776654c3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 890,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3467,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4357
+    }
+  },
+  "usage_known": true
+}

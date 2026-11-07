@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "落地式室内有源综合柜 339.26 212.04 63.61 63.61 1.86",
+    "reason": "上下文明确支持人工费与系数",
+    "score": 1
+  },
+  "case_id": "p6s-0453",
+  "citation_correctness": {
+    "evidence": "注：本子目中更换空开和熔断器为不带电施工作业，如带电施工作业，综合单价乘以系数2.0。",
+    "reason": "引用编号与上下文匹配正确",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "落地式室内有源综合柜 339.26 212.04 63.61 63.61 1.86",
+    "reason": "完整覆盖问题所有条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "注：本子目中更换空开和熔断器为不带电施工作业，如带电施工作业，综合单价乘以系数2.0。",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ffc9dccc5c8947e4a19b8174fcaea7d5",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

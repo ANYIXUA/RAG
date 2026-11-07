@@ -1,4 +1,4 @@
-﻿"""向量存储和混合检索实现。"""
+"""向量存储和混合检索实现。"""
 
 from __future__ import annotations
 
@@ -16,7 +16,6 @@ from rag_app.core.text_utils import tokenize_for_keyword_search
 
 BM25_K1 = 1.5
 BM25_B = 0.75
-
 
 @dataclass(frozen=True)
 class VectorRecord:
@@ -193,7 +192,6 @@ class PostgresVectorStore:
                 records,
                 self._query_keyword_candidates(
                     query_text=query_text or "",
-                    limit=actual_candidate_k,
                 ),
             )
         if not records:
@@ -380,15 +378,15 @@ class PostgresVectorStore:
         }
         return records, scores
 
-    def _query_keyword_candidates(self, query_text: str, limit: int) -> list[VectorRecord]:
-        tokens = tokenize_for_keyword_search(query_text)[:12]
+    def _query_keyword_candidates(self, query_text: str) -> list[VectorRecord]:
+        """字面召回不提前截断；授权过滤与 BM25 TopN 仍由统一排序入口处理。"""
+        tokens = list(dict.fromkeys(tokenize_for_keyword_search(query_text)))
         if not tokens:
             return []
         predicates = " OR ".join(["chunk_text ILIKE %s"] * len(tokens))
         params: list[Any] = [
             self.collection_name,
             *[f"%{token}%" for token in tokens],
-            limit,
         ]
         psycopg, dict_row, _ = _import_psycopg()
         with psycopg.connect(self.dsn, row_factory=dict_row) as connection:
@@ -402,8 +400,7 @@ class PostgresVectorStore:
                     WHERE collection_name = %s
                       AND status = 'active'
                       AND ({predicates})
-                    ORDER BY priority DESC, updated_at DESC
-                    LIMIT %s
+                    ORDER BY chunk_id ASC
                     """,
                     tuple(params),
                 )

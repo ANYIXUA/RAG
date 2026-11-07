@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:54.525337+08:00",
+  "conservative_cost_yuan": 0.00107085,
+  "error": null,
+  "latency_ms": 1978.1896001659334,
+  "list_price_estimate_yuan": 0.00069285,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答覆盖职业能力特征核心要求\",\n    \"evidence\": \"4.6 职业能力特征 .................................................................... 6\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"4.6 职业能力特征 .................................................................... 6\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖基本要求且无遗漏\",\n    \"evidence\": \"4.6 职业能力特征 .................................................................... 6\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"4.6 职业能力特征 .................................................................... 6\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882092,
+    "id": "chatcmpl-e0a55597-cec3-969f-b55b-5840ded78db2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 252,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2099,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2351
+    }
+  },
+  "usage_known": true
+}

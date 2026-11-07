@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:41.418522+08:00",
+  "conservative_cost_yuan": 0.0017071500000000002,
+  "error": null,
+  "latency_ms": 4252.552000107244,
+  "list_price_estimate_yuan": 0.0011596500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"内容与上下文一致，无遗漏\",\n    \"evidence\": \"WH23129002 角钢塔、三管塔、四管塔35m 以上 395.81 247.38 74.21 74.21 2.17 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"工作内容：塔体结构检查、螺丝紧固、漆面除锈刷漆、塔基强度测试等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有关键操作步骤\",\n    \"evidence\": \"塔体结构检查、螺丝紧固、漆面除锈刷漆、塔基强度测试等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配\",\n    \"evidence\": \"WH23129002 角钢塔、三管塔、四管塔35m 以上 395.81 247.38 74.21 74.21 2.17 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881957,
+    "id": "chatcmpl-6dcf695a-c22e-9f01-bd47-06fe50a998ff",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 365,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4081,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4446
+    }
+  },
+  "usage_known": true
+}

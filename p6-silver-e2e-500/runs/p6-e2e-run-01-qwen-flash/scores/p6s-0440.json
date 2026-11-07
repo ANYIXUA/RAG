@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "4.7.0.2 突发事件发生时，维护企业技术人员应迅速赶往突发事件现场",
+    "reason": "准确涵盖突发事件处理流程",
+    "score": 1
+  },
+  "case_id": "p6s-0440",
+  "citation_correctness": {
+    "evidence": "应急预案的编制应包括以下内容： a） 应急组织方案；",
+    "reason": "引用[4.7.0.6]格式错误",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "处理方案应按光缆线路障碍抢修流程、光缆线路割接流程、光缆线路迁移改造流程予以实施",
+    "reason": "覆盖关键处理步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "重大突发事件，维护企业必须进行全天24 小时看护",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "citation_format_issue"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "b023fff1aadc4742bfdc7548eafcaf0e",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:37.911095+08:00",
+  "conservative_cost_yuan": 0.00025245,
+  "error": null,
+  "latency_ms": 437.6221999991685,
+  "list_price_estimate_yuan": 0.00021945,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 设备端口安全要求对应的条目编号是4.8.5。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881057,
+    "id": "chatcmpl-348056ca-378b-90fb-8978-1676a959382e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 22,
+      "completion_tokens_details": null,
+      "prompt_tokens": 1243,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 1265
+    }
+  },
+  "usage_known": true
+}

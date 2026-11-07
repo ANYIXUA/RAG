@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:50.510949+08:00",
+  "conservative_cost_yuan": 0.0007400999999999999,
+  "error": null,
+  "latency_ms": 1670.7876999862492,
+  "list_price_estimate_yuan": 0.0005720999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 员工绩效评估应基于技能掌握程度，如故障处理能力。[1]  \n2. 需考核基础业务运维能力，包括光纤到户与交互式电视故障处理。[2]  \n3. 智能组网及家庭总线组网操作能力为关键评估项。[2]  \n4. 服务能力如交付、沟通、销售技巧需纳入绩效评价。[1]  \n5. 安全作业规范执行情况是绩效评估的重要维度。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881188,
+    "id": "chatcmpl-a5ea1baf-65a3-99d1-9b30-4d184a9b524a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2694,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2806
+    }
+  },
+  "usage_known": true
+}

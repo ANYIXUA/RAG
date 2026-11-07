@@ -1,0 +1,478 @@
+[
+  {
+    "review_id": "B23",
+    "candidate_id": "sha256:0f3b338e277722ef4de67a59096d7e8c931138eb05c300808fc9d2ea9a186468",
+    "proposal_id": "p4-proposal-sha256:a433cbe72f160fcb4bc499fa586e50c39f58b8bd42198251edcf7f4a509ec026",
+    "review_record_sha256": "99b04f59b23b5fb747a7ec313d9dad1023743dc9adf4c678c5be561e166e67e0",
+    "worksheet": "签核",
+    "row": 39,
+    "recorded_human_fields": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "reserve_development_overlap",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted",
+    "resolution_note": "明确接受原题，未替换为AI修订；与Development共用Chunk，未纳入本版Holdout。"
+  },
+  {
+    "review_id": "B28",
+    "candidate_id": "sha256:9a72d01ef8f3b71904144877056fb2cf2f9ee7b02801140c14be922bb5fd8e9f",
+    "proposal_id": "p4-proposal-sha256:eb111d18e66b2e9d74262f59c5c1ed6419ec5a6c0c818ee92361037aec465715",
+    "review_record_sha256": "e92507c7ba8c3d3103be097ab98d919aaffc467b06420333ed39c682f02fa9dc",
+    "worksheet": "签核",
+    "row": 40,
+    "recorded_human_fields": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "reserve_development_overlap",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B29",
+    "candidate_id": "sha256:2769ae9af89aab01bd8aead8897e96ebbe6e4f64ef305bcd59780fb192171860",
+    "proposal_id": "p4-proposal-sha256:edb3fa6e8c74e9d8be8b6b879043c3efa2465cf2e32fa447dc1f9bfaed2b0fc3",
+    "review_record_sha256": "da7d5a099263299110ecc38064133cdc5b4624c8356c78325da8bfb4fde017f0",
+    "worksheet": "签核",
+    "row": 41,
+    "recorded_human_fields": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "reserve_development_overlap",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B30",
+    "candidate_id": "sha256:0691d0137cbe702a2ec0ed5fa33ab55628575d96781bf456d853a7d6d10191fe",
+    "proposal_id": "p4-proposal-sha256:9660cfa56deb0e63fab7bfdba1e6b137d044a19e69078b164859e39a398efe85",
+    "review_record_sha256": "2c24625376fbeacd3908e89de9c1142b794bc3dbe7dd0f63b30cccbde5b3d6fa",
+    "worksheet": "签核",
+    "row": 42,
+    "recorded_human_fields": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "reserve_development_overlap",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B31",
+    "candidate_id": "sha256:e74e6386379043f840835ab6571daade945ae870605a1d5f46da3dae7a977264",
+    "proposal_id": "p4-proposal-sha256:6e8978927961a3979a98c61b2e8862fb68d07b5eaba5eaed3b1cbaaa295eb128",
+    "review_record_sha256": "c2fd2e481b672f496f2d7cbc8af1a6528c38ae3d82a75ff1496ba5104f48d794",
+    "worksheet": "签核",
+    "row": 43,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "exclude_ai_reject",
+    "dataset_membership": "not_exported",
+    "resolution_status": "pending_missing_revised_proposal",
+    "resolution_reason": "接受修订，但原审核包无修订题答，且为AI Reject；不自动批准占位日期或不完整比较。"
+  },
+  {
+    "review_id": "B36",
+    "candidate_id": "sha256:5d42c5b4ccd006231d17ae08a942cef1de654e37e64092884cae899a372110b4",
+    "proposal_id": "p4-proposal-sha256:a749061be8e49f7f646d52355412465b09eb27e516af7889a98062b106d63e46",
+    "review_record_sha256": "4025a344fd2ac5b4d277c92ddfa3f19f0ca70d01c8345f1f881610122cb1f321",
+    "worksheet": "签核",
+    "row": 44,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "reserve_development_overlap",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted",
+    "resolution_note": "题答与原题同版；保留原始选择，不虚构修订内容。未纳入本版28条Holdout。"
+  },
+  {
+    "review_id": "B37",
+    "candidate_id": "sha256:7fe4ebfaf574ebd0825e8f2d4541c494239212b9c9f0c0dac94fb989a2eecf2d",
+    "proposal_id": "p4-proposal-sha256:4a916af76cbabe6e194023a8fdb0ce9b044f8fd254e771e6a1183ad0204ba01d",
+    "review_record_sha256": "0526ea0ddf685f14a25286e9f6364875f2e0d34dd2a94fb680a7001268c6522d",
+    "worksheet": "签核",
+    "row": 45,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "reserve_development_overlap",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted",
+    "resolution_note": "题答与原题同版；保留原始选择，不虚构修订内容。未纳入本版28条Holdout。"
+  },
+  {
+    "review_id": "B38",
+    "candidate_id": "sha256:2bbfb4a82fec1d093c88df135fb2f44eae2c0a27dcfd428bd8b7db7788180a76",
+    "proposal_id": "p4-proposal-sha256:e0f275ec01884e905cb0fb7bc46fc66bd64992acfb7ddc1e8f9ed6d1734ca365",
+    "review_record_sha256": "54cacedb79c76130e931cd8ae4ff6e408f7aff4210a7ba25e13cea38c56264e5",
+    "worksheet": "签核",
+    "row": 46,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "exclude_fact_union",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B39",
+    "candidate_id": "sha256:d2bbc8a14069a7efff2b77ffee9522792c095fafbdfdad8ee4e8fa53a21a6f39",
+    "proposal_id": "p4-proposal-sha256:0055eb49cf5e16f713338997988c0f46b1d14dded0654b81e4c44597f17d37ad",
+    "review_record_sha256": "1ea01a91000a5b90bc1121b054d1538e0c89788bee0e74654c16df1901417613",
+    "worksheet": "签核",
+    "row": 47,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "exclude_ai_reject",
+    "dataset_membership": "not_exported",
+    "resolution_status": "pending_missing_revised_proposal",
+    "resolution_reason": "接受修订，但原审核包无修订题答，且为AI Reject；不自动批准占位日期或不完整比较。"
+  },
+  {
+    "review_id": "B43",
+    "candidate_id": "sha256:e13b3e08b91f8ecc93a8f721859cde4e7d28675abb53ff5249a4334925abce47",
+    "proposal_id": "p4-proposal-sha256:983f9bfc932b378c167626940eba9dc4fe290dc3fe0a72f45571fe83a34eab36",
+    "review_record_sha256": "7cd305d5530314ad544112db57ba6a7b82ab69be4bc89e6a7e2918f598732c5d",
+    "worksheet": "签核",
+    "row": 48,
+    "recorded_human_fields": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "holdout_reserve_proposed",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B44",
+    "candidate_id": "sha256:450131450e1fd2c9b087c8d9990ec5667dc54c25c979b4fb5929307174570c36",
+    "proposal_id": "p4-proposal-sha256:6a1b6f931fa3d68a50f60097862e349af77bf683296b6655e434c8fb5ae22ef3",
+    "review_record_sha256": "d68f698da86d46936a68fa083d974185444f045bee6f6856f1eac1136ffcf5d8",
+    "worksheet": "签核",
+    "row": 49,
+    "recorded_human_fields": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "holdout_reserve_proposed",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B45",
+    "candidate_id": "sha256:de211868b35c7ce7c3fc759a17333f5829c97542cbfdafcadbb0445afc020266",
+    "proposal_id": "p4-proposal-sha256:be9cd5f8c712e98c66702e141b3e3ed9ba2aa0b74fc1e44c878d14d57083322f",
+    "review_record_sha256": "353ba131447a9087e431f34f8bd703476e0ada8fd90dad52c292211d47ede1d0",
+    "worksheet": "签核",
+    "row": 50,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "alternative_subset",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted",
+    "resolution_note": "题答与原题同版；保留原始选择，不虚构修订内容。未纳入本版28条Holdout。"
+  },
+  {
+    "review_id": "B46",
+    "candidate_id": "sha256:d3109d6f7c5c9e35cef41bc51a466b88a5710a071e90e19c393e7ec18be79879",
+    "proposal_id": "p4-proposal-sha256:c009f90915cb5e72c63fc13fe2ae77a1e574ecaf52d5ff77367fe7efd0829388",
+    "review_record_sha256": "f9e768461ef6c75ee29eb986cbf90d1589060db494f3081e060df79cffdbb643",
+    "worksheet": "签核",
+    "row": 51,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "alternative_subset",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted",
+    "resolution_note": "题答与原题同版；保留原始选择，不虚构修订内容。未纳入本版28条Holdout。"
+  },
+  {
+    "review_id": "B47",
+    "candidate_id": "sha256:be11ad9c57042e53066edc836c22ea22c1df359c8f46d7bc09e5beca283fdef2",
+    "proposal_id": "p4-proposal-sha256:8b9e92d293c3a87c909a66909aa25d954928bf7e89cd2eba461f146038bf05f9",
+    "review_record_sha256": "71a8b1b40e6743b04591a26890beade4bcbbbefdb1dc626000c463024283311d",
+    "worksheet": "签核",
+    "row": 52,
+    "recorded_human_fields": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "reserve_development_overlap",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B51",
+    "candidate_id": "sha256:7b3828d049462c38db624dc89d1733b296d18c8673d71242117f95c3413f7e8c",
+    "proposal_id": "p4-proposal-sha256:36fdee4eadd77d3cd656e2668bd0ab291a8ce366ccf9c2c38f3afd311a7d8b30",
+    "review_record_sha256": "84915e4c25cc9d2394dfe2b95d085631b5a5fcdff5d96a7191aec58191afa016",
+    "worksheet": "签核",
+    "row": 53,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "reserve_development_overlap",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B52",
+    "candidate_id": "sha256:8d25da17cd828fdd5a472d80f1de41390f9e26616d31ff42715c6436e79fff2b",
+    "proposal_id": "p4-proposal-sha256:4ccb2e148e7eb3158c97df2c70b24336cbffcda3fa98aef14f61022851f5e4e5",
+    "review_record_sha256": "a616e18701836315d1586695ddc6847d584656041680c16f53ba358e1f79a91f",
+    "worksheet": "签核",
+    "row": 54,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "holdout_reserve_proposed",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  },
+  {
+    "review_id": "B55",
+    "candidate_id": "sha256:672fe784fc33b88b4fb7660dcda841815d3c30a876eb39164ce3909a9d765374",
+    "proposal_id": "p4-proposal-sha256:4b72f68e2fb5c90c6210bac3ad2c4605888e374609ff56b36ac70ac27879b0cd",
+    "review_record_sha256": "027fdf9e080c218fed2bdcbd8d71643bc26dd5126c0e87e16a930675f858555b",
+    "worksheet": "签核",
+    "row": 55,
+    "recorded_human_fields": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受修订",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "holdout_reserve_proposed",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted",
+    "resolution_note": "题答与原题同版；保留原始选择，不虚构修订内容。未纳入本版28条Holdout。"
+  },
+  {
+    "review_id": "B56",
+    "candidate_id": "sha256:5972f5480aeed3b4b705cc948d70c8ac5034cd30cb5c1ca0f9c2c08206a17c99",
+    "proposal_id": "p4-proposal-sha256:af9ae495db1ad6f80ce447d0a5138baf3c1d3c17b394ec826d6697054732fdc2",
+    "review_record_sha256": "14b3d415befaf292022194379bfe482aefa21889e293a2f9093f1133617e54a0",
+    "worksheet": "签核",
+    "row": 56,
+    "recorded_human_fields": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "=NOW()",
+      "human_comment": null
+    },
+    "cached_reviewed_at_for_audit_only": "2026-11-05T15:08:15.340000",
+    "cached_status_for_audit_only": "需补身份日期",
+    "archived_review_metadata": {
+      "human_decision": "接受原题",
+      "human_reviewer": "system",
+      "human_reviewed_at": "2026-11-05",
+      "human_comment": null
+    },
+    "metadata_confirmation": "确认：审核标识 system，日期 2026-11-05",
+    "selection_tier": "holdout_reserve_proposed",
+    "dataset_membership": "not_exported",
+    "resolution_status": "recorded_nonprimary_not_promoted"
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:08.148361+08:00",
+  "conservative_cost_yuan": 0.0006789,
+  "error": null,
+  "latency_ms": 1209.5139001030475,
+  "list_price_estimate_yuan": 0.0005409,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 销项税额计算基础包括维护分项作业费。[2]  \n2. 包含材料及备品备件购置费（不含甲供部分）。[2]  \n3. 包含机械仪表使用费（不含甲供部分）。[2]  \n4. 包括措施项目费和规费。[2]  \n5. 包括安全生产费和其他项目费。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880906,
+    "id": "chatcmpl-90c6a692-2a38-9030-87e0-b4097de48752",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 92,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2686,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2778
+    }
+  },
+  "usage_known": true
+}

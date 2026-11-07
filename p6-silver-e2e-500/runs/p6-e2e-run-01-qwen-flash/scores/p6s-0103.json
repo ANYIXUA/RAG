@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "安装馈线密封窗：开箱检验、清洁搬运、安装加固、密封处理、清理现场；",
+    "reason": "步骤与上下文完全一致",
+    "score": 1
+  },
+  "case_id": "p6s-0103",
+  "citation_correctness": {
+    "evidence": "安装馈线密封窗：开箱检验、清洁搬运、安装加固、密封处理、清理现场；",
+    "reason": "引用编号对应正确来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "安装馈线密封窗：开箱检验、清洁搬运、安装加固、密封处理、清理现场；",
+    "reason": "涵盖全部必要步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "安装馈线密封窗：开箱检验、清洁搬运、安装加固、密封处理、清理现场；",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "2439ae7f8e27447c93965bea469a383d",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

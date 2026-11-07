@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:33.760498+08:00",
+  "conservative_cost_yuan": 0.00076905,
+  "error": null,
+  "latency_ms": 1931.6666000522673,
+  "list_price_estimate_yuan": 0.0005785499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 市区接地网电阻测试人工费为5.70元。[2]  \n2. 平原丘陵区天线发射功率测试人工费为13.68元。[1]  \n3. 两项费用均按“站·次”和“扇区·次”计量单位计价。[3]  \n4. 人工费包含在综合单价中，不含企业管理费与利润。[1][2]  \n5. 数据依据来自《电信基础设施维护规程》第246、248页。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881051,
+    "id": "chatcmpl-3a9f4ee6-1222-952d-82cb-6d83dde165bd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 127,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2587,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2714
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,26 @@
+{
+  "previous_sha256": "e11ef87ee06d9e4416a318d4add585461ddc812c4193acca45ef1cb24213bd0c",
+  "record": {
+    "batch": 46,
+    "candidates": [
+      {
+        "answer": "是，铁塔塔体及爬梯的构件无缺失、无锈蚀，部件连接牢固，无其他附挂物。",
+        "evidence": [
+          {
+            "excerpt": "1.检查铁塔周边环境，无杂物，记录铁塔类型、高度、GPS 等基本信息。 2.检查铁塔塔体及爬梯，构件无缺失、无锈蚀，部件连接牢固，无其他附挂物。航标灯工作正常。 3.检查铁塔基础，外观平整无脱落、裂纹、钢筋无外露，塔基螺丝无缺失锈蚀。",
+            "passage_id": "2eba19749f227b187f776ada"
+          }
+        ],
+        "question": "铁塔塔体及爬梯的构件是否无缺失、无锈蚀，部件连接牢固，无其他附挂物？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

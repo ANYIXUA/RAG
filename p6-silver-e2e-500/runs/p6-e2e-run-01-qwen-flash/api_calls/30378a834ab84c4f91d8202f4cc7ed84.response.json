@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:03.399088+08:00",
+  "conservative_cost_yuan": 0.0017431500000000002,
+  "error": null,
+  "latency_ms": 3631.2684998847544,
+  "list_price_estimate_yuan": 0.00116415,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致，涵盖全部关键步骤。\",\n    \"evidence\": \"表10.2.2.25 WH12025 石护坡、坎、堵塞、封石沟 工作内容：砌漫水坡，砌斜坡堵塞，石砌护坎，封石沟，挖土石方，砌石墙，勾缝等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"砌漫水坡是石护坡、坎、堵塞、封石沟砌筑工作的重要步骤之一。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需所有步骤。\",\n    \"evidence\": \"挖土石方与砌石墙、勾缝等也包含在整体工作流程中。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持所述内容。\",\n    \"evidence\": \"表10.2.2.25 WH12025 石护坡、坎、堵塞、封石沟 工作内容：砌漫水坡，砌斜坡堵塞，石砌护坎，封石沟，挖土石方，砌石墙，勾缝等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881859,
+    "id": "chatcmpl-e50bc626-1010-9577-879b-61429a597448",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 386,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3901,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4287
+    }
+  },
+  "usage_known": true
+}

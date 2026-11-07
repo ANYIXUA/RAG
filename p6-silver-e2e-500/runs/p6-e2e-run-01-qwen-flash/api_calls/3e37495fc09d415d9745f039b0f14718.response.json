@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:29.050407+08:00",
+  "conservative_cost_yuan": 0.0007712999999999999,
+  "error": null,
+  "latency_ms": 1346.3264999445528,
+  "list_price_estimate_yuan": 0.0005958,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 材料及备品备件购置费对应的计价表编号为表—04。[1]  \n2. 该表格位于《电信基础设施维护规程》第168页。[1]  \n3. 表格名称为“材料及备品备件购置清单与计价表”。[1]  \n4. 计价表编号在文档中明确标注为“表—04”。[1]  \n5. 该信息来源于第168页的计价表内容。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881047,
+    "id": "chatcmpl-7c15133e-8920-9f59-842e-ecac698d1652",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2802,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2919
+    }
+  },
+  "usage_known": true
+}

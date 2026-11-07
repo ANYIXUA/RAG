@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:42.939987+08:00",
+  "conservative_cost_yuan": 0.0007302000000000001,
+  "error": null,
+  "latency_ms": 1408.6893999483436,
+  "list_price_estimate_yuan": 0.0005682,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 操作流程应依据《电信基础设施维护规程》执行。[1]  \n2. 需按终端安装指导手册和技术规范操作设备。[1]  \n3. 以分线盒、ONU或分纤箱为维护分界点明确责任范围。[2]  \n4. 施工后需用户签署完工确认单并记录光衰值。[1]  \n5. 完工后须按规定回单、归档并上报工作量。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880941,
+    "id": "chatcmpl-9654e9b7-6c69-90e8-94d1-698b51eb7dea",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 108,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2708,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2816
+    }
+  },
+  "usage_known": true
+}

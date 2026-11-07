@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:27.017474+08:00",
+  "conservative_cost_yuan": 0.0007318499999999999,
+  "error": null,
+  "latency_ms": 1174.487299984321,
+  "list_price_estimate_yuan": 0.0005518499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护分项作业费的计算说明中提到的表格是表—04。[1]  \n2. 表—04用于维护分项作业费的合计计算。[1]  \n3. 在第166页中，维护分项作业费对应表—03。[2]  \n4. 表—03在维护预算汇总表中用于计算维护分项作业费。[2]  \n5. 不同页面提及的表格编号不同，需根据具体上下文确认。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881045,
+    "id": "chatcmpl-49f4381f-4aa5-97e2-84d4-121d5c12c47b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 120,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2479,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2599
+    }
+  },
+  "usage_known": true
+}

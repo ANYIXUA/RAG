@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:25.346479+08:00",
+  "conservative_cost_yuan": 0.0008255999999999999,
+  "error": null,
+  "latency_ms": 1650.897700106725,
+  "list_price_estimate_yuan": 0.0006260999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 铁塔歪斜后应立即检查塔基基础有无开裂、下沉或不均匀沉降。[2]  \n2. 检查塔体构件连接是否牢固，螺栓有无松动、锈蚀或缺失。[3]  \n3. 观察塔体轴线是否偏移，重点排查地震、大风等特殊天气影响。[3]  \n4. 确认接地系统及航标灯状态正常，保障安全运行。[1]  \n5. 若发现异常，需上报并编制整改报告，必要时转人工处理。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881103,
+    "id": "chatcmpl-9fa66ea1-1086-92df-b40a-3d9530649c72",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 133,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2844,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2977
+    }
+  },
+  "usage_known": true
+}

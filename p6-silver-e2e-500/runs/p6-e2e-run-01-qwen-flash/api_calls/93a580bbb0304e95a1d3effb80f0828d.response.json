@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:14.730396+08:00",
+  "conservative_cost_yuan": 0.0015921,
+  "error": null,
+  "latency_ms": 3710.88739996776,
+  "list_price_estimate_yuan": 0.0010581,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出62.42元\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、费用构成、工作内容\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881751,
+    "id": "chatcmpl-9c78caff-57a2-9397-8acc-8a82cf7c6688",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 356,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3494,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3850
+    }
+  },
+  "usage_known": true
+}

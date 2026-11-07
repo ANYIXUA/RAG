@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "材料及备品备件购置费是指为保证电信基础设施正常运行购置材料及备品备件的费用。",
+    "reason": "准确对应材料费计列规则",
+    "score": 1
+  },
+  "case_id": "p6s-0247",
+  "citation_correctness": {
+    "evidence": "工具用具使用费包含在措施项目费中，按项计取。",
+    "reason": "引用[8]未在上下文中出现",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "维护预算汇总表 表格列：项目名称：；第；页；共；页",
+    "reason": "遗漏部分费用构成说明",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "工具用具使用费包含在措施项目费中，按项计取。",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "citation_mismatch"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "dc4e78cb0dfb4c17841f008981567934",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

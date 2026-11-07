@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:57.905113+08:00",
+  "conservative_cost_yuan": 0.0027348000000000003,
+  "error": null,
+  "latency_ms": 7128.494900185615,
+  "list_price_estimate_yuan": 0.0016202999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出山区UPS巡检带电池的消耗量为0.30，与问题要求完全一致，且单位‘台·次’在上下文中也存在。参考证据支持该数值，虽silver_reference为0.30，但其来源chunk_id为e26363b7706a06140b8d2a72，与实际引用一致。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第235页\\n定位信息：235\\n... WH21109003 山区 54.72 34.20 10.26 10.26 0.30 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每条回答事实均直接来自上下文[1]，包括数值0.30、单位台·次、适用场景（山区）、包含电池检查等，无任何编造或超出上下文内容的陈述。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第235页\\n定位信息：235\\n... WH21109003 山区 54.72 34.20 10.26 10.26 0.30 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答覆盖了问题所需的核心信息：消耗量数值（0.30）、单位（台·次）、适用环境（山区）、是否含电池检查，且未遗漏关键条件。虽未提及其它地区数据，但问题仅针对山区，无需扩展。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第235页\\n定位信息：235\\n... WH21109003 山区 54.72 34.20 10.26 10.26 0.30 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均对应实际上下文片段[1]，且该片段完整支持每一句结论。例如‘消耗量为0.30台·次’在原文中明确列出，引用准确无误。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第235页\\n定位信息：235\\n... WH21109003 山区 54.72 34.20 10.26 10.26 0.30 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为具体事实查询，上下文中有明确答案，模型应作答而非拒答，因此不适用此维度。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881430,
+    "id": "chatcmpl-abf5f402-e787-91cb-8635-4a2420e47e73",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 743,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3372,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 3328
+      },
+      "total_tokens": 4115
+    }
+  },
+  "usage_known": true
+}

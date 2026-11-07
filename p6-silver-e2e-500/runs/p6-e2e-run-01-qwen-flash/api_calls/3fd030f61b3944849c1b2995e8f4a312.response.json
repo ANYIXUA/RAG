@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:25.789131+08:00",
+  "conservative_cost_yuan": 0.0015243,
+  "error": null,
+  "latency_ms": 3281.5900000277907,
+  "list_price_estimate_yuan": 0.0010383,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"与上下文一致，准确描述检查要求。\",\n    \"evidence\": \"塔体结构镀锌附着性好，无起泡、翘皮，无返锈现象，镀锌层无剥离、凸起。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"塔体结构镀锌附着性好，无起泡、翘皮，无返锈现象，镀锌层无剥离、凸起。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有关键检查点，无遗漏。\",\n    \"evidence\": \"塔体结构镀锌附着性好，无起泡、翘皮，无返锈现象，镀锌层无剥离、凸起。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]正确对应来源内容。\",\n    \"evidence\": \"塔体结构镀锌附着性好，无起泡、翘皮，无返锈现象，镀锌层无剥离、凸起。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881702,
+    "id": "chatcmpl-b224549a-df0d-9bfe-873f-c54a35ad4313",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 324,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3682,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4006
+    }
+  },
+  "usage_known": true
+}

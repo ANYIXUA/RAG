@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:42.954030+08:00",
+  "conservative_cost_yuan": 0.0013308,
+  "error": null,
+  "latency_ms": 1938.4837001562119,
+  "list_price_estimate_yuan": 0.0009438,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确指出地线种类按参数设置\",\n    \"evidence\": \"地线种类按“地线种类”参数设置。[3]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"具体类型包括直埋式、延伸式、拉线式。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键参数与类型\",\n    \"evidence\": \"设置依据为项目特征中的地线种类选项。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"具体类型包括直埋式、延伸式、拉线式。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881781,
+    "id": "chatcmpl-b0e9b66e-ef95-931a-9657-3b8dbe9f135b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 258,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3712,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3970
+    }
+  },
+  "usage_known": true
+}

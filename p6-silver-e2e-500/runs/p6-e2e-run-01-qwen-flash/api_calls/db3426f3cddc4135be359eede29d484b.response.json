@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:24.318042+08:00",
+  "conservative_cost_yuan": 0.0007895999999999999,
+  "error": null,
+  "latency_ms": 1103.7991000339389,
+  "list_price_estimate_yuan": 0.0006201,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 杆根加固包含立新杆后进行回填夯实操作。[1]  \n2. 需根据土质类别安装卡盘或底盘以加固杆根。[1]  \n3. 对于特殊土质，需加装帮桩并缠扎固定（涂油）。[1]  \n4. 杆根加固应配合挖坑、安装、回填夯土等步骤完成。[1]  \n5. 作业中需确保杆根稳固，防止倾斜或下沉。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880863,
+    "id": "chatcmpl-deacef77-0411-9593-a511-1226f3def1d3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3004,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3117
+    }
+  },
+  "usage_known": true
+}

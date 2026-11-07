@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:54.421414+08:00",
+  "conservative_cost_yuan": 0.0007899,
+  "error": null,
+  "latency_ms": 1635.529899969697,
+  "list_price_estimate_yuan": 0.0005919,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 光网关通过二维码集成Wi-Fi SSID和密码，扫码可直接连接并完成配置。[1]  \n2. 二维码需包含设备的SSID、密码、MAC、SN、IP等关键参数信息。[3]  \n3. 二维码内容以英文半角&连接，格式为字段=值&字段=值形式。[3]  \n4. 光网关支持根据是否联网决定是否进行PPPoE拨号。[1]  \n5. 推荐model字段使用“FTTR-Wi-Fi6”或“FTTR-Wi-Fi7”。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881012,
+    "id": "chatcmpl-16cbd13e-e8df-933d-996a-5072180b59e4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 132,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2626,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2758
+    }
+  },
+  "usage_known": true
+}

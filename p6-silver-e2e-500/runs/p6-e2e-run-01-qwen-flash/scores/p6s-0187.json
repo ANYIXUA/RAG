@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "AAU 可以看成是RRU 与天线的组合，集成了多个T/R 单元。",
+    "reason": "正确描述AAU集成T/R单元实现阵列功能",
+    "score": 1
+  },
+  "case_id": "p6s-0187",
+  "citation_correctness": {
+    "evidence": "AAU 可以看成是RRU 与天线的组合，集成了多个T/R 单元。",
+    "reason": "引用编号[1]准确对应来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "AAU 可以看成是RRU 与天线的组合，集成了多个T/R 单元。",
+    "reason": "涵盖核心实现机制且无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "AAU 可以看成是RRU 与天线的组合，集成了多个T/R 单元。",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "5dd2831a7f7e4c068fce82d217933438",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

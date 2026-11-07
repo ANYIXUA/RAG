@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:06.415582+08:00",
+  "conservative_cost_yuan": 0.0006815999999999999,
+  "error": null,
+  "latency_ms": 1295.6806998699903,
+  "list_price_estimate_yuan": 0.0005360999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 光缆线路自动监测系统由监测中心和监测站组成。[1]  \n2. 系统是电信管理网中传输系统管理子网的一部分。[1]  \n3. 用于压缩全阻障碍历时并及早发现线路隐患。[1]  \n4. 是将光缆线路纳入通信管理网的重要中间设备。[1]  \n5. 需在运营企业统一安排下建立。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880965,
+    "id": "chatcmpl-0fe8ceca-adf5-9f59-b166-220ec5b6a65c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 97,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2604,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2701
+    }
+  },
+  "usage_known": true
+}

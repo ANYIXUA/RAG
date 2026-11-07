@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "检查空调室外机进排风温度差，进排风温度差：≥10℃，发现问 题及时上报，并及时进行处理。",
+    "reason": "上下文明确要求温度差低于10℃时应上报处理。",
+    "score": 1
+  },
+  "case_id": "p6s-0254",
+  "citation_correctness": {
+    "evidence": "检查空调室外机进排风温度差，进排风温度差：≥10℃，发现问 题及时上报，并及时进行处理。",
+    "reason": "引用[1]对应实际上下文来源并支持该句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检查空调室外机进排风温度差，进排风温度差：≥10℃，发现问 题及时上报，并及时进行处理。",
+    "reason": "覆盖了问题所需全部应对步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查空调室外机进排风温度差，进排风温度差：≥10℃，发现问 题及时上报，并及时进行处理。",
+    "reason": "每项事实均来自上下文且无编造。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "eca9ca3c79d24025b788664e9b48d63d",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

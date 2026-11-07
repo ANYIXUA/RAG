@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:03.716206+08:00",
+  "conservative_cost_yuan": 0.00083925,
+  "error": null,
+  "latency_ms": 1586.4115001168102,
+  "list_price_estimate_yuan": 0.00066225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH12021006 坚石（爆破）的综合单价为31078.35元。[1]  \n2. 该单价对应计量单位为百立方米。[1]  \n3. 综合单价包含人工、企业管理费及利润。[1]  \n4. 项目编码为WH12021006，工作内容含爆破作业。[1]  \n5. 信息来源于《电信基础设施维护规程》第210页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880902,
+    "id": "chatcmpl-b74acd97-ddb4-9e2f-add7-cc43d423cdb0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 118,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3235,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3353
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "相关安装调试项目按实际发生数量计算费用。[2]",
+    "reason": "准确指出费用未明确，需按实际数量计算。",
+    "score": 1
+  },
+  "case_id": "p6s-0238",
+  "citation_correctness": {
+    "evidence": "建议联系专业人员评估并报价。[2]",
+    "reason": "引用编号与上下文来源一致且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "具体收费需根据维护数量及实际工作量确定。[2]",
+    "reason": "涵盖费用估算关键点，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "设备调测涉及线缆、接地等规范检查，需现场实施。[3]",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "cb16ba83dfda42b7958253144bbe249d",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH22103005 平原、丘陵 29.18 18.24 5.47 5.47 0.16 —",
+    "reason": "答案与证据一致，引用准确。",
+    "score": 1
+  },
+  "case_id": "p6s-0296",
+  "citation_correctness": {
+    "evidence": "WH22103005 平原、丘陵 29.18 18.24 5.47 5.47 0.16 —",
+    "reason": "引用编号与来源匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "维护分项作业 项目编码 项目名称 综合单价 （元）",
+    "reason": "涵盖所有必要条件与步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH22102002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —",
+    "reason": "每项事实均有上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "068aff116c53413da3c1304d7200b57f",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

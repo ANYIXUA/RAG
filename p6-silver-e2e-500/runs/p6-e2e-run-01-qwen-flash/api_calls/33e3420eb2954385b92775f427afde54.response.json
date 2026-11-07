@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:24.186431+08:00",
+  "conservative_cost_yuan": 0.00072405,
+  "error": null,
+  "latency_ms": 1128.4172998275608,
+  "list_price_estimate_yuan": 0.00056655,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 夜间维护作业需额外计取夜间维护作业增加费。[1]  \n2. 该费用包含补助费、照明设备摊销及用电等支出。[1]  \n3. 费率标准为人工费的2.3%。[2]  \n4. 在城区作业时，若涉及夜间施工，应按规定计列此项费用。[1]  \n5. 该项费用属于措施项目费范畴，按实计列。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880923,
+    "id": "chatcmpl-24d7d8f2-e473-9aef-bdb3-baf6f73b3614",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 105,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2727,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2832
+    }
+  },
+  "usage_known": true
+}

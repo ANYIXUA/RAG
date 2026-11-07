@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH31101006 山区、丘陵 20km 以下 150.03 101.79 27.89 20.36 0.89 0.00",
+    "reason": "上下文明确支持外部与内部巡检单价",
+    "score": 1
+  },
+  "case_id": "p6s-0459",
+  "citation_correctness": {
+    "evidence": "WH31101006 山区、丘陵 20km 以下 150.03 101.79 27.89 20.36 0.89 0.00",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "机房面积200平方米，属“200平方米以下”类别，取对应单价。[3]",
+    "reason": "覆盖所有条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH31102001 机房内部环境巡检 200m 2以下 63.63 43.17 11.83 8.63 消耗量 0.35 0.06",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "b263a3f295064d7f9dcefd7db7cb92ac",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

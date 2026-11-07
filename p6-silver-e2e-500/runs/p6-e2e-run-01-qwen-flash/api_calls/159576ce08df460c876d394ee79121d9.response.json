@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:16.313600+08:00",
+  "conservative_cost_yuan": 0.0007233,
+  "error": null,
+  "latency_ms": 1534.931099973619,
+  "list_price_estimate_yuan": 0.0005688,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 材料及备品备件购置费包含发包人提供的部分。[2]  \n2. 机械仪表使用费包含发包人提供的部分。[2]  \n3. 发包人提供的材料及仪表不计入相应费用，但计入安全生产费计算基础。[3]  \n4. 安全生产费计算基础包括发包人提供的部分。[2]  \n5. 计算安全生产费时应包含甲供部分。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881154,
+    "id": "chatcmpl-96937c3f-0c64-9e45-a9aa-f3e55af6cc98",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 103,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2762,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2865
+    }
+  },
+  "usage_known": true
+}

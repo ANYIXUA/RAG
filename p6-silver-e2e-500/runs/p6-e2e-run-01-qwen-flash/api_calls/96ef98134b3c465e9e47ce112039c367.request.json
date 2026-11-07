@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:15:08.311360+08:00",
+  "input_token_upper_bound": 1189,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0126"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "宽带安装中，PON光功率计的单位是什么？ PON 不亮 PON 口 光接入端口 收光功率 光衰 光信号强度 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "96ef98134b3c465e9e47ce112039c367",
+  "reserved_yuan": 0.0005945
+}

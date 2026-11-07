@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "室外布放单芯电力电缆流程包括检验、量裁、布放、绑扎固定等。[4]",
+    "reason": "准确涵盖关键流程，引用支持",
+    "score": 1
+  },
+  "case_id": "p6s-0102",
+  "citation_correctness": {
+    "evidence": "参照表10.3.3.9中“室外布放单芯电力电缆”项目执行。[1]",
+    "reason": "引用编号与来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "工作内容：1、布放室内电力电缆：检验、搬运、量裁、布放、绑扎、卡固、穿管、穿洞、对线、终端制作、测试等。",
+    "reason": "遗漏穿管、对线等步骤",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "布放时需注意电缆的绑扎与固定，确保线路安全。[4]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "partial_completeness",
+    "reliant_on_indirect_reference"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "beca4a6e74134d1498e7d94892fa4e55",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:58.688523+08:00",
+  "conservative_cost_yuan": 0.0017776500000000002,
+  "error": null,
+  "latency_ms": 3480.621699942276,
+  "list_price_estimate_yuan": 0.0011956500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持94.85元单价\",\n    \"evidence\": \"WH21102001 天馈线系统巡检 角钢塔、三管塔、 四管塔35m 以下 市区 94.85\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH21102001 天馈线系统巡检 角钢塔、三管塔、 四管塔35m 以下 市区 94.85\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、适用范围、单位等关键信息\",\n    \"evidence\": \"WH21102001 天馈线系统巡检 角钢塔、三管塔、 四管塔35m 以下 市区 94.85\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源片段\",\n    \"evidence\": \"WH21102001 天馈线系统巡检 角钢塔、三管塔、 四管塔35m 以下 市区 94.85\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881855,
+    "id": "chatcmpl-802d6fa5-a7dc-9421-bb40-8d507694d38e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 388,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4091,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4479
+    }
+  },
+  "usage_known": true
+}

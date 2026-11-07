@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:02.858243+08:00",
+  "conservative_cost_yuan": 0.00169575,
+  "error": null,
+  "latency_ms": 4583.458499982953,
+  "list_price_estimate_yuan": 0.00111675,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"安装与更换单价混淆，错误匹配\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"将安装价误作更换价，事实不支持\",\n    \"evidence\": \"WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏更换电杆地线直埋式单价\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文一致且支持句意\",\n    \"evidence\": \"WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_mapping\",\n    \"misattribution\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882098,
+    "id": "chatcmpl-691898aa-cc22-91ea-80c8-3e384e7654a5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 386,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3585,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3971
+    }
+  },
+  "usage_known": true
+}

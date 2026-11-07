@@ -1,0 +1,18 @@
+{
+  "batch_size": 25,
+  "case_denominator": 500,
+  "citation_prompt_metric": "Index valid and source text prefix present in actual rendered/truncated request; semantic support is separately judged",
+  "citation_structural_metric": "Numeric[n]/【n】 within actual returned source indices; not semantic truth",
+  "concurrency": 3,
+  "judge_model": "qwen-flash; same-model bias explicitly disclosed",
+  "percentile": "Linear interpolation over all500 successful final attempt latencies; not a load-test/SLA claim",
+  "reference_retrieval_proxy": "Silver reference chunk IDs, not exhaustive Gold relevance; alternate valid evidence can exist",
+  "retry_latency": "Final successful attempt timings used for successful E2E; per-attempt failures and retry counts separately retained",
+  "session_history": "Model+case+attempt isolated; verify conversation_history_turn_count==0",
+  "smoke_denominator": 10,
+  "smoke_in_final_case_denominator": true,
+  "success_definition": "Nonempty real chat completion through production entry, complete trace, hybrid mode, no generation fallback or cross-encoder",
+  "trace_latency": "Production trace latency excludes final PostgreSQL log append; reported separately",
+  "unanswerable_diagnosis": "No-answer score<1 with faithful answer and no hallucination flag goes to uncertain, never treated as confirmed hallucination solely due to unverified label",
+  "wall_latency": "per-case request after processor initialization; includes budget observation, raw response persistence and production logging; no model cold initialization included"
+}

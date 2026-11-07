@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:31.901583+08:00",
+  "conservative_cost_yuan": 0.0053328,
+  "error": null,
+  "latency_ms": 13616.898100124672,
+  "list_price_estimate_yuan": 0.0029328,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "length",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出'WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz'，与回答中'Wi-Fi 7光网关的2.4GHz频段支持802.11be标准'一致。该信息直接来自证据片段，且符合问题所问的2.4GHz频段标准。\",\n    \"evidence\": \"WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实均在实际LLM上下文中得到支持：1) 2.4GHz支持802.11be [1]；2) 2×2天线模式 [1]；3) 802.11be即Wi-Fi 7 [1]。所有陈述均有对应引用来源，无额外编造内容。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第15页\\n定位信息：15\\n综合分：0.741719\\n召回综合分：0.741719\\n重排分：无\\n语义分：0.631027\\nBM25 原始分：52.302255\\nBM25 归一化分：1.000000\\n内容：章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第15页 页码：15 10 4. 产品入库要求 4.1. 基本要求 4.1.1. 接入要求 全光组网终端均需支持EasyMesh 功能，其中光网关的Mesh 角色为Controller，光路 由的Mesh 角色为Agent。 光网关在遵循本规范基础上，需同步遵循最新版本《中国移动智能家庭网关技术规范》 和相关管理接口要求，实现RMS 平台纳管。 光网关应支持基于光路由的逻辑标识对光路由合法性进行认证的能力，应拒绝非法光 路由接入。 4.2. 设备形态 全光组网终端主要用于家庭用户和泛家庭用户，提供以太网/IP 类业务接入能力。全 光组网终端设备的硬件设计、天线连接等应稳定可靠。 表4-1 设备形态 产品类型 光网关 光路由 产品名称 Wi-Fi 7 光网关 Wi-Fi 6 光网关 Wi-Fi 7 光路由 Wi-Fi 6 光路由 网络侧接口 (WAN 口) 不低于XG-PON 推荐支持XG-PON Combo 2.5G 非对称 推荐支持2.5G 对称 用户 侧接 口 网络 接口 1 个光口 最大物理分光比不低于支持1:8 面板式：不少于1×GE 其他：不少于2×GE，至 少有1 个网口支持2.5GE 面板式：不少于1×GE 其他：不少于2×GE 不少于2×GE，至少有 1 个网口支持2.5GE 不少于2×GE WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz 2.4GHz 802.11ax （2×2） + 5GHz 2.4GHz 802.11be （2×2） + 5GHz 2.4GHz 802.11ax （2×2） + 5GHz\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问2.4GHz频段的标准，回答准确聚焦于该部分，未遗漏必要条件或步骤。虽提及了2×2天线模式，但此信息亦属于WLAN接口配置的一部分，且在原文中存在，不构成冗余或偏离。\",\n    \"evidence\": \"WLAN 接口 2.4GHz 802.11be （2×2） + 5GHz\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答中所有引用均正确对应实际上下文来源：[1] 是唯一支持该信息的片段，且其内容完全匹配。三个要点均标注[1]，且该引用编号在上下文中真实存在并支持所述内容。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第15页\\n定位信息：15\\n综合分：0.741719\\n召回综合分：0.741719\\n重排分：无\\n语义分：0.631027\\nBM25 原始分：52.302255\\nBM25 归一化分：1.000000\\n内容：章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 > 第15页 页码：15 10 4. 产品入库要求 4.1. 基本要求 4.1.1. 接入要求 全光组网终端均需支持EasyMesh 功能，其中光网关的Mesh 角色为Controller，光路 由的Mesh 角色为Agent。 光网关在遵循本规范基础上，需同步遵循最新版本《中国移动智能家庭网关技术规范》 和相关管理接口要求，实现RMS 平台纳管。 光网关应支持基于光路由的逻辑标识对光路由合法性进行认证的能力，应拒绝非法光 路由接入。 4.2. 设备形态 全光组网终端主要用于家庭用户和泛家庭用户，提供以太网/IP 类业务接入能力。全 光组网终端设备的硬件设计、天线连接等应稳定可靠。 表4-1 设备形态 产品类型 光网关 光路由 产品名称 Wi-Fi 7 光网关 Wi-Fi 6 光网关 Wi-Fi 7 光路由 Wi-Fi 6 光路由 网络侧接口 (WAN 口) 不低于XG-PON 推荐支持XG-PON Combo 2.5G 非对称 推荐支持2.5G 对称 用户 侧接 口 网络 接口 1 个光口 最大物理分光比不低于支持1:8 面板式：不少于1×GE 其他：不少于2×GE，至 少有1 个网口支持2.5GE 面板式：不少于1×",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881458,
+    "id": "chatcmpl-16cfab5d-bc63-9e36-beb6-29b9a37e0233",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1600,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3552,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 5152
+    }
+  },
+  "usage_known": true
+}

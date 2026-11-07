@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:47.817679+08:00",
+  "conservative_cost_yuan": 0.00131175,
+  "error": null,
+  "latency_ms": 1978.699899977073,
+  "list_price_estimate_yuan": 0.00092775,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖封面与项目概况全部要素\",\n    \"evidence\": \"封面：维护预算总价；总说明：项目规模、项目特征、项目维护地点...\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"维护项目概况：项目规模、项目特征、项目维护地点...\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有条件与步骤\",\n    \"evidence\": \"总说明：项目规模、项目特征、项目维护地点...\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"维护项目概况：项目规模、项目特征、项目维护地点...\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882085,
+    "id": "chatcmpl-8c3a93e1-2721-9ada-97e2-6d63f1156983",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 256,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3625,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3881
+    }
+  },
+  "usage_known": true
+}

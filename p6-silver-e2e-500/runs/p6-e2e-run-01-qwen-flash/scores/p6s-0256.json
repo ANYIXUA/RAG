@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0256",
+  "citation_correctness": {
+    "evidence": "设备需通过CQC、SRRC等认证，建议通过WAA认证[4]。",
+    "reason": "引用编号与上下文来源一致且支持对应句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "中国移动推荐使用支持Wi-Fi 7和EasyMesh功能的全光组网终端[3]。",
+    "reason": "部分回答了技术要求，但未说明无法推荐品牌。",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "光网关应支持XG-PON接入及多WAN连接配置[1]。",
+    "reason": "每项事实均来自上下文且无编造。",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "partial_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "a4a5c4a20cd7469f8311975902f54029",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "中国移动推荐使用支持Wi-Fi 7和EasyMesh功能的全光组网终端[3]。",
+    "reason": "未明确拒答，但提及推荐标准，可视为部分回应。",
+    "score": 0.5
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

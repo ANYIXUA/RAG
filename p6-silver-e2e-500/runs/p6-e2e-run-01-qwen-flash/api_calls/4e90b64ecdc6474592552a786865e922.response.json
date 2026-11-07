@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:32.635368+08:00",
+  "conservative_cost_yuan": 0.0007520999999999999,
+  "error": null,
+  "latency_ms": 1113.4452000260353,
+  "list_price_estimate_yuan": 0.0005960999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 蓄电池内阻测试的维护指标为符合厂家要求。[3]  \n2. 测试周期未在上下文中明确说明，需参考具体设备规范。[3]  \n3. 该测试属于电源系统定期测试项目之一。[3]  \n4. 使用仪器包括蓄电池内阻测试仪或电导测试仪。[4]  \n5. 维护作业可参照WH22103004项目编码执行。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880811,
+    "id": "chatcmpl-1d917cd8-2b3e-9caf-a4b9-ef5eacc07386",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2934,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3038
+    }
+  },
+  "usage_known": true
+}

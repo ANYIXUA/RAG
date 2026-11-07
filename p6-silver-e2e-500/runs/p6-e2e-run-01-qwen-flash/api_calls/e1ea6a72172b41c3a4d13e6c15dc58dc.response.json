@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:32.102711+08:00",
+  "conservative_cost_yuan": 0.00309975,
+  "error": null,
+  "latency_ms": 8865.180700086057,
+  "list_price_estimate_yuan": 0.00180375,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确指出WHJY-035三阶互调仪的台数为20292，与问题直接对应，且数值一致。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n综合分：0.726775\\n召回综合分：0.726775\\n重排分：无\\n语义分：0.609678\\nBM25 原始分：23.038465\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第162页 页码：162 T/CAICI XXXX—XXXX 156 WHJY-035 三阶互调仪 台 20292\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中‘三阶互调仪的台数为20292台’这一事实完全由上下文[1]支持，无任何额外编造或偏离。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n综合分：0.726775\\n召回综合分：0.726775\\n重排分：无\\n语义分：0.609678\\nBM25 原始分：23.038465\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第162页 页码：162 T/CAICI XXXX—XXXX 156 WHJY-035 三阶互调仪 台 20292\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问三阶互调仪的台数，回答已完整提供该数值，未遗漏必要条件或步骤。\",\n    \"evidence\": \"问题为单一事实查询，回答仅需提供台数，已满足要求。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]准确对应了包含‘三阶互调仪 台 20292’的上下文片段，且该句内容被正确引用。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第162页\\n定位信息：162\\n综合分：0.726775\\n召回综合分：0.726775\\n重排分：无\\n语义分：0.609678\\nBM25 原始分：23.038465\\nBM25 归一化分：1.000000\\n内容：章节：电信基础设施维护规程 > 第162页 页码：162 T/CAICI XXXX—XXXX 156 WHJY-035 三阶互调仪 台 20292\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为可回答的精确事实类问题，模型已正确作答，无需拒答。\",\n    \"evidence\": \"问题可由上下文直接回答，模型未拒绝，符合预期行为。\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881403,
+    "id": "chatcmpl-581869f4-b7e5-9e13-bf41-d3cbce1e2b63",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 864,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3385,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4249
+    }
+  },
+  "usage_known": true
+}

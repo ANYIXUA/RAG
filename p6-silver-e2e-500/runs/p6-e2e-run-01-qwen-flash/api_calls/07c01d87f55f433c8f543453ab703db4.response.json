@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:08.245916+08:00",
+  "conservative_cost_yuan": 0.0007250999999999999,
+  "error": null,
+  "latency_ms": 1296.7116001527756,
+  "list_price_estimate_yuan": 0.0005646,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 采用统一协议适配不同品牌智能终端，实现联调适配。[1]  \n2. 优化家庭网络拓扑，确保各设备稳定接入与通信。[2]  \n3. 通过矢量制图设计绘制工程图，规范设备布局与连接。[1]  \n4. 使用建模软件搭建空间与设备模型，辅助协同配置。[2]  \n5. 综合分析场景联动需求，实现子系统间协同工作。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881026,
+    "id": "chatcmpl-dc51d606-2a0b-9617-aae7-691565353f26",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2694,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2801
+    }
+  },
+  "usage_known": true
+}

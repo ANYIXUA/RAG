@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:24.923427+08:00",
+  "conservative_cost_yuan": 0.000708,
+  "error": null,
+  "latency_ms": 1120.49899995327,
+  "list_price_estimate_yuan": 0.000582,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 运输水泥盖板应按规范进行，确保无破损。[2]  \n2. 铺设时需对准位置，保证平整稳固。[2]  \n3. 工作内容包含运输与铺设两个环节。[2]  \n4. 操作应依据维护规程执行。[2]  \n5. 作业计量单位为米。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880983,
+    "id": "chatcmpl-71973032-a266-92c3-9bef-765e9e16a3a8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 84,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3040,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3124
+    }
+  },
+  "usage_known": true
+}

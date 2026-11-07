@@ -1,0 +1,2724 @@
+{
+  "p6s-0036": {
+    "case_id": "p6s-0036",
+    "ai_suggested_classification": "引用错配；单位混淆",
+    "suspected_excerpt": "0.24条；第192页表10.2.2.6",
+    "ai_suggestion": "实际[1]安装电杆地线直埋式行为0.24/0.24；[2]电杆地线直埋式为0.29/0.29。回答数值取[1]却标[2]，且把人工消耗量工日写成工程计量单位条。建议保留引用/单位疑点，非纯数值编造。",
+    "human_review_reason": "人工需复核表格多级表头与消耗量的单位。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 36,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0036.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0036.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0036.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      2,
+      2,
+      2,
+      2,
+      4
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "单位 工日 单价(元) 114.00 61.00 WH12019001 安装电杆地线 拉线式 15.53 10.53 2.89 2.11 消耗量 0.09 _ WH12019002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24 WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第192页\n定位信息：192\n综合分：0.799501\n召回综合分：0.799501\n重排分：无\n语义分：0.774981\nBM25 原",
+      "位 工日 单价(元) 114.00 61.00 WH12006001 电杆地线 拉线式 27.64 18.75 5.14 3.75 消耗量 0.11 0.11 WH12006002 直埋式 76.00 51.56 14.13 10.31 0.29 0.29 WH12006003 延伸式 103.70 70.35 19.28 14.07 0.29 0.60\n\n[3] 来源：电信基础设施维护规程.pdf\n引用标签：[3]\n标题：第209页\n定位信息：209\n综合分：0.763968\n召回综合分：0.763968\n重排分：无\n语义分：0.726034\nBM25",
+      "线绝缘保护套管等。 计量单位：条 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH12019001 安装电杆地线 拉线式 15.53 10.53 2.89 2.11 消耗量 0.09 _ WH12019002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24 WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\n\n[2] 来源：电信基础设施维护规程",
+      "地线、回土夯实等。 计量单位：条 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH12006001 电杆地线 拉线式 27.64 18.75 5.14 3.75 消耗量 0.11 0.11 WH12006002 直埋式 76.00 51.56 14.13 10.31 0.29 0.29 WH12006003 延伸式 103.70 70.35 19.28 14.07 0.29 0.60\n\n[3] 来源：电信基础设施维"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "c075dc68d46c245c3f7a221f",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 208,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 342
+      },
+      {
+        "index": 2,
+        "chunk_id": "c0820f0b44f44c84e0b54e3d",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 192,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 343
+      },
+      {
+        "index": 3,
+        "chunk_id": "a14cc56868b469462940f2a4",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 209,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 288
+      },
+      {
+        "index": 4,
+        "chunk_id": "74207e88e3fcb93a6e60028b",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 128,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 213
+      }
+    ]
+  },
+  "p6s-0037": {
+    "case_id": "p6s-0037",
+    "ai_suggested_classification": "引用编号越界",
+    "suspected_excerpt": "[6]（5次）",
+    "ai_suggestion": "实际只返回4个来源，保留prompt仅[1]至[3]；[6]不存在。核心MCS15必选、MCS14推荐在[1]第25页条目6有直接支持；兼容性扩展措辞仍需核对，条目6不是来源[6]。",
+    "human_review_reason": "评分失败不能掩盖确定的编号越界；需人工分开确认内容与引用。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "invalid_citation"
+    ],
+    "source_case_line": 37,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0037.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0037.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0037.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "频谱时能够避开某个被其它AP 占用的 20MHz 频谱资源，在使用160MHz 频谱时能够避开某个被其它AP 占用的20MHz 或40MHz 频谱资源； 6. 须支持覆盖增强相关技术，须支持MCS15，推荐支持MCS14。\n\n[2] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\n引用标签：[2]\n标题：第15页\n定位信息：15\n综合分：0.708190\n召回综合分：0.708190\n重排分：无\n语义分：0.719976\nBM25 原始分：22.662084\nBM25 归一化分：0.680689\n内容：章节：中国移动智慧家庭全光组网",
+      "占用的 20MHz 频谱资源，在使用160MHz 频谱时能够避开某个被其它AP 占用的20MHz 或40MHz 频谱资源； 6. 须支持覆盖增强相关技术，须支持MCS15，推荐支持MCS14。\n\n[2] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\n引用标签：[2]\n标题：第15页\n定位信息：15\n综合分：0.708190\n召回综合分：0.708190\n重排分：无\n语义分：0.719976\nBM25 原始分：22.662084\nBM25 归一化分：0.680689\n内容：章节：中国移动智慧家庭全光组网产品技术规范V2.0.0 "
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "4812f97659f77c46891223fa",
+        "document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+        "page": 25,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 133
+      },
+      {
+        "index": 2,
+        "chunk_id": "e69ef87cafd302938c765e20",
+        "document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+        "page": 15,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 412
+      },
+      {
+        "index": 3,
+        "chunk_id": "a36043b8ee1a391f2dd1c31a",
+        "document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+        "page": 16,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 294
+      },
+      {
+        "index": 4,
+        "chunk_id": "acbdb12c2a62c12fe9787ef7",
+        "document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+        "page": 57,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 308
+      }
+    ]
+  },
+  "p6s-0088": {
+    "case_id": "p6s-0088",
+    "ai_suggested_classification": "引用编号越界；额外推断",
+    "suspected_excerpt": "[6]（5次）；泄漏或堵塞；不得自行处理",
+    "ai_suggestion": "4个返回来源、实际prompt仅[1]至[3]，不存在[6]。核心“检测压力和制冷效果、及时上报、通知专业队伍补加”在[1]第72页空调条目6有支持；这是条目6，不是来源[6]。泄漏/堵塞与不得自行处理未见直接支持，不能以核心事实有据豁免所有扩展句。",
+    "human_review_reason": "人工需逐句核验核心措施与额外建议，不能沿用Judge引用满分。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "invalid_citation"
+    ],
+    "source_case_line": 88,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0088.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0088.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0088.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      6,
+      6,
+      6,
+      6,
+      6
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "、电机、风叶和压缩机运行状况，清洁或更换空气 过滤器； 4. 检查清洁冷凝器翅片、制冷管路、排水系统正常。 5. 检查空调支架的安全性，并进行防锈处理。 6. 检测制冷剂压力和制冷效果，根据检测结果及时上报，并通知专 业维修队伍补加制冷剂。 7. 用交流钳表测量记录每台空调的工作电流，并与额定电流比较， 实际工作电流与额定工作电流偏差在10%以内。 8. 检查空调室外机进排风温度差，进排风温度差：≥10℃，发现问 题及时上报，并及时进行处理。 9. 检查室内机、过滤网、室外机翅片清洁情况，应无明显的积尘， 及时清除积尘。 通风设备 季度 3. 检查",
+      "空调室外风机、电机、风叶和压缩机运行状况，清洁或更换空气过滤器； 4.清洁冷凝器翅片、制冷管路、排水系统正常。 5.检查空调支架的安全性，并进行防锈处理。 6.检测记录制冷剂压力和制冷效果，必须时需补加制冷剂。 7.测量记录空调的工作电流，与额定电流偏差符合规定。 8.空调室外机进排风温度差在规定范围内。 通风 设备 季度 1. 检查清理通风设备、滤网，无明显的积尘 2. 控制系统、电气系统等运行正常。 接地系统 地网、接地 引入线、接 地线和接 地汇集线 半年 1. 对接地点紧固情况进行检查紧固。 2. 裸露接地引入线防锈处理和回填掩埋。 3. 各类"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "096e926c7f2419fa383e7806",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 72,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 14
+      },
+      {
+        "index": 2,
+        "chunk_id": "14c9c83470f749b59631d18b",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 51,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 32
+      },
+      {
+        "index": 3,
+        "chunk_id": "1da1d3e2ba2c6b5f5ae8d2ff",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 64,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 50
+      },
+      {
+        "index": 4,
+        "chunk_id": "2b94cdf9cd551c84bcb50867",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 66,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 79
+      }
+    ]
+  },
+  "p6s-0089": {
+    "case_id": "p6s-0089",
+    "ai_suggested_classification": "题干条件不足；标注污染；截断非充分原因",
+    "suspected_excerpt": "7/2.2；1.00工日、0.50工日",
+    "ai_suggestion": "实际[1]WH12009010支持7/2.2平原1.00/0.50；[2]WH12009016保留7/3.0平原1.40/0.70。题干未给线径或技/普工，Silver只给0.70并混入木杆7/3.0证据。被截断的是木杆辅助证据，目标水泥杆7/3.0仍在prompt。因此不能把结果直接归因为关键上下文丢失，Judge“事实与上下文不符”亦需复核。",
+    "human_review_reason": "人工先澄清线径、工种与木杆证据是否应属于本题，再裁决生成完整性。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination",
+      "retrieval_context",
+      "multi_condition"
+    ],
+    "source_case_line": 89,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0089.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0089.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0089.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      " 235.33 64.48 47.07 1.63 0.81 WH12009009 山区 433.59 294.16 80.60 58.83 2.04 1.02 WH12009010 更换拉线 水泥杆另缠法装 7/2.2 单股拉线 平原 212.99 144.50 39.59 28.90 消耗量 1.00 0.50 WH12009011 城区/丘陵 255.59 173.40 47.51 34.68 1.20 0.60 WH12009012 山区 319.49 216.75 59.39 43.35 1.50 0.75 WH12009013 水泥杆另缠法装 ",
+      " 210.56 57.69 42.11 1.46 0.73 WH12009015 山区 387.95 263.20 72.12 52.64 1.82 0.91 WH12009016 水泥杆另缠法装 7/3.0 单股拉线 平原 299.20 202.99 55.62 40.60 1.40 0.70 WH12009017 城区/丘陵 359.05 243.59 66.74 48.72 1.69 0.84 WH12009018 山区 448.81 304.48 83.43 60.90 2.11 1.05 WH12009019 更换拉线 水泥杆卡固法装 7/2."
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "f25f603904b58475c9463e67",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 194,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 429
+      },
+      {
+        "index": 2,
+        "chunk_id": "f9767715b544ce6f8a05e20c",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 195,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 440
+      },
+      {
+        "index": 3,
+        "chunk_id": "a337b883b539fcace3247291",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 185,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 291
+      },
+      {
+        "index": 4,
+        "chunk_id": "0a42bddf1894bc4d44e60a1c",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 196,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 16
+      }
+    ]
+  },
+  "p6s-0090": {
+    "case_id": "p6s-0090",
+    "ai_suggested_classification": "例外条件遗漏；自相矛盾",
+    "suspected_excerpt": "高速公路中人孔的检修周期为半年",
+    "ai_suggestion": "回答先写半年，继而写按需；Silver和来源的高速公路例外为按需。建议保留未正确应用特殊场景条件及答内矛盾疑点。",
+    "human_review_reason": "人工复核一般周期与高速公路例外，按首句误导程度判定。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 90,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0090.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0090.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0090.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      3,
+      2,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "年 可视具体情况缩短周期。 路由探测、修路 年 可结合徒步巡回进行 抽除管道线路人孔内的 积水 按需 可视具体情况缩短周期。 管道线路的人（手）孔 检修 半年 高速公路中人孔的检修按需进行 杆路 维护 整理、更换挂钩，检修镀锌钢 绞线 年 清除架空线路上和镀锌钢绞 线上的杂物 按需 杆路检修 年 可结合巡回进行 管 道 光 缆 维 护 巡回 1～2 次/周 不得漏巡；徒步巡回每月不得少于2 次，暴风雨后或有外力 影响可能造成线路故障的隐患时应立即巡回和加强巡回。高 速公路中线路巡回周期为2～3 次/月，外力施工现场按需随 工监督，必要时日夜值守。每",
+      "描字 年 可视具体情况缩短周期。 路由探测、修路 年 可结合徒步巡回进行 抽除管道线路人孔内的 积水 按需 可视具体情况缩短周期。 管道线路的人（手）孔 检修 半年 高速公路中人孔的检修按需进行 杆路 维护 整理、更换挂钩，检修镀锌钢 绞线 年 清除架空线路上和镀锌钢绞 线上的杂物 按需 杆路检修 年 可结合巡回进行 管 道 光 缆 维 护 巡回 1～2 次/周 不得漏巡；徒步巡回每月不得少于2 次，暴风雨后或有外力 影响可能造成线路故障的隐患时应立即巡回和加强巡回。高 速公路中线路巡回周期为2～3 次/月，外力施工现场按需随 工监督，必"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "831af7c41fd776db6b5b3ff9",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 29,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 237
+      },
+      {
+        "index": 2,
+        "chunk_id": "bae1b3473d922bce016eb32f",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 124,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 329
+      },
+      {
+        "index": 3,
+        "chunk_id": "c3ecd4637056aff1167beaf5",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 181,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 352
+      },
+      {
+        "index": 4,
+        "chunk_id": "256632ea7d6f5a2319f44fb9",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 130,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 66
+      }
+    ]
+  },
+  "p6s-0138": {
+    "case_id": "p6s-0138",
+    "ai_suggested_classification": "条件遗漏；参考答案范围疑点",
+    "suspected_excerpt": "仅夜间维护作业增加费",
+    "ai_suggestion": "回答覆盖夜间条件，未整合城区条件对应的维护干扰费。Silver又列特殊地区等多项，不能自动认为城区夜间全部必收；应按项目适用条件逐项确认。",
+    "human_review_reason": "人工核对城区和夜间两条件，以及Silver额外费用是否必要。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 138,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0138.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0138.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0138.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      2,
+      1,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "0） 项目编码 项目名称 计量 单位 工作内容及包含范围 CS00001 文明施工费 项 指维护现场为达到环保要求及文明作业所需要的各项费用。 CS00002 维护干扰费 项 指维护作业中由于受市政管理、交通管制、人流密集、现场协调等影响 工效的补偿费用。在城区、高速公路隔离带、铁路路基边缘作业的维护 项目计取此项费用。 CS00003 车辆使用费 项 指维护作业中接送维护作业人员、生活用车等（含过路、过桥）费用。 CS00004 维护资料更新、器材清点费 项 指按规定编制、更新维护资料和器材点交等所发生的费用 CS00005 维护站点设施费 ",
+      "基础设施维护工作措施项目费费率见下表： 表9.2.5.1 措施项目费费率表 项目编码 费用名称 费率（%） CS00001 文明生产费 1.5 CS00002 维护干扰费 5.0 CS00003 车辆使用费 3.5 CS00004 维护资料更新、器材清点费 1.0 CS00005 维护站点设施费 7.0 CS00006 夜间维护作业增加费 2.3 CS00007 冬雨季维护作业增加费 2.5 CS00008 生产工具用具使用费 1.2 CS00009 维护作业用水电蒸汽费 按实计列 CS00010 特殊地区维护作业增加费 20 CS00011 ",
+      "器材点交等所发生的费用 CS00005 维护站点设施费 项 指维护企业为进行维护作业必须设置的生活和生产用建筑物、构筑物和 其他临时设施费用等 CS00006 夜间维护作业增加费 项 指因夜间维护作业所发生的补助费、工效降低、照明设备摊销及照明用 电等费用。 CS00007 冬雨季维护作业增加费 项 指冬雨季维护作业所采取的防冻、保温、防雨防滑等安全措施及工效降 低所增加的费用。室内作业的维护项目不计此项费用。 CS00008 生产工具用具使用费 项 指维护作业所需的不属于固定资产的工具用具等的购置、摊销、维修费。\n\n[2] 来源：电信基础设施维护规程",
+      "护干扰费 5.0 CS00003 车辆使用费 3.5 CS00004 维护资料更新、器材清点费 1.0 CS00005 维护站点设施费 7.0 CS00006 夜间维护作业增加费 2.3 CS00007 冬雨季维护作业增加费 2.5 CS00008 生产工具用具使用费 1.2 CS00009 维护作业用水电蒸汽费 按实计列 CS00010 特殊地区维护作业增加费 20 CS00011 特殊通信保障费 1.5 CS00012 二次搬运费 按实计列 9.2.6 规费 规费是指政府和有关部门规定必须缴纳的费用。 规费包括：社会保障费、住房公积金、危险作业意外"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "206d11a37b452206c3d2fc95",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 156,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 56
+      },
+      {
+        "index": 2,
+        "chunk_id": "1c13f42ad07f8eb382c975f1",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 159,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 48
+      },
+      {
+        "index": 3,
+        "chunk_id": "375b8a8c8d53610084ffb7c3",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 158,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 103
+      },
+      {
+        "index": 4,
+        "chunk_id": "25e36a9f6fe82dada3defbb0",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 107,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 71
+      }
+    ]
+  },
+  "p6s-0146": {
+    "case_id": "p6s-0146",
+    "ai_suggested_classification": "单位混淆；标注解析疑点",
+    "suspected_excerpt": "计量单位为“个”",
+    "ai_suggestion": "来源出现法兰盘/法兰盘²次，未直接支持回答“个”；Silver上标²疑似乘号解析。回答又把日常维护改述为更换计费。",
+    "human_review_reason": "人工查看原表单位，不能将解析字符直接当正确计量单位。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 146,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0146.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0146.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0146.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "114.00 61.00 WH11012001 光光缆交接箱维护 33.53 22.75 6.23 4.55 消耗量 0.13 0.13 表10.2.1.13 WH11013 ODF 架日常维护 工作内容：更换法兰盘、更换标签、整理尾纤、更新资料等。 计量单位：法兰盘 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH11013001 ODF 架日常维护 21.00 14.25 3.90 2.85 消耗量 0.13 0\n\n[",
+      " 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH11013001 ODF 架日常维护 21.00 14.25 3.90 2.85 消耗量 0.13 0\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第124页\n定位信息：124\n综合分：0.630615\n召回综合分：0.630615\n重排分：无\n语义分：0.641634\nBM25 原始分：28.236147\nBM25 归一化分：0.604905\n内容：章节：电信",
+      "光缆交接箱维护 33.53 22.75 6.23 4.55 消耗量 0.13 0.13 表10.2.1.13 WH11013 ODF 架日常维护 工作内容：更换法兰盘、更换标签、整理尾纤、更新资料等。 计量单位：法兰盘 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH11013001 ODF 架日常维护 21.00 14.25 3.90 2.85 消耗量 0.13 0\n\n[2] 来源：电信基础设施维护规程.pdf",
+      ".55 消耗量 0.13 0.13 表10.2.1.13 WH11013 ODF 架日常维护 工作内容：更换法兰盘、更换标签、整理尾纤、更新资料等。 计量单位：法兰盘 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH11013001 ODF 架日常维护 21.00 14.25 3.90 2.85 消耗量 0.13 0\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第124页\n定位信息：12",
+      "门锁应该完好，无锈蚀；检查并确保进出线孔封闭完好，防止进水和啮齿类动物进入箱体、检查并确保箱体表面清洁，无破损及其他 安全隐患；检查并确保箱体内清洁无杂物等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH11012001 光光缆交接箱维护 33.53 22.75 6.23 4.55 消耗量 0.13 0.13 表10.2.1.13 WH11013 ODF 架日常维护 工作内容：更换法兰盘、更换标签、",
+      ".23 4.55 消耗量 0.13 0.13 表10.2.1.13 WH11013 ODF 架日常维护 工作内容：更换法兰盘、更换标签、整理尾纤、更新资料等。 计量单位：法兰盘 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH11013001 ODF 架日常维护 21.00 14.25 3.90 2.85 消耗量 0.13 0\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第124页\n定位信息"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "1a00f58577a947664b68d1b0",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 183,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 44
+      },
+      {
+        "index": 2,
+        "chunk_id": "bae1b3473d922bce016eb32f",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 124,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 329
+      },
+      {
+        "index": 3,
+        "chunk_id": "b5b58e3e4548ba852371e3a8",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 123,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 322
+      },
+      {
+        "index": 4,
+        "chunk_id": "5396ea9eec4125daa7f95045",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 173,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 150
+      }
+    ]
+  },
+  "p6s-0151": {
+    "case_id": "p6s-0151",
+    "ai_suggested_classification": "题干条件不足；单位错误；辅助证据缺失",
+    "suspected_excerpt": "徒步巡回；73.29元/工日、14.66元/工日",
+    "ai_suggestion": "实际[1]有车辆山区24.43/4.89，[2]有徒步山区73.29/14.66。题干未限定车辆，回答选择徒步有数字支持；附加元/工日把工作量计价与人工单价混淆。两个未召回标注为巡查操作文本，并非数值所在chunk；数值证据已在prompt，故检索miss标签不能作为答错的充分原因。",
+    "human_review_reason": "人工需先确定车辆/徒步范围，再核对计量单位；保留原分。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination",
+      "retrieval_context",
+      "multi_condition"
+    ],
+    "source_case_line": 151,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0151.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0151.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0151.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      ".02 48.86 13.39 9.77 消耗量 0.43 — WH11003002 丘陵、城区 86.42 58.63 16.06 11.73 0.51 — WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —\n\n[3] 来源：电信基础设施维护规程.pdf\n引用标签：[3]\n标题：第173页\n定位信息：173\n综合分：0.685529\n召回综合分：0.685529\n重排分：无\n语义分：0.696602\nBM25 原始分：23.572993\nBM25 归一化分：0.659690\n内容：章节：电信基础设施维护规程 > ",
+      "单价(元) 114.00 61.00 WH11004001 直埋光缆线路车辆巡回 平原、丘陵 24.01 16.29 4.46 3.26 消耗量 0.14 — WH11004002 山区 36.01 24.43 6.69 4.89 0.21 — WH11004003 城区 28.81 19.54 5.35 3.91 0.17 — 注：直埋硅芯管道及光缆视同直埋光缆，按直埋光缆条目取费。\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第175页\n定位信息：175\n综合分：0.773965\n召回综合分：0.773965\n重排分：无\n语",
+      "缆保护措施（沟坎、堵塞、护坡、漫水坝、挡水墙等）是否损坏，沿线重点部位 保护是否到位，沿线有无外力施工影响线路安全等；做好巡查记录，并将发现的问题及时上报等。 计量单位：千米²次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH11004001 直埋光缆线路车辆巡回 平原、丘陵 24.01 16.29 4.46 3.26 消耗量 0.14 — WH11004002 山区 36.01 24.43 6.69 4.89",
+      "坏， 沿线重点部位保护是否到位，沿线有无外力施工等影响线路安全的行为，沿线是否发生鼠害、蚁害等对线路构成威胁的情况；做好巡查记录，并将发现的问题 及时上报等。 计量单位：千米²次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH11003001 直埋光缆线路徒步巡回 平原 72.02 48.86 13.39 9.77 消耗量 0.43 — WH11003002 丘陵、城区 86.42 58.63 16.06 11.7"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "9832f94c5c169b4751480ff2",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 176,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 275
+      },
+      {
+        "index": 2,
+        "chunk_id": "c379e9fa43fe7ee20946d7ab",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 175,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 351
+      },
+      {
+        "index": 3,
+        "chunk_id": "5396ea9eec4125daa7f95045",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 173,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 150
+      },
+      {
+        "index": 4,
+        "chunk_id": "cbbeb4430a68f9c32c878010",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 180,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 361
+      }
+    ]
+  },
+  "p6s-0157": {
+    "case_id": "p6s-0157",
+    "ai_suggested_classification": "条件混淆；题干拼接疑点；评分失败",
+    "suspected_excerpt": "15m以上每增加1m为91.20元",
+    "ai_suggestion": "prompt同页有WH23115060高度增量18.24和WH23115066扩装设备板件91.20，两行属于不同项目。题干把高度增量与扩装板件拼合，回答也把91.20当高度增量。不能自动以Silver18.24补评分。",
+    "human_review_reason": "人工核对跨页项目归属、线性高度增量是否适用于板件。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 157,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0157.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0157.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0157.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      2,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "6276\nBM25 归一化分：0.980911\n内容：章节：电信基础设施维护规程 > 第271页 页码：271 T/CAICI XXXX—XXXX 265 下 WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10 WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10 WH23115062 安装多系统合路器（POI） 落地式 729.60 456.00 136.80 136.80 4.00 WH23115063 壁挂式 490.",
+      ".88 65.66 65.66 1.92 WH23115065 安装调测直放站设备 （站） 1171.01 731.88 219.56 219.56 6.42 WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第269页\n定位信息：269\n综合分：0.795797\n召回综合分：0.795797\n重排分：无\n语义分：0.708282\nBM25 原始分：84.254619\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "5853cdf43be2158dd66a2464",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 271,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 157
+      },
+      {
+        "index": 2,
+        "chunk_id": "171c905ff1949657335ddc95",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 269,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 37
+      },
+      {
+        "index": 3,
+        "chunk_id": "0482cd9fc76bb3bffb641705",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 268,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 9
+      },
+      {
+        "index": 4,
+        "chunk_id": "db5e14e84f67dcfd9be4e310",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 263,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 390
+      }
+    ]
+  },
+  "p6s-0180": {
+    "case_id": "p6s-0180",
+    "ai_suggested_classification": "引用格式错误；多条件整合",
+    "suspected_excerpt": "[4.5.1]、[4.2.2]、[6.1.2]",
+    "ai_suggestion": "终端配置与安全条件都有回答，但把章节编号作为来源引用，实际来源标签仅整数[1]至[3]。仅检查整数正则会漏掉此类错误。",
+    "human_review_reason": "人工需核对章节编号是否准确及每条是否由实际保留片段支持。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 180,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0180.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0180.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0180.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      2,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 物联网接入业务运维： 1.掌握物联网接入业务的设置 2.了解常见网关故障 物联网接入业务运维： 1.",
+      "务运维 4.1 光纤到户业务运维 4.1.1 能操作光纤到户业务的APP 4.1.2 能开通和测试光纤到户业务 4.1.1 光纤入户施工及验收规范 4.1.2 装维作业安全操作规范 4.2 交互式网络电视业务运维 4.2.1 能操作交互式网络电视业务的 APP 4.2.2 能开通和测试交互式网络电视 业务 4.2.1 运营商视听业务基础知识 4.2.2 装维作业安全操作规范 4.3 基础宽带故障处理 4.3.1 能熟练进行计算机操作 4.3.2 能开通和测试基础宽带业务 4.3.1 无源光网络基础知识 4.3.2 接入网基础知识 4.4 物联网接",
+      "网络电视业务运维 4.2.1 能操作交互式网络电视业务的 APP 4.2.2 能开通和测试交互式网络电视 业务 4.2.1 运营商视听业务基础知识 4.2.2 装维作业安全操作规范 4.3 基础宽带故障处理 4.3.1 能熟练进行计算机操作 4.3.2 能开通和测试基础宽带业务 4.3.1 无源光网络基础知识 4.3.2 接入网基础知识 4.4 物联网接入业务运维 4.4.1 能操作物联网接入业务的APP 4.4.2 能接入智能设备、开通应用 4.4.1 物联网基础知识 4.4.2 计算机网络基础知识 3.5 家庭复合总线接入业务运维 4.5.1",
+      "3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识\n\n[2] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\n引用标签：[2]\n标题：第12页\n定位信息：12\n综合分：0.657175\n召回综合分：0.657175\n重排分：无\n语义分：0.582740\nBM25 原始分：51.125470\nBM25 归一化分：0.830855\n内容：章",
+      "5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识\n\n[2] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\n引用标签：[2]\n标题：第12页\n定位信息：12\n综合分：0.657175\n召回综合分：0.657175\n重排分：无\n语义分：0.582740\nBM25 原始分：51.125470\nBM25 归一化分：0.830855\n内容：章节：智慧家庭装维工程与管理职业技能等级标准 > 第1"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 14,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 272
+      },
+      {
+        "index": 2,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 3,
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 13,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 82
+      },
+      {
+        "index": 4,
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 11,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 399
+      }
+    ]
+  },
+  "p6s-0192": {
+    "case_id": "p6s-0192",
+    "ai_suggested_classification": "证据粒度不足；操作过程未覆盖",
+    "suspected_excerpt": "具体操作流程未在上下文中明确说明",
+    "ai_suggestion": "来源主要是“能进行入户光缆热熔与冷接”的能力标准，并非终端操作步骤。回答承认流程缺失，不能把完整性不足直接等同于幻觉；操作前测试等时序也需支持。",
+    "human_review_reason": "人工判断题干是否超出标注证据的粒度，并复核新增时序。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 192,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0192.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0192.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0192.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "基础知识 3.4 光宽终端连接和室内线缆布放 3.4.1 能制作RJ-11、RJ-45 水晶头 3.4.2 能制作五类、六类线等模块 3.4.3 能进行入户光缆热熔与冷接 3.4.1 接入网基础知识 3.4.2 计算机网络基础知识 3.4.3 光纤结构基础知识 3.5 路由器的配置 3.5.1 能进行计算机基本操作 3.5.2 能通过计算机进行路由配置 3.5.1 接入网基础知识 3.5.2 计算机网络基础知识 4.业务开通 和业务运维 4.1 光纤到户业务运维 4.1.1 能操作光纤到户业务的APP 4.1.2 能开通和测试光纤到户业务 4.",
+      "理职业技能等级标准 > 第14页 页码：14 T/CAICIXXXX—XX 13 3.3 光路达标测试 3.3.1 能使用红光光源、光功率计 3.3.2 能掌握手持终端的使用 3.3.1 无源光网络基础知识 3.4 光宽终端连接和室内线缆布放 3.4.1 能制作RJ-11、RJ-45 水晶头 3.4.2 能制作五类、六类线等模块 3.4.3 能进行入户光缆热熔与冷接 3.4.1 接入网基础知识 3.4.2 计算机网络基础知识 3.4.3 光纤结构基础知识 3.5 路由器的配置 3.5.1 能进行计算机基本操作 3.5.2 能通过计算机进行路由",
+      "BM25 归一化分：1.000000\n内容：章节：智慧家庭装维工程与管理职业技能等级标准 > 第14页 页码：14 T/CAICIXXXX—XX 13 3.3 光路达标测试 3.3.1 能使用红光光源、光功率计 3.3.2 能掌握手持终端的使用 3.3.1 无源光网络基础知识 3.4 光宽终端连接和室内线缆布放 3.4.1 能制作RJ-11、RJ-45 水晶头 3.4.2 能制作五类、六类线等模块 3.4.3 能进行入户光缆热熔与冷接 3.4.1 接入网基础知识 3.4.2 计算机网络基础知识 3.4.3 光纤结构基础知识 3.5 路由器的配"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 14,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 272
+      },
+      {
+        "index": 2,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 3,
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 13,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 82
+      },
+      {
+        "index": 4,
+        "chunk_id": "a3cb9e6f0142a9e1ebab6be3",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 13,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 296
+      }
+    ]
+  },
+  "p6s-0194": {
+    "case_id": "p6s-0194",
+    "ai_suggested_classification": "Silver表头错列；Judge疑似误判",
+    "suspected_excerpt": "技工114元/工日，普工61元/工日",
+    "ai_suggestion": "实际[3]第158页明确给出114/61元每工日；[1]表头也支持工日单价。Silver的1.92是综合单价、1.30是人工费，不能当技工和普工单价。建议优先人工修订参考/Judge判断，不能将该主结论标为已证实幻觉。",
+    "human_review_reason": "人工核对多级表头以及题干“单价”的含义。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 194,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0194.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0194.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0194.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH12024001 铺水泥盖板 1.92 1.30 0.36 0.26 消耗量 0.00 0.02 表10.2.2.25 WH12025 石护坡、坎、堵塞、封石沟 工作内容：砌漫水坡，砌斜坡堵塞，石砌护坎，封石沟，挖土石方，砌石墙，勾缝等。 计量单位：立方米 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 ",
+      " 综合单价中的人工费是指用于直接从事维护作业的生产人员开支的各项费用。具体内容参照《信息通 信建设工程费用定额》(工信部通[2016]451 号)的相关规定。 人工费单价为：技工为114 元/工日；普工为61 元/工日。 9.2.2.2 企业管理费 指维护企业组织电信基础设施维护工作和经营管理所需的费用。 企业管理费包括：管理人员工资、办公费、差旅交通费、固定资产使用费、工具用具使用费、劳动保 险费、工会经费、职工教育经费、财产保险费、财务费、税金、其他费等。具体内容参照《信息通信建设 工程费用定额》(工信部通[2016]451 号)的相关规定。"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "986d6255e0f61ce5e0bb2b9a",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 215,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 276
+      },
+      {
+        "index": 2,
+        "chunk_id": "a04a5aeb2ab4fbd5df07dfbf",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 129,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 286
+      },
+      {
+        "index": 3,
+        "chunk_id": "375b8a8c8d53610084ffb7c3",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 158,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 103
+      },
+      {
+        "index": 4,
+        "chunk_id": "dcb62613c4ce7472d33766b3",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 219,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 393
+      }
+    ]
+  },
+  "p6s-0195": {
+    "case_id": "p6s-0195",
+    "ai_suggested_classification": "引用上下文缺失；跨能力推断；评分失败",
+    "suspected_excerpt": "[4]；用光功率计检测；排除组网异常",
+    "ai_suggestion": "4个返回来源中[4]未进入实际prompt，编号范围有效不等于实际可引用；回答将能力标准整合为诊断步骤，需逐步核对推断是否获得来源支持。",
+    "human_review_reason": "评分失败，人工需核验播放故障步骤及实际可见来源，不填自动补分。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 195,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0195.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0195.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0195.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      2,
+      4,
+      3,
+      3,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "：章节：智慧家庭装维工程与管理职业技能等级标准 > 第14页 页码：14 T/CAICIXXXX—XX 13 3.3 光路达标测试 3.3.1 能使用红光光源、光功率计 3.3.2 能掌握手持终端的使用 3.3.1 无源光网络基础知识 3.4 光宽终端连接和室内线缆布放 3.4.1 能制作RJ-11、RJ-45 水晶头 3.4.2 能制作五类、六类线等模块 3.4.3 能进行入户光缆热熔与冷接 3.4.1 接入网基础知识 3.4.2 计算机网络基础知识 3.4.3 光纤结构基础知识 3.5 路由器的配置 3.5.1 能进行计算机基本操作 3.",
+      "到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 物联网接入业务运维： 1.掌握物联网接入业务的设置 2.了解常见网关故障 物联网接入业务运维： ",
+      " 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障",
+      ".熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： 1.基础宽带故障处理 基础网络故障处理： 1.智能组网一般故障处理 基础网络故障处理： 1.智能组网复杂故障处理 "
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 2,
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 14,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 272
+      },
+      {
+        "index": 3,
+        "chunk_id": "e010fe39879d92fa21dc59d9",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 11,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 399
+      },
+      {
+        "index": 4,
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 16,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 136
+      }
+    ]
+  },
+  "p6s-0222": {
+    "case_id": "p6s-0222",
+    "ai_suggested_classification": "标注检索未命中；替代支持；覆盖遗漏",
+    "suspected_excerpt": "维护分项作业工作量清单费用由维护分项作业费、材料费等构成",
+    "ai_suggestion": "标注chunk不在返回Top4，但实际[3]第87页8.4.1.1列有费用构成，可替代支持部分答案。回答省略规费、安全生产费、其他项目费、销项税额等显式项，不能只因标注ID未命中就判知识不可得。",
+    "human_review_reason": "人工比较参考范围和替代来源，并判遗漏是否影响完整性。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "retrieval_context"
+    ],
+    "source_case_line": 222,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0222.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0222.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0222.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "内容：章节：电信基础设施维护规程 > 第87页 页码：87 T/CAICI XXXX—XXXX 81 8.4 维护分项作业工作量清单计价 8.4.1 一般规定 8.4.1.1 采用工作量清单计价，电信基础设施维护费由维护分项作业费、材料及备品备件购置费、机械仪 表使用费、措施费、规费、利润、安全生产费、其他项目费和销项税额构成。 8.4.1.2 维护工作量清单应采用综合单价计价。 8.4.1.3 招标文件中的工作量清单标明的工作量是投标人投标报价的共同基础，结算的工作量按发、承包 双方在合同中约定应予计量且实际完成的工作量确定。 8.4.1.4 材",
+      "定 8.4.1.1 采用工作量清单计价，电信基础设施维护费由维护分项作业费、材料及备品备件购置费、机械仪 表使用费、措施费、规费、利润、安全生产费、其他项目费和销项税额构成。 8.4.1.2 维护工作量清单应采用综合单价计价。 8.4.1.3 招标文件中的工作量清单标明的工作量是投标人投标报价的共同基础，结算的工作量按发、承包 双方在合同中约定应予计量且实际完成的工作量确定。 8.4.1.4 材料及备品备件购置清单中“发包人提供”部分应由发包人填写，发包人提供的备品备件不计入 材料及备品备件购置费，但计入安全生产费的计算基础。 8.4.1.5 机"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "dff1e24f94e9119b97ca6956",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 85,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 398
+      },
+      {
+        "index": 2,
+        "chunk_id": "ee399b4631c332fa2e834a3b",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 93,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 422
+      },
+      {
+        "index": 3,
+        "chunk_id": "cd07a708bafa299325a4facf",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 87,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 362
+      },
+      {
+        "index": 4,
+        "chunk_id": "b113827b54593ec6085a7bbc",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 15,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 318
+      }
+    ]
+  },
+  "p6s-0230": {
+    "case_id": "p6s-0230",
+    "ai_suggested_classification": "费用概念混淆；跨来源整合；评分失败",
+    "suspected_excerpt": "光缆引入、跳接与测试费用；未明确企业管理费及利润",
+    "ai_suggestion": "回答把操作工作内容描述为综合单价构成，未清楚列出人工费、企业管理费、利润和风险范围。需核对实际prompt是否保留定义；不能把Judge失败当执行失败或自动赋零。",
+    "human_review_reason": "人工检查费用定义是否在prompt及回答能否等价覆盖。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 230,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0230.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0230.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0230.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "a3cb9e6f0142a9e1ebab6be3",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 13,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 296
+      },
+      {
+        "index": 2,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 3,
+        "chunk_id": "4fce0b1cd8d9e372161536d0",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 78,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 146
+      },
+      {
+        "index": 4,
+        "chunk_id": "48e4aa1fce9c20c3d6f6339f",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 91,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 135
+      }
+    ]
+  },
+  "p6s-0237": {
+    "case_id": "p6s-0237",
+    "ai_suggested_classification": "引用编号越界；可答性待审",
+    "suspected_excerpt": "[7]；职业技能评价当员工绩效",
+    "ai_suggestion": "实际[7]不存在；核心“理论和实操”可由[3]职业技能等级权重表支持。技能评价可否回答企业绩效需要语义判断，Silver无答案标签未人工确认，Judge引用满分遗漏了[7]。",
+    "human_review_reason": "人工区分来源编号错误与岗位绩效/技能评价的可答范围。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "invalid_citation"
+    ],
+    "source_case_line": 237,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0237.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0237.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0237.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      7,
+      3,
+      3,
+      3,
+      3
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "1.2 用户信息安全知识 6.1.3 网络安全基础知识 7 权重表 智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机 制分为理论和技能实操两部分。具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5 安全作业知识 15",
+      "5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5 安全作业知识 15 15 15 合计 100\n\n[上下文已截断，请优先依据已保留片段回答。]\n\"\"\""
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 2,
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 16,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 136
+      },
+      {
+        "index": 3,
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 19,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 5
+      },
+      {
+        "index": 4,
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 14,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 272
+      }
+    ]
+  },
+  "p6s-0243": {
+    "case_id": "p6s-0243",
+    "ai_suggested_classification": "引用编号越界；目的推断",
+    "suspected_excerpt": "[5]；提升用户满意度",
+    "ai_suggestion": "[5]不存在；[2]/[3]有沟通、交付、维护技巧，[1]有APP及Wi-Fi功能，但这些措施能提升满意度属于推断，不是来源直接规定的满意度方案。",
+    "human_review_reason": "人工核对有据技能事实与未证实效果承诺、无答案标签。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "invalid_citation"
+    ],
+    "source_case_line": 243,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0243.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0243.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0243.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      2,
+      5
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "家具基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识\n\n[3] 来源",
+      ".4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识\n\n[3] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\n引用标签：[3]\n标题：第12页\n定位信息：12\n综合分：0.651849\n召回综合分：0.651",
+      "网，实现用户同全光组网终端的关系绑定/解绑； 用户控制家庭全光组网终端执行相应的操作； 2. 和家亲APP接收平台推送的家庭组网终端上报信息，提示用户； 3. Wi-Fi质量分析； 3.2.5. 全光组网终端 全光组网终端包含光网关和光路由端两大类，负责增大家庭网络的覆盖范围和信号 强度，提升家庭网络的整体通信性能。 为确保多个全光组网终端之间相互组网及互操作性，全光组网终端之间应通过 《Multi-AP_Specification R2》规范实现EasyMeshTM 要求的网络拓扑、漫游、频段切换、 角色选择等功能，并支持使用WPS或DPP功能。 光",
+      "场景设置 4.5.2 能处理智能家居的简单故障 4.5.1 物联网基础知识 4.5.2 计算机网络基础知识 4.5.2 智能家具基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1."
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "3b1f839571de44bb1abd2f94",
+        "document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+        "page": 13,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 110
+      },
+      {
+        "index": 2,
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 16,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 136
+      },
+      {
+        "index": 3,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 4,
+        "chunk_id": "5d1e8fd617217ecea2afa2f1",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 9,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 166
+      }
+    ]
+  },
+  "p6s-0247": {
+    "case_id": "p6s-0247",
+    "ai_suggested_classification": "引用编号越界；概念范围",
+    "suspected_excerpt": "[8]；工具用具使用费",
+    "ai_suggestion": "[8]不存在；已返回来源存在工具费用相关概念，并不能修复错误编号。需区分企业管理费内工具用具使用费与措施费中的生产工具用具使用费，以及哪些内容实际保留在prompt。",
+    "human_review_reason": "人工确认具体费用条目及其所属费用类别。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "invalid_citation"
+    ],
+    "source_case_line": 247,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0247.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0247.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0247.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      2,
+      8,
+      2,
+      2,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "冬雨季维护作业增加费 项 指冬雨季维护作业所采取的防冻、保温、防雨防滑等安全措施及工效降 低所增加的费用。室内作业的维护项目不计此项费用。 CS00008 生产工具用具使用费 项 指维护作业所需的不属于固定资产的工具用具等的购置、摊销、维修费。\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第158页\n定位信息：158\n综合分：0.581357\n召回综合分：0.581357\n重排分：无\n语义分：0.642883\nBM25 原始分：7.677064\nBM25 归一化分：0.437798\n内容：章节：电信基础设施维护规程 > 第",
+      "工日。 9.2.2.2 企业管理费 指维护企业组织电信基础设施维护工作和经营管理所需的费用。 企业管理费包括：管理人员工资、办公费、差旅交通费、固定资产使用费、工具用具使用费、劳动保 险费、工会经费、职工教育经费、财产保险费、财务费、税金、其他费等。具体内容参照《信息通信建设 工程费用定额》(工信部通[2016]451 号)的相关规定。 企业管理费=人工费× 27.4% 9.2.2.3 利润 综合单价中利润是指维护企业完成承包维护项目获得的盈利； 利润=人工费× 20% 9.2.2.4 编制电信基础设施维护费用文件时，综合单价参照《电信基础设施维护",
+      ".2.4.2 机械仪表使用费=∑〔年使用费单价×数量×维护周期（年）〕 维护周期（年）〕 9.2.4.3 机械仪表年使用费单价指标见第9.5 条。 9.2.5 措施项目费 措施项目费是指电信基础设施维护生产作业中为文明生产、安全防护、降效补偿、环境保护等采取措 施所发生的费用。 9.2.5.1 文明生产费 指维护现场为达到环保要求及文明作业所需要的各项费用。 9.2.5.2 维护干扰费 指维护作业中由于受市政管理、交通管制、人流密集、现场协调等影响工效的补偿费用。在城区、高 速公路隔离带、铁路路基边缘作业的维护项目计取此项费用。 9.2.5.3",
+      " 机械仪表使用费=∑〔年使用费单价×数量×维护周期（年）〕 维护周期（年）〕 9.2.4.3 机械仪表年使用费单价指标见第9.5 条。 9.2.5 措施项目费 措施项目费是指电信基础设施维护生产作业中为文明生产、安全防护、降效补偿、环境保护等采取措 施所发生的费用。 9.2.5.1 文明生产费 指维护现场为达到环保要求及文明作业所需要的各项费用。 9.2.5.2 维护干扰费 指维护作业中由于受市政管理、交通管制、人流密集、现场协调等影响工效的补偿费用。在城区、高 速公路隔离带、铁路路基边缘作业的维护项目计取此项费用。 9.2.5.3 车辆使用费"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "206d11a37b452206c3d2fc95",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 156,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 56
+      },
+      {
+        "index": 2,
+        "chunk_id": "375b8a8c8d53610084ffb7c3",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 158,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 103
+      },
+      {
+        "index": 3,
+        "chunk_id": "f6411b32b649323ce128c207",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 166,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 433
+      },
+      {
+        "index": 4,
+        "chunk_id": "25e36a9f6fe82dada3defbb0",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 107,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 71
+      }
+    ]
+  },
+  "p6s-0265": {
+    "case_id": "p6s-0265",
+    "ai_suggested_classification": "从技能事实外推满意度评估",
+    "suspected_excerpt": "通过用户反馈判断满意度；贯穿全过程",
+    "ai_suggestion": "来源为技能等级及服务技巧，不直接规定满意度指标或全过程评估机制。回答把相关技能转换为确定评估流程，疑似外推；无答案标签也需人工确认。",
+    "human_review_reason": "人工需核验是否为合理有限推断以及是否应明确证据不足。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 265,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0265.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0265.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0265.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      3,
+      3,
+      3,
+      2,
+      3
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "1 能进行智能家居场景设置 4.5.2 能处理智能家居的简单故障 4.5.1 物联网基础知识 4.5.2 计算机网络基础知识 4.5.2 智能家具基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能",
+      " 高级 （%） （%） （%） 技能要求 职业道德 10 5 5 基础知识 10 10 10 智能组网 25 30 35 业务开通和业务运维 25 30 35 服务能力 20 15 5 安全作业 10 10 10 合计 100 100 100\n\n[3] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\n引用标签：[3]\n标题：第12页\n定位信息：12\n综合分：0.724812\n召回综合分：0.724812\n重排分：无\n语义分：0.606874\nBM25 原始分：23.168610\nBM25 归一化分：1.000000\n内容：章节：智慧家庭",
+      "家具基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识\n\n[2] 来源",
+      ".4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识\n\n[2] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\n引用标签：[2]\n标题：第19页\n定位信息：19\n综合分：0.728225\n召回综合分：0.728",
+      "用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识 7 权重表 智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机 制分为理论和技能实操两部分。具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终",
+      "安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识 7 权重表 智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机 制分为理论和技能实操两部分。具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 16,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 136
+      },
+      {
+        "index": 2,
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 19,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 5
+      },
+      {
+        "index": 3,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 4,
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 10,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 22
+      }
+    ]
+  },
+  "p6s-0273": {
+    "case_id": "p6s-0273",
+    "ai_suggested_classification": "对象混淆；数值单位混淆；检索漏项",
+    "suspected_excerpt": "配电柜红灯表示光路异常；防雷接地电阻≤100Ω",
+    "ai_suggestion": "目标配电/防雷chunk未返回；回答把配电柜故障当光路问题。实际[3]有OTDR，故Judge称OTDR无依据不准确；但ρ≤100的注释是土壤电阻率Ω·m，不是接地电阻阈值。",
+    "human_review_reason": "人工需区分检索对象错误、错误迁移和数值单位误读。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination",
+      "retrieval_context"
+    ],
+    "source_case_line": 273,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0273.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0273.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0273.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      3,
+      3,
+      3,
+      3,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "X 26 表4.6.0.3 光缆线路定期测试的测试项目、维护指标及其测试周期表 序号 测试项目 维护指标 维护周期 1 中继段光纤的损耗 测量（采用后向散射 法OTDR） G.652 1310nm 0.40 主用光纤：按需 备用光纤：半年 （特殊情况时，适当缩短周期） 1550nm 0.25 G.655 1550nm 0.25 2 备用纤芯光纤衰减与平 均损耗测试 抽测50%，主用纤芯按需，质量指标符合规 范，纤芯完好率 12 芯光缆以下 90％，12 芯 以上95%。 半年 3 防护接地装置地线 电阻 ρ≤100（注） 记录 半年（雷雨季节",
+      "与平 均损耗测试 抽测50%，主用纤芯按需，质量指标符合规 范，纤芯完好率 12 芯光缆以下 90％，12 芯 以上95%。 半年 3 防护接地装置地线 电阻 ρ≤100（注） 记录 半年（雷雨季节前、后各1 次） 100＜ρ≤500 记录 ρ＞500 记录 4 直埋接头盒监测电极间绝缘电阻 ≥5MΩ 半年（按需适当缩短周期） 5 金属护套对地绝缘电阻 ≥2MΩ/单盘 半年 注：ρ为2m 深的土壤电阻率，单位为：Ω· m。 有关测试项目及维护指标的说明如下。 1. 中继段光纤的损耗测量： 1)仪表的测试状态应与前次的测试状态相同。 2)当发现光",
+      "记录 ρ＞500 记录 4 直埋接头盒监测电极间绝缘电阻 ≥5MΩ 半年（按需适当缩短周期） 5 金属护套对地绝缘电阻 ≥2MΩ/单盘 半年 注：ρ为2m 深的土壤电阻率，单位为：Ω· m。 有关测试项目及维护指标的说明如下。 1. 中继段光纤的损耗测量： 1)仪表的测试状态应与前次的测试状态相同。 2)当发现光纤通道损耗增大或后向散射信号曲线上有大台阶时，应适当增加检查次数，组织技术人员进行分析， 查找原因，及时采取改善措施。 3)发现光缆中有若干根光纤的\n\n[上下文已截断，请优先依据已保留片段回答。]\n\"\"\""
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "d60c3992acb84d003c25c027",
+        "document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+        "page": 46,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 378
+      },
+      {
+        "index": 2,
+        "chunk_id": "ac420694498f6bc389a85f68",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 57,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 306
+      },
+      {
+        "index": 3,
+        "chunk_id": "e3cf39da121b2a8bcc3179f0",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 32,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 408
+      },
+      {
+        "index": 4,
+        "chunk_id": "1e2bd5122cd13762094dde86",
+        "document": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+        "page": 48,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 54
+      }
+    ]
+  },
+  "p6s-0276": {
+    "case_id": "p6s-0276",
+    "ai_suggested_classification": "Silver列错配；Judge疑似误判",
+    "suspected_excerpt": "交越0.5米；平行1.5米",
+    "ai_suggestion": "实际[1]表D.0.4表头“平行时 交越时”，>500mm给水管行1.5/0.5，支持回答核心结论。Silver1.5取的是平行列。建议优先复核参考及Judge，勿把交越0.5当已确认幻觉。",
+    "human_review_reason": "人工核对原表表头、单位和回答末句的泛化范围。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 276,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0276.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0276.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0276.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "CAICI XXXX—XXXX 339 4）D.0.4 直埋光缆与其它建筑物及地下管线间最小净距： 表 D.0.4 直埋光缆与其它建筑物及地下管线间最小净距表 名称 平行时 交越时 通信管道边线（不包括人手孔） 0.75 0.25 非同沟的直埋通信光（电）缆 0.5 0.25 埋式电力电缆（交流35KV以下） 0.5 0.5 埋式电力电缆（交流36KV及以上） 2 0.5 给水管（管径小于300mm) 0.5 0.5 给水管（管径大于300mm～500mm) 1 0.5 给水管（管径大于500mm) 1.5 0.5 高压油管、天然气管 10 0.5 热力",
+      "5 0.5 埋式电力电缆（交流36KV及以上） 2 0.5 给水管（管径小于300mm) 0.5 0.5 给水管（管径大于300mm～500mm) 1 0.5 给水管（管径大于500mm) 1.5 0.5 高压油管、天然气管 10 0.5 热力、排水管 1 0.5 燃气管（压力小于300KPa) 1 0.5 燃气管（压力300KPa及以上) 2 0.5 其他通信线路 0.5 - 排水沟 0.8 0.5 房屋建筑红线或基础 1 - 树木（市内、村镇大村、果树、行道树） 0.75 - 树木（市外大树） 2 - 水井、坟墓 3 - 粪坑、积肥池、沼气池、氨水池等 3 "
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "fc09e131509365839af6116b",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 345,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 441
+      },
+      {
+        "index": 2,
+        "chunk_id": "23a3f4fcf6c1064229d8e25c",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 344,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 61
+      },
+      {
+        "index": 3,
+        "chunk_id": "d8dfa78cb9362f0d69cd659c",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 343,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 386
+      },
+      {
+        "index": 4,
+        "chunk_id": "cbbeb4430a68f9c32c878010",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 180,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 361
+      }
+    ]
+  },
+  "p6s-0288": {
+    "case_id": "p6s-0288",
+    "ai_suggested_classification": "来源范围歧义；Judge疑似过判",
+    "suspected_excerpt": "表—04；第166页表—03",
+    "ai_suggestion": "实际[1]第100页结算表写表—04，[2]第166页预算表写表—03，回答明确提示差异，两者都有来源。题干未限定预算/结算；不能只与Silver表—03比较即定幻觉。",
+    "human_review_reason": "人工确认题干预期表的范围及回答首句是否造成误导。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 288,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0288.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0288.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0288.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      2,
+      2,
+      1,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "码：100 T/CAICI XXXX—XXXX 94 维护项目费用结算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—04 合计 1.2 1.3 2 材料与备品备件购置费 表—06 小计2 3 机械仪表使用费 表—07 小计2 4 措施项目费 表—08 合计 5 规费 表—05 人工费合计× 33.69 6 其他项目费 表—09 合计 6.1 暂估价 表—09—2 合计＋表—09—3 合计 6.2 计日工 表—09—2 合计 6.3 索赔与现场签证 表—09—5 合计 7 安全生产费 (1 +表-",
+      "CAICI XXXX—XXXX 93 维护项目费用招标控制价/投标报价汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—04 合计 1.2 1.3 2 材料与备品备件购置费 表—06 小计2 3 机械仪表使用费 表—07 小计2 4 措施项目费 表—08 合计 5 规费 表—05 人工费合计× 33.69 6 其他项目费 表—09 合计 6.1 暂列金额 表—09—1 合计 6.2 暂估价 表—09—2 合计＋表—09—3 合计 6.3 计日工 表—09—4 合计 6.4 索赔与现场签证 表—09—",
+      "页 页码：166 T/CAICI XXXX—XXXX 160 维护预算汇总表 表格列：项目名称：；第；页；共；页 序号 维护项目名称 计算说明 金额（元） 1 维护分项作业费 1.1 表—03 合计 1.2 1.3 2 材料及备品备件购置费 表—04 合计 3 机械仪表使用费 表—05 合计 4 措施项目费 表—06 合计 5 规费 表—03 人工费合计× 33.69% 6 其他项目费 表—07 合计 7 安全生产费 (1 + 2 + 3 + 4 + 5 + 6 ) × 1.5% 8 销项税额 (1 + 2 + 3 + 4 + 5 + 6+7) ×6% 维护预算 （"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "bd805e062a1bb6e9de169b79",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 100,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 334
+      },
+      {
+        "index": 2,
+        "chunk_id": "f6411b32b649323ce128c207",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 166,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 433
+      },
+      {
+        "index": 3,
+        "chunk_id": "da87c26704741640d02b310e",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 99,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 389
+      },
+      {
+        "index": 4,
+        "chunk_id": "dd814cd4e8cc9e727a6794b2",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 118,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 394
+      }
+    ]
+  },
+  "p6s-0310": {
+    "case_id": "p6s-0310",
+    "ai_suggested_classification": "引用编号越界；无答案标签待审",
+    "suspected_excerpt": "[6]、[5]、[7]",
+    "ai_suggestion": "[5][6][7]均超出4来源；理论/实操60分在[2]有直接支持，逐级要求与安全作业在[3]，服务规范在[2]/[3]。Judge“无有效事实支持”概括过宽，编号错误与内容支持应分离。",
+    "human_review_reason": "人工核对技能考核是否能回答绩效优化，不能将越界引用等同全部事实虚构。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "invalid_citation",
+      "suspected_hallucination"
+    ],
+    "source_case_line": 310,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0310.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0310.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0310.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      2,
+      2,
+      6,
+      5,
+      7
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      " 方式，宜考核从业人员从事本职业或专业应具备的技能水平。 4.9.2.2 初/中/高级理论知识考试、技能考核均应实行百分制，理论知识考核成绩和技能考核成绩皆 达60 分及以上者应为合格。 4.9.3 监考人员、考评人员与考生配比 理论知识考试中的监考人员与考生配比不应低于1：30，且每个考场不应少于2 名监考人员。技 能考核监考人员与考生配比不应低于1：10，且每个考场不应少于2 名监考人员。 4.9.4 鉴定时间 理论知识考试时间不应少于60min。操作技能考核时间，初级不应少于60 min；中级/高级不应少 于120min。 4.9.5 ",
+      "基础知识； c）防火防爆基础知识； d）自然灾害应急基础知识； e）有限空间作业基础知识； 6 工作要求 6.1 本标准初级、中级、高级的技能要求和相关知识要求依次递进，高级别涵盖低级别的要求，主要按 照智慧家庭装维工程与管理工作要求进行技能设置。 6.2 智慧家庭装维工程与管理职业技能及职级应符合表1 的规定。 智慧家庭装维工程与管理职业技能及职级一览表 职业功能 工作内容 初级 中级 高级 （三级） （二级） （一级） 职业道德 职业道德： 1.职业道德规范 2.职业道德主要内容 3.职业道德具体体现 职业道德： 1.职业道德规范 2.职",
+      "44796\n内容：章节：智慧家庭装维工程与管理职业技能等级标准 > 第10页 页码：10 T/CAICIXXXX—XX 9 d）终端设备设置基础知识； 5.7 安全作业知识 安全作业知识应包括下列内容： a）安全生产操作规程基础知识； b）安全用电基础知识； c）防火防爆基础知识； d）自然灾害应急基础知识； e）有限空间作业基础知识； 6 工作要求 6.1 本标准初级、中级、高级的技能要求和相关知识要求依次递进，高级别涵盖低级别的要求，主要按 照智慧家庭装维工程与管理工作要求进行技能设置。 6.2 智慧家庭装维工程与管理职业技能及职级应符合表1",
+      "容：章节：智慧家庭装维工程与管理职业技能等级标准 > 第10页 页码：10 T/CAICIXXXX—XX 9 d）终端设备设置基础知识； 5.7 安全作业知识 安全作业知识应包括下列内容： a）安全生产操作规程基础知识； b）安全用电基础知识； c）防火防爆基础知识； d）自然灾害应急基础知识； e）有限空间作业基础知识； 6 工作要求 6.1 本标准初级、中级、高级的技能要求和相关知识要求依次递进，高级别涵盖低级别的要求，主要按 照智慧家庭装维工程与管理工作要求进行技能设置。 6.2 智慧家庭装维工程与管理职业技能及职级应符合表1 的规定。 智"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "2eda6960dfbb194d0f84e4b0",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 5,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 88
+      },
+      {
+        "index": 2,
+        "chunk_id": "14da1c09b687f7b48896e03a",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 8,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 33
+      },
+      {
+        "index": 3,
+        "chunk_id": "0eb4bd6e18d599063371f51b",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 10,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 22
+      },
+      {
+        "index": 4,
+        "chunk_id": "5766d05fd8a6f73a1ef60b57",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 2,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 156
+      }
+    ]
+  },
+  "p6s-0312": {
+    "case_id": "p6s-0312",
+    "ai_suggested_classification": "技能标准外推市场计划",
+    "suspected_excerpt": "销售技巧与交付能力以匹配市场需求",
+    "ai_suggestion": "实际片段有技能、交付和销售技巧，但没有市场趋势数据或计划对齐方法；各技能事实有据，市场适应性的因果连接缺乏直接证据。",
+    "human_review_reason": "人工区分无答案问题的相关信息回答与越界确定性主张。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 312,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0312.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0312.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0312.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      2,
+      1,
+      2,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "家居组网及场景设置 2.了解常见智能家居故障 智能家居业务运维： 1.熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关知识要求 1.职业道德 1.1 职业道德 ",
+      "熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关知识要求 1.职业道德 1.1 职业道德 1.1.1 能进行职业道德描述 1.1.2 能进行职业道德展示 1.1",
+      "场景设置 智能家居业务运维： 1.熟悉智能家居组网及场景设置 2.了解常见智能家居故障 智能家居业务运维： 1.熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关",
+      "层拓展、接入社区等不同 管理平台 4.5.1 运营商视听业务基础知识 4.5.2 网络基础知识 4.5.3 智能家居基础知识 4.5.4 管理平台基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能",
+      "化分：1.000000\n内容：章节：智慧家庭装维工程与管理职业技能等级标准 > 第12页 页码：12 T/CAICIXXXX—XX 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维：",
+      "级标准 > 第12页 页码：12 T/CAICIXXXX—XX 11 业务开通 和业务运维 光纤到户业务运维： 1.熟悉光分配网应用场景及其建设 模式 2.熟悉光纤到户业务的放装 光纤到户业务运维： 1.熟悉光纤到户的一般故障处理 光纤到户业务运维： 1.掌握光纤到户的复杂故障处理 交互式网络电视业务运维： 1.熟悉交互式网络电视开通业务流 程。 2.掌握交互式网络电视机顶盒配置。 交互式网络电视业务运维： 1.熟悉交互式网络电视的常见故障 处理方法 交互式网络电视业务运维： 1.掌握交互式网络电视的故障分析、 处理方法 基础网络故障处理： "
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 2,
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 14,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 272
+      },
+      {
+        "index": 3,
+        "chunk_id": "2dcaa8db79f8754db213ab1c",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 13,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 82
+      },
+      {
+        "index": 4,
+        "chunk_id": "33e38d557c3eacc533550efa",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 82,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 98
+      }
+    ]
+  },
+  "p6s-0313": {
+    "case_id": "p6s-0313",
+    "ai_suggested_classification": "跨设备/业务范围混淆；参考数值疑点",
+    "suspected_excerpt": "太阳能29.64；文档中无直流拉远",
+    "ai_suggestion": "直流拉远标注chunk未返回，故不能据局部上下文声称整份文档没有。实际[1]另一业务表有太阳能山区29.64，[2]发电设备巡检表有58.14，Silver37.62却属固定燃油发电机组山区。同时存在检索缺项、范围选择和Silver数值污染。",
+    "human_review_reason": "人工核对设备、业务章节、跨页项目编码及两个子问题的范围。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination",
+      "retrieval_context",
+      "multi_condition"
+    ],
+    "source_case_line": 313,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0313.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0313.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0313.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      " 40.13 25.08 7.52 7.52 消耗量 0.22 — WH21111002 平原、丘陵 48.15 30.10 9.03 9.03 0.26 — WH21111003 山区 60.19 37.62 11.29 11.29 0.33 — WH21111004 小型离网风 力发电机组 市区 36.48 22.80 6.84 6.84 0.20 — WH21111005 平原、丘陵 43.78 27.36 8.21 8.21 0.24 — WH21111006 山区 54.72 34.20 10.26 10.26 0.30 — WH2111100",
+      "电系 统 市区 31.01 19.38 5.81 5.81 0.17 — WH21111008 平原 38.30 23.94 7.18 7.18 0.21 — WH21111009 山区 47.42 29.64 8.89 8.89 0.26 —\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第237页\n定位信息：237\n综合分：0.795034\n召回综合分：0.795034\n重排分：无\n语义分：0.708104\nBM25 原始分：66.015188\nBM25 归一化分：0.997869\n内容：章节：电信基础设施维护规程 > 第23",
+      " 62.02 38.76 11.63 11.63 0.34 — WH21111008 平原、丘陵 74.42 46.51 13.95 13.95 0.41 — WH21111009 山区 93.02 58.14 17.44 17.44 0.51 —\n\n[3] 来源：电信基础设施维护规程.pdf\n引用标签：[3]\n标题：第318页\n定位信息：318\n综合分：0.769910\n召回综合分：0.769910\n重排分：无\n语义分：0.680105\nBM25 原始分：64.796954\nBM25 归一化分：0.979455\n内容：章节：电信基础设施维护规程 > 第",
+      "7005 平原 21.89 13.68 4.10 4.10 0.12 — WH31107006 山区 27.36 17.10 5.13 5.13 0.15 — WH31107007 太阳能光伏 离网发电系 统 市区 31.01 19.38 5.81 5.81 0.17 — WH21111008 平原 38.30 23.94 7.18 7.18 0.21 — WH21111009 山区 47.42 29.64 8.89 8.89 0.26 —\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第237页\n定位信息：237\n综合分：0.7"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "4ce91d813f1601103aae315a",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 296,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 143
+      },
+      {
+        "index": 2,
+        "chunk_id": "f1dc89cbedee08393d645a32",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 237,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 428
+      },
+      {
+        "index": 3,
+        "chunk_id": "8be5803c7b6b81a6c36af5bd",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 318,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 253
+      },
+      {
+        "index": 4,
+        "chunk_id": "c970633a7f30540e71c7654b",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 144,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 359
+      }
+    ]
+  },
+  "p6s-0318": {
+    "case_id": "p6s-0318",
+    "ai_suggested_classification": "跨片段引用错配；条件省略",
+    "suspected_excerpt": "两项指标均引用[1]",
+    "ai_suggestion": "[1]实际有直流高频开关电源季度及±5%，但交流输入380V±10%需对应其他来源；Judge说不平衡度的[1]不匹配不够精确。还需保留超过半载、节能模式除外等适用条件。",
+    "human_review_reason": "人工逐项定位交流/直流两个条件，勿沿用Judge错误定位。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 318,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0318.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0318.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0318.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "路运行正常。 11. 检查整流模块工作状态，风扇运转正常，容量满足设备负载要求。 12. 检查各整流模块的负载均分性能。各模块超过半载时，整流模块之间 输出电流不平衡度应低于±5%（节能模式开启除外）。 蓄电池 季度 1. 检查电池组表面干净无灰尘，电池壳体有无渗漏和变形，极柱、安全 阀周围无酸雾酸液溢出。 2. 检查电池极柱、连接条，无氧化或腐蚀现象，连接牢固、手拧无松动。 3. 检查电池组架，无腐蚀，耐酸漆无脱落、剥皮，稳固、地脚螺丝无松 动。 4. 测量电池组总电压及每个单体电池端电压，做好记录。单体电池浮充 电压要求范围2.23V～2",
+      "检查整流模块工作状态，风扇运转正常，容量满足设备负载要求。 12. 检查各整流模块的负载均分性能。各模块超过半载时，整流模块之间 输出电流不平衡度应低于±5%（节能模式开启除外）。 蓄电池 季度 1. 检查电池组表面干净无灰尘，电池壳体有无渗漏和变形，极柱、安全 阀周围无酸雾酸液溢出。 2. 检查电池极柱、连接条，无氧化或腐蚀现象，连接牢固、手拧无松动。 3. 检查电池组架，无腐蚀，耐酸漆无脱落、剥皮，稳固、地脚螺丝无松 动。 4. 测量电池组总电压及每个单体电池端电压，做好记录。单体电池浮充 电压要求范围2.23V～2. 28V，端电压平均"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "f18f80360faf91047b301b2d",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 70,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 427
+      },
+      {
+        "index": 2,
+        "chunk_id": "af73a48f2b73692fcdc056b5",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 48,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 314
+      },
+      {
+        "index": 3,
+        "chunk_id": "24eee89226cb4ed3d2cf2167",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 71,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 64
+      },
+      {
+        "index": 4,
+        "chunk_id": "f91d0554c4ebdc49ac3c94bc",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 47,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 439
+      }
+    ]
+  },
+  "p6s-0321": {
+    "case_id": "p6s-0321",
+    "ai_suggested_classification": "编码层级混淆；题干歧义",
+    "suspected_excerpt": "项目编码WH12029",
+    "ai_suggestion": "WH12029在章节/清单中确实存在，明细计价行是WH12029001。回答选择上层编码，不能称该字符串凭空捏造；需明确题干要求清单项目还是明细计价编码。",
+    "human_review_reason": "人工核对项目编码粒度、8.3.2.3规则与题干意图。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 321,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0321.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0321.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0321.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH12029001 更换井盖 54.17 36.75 10.07 7.35 消耗量 0.21 0.21 表10.2.2.30 WH12030 人手孔上覆提升 工作内容：开挖、清理、砌砖、井框加固、浇筑、养护、外表处理，余泥倒运等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 1",
+      " 归一化分：1.000000\n内容：章节：电信基础设施维护规程 > 第219页 页码：219 T/CAICI XXXX—XXXX 213 表10.2.2.29 WH12029 更换井盖 工作内容：清理、回收旧井盖、井框整治处理、安装新井盖，不含更换井框等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH12029001 更换井盖 54.17 36.75 10.07 7.35 消耗量 0.21 0.21 表10.2",
+      "维护次数计算 1.信息收集、现场调查 2.制定盯防方案 3.盯防人员交底 4.现场准备、外部沟通 5.现场临时性保护 6.缆线恢复 7.清理现场 8.盯防小结 WH12029 更换井盖 处 按照合同约定的维 护周期和实际发生 的维护次数计算 1. 清理、回收旧井盖 2. 井框整治处理、 3. 安装新井盖， 4. 不含更换井框 WH12030 人手孔上覆 提升 处 按照合同约定的维 护周期和实际发生 的维护次数计算 1. 开挖 2. 清理 3. 砌砖 4. 井框加固 5. 浇筑、养护、外表处理 6. 余泥倒运 WH12031 临时抽水 处 按照合同约定的维 护"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "dcb62613c4ce7472d33766b3",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 219,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 393
+      },
+      {
+        "index": 2,
+        "chunk_id": "256632ea7d6f5a2319f44fb9",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 130,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 66
+      },
+      {
+        "index": 3,
+        "chunk_id": "c3ecd4637056aff1167beaf5",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 181,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 352
+      },
+      {
+        "index": 4,
+        "chunk_id": "b5b58e3e4548ba852371e3a8",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 123,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 322
+      }
+    ]
+  },
+  "p6s-0331": {
+    "case_id": "p6s-0331",
+    "ai_suggested_classification": "来源范围歧义；Silver混入无关证据",
+    "suspected_excerpt": "人工23.94、企业管理7.18",
+    "ai_suggestion": "实际[2]WH23110009打穿混凝土墙洞明确支持23.94/7.18；[1]宽带WH41101002为14.32/3.92。题干没有业务章节限定。Silver还附站址业主维系等无关证据，使all-retrieved判定失败；不能据此判定核心检索失败或幻觉。",
+    "human_review_reason": "人工确认应采用移动设施还是宽带安装表，并清理无关标注。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination",
+      "retrieval_context",
+      "multi_condition"
+    ],
+    "source_case_line": 331,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0331.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0331.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0331.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "挖墙洞 273.60 171.00 51.30 51.30 1.50 WH23110008 打穿砖墙墙洞 20.06 12.54 3.76 3.76 0.11 WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21\n\n[3] 来源：电信基础设施维护规程.pdf\n引用标签：[3]\n标题：第151页\n定位信息：151\n综合分：0.611732\n召回综合分：0.611732\n重排分：无\n语义分：0.561218\nBM25 原始分：29.978408\nBM25 归一化分：0.729600\n内容：章节：电信基础设施维护规程 > ",
+      "普工 单位 工日 单价(元) 114.00 61.00 WH41101001 打穿楼墙洞 砖墙 13.60 9.23 2.53 1.85 消耗量 0.08 — WH41101002 混凝土墙 21.10 14.32 3.92 2.86 消耗量 0.13\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第260页\n定位信息：260\n综合分：0.694730\n召回综合分：0.694730\n重排分：无\n语义分：0.563900\nBM25 原始分：41.088822\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护规程 >"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "8e1400dd2cd2445aebdca350",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 326,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 258
+      },
+      {
+        "index": 2,
+        "chunk_id": "fe0efc14933cd5d787519744",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 260,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 445
+      },
+      {
+        "index": 3,
+        "chunk_id": "3d3eb164235efb301e727bfd",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 151,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 116
+      },
+      {
+        "index": 4,
+        "chunk_id": "755703e2be3f7e101dd7eccc",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 327,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 215
+      }
+    ]
+  },
+  "p6s-0360": {
+    "case_id": "p6s-0360",
+    "ai_suggested_classification": "跨设备工作内容迁移；Judge定位不精确",
+    "suspected_excerpt": "附属设备运行、紧固连接线缆[2]",
+    "ai_suggestion": "[2]确实出现“检查附属设备运行情况、检查紧固连接线缆”，Judge说文字未支持不准确；但该段承接发电设备而非铁塔，存在把其他设备维护任务套入铁塔的疑点。",
+    "human_review_reason": "人工需按跨页表格归属核对，不只做字符串包含判断。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 360,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0360.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0360.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0360.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      2,
+      1,
+      2,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "施维护规程 > 第135页 页码：135 T/CAICI XXXX—XXXX 129 力发电机组、太 阳能光伏离网 发电系统） 7.检查附属设备运行情况。 8.检查紧固连接线缆。 WH21112 环境监控设 备巡检 地貌、社会因素 （市区、平原、 山区） 站²次 按照合同约定的 维护周期和实际 发生的维护次数 计算 1.检查清洁监控设备。 2.测试告警功能。 3.检查标识标签。 WH21113 温控设备巡 检 地貌、社会因素 （市区、平原、 山区） 站²次 按照合同约定的 维护周期和实际 发生的维护次数 计算 1.检查空调及通风设备室内外机运行情况。",
+      "00\n内容：章节：电信基础设施维护规程 > 第135页 页码：135 T/CAICI XXXX—XXXX 129 力发电机组、太 阳能光伏离网 发电系统） 7.检查附属设备运行情况。 8.检查紧固连接线缆。 WH21112 环境监控设 备巡检 地貌、社会因素 （市区、平原、 山区） 站²次 按照合同约定的 维护周期和实际 发生的维护次数 计算 1.检查清洁监控设备。 2.测试告警功能。 3.检查标识标签。 WH21113 温控设备巡 检 地貌、社会因素 （市区、平原、 山区） 站²次 按照合同约定的 维护周期和实际 发生的维护次数 计算 1.检查空调",
+      "738\n内容：章节：电信基础设施维护规程 > 第242页 页码：242 T/CAICI XXXX—XXXX 236 表格列：表10.3.1.1；WH21116 铁塔巡检 工作内容：检查铁塔主体结构以及附属设施、铁塔基础、防雷接地装置，清理铁塔周边环境卫生等。 计量单位：座·次 次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH21116001 铁塔巡检 角钢塔、三管塔、 四管塔35m 以下 市区 105.7",
+      "基础设施维护规程 > 第242页 页码：242 T/CAICI XXXX—XXXX 236 表格列：表10.3.1.1；WH21116 铁塔巡检 工作内容：检查铁塔主体结构以及附属设施、铁塔基础、防雷接地装置，清理铁塔周边环境卫生等。 计量单位：座·次 次 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH21116001 铁塔巡检 角钢塔、三管塔、 四管塔35m 以下 市区 105.79 66.12 19.8"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "5997209344e1edab17af1a36",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 242,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 159
+      },
+      {
+        "index": 2,
+        "chunk_id": "4ea66e8600e99421cfbd255c",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 135,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 144
+      },
+      {
+        "index": 3,
+        "chunk_id": "b0853194f2355b3b11af2a9c",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 244,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 315
+      },
+      {
+        "index": 4,
+        "chunk_id": "2eba19749f227b187f776ada",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 42,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 86
+      }
+    ]
+  },
+  "p6s-0362": {
+    "case_id": "p6s-0362",
+    "ai_suggested_classification": "数值列混淆；题干设备混配",
+    "suspected_excerpt": "人工费217.17；室内天线地面塔40m以下",
+    "ai_suggestion": "[1]WH23111003清楚给人工723.90、管理217.17、利润217.17，回答人工费取错列，目标行已在prompt。题干将移动定向通信天线的塔高条件与室内天线混配；未返回的室内证据不能解释已可见行的错列。",
+    "human_review_reason": "人工同时复核题干设备类型和数值列，不只归因检索。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination",
+      "retrieval_context",
+      "multi_condition"
+    ],
+    "source_case_line": 362,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0362.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0362.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0362.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "0 194.94 194.94 消耗量 5.70 — WH23111002 楼顶铁塔20m 以上每增加1m 14.59 9.12 2.74 2.74 0.08 WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35 WH23111004 地面塔40m 以上每增加1m 14.59 9.12 2.74 2.74 0.08 — WH23111005 拉线塔（支撑杆、桅杆）上 1409.95 881.22 264.37 264.37 7.73 WH23111006 抱杆上 806.21 503.88 151.",
+      "单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23111001 安装移动定 向通信天线 楼顶铁塔20m 以下 1039.68 649.80 194.94 194.94 消耗量 5.70 — WH23111002 楼顶铁塔20m 以上每增加1m 14.59 9.12 2.74 2.74 0.08 WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35 WH23111004 地面塔40m 以上每增加1",
+      "56 表10.3.3.11 WH23111 安装移动通信天线 工作内容：1、安装室外天线：开箱检验、清洁搬运、吊装加固天线、调整方位角及俯仰角、清理现场； 2、安装室内天线：开箱检验、清洁搬运、吊装加固天线、调整角度、清理现场等。 计量单位：副 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23111001 安装移动定 向通信天线 楼顶铁塔20m 以下 1039.68 649.80 194.94 194.94 消耗",
+      " 归一化分：0.908321\n内容：章节：电信基础设施维护规程 > 第270页 页码：270 T/CAICI XXXX—XXXX 264 WH23115040 安装室内天线射频拉远单元 一体化设备 高度6m 以下 182.40 114.00 34.20 34.20 1.00 WH23115041 高度6m 以上 237.12 148.20 44.46 44.46 1.30 WH23115042 电梯井 466.94 291.84 87.55 87.55 2.56 WH23115043 安装小型基站设备 挂杆20m 以下 421.34 263.34"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "3f00969dea6d8d04c016cb97",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 262,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 118
+      },
+      {
+        "index": 2,
+        "chunk_id": "e453e5772f5dbf9883660bbe",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 270,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 409
+      },
+      {
+        "index": 3,
+        "chunk_id": "0482cd9fc76bb3bffb641705",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 268,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 9
+      },
+      {
+        "index": 4,
+        "chunk_id": "8d6a3993748474ddec52ba5c",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 265,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 255
+      }
+    ]
+  },
+  "p6s-0363": {
+    "case_id": "p6s-0363",
+    "ai_suggested_classification": "算术/列混淆；Silver场景错配",
+    "suspected_excerpt": "人工费与利润之和96.10",
+    "ai_suggestion": "[1]WH23111011拉线塔行人工320.34、利润96.10，若按该行应合416.44；回答仅取利润。Silver370.50来自铁塔20m以下行285+85.50，场景也错。标注缺的另页智慧灯杆行与本题无关，主要错误不能归检索。",
+    "human_review_reason": "人工核对拉线塔场景与加法；不使用错误Silver自动补分。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination",
+      "retrieval_context",
+      "multi_condition"
+    ],
+    "source_case_line": 363,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0363.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0363.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0363.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      ".00 285.00 85.50 85.50 2.50 WH23111010 铁塔上20m 以上每增加1m 10.94 6.84 2.05 2.05 0.06 WH23111011 拉线塔（支撑杆、桅杆）上 512.54 320.34 96.10 96.10 2.81 WH23111012 抱杆上 342.91 214.32 64.30 64.30 1.88\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第270页\n定位信息：270\n综合分：0.539578\n召回综合分：0.539578\n重排分：无\n语义分：0.658187\nBM",
+      "59.71 159.71 4.67 — WH23111008 楼外墙壁（15m 以上） 1482.91 926.82 278.05 278.05 8.13 — WH23111009 安装小型化 定向通信天 线 铁塔上20m 以下 456.00 285.00 85.50 85.50 2.50 WH23111010 铁塔上20m 以上每增加1m 10.94 6.84 2.05 2.05 0.06 WH23111011 拉线塔（支撑杆、桅杆）上 512.54 320.34 96.10 96.10 2.81 WH23111012 抱杆上 342.91 214.3"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "3f00969dea6d8d04c016cb97",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 262,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 118
+      },
+      {
+        "index": 2,
+        "chunk_id": "e453e5772f5dbf9883660bbe",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 270,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 409
+      },
+      {
+        "index": 3,
+        "chunk_id": "ce70fb71bf86c85077ccfe2a",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 227,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 365
+      },
+      {
+        "index": 4,
+        "chunk_id": "0482cd9fc76bb3bffb641705",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 268,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 9
+      }
+    ]
+  },
+  "p6s-0420": {
+    "case_id": "p6s-0420",
+    "ai_suggested_classification": "题干合并类别；引用错配；评分失败",
+    "suspected_excerpt": "直埋式延伸式安装62.42；所有来自第209页",
+    "ai_suggestion": "题干“直埋式延伸式”混合互斥类型。回答给出直埋62.42、延伸86.16两类，但都引更换页[1]而安装来源应另核。需分别审安装/更换和类型，不可依Silver单一86.16直接评分。",
+    "human_review_reason": "人工先拆清作业与类型，再审引用和计量单位。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 420,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0420.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0420.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0420.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "单位 工日 单价(元) 114.00 61.00 WH12020001 更换电杆地线 拉线式 14.79 10.03 2.75 2.01 消耗量 0.09 _ WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24 WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第192页\n定位信息：192\n综合分：0.781298\n召回综合分：0.781298\n重排分：无\n语义分：0.770998\nBM25 原",
+      "4.79 10.03 2.75 2.01 消耗量 0.09 _ WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24 WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第192页\n定位信息：192\n综合分：0.781298\n召回综合分：0.781298\n重排分：无\n语义分：0.770998\nBM25 原始分：44.577692\nBM25 归一化分：0.805329\n内容：章节：电信基础设施维护规程",
+      "单位 工日 单价(元) 114.00 61.00 WH12019001 安装电杆地线 拉线式 15.53 10.53 2.89 2.11 消耗量 0.09 _ WH12019002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24 WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\n\n[4] 来源：电信基础设施维护规程.pdf\n引用标签：[4]\n标题：第128页\n定位信息：128\n综合分：0.746292\n召回综合分：0.746292\n重排分：无\n语义分：0.678918\nBM25 原",
+      "5.53 10.53 2.89 2.11 消耗量 0.09 _ WH12019002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24 WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\n\n[4] 来源：电信基础设施维护规程.pdf\n引用标签：[4]\n标题：第128页\n定位信息：128\n综合分：0.746292\n召回综合分：0.746292\n重排分：无\n语义分：0.678918\nBM25 原始分：50.011674\nBM25 归一化分：0.903498\n内容：章节：电信基础设施维护规程"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "a14cc56868b469462940f2a4",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 209,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 288
+      },
+      {
+        "index": 2,
+        "chunk_id": "c0820f0b44f44c84e0b54e3d",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 192,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 343
+      },
+      {
+        "index": 3,
+        "chunk_id": "c075dc68d46c245c3f7a221f",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 208,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 342
+      },
+      {
+        "index": 4,
+        "chunk_id": "74207e88e3fcb93a6e60028b",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 128,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 213
+      }
+    ]
+  },
+  "p6s-0434": {
+    "case_id": "p6s-0434",
+    "ai_suggested_classification": "技能评价与绩效语义边界；Judge依据不足",
+    "suspected_excerpt": "人员绩效评估基于理论知识与技能实操",
+    "ai_suggestion": "[3]职业技能权重表和[1]服务能力支持列举内容；缺的是把技能评价等同绩效评估的范围说明。Judge理由“部分事实有引用，但不完整”不足以单独证明幻觉。",
+    "human_review_reason": "人工先判技能考核是否覆盖题意，再判确定性表述及无答案标签。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "suspected_hallucination"
+    ],
+    "source_case_line": 434,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0434.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0434.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0434.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3
+    ],
+    "answer_integer_citations": [
+      3,
+      3,
+      3,
+      3,
+      1
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "1.2 用户信息安全知识 6.1.3 网络安全基础知识 7 权重表 智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机 制分为理论和技能实操两部分。具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5 安全作业知识 15",
+      "场景设置 智能家居业务运维： 1.熟悉智能家居组网及场景设置 2.了解常见智能家居故障 智能家居业务运维： 1.熟悉常见智能家居故障 2.了解智能家居常用协议 服务能力 1.服务礼仪 2.交付技巧 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售技巧 4.沟通技巧 5.维护技巧 1.服务礼仪 2.交付能力 3.销售能力 4.沟通能力 5.维护能力 安全作业 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 1.施工安全 2.用户信息安全 3.网络安全 6.3 初级 职业功能 工作内容 技能要求 相关",
+      "1 能进行智能家居场景设置 4.5.2 能处理智能家居的简单故障 4.5.1 物联网基础知识 4.5.2 计算机网络基础知识 4.5.2 智能家具基础知识 5.服务能力 5.1 服务交付能力 5.1.1 能懂得服务礼仪 5.1.2 能进行交付技巧展示 5.1.3 能进行销售技巧展示 5.1.4 能进行沟通技巧展示 5.1.5 能进行维护技巧展示 5.1.1 服务规范基础知识 5.1.2 交付技巧基础知识 5.1.3 销售技巧基础知识 5.1.4 沟通技巧基础知识 5.1.5 维护技术基础知识 6.安全作业 6.1 施工作业安全 6.1.1 能",
+      "施工作业安全 6.1.1 能安全施工 6.1.2 能遵守用户信息安全 6.1.1 施工安全知识 6.1.2 用户信息安全知识 6.1.3 网络安全基础知识 7 权重表 智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机 制分为理论和技能实操两部分。具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 ",
+      " 网络安全基础知识 7 权重表 智慧家庭装维工程与管理划分初、中、高三个职业技能评价等级，职业技能及职级要求，评价机 制分为理论和技能实操两部分。具体评价维度及权重如下： 7.1 智慧家庭装维工程与管理理论知识权重表 项目 技能等级 初级 中级 高级 （%） （%） （%） 基本要求 职业道德基础知识 10 5 5 职业规范基础知识 5 5 5 相关知识 通信基础知识 25 15 10 智能组网专业知识 15 25 30 全屋智能专业知识 15 20 30 终端和计算机知识 15 15 5 安全作业知识 15 15 15 合计 100\n\n"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "1c317b1dd2cebfbf9647d03e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 12,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 49
+      },
+      {
+        "index": 2,
+        "chunk_id": "48ecc091e26caaa3ccbd3be5",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 16,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 136
+      },
+      {
+        "index": 3,
+        "chunk_id": "02c18b66c8c7d17fa1fb910e",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 19,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 5
+      },
+      {
+        "index": 4,
+        "chunk_id": "95ae763cde2f43aec2cb7d14",
+        "document": "智慧家庭装维工程与管理职业技能等级标准.pdf",
+        "page": 14,
+        "present_label_in_actual_prompt": false,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 272
+      }
+    ]
+  },
+  "p6s-0454": {
+    "case_id": "p6s-0454",
+    "ai_suggested_classification": "消耗量单位错误；工作范围推断；评分失败",
+    "suspected_excerpt": "1.75个/台；不包含线缆连接且另计",
+    "ai_suggestion": "[1]人工199.50有据，1.75在人工工日列而非个/台。[1]配线架工作内容未列线缆连接；[2]安装机架柜列线缆连接，但不是同一项目。Silver的“包含”与回答“明确不含且另计”均需核对，不能从未列出推出排除。",
+    "human_review_reason": "人工检查计量单位、工日消耗和作业边界；保留评分失败。",
+    "review_status": "pending",
+    "human_verdict": "",
+    "human_reviewer": "",
+    "human_reviewed_at": "",
+    "human_notes": "",
+    "audit_groups": [
+      "multi_condition"
+    ],
+    "source_case_line": 454,
+    "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0454.json",
+    "score_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/scores/p6s-0454.json",
+    "evidence_path": "p7-rag-final-audit-01/anomaly_evidence/p6s-0454.json",
+    "actual_source_labels": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "answer_integer_citations": [
+      1,
+      1,
+      1,
+      2,
+      2
+    ],
+    "returned_source_count": 4,
+    "actual_prompt_evidence_snippets": [
+      "目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23103001 安装配线架、箱 壁挂式数字配线架、箱 319.20 199.50 59.85 59.85 消耗量 1.75 — WH23103002 数字、光配线架单元 34.66 21.66 6.50 6.50 0.19 —\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第251页\n定位信息：251\n综合分：0.595683\n召回综合分：0.595683\n重排分：无",
+      "配件、清理现场等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23103001 安装配线架、箱 壁挂式数字配线架、箱 319.20 199.50 59.85 59.85 消耗量 1.75 — WH23103002 数字、光配线架单元 34.66 21.66 6.50 6.50 0.19 —\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第251页\n定位信息：251\n综合分",
+      "、安装固定等。 计量单位：架、个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23102001 安装电源分配架（柜）、箱 落地式 388.51 242.82 72.85 72.85 消耗量 2.13 — WH23102002 壁挂式 251.71 157.32 47.20 47.20 1.38 — WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60 WH23102004 安",
+      "AICI XXXX—XXXX 245 表10.3.3.2 WH23102 安装机架（柜） 工作内容：1、安装电源分配架（柜）、箱：开箱检验、清洁搬运、安装固定、线缆连接、清理现场； 2、安装有源综合架（柜）、箱：开箱检验、清洁搬运、划线定位、安装固定、线缆连接、清理现场； 3、安装无源综合架（柜）、箱：开箱检验、清洁搬运、划线定位、安装固定、线缆连接、清理现场； 4、安装电表箱：开箱检验、清洁搬运、划线定位、安装固定、安装电表、线缆连接、清理现场； 5、安装空气开关箱：开箱检验、清洁搬运、划线定位、安装固定、安装空开、线缆连接、清理现场； 4",
+      "作内容：1、安装电源分配架（柜）、箱：开箱检验、清洁搬运、安装固定、线缆连接、清理现场； 2、安装有源综合架（柜）、箱：开箱检验、清洁搬运、划线定位、安装固定、线缆连接、清理现场； 3、安装无源综合架（柜）、箱：开箱检验、清洁搬运、划线定位、安装固定、线缆连接、清理现场； 4、安装电表箱：开箱检验、清洁搬运、划线定位、安装固定、安装电表、线缆连接、清理现场； 5、安装空气开关箱：开箱检验、清洁搬运、划线定位、安装固定、安装空开、线缆连接、清理现场； 4、带电更换空气开关、熔断器，增（扩）子机框：开箱检验、安装固定等。 计量单位：架、个 维护分"
+    ],
+    "sources": [
+      {
+        "index": 1,
+        "chunk_id": "6f4bd67e8abf6dcfdde54829",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 253,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 201
+      },
+      {
+        "index": 2,
+        "chunk_id": "0ad5d80a4efb5c59af2f68f2",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 251,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 18
+      },
+      {
+        "index": 3,
+        "chunk_id": "fc16bde58b2e5f6168fc4bba",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 303,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": true,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 442
+      },
+      {
+        "index": 4,
+        "chunk_id": "36e3ca9051c2b34c98aa9fca",
+        "document": "电信基础设施维护规程.pdf",
+        "page": 310,
+        "present_label_in_actual_prompt": true,
+        "full_source_text_in_actual_prompt": false,
+        "frozen_corpus_exists": true,
+        "frozen_corpus_line": 102
+      }
+    ]
+  }
+}

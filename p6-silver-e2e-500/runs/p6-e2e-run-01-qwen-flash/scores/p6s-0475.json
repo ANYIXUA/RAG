@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "WH33116001 机房土建零星维 修 内部墙面修复 平方米²次 38.30",
+    "reason": "上下文明确支持38.30元",
+    "score": 1
+  },
+  "case_id": "p6s-0475",
+  "citation_correctness": {
+    "evidence": "WH33116001 机房土建零星维 修 内部墙面修复 平方米²次 38.30",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH33116001 机房土建零星维 修 内部墙面修复 平方米²次 38.30",
+    "reason": "完整回答问题所需单价",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH33116001 机房土建零星维 修 内部墙面修复 平方米²次 38.30",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "multiple_sources",
+    "version_discrepancy_noted"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "544ba8d891584e8a97d080c3c93faf34",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

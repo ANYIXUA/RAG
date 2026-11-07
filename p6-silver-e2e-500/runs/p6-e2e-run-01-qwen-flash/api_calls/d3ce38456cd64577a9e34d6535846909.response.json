@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:18.211286+08:00",
+  "conservative_cost_yuan": 0.0007820999999999999,
+  "error": null,
+  "latency_ms": 1157.6330999378115,
+  "list_price_estimate_yuan": 0.0006095999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH34101应急发电的计量单位为“次”。[1]  \n2. 该编码对应的工作内容包括器材准备、发电及记录时间等。[1]  \n3. “次”作为计量单位适用于小型局站有线设备维护项目。[1]  \n4. 与类似项目如WH24101计量单位一致，均为“次”。[2]  \n5. 其他发电相关项目如巡检、检修则使用“台·次”。[3][4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880857,
+    "id": "chatcmpl-386f6a7a-cc6d-9980-bdd2-65f4ea77e9ed",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 115,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2914,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3029
+    }
+  },
+  "usage_known": true
+}

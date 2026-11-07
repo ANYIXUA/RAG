@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:15:41.509790+08:00",
+  "input_token_upper_bound": 1148,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0161"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "WH12002019项目中，水泥杆卡固法装7/2.2单股拉线的消耗量是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "3421441cf5024518a06b3d52137681a8",
+  "reserved_yuan": 0.000574
+}

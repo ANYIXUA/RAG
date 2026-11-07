@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:42.581418+08:00",
+  "conservative_cost_yuan": 0.0007033499999999999,
+  "error": null,
+  "latency_ms": 1148.9940001629293,
+  "list_price_estimate_yuan": 0.0005518499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 当前资料未提及不同品牌装维服务的价格信息。[1]  \n2. 装维服务内容涉及智能组网、家庭总线等技术要求。[3]  \n3. 服务标准包括故障处理、布线安装及场景设置等技能。[2]  \n4. 价格对比需参考具体运营商或服务商的公开报价。[1]  \n5. 无明确品牌间价格差异的官方数据支持。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881181,
+    "id": "chatcmpl-9c36065f-5131-9c90-894d-e4c5c2350f0c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2669,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2770
+    }
+  },
+  "usage_known": true
+}

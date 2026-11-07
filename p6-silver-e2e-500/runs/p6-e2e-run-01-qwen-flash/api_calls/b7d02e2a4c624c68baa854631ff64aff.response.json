@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:12.994203+08:00",
+  "conservative_cost_yuan": 0.000732,
+  "error": null,
+  "latency_ms": 1607.035999884829,
+  "list_price_estimate_yuan": 0.0005385,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 管道光缆线路车辆巡回的技工工日单价为114.00元。[1]  \n2. 该单价对应项目编码WH11006001，计量单位为千米²次。[1]  \n3. 综合单价为24.01元，其中技工人工费16.29元。[1]  \n4. 工作内容包括路由探测及沿线安全检查等。[1]  \n5. 该标准出自《电信基础设施维护规程》第178页。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880851,
+    "id": "chatcmpl-4e8b3b1b-202b-9dbf-a1fd-30d86d3b72cb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 129,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2300,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2429
+    }
+  },
+  "usage_known": true
+}

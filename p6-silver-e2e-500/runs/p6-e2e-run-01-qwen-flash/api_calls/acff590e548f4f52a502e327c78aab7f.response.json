@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:37.508468+08:00",
+  "conservative_cost_yuan": 0.0013746,
+  "error": null,
+  "latency_ms": 2883.9860998559743,
+  "list_price_estimate_yuan": 0.0009516,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确引用计算公式\",\n    \"evidence\": \"销项税额 （ 1+2+3+4+5+6+7）× 费率\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"销项税额 （ 1+2+3+4+5+6+7）× 费率\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖计算依据与适用范围\",\n    \"evidence\": \"该计算方式适用于费用结算汇总表。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"销项税额 （ 1+2+3+4+5+6+7）× 费率\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881774,
+    "id": "chatcmpl-35f22f39-cbad-9687-ad91-50329b5616f4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 282,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3524,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3806
+    }
+  },
+  "usage_known": true
+}

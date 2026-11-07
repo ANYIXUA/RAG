@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:10.473499+08:00",
+  "input_token_upper_bound": 1118,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0197"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "嵌墙式有源综合柜的综合单价是多少元？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "c3d0cd3512fb4fa2bb79d94e23189b1a",
+  "reserved_yuan": 0.000559
+}

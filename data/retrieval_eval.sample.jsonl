@@ -1,0 +1,1 @@
+{"query":"T9254 是什么错误","expected":[{"source":"中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"}],"note":"本地 smoke 样本：验证 pgvector 召回链路可用"}

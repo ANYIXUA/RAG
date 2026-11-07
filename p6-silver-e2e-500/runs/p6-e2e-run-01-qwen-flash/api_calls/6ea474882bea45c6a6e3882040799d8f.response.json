@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:01.043615+08:00",
+  "conservative_cost_yuan": 0.0007442999999999999,
+  "error": null,
+  "latency_ms": 1128.8912000600249,
+  "list_price_estimate_yuan": 0.0005897999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 基站天线方位角测试的允许误差为≤5°。[1]  \n2. 该指标在《电信基础设施维护规程》表5.6.3.1中明确列出。[1]  \n3. 测试周期为季度，需定期进行校准。[1]  \n4. 误差控制需符合设备安装规范要求。[1]  \n5. 天线方位角应确保无明显偏差影响覆盖。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881199,
+    "id": "chatcmpl-50587fe6-855e-9ced-8238-99f8bfdc3aec",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 103,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2902,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3005
+    }
+  },
+  "usage_known": true
+}

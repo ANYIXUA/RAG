@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:13.606553+08:00",
+  "conservative_cost_yuan": 0.0007386,
+  "error": null,
+  "latency_ms": 1299.9332000035793,
+  "list_price_estimate_yuan": 0.0005660999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 运维需通过统一接口规范实现跨品牌设备协同管理。[3]  \n2. 利用IF5、IF6等标准接口对接平台，支持设备状态与配置同步。[2]  \n3. 依托一级平台和省平台实现全网终端统一纳管与诊断。[2]  \n4. 通过组网云平台实现网络质量数据采集与分析。[3]  \n5. 遵循TR069、OMCI等标准协议保障设备兼容性。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881092,
+    "id": "chatcmpl-081ad596-a7a2-95c5-b3f6-c35fe4318486",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 115,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2624,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2739
+    }
+  },
+  "usage_known": true
+}

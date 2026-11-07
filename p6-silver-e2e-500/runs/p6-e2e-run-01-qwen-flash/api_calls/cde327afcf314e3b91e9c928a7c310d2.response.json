@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:08.562202+08:00",
+  "conservative_cost_yuan": 0.0013428,
+  "error": null,
+  "latency_ms": 2746.5967999305576,
+  "list_price_estimate_yuan": 0.0009243,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确指出由承包人承担\",\n    \"evidence\": \"承包人的维护用机械（仪表）设备损坏及停工损失，由承包人承担；\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"承包人的维护用机械（仪表）设备损坏及停工损失，由承包人承担；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"承包人的维护用机械（仪表）设备损坏及停工损失，由承包人承担；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"承包人的维护用机械（仪表）设备损坏及停工损失，由承包人承担；\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882165,
+    "id": "chatcmpl-a786ae4d-39dd-9e4a-9b3a-8956840cef34",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 279,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3372,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3651
+    }
+  },
+  "usage_known": true
+}

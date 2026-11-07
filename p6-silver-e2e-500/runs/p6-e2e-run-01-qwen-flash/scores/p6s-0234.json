@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH33108004 高频整流模块50A 以下 204.29",
+    "reason": "与证据一致，单价正确。",
+    "score": 1
+  },
+  "case_id": "p6s-0234",
+  "citation_correctness": {
+    "evidence": "WH33108004 高频整流模块50A 以下 204.29",
+    "reason": "引用编号与来源匹配。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH33108004 高频整流模块50A 以下 204.29",
+    "reason": "涵盖关键信息，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH33108004 高频整流模块50A 以下 204.29",
+    "reason": "每项事实均有上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "8e5ddcada971485fa2f490cdbb87193a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

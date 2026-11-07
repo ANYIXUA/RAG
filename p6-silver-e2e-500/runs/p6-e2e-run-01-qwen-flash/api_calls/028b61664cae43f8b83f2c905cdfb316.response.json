@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:22.279236+08:00",
+  "conservative_cost_yuan": 0.0007227000000000001,
+  "error": null,
+  "latency_ms": 1608.5214999038726,
+  "list_price_estimate_yuan": 0.0005457000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 架空光缆线路车辆巡回工作内容包括检查电杆、吊线及警示牌状态等。[1]  \n2. 需巡查沿线有无外力施工影响线路安全，并做好记录上报。[1]  \n3. 计量单位为千米²次，用于统计维护工作量。[1]  \n4. 维护分项按平原、丘陵、山区等不同区域划分。[1]  \n5. 项目编码为WH11002，对应车辆巡回作业。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881040,
+    "id": "chatcmpl-29dfc4c3-5c9e-94a8-bb55-26ddb8b221d9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 118,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2458,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2576
+    }
+  },
+  "usage_known": true
+}

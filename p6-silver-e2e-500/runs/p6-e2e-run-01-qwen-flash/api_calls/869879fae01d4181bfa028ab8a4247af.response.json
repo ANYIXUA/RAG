@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:00.361020+08:00",
+  "conservative_cost_yuan": 0.0013348499999999998,
+  "error": null,
+  "latency_ms": 2255.198699887842,
+  "list_price_estimate_yuan": 0.00093885,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持回访与调查\",\n    \"evidence\": \"站址业主维系:站址业主回访和满意度调查等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"站址业主维系:站址业主回访和满意度调查等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题所需核心步骤\",\n    \"evidence\": \"站址业主维系:站址业主回访和满意度调查等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"站址业主维系:站址业主回访和满意度调查等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882038,
+    "id": "chatcmpl-e7ad4d8c-6c5f-9a77-b646-702bcff246eb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 264,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3619,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3883
+    }
+  },
+  "usage_known": true
+}

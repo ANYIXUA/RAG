@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:18:50.930801+08:00",
+  "input_token_upper_bound": 1183,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0388"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在光缆线路维护中，若发生障碍，维护企业应如何处理并上报？ 故障原因 排查步骤 处理步骤 解决办法 现场处理建议"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "a5bd516dc4394baf8b1bee323db3ea66",
+  "reserved_yuan": 0.0005915
+}

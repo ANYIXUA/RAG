@@ -1,0 +1,43 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23118001 安装楼面抱杆 （单杆高度） 3m 以下 729.60 456.00 136.80 136.80 消耗量 4.00 —",
+    "reason": "实际LLM上下文[1]明确列出WH23118001安装楼面抱杆（单杆高度）3m以下的综合单价为729.60元，与silver_reference一致，且该信息在原文中直接可查。",
+    "score": 1
+  },
+  "case_id": "p6s-0008",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第275页\n定位信息：275\n... WH23118001 安装楼面抱杆 （单杆高度） 3m 以下 729.60 ...",
+    "reason": "所有引用编号[1]均正确对应上下文片段[1]，且该片段完整支持每一条陈述，引用位置准确，无错引或漏引。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23118001 安装楼面抱杆 （单杆高度） 3m 以下 729.60 456.00 136.80 136.80 消耗量 4.00 —",
+    "reason": "问题仅询问综合单价，回答准确给出该数值，并补充了相关背景信息（如项目编码、计量单位等），虽略超必要信息但未遗漏关键条件，符合问题需求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "evaluation_normalization": "N/A no-answer dimension retains null score; null evidence canonicalized to empty string",
+  "faithfulness": {
+    "evidence": "WH23118001 安装楼面抱杆 （单杆高度） 3m 以下 729.60 456.00 136.80 136.80 消耗量 4.00 —",
+    "reason": "回答中的每一项事实（单价、包含内容、工作内容、计量单位、项目编码）均能在上下文[1]中找到直接支持，无额外编造或推断。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "2463b0795f914b9ab3f8a429f815e558",
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题为明确可答的exact_fact类型，且上下文存在答案，无需拒答，因此该维度不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "original_failure_record": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scores\\p6s-0008.json",
+  "question_type": "exact_fact",
+  "recovered_paid_response": true,
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

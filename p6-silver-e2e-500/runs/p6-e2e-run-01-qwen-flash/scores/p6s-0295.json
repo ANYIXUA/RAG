@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH22104001 接地网电阻测试 （降低） 市区 9.12 5.70 1.71 1.71 消耗量 0.05 —",
+    "reason": "上下文明确支持费用数值",
+    "score": 1
+  },
+  "case_id": "p6s-0295",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与来源一致且支持语句",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "表10.3.2.2 WH22102 天线信号测试 工作内容：天线互调测试、天线发射功率测试等。",
+    "reason": "覆盖问题所有条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH22102005 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —",
+    "reason": "每项事实均有对应原文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "87e73bc4f03b487d89e5dc0b5a8ac42a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

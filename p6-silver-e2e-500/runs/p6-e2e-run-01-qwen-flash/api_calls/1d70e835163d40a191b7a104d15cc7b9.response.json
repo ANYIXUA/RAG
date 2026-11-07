@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:51.699875+08:00",
+  "conservative_cost_yuan": 0.0008868,
+  "error": null,
+  "latency_ms": 1650.4542999900877,
+  "list_price_estimate_yuan": 0.0006648,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 机房外部环境巡检综合单价为150.03元/站²次（山区20km以下）。[1]  \n2. 机房内部环境巡检综合单价为63.63元/站·次（面积200平方米以下）。[3]  \n3. 该局站位于山区且距离市区20公里以内，适用山区20km以下标准。[1]  \n4. 机房面积200平方米，属“200平方米以下”类别，取对应单价。[3]  \n5. 综合单价分别按外部巡检和内部巡检项目独立计价。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881190,
+    "id": "chatcmpl-c54c1ddc-2486-982c-8a03-1d4247244585",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 148,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2952,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3100
+    }
+  },
+  "usage_known": true
+}

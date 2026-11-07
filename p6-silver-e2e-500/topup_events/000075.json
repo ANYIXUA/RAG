@@ -1,0 +1,45 @@
+{
+  "previous_sha256": "8199bf4e0ccbcb617021172b226e7738b1487459c97c72aac81006a4373b14c0",
+  "record": {
+    "batch": 37,
+    "case": {
+      "case_id": "p6s-0500",
+      "expected_behavior": "answer",
+      "generation_batch": 37,
+      "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+      "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+      "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "generation_seed": 20271143,
+      "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "label_type": "silver",
+      "prompt_version": "p6-silver-generate-v1",
+      "question": "在丘陵地貌、土质为砂质的条件下，更换电杆地线时需要执行哪些具体操作？",
+      "question_type": "multi_condition",
+      "reference_answer": "1.拆除旧地线 2.安装引接地线 3.回土夯实",
+      "source_chunk_ids": [
+        "74207e88e3fcb93a6e60028b",
+        "a04a5aeb2ab4fbd5df07dfbf"
+      ],
+      "source_document": [
+        "电信基础设施维护规程.pdf"
+      ],
+      "source_evidence": [
+        {
+          "chunk_id": "74207e88e3fcb93a6e60028b",
+          "excerpt": "WH12020 更换电杆地 线 地线种类：（直埋式、 延伸式、拉线式） 条 按照合同约定的维 护周期和实际发生 的维护次数计算 1.拆除旧地线 2.安装引接地线 3.回土夯实"
+        },
+        {
+          "chunk_id": "a04a5aeb2ab4fbd5df07dfbf",
+          "excerpt": "WH12021 挖、填光 （电）缆沟 及接头坑 （光缆升高 与降低） •地貌：（平原、丘陵、 山区、高原、城区） •土质类别 •填土方式：（松填、 夯填） 百立方 米 按照合同约定的维 护周期和实际发生 的维护次数计算 1.挖光缆沟及接头坑 2.填光缆沟及接头坑 3.石沟布眼钻孔、装药放炮、弃渣处理 等 4.人工开槽等"
+        }
+      ],
+      "source_page": 129,
+      "topup_version": "p6-silver-topup-v1"
+    },
+    "event": "semantic_rejection",
+    "human_signoff": "not_performed",
+    "published_sha256": "eb71684d93a5171361f7e8d88bec6616dcfbd65d0534fa1e71649d1c12d38331",
+    "reason": "unsupported_condition_sand_absent_from_frozen_corpus_and_no_joint_two_chunk_reasoning",
+    "reviewer": "automated_agent_inspection"
+  }
+}

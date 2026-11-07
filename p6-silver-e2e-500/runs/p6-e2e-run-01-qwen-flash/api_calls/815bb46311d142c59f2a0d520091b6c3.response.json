@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:05.994089+08:00",
+  "conservative_cost_yuan": 0.0017058,
+  "error": null,
+  "latency_ms": 3325.845600105822,
+  "list_price_estimate_yuan": 0.0011328,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持代缴电费及费用\",\n    \"evidence\": \"代缴电费 站·次 次 31.01 19.38 5.81 5.81 0.17 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH24103002 代缴电费 站·次 次 31.01 19.38 5.81 5.81 0.17 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有条件与步骤\",\n    \"evidence\": \"代缴电费 站·次 次 31.01 19.38 5.81 5.81 0.17 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"WH24103002 代缴电费 站·次 次 31.01 19.38 5.81 5.81 0.17 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882042,
+    "id": "chatcmpl-1c7c6575-39e8-9e2a-bbfd-84e00a66a5e2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 382,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3732,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4114
+    }
+  },
+  "usage_known": true
+}

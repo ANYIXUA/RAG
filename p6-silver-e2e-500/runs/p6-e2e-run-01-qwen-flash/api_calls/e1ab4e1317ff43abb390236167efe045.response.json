@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:10.701538+08:00",
+  "conservative_cost_yuan": 0.00273195,
+  "error": null,
+  "latency_ms": 7529.40270002,
+  "list_price_estimate_yuan": 0.00161745,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]和[2]均明确列出WH33111002温湿、烟感、水浸监控单元的综合单价为91.20元，与silver_reference一致，且该信息在多个上下文片段中重复验证，证据充分。\",\n    \"evidence\": \" [1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n内容：WH33111002 温湿、烟感、水浸监控单元 91.20 57.00 17.10 17.10 0.50 —\\n\\n[2] 来源：电信基础设施维护规程.pdf\\n引用标签：[2]\\n内容：WH23128002 温湿、烟感、水浸监控单元 91.20 57.00 17.10 17.10 0.50 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实（单价91.20元、包含人工费57.00元、企业管理费17.10元、利润17.10元、计量单位为点、来源第312页、另一版本也为91.20元）均有对应上下文支持，且引用编号准确匹配原文片段。\",\n    \"evidence\": \"[1] 中明确列出WH33111002的综合单价为91.20元，人工费57.00元，企业管理费17.10元，利润17.10元，计量单位为“点”；[2]中相同编码的单价亦为91.20元。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问综合单价，回答聚焦于该核心信息，并补充了相关细节（如费用构成、计量单位、来源页码），未遗漏必要条件或步骤，符合exact_fact类型要求。\",\n    \"evidence\": \"问题为精确事实查询，回答直接给出单价并附带合理背景信息，无冗余或缺失。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1][2]均正确对应实际上下文来源，且每条引用内容确实支持其所标注的陈述。例如[1]支持单价、费用构成、计量单位等，[2]支持单价一致性。\",\n    \"evidence\": \"[1] 支持：综合单价91.20元，人工费57.00元，企业管理费17.10元，利润17.10元，计量单位为点；[2] 支持：相同编码单价为91.20元。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，且模型已提供完整答案，无需拒答，因此不适用此维度。\",\n    \"evidence\": \"模型已基于上下文给出具体回答，非拒答或限定说明。\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881443,
+    "id": "chatcmpl-e1eb4c59-cd31-9bb3-8800-ae0960340582",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 743,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3353,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4096
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:41.362435+08:00",
+  "conservative_cost_yuan": 0.00075045,
+  "error": null,
+  "latency_ms": 1433.3031999412924,
+  "list_price_estimate_yuan": 0.0005749500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 突发事件发生时，维护人员应迅速赶往现场并判断事件类型。[2]  \n2. 一般事件由维护企业现场处理并通报结果；重大事件需立即通知运营企业。[2]  \n3. 应按应急预案执行，包括组织方案、指挥机构及物资配置。[2]  \n4. 处理后须填写《应急事件处理表》并向运营企业反馈结果。[1]  \n5. 处置流程详见附录H的突发事件处理流程图。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880939,
+    "id": "chatcmpl-f736c3c4-6f15-9c76-add9-f6269d280092",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2663,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2780
+    }
+  },
+  "usage_known": true
+}

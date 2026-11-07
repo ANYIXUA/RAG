@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:36.322543+08:00",
+  "conservative_cost_yuan": 0.0008470499999999999,
+  "error": null,
+  "latency_ms": 1373.541499953717,
+  "list_price_estimate_yuan": 0.0006625499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 楼外墙壁15m以下安装智慧灯杆（视频监控杆）基础费用为826.27元。[1]  \n2. 该费用对应标准为智慧灯杆（视频监控杆）15m以下的安装项目。[1]  \n3. 费用明细包含人工、材料及施工等综合成本。[1]  \n4. 不同高度区间费用不同，15m以下适用此标准。[1]  \n5. 若需更高精度数据，建议核对完整规程文件。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880935,
+    "id": "chatcmpl-2df77c16-1192-9180-b978-97745898bfdd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 123,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3187,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3310
+    }
+  },
+  "usage_known": true
+}

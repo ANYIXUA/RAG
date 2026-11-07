@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:18.613294+08:00",
+  "conservative_cost_yuan": 0.0007654500000000001,
+  "error": null,
+  "latency_ms": 1451.7792998813093,
+  "list_price_estimate_yuan": 0.00058995,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检索上下文未提及不同品牌装维服务的价格差异。[1][2][3]  \n2. 无关于品牌间价格对比的具体信息。[1][2][3]  \n3. 所有文档聚焦于技能要求与作业规范，非定价内容。[1][2][3]  \n4. 无法基于现有资料判断价格差异。[1][2][3]  \n5. 建议补充具体品牌或价格政策信息，或转人工咨询。[1][2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881097,
+    "id": "chatcmpl-2e5ad3e8-7ed4-9d04-9f46-1038e8f68d01",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2763,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2880
+    }
+  },
+  "usage_known": true
+}

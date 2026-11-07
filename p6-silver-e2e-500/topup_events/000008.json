@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "2b238a0b2732fb6604f99bea5f520033d42c51714776cb48c3bcbe7c266cdbd2",
+  "record": {
+    "batch": 4,
+    "candidates": [
+      {
+        "answer": "820.80",
+        "evidence": [
+          {
+            "excerpt": "WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50",
+            "passage_id": "db85cd8d317a59c32679393f"
+          }
+        ],
+        "question": "路灯型高度1800mm以上对应的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "729.60",
+        "evidence": [
+          {
+            "excerpt": "WH23118001 安装楼面抱杆 （单杆高度） 3m 以下 729.60 456.00 136.80 136.80 消耗量 4.00 —",
+            "passage_id": "b0cb7763d8852cec70f66527"
+          }
+        ],
+        "question": "安装楼面抱杆（单杆高度）3m以下的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "228.00",
+        "evidence": [
+          {
+            "excerpt": "WH23119003 室外、壁挂 228.00 142.50 42.75 42.75 1.25 —",
+            "passage_id": "a42aa1211b15c9b97d77cd11"
+          }
+        ],
+        "question": "室外、壁挂式无线局域网接入点（AP）设备的综合单价是多少元？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

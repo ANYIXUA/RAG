@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:18:29.564557+08:00",
+  "input_token_upper_bound": 1151,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0361"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "对于有源室内分布系统，巡检时需检查哪些天线数量与外观情况？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "0d5817e158e04d9fb0fe91dde993fcda",
+  "reserved_yuan": 0.0005755
+}

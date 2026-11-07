@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T19:58:23.445911+08:00",
+  "input_token_upper_bound": 1139,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0087"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在馈线维护中，如何确保馈线接头连接牢固且密封良好？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "8289c742f32845cbae30579ea4648fdb",
+  "reserved_yuan": 0.0005695
+}

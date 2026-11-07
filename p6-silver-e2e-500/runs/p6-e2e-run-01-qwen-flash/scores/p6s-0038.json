@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": " [1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n内容：WH33111002 温湿、烟感、水浸监控单元 91.20 57.00 17.10 17.10 0.50 —\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n内容：WH23128002 温湿、烟感、水浸监控单元 91.20 57.00 17.10 17.10 0.50 —",
+    "reason": "实际LLM上下文中的[1]和[2]均明确列出WH33111002温湿、烟感、水浸监控单元的综合单价为91.20元，与silver_reference一致，且该信息在多个上下文片段中重复验证，证据充分。",
+    "score": 1
+  },
+  "case_id": "p6s-0038",
+  "citation_correctness": {
+    "evidence": "[1] 支持：综合单价91.20元，人工费57.00元，企业管理费17.10元，利润17.10元，计量单位为点；[2] 支持：相同编码单价为91.20元。",
+    "reason": "所有引用编号[1][2]均正确对应实际上下文来源，且每条引用内容确实支持其所标注的陈述。例如[1]支持单价、费用构成、计量单位等，[2]支持单价一致性。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "问题为精确事实查询，回答直接给出单价并附带合理背景信息，无冗余或缺失。",
+    "reason": "问题仅询问综合单价，回答聚焦于该核心信息，并补充了相关细节（如费用构成、计量单位、来源页码），未遗漏必要条件或步骤，符合exact_fact类型要求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[1] 中明确列出WH33111002的综合单价为91.20元，人工费57.00元，企业管理费17.10元，利润17.10元，计量单位为“点”；[2]中相同编码的单价亦为91.20元。",
+    "reason": "回答中每一项事实（单价91.20元、包含人工费57.00元、企业管理费17.10元、利润17.10元、计量单位为点、来源第312页、另一版本也为91.20元）均有对应上下文支持，且引用编号准确匹配原文片段。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e1ab4e1317ff43abb390236167efe045",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "模型已基于上下文给出具体回答，非拒答或限定说明。",
+    "reason": "问题可回答，且模型已提供完整答案，无需拒答，因此不适用此维度。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

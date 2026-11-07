@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:27.053947+08:00",
+  "conservative_cost_yuan": 0.0014104499999999997,
+  "error": null,
+  "latency_ms": 2538.8919000979513,
+  "list_price_estimate_yuan": 0.0009769499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确支持废标结论\",\n    \"evidence\": \"8.4.3.3 投标人的投标报价高于招标控制价的应予废标。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"8.4.3.3 投标人的投标报价高于招标控制价的应予废标。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖核心条件与关键点\",\n    \"evidence\": \"8.4.3.3 投标人的投标报价高于招标控制价的应予废标。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"8.4.3.3 投标人的投标报价高于招标控制价的应予废标。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882064,
+    "id": "chatcmpl-1654847a-c6d5-98a8-9303-a5524dc6e761",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 289,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3623,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3912
+    }
+  },
+  "usage_known": true
+}

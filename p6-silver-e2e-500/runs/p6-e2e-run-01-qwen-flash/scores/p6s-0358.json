@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "天馈 天馈线测试仪器 台 12 天馈 频谱仪 台 13 天线姿态测试仪 台",
+    "reason": "工具列表与上下文一致，覆盖关键设备。",
+    "score": 1
+  },
+  "case_id": "p6s-0358",
+  "citation_correctness": {
+    "evidence": "天馈 天馈线测试仪器 台 12",
+    "reason": "引用编号与上下文来源匹配。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "互调测试与发射功率测试需专用仪表支持。[2]",
+    "reason": "涵盖信号测试所需核心工具。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "天馈线测试仪器、频谱仪、天线姿态测试仪",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "36f1c7f22a244f659576e0d8a6166e62",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

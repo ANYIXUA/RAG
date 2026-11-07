@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH12022005 6 孔（3X2） 1215.68 824.75 225.98 164.95 4.02 6.02",
+    "reason": "引用数据与上下文一致，计算正确。",
+    "score": 1
+  },
+  "case_id": "p6s-0228",
+  "citation_correctness": {
+    "evidence": "WH12022005 6 孔（3X2） 1215.68 824.75 225.98 164.95 4.02 6.02",
+    "reason": "引用编号与来源匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "敷设6孔（3X2）塑料管道时，利润为164.95元/百米。[1]",
+    "reason": "涵盖所有必要条件与步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH12022005 6 孔（3X2） 1215.68 824.75 225.98 164.95 4.02 6.02",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3016a46d77d240f685e9fbcf527315af",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:40.460004+08:00",
+  "conservative_cost_yuan": 0.0008958,
+  "error": null,
+  "latency_ms": 1472.6927999872714,
+  "list_price_estimate_yuan": 0.0006843,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区安装水泥撑杆时，综合单价按平原地区标准的1.5倍计取。[1]  \n2. 该规定适用于装水泥撑杆项目，对应子目为WH12010004至WH12010006。[1]  \n3. 丘陵、城区则按1.2倍计取，山区标准更高。[1]  \n4. 此系数已明确标注于规程第198页表10.2.2.10中。[1]  \n5. 该规则同样适用于更换撑杆等类似作业。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881059,
+    "id": "chatcmpl-690bef4e-d539-9c48-b3fc-5ee23b92d816",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 141,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3152,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3293
+    }
+  },
+  "usage_known": true
+}

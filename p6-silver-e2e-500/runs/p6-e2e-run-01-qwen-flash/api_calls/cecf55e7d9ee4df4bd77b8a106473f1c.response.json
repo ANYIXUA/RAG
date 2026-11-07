@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:54.295098+08:00",
+  "conservative_cost_yuan": 0.0024888,
+  "error": null,
+  "latency_ms": 6229.932900052518,
+  "list_price_estimate_yuan": 0.0014838,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确列出WH14001002架空方式的综合单价为1622.80元，与silver_reference一致，且该信息在上下文中直接可得。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第224页\\n定位信息：224\\n... WH14001002 架空 1622.80 ...\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实（单价、费用构成、计量单位、项目编码、材料费另计）均能在上下文[1]中找到对应支持，无虚构或夸大。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第224页\\n定位信息：224\\n... 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81 ... 消耗量 5.71 2.86\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问综合单价，回答完整提供了数值、单位、项目编码及材料费另计等关键信息，未遗漏必要条件或步骤。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第224页\\n定位信息：224\\n... WH14001002 架空 1622.80 ...\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应到上下文片段[1]，且该片段确实支持所陈述的每一条事实。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第224页\\n定位信息：224\\n... WH14001002 架空 1622.80 ...\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确可答的exact_fact类型，且上下文中有直接答案，无需拒答，因此不适用此维度。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881428,
+    "id": "chatcmpl-47f3da17-6697-9772-a424-697227eade13",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 670,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3192,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3862
+    }
+  },
+  "usage_known": true
+}

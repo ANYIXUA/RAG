@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23129002 角钢塔、三管塔、四管塔35m 以上 395.81 247.38 74.21 74.21 2.17 —",
+    "reason": "内容与上下文一致，无遗漏",
+    "score": 1
+  },
+  "case_id": "p6s-0297",
+  "citation_correctness": {
+    "evidence": "WH23129002 角钢塔、三管塔、四管塔35m 以上 395.81 247.38 74.21 74.21 2.17 —",
+    "reason": "引用编号与上下文来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "塔体结构检查、螺丝紧固、漆面除锈刷漆、塔基强度测试等。",
+    "reason": "涵盖所有关键操作步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "工作内容：塔体结构检查、螺丝紧固、漆面除锈刷漆、塔基强度测试等。",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "d28dabd4bca646008ffb7974fd9cdacb",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

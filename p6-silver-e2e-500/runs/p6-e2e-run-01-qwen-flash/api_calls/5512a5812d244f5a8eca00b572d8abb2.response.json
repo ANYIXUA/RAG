@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:48.835524+08:00",
+  "conservative_cost_yuan": 0.0007584,
+  "error": null,
+  "latency_ms": 1230.150799965486,
+  "list_price_estimate_yuan": 0.0005979,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查山区塔杆及基础周围环境是否完好。[2]  \n2. 重点检查导线、绝缘子、拉线撑杆与接地装置状态。[2]  \n3. 清理线路沿线杂物，确保标识标牌清晰可见。[2]  \n4. 检查电缆保护措施如护坡、挡水墙等有无损坏。[2]  \n5. 记录巡检情况，发现异常及时上报处理。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881127,
+    "id": "chatcmpl-92774d28-653c-9236-b62c-2c584a1b21c0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2916,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3023
+    }
+  },
+  "usage_known": true
+}

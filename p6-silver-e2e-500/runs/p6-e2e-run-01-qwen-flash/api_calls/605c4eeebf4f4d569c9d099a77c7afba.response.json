@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:12.156713+08:00",
+  "conservative_cost_yuan": 0.00075735,
+  "error": null,
+  "latency_ms": 1475.8097999729216,
+  "list_price_estimate_yuan": 0.0005758499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 未提供不同品牌设备在市场推广中的价格策略差异信息。[1]  \n2. 上下文仅涉及设备编码、功能要求及网络管理规范，无价格策略相关内容。[1][2][3][4]  \n3. 无法确认各品牌设备的定价机制或市场推广策略。[1]  \n4. 中国移动对终端设备有统一编码与功能要求，但未提及价格差异。[1]  \n5. 缺少关于品牌间价格策略对比的数据支持，建议补充相关信息或转人工。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881210,
+    "id": "chatcmpl-ec7efbf1-f2ce-9a91-81eb-da411964f0f7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2629,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2750
+    }
+  },
+  "usage_known": true
+}

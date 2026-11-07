@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:27:59.857612+08:00",
+  "conservative_cost_yuan": 0.0016076999999999999,
+  "error": null,
+  "latency_ms": 3610.0607998669147,
+  "list_price_estimate_yuan": 0.0010932,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0053利润值存在歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文[1]\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键信息点且无遗漏\",\n    \"evidence\": \"山区直埋光缆日常检修的利润为25.45元/千米²次。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"WH11008003 山区 136.92 92.89 25.45 18.58 0.64 0.32\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"profit_value_discrepancy\",\n    \"multiple_profit_values_present\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881676,
+    "id": "chatcmpl-14a41b3e-0429-936a-be18-b55554b5eecf",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 343,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3858,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4201
+    }
+  },
+  "usage_known": true
+}

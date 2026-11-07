@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:08.462978+08:00",
+  "conservative_cost_yuan": 0.00071775,
+  "error": null,
+  "latency_ms": 1201.9690999295563,
+  "list_price_estimate_yuan": 0.00056775,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 装维服务成本涉及光缆布放与端接等施工环节。[2]  \n2. 成本包含智能组网布线及无线信号检测工作。[3]  \n3. 服务需遵循光纤入户施工及验收规范。[2]  \n4. 涉及多种业务运维，如交互式电视与物联网接入。[1]  \n5. 成本结构受装维作业安全操作规范影响。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881147,
+    "id": "chatcmpl-315ffe30-025b-9d1f-a284-20b63c673a0a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2785,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2885
+    }
+  },
+  "usage_known": true
+}

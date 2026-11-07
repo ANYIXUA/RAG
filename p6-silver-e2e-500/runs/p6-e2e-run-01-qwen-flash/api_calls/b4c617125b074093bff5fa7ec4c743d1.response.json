@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:31.779144+08:00",
+  "conservative_cost_yuan": 0.0012741,
+  "error": null,
+  "latency_ms": 2714.0765998046845,
+  "list_price_estimate_yuan": 0.0008931,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持附录N\",\n    \"evidence\": \"宽带装维障碍处理流程见附录N。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"附录N为资料性内容，标题为“宽带安装和维护装维故障处理流程”。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答问题所需信息\",\n    \"evidence\": \"宽带装维障碍处理流程见附录N。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882009,
+    "id": "chatcmpl-790cb705-6806-96c9-84d2-21a58b378721",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 254,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3414,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3668
+    }
+  },
+  "usage_known": true
+}

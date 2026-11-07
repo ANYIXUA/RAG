@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:40.034223+08:00",
+  "conservative_cost_yuan": 0.0015795,
+  "error": null,
+  "latency_ms": 3053.936199983582,
+  "list_price_estimate_yuan": 0.0010695,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"混淆工日单价与人工费单价\",\n    \"evidence\": \"人工费单价为：技工为114 元/工日；普工为61 元/工日。\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"将工日单价误作人工费单价\",\n    \"evidence\": \"人工费单价为：技工为114 元/工日；普工为61 元/工日。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有必要信息\",\n    \"evidence\": \"铺水泥盖板 1.92 1.30 0.36 0.26 消耗量 0.00 0.02\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"人工费单价为：技工为114 元/工日；普工为61 元/工日。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_unit_interpretation\",\n    \"misattribution_of_cost_component\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881837,
+    "id": "chatcmpl-b7ce3cd5-947d-99f3-9899-3c5ae5d54760",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 340,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3730,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4070
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:34.885686+08:00",
+  "conservative_cost_yuan": 0.0007720499999999999,
+  "error": null,
+  "latency_ms": 1455.6696000508964,
+  "list_price_estimate_yuan": 0.00060255,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 措施项目费位于维护项目费用结算汇总表第4行。[1]  \n2. 其计算依据为“表—08 合计”项。[1]  \n3. 表—08为措施项目清单与计价表，是其来源依据。[2]  \n4. 结算时需按表—08合计金额计入总费用。[1]  \n5. 该费用在结算汇总表中独立列示，不包含于其他项目。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880993,
+    "id": "chatcmpl-e787f2c1-6ef3-9dce-922b-e25d89d32cc7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2887,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3000
+    }
+  },
+  "usage_known": true
+}

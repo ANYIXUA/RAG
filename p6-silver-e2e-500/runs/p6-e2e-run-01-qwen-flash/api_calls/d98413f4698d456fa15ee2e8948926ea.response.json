@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:54.014429+08:00",
+  "conservative_cost_yuan": 0.00168675,
+  "error": null,
+  "latency_ms": 3475.764600094408,
+  "list_price_estimate_yuan": 0.00111225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误，如安装单价\",\n    \"evidence\": \"WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏更换电杆地线直埋式单价\",\n    \"evidence\": \"WH12020002 直埋式 62.42 42.35 11.60 8.47 0.24 0.24\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[1]未覆盖所有结论\",\n    \"evidence\": \"WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_installation_cost\",\n    \"missing_replacement_cost\",\n    \"citation_mismatch\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882090,
+    "id": "chatcmpl-4394cb34-b399-9a23-8fb0-e06d3dece2d7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 383,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3585,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3968
+    }
+  },
+  "usage_known": true
+}

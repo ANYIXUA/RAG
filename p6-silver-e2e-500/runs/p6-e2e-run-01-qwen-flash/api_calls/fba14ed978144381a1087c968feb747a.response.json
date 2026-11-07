@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:34.323601+08:00",
+  "conservative_cost_yuan": 0.0012897,
+  "error": null,
+  "latency_ms": 2201.2513999361545,
+  "list_price_estimate_yuan": 0.0008997,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持POE供电无需市电\",\n    \"evidence\": \"皮远端射频模块是可以不需要市电供电的，它可以通过网线POE\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"皮远端射频模块是可以不需要市电供电的\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖供电方式与安装要点\",\n    \"evidence\": \"安装时仅需连接网线，无需额外布设电线\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881832,
+    "id": "chatcmpl-ddd72640-6435-93d4-a5b4-f0b2a1cf5452",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 260,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3398,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3658
+    }
+  },
+  "usage_known": true
+}

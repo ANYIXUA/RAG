@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:18:37.276225+08:00",
+  "input_token_upper_bound": 1127,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0371"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在站址业主维系工作中，应执行哪些具体步骤？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "8fe491d635d346408bfb85f72791d092",
+  "reserved_yuan": 0.0005635
+}

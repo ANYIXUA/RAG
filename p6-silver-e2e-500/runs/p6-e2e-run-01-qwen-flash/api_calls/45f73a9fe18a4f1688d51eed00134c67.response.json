@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:37.661193+08:00",
+  "conservative_cost_yuan": 0.0008904,
+  "error": null,
+  "latency_ms": 1852.0151001866907,
+  "list_price_estimate_yuan": 0.0006849,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 铁塔20m以上每增加1m，安装小型天线射频拉远单元的材料费用为14.59元。[2]  \n2. 该费用对应的是“一体化设备”类型，适用于铁塔场景。[2]  \n3. 费用明细中包含材料、人工等分项，14.59元为总材料费。[2]  \n4. 此标准出自《电信基础设施维护规程》第269页。[2]  \n5. 与同类设备（如射频拉远单元）相比，费用略低。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880935,
+    "id": "chatcmpl-61054663-1105-97b3-b7b6-68e1a9f13e00",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 137,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3196,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3333
+    }
+  },
+  "usage_known": true
+}

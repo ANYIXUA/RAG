@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:53.213787+08:00",
+  "conservative_cost_yuan": 0.00072675,
+  "error": null,
+  "latency_ms": 1062.8907000645995,
+  "list_price_estimate_yuan": 0.00057525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 馈线进入机房必须有防水弯。[1]  \n2. 馈线孔应密封良好，不留空隙。[1]  \n3. 馈线固定牢固，无松动、锈蚀或脱落。[1]  \n4. 馈线弯曲处应圆滑，半径符合安装规范。[1]  \n5. 馈线表皮无破损，周边无尖锐物体。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881012,
+    "id": "chatcmpl-a79373cd-346e-9095-96b9-aea487ea4bdd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2825,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2926
+    }
+  },
+  "usage_known": true
+}

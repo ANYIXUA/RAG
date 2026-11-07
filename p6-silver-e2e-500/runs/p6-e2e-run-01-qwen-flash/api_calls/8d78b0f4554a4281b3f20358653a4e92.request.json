@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:18:01.253966+08:00",
+  "input_token_upper_bound": 1145,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0331"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "8d78b0f4554a4281b3f20358653a4e92",
+  "reserved_yuan": 0.0005725
+}

@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0381",
+  "citation_correctness": {
+    "evidence": "全光组网终端应能实现光和Wi-Fi 间的协同能力，根据业务需求能根据整网数据传输状态和无线通信质量进行调整，提升全光网络内Wi-Fi 无线空口调度能力，提高Wi-Fi 的 协同效率，减少漫游延迟，优化性能，实现整网空口并发吞吐性能最大化。[2]",
+    "reason": "引用编号与上下文来源一致且支持对应句",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "",
+    "reason": "问题不可回答，无需补全",
+    "score": null
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "光网关应支持基于数据流分类结果的带宽保障和限制机制。[2]",
+    "reason": "每项事实均来自对应引用内容",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "cd746fc9183946be970b36d05858bc67",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "运维流程需通过平台实现网络状态查询与诊断，支撑策略协同。[3]",
+    "reason": "未尝试编造，仅基于可得信息回应",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

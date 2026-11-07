@@ -1,0 +1,85 @@
+{
+  "previous_sha256": "da8584da9448081b04d277450189e4b6046a3ec6a03d04aac48968176c6804b0",
+  "record": {
+    "batch": 5,
+    "candidates": [
+      {
+        "answer": "采用后向散射法OTDR",
+        "evidence": [
+          {
+            "excerpt": "1 中继段光纤的损耗测量： 1)仪表的测试状态应与前次的测试状态相同。 2)当发现光纤通道损耗增大或后向散射信号曲线上有大台阶时，应适当增加检查次数，组织技术人员进行分析， 查找原因，及时采取改善措施。 3)发现光缆中有若干根光纤的衰减变动量都大于0.1dB/km 时，应迅速进行处理。",
+            "passage_id": "e3cf39da121b2a8bcc3179f0"
+          }
+        ],
+        "question": "中继段光纤的损耗测量采用什么方法？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "12 芯光缆以下 90％，12 芯 以上95%",
+        "evidence": [
+          {
+            "excerpt": "备用纤芯光纤衰减与平均损耗测试 抽测50%，主用纤芯按需，质量指标符合规 范，纤芯完好率 12 芯光缆以下 90％，12 芯 以上95%。",
+            "passage_id": "e3cf39da121b2a8bcc3179f0"
+          }
+        ],
+        "question": "备用纤芯光纤衰减与平均损耗测试的纤芯完好率要求是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "记录",
+        "evidence": [
+          {
+            "excerpt": "100＜ρ≤500 记录 ρ＞500 记录",
+            "passage_id": "e3cf39da121b2a8bcc3179f0"
+          }
+        ],
+        "question": "防护接地装置地线电阻ρ＞500时的测试记录周期是多久？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0470",
+          "expected_behavior": "answer",
+          "generation_batch": 5,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271111,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "防护接地装置地线电阻ρ＞500时的测试记录周期是多久？",
+          "question_type": "exact_fact",
+          "reference_answer": "记录",
+          "source_chunk_ids": [
+            "e3cf39da121b2a8bcc3179f0"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "e3cf39da121b2a8bcc3179f0",
+              "excerpt": "100＜ρ≤500 记录 ρ＞500 记录"
+            }
+          ],
+          "source_page": 32,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "4.4.1 能处理家庭复合总线的常见故障",
+    "reason": "支持家庭总线故障处理方法",
+    "score": 1
+  },
+  "case_id": "p6s-0456",
+  "citation_correctness": {
+    "evidence": "参照附录J抢修流程进行故障排查与处理。[2]",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "确认供电电压是否在正常范围（如-44.4V～-53.2V）。[2]",
+    "reason": "覆盖排查关键步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "设备连接线是否松动或接触不良。[3]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "253520177aa34a33b4f6c838bc601880",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

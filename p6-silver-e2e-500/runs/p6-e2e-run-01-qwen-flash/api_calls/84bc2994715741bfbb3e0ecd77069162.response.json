@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:51.568318+08:00",
+  "conservative_cost_yuan": 0.0007744500000000001,
+  "error": null,
+  "latency_ms": 1442.376899998635,
+  "list_price_estimate_yuan": 0.0006034500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 箱体进水或老鼠进入时，应检查进出线孔是否封闭完好。[1]  \n2. 确保箱体门锁完好，防止再次进水或动物侵入。[1]  \n3. 若发现箱内有积水或杂物，需及时清理并上报处理。[2]  \n4. 可采取防水措施，如使用防水卷材或涂料进行修复。[3]  \n5. 必要时更换锁具或防盗设施以加强防护。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881070,
+    "id": "chatcmpl-a6424448-563b-9e24-a0e1-45361593729f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 114,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2883,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2997
+    }
+  },
+  "usage_known": true
+}

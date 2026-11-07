@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:20.062014+08:00",
+  "conservative_cost_yuan": 0.0013280999999999998,
+  "error": null,
+  "latency_ms": 2825.1841000746936,
+  "list_price_estimate_yuan": 0.0009516,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖天线松动检查要点\",\n    \"evidence\": \"天线固定平稳牢固不破坏整体环境美观。[4]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"馈线连接牢固，无松动或变形。[4]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键检查点且无遗漏\",\n    \"evidence\": \"检查周围是否有障碍物阻挡信号覆盖。[4]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"确认馈线连接牢固，无松动或变形。[4]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882057,
+    "id": "chatcmpl-e6f73030-c1d8-916c-85b5-4e4aa0187fcd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 251,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3834,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4085
+    }
+  },
+  "usage_known": true
+}

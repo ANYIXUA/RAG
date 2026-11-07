@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:56.094287+08:00",
+  "conservative_cost_yuan": 0.0012170999999999998,
+  "error": null,
+  "latency_ms": 3144.1852999851108,
+  "list_price_estimate_yuan": 0.0008600999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题未在上下文覆盖范围内\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": null,\n    \"reason\": \"无有效事实支持，引用错误\",\n    \"evidence\": \"[6] 不存在于上下文\"\n  },\n  \"completeness\": {\n    \"score\": null,\n    \"reason\": \"未回应问题核心，信息缺失\",\n    \"evidence\": \"\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用编号[6][7]未在上下文出现\",\n    \"evidence\": \"[6] 不存在于上下文\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"未尝试编造，明确拒答倾向\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"unanswerable\",\n    \"incorrect_citation\",\n    \"overclaim\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881972,
+    "id": "chatcmpl-9ac8a387-822f-9c56-8ddc-2168de20d5df",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 238,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3354,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3592
+    }
+  },
+  "usage_known": true
+}

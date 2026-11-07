@@ -1,0 +1,349 @@
+{
+  "date": "2026-11-07",
+  "original_p7_protected_files": 6409,
+  "original_p7_hashes_verified_before_changes": true,
+  "credential_redactions": [
+    {
+      "path": "p6-silver-e2e-500/run_e2e.py",
+      "original_sha256": "588184ee5028bd4000dcb44cc45f79392685b67797ea2d35077c64d2176351b8",
+      "published_sha256": "d4516aaa3d4a166759d3504fb4b22e3f491a9098013879809eca059c31e58c2c",
+      "reason": "Removed hardcoded local connection settings, including a database credential. The runner now uses .env/environment. Private original retained outside the repository."
+    }
+  ],
+  "frozen_source_snapshots": {
+    "rag_app/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/__init__.py.snapshot",
+      "sha256": "b9185986493e9d3b1db98fcc19f1edd945e80ee5706ec9be22bf08e2b6b098af"
+    },
+    "rag_app/api.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/api.py.snapshot",
+      "sha256": "c0235d7775c8ccad65f2efa7b64452c0081cc968334f6bb12482bc7af8108251"
+    },
+    "rag_app/cli.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/cli.py.snapshot",
+      "sha256": "cb1401ca28f0b010ac813c8f03c73e2ab951aa95bf791d67b868aa015de5ffc2"
+    },
+    "rag_app/core/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/core/__init__.py.snapshot",
+      "sha256": "6d4716d39241fd3b5c0c02b3c8a0c139e323da89216ca434356023e4b27f0862"
+    },
+    "rag_app/core/config.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/core/config.py.snapshot",
+      "sha256": "e5f45c18b0d3aeb0b9f0dcf9a1d8095f0c67317544b48322fdff239664824009"
+    },
+    "rag_app/core/error_codes.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/core/error_codes.py.snapshot",
+      "sha256": "4074167647a4d985844fe24eb0ed55cbacc62e46577c8dccd9c457f5e9168d05"
+    },
+    "rag_app/core/models.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/core/models.py.snapshot",
+      "sha256": "f892a287377be286f86b017fb2691ab0d06255fe811b8b41c78419938790f0f0"
+    },
+    "rag_app/core/text_utils.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/core/text_utils.py.snapshot",
+      "sha256": "38bf029df1049ad1dccb17fdd09b5b560e24062f75e68cdec157f8b239613d47"
+    },
+    "rag_app/eval_dataset/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/eval_dataset/__init__.py.snapshot",
+      "sha256": "5708f59638de828b8e5d3d6fdd349e27f8918a25172cba201a3a587a2e181447"
+    },
+    "rag_app/eval_dataset/candidates.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/eval_dataset/candidates.py.snapshot",
+      "sha256": "daf8f8b13c1f020c26ccaaba2a47fb3f7aecb8bff62619bef48135c031d5bf0c"
+    },
+    "rag_app/eval_dataset/corpus.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/eval_dataset/corpus.py.snapshot",
+      "sha256": "61932767e050e4c0b420f4060ac9554da19486e817733c0b15bef408b19ec0aa"
+    },
+    "rag_app/eval_dataset/coverage.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/eval_dataset/coverage.py.snapshot",
+      "sha256": "25b0939a425d93577d23bc2ce858d111538a24c39254b5adbfa1158255af0bbe"
+    },
+    "rag_app/eval_dataset/ollama.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/eval_dataset/ollama.py.snapshot",
+      "sha256": "fb1b8e5b0ee4dc49ab910c8e168737bced821b5f72c6f81d57b24a09f411c127"
+    },
+    "rag_app/eval_dataset/schemas.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/eval_dataset/schemas.py.snapshot",
+      "sha256": "f7bf62cfc5514968aaac7932f2c9f77460db420e995034e468516b37bfbd0e35"
+    },
+    "rag_app/indexing/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/indexing/__init__.py.snapshot",
+      "sha256": "50ccb088c091f06a8b34cec1761f69930d6a98926f6ebfd2ee8f498af9393d6d"
+    },
+    "rag_app/indexing/chunking.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/indexing/chunking.py.snapshot",
+      "sha256": "f87ef479c10dbc30761eb282a6fdf2e7e223741dc20b511d2109eae2c5c96892"
+    },
+    "rag_app/indexing/embeddings.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/indexing/embeddings.py.snapshot",
+      "sha256": "e05a43f7bb94aff5f98e0d2bed433eec108e3323f71f456fedcaaa84b0f7098f"
+    },
+    "rag_app/indexing/offline.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/indexing/offline.py.snapshot",
+      "sha256": "1c9aecce749f466987027ef9fabb8588c9b389990658b8e095e3955bbbf1483b"
+    },
+    "rag_app/indexing/vector_store.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/indexing/vector_store.py.snapshot",
+      "sha256": "caa94cb3b311e374035db69d1ea3ff1c0c8abed29f71c0b3a69cda1934811040"
+    },
+    "rag_app/ingestion/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/ingestion/__init__.py.snapshot",
+      "sha256": "9d4f5db0d711a3f3dd4dd54cb85274637aabfc1512cf6df632d902af427525f6"
+    },
+    "rag_app/ingestion/deepdoc_adapter.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/ingestion/deepdoc_adapter.py.snapshot",
+      "sha256": "e1d626edb93aca2c1e8ec38af01a5479f0de990f116b0da5283530db51df77c2"
+    },
+    "rag_app/ingestion/governance.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/ingestion/governance.py.snapshot",
+      "sha256": "fec580a99270efa206266e1ab12c398568aa0ae011b0042e79f3b1757e810444"
+    },
+    "rag_app/ingestion/loaders.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/ingestion/loaders.py.snapshot",
+      "sha256": "a6ffcfcc39c85f563466019b93c7c177ce5531a16d597df5023445907a309a19"
+    },
+    "rag_app/ingestion/mineru_adapter.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/ingestion/mineru_adapter.py.snapshot",
+      "sha256": "6528812101c5b4704a0e510d95b340c527ed71c4a7ac389118b0b918282c1f83"
+    },
+    "rag_app/ingestion/parsing.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/ingestion/parsing.py.snapshot",
+      "sha256": "c01cf6d51c1d3b1a11dcdb9eb82fcb96e1a45eb3a6a802d16437fc5dcc293bdf"
+    },
+    "rag_app/operations/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/operations/__init__.py.snapshot",
+      "sha256": "99013150ef9ff663c0d820c36f13f2e033b29c437785aec0cf1635a4cc9c41e3"
+    },
+    "rag_app/operations/evaluation.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/operations/evaluation.py.snapshot",
+      "sha256": "f32a9afb6f8e35fa62502b3c1a8417eb444a81b4035fba846821ff36c42da20b"
+    },
+    "rag_app/operations/feedback_memory.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/operations/feedback_memory.py.snapshot",
+      "sha256": "7c4661f74d582f52050333e17d1d1d5b2facb52488f691f9a726104d6897c7ab"
+    },
+    "rag_app/operations/knowledge_lifecycle.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/operations/knowledge_lifecycle.py.snapshot",
+      "sha256": "103547bd7b439f6da38a6baf3a3fe5cbbbb1a140798d91064276573ec46b2eaa"
+    },
+    "rag_app/operations/ops.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/operations/ops.py.snapshot",
+      "sha256": "da7e8a4558c742af902236dc1ad4d8459443b24eec91b9e82fe4d75c7d7cb65e"
+    },
+    "rag_app/operations/retrieval_metrics.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/operations/retrieval_metrics.py.snapshot",
+      "sha256": "213915f91a01287cd5e76391f3d453eb2540bef99e361ff51cc3834200b58b4f"
+    },
+    "rag_app/prompt_templates.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/prompt_templates.py.snapshot",
+      "sha256": "0962259928623b2e410b3acfc5abed7762e42d31c684e4852853d1cf41129511"
+    },
+    "rag_app/public_contract.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/public_contract.py.snapshot",
+      "sha256": "2d250293ad9992b715894a3341c7420da217a3c9365254a5e31f541156b9b82b"
+    },
+    "rag_app/rag.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/rag.py.snapshot",
+      "sha256": "0d8311eac98d5219b854570edc3b26120ee027674c4204e18fc274211aa46aa4"
+    },
+    "rag_app/retrieval/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/retrieval/__init__.py.snapshot",
+      "sha256": "081dc2c54cbfe5fb1713a80cd4a197816c92dc8306ed3e84189b180fcc992585"
+    },
+    "rag_app/retrieval/answer_memory.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/retrieval/answer_memory.py.snapshot",
+      "sha256": "68a6622477974190d872e6e9e1132876e4afd17ddc81d7719fd5525c973b3fca"
+    },
+    "rag_app/retrieval/dialogue.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/retrieval/dialogue.py.snapshot",
+      "sha256": "4e3f0e90dd732774d427439a51e7d694a4253edd2beb8c0a4b94e57ba7815b6d"
+    },
+    "rag_app/retrieval/llm.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/retrieval/llm.py.snapshot",
+      "sha256": "fead779d43bc087a1470492e28fed3f96ba8dfacbe627e4bdd50c8a05bfa79d5"
+    },
+    "rag_app/retrieval/online.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/retrieval/online.py.snapshot",
+      "sha256": "5a0ef8a12c267b61016c2025c63d85f2b89b96f68bd947b817afe6ea16b3c18a"
+    },
+    "rag_app/retrieval/query.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/retrieval/query.py.snapshot",
+      "sha256": "bc73336eda0162736929bad4dc4b460b7779c1539b4c8885109ca5f7673e1f12"
+    },
+    "rag_app/retrieval/rerank.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/retrieval/rerank.py.snapshot",
+      "sha256": "fc42cc739548243042c31ed23652df35b685d141c451464266a1b95150581bd3"
+    },
+    "rag_app/streaming.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/streaming.py.snapshot",
+      "sha256": "77bc01549d3bbf0c1db6e2b5414efc2d6b9960d417c2d11f0dcc3d391e2b8df8"
+    },
+    "rag_app/tools/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/tools/__init__.py.snapshot",
+      "sha256": "a9b3c161c24d4310a091e161f754137e8f1eadb94ff23e5f9995f03e67653984"
+    },
+    "rag_app/tools/order_status.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/tools/order_status.py.snapshot",
+      "sha256": "8cbb749eedf112f88efe8468a18e8879b82368fc20111d2df8afed8720f2188d"
+    },
+    "rag_app/version.py": {
+      "path": "evaluation-publication-20261107/frozen-source/rag_app/version.py.snapshot",
+      "sha256": "e8f1fd17e2368d1bf1719e88abef4ba954da599b6dfc20fd9cc88b5fc38379e0"
+    },
+    "tests/__init__.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/__init__.py.snapshot",
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "tests/helpers.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/helpers.py.snapshot",
+      "sha256": "ddcb1f3b88bcf190e609674edc9921a7cbe0da7db20f0672c2ef8a68572f6138"
+    },
+    "tests/js/sessionId.test.js": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/js/sessionId.test.js.snapshot",
+      "sha256": "1196eb0369159cc1457aa3f55da901a8cb66f327d0e57a9d7eead11199d106b6"
+    },
+    "tests/js/streamClient.test.js": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/js/streamClient.test.js.snapshot",
+      "sha256": "78425a55ba4a589cc5223cb0365b017a49f1f622af10abdf158ab20eb1562586"
+    },
+    "tests/js/traceModel.test.js": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/js/traceModel.test.js.snapshot",
+      "sha256": "f99e6e4c01edf5d466210a003ffd7cdd7ec41c80997ee6694112c54e1a014b59"
+    },
+    "tests/test_answer_memory.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_answer_memory.py.snapshot",
+      "sha256": "4d87ecdf5879693d11af55c13872b54d759506794554ec8134d3acfa06c24746"
+    },
+    "tests/test_api.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_api.py.snapshot",
+      "sha256": "c5d24a6bba721c03de115973693c19c9fff0b3f3ffdb95493f167c537a20d2b5"
+    },
+    "tests/test_chunking.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_chunking.py.snapshot",
+      "sha256": "e2fce12ca025b0b26b5330c826c5b79b94ef7235fe94a1c938239e6216eed5a8"
+    },
+    "tests/test_config.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_config.py.snapshot",
+      "sha256": "4df1c96c24d0c191ff30e44ca5ac51d1be09cc9446a19a8e279af3b89fbf8271"
+    },
+    "tests/test_deepdoc_adapter.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_deepdoc_adapter.py.snapshot",
+      "sha256": "eff9c72adad3aecd553289321f84d5fb4364bd7631ecc4180e9b32ed26519a68"
+    },
+    "tests/test_deployment_config.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_deployment_config.py.snapshot",
+      "sha256": "2f61b388763fa9aaf757e17a31cda12c5260947a9cacd0c91748403c0c433cae"
+    },
+    "tests/test_dialogue.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_dialogue.py.snapshot",
+      "sha256": "8906ce4b1dd6cf73b9aa72eac7447a03352c60797c2b801eaaa35e18b2cfae2d"
+    },
+    "tests/test_embeddings.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_embeddings.py.snapshot",
+      "sha256": "575634a034acb214f59a590b1d0ca6e4222210cf6cc253739524c6d04e862d6b"
+    },
+    "tests/test_error_codes.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_error_codes.py.snapshot",
+      "sha256": "be47d771893659b77ff9f3dfaeb8b91d3c268f9d71a06fffafddf51091fdd681"
+    },
+    "tests/test_eval_candidates.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_eval_candidates.py.snapshot",
+      "sha256": "be20f8d4fc7a348fe68615676ebedc081a2de005a97415026cdf251732072150"
+    },
+    "tests/test_eval_corpus.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_eval_corpus.py.snapshot",
+      "sha256": "d56a079ccb63d3d2b7672ce0acf6e3f3620a3d98247dee10083049b3f6392940"
+    },
+    "tests/test_eval_corpus_postgres.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_eval_corpus_postgres.py.snapshot",
+      "sha256": "02aa8e0fdcc86c57b4a48396bc6dc505f0c4edda1d219cec1ec1871766f71e6a"
+    },
+    "tests/test_evaluation.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_evaluation.py.snapshot",
+      "sha256": "206b79fe5f59bfb76f65b9fbdc968ee33de03c90f1c1b2b8d454a54053980b2e"
+    },
+    "tests/test_feedback_memory.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_feedback_memory.py.snapshot",
+      "sha256": "a56246b8444a7365a46786590e76163a8365a2cebd883583372828fe0d6bdf79"
+    },
+    "tests/test_governance.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_governance.py.snapshot",
+      "sha256": "3062dc9aa6263e90e106ccd06dcaea94b5a624224c7a79ef814cf84bfe07d862"
+    },
+    "tests/test_keyword_candidates.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_keyword_candidates.py.snapshot",
+      "sha256": "dacc12caae6a3ddbc3aec55367da032c462e1a4655ee524a272e328b87bb4ae7"
+    },
+    "tests/test_knowledge_lifecycle.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_knowledge_lifecycle.py.snapshot",
+      "sha256": "f126dfe2d46becd60a580a4c1eea20c0fad2eb8df98b97192f7e40c68c3818c9"
+    },
+    "tests/test_llm.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_llm.py.snapshot",
+      "sha256": "d398df19c60a5b53f66af048a7eead24f08532fd28eb8ff4a6720f9d1dab1644"
+    },
+    "tests/test_load_test_script.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_load_test_script.py.snapshot",
+      "sha256": "f151ba55a1e5bfa30c95bcdb0c279a9bd7b26ae50767da8e55a85c9a3afcf505"
+    },
+    "tests/test_mineru_adapter.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_mineru_adapter.py.snapshot",
+      "sha256": "8f2c32f18f9f8de17528f9a6331019d9e791319c1ed37d9b3860b3bb824b16b0"
+    },
+    "tests/test_offline_parsing_demo.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_offline_parsing_demo.py.snapshot",
+      "sha256": "10dff9f31b3b239662548edeab2ad1cb6ac11db130f9d0b9df5d8c8b164c2849"
+    },
+    "tests/test_offline_refresh.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_offline_refresh.py.snapshot",
+      "sha256": "4b9a8727f3715a244bb16e2cb67b26ee101eb55e3520d38eedc2c4f55462f938"
+    },
+    "tests/test_online_processing.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_online_processing.py.snapshot",
+      "sha256": "cf7270d8ac1a4ed0f914847b7461becdb565b986d5b0bc4909cdf74593248f74"
+    },
+    "tests/test_ops.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_ops.py.snapshot",
+      "sha256": "850169ebb9765c6ccf9aba1313a48a9127d7625e16f2a2f34567eaa9c7f582ab"
+    },
+    "tests/test_order_status_tool.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_order_status_tool.py.snapshot",
+      "sha256": "ae51adadb50283fe0202fd4157188970081a2f885b9d633b24a80073294b274a"
+    },
+    "tests/test_parsing.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_parsing.py.snapshot",
+      "sha256": "fb7bb94693190b6a8522b5fa0c4618f1d77e926e576ee5f45cf1fc82d8dcbfdc"
+    },
+    "tests/test_prompt_templates.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_prompt_templates.py.snapshot",
+      "sha256": "4ffa92a2844787b50edeedc3775723b4353302b86060884079f34e59cda6e580"
+    },
+    "tests/test_query_intent.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_query_intent.py.snapshot",
+      "sha256": "29caf50c364d5065f7eb3a5245e1b40b6c9ebc9dcfcc093a591fe80e06152432"
+    },
+    "tests/test_rag_pipeline.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_rag_pipeline.py.snapshot",
+      "sha256": "1e5c9dd2e0605723a58985d68a1fadb34a16b3d36fdf203b1bc502ebf7c96e88"
+    },
+    "tests/test_rerank.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_rerank.py.snapshot",
+      "sha256": "422d12ffb496ad09bdd55cdddff4e512eb55ddce46a6b8607965030aaa051962"
+    },
+    "tests/test_retrieval_metrics.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_retrieval_metrics.py.snapshot",
+      "sha256": "fd17b924cfcef7e32ea1c2e7fb5c141951ece84e5aacf27029565d213cdd3286"
+    },
+    "tests/test_streaming.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_streaming.py.snapshot",
+      "sha256": "7781b93a67a1aaf7ec3d7d71e02cec848d9af39f86426879bdb86de4e2c4044c"
+    },
+    "tests/test_vector_store.py": {
+      "path": "evaluation-publication-20261107/frozen-source/tests/test_vector_store.py.snapshot",
+      "sha256": "b622a4b6949db4189f42d412477bb782006b8941ff8d56ae2f4360e2ad453181"
+    }
+  },
+  "historical_manifests": "Preserved verbatim; their original runner hash intentionally differs from the published redacted runner.",
+  "live_source": "The main branch also integrates other development branches. Use frozen-source for the exact historical application/test bytes."
+}

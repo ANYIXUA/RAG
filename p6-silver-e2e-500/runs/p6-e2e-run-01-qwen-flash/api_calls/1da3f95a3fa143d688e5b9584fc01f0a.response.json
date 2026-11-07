@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:01.661982+08:00",
+  "conservative_cost_yuan": 0.0006795,
+  "error": null,
+  "latency_ms": 1082.804200006649,
+  "list_price_estimate_yuan": 0.000558,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装整流模块前需进行开箱检验。[3]  \n2. 应清洁搬运设备至安装位置。[3]  \n3. 按要求划线定位并安装固定模块。[3]  \n4. 完成接线或固定连线工作。[3]  \n5. 通电测试后清理现场。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881080,
+    "id": "chatcmpl-c867d941-d59a-914a-95bf-82a43deffbd7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 81,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2910,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2991
+    }
+  },
+  "usage_known": true
+}

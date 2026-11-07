@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:20.602194+08:00",
+  "conservative_cost_yuan": 0.0037113000000000003,
+  "error": null,
+  "latency_ms": 9929.131800075993,
+  "list_price_estimate_yuan": 0.0021483,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]号片段明确指出WH22105006（山区）的综合单价为13.68元，与问题直接对应，且该信息在原文中完整呈现。银参考与实际证据一致，答案正确。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第249页\\n定位信息：249\\n综合分：0.860802\\n召回综合分：0.860802\\n重排分：无\\n语义分：0.801146\\nBM25 原始分：66.908355\\nBM25 归一化分：1.000000\\n内容：... WH22105006 山区 13.68 8.55 2.57 2.57 0.08\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实均能在实际上下文[1]中找到直接支持：13.68元、项目编码WH22105006、计量单位座·次、属于铁塔技术测试工作内容、与市区和平原/丘陵相比更高，全部可由[1]段落验证。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第249页\\n定位信息：249\\n综合分：0.860802\\n召回综合分：0.860802\\n重排分：无\\n语义分：0.801146\\nBM25 原始分：66.908355\\nBM25 归一化分：1.000000\\n内容：... WH22105006 山区 13.68 8.55 2.57 2.57 0.08\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问综合单价，回答准确给出数值并补充了相关背景信息（如项目编码、计量单位、对比关系等），虽非必要但未遗漏关键条件或步骤，符合精确事实类问题要求。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第249页\\n定位信息：249\\n综合分：0.860802\\n召回综合分：0.860802\\n重排分：无\\n语义分：0.801146\\nBM25 原始分：66.908355\\nBM25 归一化分：1.000000\\n内容：... WH22105006 山区 13.68 8.55 2.57 2.57 0.08\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有陈述均正确标注来源[1]，且每条引用均对应上下文片段[1]中的具体信息。虽然部分句子涉及多方面信息，但其核心结论均可由[1]支持，引用编号使用合理。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第249页\\n定位信息：249\\n综合分：0.860802\\n召回综合分：0.860802\\n重排分：无\\n语义分：0.801146\\nBM25 原始分：66.908355\\nBM25 归一化分：1.000000\\n内容：... WH22105006 山区 13.68 8.55 2.57 2.57 0.08\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，上下文中有清晰答案，无需拒答。模型正常作答，行为合理。\",\n    \"evidence\": \"无\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881330,
+    "id": "chatcmpl-81846e28-7cc9-9729-a263-61b38f0f3f72",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1042,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3902,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4944
+    }
+  },
+  "usage_known": true
+}

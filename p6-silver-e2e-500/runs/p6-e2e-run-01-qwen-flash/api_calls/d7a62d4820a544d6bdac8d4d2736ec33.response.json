@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:56.996667+08:00",
+  "conservative_cost_yuan": 0.0017943,
+  "error": null,
+  "latency_ms": 2863.377299858257,
+  "list_price_estimate_yuan": 0.0012123,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0157费用歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"费用91.20元无上下文支持\",\n    \"evidence\": \"WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50\"\n  },\n  \"completeness\": {\n    \"score\": 0,\n    \"reason\": \"遗漏关键计价项，未区分板件与模块\",\n    \"evidence\": \"WH23115061 扩装、更换基带处理单元侧光电转换模块 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]不支持91.20元结论\",\n    \"evidence\": \"WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"非拒答场景，无需评分\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_cost_value\",\n    \"misattribution_of_citation\",\n    \"incomplete_comparison\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881794,
+    "id": "chatcmpl-1eb1bff3-6bad-93cb-abab-486682027f0c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 388,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4202,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4590
+    }
+  },
+  "usage_known": true
+}

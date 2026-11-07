@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:18.031811+08:00",
+  "conservative_cost_yuan": 0.00138315,
+  "error": null,
+  "latency_ms": 2111.1095000524074,
+  "list_price_estimate_yuan": 0.00096315,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，涵盖抢修、上报等关键点。\",\n    \"evidence\": \"光缆线路发生障碍时，维护人员应在最短的时间内调通备用光纤。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持，无虚构内容。\",\n    \"evidence\": \"障碍排除后，应认真做好障碍查修记录。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖处理与上报全流程，无遗漏必要步骤。\",\n    \"evidence\": \"重大障碍排除后的三个工作日内将障碍及处理详情书面上报运营企业。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持对应语句。\",\n    \"evidence\": \"故障处理报告和障碍申报表。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882055,
+    "id": "chatcmpl-5ece2418-c1e1-97f4-8671-dc5ce3ae71d1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 280,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3621,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3901
+    }
+  },
+  "usage_known": true
+}

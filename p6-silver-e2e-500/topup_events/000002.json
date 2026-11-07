@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "e315fd5f2685a58472f80c9ad7a0858a0c0d73738152457d047693477442f7bd",
+  "record": {
+    "batch": 1,
+    "candidates": [
+      {
+        "answer": "综合单价（元）（除税价）",
+        "evidence": [
+          {
+            "excerpt": "表格列：项目名称：；第；页；共；页 编号 项 目 名 称 单位 暂定 数量 实际 数量 综合单价（元） （除税价） 合 价 暂定 实际 1 2 3 4 一、计日工小计 二、企业管理费和利润 （计日工小计 × 系数） 表格列：合；计（一＋二）",
+            "passage_id": "edfff9362c09481ac87016d0"
+          }
+        ],
+        "question": "计日工表中，综合单价（元）对应的表格列名称是什么？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "签证及索赔依据是指经双方认可的签证单和索赔依据的编号。",
+        "evidence": [
+          {
+            "excerpt": "注：签证及索赔依据是指经双方认可的签证单和索赔依据的编号。",
+            "passage_id": "488f418f8b31e69fcbd01b90"
+          }
+        ],
+        "question": "索赔与现场签证计价汇总表中，签证及索赔依据的填写要求是什么？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "实际数量",
+        "evidence": [
+          {
+            "excerpt": "实际 数量",
+            "passage_id": "edfff9362c09481ac87016d0"
+          }
+        ],
+        "question": "表—09—4中，实际数量对应的表格列名称是什么？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "bad_excerpt_length",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

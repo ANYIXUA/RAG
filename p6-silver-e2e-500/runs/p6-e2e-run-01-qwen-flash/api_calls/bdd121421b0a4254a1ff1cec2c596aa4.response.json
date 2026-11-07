@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:34.286169+08:00",
+  "conservative_cost_yuan": 0.0013518,
+  "error": null,
+  "latency_ms": 3237.640800187364,
+  "list_price_estimate_yuan": 0.0009452999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持40ms\",\n    \"evidence\": \"IEEE 802.11be 4K视频 5ms 40ms 0.1%\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"最大TP99时延为40ms。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题核心要求\",\n    \"evidence\": \"测试时延类型为UDP单向时延。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配\",\n    \"evidence\": \"[2] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881771,
+    "id": "chatcmpl-de5b3e5d-452d-9eda-b31c-b3767e7635ff",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 271,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3592,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3863
+    }
+  },
+  "usage_known": true
+}

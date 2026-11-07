@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:53.515740+08:00",
+  "conservative_cost_yuan": 0.00070155,
+  "error": null,
+  "latency_ms": 1177.012600004673,
+  "list_price_estimate_yuan": 0.0005620499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查设备外观状态及清洁工作。[1]  \n2. 核对设备运行情况并记录告警信息。[1]  \n3. 检查防雷保护设备运行状态。[1]  \n4. 清理变压器周边环境，检查油质与油面。[3]  \n5. 检查引线接头、电缆及母线连接状况。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881132,
+    "id": "chatcmpl-a69ab61e-a9a7-91b8-afa6-313ab45a033c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 93,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2817,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2910
+    }
+  },
+  "usage_known": true
+}

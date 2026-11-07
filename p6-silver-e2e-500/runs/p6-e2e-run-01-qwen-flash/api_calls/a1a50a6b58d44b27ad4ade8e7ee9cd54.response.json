@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:09.989128+08:00",
+  "conservative_cost_yuan": 0.0007175999999999999,
+  "error": null,
+  "latency_ms": 1499.9377001076937,
+  "list_price_estimate_yuan": 0.0005675999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 绩效评估应基于理论知识与实操技能两部分考核。[2]  \n2. 实操技能权重包含智能组网、业务运维等核心项目。[2]  \n3. 服务能力如沟通、交付技巧纳入绩效评价维度。[2]  \n4. 不同职级（初级/中级/高级）的考核权重分配不同。[2]  \n5. 安全作业与职业道德为必备考核项。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881208,
+    "id": "chatcmpl-3134b1d3-f737-9b58-8707-150429c4e935",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2784,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2884
+    }
+  },
+  "usage_known": true
+}

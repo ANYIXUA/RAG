@@ -1,0 +1,25 @@
+{
+  "authorized_model_change": "qwen-turbo -> qwen-flash, user explicit instruction",
+  "automatic_approval_initial_block": "Initial Smoke blocked until user explicitly authorized exact data export; then resumed under that authorization",
+  "code_review": "Independent read-only reviewer; findings fixed with RED/GREEN regression tests",
+  "data_quality_risks": [
+    "50 unanswerable labels lack human verification; no-answer scoring is provisional",
+    "p6s-0473 reference 114 person-days has source parsing ambiguity; exclude Silver correctness"
+  ],
+  "evaluation_infrastructure_repairs": [
+    "Thread-local processor state",
+    "Actual fallback classified as generation failure",
+    "Recover successful durable attempt before another paid call",
+    "Durable judge retry counts and paid response recovery",
+    "Judge field schema, flags and trusted case identity validation",
+    "Unanswerable zero refusal no longer classified as pass; label remains provisional"
+  ],
+  "paid_api_authorization": "Explicit user data-export authorization saved in authorization.json",
+  "prior_turbo_directory": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01",
+  "production_code_changed": false,
+  "related_tests": "39 passed; one third-party pytest deprecation warning",
+  "retrieval_tuned": false,
+  "runtime_environment_repair": "Installed declared redis>=5.0.0 in project venv (redis8.1.0)",
+  "separate_variant_directory": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash",
+  "session_isolation": "model name + case_id + attempt; Redis history from old model cannot leak"
+}

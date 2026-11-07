@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:03.937272+08:00",
+  "conservative_cost_yuan": 0.0012678,
+  "error": null,
+  "latency_ms": 2525.4990998655558,
+  "list_price_estimate_yuan": 0.0008853,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持按月召开\",\n    \"evidence\": \"维护企业应按月召开生产质量分析会，并作专门记录。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"各级质量管理部门每月至少一次。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题核心频率要求\",\n    \"evidence\": \"维护企业应按月召开生产质量分析会，并作专门记录。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"维护企业应按月召开生产质量分析会，并作专门记录。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881681,
+    "id": "chatcmpl-566bcd49-7bdc-9a8f-b57a-981e51b73562",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 255,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3352,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3607
+    }
+  },
+  "usage_known": true
+}

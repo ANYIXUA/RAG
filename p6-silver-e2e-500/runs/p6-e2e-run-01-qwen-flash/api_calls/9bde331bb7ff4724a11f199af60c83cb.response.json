@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:06.775386+08:00",
+  "conservative_cost_yuan": 0.0007515,
+  "error": null,
+  "latency_ms": 1405.8283001650125,
+  "list_price_estimate_yuan": 0.0005925,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 100kVA以下变压器专项检修综合单价为76.61元。[1]  \n2. 该价格对应计量单位为台·次。[1]  \n3. 项目编码为WH33117001。[1]  \n4. 人工费为47.88元，含技工与普工。[1]  \n5. 企业管理费和利润各为14.36元。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881205,
+    "id": "chatcmpl-02e6b5b7-b847-9735-a160-9d3497810b4d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2890,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2996
+    }
+  },
+  "usage_known": true
+}

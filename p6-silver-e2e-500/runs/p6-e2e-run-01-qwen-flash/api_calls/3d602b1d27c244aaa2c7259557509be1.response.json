@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:50.604141+08:00",
+  "conservative_cost_yuan": 0.0013656,
+  "error": null,
+  "latency_ms": 2492.327000014484,
+  "list_price_estimate_yuan": 0.0009726,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确涵盖天线数量与外观检查要求。\",\n    \"evidence\": \"有源系统巡检按照每20面天线计算，不足20面按20面计算。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持。\",\n    \"evidence\": \"检查室分天线外观、固定情况。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖所有必要条件与步骤。\",\n    \"evidence\": \"清理遮挡物。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容。\",\n    \"evidence\": \"检查外露馈线外观及固定状态是否完好。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882028,
+    "id": "chatcmpl-da051c3e-e133-99ff-9a8a-743dc2094e97",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 262,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3864,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4126
+    }
+  },
+  "usage_known": true
+}

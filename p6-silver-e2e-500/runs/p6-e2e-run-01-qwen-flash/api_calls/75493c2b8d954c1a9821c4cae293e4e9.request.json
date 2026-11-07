@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:05.857307+08:00",
+  "input_token_upper_bound": 1126,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0051"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "全光组网终端DHCPName总长度应不超过多少字节？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "75493c2b8d954c1a9821c4cae293e4e9",
+  "reserved_yuan": 0.000563
+}

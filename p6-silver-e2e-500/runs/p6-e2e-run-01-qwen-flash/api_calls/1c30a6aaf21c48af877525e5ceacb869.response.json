@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:27.034317+08:00",
+  "conservative_cost_yuan": 0.0017148,
+  "error": null,
+  "latency_ms": 4451.670999871567,
+  "list_price_estimate_yuan": 0.0011313,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持企业管理费和利润各为4.10元。\",\n    \"evidence\": \"WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均在上下文中找到对应支持。\",\n    \"evidence\": \"WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答了企业管理费和利润两项要求。\",\n    \"evidence\": \"WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]准确对应相关数据段。\",\n    \"evidence\": \"WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881762,
+    "id": "chatcmpl-1668c765-e45d-993f-9092-60019bc7bea3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 389,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3652,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4041
+    }
+  },
+  "usage_known": true
+}

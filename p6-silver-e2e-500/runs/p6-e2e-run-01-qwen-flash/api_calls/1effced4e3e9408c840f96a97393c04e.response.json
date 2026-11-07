@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:31.944792+08:00",
+  "conservative_cost_yuan": 0.00075975,
+  "error": null,
+  "latency_ms": 1287.446399917826,
+  "list_price_estimate_yuan": 0.00059925,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 巡检时需检查有源系统天线数量是否符合每20面计算标准。[2]  \n2. 应检查天线外观是否有破损、老化或松动现象。[1]  \n3. 天线固定情况需确认牢固，无脱落风险。[1]  \n4. 清理天线周围遮挡物以保证信号覆盖。[1]  \n5. 检查外露馈线外观及固定状态是否完好。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881110,
+    "id": "chatcmpl-417b564b-ad8f-9c5d-bcf1-84864795ae9d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2925,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3032
+    }
+  },
+  "usage_known": true
+}

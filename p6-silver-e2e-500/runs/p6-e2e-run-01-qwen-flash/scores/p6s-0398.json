@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列，光缆除垢，按需加套塑料管，整治固定接头盒、预留光缆，补、换光缆挂牌等。",
+    "reason": "答案与上下文一致，覆盖所有关键处理步骤。",
+    "score": 1
+  },
+  "case_id": "p6s-0398",
+  "citation_correctness": {
+    "evidence": "人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列，光缆除垢，按需加套塑料管，整治固定接头盒、预留光缆，补、换光缆挂牌等。",
+    "reason": "所有引用[4]均正确对应实际来源片段。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列，光缆除垢，按需加套塑料管，整治固定接头盒、预留光缆，补、换光缆挂牌等。",
+    "reason": "涵盖走线整理、除垢、防潮、上报、挂牌等全部必要步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列，光缆除垢，按需加套塑料管，整治固定接头盒、预留光缆，补、换光缆挂牌等。",
+    "reason": "每项事实均有对应上下文支持，无编造。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "42340c4953434cc1b2b90af4a56e2c3a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

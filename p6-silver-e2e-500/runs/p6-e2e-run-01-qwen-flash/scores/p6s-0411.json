@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "室外布放控制信号线人工费为54.72元/十米条，含人工费34.20元。[1]",
+    "reason": "正确给出两项独立人工费及计算方式。",
+    "score": 1
+  },
+  "case_id": "p6s-0411",
+  "citation_correctness": {
+    "evidence": "未提供同时施工的综合人工费率，无法合并计算。[1][2]",
+    "reason": "引用编号与上下文来源匹配且支持内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "两项工作需分别计价，无合并人工费标准。[1][2]",
+    "reason": "涵盖所有必要条件与步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "安装室外接地排人工费为100.32元/套，对应0.88工日。[2]",
+    "reason": "每项事实均有上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "df0f6e99a91e4250acd79dc503633f68",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

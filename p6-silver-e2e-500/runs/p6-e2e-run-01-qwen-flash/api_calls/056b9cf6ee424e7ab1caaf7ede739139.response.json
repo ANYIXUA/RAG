@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:56.154453+08:00",
+  "conservative_cost_yuan": 0.00067365,
+  "error": null,
+  "latency_ms": 1007.1675998624414,
+  "list_price_estimate_yuan": 0.00055065,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护干扰费的费率为5.0%。[1]  \n2. 该费率基于人工费合计计算。[2]  \n3. 费率在多个页面表格中一致确认。[3]  \n4. 属于措施项目费的一部分。[1]  \n5. 项目编码为CS00002。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881195,
+    "id": "chatcmpl-b05ea3bb-c3bb-9781-987a-bb48779ad268",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 82,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2851,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2933
+    }
+  },
+  "usage_known": true
+}

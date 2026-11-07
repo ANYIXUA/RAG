@@ -1,0 +1,24 @@
+{
+  "cases": [
+    "p6s-0001",
+    "p6s-0002",
+    "p6s-0086",
+    "p6s-0087",
+    "p6s-0088",
+    "p6s-0089",
+    "p6s-0238",
+    "p6s-0239",
+    "p6s-0236",
+    "p6s-0237"
+  ],
+  "error_recording_test": "test_e2e_run01.py",
+  "real_generation_success": 10,
+  "status": "passed",
+  "type_counts": {
+    "colloquial": 2,
+    "exact_fact": 2,
+    "multi_condition": 2,
+    "procedure": 2,
+    "unanswerable": 2
+  }
+}

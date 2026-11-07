@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:53.267841+08:00",
+  "conservative_cost_yuan": 0.00134475,
+  "error": null,
+  "latency_ms": 2528.9890998974442,
+  "list_price_estimate_yuan": 0.00092625,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0364跨品牌协同无明确支持\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"光网关应承担Controller角色，用于家庭Wi-Fi网络的覆盖和回传链路的控制逻辑策略\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"未说明跨品牌协同局限性\",\n    \"evidence\": \"跨品牌协同属其他产品线范围\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0,\n    \"reason\": \"应拒答但未拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"overconfident_response\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882030,
+    "id": "chatcmpl-c422c0bc-4356-9100-9bfa-a80bcdd36e0d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 279,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3385,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3664
+    }
+  },
+  "usage_known": true
+}

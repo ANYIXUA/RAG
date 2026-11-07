@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:43.088201+08:00",
+  "conservative_cost_yuan": 0.0008029500000000001,
+  "error": null,
+  "latency_ms": 1323.5492000821978,
+  "list_price_estimate_yuan": 0.0006184500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH33117001项目中100kVA以下变压器专项检修消耗量为0.42。[1]  \n2. 消耗量单位为台·次，对应维护作业计量。[1]  \n3. 该数据来源于《电信基础设施维护规程》第317页。[1]  \n4. 与同类型项目WH23120001消耗量一致，均为0.42。[2]  \n5. 消耗量适用于断电检修工作内容。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880821,
+    "id": "chatcmpl-cea7942f-e457-9bb8-ae86-6152ddf6a74f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 123,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2893,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3016
+    }
+  },
+  "usage_known": true
+}

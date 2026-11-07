@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:16.454010+08:00",
+  "input_token_upper_bound": 1111,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0061"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "WH34101 应急发电的计量单位是什么？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "92b7dacda6eb4d2ea942f8c17ba05e5b",
+  "reserved_yuan": 0.0005555
+}

@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0488",
+  "citation_correctness": {
+    "evidence": "评估可能涉及岗位规范、服务流程及安全作业知识。[3]",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "具体绩效指标需参考其他未提供文档或制度。[1]",
+    "reason": "部分回答但未完全覆盖问题",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "职业技能等级标准包含职业道德、职业规范等要求。[1]",
+    "reason": "每项事实均来自上下文引用",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "4ef332cc6d0f446bbbc87c76ab9abefe",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "智慧家庭产品线绩效评估未在上下文中明确提及。[1]",
+    "reason": "明确说明未提及且提示补充",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

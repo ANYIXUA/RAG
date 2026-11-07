@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:13.428541+08:00",
+  "conservative_cost_yuan": 0.0016968,
+  "error": null,
+  "latency_ms": 3490.396900102496,
+  "list_price_estimate_yuan": 0.0011598,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"步骤与上下文一致，覆盖关键操作。\",\n    \"evidence\": \"工作内容：挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"工作内容：挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要步骤，无遗漏。\",\n    \"evidence\": \"工作内容：挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源。\",\n    \"evidence\": \"工作内容：挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881809,
+    "id": "chatcmpl-94ebf93c-1220-971d-9f4c-94ff17e2a15d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 358,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4152,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4510
+    }
+  },
+  "usage_known": true
+}

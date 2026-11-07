@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:00.999363+08:00",
+  "conservative_cost_yuan": 0.0026358,
+  "error": null,
+  "latency_ms": 6690.0992000009865,
+  "list_price_estimate_yuan": 0.0015573,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确列出架空方式（WH14001002）的综合单价为1622.80元，与silver_reference一致，且该信息在原文中直接可查。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第224页\\n定位信息：224\\n... WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实均能在上下文[1]中找到对应支持，包括综合单价数值、费用构成、计量单位、项目编码及材料费用另计等，无任何虚构或超出上下文的信息。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第224页\\n定位信息：224\\n... WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题要求的是故障抢通中架空方式的综合单价，回答完整覆盖了单价数值、费用构成、计量单位、项目编码及材料费用说明，所有必要条件均已涵盖，未遗漏关键信息。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第224页\\n定位信息：224\\n... WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有陈述均正确引用了来源[1]，且每条引用编号均对应实际上下文片段[1]，无误引、错引或自创引用编号的情况。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第224页\\n定位信息：224\\n... WH14001002 架空 1622.80 1100.95 301.66 220.19 7.62 3.81\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的exact_fact类型，且上下文提供了明确答案，无需拒答。因此该维度不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881434,
+    "id": "chatcmpl-b84963de-6402-909a-82fb-ebcc0c5f55c4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 719,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3192,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3911
+    }
+  },
+  "usage_known": true
+}

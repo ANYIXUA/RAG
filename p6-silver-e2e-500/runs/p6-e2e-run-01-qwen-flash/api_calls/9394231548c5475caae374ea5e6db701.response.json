@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:26.774163+08:00",
+  "conservative_cost_yuan": 0.0007404,
+  "error": null,
+  "latency_ms": 1213.1664000917226,
+  "list_price_estimate_yuan": 0.0005874,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 双槽钢固定流程包含安装、绑扎与清理现场等步骤。[3]  \n2. 安装时需确保双槽钢与电杆牢固连接。[3]  \n3. 绑扎应按规范进行，保证结构稳定。[3]  \n4. 固定完成后需清理现场，保持作业环境整洁。[3]  \n5. 具体操作应参照电杆接高装置维护工作内容执行。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881165,
+    "id": "chatcmpl-f911dae0-2aaf-99ed-a4f8-fe2cc2de44b9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2896,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2998
+    }
+  },
+  "usage_known": true
+}

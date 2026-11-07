@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0394",
+  "citation_correctness": {
+    "evidence": "装维企业定期对维护工作服务质量情况进行统计、分析",
+    "reason": "引用编号与上下文来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "评定依据应包括装维指标及实际服务表现",
+    "reason": "覆盖问题核心要素，无遗漏",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "维护人员须履行检查、记录和报告制度以保障质量",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "partial_context_used",
+    "repeated_citation"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "86a10ac849354b42966bbb556c852848",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答，非拒答场景",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

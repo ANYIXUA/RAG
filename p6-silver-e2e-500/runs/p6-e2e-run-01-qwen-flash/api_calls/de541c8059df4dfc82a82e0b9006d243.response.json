@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:24.986361+08:00",
+  "conservative_cost_yuan": 0.00140085,
+  "error": null,
+  "latency_ms": 2758.901200024411,
+  "list_price_estimate_yuan": 0.00099735,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答基于上下文准确匹配工具使用场景\",\n    \"evidence\": \"维护人员应掌握设备配置情况及局站地理位置。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"根据告警状态判断故障类型，如光功率异常或端口问题。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖关键排查步骤与工具使用逻辑\",\n    \"evidence\": \"使用仪表检测直流电压、误码率等关键指标。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源完全匹配\",\n    \"evidence\": \"优先检查电源、光纤连接及板卡运行状态。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882002,
+    "id": "chatcmpl-7f307c53-6f2e-9f66-a746-2c24ed079524",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 269,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3959,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4228
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "地线种类按“地线种类”参数设置。[3]",
+    "reason": "明确指出地线种类按参数设置",
+    "score": 1
+  },
+  "case_id": "p6s-0147",
+  "citation_correctness": {
+    "evidence": "具体类型包括直埋式、延伸式、拉线式。[1]",
+    "reason": "引用编号与来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "设置依据为项目特征中的地线种类选项。[3]",
+    "reason": "涵盖关键参数与类型",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "具体类型包括直埋式、延伸式、拉线式。[1]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "9b9bb7ddba444e2cbe05f31f04e0cb43",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

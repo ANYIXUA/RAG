@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:46.582804+08:00",
+  "conservative_cost_yuan": 0.0007243499999999999,
+  "error": null,
+  "latency_ms": 1460.183200193569,
+  "list_price_estimate_yuan": 0.00055485,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 市区低压变压器巡检综合单价为40.13元/台·次。[1]  \n2. 该价格包含人工费、企业管理费及利润。[1]  \n3. 工作内容包括清理杂物、检查外观及运行状态等。[1]  \n4. 项目编码为WH21104001，计量单位为台·次。[1]  \n5. 与低压配电设备巡检不同，属独立维护项目。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880945,
+    "id": "chatcmpl-c0f32473-ff50-97c4-ba73-74dfe8dd273e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2569,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2682
+    }
+  },
+  "usage_known": true
+}

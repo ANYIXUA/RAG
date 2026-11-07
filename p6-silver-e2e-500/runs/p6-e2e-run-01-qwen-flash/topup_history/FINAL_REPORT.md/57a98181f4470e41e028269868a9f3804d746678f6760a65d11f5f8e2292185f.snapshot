@@ -1,0 +1,87 @@
+# P6-E2E-Run-01｜500条Silver真实RAG执行报告
+
+输入SHA-256：`03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410`。本轮不含P5正式Gold/Holdout指标，未运行Holdout。
+
+## 执行
+
+- 实际发起：500/500；成功：500；失败：0；未执行：0。
+- 本报告为完整执行报告。
+- E2E完成率：500/500 = 100.00%。10条Smoke含五类各2条，计入同一500分母，不重复计数。
+- 经用户明确指令改用qwen-flash。旧qwen-turbo的10条Smoke/30次生成尝试全部429，另一次最小健康探测亦失败；旧目录p6-e2e-run-01完整保留。本报告仅统计独立qwen-flash运行的500题，旧模型失败不混入此分母，但费用计入同一¥20上限。
+- 超时尝试：0；最终超时失败题：0；重试次数：0。
+- 入口：OnlineQueryProcessor.process，真实Query Rewrite/Intent/Hybrid/Context/LLM/引用；真实PostgreSQL和Redis。
+- top_k=4，candidate_k=20，权重0.7/0.3，min_score=.05，relative_threshold=.35；Cross-Encoder关闭。P5检索实验top_k=20且禁用改写/意图，本轮保留当前业务行为，不能视为P5指标复跑。
+- 依赖修复：项目venv缺少pyproject已声明redis>=5.0.0，安装redis8.1.0；未修改生产代码、Prompt或参数文件。
+
+## 性能与Token
+
+- 成功最终尝试平均墙钟延迟：2236.1446069907397 ms；p50：2204.9754000036046 ms；p95：2879.0612699813205 ms；分母500。
+- 检索/生成延迟：{"retrieval_ms": {"denominator": 500, "mean": 787.34997, "p50": 725.2895, "p95": 1298.01305, "unit": "milliseconds"}, "generation_ms": {"denominator": 500, "mean": 1408.275012, "p50": 1398.13, "p95": 1782.4042, "unit": "milliseconds"}}。
+- 失败最终尝试延迟（不等于成功E2E）：{"denominator": 0, "mean": null, "p50": null, "p95": null, "unit": "milliseconds"}。
+- Token：{"chat": {"input_tokens": 1394128, "output_tokens": 55882, "calls": 501}, "judge": {"input_tokens": 2057949, "output_tokens": 220852, "calls": 566}, "embedding": {"input_tokens": 16425, "output_tokens": 0, "calls": 500}}；含重试与Judge，按call kind分列。另列其中的诊断调用：{"input_tokens": 12, "output_tokens": 1, "calls": 1}。
+- 已知Token公开单价估算：¥0.941125；保守预算占用：¥1.482718/20；未知用量调用：3。
+- 实际账户扣费/免费额度无法从SDK确认，actual_billed_yuan=null，不将估算冒充实际账单。价格来源：[阿里云官方模型价格](https://help.aliyun.com/zh/model-studio/model-pricing?userCode=r3yteowb)。
+
+## 自动质量（探索性，非人工准确率）
+
+- Silver满分回答正确比例：423/439 = 96.36%；排除50条未经人工确认unanswerable、p6s-0473、执行/评分失败及null。
+- Faithfulness：{"denominator": 489, "score_sum": 474.5, "mean": 0.9703476482617587, "distribution": {"1": 472, "0.5": 5, "0": 12}, "full_score_ratio": {"numerator": 472, "denominator": 489, "ratio": 0.9652351738241309}}。
+- 回答完整度：{"denominator": 488, "score_sum": 468.5, "mean": 0.9600409836065574, "distribution": {"1": 453, "0.5": 31, "0": 4}, "full_score_ratio": {"numerator": 453, "denominator": 488, "ratio": 0.9282786885245902}}。
+- Citation自动语义评分：{"denominator": 490, "score_sum": 476.5, "mean": 0.9724489795918367, "distribution": {"1": 470, "0": 7, "0.5": 13}, "full_score_ratio": {"numerator": 470, "denominator": 490, "ratio": 0.9591836734693877}}。
+- 引用编号有效比例：2590/2606 = 99.39%；编号有效且来源起始文本进入真实Prompt：2582/2606 = 99.08%。结构有效不等于语义正确。
+- 暂定拒答行为：{"denominator": 36, "score_sum": 28.0, "mean": 0.7777777777777778, "distribution": {"0": 7, "1": 27, "0.5": 2}, "full_score_ratio": {"numerator": 27, "denominator": 36, "ratio": 0.75}}。
+- 50条unanswerable中，只有36条获得非null暂定拒答分，另14条无法给出适用分；并非把50条都认定为真实不可回答。
+- 疑似幻觉：18/490 = 3.67%；低置信度：1/490 = 0.20%。
+- Judge成功：490/500 = 98.00%；Judge失败10，与RAG执行失败分开。
+- 原始评分技术失败记录18条；其中8条复用已付费响应恢复到scores_recovered，原失败文件仍保留，没有追加超限重试或改写原记录。
+- 生成完成原因：{"stop": 500}。length为原220输出Token上限触发，未为提高分数调大上限。
+- 生成与评分均使用qwen-flash，评分是另一次独立调用；存在同模型自评偏差，未声称独立人工/模型真值。请求、返回model别名、usage、理由和证据完整归档；服务未暴露不可变权重版本。
+
+## 错误分类与题型
+
+- 检索未召回Silver标注证据（代理诊断）：7/500 = 1.40%。
+- 已召回但未完整进入LLM上下文（代理诊断）：1/500 = 0.20%。
+- 证据进入上下文但答案错误：0/500 = 0.00%。
+- 答案遗漏关键条件或步骤：15/500 = 3.00%。
+- 生成内容缺乏证据支持/疑似幻觉：10/500 = 2.00%。
+- 引用与实际证据不符：10/500 = 2.00%。
+- 模型调用或执行异常/超时：0/500 = 0.00%。
+- 自动评分无法可靠判断：20/500 = 4.00%。
+- 未发现上述失败（不是人工正确性确认）：437/500 = 87.40%。
+
+| 题型 | 执行成功 | Silver满分正确（适用分母） |
+|---|---|---|
+| exact_fact | 200/200 = 100.00% | 190/195 = 97.44% |
+| procedure | 100/100 = 100.00% | 96/100 = 96.00% |
+| multi_condition | 100/100 = 100.00% | 89/95 = 93.68% |
+| colloquial | 50/50 = 100.00% | 48/49 = 97.96% |
+| unanswerable | 50/50 = 100.00% | 0/0 (N/A) |
+
+归因具有优先级且互斥，完整理由/典型案例见failure_analysis.md；不能把Silver证据未命中直接当作人工确认检索错误。
+
+## 人工抽查与风险
+
+抽查清单40条，五种题型各8条，优先覆盖低置信度、失败与p6s-0473。未执行项明确标pending、无RAG答案。所有人工审核字段为空，未自动签核。
+- 50条unanswerable标签待人工核查，拒答评分仅暂定；泛化问题可能部分可回答。
+- p6s-0473的114工日存在来源解析歧义；正确性强制null，不依此判模型错。
+- 表格列/单位、长上下文截断、同义答案、引用支撑范围、同模型Judge偏差均应重点抽查。
+
+## 交付文件
+
+run_config.json / authorization.json / input_preflight.json / database_after.json：冻结配置与边界证据。
+execution_states.jsonl：完整500条状态；attempts/：逐次失败/重试；cases/与traces.jsonl：逐题完整Trace；answers.jsonl：原始回答。
+api_calls/：模型原始请求、响应、usage、预留费用；scores/与scores.jsonl：逐条理由/证据及评分失败。
+metrics.json / failure_diagnostics.jsonl / failure_analysis.md：分母、性能与归因；human_spot_check_40.jsonl/.csv：空白人工抽查；sha256_manifest.json：哈希。
+
+## 复现命令
+
+已有成功/终态case不会重复调用，评分已完成项不会重复评分；中断尝试占用最多3次尝试配额。以下命令从项目根目录执行：
+
+```powershell
+& 'D:/AgentAIProgect/RAG/venv/Scripts/python.exe' 'D:/AgentAIProgect/RAG/p6-silver-e2e-500/e2e_run01.py' preflight --variant qwen-flash
+& 'D:/AgentAIProgect/RAG/venv/Scripts/python.exe' 'D:/AgentAIProgect/RAG/p6-silver-e2e-500/e2e_run01.py' run --variant qwen-flash
+& 'D:/AgentAIProgect/RAG/venv/Scripts/python.exe' 'D:/AgentAIProgect/RAG/p6-silver-e2e-500/e2e_run01.py' score --variant qwen-flash
+& 'D:/AgentAIProgect/RAG/venv/Scripts/python.exe' 'D:/AgentAIProgect/RAG/p6-silver-e2e-500/e2e_run01_report.py' --variant qwen-flash
+```
+
+已停止后续工作，等待验收。

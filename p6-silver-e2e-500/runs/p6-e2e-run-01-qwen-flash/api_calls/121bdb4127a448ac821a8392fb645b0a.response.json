@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:41.224908+08:00",
+  "conservative_cost_yuan": 0.00279225,
+  "error": null,
+  "latency_ms": 9119.141600094736,
+  "list_price_estimate_yuan": 0.00169575,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM输出中明确指出35m以下角钢塔、三管塔、四管塔专项维修的消耗量为1.60，与上下文[1]中的数据完全一致。该信息直接来源于检索到的文档片段，且无任何矛盾或偏差。\",\n    \"evidence\": \"WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每一项事实（消耗量1.60、计量单位座²次、项目编码WH23129001、维修内容、综合单价）均有对应上下文支持，且引用编号准确指向来源[1]，未引入额外未提及的信息。\",\n    \"evidence\": \"WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题询问的是“消耗量是多少”，回答完整提供了核心数值1.60，并补充了相关背景信息（如计量单位、项目编码、维修内容、综合单价），虽超出问题字面要求但未遗漏必要条件，符合“精准引用”和“控制在5条以内”的约束。\",\n    \"evidence\": \"WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有关键结论均正确标注引用来源[1]，且[1]确实包含对应信息；引用编号仅使用提供的上下文片段，未自创或误标。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第286页\\n定位信息：286\\n... WH23129001 铁塔专项维 修 角钢塔、三管塔、四管塔35m 以下 291.84 182.40 54.72 54.72 消耗量 1.60 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的精确事实类问题，且上下文中有明确答案，因此无需拒答。模型已正确作答，不适用此维度。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881472,
+    "id": "chatcmpl-ec2c9c84-5d89-93d7-8980-264abec6d52b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 731,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3995,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4726
+    }
+  },
+  "usage_known": true
+}

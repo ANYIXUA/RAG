@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:08.970904+08:00",
+  "conservative_cost_yuan": 0.00187725,
+  "error": null,
+  "latency_ms": 3931.7167999688536,
+  "list_price_estimate_yuan": 0.00124875,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持参考数据\",\n    \"evidence\": \"WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应原文支持\",\n    \"evidence\": \"WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所有条件\",\n    \"evidence\": \"WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881985,
+    "id": "chatcmpl-4b27021b-4c99-96da-98d1-2b9a462da3b9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 419,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4135,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4554
+    }
+  },
+  "usage_known": true
+}

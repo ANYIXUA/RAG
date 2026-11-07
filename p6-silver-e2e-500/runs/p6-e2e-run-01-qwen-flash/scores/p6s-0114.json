@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "最低缆线到屋脊 1.5",
+    "reason": "上下文明确支持1.5米",
+    "score": 1
+  },
+  "case_id": "p6s-0114",
+  "citation_correctness": {
+    "evidence": "最低缆线到屋脊 1.5",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "最低缆线到屋脊 1.5",
+    "reason": "涵盖问题所有关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "最低缆线到屋脊 1.5",
+    "reason": "每项事实均有对应引用",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "301190da7aec4f10acd3441e412d9efa",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

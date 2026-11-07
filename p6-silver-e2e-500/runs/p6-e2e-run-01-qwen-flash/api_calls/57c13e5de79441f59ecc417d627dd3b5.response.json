@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:35.004399+08:00",
+  "conservative_cost_yuan": 0.0014095499999999999,
+  "error": null,
+  "latency_ms": 2603.8444000296295,
+  "list_price_estimate_yuan": 0.0009895499999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"支持问题核心处理步骤\",\n    \"evidence\": \"接地电缆固定牢固、接地正确。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"测量核对交流输电电压，输入的交流电压的范围应在380V +/-10%范围内。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖电压与接地双重问题\",\n    \"evidence\": \"检查室内防雷箱的输入和输出电压，室内防雷箱上下电检查空开状态以及复位检查。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"接地引下线无丢失、断股、损伤；接地卡子牢固可靠，螺丝紧固无锈蚀；\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882012,
+    "id": "chatcmpl-86f80c48-04ad-918a-a78b-ff55b826ed36",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 280,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3797,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4077
+    }
+  },
+  "usage_known": true
+}

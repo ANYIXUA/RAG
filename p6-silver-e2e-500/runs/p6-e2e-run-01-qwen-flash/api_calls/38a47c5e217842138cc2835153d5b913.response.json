@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:16.647395+08:00",
+  "conservative_cost_yuan": 0.0025930500000000004,
+  "error": null,
+  "latency_ms": 6232.72530012764,
+  "list_price_estimate_yuan": 0.0015565499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"上下文未提供关于MCS14与MCS15支持关系的直接说明，仅在[1]中提到'须支持MCS15，推荐支持MCS14'，但实际答案引用了[6]，而[6]不存在于提供的上下文片段中。因此无法判断答案是否正确，且因引用编号错误导致事实来源不可靠。\",\n    \"evidence\": \"[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\\n引用标签：[1]\\n标题：第25页\\n定位信息：25\\n... 6. 须支持覆盖增强相关技术，须支持MCS15，推荐支持MCS14。\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有陈述均引用[6]，但上下文仅包含[1][2][3]三个chunk，无[6]。模型虚构引用编号，违反Faithfulness原则，属于严重幻觉。\",\n    \"evidence\": \"上下文片段中唯一有效引用为[1][2][3]，未出现[6]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"回答涵盖了问题核心（推荐支持MCS14），并补充了背景信息（如协议归属、功能分类），但因引用错误导致部分信息不可信。若忽略引用问题，内容基本完整，但存在关键事实支撑缺失。\",\n    \"evidence\": \"回答中提及MCS15为必选、MCS14为推荐，符合[1]中'须支持MCS15，推荐支持MCS14'的表述\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"回答中所有句子均标注[6]，但上下文无任何chunk对应[6]。引用编号与实际上下文来源不匹配，且[6]不存在于检索结果中，属于虚假引用。\",\n    \"evidence\": \"实际chunk_id列表为['4812f97659f77c46891223fa', 'e69ef87cafd302938c765e20', 'a36043b8ee1a391f2dd1c31a', 'acbdb12c2a62c12fe9787ef7']，无[6]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，且上下文存在相关信息，不应拒答。模型虽回答了问题，但因引用错误导致整体不可信，故不适用拒答行为评分。\",\n    \"evidence\": \"问题为明确的精确事实类问题，上下文[1]中存在直接支持答案的信息\"\n  },\n  \"confidence\": \"low\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"invalid_citation\",\n    \"fabricated_reference\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881450,
+    "id": "chatcmpl-f94d7ca5-ae82-987c-9721-7b760f619fb4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 691,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3467,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4158
+    }
+  },
+  "usage_known": true
+}

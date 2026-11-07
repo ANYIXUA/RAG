@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:20:07.859640+08:00",
+  "input_token_upper_bound": 1133,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0480"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "智慧家庭方案中如何制定装维团队的绩效评估流程？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "bc456757c7934a7ebbe2271eca4af9cd",
+  "reserved_yuan": 0.0005665
+}

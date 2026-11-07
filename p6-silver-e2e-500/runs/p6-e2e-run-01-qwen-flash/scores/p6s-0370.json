@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：抢修准备、到达基站、故障抢修、业务恢复确认、清理现场，返回驻地等。",
+    "reason": "回答与上下文一致，流程完整。",
+    "score": 1
+  },
+  "case_id": "p6s-0370",
+  "citation_correctness": {
+    "evidence": "天馈系线系统故障抢修属于WH24102编码下的维护项目。[2]",
+    "reason": "引用编号与上下文来源匹配且支持所述内容。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "工作内容：抢修准备、到达基站、故障抢修、业务恢复确认、清理现场，返回驻地等。",
+    "reason": "覆盖所有关键步骤，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "故障抢修应按准备、到达基站、抢修、确认恢复、清理现场等流程操作。[1]",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "77b44470642e4b26b0cd6509e70b1e61",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

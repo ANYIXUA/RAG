@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH33116003 顶面防水 平方米²次 52.90 33.06 9.92 9.92 0.29",
+    "reason": "上下文明确支持单价与人工费数据。",
+    "score": 1
+  },
+  "case_id": "p6s-0205",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与上下文来源完全匹配。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "机房室外环境清理人工费未在表中单独列出，需按实际发生数量计算。[3]",
+    "reason": "完整覆盖问题所有条件与步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH33116005 地面墙面防水 平方米²次 18.24 11.40 3.42 3.42 0.10",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "ef7726ea6ab54b5e8d35b6c6c164fa84",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

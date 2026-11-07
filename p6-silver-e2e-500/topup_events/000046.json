@@ -1,0 +1,114 @@
+{
+  "previous_sha256": "bca7e455baa0b4c9723744e373a0838d984a7570110319c15f67007c5b413009",
+  "record": {
+    "batch": 23,
+    "candidates": [
+      {
+        "answer": "大于300dpi",
+        "evidence": [
+          {
+            "excerpt": "（5）打印分辨率：大于300dpi；",
+            "passage_id": "38ea5e749604f43f5f040901"
+          }
+        ],
+        "question": "二维码的打印分辨率要求大于多少dpi？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "BEJ",
+        "evidence": [
+          {
+            "excerpt": "北京市 BEJ",
+            "passage_id": "d451de9bde2b24de1755e285"
+          }
+        ],
+        "question": "北京市在省份编码列表中的编码是什么？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "jtwlgl.sc.chinamobile.com:9005(TCP) jtwlgl.sc.chinamobile.com:9007(UDP)",
+        "evidence": [
+          {
+            "excerpt": "四川 jtwlgl.sc.chinamobile.com:9005(TCP) jtwlgl.sc.chinamobile.com:9007(UDP)",
+            "passage_id": "9f8fb549d52c59eafb4ce394"
+          }
+        ],
+        "question": "四川省省级数字家庭管理平台的域名端口是哪个？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0489",
+          "expected_behavior": "answer",
+          "generation_batch": 23,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271129,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "二维码的打印分辨率要求大于多少dpi？",
+          "question_type": "exact_fact",
+          "reference_answer": "大于300dpi",
+          "source_chunk_ids": [
+            "38ea5e749604f43f5f040901"
+          ],
+          "source_document": [
+            "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "38ea5e749604f43f5f040901",
+              "excerpt": "（5）打印分辨率：大于300dpi；"
+            }
+          ],
+          "source_page": 62,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "reason": "bad_excerpt_length",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0490",
+          "expected_behavior": "answer",
+          "generation_batch": 23,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271129,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "四川省省级数字家庭管理平台的域名端口是哪个？",
+          "question_type": "exact_fact",
+          "reference_answer": "jtwlgl.sc.chinamobile.com:9005(TCP) jtwlgl.sc.chinamobile.com:9007(UDP)",
+          "source_chunk_ids": [
+            "9f8fb549d52c59eafb4ce394"
+          ],
+          "source_document": [
+            "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "9f8fb549d52c59eafb4ce394",
+              "excerpt": "四川 jtwlgl.sc.chinamobile.com:9005(TCP) jtwlgl.sc.chinamobile.com:9007(UDP)"
+            }
+          ],
+          "source_page": 64,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

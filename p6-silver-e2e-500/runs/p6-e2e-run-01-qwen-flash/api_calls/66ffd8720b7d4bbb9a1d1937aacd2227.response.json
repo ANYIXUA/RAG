@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:48.194172+08:00",
+  "conservative_cost_yuan": 0.00123945,
+  "error": null,
+  "latency_ms": 2109.6644001081586,
+  "list_price_estimate_yuan": 0.00087195,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持分配主体\",\n    \"evidence\": \"厂家编码和设备编码由智家中心统一分配\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"厂家编码和设备编码由智家中心统一分配\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有关键点\",\n    \"evidence\": \"厂家编码和设备编码由智家中心统一分配\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"厂家编码和设备编码由智家中心统一分配\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881906,
+    "id": "chatcmpl-923a3715-a4fc-9461-8547-b901d4daa004",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 245,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3363,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3608
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:31.046012+08:00",
+  "conservative_cost_yuan": 0.000729,
+  "error": null,
+  "latency_ms": 1419.7963001206517,
+  "list_price_estimate_yuan": 0.000552,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 通过全光组网终端遵循EasyMeshTM规范实现设备互联与漫游。[2]  \n2. 光网关作为Controller，光路由作为Agent，协同完成网络控制与状态反馈。[2]  \n3. 使用和家亲APP绑定终端并操控设备，实现统一管理。[2]  \n4. 支持WPS或DPP功能，简化设备快速入网与连接。[2]  \n5. 依托家庭业务云平台及智能门户技术实现设备联动与场景控制。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881049,
+    "id": "chatcmpl-63d9c602-adba-9cbc-b3e3-7ddd274279b7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 118,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2500,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2618
+    }
+  },
+  "usage_known": true
+}

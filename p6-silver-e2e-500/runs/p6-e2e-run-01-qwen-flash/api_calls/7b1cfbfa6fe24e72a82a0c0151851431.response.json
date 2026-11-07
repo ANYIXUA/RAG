@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:24.401689+08:00",
+  "conservative_cost_yuan": 0.0015421500000000002,
+  "error": null,
+  "latency_ms": 2815.314299892634,
+  "list_price_estimate_yuan": 0.00104415,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"支持Wi-Fi 7时最小吞吐不低于80Mbps，与证据一致。\",\n    \"evidence\": \"光网关和光路由均支持Wi-Fi 7时，漫游吞吐平均不低于170Mbps，最小不低于80Mbps。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持，无编造。\",\n    \"evidence\": \"光网关和光路由均支持Wi-Fi 7时，漫游吞吐平均不低于170Mbps，最小不低于80Mbps。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答覆盖了最低要求及测试条件。\",\n    \"evidence\": \"测试时长为3分钟，按秒记录吞吐量。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]对应实际来源且支持该句。\",\n    \"evidence\": \"光网关和光路由均支持Wi-Fi 7时，漫游吞吐平均不低于170Mbps，最小不低于80Mbps。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881821,
+    "id": "chatcmpl-a67715ce-4c86-9786-8f90-9932e87e81bd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 332,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3641,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3973
+    }
+  },
+  "usage_known": true
+}

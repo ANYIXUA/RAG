@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "承包人为实施合同并达到维护要求，在确保安全作业的前提下，必须消耗或使用的人工、材料、备品备件、机械仪表台班及其管理等方面发生的费用和按规定缴纳的规费和销项税额。",
+    "reason": "准确涵盖维护成本核心构成",
+    "score": 1
+  },
+  "case_id": "p6s-0280",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与来源完全匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "电信基础设施维护费用由维护分项作业费、材料及备品备件购置费、机械仪表使用费、措施项目费、规费、安全生产费、其他项目费和销项税额构成。",
+    "reason": "覆盖问题所需全部关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "维护分项作业费=综合单价×数量；",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e843368cd6a4436c8c74a258d487057d",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:02.436035+08:00",
+  "conservative_cost_yuan": 0.0006890999999999999,
+  "error": null,
+  "latency_ms": 1207.8690000344068,
+  "list_price_estimate_yuan": 0.0005525999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 应填写累计已完成的维护工作价款。[1]  \n2. 应填写累计已实际支付的维护工作价款。[1]  \n3. 应填写本周期已完成的维护工作价款。[1]  \n4. 应填写本周期完成的计日工金额。[1]  \n5. 应填写本周期应增加和扣减的变更金额。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881141,
+    "id": "chatcmpl-f30c4a2e-64ca-9616-89c3-8af603f81ea8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 91,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2774,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2865
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第311页\n定位信息：311\n... WH33110003 吊顶式 264.48 165.30 49.59 49.59 1.45 —\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第284页\n定位信息：284\n... WH23127003 吊顶式 264.48 165.30 49.59 49.59 1.45 —",
+    "reason": "实际LLM上下文中的[1]和[2]均明确列出吊顶式机房空调的综合单价为264.48元，与silver_reference一致。尽管存在两个来源（第311页和第284页）都包含相同数据，但内容一致且可支持答案。",
+    "score": 1
+  },
+  "case_id": "p6s-0043",
+  "citation_correctness": {
+    "evidence": "回答中所有带[1]的句子均可在chunk_id为a59c4ba1c34979638feb45c2的上下文片段中找到直接支持",
+    "reason": "每个引用编号[1]均正确对应实际上下文片段[1]，且该句内容可被[1]支持。虽然[2]也包含相同数据，但模型选择[1]作为主要引用，且[1]是更早出现的匹配项，符合引用逻辑。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "所有必要信息点均在回答中体现，且来自上下文[1]和[2]",
+    "reason": "问题为精确事实查询，回答完整覆盖了综合单价、费用构成、项目编码、计量单位、相对价格位置及来源页码，无遗漏关键信息。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "1. 综合单价264.48元/台：[1]中明确列出WH33110003吊顶式单价为264.48；\n2. 包含人工、企业管理费及利润：[1]中“其中”部分列明人工费165.30、企业管理费49.59、利润49.59；\n3. 项目编码WH33110003：[1]中明确标注；\n4. 计量单位为台：[1]中“计量单位：台”；\n5. 与壁挂式、立式相比居中：[1]中壁挂式218.88，立式319.20，吊顶式264.48，确在中间；\n6. 来源第311页：[1]标题为第311页",
+    "reason": "回答中每一项事实（单价、费用构成、项目编码、计量单位、对比关系、来源页码）均有对应上下文支持，且引用编号准确指向[1]，未引入额外未提及信息。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "c3789583614f4f9591157e6af00d117d",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "上下文存在明确数值和结构化数据",
+    "reason": "问题为可回答的exact_fact类型，上下文中有明确答案，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

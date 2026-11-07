@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:58.565045+08:00",
+  "conservative_cost_yuan": 0.0007078499999999999,
+  "error": null,
+  "latency_ms": 1268.8214001245797,
+  "list_price_estimate_yuan": 0.0005608499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 智慧家庭场景自动触发条件设置需基于终端设备配置知识。[1]  \n2. 应掌握智能家居单品控制及通讯配置方法。[2]  \n3. 需熟悉无线局域网组网配置与家庭网络拓扑。[2]  \n4. 设置时应依据物联网接入业务运维规范。[3]  \n5. 自动触发依赖于智能组网与终端系统操作能力。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881017,
+    "id": "chatcmpl-f5628935-2405-9ca8-9a4e-63e1a79f2fda",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 98,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2759,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2857
+    }
+  },
+  "usage_known": true
+}

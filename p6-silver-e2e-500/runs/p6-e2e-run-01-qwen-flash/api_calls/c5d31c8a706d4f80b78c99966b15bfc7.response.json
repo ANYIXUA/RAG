@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:34.405298+08:00",
+  "conservative_cost_yuan": 0.0008139,
+  "error": null,
+  "latency_ms": 1568.8879999797791,
+  "list_price_estimate_yuan": 0.0006443999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 35米以上铁塔专项维修包括塔体结构检查与螺丝紧固。[1]  \n2. 需进行漆面除锈及刷漆作业。[1]  \n3. 应开展塔基强度测试。[1]  \n4. 维修项目编码为WH23129002，综合单价395.81元/座²次。[1]  \n5. 作业需按规程执行，计量单位为座²次。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881052,
+    "id": "chatcmpl-05c620d1-d4bc-932b-9367-a87aa7b7af7a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3166,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3279
+    }
+  },
+  "usage_known": true
+}

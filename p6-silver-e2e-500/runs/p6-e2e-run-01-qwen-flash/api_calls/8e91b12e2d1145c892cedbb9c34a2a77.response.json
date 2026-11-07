@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:18.865818+08:00",
+  "conservative_cost_yuan": 0.0008290499999999999,
+  "error": null,
+  "latency_ms": 1821.9820999074727,
+  "list_price_estimate_yuan": 0.0006355499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 机房顶面防水综合单价为52.90元/平方米²次。[1]  \n2. 地面墙面防水综合单价为18.24元/平方米²次。[1]  \n3. 机房室外环境清理人工费未在表中单独列出，需按实际发生数量计算。[3]  \n4. 同时执行室外清理时，人工费构成无明确差异说明。[3]  \n5. 两项工作的人工费均包含技工与普工费用，但具体构成未区分叠加情况。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880977,
+    "id": "chatcmpl-900f3f2d-b386-9c95-8f07-fb3afbfe3355",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 129,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2947,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3076
+    }
+  },
+  "usage_known": true
+}

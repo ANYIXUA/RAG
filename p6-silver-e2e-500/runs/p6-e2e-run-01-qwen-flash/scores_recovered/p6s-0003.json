@@ -1,0 +1,43 @@
+{
+  "answer_correctness": {
+    "evidence": "来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第113页\n定位信息：113\n内容：注：此表由招标人填写“暂估单价”，投标人应将“暂估金额”合计计入投标总价中，结算时按合同约定结算金额填写。\n表—09—3",
+    "reason": "实际回答中关于表—09—3由招标人填写‘暂估单价’的陈述与上下文[2]完全一致，且该信息在原文中明确指出。其他补充内容如项目名称和数量由招标人填写、暂估金额计入总价、结算按合同约定等均来自上下文[2]和[3]，事实准确，无错误。",
+    "score": 1
+  },
+  "case_id": "p6s-0003",
+  "citation_correctness": {
+    "evidence": "[1]: 招标控制价使用表格包括：封—2、表—01、表—02、表—04、表—05、表—06、表—07、表—08、表—09（不含表—09—3～表—09—5）、表—10\n[2]: 注：此表由招标人填写“暂估单价”……\n[3]: 注：此表项目名称、数量由招标人填写。",
+    "reason": "每个引用编号均正确对应实际上下文来源：[2]用于‘暂估单价’和‘结算按合同约定’；[3]用于‘项目名称和数量’；[1]用于‘属于招标控制价使用表格’。引用编号与上下文片段一一匹配，且所引内容支持对应句子，无错引或漏引。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "[2]: 注：此表由招标人填写“暂估单价”……\n[3]: 注：此表项目名称、数量由招标人填写。",
+    "reason": "问题询问的是‘招标人填写的项目是什么内容’，回答完整覆盖了招标人需填写的内容：暂估单价、项目名称、数量，并补充了用途（暂估金额计入总价）和结算方式，以及表格归属（招标控制价使用表格），信息全面，未遗漏必要条件。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "evaluation_normalization": "N/A no-answer dimension retains null score; null evidence canonicalized to empty string",
+  "faithfulness": {
+    "evidence": "[2]: 注：此表由招标人填写“暂估单价”，投标人应将“暂估金额”合计计入投标总价中，结算时按合同约定结算金额填写。\n表—09—3\n[3]: 注：此表项目名称、数量由招标人填写。编制招标控制价时，单价由招标人按有关计价规定确定；投标时，单价由投标人自主报价，计入投标总价中。",
+    "reason": "每一条回答中的关键事实均有对应上下文支持：1. ‘暂估单价’由[2]支持；2. ‘项目名称和数量’由[3]支持；3. ‘暂估金额计入总价’由[2]支持；4. ‘结算按合同约定’由[2]支持；5. ‘属于招标控制价使用表格’由[1]支持。所有陈述均严格基于提供的上下文片段，无虚构或推断。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "9d159747285d4b2f9963bc0d3b69533d",
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题为具体事实类问题，上下文中有明确答案，无需拒答。模型正常回答，符合要求，因此该项不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "original_failure_record": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scores\\p6s-0003.json",
+  "question_type": "exact_fact",
+  "recovered_paid_response": true,
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

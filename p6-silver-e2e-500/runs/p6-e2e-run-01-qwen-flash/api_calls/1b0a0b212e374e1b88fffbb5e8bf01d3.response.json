@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:26.929628+08:00",
+  "conservative_cost_yuan": 0.00086715,
+  "error": null,
+  "latency_ms": 1600.557800149545,
+  "list_price_estimate_yuan": 0.0006631499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 暗管、暗槽内穿放蝶形引入光缆机械成端的人工费为10.90元/十米条。[1]  \n2. 该作业对应的利润为2.18元/十米条。[1]  \n3. 人工费与利润均基于综合单价分解得出。[1]  \n4. 计量单位为十米条，对应项目编码WH41109002。[1]  \n5. 数据来源为《电信基础设施维护规程》第330页表10.5.1.9。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880925,
+    "id": "chatcmpl-6a01fd7a-3e10-92a4-be14-ec5816c512f7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 136,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3061,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3197
+    }
+  },
+  "usage_known": true
+}

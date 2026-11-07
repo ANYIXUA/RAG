@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "IEEE 802.11be 4K视频 5ms 40ms 0.1%",
+    "reason": "上下文明确支持40ms",
+    "score": 1
+  },
+  "case_id": "p6s-0137",
+  "citation_correctness": {
+    "evidence": "[2] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "测试时延类型为UDP单向时延。[2]",
+    "reason": "覆盖问题核心要求",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "最大TP99时延为40ms。[2]",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "bdd121421b0a4254a1ff1cec2c596aa4",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

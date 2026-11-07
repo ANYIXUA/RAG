@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "四角塔垂直度测量 铁塔中心整体垂直偏差≤1/1500 半年",
+    "reason": "所有事实均与上下文一致",
+    "score": 1
+  },
+  "case_id": "p6s-0282",
+  "citation_correctness": {
+    "evidence": "三管塔节段垂直度偏差≤节高的1/1000。[1]",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "单管塔/景观塔中心整体垂直偏差应≤全塔高度的1/750",
+    "reason": "覆盖周期与各塔型要求",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "塔身每段上下层平面中心线偏差≤层间高/1500",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "6c16825c3ae84186b38ff7bd0e453cbf",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

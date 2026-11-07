@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:50.212198+08:00",
+  "conservative_cost_yuan": 0.0015019499999999997,
+  "error": null,
+  "latency_ms": 3817.581499926746,
+  "list_price_estimate_yuan": 0.0010324499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出488.83元\",\n    \"evidence\": \"WH23123002 24V 铅酸蓄电池600Ah 以下 488.83\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"WH23123002 24V 铅酸蓄电池600Ah 以下 488.83\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖价格、单位、费用构成\",\n    \"evidence\": \"该价格包含人工、企业管理费及利润。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"WH23123002 24V 铅酸蓄电池600Ah 以下 488.83\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881846,
+    "id": "chatcmpl-c92c0ead-3471-9051-b1d4-eb30c493ba73",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 313,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3753,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4066
+    }
+  },
+  "usage_known": true
+}

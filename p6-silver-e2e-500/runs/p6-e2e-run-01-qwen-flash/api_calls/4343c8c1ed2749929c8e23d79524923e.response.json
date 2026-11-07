@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:04.416669+08:00",
+  "conservative_cost_yuan": 0.0006774,
+  "error": null,
+  "latency_ms": 1400.6127999164164,
+  "list_price_estimate_yuan": 0.0005289,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 综合布线系统工程验收规范为GB 50312。[1]  \n2. 该规范在规程中列为规范性引用文件之一。[1]  \n3. 与GB 50311（设计规范）配套使用。[1]  \n4. 适用于电信基础设施维护中的综合布线验收。[1]  \n5. 引用版本为不注日期的最新版本。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880963,
+    "id": "chatcmpl-e5beeeaf-2199-9395-bd5a-ddce82a70423",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 99,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2536,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2635
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:43.426768+08:00",
+  "conservative_cost_yuan": 0.00130305,
+  "error": null,
+  "latency_ms": 2496.0551001131535,
+  "list_price_estimate_yuan": 0.00093255,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"高速公路中人孔的检修按需进行\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分遗漏关键周期信息\",\n    \"evidence\": \"高速公路中人孔的检修按需进行\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"高速公路中人孔的检修按需进行\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"multiple_references_used\",\n    \"partial_cycle_info\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881720,
+    "id": "chatcmpl-c8b8c084-223d-98db-bbf0-b65e2c815f29",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 247,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3747,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3994
+    }
+  },
+  "usage_known": true
+}

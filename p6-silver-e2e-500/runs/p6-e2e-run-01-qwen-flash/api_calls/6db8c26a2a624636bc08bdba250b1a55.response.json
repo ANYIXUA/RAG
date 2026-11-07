@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:49.344161+08:00",
+  "conservative_cost_yuan": 0.0015781500000000002,
+  "error": null,
+  "latency_ms": 3431.594899855554,
+  "list_price_estimate_yuan": 0.0010501500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确给出1.5%比例及计算基数\",\n    \"evidence\": \"安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖计算比例、基数与用途\",\n    \"evidence\": \"安全生产费是指维护企业按照国家有关规定和维护作业安全标准，购置防护用具、落实安全作业措施、改善安全生产条件以及加强安全生产管理等所需的各项费用。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]对应实际来源且支持内容\",\n    \"evidence\": \"安全生产费=（维护分项作业费+材料及备品备件购置费+机械仪表使用费+措施项目费+规费）× 1.5%\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882145,
+    "id": "chatcmpl-32b129c0-be4b-9c44-9375-20cbb3c52bac",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 352,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3481,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3833
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:30.144832+08:00",
+  "conservative_cost_yuan": 0.0007155,
+  "error": null,
+  "latency_ms": 1319.1177998669446,
+  "list_price_estimate_yuan": 0.00054,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区架空光缆线路车辆巡回综合单价为7.20元/千米²次。[1]  \n2. 该单价适用于山区地形的架空光缆线路车辆巡回作业。[1]  \n3. 项目编码为WH11002002，计量单位为千米²次。[1]  \n4. 综合单价包含人工、管理费及利润等成本构成。[1]  \n5. 与平原、丘陵地区相比，山区单价更高。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880868,
+    "id": "chatcmpl-eac35f06-126d-9a70-9402-0df7e20ac970",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 117,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2430,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2547
+    }
+  },
+  "usage_known": true
+}

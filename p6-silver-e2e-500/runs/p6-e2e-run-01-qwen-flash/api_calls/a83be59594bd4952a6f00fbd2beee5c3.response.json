@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:35.915747+08:00",
+  "conservative_cost_yuan": 0.00075045,
+  "error": null,
+  "latency_ms": 1193.4360000304878,
+  "list_price_estimate_yuan": 0.0005929500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 一个扇区以下的调测基站系统综合单价为2134.08元。[1]  \n2. 该价格适用于3个扇区以下的基站系统调测工作。[1]  \n3. 综合单价包含人工、企业管理费及利润。[1]  \n4. 计量单位为“站”或“扇区”。[1]  \n5. 若超出3个扇区，需按增量计价。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880814,
+    "id": "chatcmpl-5f8ac3d6-ad34-909d-87f8-6c81a569aa87",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 105,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2903,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3008
+    }
+  },
+  "usage_known": true
+}

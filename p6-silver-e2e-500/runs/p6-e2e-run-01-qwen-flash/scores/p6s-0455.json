@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "Wi-Fi信号在客厅与卧室间波动，可能因设备间存在干扰或覆盖不均。[3]",
+    "reason": "上下文支持信号波动原因及优化建议",
+    "score": 1
+  },
+  "case_id": "p6s-0455",
+  "citation_correctness": {
+    "evidence": "多用户并发时延指标场景的用户数为12个。[3]",
+    "reason": "引用编号与上下文来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "请结合现场环境进行信号检测并调整设备位置。[1]",
+    "reason": "涵盖干扰、检测、布局调整等关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "可通过检测无线局域网信号强度优化布局。[1]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "544a9b6d10fe40c48aaecb51f79344e3",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

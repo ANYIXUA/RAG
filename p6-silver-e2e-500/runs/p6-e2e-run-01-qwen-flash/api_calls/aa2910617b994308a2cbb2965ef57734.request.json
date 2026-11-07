@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:21.240555+08:00",
+  "input_token_upper_bound": 1166,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0424"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "机房里设备久了会积灰，怎么知道有没有问题？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "aa2910617b994308a2cbb2965ef57734",
+  "reserved_yuan": 0.000583
+}

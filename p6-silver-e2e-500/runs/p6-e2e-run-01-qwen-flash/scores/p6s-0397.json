@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "山区架空光缆日常检修综合单价为55.28元/千米²次。[1]",
+    "reason": "费用与维修内容均匹配上下文",
+    "score": 1
+  },
+  "case_id": "p6s-0397",
+  "citation_correctness": {
+    "evidence": "费用按“千米²次”计价，具体需根据实际长度核算。[1]",
+    "reason": "引用编号与来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "需整治松动光缆、更换损坏挂钩及标识牌。[1]",
+    "reason": "覆盖问题所有关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "整治固定接头盒、预留光缆，补、换挂钩及标识牌，清除吊线上的杂物等。[1]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "2098ef438c264f5baf4e02a6e0622f5c",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

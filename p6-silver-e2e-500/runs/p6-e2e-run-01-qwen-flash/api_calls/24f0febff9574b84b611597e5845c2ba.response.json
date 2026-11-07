@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:15.202173+08:00",
+  "conservative_cost_yuan": 0.0008747999999999999,
+  "error": null,
+  "latency_ms": 1605.481400154531,
+  "list_price_estimate_yuan": 0.0006828,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 更换拉线需先装、拆临时拉线，再拆旧拉线并装新拉线。[1]  \n2. 操作中不更换地锚，按水泥杆夹板法安装7/2.2单股拉线。[1]  \n3. 作业应在平原地区按规程执行，确保拉线牢固可靠。[1]  \n4. 安装前应检查地锚状态，确认无松动或位移。[3]  \n5. 拉线收紧后需回填土并夯实，保证稳固性。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880973,
+    "id": "chatcmpl-94ed20c7-44a3-9aeb-916f-84b39ff97c0f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 128,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3272,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3400
+    }
+  },
+  "usage_known": true
+}

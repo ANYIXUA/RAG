@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:19.222644+08:00",
+  "conservative_cost_yuan": 0.0006558,
+  "error": null,
+  "latency_ms": 1036.1689000856131,
+  "list_price_estimate_yuan": 0.0005133,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 四川省省级数字家庭管理平台域名端口为jtwlgl.sc.chinamobile.com:9005(TCP)。[1]  \n2. 该平台还使用jtwlgl.sc.chinamobile.com:9007(UDP)作为备用端口。[1]  \n3. 域名和端口配置遵循中国移动全光组网技术规范要求。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881218,
+    "id": "chatcmpl-579d3cfa-0fa6-916c-9b5b-a7d2ccb47178",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 95,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2472,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2567
+    }
+  },
+  "usage_known": true
+}

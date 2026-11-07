@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:24.236887+08:00",
+  "conservative_cost_yuan": 0.0013605,
+  "error": null,
+  "latency_ms": 2696.5857001487166,
+  "list_price_estimate_yuan": 0.000945,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持规定时限内处理\",\n    \"evidence\": \"基站出现告警或故障，维护企业应在规定时限内完成故障处理、抢修。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"维护企业应随时做好障碍抢修的准备，做到在任何时间、任何情况下都能迅速出发抢修\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖关键处理要求与流程\",\n    \"evidence\": \"接到告警后，须在规定时间内赶到现场处理。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"维护企业应在规定时限内完成故障处理、抢修。[1]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881881,
+    "id": "chatcmpl-8d9f70aa-d936-93d7-9308-42f2d2d0366d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 277,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3530,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3807
+    }
+  },
+  "usage_known": true
+}

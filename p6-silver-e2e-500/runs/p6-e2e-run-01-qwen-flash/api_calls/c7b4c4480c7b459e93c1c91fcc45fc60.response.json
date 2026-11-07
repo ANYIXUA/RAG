@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:34.673391+08:00",
+  "conservative_cost_yuan": 0.00075,
+  "error": null,
+  "latency_ms": 1460.599800106138,
+  "list_price_estimate_yuan": 0.0005835,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护分项作业工作量清单费用由维护分项作业费、材料费等构成。[3]  \n2. 综合单价计价是维护工作量清单的计价方式。[3]  \n3. 费用包括人工、机械仪表、措施费及利润等项目。[3]  \n4. 发包人提供的材料不计入购置费但影响安全生产费。[3]  \n5. 项目特征和工作量计算规则决定费用构成依据。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880993,
+    "id": "chatcmpl-fd9b9ef3-69e1-975a-a07d-e57f94376a93",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2780,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2891
+    }
+  },
+  "usage_known": true
+}

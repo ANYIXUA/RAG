@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "宽带装维障碍处理流程见附录N。",
+    "reason": "上下文明确支持附录N",
+    "score": 1
+  },
+  "case_id": "p6s-0341",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "宽带装维障碍处理流程见附录N。",
+    "reason": "完整回答问题所需信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "附录N为资料性内容，标题为“宽带安装和维护装维故障处理流程”。",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "b4c617125b074093bff5fa7ec4c743d1",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

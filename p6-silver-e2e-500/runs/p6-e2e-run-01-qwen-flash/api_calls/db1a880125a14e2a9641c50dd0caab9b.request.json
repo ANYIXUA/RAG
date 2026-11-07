@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:39.033763+08:00",
+  "input_token_upper_bound": 1127,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0445"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "天线调测时说驻波比不好，是哪个环节该检查？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "db1a880125a14e2a9641c50dd0caab9b",
+  "reserved_yuan": 0.0005635
+}

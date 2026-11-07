@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:49.665900+08:00",
+  "conservative_cost_yuan": 0.00074055,
+  "error": null,
+  "latency_ms": 1652.7652000077069,
+  "list_price_estimate_yuan": 0.0005725499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 通过和家亲APP实现设备绑定与状态监控，提升用户掌控感。[1]  \n2. 提供Wi-Fi质量分析功能，帮助用户优化网络体验。[1]  \n3. 确保全光组网终端支持EasyMeshTM，保障无缝漫游。[1]  \n4. 装维人员应掌握智能组网故障处理技能，快速响应问题。[2]  \n5. 服务交付中注重沟通与维护技巧，提升用户满意度。[5]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881007,
+    "id": "chatcmpl-3a2e1ef5-ff7a-9969-adde-446eb084da91",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2697,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2809
+    }
+  },
+  "usage_known": true
+}

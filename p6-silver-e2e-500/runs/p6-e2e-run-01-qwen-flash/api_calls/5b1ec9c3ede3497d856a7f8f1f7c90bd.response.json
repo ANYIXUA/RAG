@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:59.926975+08:00",
+  "conservative_cost_yuan": 0.0014246999999999999,
+  "error": null,
+  "latency_ms": 2780.486400006339,
+  "list_price_estimate_yuan": 0.0009777,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致，覆盖关键流程。\",\n    \"evidence\": \"突发事件发生时，维护人员应迅速赶往突发事件现场，立即对现场进行处理并判断该事件为一般突发事件或重大突发事件\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"维护企业应编制突发事件应急预案，发生突发事件时应按照应急预案进行应急处理\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖事件分类、处置、反馈等关键步骤。\",\n    \"evidence\": \"实施处理 填写《应急事件处理表》 向运营管理企业反馈处理结果\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持所述内容。\",\n    \"evidence\": \"5.7.2.2 突发事件发生时，维护人员应迅速赶往突发事件现场\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881797,
+    "id": "chatcmpl-cac5acfe-a3be-9d72-bb21-19f67a341cb0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 298,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3538,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3836
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:28.992874+08:00",
+  "conservative_cost_yuan": 0.0015529499999999998,
+  "error": null,
+  "latency_ms": 3328.5076001193374,
+  "list_price_estimate_yuan": 0.0010624499999999997,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确指向天馈线系统调测环节\",\n    \"evidence\": \"工作内容：1、天馈线系统调测：调测天馈线系统的驻波比、损耗及智能天线权值；\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"工作内容：1、天馈线系统调测：调测天馈线系统的驻波比、损耗及智能天线权值；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖关键检查点，无遗漏\",\n    \"evidence\": \"工作内容：1、天馈线系统调测：调测天馈线系统的驻波比、损耗及智能天线权值；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持对应句\",\n    \"evidence\": \"工作内容：1、天馈线系统调测：调测天馈线系统的驻波比、损耗及智能天线权值；\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882125,
+    "id": "chatcmpl-c43d6307-dfda-9d50-a079-240c08e71ab4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 327,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3813,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4140
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,21 @@
+{
+  "all_case_attempt_and_score_bytes_unchanged": true,
+  "artifact_file_count_verified": 5139,
+  "commands": [
+    {
+      "mode": "run",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "SMOKE PASS"
+    },
+    {
+      "mode": "score",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "existing_api_request_count": 1567,
+  "new_model_requests": 0,
+  "status": "passed"
+}

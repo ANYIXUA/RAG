@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:48.078017+08:00",
+  "conservative_cost_yuan": 0.0013857,
+  "error": null,
+  "latency_ms": 2497.290899977088,
+  "list_price_estimate_yuan": 0.0009641999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"工具列表与上下文一致，覆盖关键设备。\",\n    \"evidence\": \"天馈 天馈线测试仪器 台 12 天馈 频谱仪 台 13 天线姿态测试仪 台\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"天馈线测试仪器、频谱仪、天线姿态测试仪\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖信号测试所需核心工具。\",\n    \"evidence\": \"互调测试与发射功率测试需专用仪表支持。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配。\",\n    \"evidence\": \"天馈 天馈线测试仪器 台 12\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882025,
+    "id": "chatcmpl-e3e8f7e1-93c1-9a92-8b37-5223e58d431d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 281,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3618,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3899
+    }
+  },
+  "usage_known": true
+}

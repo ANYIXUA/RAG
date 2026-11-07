@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:15.894301+08:00",
+  "conservative_cost_yuan": 0.0015913499999999998,
+  "error": null,
+  "latency_ms": 3136.1954999156296,
+  "list_price_estimate_yuan": 0.0010933499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，覆盖关键操作点。\",\n    \"evidence\": \"检查沿线塔杆以及附属设施、电缆、标牌标识，清理线路杂物等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"检查导线；检查绝缘子；检查拉线撑杆；检查接地装置；检查标志；检查清理线路沿线环境；做好巡查记录；\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖巡检核心步骤，无遗漏必要条件。\",\n    \"evidence\": \"检查沿线塔杆以及附属设施、电缆、标牌标识，清理线路杂物等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持内容。\",\n    \"evidence\": \"检查导线；检查绝缘子；检查拉线撑杆；检查接地装置；检查标志；检查清理线路沿线环境；做好巡查记录；\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"correct_citation\",\n    \"complete_coverage\",\n    \"faithful_facts\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882052,
+    "id": "chatcmpl-8654bac1-d084-9111-bb06-47efdb1a14f7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 332,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3969,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4301
+    }
+  },
+  "usage_known": true
+}

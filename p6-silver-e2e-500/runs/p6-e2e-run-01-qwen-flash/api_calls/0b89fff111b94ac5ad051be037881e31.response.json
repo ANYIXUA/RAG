@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:06.815074+08:00",
+  "conservative_cost_yuan": 0.0007962000000000001,
+  "error": null,
+  "latency_ms": 1518.1472999975085,
+  "list_price_estimate_yuan": 0.0006057,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 接到设备故障报告后，应立即启动抢修流程并赶赴现场。[1]  \n2. 抢修专用器材、仪表、机具及车辆须处于待用状态，不得外借。[1]  \n3. 遇多起障碍时，遵循“先重点、后一般”和“先抢通、后修复”原则。[1]  \n4. 故障处理需在规定时限内完成，并及时验证网络质量。[1]  \n5. 若无法按时处理，须向运营企业申告并说明原因。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881085,
+    "id": "chatcmpl-ac826653-fe63-9418-9317-03030f56b5ea",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 127,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2768,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2895
+    }
+  },
+  "usage_known": true
+}

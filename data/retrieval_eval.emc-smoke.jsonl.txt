@@ -1,0 +1,2 @@
+{"query":"光网关入库前，CQC认证需要包含哪些电磁兼容测试标准？","expected":[{"source":"中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf","text_contains":"GB/T9254.1"}]}
+{"query":"设备的电磁干扰能力需要符合哪些标准？","expected":[{"source":"中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf","text_contains":"GB/T 19286-2015"}]}

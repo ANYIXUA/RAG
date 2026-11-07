@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:48.053271+08:00",
+  "conservative_cost_yuan": 0.0007929,
+  "error": null,
+  "latency_ms": 1620.232000015676,
+  "list_price_estimate_yuan": 0.0006009,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 承包人自备的机械仪表计价依据为《机械仪表使用清单与计价表》。[1]  \n2. 该表格包含维护周期（年）和金额（元）等信息。[1]  \n3. 表格中“承包人自备”部分需单独列项并报价。[1]  \n4. 编制应参照《电信基础设施维护费用编制办法》附录规定。[3]  \n5. 机械仪表使用清单分“发包人提供”与“承包人自备”两部分编制。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881006,
+    "id": "chatcmpl-302002a9-c0a5-9d5e-9381-c186a0a0b513",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 128,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2726,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2854
+    }
+  },
+  "usage_known": true
+}

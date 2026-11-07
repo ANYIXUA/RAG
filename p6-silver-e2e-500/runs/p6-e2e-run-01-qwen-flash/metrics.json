@@ -1,0 +1,572 @@
+{
+  "by_type": {
+    "colloquial": {
+      "case_count": 50,
+      "completeness": {
+        "denominator": 49,
+        "distribution": {
+          "0.5": 2,
+          "1": 47
+        },
+        "full_score_ratio": {
+          "denominator": 49,
+          "numerator": 47,
+          "ratio": 0.9591836734693877
+        },
+        "mean": 0.9795918367346939,
+        "score_sum": 48.0
+      },
+      "execution_success": {
+        "denominator": 50,
+        "numerator": 50,
+        "ratio": 1.0
+      },
+      "failure_buckets": {
+        "1_retrieval_evidence_miss": 1,
+        "6_citation_mismatch": 2,
+        "8_judge_unreliable": 1,
+        "pass_or_no_detected_failure": 46
+      },
+      "faithfulness": {
+        "denominator": 49,
+        "distribution": {
+          "0.5": 1,
+          "1": 48
+        },
+        "full_score_ratio": {
+          "denominator": 49,
+          "numerator": 48,
+          "ratio": 0.9795918367346939
+        },
+        "mean": 0.9897959183673469,
+        "score_sum": 48.5
+      },
+      "silver_full_correctness": {
+        "denominator": 49,
+        "numerator": 48,
+        "ratio": 0.9795918367346939
+      }
+    },
+    "exact_fact": {
+      "case_count": 200,
+      "completeness": {
+        "denominator": 196,
+        "distribution": {
+          "0.5": 4,
+          "1": 192
+        },
+        "full_score_ratio": {
+          "denominator": 196,
+          "numerator": 192,
+          "ratio": 0.9795918367346939
+        },
+        "mean": 0.9897959183673469,
+        "score_sum": 194.0
+      },
+      "execution_success": {
+        "denominator": 200,
+        "numerator": 200,
+        "ratio": 1.0
+      },
+      "failure_buckets": {
+        "4_incomplete": 1,
+        "5_unsupported_generation": 5,
+        "6_citation_mismatch": 1,
+        "8_judge_unreliable": 5,
+        "pass_or_no_detected_failure": 188
+      },
+      "faithfulness": {
+        "denominator": 196,
+        "distribution": {
+          "0": 3,
+          "0.5": 2,
+          "1": 191
+        },
+        "full_score_ratio": {
+          "denominator": 196,
+          "numerator": 191,
+          "ratio": 0.9744897959183674
+        },
+        "mean": 0.9795918367346939,
+        "score_sum": 192.0
+      },
+      "silver_full_correctness": {
+        "denominator": 195,
+        "numerator": 190,
+        "ratio": 0.9743589743589743
+      }
+    },
+    "multi_condition": {
+      "case_count": 100,
+      "completeness": {
+        "denominator": 95,
+        "distribution": {
+          "0": 2,
+          "0.5": 3,
+          "1": 90
+        },
+        "full_score_ratio": {
+          "denominator": 95,
+          "numerator": 90,
+          "ratio": 0.9473684210526315
+        },
+        "mean": 0.9631578947368421,
+        "score_sum": 91.5
+      },
+      "execution_success": {
+        "denominator": 100,
+        "numerator": 100,
+        "ratio": 1.0
+      },
+      "failure_buckets": {
+        "1_retrieval_evidence_miss": 5,
+        "2_context_evidence_miss": 1,
+        "4_incomplete": 2,
+        "6_citation_mismatch": 4,
+        "8_judge_unreliable": 5,
+        "pass_or_no_detected_failure": 83
+      },
+      "faithfulness": {
+        "denominator": 95,
+        "distribution": {
+          "0": 6,
+          "1": 89
+        },
+        "full_score_ratio": {
+          "denominator": 95,
+          "numerator": 89,
+          "ratio": 0.9368421052631579
+        },
+        "mean": 0.9368421052631579,
+        "score_sum": 89
+      },
+      "silver_full_correctness": {
+        "denominator": 95,
+        "numerator": 89,
+        "ratio": 0.9368421052631579
+      }
+    },
+    "procedure": {
+      "case_count": 100,
+      "completeness": {
+        "denominator": 100,
+        "distribution": {
+          "0.5": 5,
+          "1": 95
+        },
+        "full_score_ratio": {
+          "denominator": 100,
+          "numerator": 95,
+          "ratio": 0.95
+        },
+        "mean": 0.975,
+        "score_sum": 97.5
+      },
+      "execution_success": {
+        "denominator": 100,
+        "numerator": 100,
+        "ratio": 1.0
+      },
+      "failure_buckets": {
+        "1_retrieval_evidence_miss": 1,
+        "4_incomplete": 4,
+        "5_unsupported_generation": 2,
+        "6_citation_mismatch": 3,
+        "pass_or_no_detected_failure": 90
+      },
+      "faithfulness": {
+        "denominator": 100,
+        "distribution": {
+          "0": 2,
+          "1": 98
+        },
+        "full_score_ratio": {
+          "denominator": 100,
+          "numerator": 98,
+          "ratio": 0.98
+        },
+        "mean": 0.98,
+        "score_sum": 98
+      },
+      "silver_full_correctness": {
+        "denominator": 100,
+        "numerator": 96,
+        "ratio": 0.96
+      }
+    },
+    "unanswerable": {
+      "case_count": 50,
+      "completeness": {
+        "denominator": 48,
+        "distribution": {
+          "0": 2,
+          "0.5": 17,
+          "1": 29
+        },
+        "full_score_ratio": {
+          "denominator": 48,
+          "numerator": 29,
+          "ratio": 0.6041666666666666
+        },
+        "mean": 0.78125,
+        "score_sum": 37.5
+      },
+      "execution_success": {
+        "denominator": 50,
+        "numerator": 50,
+        "ratio": 1.0
+      },
+      "failure_buckets": {
+        "4_incomplete": 8,
+        "5_unsupported_generation": 3,
+        "8_judge_unreliable": 9,
+        "pass_or_no_detected_failure": 30
+      },
+      "faithfulness": {
+        "denominator": 49,
+        "distribution": {
+          "0": 1,
+          "0.5": 2,
+          "1": 46
+        },
+        "full_score_ratio": {
+          "denominator": 49,
+          "numerator": 46,
+          "ratio": 0.9387755102040817
+        },
+        "mean": 0.9591836734693877,
+        "score_sum": 47.0
+      },
+      "silver_full_correctness": {
+        "denominator": 0,
+        "numerator": 0,
+        "ratio": null
+      }
+    }
+  },
+  "dataset": "Silver only; not P5 Gold",
+  "execution": {
+    "actually_attempted_unique": 500,
+    "e2e_completion_rate": {
+      "denominator": 500,
+      "numerator": 500,
+      "ratio": 1.0
+    },
+    "failed": 0,
+    "failed_attempts": 0,
+    "interrupted_attempts": 0,
+    "pending": 0,
+    "pending_case_ids": [],
+    "retry_attempts": 0,
+    "success": 500,
+    "target": 500,
+    "terminal_results": 500,
+    "timeout_attempts": 0,
+    "timeouts_final_cases": 0,
+    "total_started_attempts": 500
+  },
+  "holdout_executed": false,
+  "human_signoff": "not_performed",
+  "performance": {
+    "context_preprocessing_ms": {
+      "denominator": 500,
+      "mean": 2.29521,
+      "p50": 1.49,
+      "p95": 3.7250499999999973,
+      "unit": "milliseconds"
+    },
+    "denominator_note": "Successful FINAL attempts; failed attempts and retry overhead not hidden, reported separately. Wall time includes observation/persistence and production query logging.",
+    "embedding_ms": {
+      "denominator": 500,
+      "mean": 231.214652,
+      "p50": 180.496,
+      "p95": 466.7893499999997,
+      "unit": "milliseconds"
+    },
+    "failed_attempt_retrieval_ms": {
+      "denominator": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null,
+      "unit": "milliseconds"
+    },
+    "failed_final_attempt_wall_ms": {
+      "denominator": 0,
+      "mean": null,
+      "p50": null,
+      "p95": null,
+      "unit": "milliseconds"
+    },
+    "generation_ms": {
+      "denominator": 500,
+      "mean": 1408.275012,
+      "p50": 1398.13,
+      "p95": 1782.4042,
+      "unit": "milliseconds"
+    },
+    "intent_ms": {
+      "denominator": 500,
+      "mean": 0.037692,
+      "p50": 0.034,
+      "p95": 0.06609999999999991,
+      "unit": "milliseconds"
+    },
+    "production_trace_total_ms": {
+      "denominator": 500,
+      "mean": 2205.446574,
+      "p50": 2176.0305,
+      "p95": 2834.44575,
+      "unit": "milliseconds"
+    },
+    "retrieval_ms": {
+      "denominator": 500,
+      "mean": 787.34997,
+      "p50": 725.2895,
+      "p95": 1298.01305,
+      "unit": "milliseconds"
+    },
+    "rewrite_ms": {
+      "denominator": 500,
+      "mean": 0.048188,
+      "p50": 0.04,
+      "p95": 0.084,
+      "unit": "milliseconds"
+    },
+    "successful_attempt_wall_ms": {
+      "denominator": 500,
+      "mean": 2236.1446069907397,
+      "p50": 2204.9754000036046,
+      "p95": 2879.0612699813205,
+      "unit": "milliseconds"
+    }
+  },
+  "primary_failure_buckets": {
+    "1_retrieval_evidence_miss": {
+      "denominator": 500,
+      "description": "检索未召回Silver标注证据（代理诊断）",
+      "numerator": 7,
+      "ratio": 0.014
+    },
+    "2_context_evidence_miss": {
+      "denominator": 500,
+      "description": "已召回但未完整进入LLM上下文（代理诊断）",
+      "numerator": 1,
+      "ratio": 0.002
+    },
+    "3_wrong_with_evidence": {
+      "denominator": 500,
+      "description": "证据进入上下文但答案错误",
+      "numerator": 0,
+      "ratio": 0.0
+    },
+    "4_incomplete": {
+      "denominator": 500,
+      "description": "答案遗漏关键条件或步骤",
+      "numerator": 15,
+      "ratio": 0.03
+    },
+    "5_unsupported_generation": {
+      "denominator": 500,
+      "description": "生成内容缺乏证据支持/疑似幻觉",
+      "numerator": 10,
+      "ratio": 0.02
+    },
+    "6_citation_mismatch": {
+      "denominator": 500,
+      "description": "引用与实际证据不符",
+      "numerator": 10,
+      "ratio": 0.02
+    },
+    "7_execution_failure": {
+      "denominator": 500,
+      "description": "模型调用或执行异常/超时",
+      "numerator": 0,
+      "ratio": 0.0
+    },
+    "8_judge_unreliable": {
+      "denominator": 500,
+      "description": "自动评分无法可靠判断",
+      "numerator": 20,
+      "ratio": 0.04
+    },
+    "pass_or_no_detected_failure": {
+      "denominator": 500,
+      "description": "未发现上述失败（不是人工正确性确认）",
+      "numerator": 437,
+      "ratio": 0.874
+    }
+  },
+  "quality": {
+    "automated_not_human_accuracy": true,
+    "citation_correctness_judge": {
+      "denominator": 490,
+      "distribution": {
+        "0": 7,
+        "0.5": 13,
+        "1": 470
+      },
+      "full_score_ratio": {
+        "denominator": 490,
+        "numerator": 470,
+        "ratio": 0.9591836734693877
+      },
+      "mean": 0.9724489795918367,
+      "score_sum": 476.5
+    },
+    "citation_index_and_prompt_presence": {
+      "denominator": 2606,
+      "numerator": 2582,
+      "ratio": 0.9907904834996163
+    },
+    "citation_structural_validity": {
+      "denominator": 2606,
+      "numerator": 2590,
+      "ratio": 0.9938603223330775
+    },
+    "completeness": {
+      "denominator": 488,
+      "distribution": {
+        "0": 4,
+        "0.5": 31,
+        "1": 453
+      },
+      "full_score_ratio": {
+        "denominator": 488,
+        "numerator": 453,
+        "ratio": 0.9282786885245902
+      },
+      "mean": 0.9600409836065574,
+      "score_sum": 468.5
+    },
+    "correctness_exclusions": [
+      "all 50 unanswerable labels",
+      "p6s-0473 ambiguous reference",
+      "failed execution/judge or null verdict"
+    ],
+    "executed_success_denominator": 500,
+    "faithfulness": {
+      "denominator": 489,
+      "distribution": {
+        "0": 12,
+        "0.5": 5,
+        "1": 472
+      },
+      "full_score_ratio": {
+        "denominator": 489,
+        "numerator": 472,
+        "ratio": 0.9652351738241309
+      },
+      "mean": 0.9703476482617587,
+      "score_sum": 474.5
+    },
+    "generation_finish_reasons": {
+      "stop": 500
+    },
+    "hallucination_suspected": {
+      "denominator": 490,
+      "numerator": 18,
+      "ratio": 0.036734693877551024
+    },
+    "judge_failed": 10,
+    "judge_same_model_as_generation": true,
+    "judge_success": {
+      "denominator": 500,
+      "numerator": 490,
+      "ratio": 0.98
+    },
+    "judge_uncertainty_count": 20,
+    "low_confidence": {
+      "denominator": 490,
+      "numerator": 1,
+      "ratio": 0.0020408163265306124
+    },
+    "no_answer_behavior_provisional": {
+      "denominator": 36,
+      "distribution": {
+        "0": 7,
+        "0.5": 2,
+        "1": 27
+      },
+      "full_score_ratio": {
+        "denominator": 36,
+        "numerator": 27,
+        "ratio": 0.75
+      },
+      "mean": 0.7777777777777778,
+      "score_sum": 28.0
+    },
+    "original_scoring_failure_records": 18,
+    "scoring_failures_recovered_without_new_api_calls": 8,
+    "self_evaluation_bias": true,
+    "silver_full_correctness": {
+      "denominator": 439,
+      "numerator": 423,
+      "ratio": 0.9635535307517085
+    }
+  },
+  "risks": [
+    "50 unanswerable labels lack human verification; no-answer scoring is provisional",
+    "p6s-0473 reference 114 person-days has source parsing ambiguity; exclude Silver correctness"
+  ],
+  "run_id": "p6-e2e-run-01-qwen-flash",
+  "silver_sha256": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+  "tokens_and_cost": {
+    "actual_billed_yuan": null,
+    "actual_billing_status": "provider invoice/free quota unavailable; list-price estimate is not actual bill",
+    "budget_cap_yuan": 20,
+    "by_call_kind": {
+      "chat": {
+        "calls": 501,
+        "input_tokens": 1394128,
+        "output_tokens": 55882
+      },
+      "embedding": {
+        "calls": 500,
+        "input_tokens": 16425,
+        "output_tokens": 0
+      },
+      "judge": {
+        "calls": 566,
+        "input_tokens": 2057949,
+        "output_tokens": 220852
+      }
+    },
+    "conservative_committed_yuan": 1.4827180500000015,
+    "diagnostic_calls_included_in_tokens": {
+      "calls": 1,
+      "input_tokens": 12,
+      "output_tokens": 1
+    },
+    "known_usage_list_price_estimate_yuan": 0.9411250499999997,
+    "prior_variant_cost": {
+      "conservative_committed_yuan": 0.10690860000000002,
+      "known_usage_list_price_estimate_yuan": 0.0001665,
+      "prior_run": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01",
+      "reason": "Carry all prior qwen-turbo failed requests and diagnostic reservations into the same user cap20"
+    },
+    "returned_models": [
+      {
+        "calls": 501,
+        "kind": "chat",
+        "model": "qwen-flash"
+      },
+      {
+        "calls": 563,
+        "kind": "judge",
+        "model": "qwen-flash"
+      },
+      {
+        "calls": 500,
+        "kind": "embedding",
+        "model": "text-embedding-v4"
+      },
+      {
+        "calls": 3,
+        "kind": "judge",
+        "model": "not_returned"
+      }
+    ],
+    "total_known_usage_list_price_estimate_yuan": 0.9412915499999996,
+    "unknown_usage_calls": 3
+  }
+}

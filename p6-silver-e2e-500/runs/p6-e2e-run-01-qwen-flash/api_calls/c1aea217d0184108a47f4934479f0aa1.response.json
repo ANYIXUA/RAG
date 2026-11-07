@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:45.593568+08:00",
+  "conservative_cost_yuan": 0.00070665,
+  "error": null,
+  "latency_ms": 1185.726399999112,
+  "list_price_estimate_yuan": 0.0005536499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 用户满意度通过用户签署完工确认单进行评估。[1]  \n2. 完工后需记录光衰减测定值，供后续维护参考。[1]  \n3. 装维服务应确保施工安全、隐蔽、美观，提升用户体验。[1]  \n4. 服务过程中需向用户明确设备使用、故障申告等流程。[1]  \n5. 投诉处理结果将影响服务质量考核与整改。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881124,
+    "id": "chatcmpl-726af06a-406c-940d-a3dc-c83a663e374b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2671,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2773
+    }
+  },
+  "usage_known": true
+}

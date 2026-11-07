@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:12:19.139447+08:00",
+  "conservative_cost_yuan": 0.0007224,
+  "error": null,
+  "latency_ms": 1552.7389000635594,
+  "list_price_estimate_yuan": 0.0005633999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 智慧家庭套餐组合需基于智能组网及家庭总线技术知识选择。[3]  \n2. 应综合考虑光纤到户、无线局域网与物联网接入能力。[2]  \n3. 优先匹配智能家居场景设置与联动需求。[3]  \n4. 需具备家庭复合总线组网与设备联接能力。[2]  \n5. 套餐应支持视听业务与云平台接入功能。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880737,
+    "id": "chatcmpl-7249e36c-7b80-9ce2-bf25-99ad8ad581c0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 106,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2696,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2802
+    }
+  },
+  "usage_known": true
+}

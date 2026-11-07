@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:33.572886+08:00",
+  "input_token_upper_bound": 1156,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0436"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "在丘陵地区施工，需制作7/3.0吊板拉线地锚，其综合单价应如何调整？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "2daed7401f9c489481501fd7cdc29d57",
+  "reserved_yuan": 0.000578
+}

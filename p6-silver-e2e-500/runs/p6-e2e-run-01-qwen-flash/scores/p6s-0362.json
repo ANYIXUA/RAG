@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35",
+    "reason": "人工费与利润应为723.90与217.17，非217.17",
+    "score": 0
+  },
+  "case_id": "p6s-0362",
+  "citation_correctness": {
+    "evidence": "WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35",
+    "reason": "引用编号[1]对应正确上下文",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35",
+    "reason": "覆盖所有必要信息点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23111003 地面塔40m 以下 1158.24 723.90 217.17 217.17 6.35",
+    "reason": "将利润误作人工费，事实错误",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_fact",
+    "misattribution"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "373cce54bbd7449eb5727d427ac7d84e",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

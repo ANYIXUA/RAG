@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:40.638553+08:00",
+  "conservative_cost_yuan": 0.0017359499999999998,
+  "error": null,
+  "latency_ms": 3086.2961998209357,
+  "list_price_estimate_yuan": 0.0011614499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]明确给出人工费23.52元，企业管理费6.45元。\",\n    \"evidence\": \"WH41110002 机械成端 34.67 23.52 6.45 4.70 0.21\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"WH41110002 机械成端 34.67 23.52 6.45 4.70 0.21\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答了人工费和企业管理费。\",\n    \"evidence\": \"WH41110002 机械成端 34.67 23.52 6.45 4.70 0.21\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致且支持对应句。\",\n    \"evidence\": \"WH41110002 机械成端 34.67 23.52 6.45 4.70 0.21\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881777,
+    "id": "chatcmpl-bdfcb37f-9cfb-99d2-ac45-8c1ceefb7cdb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 383,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3913,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4296
+    }
+  },
+  "usage_known": true
+}

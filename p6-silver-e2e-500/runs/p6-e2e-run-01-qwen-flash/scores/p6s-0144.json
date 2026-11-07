@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH41110002 机械成端 34.67 23.52 6.45 4.70 0.21",
+    "reason": "引用[1]明确给出人工费23.52元，企业管理费6.45元。",
+    "score": 1
+  },
+  "case_id": "p6s-0144",
+  "citation_correctness": {
+    "evidence": "WH41110002 机械成端 34.67 23.52 6.45 4.70 0.21",
+    "reason": "引用编号与上下文来源一致且支持对应句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH41110002 机械成端 34.67 23.52 6.45 4.70 0.21",
+    "reason": "完整回答了人工费和企业管理费。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH41110002 机械成端 34.67 23.52 6.45 4.70 0.21",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "374d07c505f747dc9da502609e0ae2bd",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

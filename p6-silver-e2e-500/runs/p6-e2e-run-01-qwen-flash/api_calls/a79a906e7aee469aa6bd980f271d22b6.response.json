@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:22.438279+08:00",
+  "conservative_cost_yuan": 0.001272,
+  "error": null,
+  "latency_ms": 2685.8298999723047,
+  "list_price_estimate_yuan": 0.0008535,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"未提及绩效考核标准，如实回应\",\n    \"evidence\": \"装维人员绩效考核标准未在提供的上下文中明确说明。[1]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"理论与技能考核均需达60分及以上为合格。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"无关于具体绩效考核指标或评分细则的描述。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"考核方式包括笔试、机考及现场操作等。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 1,\n    \"reason\": \"问题不可答时明确拒答\",\n    \"evidence\": \"装维人员绩效考核标准未在提供的上下文中明确说明。[1]\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881939,
+    "id": "chatcmpl-93493253-1bc0-93e3-9dba-6f3ec73bcea8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 279,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2900,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3179
+    }
+  },
+  "usage_known": true
+}

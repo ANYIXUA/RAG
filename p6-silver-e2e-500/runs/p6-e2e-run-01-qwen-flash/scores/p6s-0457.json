@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "放绑软光纤：放绑、固定软光纤、预留保护；",
+    "reason": "上下文明确列出三步骤",
+    "score": 1
+  },
+  "case_id": "p6s-0457",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "放绑软光纤：放绑、固定软光纤、预留保护；",
+    "reason": "覆盖全部必要步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "放绑软光纤：放绑、固定软光纤、预留保护；",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "3f1f528b1efe4cfd8f255efa3dd9dae6",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

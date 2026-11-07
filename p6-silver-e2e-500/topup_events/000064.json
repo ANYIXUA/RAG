@@ -1,0 +1,85 @@
+{
+  "previous_sha256": "c19106a7ec9b286f58f60fbc8568b6664362ca732223db94705666029df2be2d",
+  "record": {
+    "batch": 32,
+    "candidates": [
+      {
+        "answer": "由本专业负责",
+        "evidence": [
+          {
+            "excerpt": "6.3.2.2 与基站主设备维护的分工界面：以业务调度ODF 架/框或DDF 架/框为界，ODF 或DDF 架/框（含）至有线设备方向由本专业负责， ODF 或DDF 架/框（不含）至基站主设备方向由无线专业负责。",
+            "passage_id": "6bf394ec756103a82e9f6e9c"
+          }
+        ],
+        "question": "ODF架或DDF架/框至有线设备方向由哪个专业负责？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "查看、记录核对各类参数",
+        "evidence": [
+          {
+            "excerpt": "9.检查UPS 设备外观整洁，运行正常。查看、记录核对各类参数。检查 各类功能动作正常。",
+            "passage_id": "1da1d3e2ba2c6b5f5ae8d2ff"
+          }
+        ],
+        "question": "检查UPS设备时需查看并记录哪些参数？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "外观完整，无变形，无配件缺失，无渗液",
+        "evidence": [
+          {
+            "excerpt": "2.检查变压器外观完整，无变形，无配件缺失，无渗液。",
+            "passage_id": "1da1d3e2ba2c6b5f5ae8d2ff"
+          }
+        ],
+        "question": "变压器外观检查需确认哪些状态？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0497",
+          "expected_behavior": "answer",
+          "generation_batch": 32,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271138,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "变压器外观检查需确认哪些状态？",
+          "question_type": "exact_fact",
+          "reference_answer": "外观完整，无变形，无配件缺失，无渗液",
+          "source_chunk_ids": [
+            "1da1d3e2ba2c6b5f5ae8d2ff"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "1da1d3e2ba2c6b5f5ae8d2ff",
+              "excerpt": "2.检查变压器外观完整，无变形，无配件缺失，无渗液。"
+            }
+          ],
+          "source_page": 64,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

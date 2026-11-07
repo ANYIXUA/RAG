@@ -1,0 +1,143 @@
+{
+  "previous_sha256": "f23e450e7b4ca56fd578c59babebe36f4e16a622bbea625066670fe77c9ee9f3",
+  "record": {
+    "batch": 9,
+    "candidates": [
+      {
+        "answer": "38.30元",
+        "evidence": [
+          {
+            "excerpt": "WH33116001 机房土建零星维 修 内部墙面修复 平方米²次 38.30 23.94 7.18 7.18 消耗量 0.21 —",
+            "passage_id": "ece98e71fe682adf424c53af"
+          }
+        ],
+        "question": "机房土建零星维修中，内部墙面修复的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "76.61元",
+        "evidence": [
+          {
+            "excerpt": "WH33117001 安装、调试、断电检修 变压器 100kVA 以下变压器专项检修 76.61 47.88 14.36 14.36 消耗量 0.42 —",
+            "passage_id": "a868ffbc2cc9ef4973b54d6e"
+          }
+        ],
+        "question": "变压器检修中，100kVA以下变压器专项检修的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "WH33118002",
+        "evidence": [
+          {
+            "excerpt": "WH33118002 小型离网风力发电机组 54.53 34.08 10.22 10.22 0.71",
+            "passage_id": "8be5803c7b6b81a6c36af5bd"
+          }
+        ],
+        "question": "小型离网风力发电机组的维护项目编码是多少？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0475",
+          "expected_behavior": "answer",
+          "generation_batch": 9,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271115,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "机房土建零星维修中，内部墙面修复的综合单价是多少元？",
+          "question_type": "exact_fact",
+          "reference_answer": "38.30元",
+          "source_chunk_ids": [
+            "ece98e71fe682adf424c53af"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "ece98e71fe682adf424c53af",
+              "excerpt": "WH33116001 机房土建零星维 修 内部墙面修复 平方米²次 38.30 23.94 7.18 7.18 消耗量 0.21 —"
+            }
+          ],
+          "source_page": 316,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0476",
+          "expected_behavior": "answer",
+          "generation_batch": 9,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271115,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "变压器检修中，100kVA以下变压器专项检修的综合单价是多少元？",
+          "question_type": "exact_fact",
+          "reference_answer": "76.61元",
+          "source_chunk_ids": [
+            "a868ffbc2cc9ef4973b54d6e"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "a868ffbc2cc9ef4973b54d6e",
+              "excerpt": "WH33117001 安装、调试、断电检修 变压器 100kVA 以下变压器专项检修 76.61 47.88 14.36 14.36 消耗量 0.42 —"
+            }
+          ],
+          "source_page": 317,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0477",
+          "expected_behavior": "answer",
+          "generation_batch": 9,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271115,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "小型离网风力发电机组的维护项目编码是多少？",
+          "question_type": "exact_fact",
+          "reference_answer": "WH33118002",
+          "source_chunk_ids": [
+            "8be5803c7b6b81a6c36af5bd"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "8be5803c7b6b81a6c36af5bd",
+              "excerpt": "WH33118002 小型离网风力发电机组 54.53 34.08 10.22 10.22 0.71"
+            }
+          ],
+          "source_page": 318,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

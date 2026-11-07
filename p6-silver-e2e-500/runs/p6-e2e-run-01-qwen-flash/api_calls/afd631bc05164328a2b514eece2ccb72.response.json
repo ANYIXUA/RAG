@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:21.624539+08:00",
+  "conservative_cost_yuan": 0.0007224,
+  "error": null,
+  "latency_ms": 1300.0376999843866,
+  "list_price_estimate_yuan": 0.0005694,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 云游戏业务在4K视频场景下最大TP99时延为40ms。[2]  \n2. 该指标适用于IEEE 802.11be协议下的4K视频场景。[2]  \n3. 测试时延类型为UDP单向时延。[2]  \n4. 多业务并发时需满足此要求。[2]  \n5. 时延测试时长为5分钟。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880920,
+    "id": "chatcmpl-e8878b21-7e13-9a86-86ca-20ad1815c10c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2776,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2878
+    }
+  },
+  "usage_known": true
+}

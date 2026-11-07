@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:17.306452+08:00",
+  "conservative_cost_yuan": 0.0007438499999999999,
+  "error": null,
+  "latency_ms": 1497.3124000243843,
+  "list_price_estimate_yuan": 0.0005788499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 优化智慧家庭推广需基于智能家居组网及场景设置能力。[1]  \n2. 应掌握无线局域网覆盖优化与带宽指标调整技术。[2]  \n3. 推广中应突出智能组网设计与矢量制图应用能力。[2]  \n4. 需具备销售技巧与服务交付能力以提升用户转化。[1]  \n5. 家庭复合总线布放与组网方案设计是关键环节。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881035,
+    "id": "chatcmpl-00067bd1-2a20-99e1-bcce-a35d55d8c249",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 110,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2759,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2869
+    }
+  },
+  "usage_known": true
+}

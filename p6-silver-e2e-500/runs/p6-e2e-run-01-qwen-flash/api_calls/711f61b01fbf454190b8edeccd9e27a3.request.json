@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:10.773225+08:00",
+  "input_token_upper_bound": 1169,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0271"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "对于直埋光缆线路，若发现沿线光缆保护措施损坏，应执行哪项日常检修操作？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "711f61b01fbf454190b8edeccd9e27a3",
+  "reserved_yuan": 0.0005845
+}

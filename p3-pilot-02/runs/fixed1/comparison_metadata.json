@@ -1,0 +1,10 @@
+{
+  "pilot": "P3-Pilot-02",
+  "variant": "fixed",
+  "implementation_path": "rag_app/indexing/vector_store.py",
+  "implementation_sha256": "caa94cb3b311e374035db69d1ea3ff1c0c8abed29f71c0b3a69cda1934811040",
+  "query_vectors_sha256": "2eead8c09347b3ed31df3774b3a53a33ead5fec93275a2fd4062f144988cc062",
+  "protected_files_verified_before_and_after": 161,
+  "candidate_generation": "all unique query tokens ILIKE OR, collection/status unchanged, chunk_id ASC, no early LIMIT; authorization then existing BM25 Top20",
+  "configuration_note": "run_config.json is the original evaluator configuration; only candidate_generation above differs for fixed runs"
+}

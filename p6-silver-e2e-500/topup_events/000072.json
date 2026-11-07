@@ -1,0 +1,26 @@
+{
+  "previous_sha256": "f63a4f15bc5e8d18a806c75391cf8347b83102570997470253c0c80bb4638090",
+  "record": {
+    "batch": 36,
+    "candidates": [
+      {
+        "answer": "技工 普工 单位 工日 单价(元) 114.00 61.00",
+        "evidence": [
+          {
+            "excerpt": "维 护 分 项 作 业 项 目 编 码 项 目 名 称 综 合 单 价 （ 元 ） 其 中 名 称 人 工 人 工 费(元) 企 业 管 理 费(元) 利 润(元) 技 工 普 工 单 位 工 日 单 价(元) 114.00 61.00 WH42301001 拆 除 用户 终 端 设 备 18.34 12.44 3.41 2.49 消 耗 量 0.11 —",
+            "passage_id": "1a25e42434f24a35a66449c6"
+          }
+        ],
+        "question": "拆除用户终端设备时，人工费为12.44元，该费用包含哪些工日单价？",
+        "question_type": "multi_condition"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

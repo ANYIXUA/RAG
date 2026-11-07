@@ -1,0 +1,392 @@
+{
+  "report_type": "retrieval_evaluation",
+  "generated_at": "2026-11-03T13:47:41.557562+00:00",
+  "dataset_path": "/tmp/retrieval_eval.emc-smoke.jsonl",
+  "cases": 2,
+  "top_k": 3,
+  "settings": {
+    "collection_name": "default",
+    "embedding_provider": "openai",
+    "embedding_dimension": 1024,
+    "vector_store_provider": "postgresql",
+    "retrieval_mode": "hybrid",
+    "retrieval_candidate_k": 20,
+    "semantic_weight": 0.7,
+    "bm25_weight": 0.3,
+    "min_similarity_score": 0.05,
+    "relative_score_threshold": 0.35,
+    "rerank_candidate_k": 20
+  },
+  "runs": [
+    {
+      "name": "no_rerank",
+      "rerank_provider": "none",
+      "rerank_model": "none",
+      "case_count": 2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "no_result_rate": 0.0,
+      "avg_latency_ms": 823.745,
+      "median_latency_ms": 823.745,
+      "p95_latency_ms": 1167.144,
+      "failure_count": 0,
+      "bucket_metrics": {
+        "intent_label": {
+          "未标注": {
+            "case_count": 2,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 823.745,
+            "median_latency_ms": 823.745,
+            "p95_latency_ms": 1167.144,
+            "failure_count": 0
+          }
+        },
+        "business_module": {
+          "未标注": {
+            "case_count": 2,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 823.745,
+            "median_latency_ms": 823.745,
+            "p95_latency_ms": 1167.144,
+            "failure_count": 0
+          }
+        },
+        "source_type": {
+          "未标注": {
+            "case_count": 2,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 823.745,
+            "median_latency_ms": 823.745,
+            "p95_latency_ms": 1167.144,
+            "failure_count": 0
+          }
+        }
+      },
+      "failures": [],
+      "case_results": [
+        {
+          "query": "光网关入库前，CQC认证需要包含哪些电磁兼容测试标准？",
+          "note": null,
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "tags": [],
+          "hit": true,
+          "rank": 1,
+          "reciprocal_rank": 1.0,
+          "no_result": false,
+          "latency_ms": 1205.3,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "text_contains": "GB/T9254.1"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第11页",
+              "score": 0.849294,
+              "retrieval_score": 0.849294,
+              "rerank_score": null,
+              "semantic_score": 0.784706,
+              "bm25_score": 31.806285
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第8页",
+              "score": 0.601564,
+              "retrieval_score": 0.601564,
+              "rerank_score": null,
+              "semantic_score": 0.647535,
+              "bm25_score": 15.72181
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第45页",
+              "score": 0.597023,
+              "retrieval_score": 0.597023,
+              "rerank_score": null,
+              "semantic_score": 0.668467,
+              "bm25_score": 13.686954
+            }
+          ]
+        },
+        {
+          "query": "设备的电磁干扰能力需要符合哪些标准？",
+          "note": null,
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "tags": [],
+          "hit": true,
+          "rank": 1,
+          "reciprocal_rank": 1.0,
+          "no_result": false,
+          "latency_ms": 442.189,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "text_contains": "GB/T 19286-2015"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第45页",
+              "score": 0.735088,
+              "retrieval_score": 0.735088,
+              "rerank_score": null,
+              "semantic_score": 0.621554,
+              "bm25_score": 31.595651
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第58页",
+              "score": 0.550658,
+              "retrieval_score": 0.550658,
+              "rerank_score": null,
+              "semantic_score": 0.643546,
+              "bm25_score": 10.550393
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第73页",
+              "score": 0.527406,
+              "retrieval_score": 0.527406,
+              "rerank_score": null,
+              "semantic_score": 0.646169,
+              "bm25_score": 7.90818
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "with_rerank",
+      "rerank_provider": "cross-encoder",
+      "rerank_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "case_count": 2,
+      "hit_at_k": 1.0,
+      "mrr": 1.0,
+      "no_result_rate": 0.0,
+      "avg_latency_ms": 5292.856,
+      "median_latency_ms": 5292.856,
+      "p95_latency_ms": 6138.626,
+      "failure_count": 0,
+      "bucket_metrics": {
+        "intent_label": {
+          "未标注": {
+            "case_count": 2,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 5292.856,
+            "median_latency_ms": 5292.856,
+            "p95_latency_ms": 6138.626,
+            "failure_count": 0
+          }
+        },
+        "business_module": {
+          "未标注": {
+            "case_count": 2,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 5292.856,
+            "median_latency_ms": 5292.856,
+            "p95_latency_ms": 6138.626,
+            "failure_count": 0
+          }
+        },
+        "source_type": {
+          "未标注": {
+            "case_count": 2,
+            "hit_at_k": 1.0,
+            "mrr": 1.0,
+            "no_result_rate": 0.0,
+            "avg_latency_ms": 5292.856,
+            "median_latency_ms": 5292.856,
+            "p95_latency_ms": 6138.626,
+            "failure_count": 0
+          }
+        }
+      },
+      "failures": [],
+      "case_results": [
+        {
+          "query": "光网关入库前，CQC认证需要包含哪些电磁兼容测试标准？",
+          "note": null,
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "tags": [],
+          "hit": true,
+          "rank": 1,
+          "reciprocal_rank": 1.0,
+          "no_result": false,
+          "latency_ms": 6232.601,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "text_contains": "GB/T9254.1"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第11页",
+              "score": 7.50506,
+              "retrieval_score": 0.849294,
+              "rerank_score": 7.50506,
+              "semantic_score": 0.784706,
+              "bm25_score": 31.806285
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第46页",
+              "score": 0.265216,
+              "retrieval_score": 0.522472,
+              "rerank_score": 0.265216,
+              "semantic_score": 0.652553,
+              "bm25_score": 6.963955
+            },
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第16页",
+              "score": -0.117305,
+              "retrieval_score": 0.483902,
+              "rerank_score": -0.117305,
+              "semantic_score": 0.625042,
+              "bm25_score": 4.916436
+            }
+          ]
+        },
+        {
+          "query": "设备的电磁干扰能力需要符合哪些标准？",
+          "note": null,
+          "intent_label": null,
+          "business_module": null,
+          "source_type": null,
+          "tags": [],
+          "hit": true,
+          "rank": 1,
+          "reciprocal_rank": 1.0,
+          "no_result": false,
+          "latency_ms": 4353.111,
+          "expected": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "text_contains": "GB/T 19286-2015"
+            }
+          ],
+          "top_results": [
+            {
+              "source": "中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf",
+              "section_title": "第45页",
+              "score": 3.158268,
+              "retrieval_score": 0.735088,
+              "rerank_score": 3.158268,
+              "semantic_score": 0.621554,
+              "bm25_score": 31.595651
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第64页",
+              "score": -1.750416,
+              "retrieval_score": 0.509262,
+              "rerank_score": -1.750416,
+              "semantic_score": 0.633665,
+              "bm25_score": 6.919131
+            },
+            {
+              "source": "电信基础设施维护规程.pdf",
+              "section_title": "第73页",
+              "score": -1.793626,
+              "retrieval_score": 0.527406,
+              "rerank_score": -1.793626,
+              "semantic_score": 0.646169,
+              "bm25_score": 7.90818
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "delta": {
+    "hit_at_k": 0.0,
+    "mrr": 0.0,
+    "no_result_rate": 0.0,
+    "avg_latency_ms": 4469.111,
+    "p95_latency_ms": 4971.482
+  },
+  "release_gate": {
+    "passed": true,
+    "candidate_run": "with_rerank",
+    "baseline_run": null,
+    "thresholds": {
+      "min_hit_at_k": 0.8,
+      "min_mrr": 0.7,
+      "max_no_result_rate": 0.2,
+      "max_avg_latency_ms": null,
+      "max_p95_latency_ms": null,
+      "max_hit_at_k_drop": 0.05,
+      "max_mrr_drop": 0.05,
+      "max_no_result_rate_increase": 0.05,
+      "max_avg_latency_increase_ms": null,
+      "max_p95_latency_increase_ms": null
+    },
+    "checks": [
+      {
+        "name": "min_hit_at_k",
+        "metric": "hit_at_k",
+        "operator": ">=",
+        "value": 1.0,
+        "threshold": 0.8,
+        "passed": true
+      },
+      {
+        "name": "min_mrr",
+        "metric": "mrr",
+        "operator": ">=",
+        "value": 1.0,
+        "threshold": 0.7,
+        "passed": true
+      },
+      {
+        "name": "max_no_result_rate",
+        "metric": "no_result_rate",
+        "operator": "<=",
+        "value": 0.0,
+        "threshold": 0.2,
+        "passed": true
+      },
+      {
+        "name": "max_avg_latency_ms",
+        "metric": "avg_latency_ms",
+        "operator": "skip",
+        "value": 5292.856,
+        "threshold": null,
+        "passed": true,
+        "skipped": true
+      },
+      {
+        "name": "max_p95_latency_ms",
+        "metric": "p95_latency_ms",
+        "operator": "skip",
+        "value": 6138.626,
+        "threshold": null,
+        "passed": true,
+        "skipped": true
+      }
+    ],
+    "baseline_delta": null
+  },
+  "report_path": "/tmp/rag-retrieval-emc-smoke/retrieval_eval_20261103_134741.json"
+}

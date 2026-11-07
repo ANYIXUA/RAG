@@ -1,0 +1,48 @@
+{
+  "db_stats": {
+    "active_chunks": 447,
+    "distinct_priority": 1,
+    "distinct_updated_at": 1,
+    "priority_min": 50,
+    "priority_max": 50,
+    "updated_at_min": "2026-06-23T14:53:31.581201+00:00",
+    "updated_at_max": "2026-06-23T14:53:31.581201+00:00",
+    "priority_distribution": [
+      [
+        50,
+        447
+      ]
+    ],
+    "updated_at_distinct_values": 1
+  },
+  "summary": {
+    "old_pool_has_relevant": 1,
+    "fix_all_pool_has_relevant": 22,
+    "fix_oversample_pool_has_relevant": 22,
+    "a2_top10_hit": 22,
+    "fix_all_top10_hit": 22,
+    "old_top10_hit": 1
+  }
+}
+gold-batch01-sha256:d1fcbeb037f45ffa276e565a12f440e3812b98aef32598a2cd0fedd9810b1a06: match=125 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'831af7c41fd776db6b5b3ff9': 1}
+gold-batch01-sha256:42b8a2541ffce7ab7ef69d2f1c165500ba5af5aa949ab806a45509dc44dd0dc3: match=447 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'92108b5bb6dcc5b2227d531c': 1}
+gold-batch01-sha256:e8c71aaea5a6523cc58219e5bf83fe6fc734760f22ff8b487152d0de5ba4bce5: match=146 old_pool=['4f32247f7a6d7526df77bddd'] old_top10=[5] all_top10=[4] over_top10=[4] a2_top10=[1] matchrank={'4f32247f7a6d7526df77bddd': 1}
+gold-batch01-sha256:0da5c82f433a53526cacf1f533e597e0d0d56bf090a952123037a56df20813b7: match=432 old_pool=- old_top10=- all_top10=[2] over_top10=[1] a2_top10=[2] matchrank={'02c18b66c8c7d17fa1fb910e': 6}
+gold-batch01-sha256:c482b83580f3fb39b560f93a43695220c7fcca57dadaf88ad7391ba8a95a5c10: match=420 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'4812f97659f77c46891223fa': 1}
+gold-batch01-sha256:2c5b25dfc3ec515f3195e2807d42469b8f0940b36c05490eb1855b3790683239: match=437 old_pool=- old_top10=- all_top10=[4] over_top10=[1] a2_top10=[4] matchrank={'5ab56d780f65ff344900b1a2': 11}
+gold-batch01-sha256:6d2c491c7eecf0b13697b18aceb1232344d57171939c72321da336357d566d42: match=447 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'38ea5e749604f43f5f040901': 68}
+gold-batch01-sha256:d398b06298f36c11da17723f8a1765f3580d9cab8d4393f6f9742f07d3e2c6bc: match=420 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'9b5d9b92dc528a1c594e3ec2': 1}
+gold-batch01-sha256:fb01c2c2f5f0a5c0359778f2525216af20a933851661902b83de6a48c53f30aa: match=439 old_pool=- old_top10=- all_top10=[5, 8] over_top10=[3, 5] a2_top10=[5, 8] matchrank={'48ecc091e26caaa3ccbd3be5': 8, 'c10a8b3b89210595f9880fc6': 16}
+gold-batch02-sha256:cb6c1fd465588112ef0e370268ad0183ee9da3679bcfc5cccee37d207f360e49: match=429 old_pool=- old_top10=- all_top10=[2] over_top10=[2] a2_top10=[2] matchrank={'0eb4bd6e18d599063371f51b': 3}
+gold-batch02-sha256:872d60c12b846dd8b156a3726b3d01529ded02591f3943253251469a928afa0c: match=440 old_pool=- old_top10=- all_top10=[11] over_top10=[11] a2_top10=[11] matchrank={'e010fe39879d92fa21dc59d9': 14}
+gold-batch02-sha256:831d93f0ad3748b7325dd80ae7af3bab8e4ac370bf9c7ded72f6d2ece7b9a2bf: match=440 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'1c317b1dd2cebfbf9647d03e': 13}
+gold-batch02-sha256:50d51edece13e19c9b0461c5d28612c2bd57007a19ab3987f4a5506865d5e31e: match=444 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'92108b5bb6dcc5b2227d531c': 113}
+gold-batch02-sha256:b084448f7e7645c2707588f54535d32b68eb9065c1c88e40589d1d9e429577e4: match=446 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'03e5582a4a0f7d3c76a33e66': 1}
+gold-batch02-sha256:ab3b66a0a8ccc60a2d24f08a125fcbfff193b42877b83821acb4b8a8e26af2e8: match=446 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'03e5582a4a0f7d3c76a33e66': 1}
+gold-batch02-sha256:b4b194da3f8a23a7d4bfa98f30393ba5402f27c1e527513bc033dcf6b653e9b0: match=342 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'03e5582a4a0f7d3c76a33e66': 1}
+gold-batch02-sha256:74d3dfa33289009b189597355bbb9cb5852fdad9ad135fcaebf18261f4a9c632: match=446 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'03e5582a4a0f7d3c76a33e66': 1}
+gold-batch02-sha256:f2a4f74b711f2413b1402f768300d60583f1057569aa22e97a24ab2789b01491: match=447 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'92108b5bb6dcc5b2227d531c': 1}
+gold-batch02-sha256:57db9a1b0e8b19b19f4e7b31a7f8dfd92d0ed4a890ab9ede6b1a01d47bc9a206: match=443 old_pool=- old_top10=- all_top10=[5] over_top10=[1] a2_top10=[5] matchrank={'81951fb8b5e157346ed83d77': 44}
+gold-batch02-sha256:5d0db5acf870d6545edfa8cf4b6a57f9208ffe39b392c47c0d6acb2d21f96e33: match=326 old_pool=- old_top10=- all_top10=[1, 2] over_top10=[1, 2] a2_top10=[1, 2] matchrank={'611a9eb6554a2b482561c775': 1, '4931f1a7b903ba2672bbb512': 6}
+gold-batch02-sha256:4fe9bbf65368789a96fec628474fc6bfc870786f30c9c305f0da4cd8df09375a: match=440 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'a264a91966d85e2ec3b52e02': 1}
+gold-batch02-sha256:f60c41c855e4aca2f381666e34c23cc4466e2291b004c8c55340a4709193cea3: match=320 old_pool=- old_top10=- all_top10=[1] over_top10=[1] a2_top10=[1] matchrank={'95cb40813342a7e91c27e7d3': 1}

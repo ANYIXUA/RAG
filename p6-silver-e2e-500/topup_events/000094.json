@@ -1,0 +1,70 @@
+{
+  "previous_sha256": "05cd4fa5ca5f9df8274360e0568fb0c24e60a24984bad7ceec2ccd924e422048",
+  "record": {
+    "batch": 45,
+    "candidates": [
+      {
+        "answer": "207.94元",
+        "evidence": [
+          {
+            "excerpt": "WH34101003 山区、2 小时以下 207.94 129.96 38.99 38.99 1.14 —",
+            "passage_id": "620acaeddf52599dd4ae377d"
+          }
+        ],
+        "question": "山区、2 小时以下的应急发电综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "114.00工日",
+        "evidence": [
+          {
+            "excerpt": "消耗量 114.00 —",
+            "passage_id": "6d7a9e41a2a2b736a7746409"
+          }
+        ],
+        "question": "故障抢修的消耗量是多少工日？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0473",
+          "expected_behavior": "answer",
+          "generation_batch": 45,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271151,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "故障抢修的消耗量是多少工日？",
+          "question_type": "exact_fact",
+          "reference_answer": "114.00工日",
+          "source_chunk_ids": [
+            "6d7a9e41a2a2b736a7746409"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "6d7a9e41a2a2b736a7746409",
+              "excerpt": "消耗量 114.00 —"
+            }
+          ],
+          "source_page": 324,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

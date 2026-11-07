@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:28.151022+08:00",
+  "conservative_cost_yuan": 0.00072,
+  "error": null,
+  "latency_ms": 1180.360300000757,
+  "list_price_estimate_yuan": 0.00057,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 2.4GHz频段发射功率可调范围为20-100mW。[1]  \n2. 默认发射功率为100mW。[1]  \n3. 支持按百分比调节，最高不超过100mW。[1]  \n4. 可通过本地Web或和家亲APP配置。[1]  \n5. 支持省级数字家庭管理平台远程配置。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880987,
+    "id": "chatcmpl-f49b2cac-b14d-9329-82ce-388c91b813bb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2800,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2900
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,114 @@
+{
+  "previous_sha256": "180e48fef954dd177aac0f0fb936b38917bcca44ef7ce6725e675aa05f65bdb5",
+  "record": {
+    "batch": 8,
+    "candidates": [
+      {
+        "answer": "103.97元",
+        "evidence": [
+          {
+            "excerpt": "WH22105003 山区 103.97 64.98 19.49 19.49 0.57 —",
+            "passage_id": "68a1c1448a91e95c36a18aa3"
+          }
+        ],
+        "question": "山区铁塔技术测试中塔身垂直度的综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "10.94元",
+        "evidence": [
+          {
+            "excerpt": "WH22105005 平原、丘陵 10.94 6.84 2.05 2.05 0.06 —",
+            "passage_id": "68a1c1448a91e95c36a18aa3"
+          }
+        ],
+        "question": "平原、丘陵地区塔基回弹值测试的人工费是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "10.94元",
+        "evidence": [
+          {
+            "excerpt": "WH23101004 软光纤走线槽 10.94 6.84 2.05 2.05 0.06 —",
+            "passage_id": "8dfd7acc3a5fcf416e5ca637"
+          }
+        ],
+        "question": "安装软光纤走线槽的综合单价是多少元？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0473",
+          "expected_behavior": "answer",
+          "generation_batch": 8,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271114,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "平原、丘陵地区塔基回弹值测试的人工费是多少元？",
+          "question_type": "exact_fact",
+          "reference_answer": "10.94元",
+          "source_chunk_ids": [
+            "68a1c1448a91e95c36a18aa3"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "68a1c1448a91e95c36a18aa3",
+              "excerpt": "WH22105005 平原、丘陵 10.94 6.84 2.05 2.05 0.06 —"
+            }
+          ],
+          "source_page": 249,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0474",
+          "expected_behavior": "answer",
+          "generation_batch": 8,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271114,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "安装软光纤走线槽的综合单价是多少元？",
+          "question_type": "exact_fact",
+          "reference_answer": "10.94元",
+          "source_chunk_ids": [
+            "8dfd7acc3a5fcf416e5ca637"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "8dfd7acc3a5fcf416e5ca637",
+              "excerpt": "WH23101004 软光纤走线槽 10.94 6.84 2.05 2.05 0.06 —"
+            }
+          ],
+          "source_page": 250,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

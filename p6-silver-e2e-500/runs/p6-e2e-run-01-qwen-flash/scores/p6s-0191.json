@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "7.4 宽带安装和维护操作流程 ........................................................... 72",
+    "reason": "准确指出7.4节为操作流程章节",
+    "score": 1
+  },
+  "case_id": "p6s-0191",
+  "citation_correctness": {
+    "evidence": "7.4 宽带安装和维护操作流程 ........................................................... 72",
+    "reason": "所有引用[1]均对应实际上下文片段",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "7.4 宽带安装和维护操作流程 ........................................................... 72",
+    "reason": "涵盖章节位置、标题、页码与文档来源",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "7.4 宽带安装和维护操作流程 ........................................................... 72",
+    "reason": "每项事实均来自上下文[1]内容",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "06884a6b63a543abadd439b8304f5472",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,1 @@
+{"old_cases_with_relevant": 1, "fixed_cases_with_relevant": 22, "pool_min_max": [173, 447]}

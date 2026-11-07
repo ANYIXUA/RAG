@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：安装、绑扎、清理现场等。",
+    "reason": "回答与上下文工作内容一致。",
+    "score": 1
+  },
+  "case_id": "p6s-0428",
+  "citation_correctness": {
+    "evidence": "[2] 绑扎应按规范操作，确保牢固可靠。",
+    "reason": "引用编号与上下文来源匹配。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "清理现场包括移除施工垃圾与工具。[2]",
+    "reason": "涵盖绑扎与清理现场全部要求。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "绑扎应按规范操作，确保牢固可靠。[2]",
+    "reason": "每项事实均有对应引用支持。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "dc58f22621ea43318040fbcc865cffd4",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

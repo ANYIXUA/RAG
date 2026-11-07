@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:38.076770+08:00",
+  "conservative_cost_yuan": 0.00077805,
+  "error": null,
+  "latency_ms": 1436.8813999462873,
+  "list_price_estimate_yuan": 0.0006085499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 新上电池组型号未明确，但可参考24V/48V铅酸蓄电池或锂电池组。[1]  \n2. 安装时需进行开箱检验、清洁搬运及组装固定。[1]  \n3. 电池组应通过抗震架进行加固安装，确保稳定。[1]  \n4. 固定连线后需做电池标志并清洁整理。[1]  \n5. 具体型号需根据实际配置确认，建议查阅项目设计文件。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881056,
+    "id": "chatcmpl-1fb8a1fe-f6d5-92f7-8f2c-494c03377435",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2927,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3040
+    }
+  },
+  "usage_known": true
+}

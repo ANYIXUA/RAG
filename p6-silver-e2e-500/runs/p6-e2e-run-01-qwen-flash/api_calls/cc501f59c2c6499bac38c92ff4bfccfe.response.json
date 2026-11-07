@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:10.642156+08:00",
+  "conservative_cost_yuan": 0.0025196999999999997,
+  "error": null,
+  "latency_ms": 5750.333500094712,
+  "list_price_estimate_yuan": 0.0015371999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM输出中明确指出一个扇区以下的调测基站系统综合单价为2134.08元，并引用了[1]，该信息与silver_reference一致，且在上下文[1]中可直接验证。因此答案正确。\",\n    \"evidence\": \"WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每条事实均在上下文[1]中得到支持：2134.08元的单价、适用范围为3个扇区以下、包含人工/管理费/利润、计量单位为站或扇区、超出3个扇区需增量计价。所有陈述均有对应来源且无额外编造。\",\n    \"evidence\": \"WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答涵盖了问题所需的核心信息：单价数值、适用范围、费用构成、计量单位及扩展规则。虽未提及海拔或特殊地区调整系数，但这些非本题必要条件，不影响完整性。\",\n    \"evidence\": \"WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均准确对应上下文片段[1]，且该片段内容支持所陈述的每一项事实。引用格式规范，无错误引用或缺失引用。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第272页\\n定位信息：272\\n... WH23116001 调测基站系统 3 个扇区以下 2134.08 ...\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于明确可答的精确事实类问题，且上下文提供了完整答案，无需拒答。因此该维度不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881324,
+    "id": "chatcmpl-d43c13d4-d2f4-9f62-8231-95c1bf7a223e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 655,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3698,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4353
+    }
+  },
+  "usage_known": true
+}

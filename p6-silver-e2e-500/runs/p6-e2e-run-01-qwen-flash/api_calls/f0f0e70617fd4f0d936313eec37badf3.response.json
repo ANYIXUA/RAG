@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:40.818932+08:00",
+  "conservative_cost_yuan": 0.0017266500000000001,
+  "error": null,
+  "latency_ms": 3837.1804000344127,
+  "list_price_estimate_yuan": 0.00114615,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出0.29平方米\",\n    \"evidence\": \"WH23131003 顶面防水 平方米²次 52.90 33.06 9.92 9.92 0.29\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH23131003 顶面防水 平方米²次 52.90 33.06 9.92 9.92 0.29\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"WH23131003 顶面防水 平方米²次 52.90 33.06 9.92 9.92 0.29\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配正确\",\n    \"evidence\": \"WH23131003 顶面防水 平方米²次 52.90 33.06 9.92 9.92 0.29\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882077,
+    "id": "chatcmpl-d69065b3-9009-90c6-a3be-1c1efd9926aa",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 387,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3771,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4158
+    }
+  },
+  "usage_known": true
+}

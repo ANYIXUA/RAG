@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：整治固定接头盒、预留光缆，补、换挂钩及标识牌，清除吊线上的杂物等。",
+    "reason": "上下文明确支持整治内容",
+    "score": 1
+  },
+  "case_id": "p6s-0492",
+  "citation_correctness": {
+    "evidence": "清理垃圾 修补人手井， 添补缺损的 大管、子管堵 塞 井内光缆 设 施",
+    "reason": "引用编号与上下文匹配且支持语句",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "补、换挂钩及标识牌，确保线路标识清晰完整。[2]",
+    "reason": "覆盖问题所有关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "整治固定接头盒、预留光缆应按规程要求进行规范绑扎与固定。[4]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [
+    "citation_consistent",
+    "content_complete",
+    "reference_aligned"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "5b64fe709f9d4cf08634a7175b02db3e",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

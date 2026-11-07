@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:34.790574+08:00",
+  "conservative_cost_yuan": 0.0017085,
+  "error": null,
+  "latency_ms": 4061.5153000690043,
+  "list_price_estimate_yuan": 0.0011115,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持30.00元\",\n    \"evidence\": \"WH11011002 丘陵、城区 44.22 30.00 8.22 6.00 0.17 0.17\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH11011002 丘陵、城区 44.22 30.00 8.22 6.00 0.17 0.17\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有关键点\",\n    \"evidence\": \"WH11011002 丘陵、城区 44.22 30.00 8.22 6.00 0.17 0.17\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"WH11011002 丘陵、城区 44.22 30.00 8.22 6.00 0.17 0.17\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"exact_match\",\n    \"direct_reference\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882130,
+    "id": "chatcmpl-475511ea-c368-97c3-9a0c-5c732f1fa784",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 398,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3430,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3828
+    }
+  },
+  "usage_known": true
+}

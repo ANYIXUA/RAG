@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:40.334030+08:00",
+  "input_token_upper_bound": 1150,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0095"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "光路由终端二维码的尺寸大小要求是多少？ 业务规则 办理条件 操作规范 校验标准 派单规则"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "6559e7f3b0d64478afbb957c355bc857",
+  "reserved_yuan": 0.000575
+}

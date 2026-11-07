@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。",
+    "reason": "与上下文工作内容一致",
+    "score": 1
+  },
+  "case_id": "p6s-0286",
+  "citation_correctness": {
+    "evidence": "工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。",
+    "reason": "引用编号与来源匹配且支持句意",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。",
+    "reason": "覆盖全部关键施工步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "13886fc3f09b4282be8b5ea050b83a87",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

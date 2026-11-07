@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:56.436747+08:00",
+  "conservative_cost_yuan": 0.0007678499999999999,
+  "error": null,
+  "latency_ms": 1622.1024999395013,
+  "list_price_estimate_yuan": 0.0006043499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 更换井盖的项目编码是 WH12029。[1]  \n2. 项目编码 WH12029 对应的工作内容包括清理、回收旧井盖等。[1]  \n3. 该编码适用于更换井盖作业，不含更换井框。[1]  \n4. 项目名称为“更换井盖”，计量单位为“个”。[1]  \n5. 项目编码在多页文档中均有提及，一致性高。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881074,
+    "id": "chatcmpl-f5507999-560f-9793-a894-c8bc798676b6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 109,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2939,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3048
+    }
+  },
+  "usage_known": true
+}

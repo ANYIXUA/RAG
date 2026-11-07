@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:10.354521+08:00",
+  "conservative_cost_yuan": 0.00133845,
+  "error": null,
+  "latency_ms": 3322.512499988079,
+  "list_price_estimate_yuan": 0.00094995,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"明确指出计量单位为'次'，与上下文一致。\",\n    \"evidence\": \"计量单位：次\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持。\",\n    \"evidence\": \"WH34101应急发电的计量单位为“次”。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整回答计量单位并提供相关背景。\",\n    \"evidence\": \"该编码对应的工作内容包括器材准备、发电及记录时间等。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源完全匹配。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881687,
+    "id": "chatcmpl-7bf1ac5a-3a1a-9b47-8665-da4dcd1e17da",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 259,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3743,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4002
+    }
+  },
+  "usage_known": true
+}

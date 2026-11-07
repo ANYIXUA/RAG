@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:26.981187+08:00",
+  "conservative_cost_yuan": 0.00134385,
+  "error": null,
+  "latency_ms": 2676.1225999798626,
+  "list_price_estimate_yuan": 0.00094185,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确引用并匹配参考证据\",\n    \"evidence\": \"要求时延抖动不应高于平均时延200%。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"全光组网终端时延包含光网关Wi-Fi传输时延和光路由Wi-Fi传输时延\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题核心条件与场景\",\n    \"evidence\": \"多用户并发时延指标场景的用户数为12个。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"时延抖动不应高于平均时延200%。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881824,
+    "id": "chatcmpl-25396b8a-7578-9cd5-ae6d-c0cbcc75c2dc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 268,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3599,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3867
+    }
+  },
+  "usage_known": true
+}

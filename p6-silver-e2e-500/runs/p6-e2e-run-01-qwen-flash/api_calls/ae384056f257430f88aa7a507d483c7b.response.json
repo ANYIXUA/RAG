@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:19.971225+08:00",
+  "conservative_cost_yuan": 0.0007167,
+  "error": null,
+  "latency_ms": 1625.09880005382,
+  "list_price_estimate_yuan": 0.0005472000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护成本包含人工、材料、备品备件及机械仪表费用。[1]  \n2. 涉及管理费、规费和销项税额支出。[1]  \n3. 包括水电蒸汽费、特殊地区增加费等措施项目费用。[2]  \n4. 含文明施工费、车辆使用费、夜间作业增加费等。[3]  \n5. 由维护分项作业费、材料购置费、机械使用费等构成。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881038,
+    "id": "chatcmpl-ee54a274-252b-9c3d-91cf-f3fe2b7f6670",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 113,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2518,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2631
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,500 @@
+{"attempt": 1, "case_id": "p6s-0001", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.7353005001787096}
+{"attempt": 1, "case_id": "p6s-0002", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.6002994999289513}
+{"attempt": 1, "case_id": "p6s-0003", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.768778800033033}
+{"attempt": 1, "case_id": "p6s-0004", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 3.0246148000005633}
+{"attempt": 1, "case_id": "p6s-0005", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.94272239995189}
+{"attempt": 1, "case_id": "p6s-0006", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.948968700133264}
+{"attempt": 1, "case_id": "p6s-0007", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.251913300016895}
+{"attempt": 1, "case_id": "p6s-0008", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.595273199956864}
+{"attempt": 1, "case_id": "p6s-0009", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.7183530000038445}
+{"attempt": 1, "case_id": "p6s-0010", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.794359999941662}
+{"attempt": 1, "case_id": "p6s-0011", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.9026407999917865}
+{"attempt": 1, "case_id": "p6s-0012", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.202636400004849}
+{"attempt": 1, "case_id": "p6s-0013", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.3008502000011504}
+{"attempt": 1, "case_id": "p6s-0014", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.921614299993962}
+{"attempt": 1, "case_id": "p6s-0015", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.0645214000251144}
+{"attempt": 1, "case_id": "p6s-0016", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.544398199999705}
+{"attempt": 1, "case_id": "p6s-0017", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1495661998633295}
+{"attempt": 1, "case_id": "p6s-0018", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.5955123000312597}
+{"attempt": 1, "case_id": "p6s-0019", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1845374000258744}
+{"attempt": 1, "case_id": "p6s-0020", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.2347082998603582}
+{"attempt": 1, "case_id": "p6s-0021", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.8187713001389056}
+{"attempt": 1, "case_id": "p6s-0022", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.092745400033891}
+{"attempt": 1, "case_id": "p6s-0023", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.5008414001204073}
+{"attempt": 1, "case_id": "p6s-0024", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9006214998662472}
+{"attempt": 1, "case_id": "p6s-0025", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.6266107999254018}
+{"attempt": 1, "case_id": "p6s-0026", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9367228001356125}
+{"attempt": 1, "case_id": "p6s-0027", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.11437730002217}
+{"attempt": 1, "case_id": "p6s-0028", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.5312894000671804}
+{"attempt": 1, "case_id": "p6s-0029", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.0780153998639435}
+{"attempt": 1, "case_id": "p6s-0030", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.6061638998799026}
+{"attempt": 1, "case_id": "p6s-0031", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.2887766999192536}
+{"attempt": 1, "case_id": "p6s-0032", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.367920699995011}
+{"attempt": 1, "case_id": "p6s-0033", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.540512200212106}
+{"attempt": 1, "case_id": "p6s-0034", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.06810069992207}
+{"attempt": 1, "case_id": "p6s-0035", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.097652700031176}
+{"attempt": 1, "case_id": "p6s-0036", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.7003385999705642}
+{"attempt": 1, "case_id": "p6s-0037", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.8607132998295128}
+{"attempt": 1, "case_id": "p6s-0038", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.2763142997864634}
+{"attempt": 1, "case_id": "p6s-0039", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.689895899966359}
+{"attempt": 1, "case_id": "p6s-0040", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.860633100150153}
+{"attempt": 1, "case_id": "p6s-0041", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.7145064999349415}
+{"attempt": 1, "case_id": "p6s-0042", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.022561800200492}
+{"attempt": 1, "case_id": "p6s-0043", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.920814299955964}
+{"attempt": 1, "case_id": "p6s-0044", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.181055099936202}
+{"attempt": 1, "case_id": "p6s-0045", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.608839799882844}
+{"attempt": 1, "case_id": "p6s-0046", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.5603851000778377}
+{"attempt": 1, "case_id": "p6s-0047", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.546333400066942}
+{"attempt": 1, "case_id": "p6s-0048", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.2198637002147734}
+{"attempt": 1, "case_id": "p6s-0049", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.640803199959919}
+{"attempt": 1, "case_id": "p6s-0050", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.6760911999735981}
+{"attempt": 1, "case_id": "p6s-0051", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.945184800075367}
+{"attempt": 1, "case_id": "p6s-0052", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.8768880998250097}
+{"attempt": 1, "case_id": "p6s-0053", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 4.444249999942258}
+{"attempt": 1, "case_id": "p6s-0054", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 3.179942699847743}
+{"attempt": 1, "case_id": "p6s-0055", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 3.0304209000896662}
+{"attempt": 1, "case_id": "p6s-0056", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.8241681999061257}
+{"attempt": 1, "case_id": "p6s-0057", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1159687999170274}
+{"attempt": 1, "case_id": "p6s-0058", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1025912000332028}
+{"attempt": 1, "case_id": "p6s-0059", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.3244310999289155}
+{"attempt": 1, "case_id": "p6s-0060", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.6479831000324339}
+{"attempt": 1, "case_id": "p6s-0061", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.7923562000505626}
+{"attempt": 1, "case_id": "p6s-0062", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1212040001992136}
+{"attempt": 1, "case_id": "p6s-0063", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.032183100003749}
+{"attempt": 1, "case_id": "p6s-0064", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.6440608999691904}
+{"attempt": 1, "case_id": "p6s-0065", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.4286746000871062}
+{"attempt": 1, "case_id": "p6s-0066", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.046128800138831}
+{"attempt": 1, "case_id": "p6s-0067", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1484056999906898}
+{"attempt": 1, "case_id": "p6s-0068", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9664256998803467}
+{"attempt": 1, "case_id": "p6s-0069", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.6007696001324803}
+{"attempt": 1, "case_id": "p6s-0070", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.108127099927515}
+{"attempt": 1, "case_id": "p6s-0071", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.621328799985349}
+{"attempt": 1, "case_id": "p6s-0072", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.3332471000030637}
+{"attempt": 1, "case_id": "p6s-0073", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.5085746999830008}
+{"attempt": 1, "case_id": "p6s-0074", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1883014000486583}
+{"attempt": 1, "case_id": "p6s-0075", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9925634998362511}
+{"attempt": 1, "case_id": "p6s-0076", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.0778820000123233}
+{"attempt": 1, "case_id": "p6s-0077", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.07661039987579}
+{"attempt": 1, "case_id": "p6s-0078", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.357388600008562}
+{"attempt": 1, "case_id": "p6s-0079", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.578060899861157}
+{"attempt": 1, "case_id": "p6s-0080", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 3.2058934001252055}
+{"attempt": 1, "case_id": "p6s-0081", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9546922999434173}
+{"attempt": 1, "case_id": "p6s-0082", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.3526765999849886}
+{"attempt": 1, "case_id": "p6s-0083", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.2924937999341637}
+{"attempt": 1, "case_id": "p6s-0084", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 3.217695100000128}
+{"attempt": 1, "case_id": "p6s-0085", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.0189102001022547}
+{"attempt": 1, "case_id": "p6s-0086", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.0665208999998868}
+{"attempt": 1, "case_id": "p6s-0087", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.268881299998611}
+{"attempt": 1, "case_id": "p6s-0088", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 1.962250699987635}
+{"attempt": 1, "case_id": "p6s-0089", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.350603399798274}
+{"attempt": 1, "case_id": "p6s-0090", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.222045399947092}
+{"attempt": 1, "case_id": "p6s-0091", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.342667399905622}
+{"attempt": 1, "case_id": "p6s-0092", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.6105056998785585}
+{"attempt": 1, "case_id": "p6s-0093", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.206597700016573}
+{"attempt": 1, "case_id": "p6s-0094", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.7946377999614924}
+{"attempt": 1, "case_id": "p6s-0095", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.165755999973044}
+{"attempt": 1, "case_id": "p6s-0096", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.648373299976811}
+{"attempt": 1, "case_id": "p6s-0097", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.4136192998848855}
+{"attempt": 1, "case_id": "p6s-0098", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.201522900024429}
+{"attempt": 1, "case_id": "p6s-0099", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.438980200095102}
+{"attempt": 1, "case_id": "p6s-0100", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.3365048998966813}
+{"attempt": 1, "case_id": "p6s-0101", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.308159900130704}
+{"attempt": 1, "case_id": "p6s-0102", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.37152470019646}
+{"attempt": 1, "case_id": "p6s-0103", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.672450799960643}
+{"attempt": 1, "case_id": "p6s-0104", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 3.0406859999056906}
+{"attempt": 1, "case_id": "p6s-0105", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.3311790998559445}
+{"attempt": 1, "case_id": "p6s-0106", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9346505999565125}
+{"attempt": 1, "case_id": "p6s-0107", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 3.392041299957782}
+{"attempt": 1, "case_id": "p6s-0108", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.6723100999370217}
+{"attempt": 1, "case_id": "p6s-0109", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.23047999991104}
+{"attempt": 1, "case_id": "p6s-0110", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 3.3026805999688804}
+{"attempt": 1, "case_id": "p6s-0111", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 3.1655786000192165}
+{"attempt": 1, "case_id": "p6s-0112", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 3.8985884999856353}
+{"attempt": 1, "case_id": "p6s-0113", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.980449300026521}
+{"attempt": 1, "case_id": "p6s-0114", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.7213556999340653}
+{"attempt": 1, "case_id": "p6s-0115", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.6526587000116706}
+{"attempt": 1, "case_id": "p6s-0116", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.544530500192195}
+{"attempt": 1, "case_id": "p6s-0117", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.640705700032413}
+{"attempt": 1, "case_id": "p6s-0118", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.722277299966663}
+{"attempt": 1, "case_id": "p6s-0119", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.3366092001087964}
+{"attempt": 1, "case_id": "p6s-0120", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.198280199896544}
+{"attempt": 1, "case_id": "p6s-0121", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.084092800039798}
+{"attempt": 1, "case_id": "p6s-0122", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.1503545998129994}
+{"attempt": 1, "case_id": "p6s-0123", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.0321205998770893}
+{"attempt": 1, "case_id": "p6s-0124", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.0666968999430537}
+{"attempt": 1, "case_id": "p6s-0125", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.200414599850774}
+{"attempt": 1, "case_id": "p6s-0126", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.894837599946186}
+{"attempt": 1, "case_id": "p6s-0127", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.054168100003153}
+{"attempt": 1, "case_id": "p6s-0128", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2983017000369728}
+{"attempt": 1, "case_id": "p6s-0129", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.1111136998515576}
+{"attempt": 1, "case_id": "p6s-0130", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 4.264602599898353}
+{"attempt": 1, "case_id": "p6s-0131", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.8981268000788987}
+{"attempt": 1, "case_id": "p6s-0132", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.3061466000508517}
+{"attempt": 1, "case_id": "p6s-0133", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.320455899927765}
+{"attempt": 1, "case_id": "p6s-0134", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.707698999904096}
+{"attempt": 1, "case_id": "p6s-0135", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.471154799917713}
+{"attempt": 1, "case_id": "p6s-0136", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.391504199942574}
+{"attempt": 1, "case_id": "p6s-0137", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.058079899987206}
+{"attempt": 1, "case_id": "p6s-0138", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.596758099971339}
+{"attempt": 1, "case_id": "p6s-0139", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.4789577999617904}
+{"attempt": 1, "case_id": "p6s-0140", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.402594899991527}
+{"attempt": 1, "case_id": "p6s-0141", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.3241051000077277}
+{"attempt": 1, "case_id": "p6s-0142", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.5402512000873685}
+{"attempt": 1, "case_id": "p6s-0143", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.7351442999206483}
+{"attempt": 1, "case_id": "p6s-0144", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2114097999874502}
+{"attempt": 1, "case_id": "p6s-0145", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9766287000384182}
+{"attempt": 1, "case_id": "p6s-0146", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.283854099921882}
+{"attempt": 1, "case_id": "p6s-0147", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.037516599986702}
+{"attempt": 1, "case_id": "p6s-0148", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.3142846999689937}
+{"attempt": 1, "case_id": "p6s-0149", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.6175726999063045}
+{"attempt": 1, "case_id": "p6s-0150", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.0089570998679847}
+{"attempt": 1, "case_id": "p6s-0151", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 3.026904199970886}
+{"attempt": 1, "case_id": "p6s-0152", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.458492500009015}
+{"attempt": 1, "case_id": "p6s-0153", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.3822147001046687}
+{"attempt": 1, "case_id": "p6s-0154", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.520249699940905}
+{"attempt": 1, "case_id": "p6s-0155", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.273807100020349}
+{"attempt": 1, "case_id": "p6s-0156", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.496644299943}
+{"attempt": 1, "case_id": "p6s-0157", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 3.530205399962142}
+{"attempt": 1, "case_id": "p6s-0158", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.7272199001163244}
+{"attempt": 1, "case_id": "p6s-0159", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.0958865000866354}
+{"attempt": 1, "case_id": "p6s-0160", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.1123234000988305}
+{"attempt": 1, "case_id": "p6s-0161", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.224639899795875}
+{"attempt": 1, "case_id": "p6s-0162", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.1500895998906344}
+{"attempt": 1, "case_id": "p6s-0163", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 1.882343899924308}
+{"attempt": 1, "case_id": "p6s-0164", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.7444011999759823}
+{"attempt": 1, "case_id": "p6s-0165", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1364498999901116}
+{"attempt": 1, "case_id": "p6s-0166", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.568353299982846}
+{"attempt": 1, "case_id": "p6s-0167", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.2944879999849945}
+{"attempt": 1, "case_id": "p6s-0168", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.2920840000733733}
+{"attempt": 1, "case_id": "p6s-0169", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.00017930008471}
+{"attempt": 1, "case_id": "p6s-0170", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.8703615998383611}
+{"attempt": 1, "case_id": "p6s-0171", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.6565624999348074}
+{"attempt": 1, "case_id": "p6s-0172", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.1266189001034945}
+{"attempt": 1, "case_id": "p6s-0173", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.5264715999364853}
+{"attempt": 1, "case_id": "p6s-0174", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.18040299997665}
+{"attempt": 1, "case_id": "p6s-0175", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1777329000178725}
+{"attempt": 1, "case_id": "p6s-0176", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.21213599992916}
+{"attempt": 1, "case_id": "p6s-0177", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.310758100124076}
+{"attempt": 1, "case_id": "p6s-0178", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.458405999932438}
+{"attempt": 1, "case_id": "p6s-0179", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.123143899952993}
+{"attempt": 1, "case_id": "p6s-0180", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2261632001027465}
+{"attempt": 1, "case_id": "p6s-0181", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.218305799877271}
+{"attempt": 1, "case_id": "p6s-0182", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.9040183001197875}
+{"attempt": 1, "case_id": "p6s-0183", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.2194759999401867}
+{"attempt": 1, "case_id": "p6s-0184", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.1745936998631805}
+{"attempt": 1, "case_id": "p6s-0185", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1617387000005692}
+{"attempt": 1, "case_id": "p6s-0186", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1022472998593003}
+{"attempt": 1, "case_id": "p6s-0187", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.1739353998564184}
+{"attempt": 1, "case_id": "p6s-0188", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.268402799963951}
+{"attempt": 1, "case_id": "p6s-0189", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 1.9492819998413324}
+{"attempt": 1, "case_id": "p6s-0190", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9211327000521123}
+{"attempt": 1, "case_id": "p6s-0191", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.7389479000121355}
+{"attempt": 1, "case_id": "p6s-0192", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2301775000523776}
+{"attempt": 1, "case_id": "p6s-0193", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.516605499899015}
+{"attempt": 1, "case_id": "p6s-0194", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.230126600014046}
+{"attempt": 1, "case_id": "p6s-0195", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2283856000285596}
+{"attempt": 1, "case_id": "p6s-0196", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.192657999927178}
+{"attempt": 1, "case_id": "p6s-0197", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.4402501999866217}
+{"attempt": 1, "case_id": "p6s-0198", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.3418171999510378}
+{"attempt": 1, "case_id": "p6s-0199", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.347926199901849}
+{"attempt": 1, "case_id": "p6s-0200", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.296380699845031}
+{"attempt": 1, "case_id": "p6s-0201", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.7843103997875005}
+{"attempt": 1, "case_id": "p6s-0202", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.8377351998351514}
+{"attempt": 1, "case_id": "p6s-0203", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.348695500055328}
+{"attempt": 1, "case_id": "p6s-0204", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.3357811998575926}
+{"attempt": 1, "case_id": "p6s-0205", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.6306883997749537}
+{"attempt": 1, "case_id": "p6s-0206", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.218266800045967}
+{"attempt": 1, "case_id": "p6s-0207", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.704070599982515}
+{"attempt": 1, "case_id": "p6s-0208", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.7004390999209136}
+{"attempt": 1, "case_id": "p6s-0209", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.060408700024709}
+{"attempt": 1, "case_id": "p6s-0210", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.7000855000223964}
+{"attempt": 1, "case_id": "p6s-0211", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.4779572999104857}
+{"attempt": 1, "case_id": "p6s-0212", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 1.9122852999716997}
+{"attempt": 1, "case_id": "p6s-0213", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.0243232999928296}
+{"attempt": 1, "case_id": "p6s-0214", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 3.9607605999335647}
+{"attempt": 1, "case_id": "p6s-0215", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.7803438999690115}
+{"attempt": 1, "case_id": "p6s-0216", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.3721581001300365}
+{"attempt": 1, "case_id": "p6s-0217", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.4083114999812096}
+{"attempt": 1, "case_id": "p6s-0218", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.128731800010428}
+{"attempt": 1, "case_id": "p6s-0219", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.5962477000430226}
+{"attempt": 1, "case_id": "p6s-0220", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.8105500999372452}
+{"attempt": 1, "case_id": "p6s-0221", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.563017599983141}
+{"attempt": 1, "case_id": "p6s-0222", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.444793199887499}
+{"attempt": 1, "case_id": "p6s-0223", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.462474700063467}
+{"attempt": 1, "case_id": "p6s-0224", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.058703300077468}
+{"attempt": 1, "case_id": "p6s-0225", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.0079907001927495}
+{"attempt": 1, "case_id": "p6s-0226", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.306453699944541}
+{"attempt": 1, "case_id": "p6s-0227", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.1001335999462754}
+{"attempt": 1, "case_id": "p6s-0228", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.5128177001606673}
+{"attempt": 1, "case_id": "p6s-0229", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.2411885000765324}
+{"attempt": 1, "case_id": "p6s-0230", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2021922999992967}
+{"attempt": 1, "case_id": "p6s-0231", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.8399616000242531}
+{"attempt": 1, "case_id": "p6s-0232", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.878452399978414}
+{"attempt": 1, "case_id": "p6s-0233", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.9075545999221504}
+{"attempt": 1, "case_id": "p6s-0234", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.2035803999751806}
+{"attempt": 1, "case_id": "p6s-0235", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9344542000908405}
+{"attempt": 1, "case_id": "p6s-0236", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 2.133587700081989}
+{"attempt": 1, "case_id": "p6s-0237", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 1.7883522999472916}
+{"attempt": 1, "case_id": "p6s-0238", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 1.7445038000587374}
+{"attempt": 1, "case_id": "p6s-0239", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 1.6883894000202417}
+{"attempt": 1, "case_id": "p6s-0240", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2625193998683244}
+{"attempt": 1, "case_id": "p6s-0241", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.294216400012374}
+{"attempt": 1, "case_id": "p6s-0242", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.1107034999877214}
+{"attempt": 1, "case_id": "p6s-0243", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 2.3426434001885355}
+{"attempt": 1, "case_id": "p6s-0244", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 1.8605626998469234}
+{"attempt": 1, "case_id": "p6s-0245", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 2.3865176998078823}
+{"attempt": 1, "case_id": "p6s-0246", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 2.9516112999990582}
+{"attempt": 1, "case_id": "p6s-0247", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 2.208416599780321}
+{"attempt": 1, "case_id": "p6s-0248", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.9402345998678356}
+{"attempt": 1, "case_id": "p6s-0249", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.2381297000683844}
+{"attempt": 1, "case_id": "p6s-0250", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.48636810015887}
+{"attempt": 1, "case_id": "p6s-0251", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.5303476999979466}
+{"attempt": 1, "case_id": "p6s-0252", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.1949483999051154}
+{"attempt": 1, "case_id": "p6s-0253", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.2603545000310987}
+{"attempt": 1, "case_id": "p6s-0254", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.092321899952367}
+{"attempt": 1, "case_id": "p6s-0255", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 1.9283310000319034}
+{"attempt": 1, "case_id": "p6s-0256", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 1.6865656999871135}
+{"attempt": 1, "case_id": "p6s-0257", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 1.9150309001561254}
+{"attempt": 1, "case_id": "p6s-0258", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.082274799933657}
+{"attempt": 1, "case_id": "p6s-0259", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 1.7723681000061333}
+{"attempt": 1, "case_id": "p6s-0260", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.5822918000631034}
+{"attempt": 1, "case_id": "p6s-0261", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 2.3872885000891984}
+{"attempt": 1, "case_id": "p6s-0262", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 2.46247800020501}
+{"attempt": 1, "case_id": "p6s-0263", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 2.137434900039807}
+{"attempt": 1, "case_id": "p6s-0264", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 2.0267034000717103}
+{"attempt": 1, "case_id": "p6s-0265", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 1.8216765001416206}
+{"attempt": 1, "case_id": "p6s-0266", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 1.8342943999450654}
+{"attempt": 1, "case_id": "p6s-0267", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.4485679999925196}
+{"attempt": 1, "case_id": "p6s-0268", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.430584399960935}
+{"attempt": 1, "case_id": "p6s-0269", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.251959200017154}
+{"attempt": 1, "case_id": "p6s-0270", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 1.9681417001411319}
+{"attempt": 1, "case_id": "p6s-0271", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.5762570998631418}
+{"attempt": 1, "case_id": "p6s-0272", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2105525999795645}
+{"attempt": 1, "case_id": "p6s-0273", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 1.990316899958998}
+{"attempt": 1, "case_id": "p6s-0274", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 2.2243877998553216}
+{"attempt": 1, "case_id": "p6s-0275", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.4306661000009626}
+{"attempt": 1, "case_id": "p6s-0276", "error": null, "question_type": "procedure", "state": "success", "timeout": false, "wall_seconds": 2.220426900079474}
+{"attempt": 1, "case_id": "p6s-0277", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 2.044669199967757}
+{"attempt": 1, "case_id": "p6s-0278", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 2.8906298000365496}
+{"attempt": 1, "case_id": "p6s-0279", "error": null, "question_type": "unanswerable", "state": "success", "timeout": false, "wall_seconds": 2.368282100185752}
+{"attempt": 1, "case_id": "p6s-0280", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 2.6484282999299467}
+{"attempt": 1, "case_id": "p6s-0281", "error": null, "question_type": "exact_fact", "state": "success", "timeout": false, "wall_seconds": 1.6063696001656353}
+{"attempt": 1, "case_id": "p6s-0282", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.244506800081581}
+{"attempt": 1, "case_id": "p6s-0283", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.2883379000704736}
+{"attempt": 1, "case_id": "p6s-0284", "error": null, "question_type": "multi_condition", "state": "success", "timeout": false, "wall_seconds": 2.144506399985403}
+{"attempt": 1, "case_id": "p6s-0285", "error": null, "question_type": "colloquial", "state": "success", "timeout": false, "wall_seconds": 1.9145002998411655}
+{"case_id": "p6s-0286", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0287", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0288", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0289", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0290", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0291", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0292", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0293", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0294", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0295", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0296", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0297", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0298", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0299", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0300", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0301", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0302", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0303", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0304", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0305", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0306", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0307", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0308", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0309", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0310", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0311", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0312", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0313", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0314", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0315", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0316", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0317", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0318", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0319", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0320", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0321", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0322", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0323", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0324", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0325", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0326", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0327", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0328", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0329", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0330", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0331", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0332", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0333", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0334", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0335", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0336", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0337", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0338", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0339", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0340", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0341", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0342", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0343", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0344", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0345", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0346", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0347", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0348", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0349", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0350", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0351", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0352", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0353", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0354", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0355", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0356", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0357", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0358", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0359", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0360", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0361", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0362", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0363", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0364", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0365", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0366", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0367", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0368", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0369", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0370", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0371", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0372", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0373", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0374", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0375", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0376", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0377", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0378", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0379", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0380", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0381", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0382", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0383", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0384", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0385", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0386", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0387", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0388", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0389", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0390", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0391", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0392", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0393", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0394", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0395", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0396", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0397", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0398", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0399", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0400", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0401", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0402", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0403", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0404", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0405", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0406", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0407", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0408", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0409", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0410", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0411", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0412", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0413", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0414", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0415", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0416", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0417", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0418", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0419", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0420", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0421", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0422", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0423", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0424", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0425", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0426", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0427", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0428", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0429", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0430", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0431", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0432", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0433", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0434", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0435", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0436", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0437", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0438", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0439", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0440", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0441", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0442", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0443", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0444", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0445", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0446", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0447", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0448", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0449", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0450", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0451", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0452", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0453", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0454", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0455", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0456", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0457", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0458", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0459", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0460", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0461", "question_type": "colloquial", "state": "pending"}
+{"case_id": "p6s-0462", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0463", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0464", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0465", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0466", "question_type": "multi_condition", "state": "pending"}
+{"case_id": "p6s-0467", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0468", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0469", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0470", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0471", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0472", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0473", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0474", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0475", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0476", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0477", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0478", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0479", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0480", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0481", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0482", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0483", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0484", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0485", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0486", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0487", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0488", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0489", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0490", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0491", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0492", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0493", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0494", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0495", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0496", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0497", "question_type": "exact_fact", "state": "pending"}
+{"case_id": "p6s-0498", "question_type": "procedure", "state": "pending"}
+{"case_id": "p6s-0499", "question_type": "unanswerable", "state": "pending"}
+{"case_id": "p6s-0500", "question_type": "multi_condition", "state": "pending"}

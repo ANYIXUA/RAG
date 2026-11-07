@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:35.460227+08:00",
+  "conservative_cost_yuan": 0.0007435499999999999,
+  "error": null,
+  "latency_ms": 1311.437299940735,
+  "list_price_estimate_yuan": 0.0005905499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 熔断器温升应小于规定值80摄氏度。[1]  \n2. 该标准适用于直流熔断器的测量检查。[1]  \n3. 汇流排温升同样要求小于80摄氏度。[1]  \n4. 温升检测需在卡口紧固无松动前提下进行。[1]  \n5. 若温升超标，需及时排查并处理。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880874,
+    "id": "chatcmpl-9a4a640f-78d5-9fb0-90c1-aa51ae2155c5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2917,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3019
+    }
+  },
+  "usage_known": true
+}

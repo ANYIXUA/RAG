@@ -1,0 +1,125 @@
+{
+  "directories": [
+    "cases",
+    "attempts",
+    "api_calls",
+    "scores",
+    "scores_recovered"
+  ],
+  "files": {
+    "FINAL_REPORT.md": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\FINAL_REPORT.md",
+      "sha256": "57a98181f4470e41e028269868a9f3804d746678f6760a65d11f5f8e2292185f"
+    },
+    "agent_trace_findings.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\agent_trace_findings.json",
+      "sha256": "8838d2c4f35dfbfe58c8bda2ee0684bea689763efba4f9ff07adbb691036a9cd"
+    },
+    "answers.jsonl": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\answers.jsonl",
+      "sha256": "cdbd67807a3ebac86cc4ab207818089042390810ebc4c9ba3cb29210ed9ce8e3"
+    },
+    "authorization.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\authorization.json",
+      "sha256": "4522ecbdd326b9c363a329ee0959b567139d13dec82222deb3ba26be8baf12d9"
+    },
+    "database_after.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\database_after.json",
+      "sha256": "02280efa4aaad1716e8d0d29e402197a672f03e6e0a50c066a1641b3ea4995b6"
+    },
+    "effective_settings_redacted.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\effective_settings_redacted.json",
+      "sha256": "da173111511181621a192569d7fa3e81f1e458ed9b312a73b9dab7b3600de859"
+    },
+    "execution_notes.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\execution_notes.json",
+      "sha256": "8eac1acdd28dced9656b2a6bdec7a89b401d671d6b85e98caefe47754de81ac7"
+    },
+    "execution_states.jsonl": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\execution_states.jsonl",
+      "sha256": "ae267093928cb40a54a15a0cf9f4398af11f2c095919a5ac348043720e98192d"
+    },
+    "failure_analysis.md": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\failure_analysis.md",
+      "sha256": "4ec9ed7601dd62f02fd592b4e5ef96eb6a48ed7d090d4e66bad2a3836531b6b3"
+    },
+    "failure_diagnostics.jsonl": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\failure_diagnostics.jsonl",
+      "sha256": "5cd968573e001cdfb349e5023ddae631240066da8e69ef37639939b08e901113"
+    },
+    "final_validation.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\final_validation.json",
+      "sha256": "3efdb4cda406b7460caa4d13d62684204e9b8fc823ac770e3c36fc3e9dc9c2c9"
+    },
+    "human_spot_check_40.csv": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\human_spot_check_40.csv",
+      "sha256": "3727f4de7ed530704a5a4d89b99c48650a05edbaff0707e82823b61e1842ae0c"
+    },
+    "human_spot_check_40.jsonl": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\human_spot_check_40.jsonl",
+      "sha256": "a54582361338df87219d8d6a47b383b925aed7caa3857774aba4d2a5ba4c49b3"
+    },
+    "input_preflight.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\input_preflight.json",
+      "sha256": "d57f60f94c63a0546922312dc9472781f1448422a654e3e455d5bd792f1b52b4"
+    },
+    "judge_format_repair.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\judge_format_repair.json",
+      "sha256": "6c6a518e4fc70922b93796f37b805ff0a49dd099015c58a08cb9354c3819341b"
+    },
+    "manual_attention.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\manual_attention.json",
+      "sha256": "f74271a99ec4f88815f896ddd3b164e3d4343cca3c853a2a057e5f46d055634f"
+    },
+    "measurement_protocol.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\measurement_protocol.json",
+      "sha256": "622c8bbe4100bae6c6b3e05e0f7d647085ea6afaa96c905f190dadab2f0ec3d0"
+    },
+    "metrics.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\metrics.json",
+      "sha256": "9abdc01295c85d8fc4b233ffa9efcb63e7943f348664108b13471d40be1d76ab"
+    },
+    "pricing_verification.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\pricing_verification.json",
+      "sha256": "060fe6defec1614cc830d444e5d3bf993c3203e6369065b8bb4e8d42f8cf1920"
+    },
+    "protected_inputs_after.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\protected_inputs_after.json",
+      "sha256": "0f35873ff7ca39b0e2dfd1da0221a6f6019fee912964c9497f71685048c484bb"
+    },
+    "pytest_delivery.xml": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\pytest_delivery.xml",
+      "sha256": "b462188687116bd3d73725e531bd51098fc56b22716bd07b80e74dfdf216254e"
+    },
+    "resume_idempotency.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\resume_idempotency.json",
+      "sha256": "320d99e6f9f592adf9b25cfef5389a5eec14765772cd2a080b611f70d27f5bf1"
+    },
+    "run_config.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\run_config.json",
+      "sha256": "cbb2953eee6f0114138373a8bead3345a3a3bf644a860ce02d715c1503dd5e0e"
+    },
+    "run_status.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\run_status.json",
+      "sha256": "85d0ee830002b1a306a54e384eaeef8d4acbc147751c5f5d78b40e1193bb18ac"
+    },
+    "runtime_environment.json": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\runtime_environment.json",
+      "sha256": "f61acf7880d14dfa4601c968b10dbf9dde6864a6c7f283be830cabe6e258fe79"
+    },
+    "scores.jsonl": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scores.jsonl",
+      "sha256": "5252c02b0d3fc8b4a0843e031c10a1756bfae3a9407bf14ff403ee91e1864067"
+    },
+    "scoring_failure_details.jsonl": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\scoring_failure_details.jsonl",
+      "sha256": "03ab94d1ed6d9aa22c5186b5d40917aac9ebfdd8f5c90433d905e9d7978ae2eb"
+    },
+    "traces.jsonl": {
+      "path": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash\\traces.jsonl",
+      "sha256": "ed0aedecd637c17e3e141735616b296285de9541fc353bb2095e8b0e9846f5cb"
+    }
+  },
+  "note": "40 human review entries have blank signoff fields; same-model exploratory scores are not human accuracy.",
+  "run_directory": "D:\\AgentAIProgect\\RAG\\p6-silver-e2e-500\\runs\\p6-e2e-run-01-qwen-flash"
+}

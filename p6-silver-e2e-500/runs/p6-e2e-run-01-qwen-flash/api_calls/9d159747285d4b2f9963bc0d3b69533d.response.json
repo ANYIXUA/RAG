@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:11.593571+08:00",
+  "conservative_cost_yuan": 0.0029381999999999998,
+  "error": null,
+  "latency_ms": 7621.797400061041,
+  "list_price_estimate_yuan": 0.0016992,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际回答中关于表—09—3由招标人填写‘暂估单价’的陈述与上下文[2]完全一致，且该信息在原文中明确指出。其他补充内容如项目名称和数量由招标人填写、暂估金额计入总价、结算按合同约定等均来自上下文[2]和[3]，事实准确，无错误。\",\n    \"evidence\": \"来源：电信基础设施维护规程.pdf\\n引用标签：[2]\\n标题：第113页\\n定位信息：113\\n内容：注：此表由招标人填写“暂估单价”，投标人应将“暂估金额”合计计入投标总价中，结算时按合同约定结算金额填写。\\n表—09—3\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每一条回答中的关键事实均有对应上下文支持：1. ‘暂估单价’由[2]支持；2. ‘项目名称和数量’由[3]支持；3. ‘暂估金额计入总价’由[2]支持；4. ‘结算按合同约定’由[2]支持；5. ‘属于招标控制价使用表格’由[1]支持。所有陈述均严格基于提供的上下文片段，无虚构或推断。\",\n    \"evidence\": \"[2]: 注：此表由招标人填写“暂估单价”，投标人应将“暂估金额”合计计入投标总价中，结算时按合同约定结算金额填写。\\n表—09—3\\n[3]: 注：此表项目名称、数量由招标人填写。编制招标控制价时，单价由招标人按有关计价规定确定；投标时，单价由投标人自主报价，计入投标总价中。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题询问的是‘招标人填写的项目是什么内容’，回答完整覆盖了招标人需填写的内容：暂估单价、项目名称、数量，并补充了用途（暂估金额计入总价）和结算方式，以及表格归属（招标控制价使用表格），信息全面，未遗漏必要条件。\",\n    \"evidence\": \"[2]: 注：此表由招标人填写“暂估单价”……\\n[3]: 注：此表项目名称、数量由招标人填写。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个引用编号均正确对应实际上下文来源：[2]用于‘暂估单价’和‘结算按合同约定’；[3]用于‘项目名称和数量’；[1]用于‘属于招标控制价使用表格’。引用编号与上下文片段一一匹配，且所引内容支持对应句子，无错引或漏引。\",\n    \"evidence\": \"[1]: 招标控制价使用表格包括：封—2、表—01、表—02、表—04、表—05、表—06、表—07、表—08、表—09（不含表—09—3～表—09—5）、表—10\\n[2]: 注：此表由招标人填写“暂估单价”……\\n[3]: 注：此表项目名称、数量由招标人填写。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为具体事实类问题，上下文中有明确答案，无需拒答。模型正常回答，符合要求，因此该项不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881264,
+    "id": "chatcmpl-5e694f17-475c-9120-93ba-1072f75bafb5",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 826,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3068,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3894
+    }
+  },
+  "usage_known": true
+}

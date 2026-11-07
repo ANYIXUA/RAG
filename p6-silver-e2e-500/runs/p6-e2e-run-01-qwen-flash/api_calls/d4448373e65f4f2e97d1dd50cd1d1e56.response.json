@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:16.875600+08:00",
+  "conservative_cost_yuan": 0.0007720499999999999,
+  "error": null,
+  "latency_ms": 1375.5271998234093,
+  "list_price_estimate_yuan": 0.00060105,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 机械仪表按5年使用期计算年使用费。[1]  \n2. 年使用费=（原值×97%÷5 + 原值×2%）+计量检定费。[1]  \n3. 维修费率为2%，残值为3%。[1]  \n4. 年使用费单价指标见表9.5，可查具体设备单价。[2]  \n5. 使用费计算包含原值分摊与维修成本。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881155,
+    "id": "chatcmpl-6929a328-1e32-9e15-9a43-3e64e552c58c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 114,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2867,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2981
+    }
+  },
+  "usage_known": true
+}

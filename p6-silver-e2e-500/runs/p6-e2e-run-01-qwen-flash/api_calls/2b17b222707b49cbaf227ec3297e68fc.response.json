@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:38.792473+08:00",
+  "conservative_cost_yuan": 0.00077625,
+  "error": null,
+  "latency_ms": 1762.2207999229431,
+  "list_price_estimate_yuan": 0.00060525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 割接项目中24芯以下的维护工作量计量单位为“头·次”。[2]  \n2. 该计量单位适用于割接申报、准备、实施及清理等全流程操作。[2]  \n3. 计量依据为合同约定周期与实际发生次数。[2]  \n4. 表8.6.1.4中明确列出此项规则。[1]  \n5. “头·次”为标准计量单位，对应一次完整割接作业。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881177,
+    "id": "chatcmpl-0166eec3-08dc-9d3b-b1fb-736169521f29",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 114,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2895,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3009
+    }
+  },
+  "usage_known": true
+}

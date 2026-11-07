@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:18.842649+08:00",
+  "conservative_cost_yuan": 0.0006028499999999999,
+  "error": null,
+  "latency_ms": 1054.354599909857,
+  "list_price_estimate_yuan": 0.00046635,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 二维码打印分辨率要求大于300dpi。[1]  \n2. 分辨率不足可能导致二维码扫描失败或识别错误。[1]  \n3. 高于300dpi可确保二维码图像清晰可读。[1]  \n4. 此要求适用于全光组网终端二维码标识。[1]  \n5. 打印时需确保图像质量满足技术规范。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881217,
+    "id": "chatcmpl-febf7fc0-218f-95f4-887c-f23e04d32a4f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 91,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2199,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2290
+    }
+  },
+  "usage_known": true
+}

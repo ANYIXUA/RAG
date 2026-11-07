@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "b975e03387f32ec3b66ce29b260f6e338252c3f80b9a21c5a6c24cc47298bf25",
+  "record": {
+    "batch": 20,
+    "candidates": [
+      {
+        "answer": "光网关应支持8个WAN连接，其中至少支持5个路由连接。",
+        "evidence": [
+          {
+            "excerpt": "光网关应支持8个WAN连接，其中至少支持5个路由连接。",
+            "passage_id": "a36043b8ee1a391f2dd1c31a"
+          }
+        ],
+        "question": "光网关在WAN连接中应支持的最小路由连接数量是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "2.4GHz 802.11be （2×2） + 5GHz",
+        "evidence": [
+          {
+            "excerpt": "2.4GHz 802.11be （2×2） + 5GHz",
+            "passage_id": "e69ef87cafd302938c765e20"
+          }
+        ],
+        "question": "Wi-Fi 7光网关的WLAN接口2.4GHz标准是什么？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "最大物理分光比不低于支持1:8",
+        "evidence": [
+          {
+            "excerpt": "最大物理分光比不低于支持1:8",
+            "passage_id": "e69ef87cafd302938c765e20"
+          }
+        ],
+        "question": "光路由设备的最大物理分光比要求不低于多少？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

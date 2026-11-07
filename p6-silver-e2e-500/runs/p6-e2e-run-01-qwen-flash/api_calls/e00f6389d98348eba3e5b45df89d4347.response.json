@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:04.255378+08:00",
+  "conservative_cost_yuan": 0.0018183,
+  "error": null,
+  "latency_ms": 3778.0069999862462,
+  "list_price_estimate_yuan": 0.0012243,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0157的114工日存在解析歧义\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实引用错误，费用不一致\",\n    \"evidence\": \"WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键费用项，未区分项目\",\n    \"evidence\": \"WH23115066 扩装设备板件 （块） 91.20 57.00 17.10 17.10 0.50\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]对应错误条目\",\n    \"evidence\": \"WH23115060 智慧灯杆（视频监控杆）15m 以 上每增加1m 18.24 11.40 3.42 3.42 0.10\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_cost_value\",\n    \"misattribution_of_citation\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881800,
+    "id": "chatcmpl-1789b606-d02f-9ce8-892c-262ac07a1e28",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 396,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4202,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4598
+    }
+  },
+  "usage_known": true
+}

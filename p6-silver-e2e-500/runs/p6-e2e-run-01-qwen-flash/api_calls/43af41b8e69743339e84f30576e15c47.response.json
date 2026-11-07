@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:24.873355+08:00",
+  "conservative_cost_yuan": 0.0008299500000000001,
+  "error": null,
+  "latency_ms": 1689.3877000547945,
+  "list_price_estimate_yuan": 0.00063645,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH33120003 100A 以上更换整流模块的综合单价为607.23元。[1]  \n2. 该价格包含人工、企业管理费及利润等费用。[1]  \n3. 工作内容包括安装、检查、拆除故障模块及清理现场。[1]  \n4. 计量单位为“块”，按实际发生数量计算。[2]  \n5. 项目编码为WH33120003，适用于100A以上整流模块更换。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881163,
+    "id": "chatcmpl-ae641ab0-1f64-946d-8c0c-8337445a19f4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 129,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2953,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3082
+    }
+  },
+  "usage_known": true
+}

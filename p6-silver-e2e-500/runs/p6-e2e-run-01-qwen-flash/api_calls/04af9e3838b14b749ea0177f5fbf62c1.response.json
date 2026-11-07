@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:58.970556+08:00",
+  "conservative_cost_yuan": 0.00261525,
+  "error": null,
+  "latency_ms": 6814.398600021377,
+  "list_price_estimate_yuan": 0.00159825,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确列出WH23119004（室外、铁塔）安装无线局域网接入点（AP）设备的综合单价为182.40元，与问题完全匹配。该信息直接来源于检索到的文档内容。\",\n    \"evidence\": \"WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实均能在实际上下文[1]中找到对应支持：综合单价182.40元、包含安装与调测、计量单位为套、人工费114.00元、项目编码WH23119004，所有陈述均有原文依据且无添加或扭曲。\",\n    \"evidence\": \"WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问综合单价，回答完整提供了该数值，并补充了相关背景信息（如计量单位、人工费、项目编码等），虽非必要但未遗漏关键条件，符合精确事实类问题的完整要求。\",\n    \"evidence\": \"WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应实际上下文片段[1]，且该片段确实支持每一条陈述。引用编号使用规范，未出现错误或冗余引用。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第276页\\n定位信息：276\\n... WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为可回答的精确事实类问题，且上下文中有明确答案，无需拒答。模型正常作答，行为合理。\",\n    \"evidence\": \"WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881312,
+    "id": "chatcmpl-f801727c-883e-9bc0-923c-c6fc62b41dde",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 678,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3875,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4553
+    }
+  },
+  "usage_known": true
+}

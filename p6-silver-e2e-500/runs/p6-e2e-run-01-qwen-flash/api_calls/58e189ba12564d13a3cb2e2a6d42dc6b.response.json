@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:05.364576+08:00",
+  "conservative_cost_yuan": 0.00071445,
+  "error": null,
+  "latency_ms": 1455.0733000505716,
+  "list_price_estimate_yuan": 0.00056295,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护人员应掌握设备配置情况及局站地理位置。[1]  \n2. 根据告警状态判断故障类型，如光功率异常或端口问题。[2]  \n3. 使用仪表检测直流电压、误码率等关键指标。[3]  \n4. 优先检查电源、光纤连接及板卡运行状态。[1]  \n5. 遇重大问题及时上报并启动抢修流程。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881083,
+    "id": "chatcmpl-af38cf7f-0b51-9e9f-acdc-347291833a5e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 101,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2743,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2844
+    }
+  },
+  "usage_known": true
+}

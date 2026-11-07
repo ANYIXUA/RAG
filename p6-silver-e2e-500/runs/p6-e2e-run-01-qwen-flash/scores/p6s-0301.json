@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "新上电池组型号未明确，但可参考24V/48V铅酸蓄电池或锂电池组。[1]",
+    "reason": "准确回应型号与安装方式",
+    "score": 1
+  },
+  "case_id": "p6s-0301",
+  "citation_correctness": {
+    "evidence": "具体型号需根据实际配置确认，建议查阅项目设计文件。[1]",
+    "reason": "引用编号与来源一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "电池组应通过抗震架进行加固安装，确保稳定。[1]",
+    "reason": "涵盖型号与安装关键步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "安装时需进行开箱检验、清洁搬运及组装固定。[1]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "99b960418b2d443283c8bd8e013c7b75",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

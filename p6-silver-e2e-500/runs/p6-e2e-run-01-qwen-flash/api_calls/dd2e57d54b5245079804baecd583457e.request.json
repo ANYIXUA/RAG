@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:14:49.024514+08:00",
+  "input_token_upper_bound": 1158,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0106"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "信息通信光缆线路维护突发事件处理流程图中，哪个流程图对应附录A？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "dd2e57d54b5245079804baecd583457e",
+  "reserved_yuan": 0.000579
+}

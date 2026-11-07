@@ -1,0 +1,143 @@
+{
+  "previous_sha256": "c965e0dff265abd733188d3b2606b1b16fd1cf6d3a05b9ce9f77e3afdb4cc23b",
+  "record": {
+    "batch": 26,
+    "candidates": [
+      {
+        "answer": "检查沿线重点部位保护是否到位、沿线有无外力施工影响线路安全等；做好巡查记录，并将发现的问题及时上报等。",
+        "evidence": [
+          {
+            "excerpt": "工作内容：路由探测。检查沿线重点部位保护是否到位、沿线有无外力施工影响线路安全等；做好巡查记录，并将发现的问题及时上报等。",
+            "passage_id": "823d1d04036b14e9b9ccac9e"
+          }
+        ],
+        "question": "在进行管道光缆线路车辆巡回时，如何检查沿线重点部位保护及外力施工影响？",
+        "question_type": "procedure"
+      },
+      {
+        "answer": "整治固定接头盒、预留光缆，补、换挂钩及标识牌，清除吊线上的杂物等。",
+        "evidence": [
+          {
+            "excerpt": "工作内容：整治固定接头盒、预留光缆，补、换挂钩及标识牌，清除吊线上的杂物等。",
+            "passage_id": "3001b6e6fa8a9b969351ff7f"
+          }
+        ],
+        "question": "在架空光缆日常检修中，平原地区应如何开展固定接头盒、预留光缆及挂钩的整治？",
+        "question_type": "procedure"
+      },
+      {
+        "answer": "培土，清除路由上的零星杂物；扶正标石、宣传牌、标志牌、警示牌；修补沟坎、堵塞、护坡、漫水坝、挡水墙等光缆保护措施；路由埋深探测等。",
+        "evidence": [
+          {
+            "excerpt": "工作内容：培土，清除路由上的零星杂物；扶正标石、宣传牌、标志牌、警示牌；修补沟坎、堵塞、护坡、漫水坝、挡水墙等光缆保护措施；路由埋深探测等。",
+            "passage_id": "cbbeb4430a68f9c32c878010"
+          }
+        ],
+        "question": "在直埋光缆日常检修中，山区应如何进行路由埋深探测及保护措施修补？",
+        "question_type": "procedure"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0491",
+          "expected_behavior": "answer",
+          "generation_batch": 26,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271132,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "在进行管道光缆线路车辆巡回时，如何检查沿线重点部位保护及外力施工影响？",
+          "question_type": "procedure",
+          "reference_answer": "检查沿线重点部位保护是否到位、沿线有无外力施工影响线路安全等；做好巡查记录，并将发现的问题及时上报等。",
+          "source_chunk_ids": [
+            "823d1d04036b14e9b9ccac9e"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "823d1d04036b14e9b9ccac9e",
+              "excerpt": "工作内容：路由探测。检查沿线重点部位保护是否到位、沿线有无外力施工影响线路安全等；做好巡查记录，并将发现的问题及时上报等。"
+            }
+          ],
+          "source_page": 178,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0492",
+          "expected_behavior": "answer",
+          "generation_batch": 26,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271132,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "在架空光缆日常检修中，平原地区应如何开展固定接头盒、预留光缆及挂钩的整治？",
+          "question_type": "procedure",
+          "reference_answer": "整治固定接头盒、预留光缆，补、换挂钩及标识牌，清除吊线上的杂物等。",
+          "source_chunk_ids": [
+            "3001b6e6fa8a9b969351ff7f"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "3001b6e6fa8a9b969351ff7f",
+              "excerpt": "工作内容：整治固定接头盒、预留光缆，补、换挂钩及标识牌，清除吊线上的杂物等。"
+            }
+          ],
+          "source_page": 179,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "case": {
+          "case_id": "p6s-0493",
+          "expected_behavior": "answer",
+          "generation_batch": 26,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271132,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "在直埋光缆日常检修中，山区应如何进行路由埋深探测及保护措施修补？",
+          "question_type": "procedure",
+          "reference_answer": "培土，清除路由上的零星杂物；扶正标石、宣传牌、标志牌、警示牌；修补沟坎、堵塞、护坡、漫水坝、挡水墙等光缆保护措施；路由埋深探测等。",
+          "source_chunk_ids": [
+            "cbbeb4430a68f9c32c878010"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "cbbeb4430a68f9c32c878010",
+              "excerpt": "工作内容：培土，清除路由上的零星杂物；扶正标石、宣传牌、标志牌、警示牌；修补沟坎、堵塞、护坡、漫水坝、挡水墙等光缆保护措施；路由埋深探测等。"
+            }
+          ],
+          "source_page": 180,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

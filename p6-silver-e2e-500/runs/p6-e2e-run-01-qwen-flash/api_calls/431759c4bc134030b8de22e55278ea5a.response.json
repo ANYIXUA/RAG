@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:13.289499+08:00",
+  "conservative_cost_yuan": 0.0015474,
+  "error": null,
+  "latency_ms": 4332.444899948314,
+  "list_price_estimate_yuan": 0.0010419000000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持单价一致\",\n    \"evidence\": \"WH12019003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"WH12020003 延伸式 86.16 58.45 16.02 11.69 0.24 0.51\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有必要条件与步骤\",\n    \"evidence\": \"工作内容：挖沟，安装引接地线，回土夯实等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持语句\",\n    \"evidence\": \"[1] WH12020003 延伸式 86.16\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881868,
+    "id": "chatcmpl-e1a9afd4-cd6e-9018-96c8-cca87d0858bc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 337,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3576,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3913
+    }
+  },
+  "usage_known": true
+}

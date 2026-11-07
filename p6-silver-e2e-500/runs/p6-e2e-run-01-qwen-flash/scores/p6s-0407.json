@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0407",
+  "citation_correctness": {
+    "evidence": "熟悉智能家居场景设置及常见故障处理方法。[2]",
+    "reason": "引用编号与上下文匹配且支持句义",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "根据用户需求选择对应业务运维技能，如光纤到户或智能组网。[1]",
+    "reason": "部分覆盖技能要求但缺优化策略",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "优先掌握基础网络质量检测与无线信号评估能力。[2]",
+    "reason": "每项事实均有对应引用支持",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_query",
+    "partial_coverage"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "bbc7d38d7dce4b5a92fd874fb61bf025",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未强行编造，符合拒答原则",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,125 @@
+
+Loading weights:   0%|          | 0/201 [00:00<?, ?it/s]
+Loading weights:  26%|������       | 52/201 [00:00<00:00, 493.80it/s]
+Loading weights: 100%|��������������������| 201/201 [00:00<00:00, 1148.91it/s]
+D:\AgentAIProgect\RAG\p3-pilot-02\run_comparison.py:90: DeprecationWarning: The `max_length` property was renamed and is now deprecated. Please use `max_seq_length` instead.
+  'model_max_length': self.model.max_length,
+{
+  "out_dir": "D:\\AgentAIProgect\\RAG\\p3-pilot-02\\runs\\before",
+  "cases": 22,
+  "active_methods": [
+    "bm25_only",
+    "vector_only",
+    "hybrid",
+    "hybrid_rerank",
+    "bm25_full_corpus"
+  ],
+  "rerank": {
+    "requested": true,
+    "available": true,
+    "reason": null,
+    "model_name": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "resolved_model_name_or_path": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "hf_snapshot_revisions": [
+      "1427fd652930e4ba29e8149678df786c240d8825"
+    ]
+  },
+  "metrics": {
+    "bm25_only": {
+      "method_key": "A",
+      "description": "BM25 �ؼ��ʼ�����������ѡ�أ�",
+      "mode": "bm25",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.0,
+      "hit@3": 0.0,
+      "hit@5": 0.0,
+      "hit@10": 0.0,
+      "mrr@10": 0.0,
+      "ndcg@10": 0.0,
+      "recall@10": 0.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 8.727,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 278.544,
+      "latency_p95_ms": 468.253,
+      "latency_mean_ms": 283.798,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.0
+    },
+    "vector_only": {
+      "method_key": "B",
+      "description": "���������ң�����",
+      "mode": "semantic",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.863636,
+      "hit@5": 0.909091,
+      "hit@10": 0.954545,
+      "mrr@10": 0.80202,
+      "ndcg@10": 0.834976,
+      "recall@10": 0.954545,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 166.026,
+      "latency_p95_ms": 414.983,
+      "latency_mean_ms": 211.835,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    },
+    "hybrid": {
+      "method_key": "C",
+      "description": "BM25 + ������Ȩ�ں�",
+      "mode": "hybrid",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.909091,
+      "hit@3": 0.954545,
+      "hit@5": 0.954545,
+      "hit@10": 1.0,
+      "mrr@10": 0.930736,
+      "ndcg@10": 0.943321,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 355.072,
+      "latency_p95_ms": 717.2,
+      "latency_mean_ms": 405.328,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 0.875
+    },
+    "hybrid_rerank": {
+      "method_key": "D",
+      "description": "��ϼ��� + Cross-Encoder ����",
+      "mode": "hybrid",
+      "rerank_applied": true,
+      "supplementary": false,
+      "case_count": 22,
+      "hit@1": 0.727273,
+      "hit@3": 0.818182,
+      "hit@5": 0.863636,
+      "hit@10": 1.0,
+      "mrr@10": 0.799044,
+      "ndcg@10": 0.83809,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "�׸���� Chunk δ���� Top10 �� 0",
+      "latency_p50_ms": 7909.901,
+      "latency_p95_ms": 9800.644,
+      "latency_mean_ms": 7832.408,
+      "required_evidence_case_count": 4,
+      "required_evidence_coverage@10": 1.0
+    }
+  },
+  "fingerprints": {
+    "rankings_sha256": "64bb1f68384b2a714c3cc7c9214318526346ad3385334377fcb4f55a9923c021",
+    "metrics_sha256": "03f539989ec678d1437d35042f65445fad6ec6eba1c50702332af2c578490c75"
+  }
+}

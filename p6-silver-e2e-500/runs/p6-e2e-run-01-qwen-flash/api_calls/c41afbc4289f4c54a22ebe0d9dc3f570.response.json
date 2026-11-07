@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:30:40.788573+08:00",
+  "conservative_cost_yuan": 0.00134055,
+  "error": null,
+  "latency_ms": 2678.386599989608,
+  "list_price_estimate_yuan": 0.00094005,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0195工日无解析歧义，但参考不一致\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分事实无上下文支持\",\n    \"evidence\": \"4.2.1 能进行光纤到户的一般故障处理\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏关键排查步骤\",\n    \"evidence\": \"熟悉交互式网络电视的常见故障处理方法\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[4]不存在于上下文\",\n    \"evidence\": \"4.2.1 能进行光纤到户的一般故障处理\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"citation_mismatch\",\n    \"missing_context_support\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881838,
+    "id": "chatcmpl-69013a69-6111-9a4c-8e15-2bd01512afe7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 267,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3597,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3864
+    }
+  },
+  "usage_known": true
+}

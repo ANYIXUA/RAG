@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:35.604583+08:00",
+  "conservative_cost_yuan": 0.000789,
+  "error": null,
+  "latency_ms": 1077.0961998496205,
+  "list_price_estimate_yuan": 0.0006255,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装拉线隔电子综合单价为79.87元/处。[1]  \n2. 山区施工时，综合单价按相应子目1.5倍计取。[3]  \n3. 应在原单价基础上乘以1.5系数调整。[3]  \n4. 工作内容包括安装、绑扎、清理现场等。[1]  \n5. 计量单位为“处”，按实际发生次数计算。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881174,
+    "id": "chatcmpl-79b4e0fa-0719-9d87-8545-8be993bd6149",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 109,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3080,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3189
+    }
+  },
+  "usage_known": true
+}

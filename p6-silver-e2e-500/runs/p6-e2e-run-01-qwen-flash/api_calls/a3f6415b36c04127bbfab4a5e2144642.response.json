@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:24:44.541487+08:00",
+  "conservative_cost_yuan": 0.0031265999999999998,
+  "error": null,
+  "latency_ms": 7912.751400144771,
+  "list_price_estimate_yuan": 0.0018441,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]和[2]均明确列出壁挂式交流配电箱的消耗量为1.42，且[3]确认该设备属于按实际维护数量计算的项目，与答案一致。答案中'台/个'单位也符合[3]中'按实际发生维护数量计算'的描述。\",\n    \"evidence\": \" [1] ... 消耗量 1.42 — WH33109001 安装配电换流设备 壁挂式交流配电箱 259.01 161.88 48.56 48.56 消耗量 1.42 —\\n[2] ... 消耗量 1.42 — WH23126001 安装配电换流设备 壁挂式交流配电箱 259.01 161.88 48.56 48.56 消耗量 1.42 —\\n[3] ... 计量单位：台、个 维护分项作业 ... 按实际发生的维护数量计算\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每条事实均有对应上下文支持：1.42数值来自[1]和[2]；单位‘台/个’来自[3]；‘按实际维护数量计算’来自[3]；‘多份规程一致’由[1][2]共同支持。所有陈述均可在原文中找到直接依据。\",\n    \"evidence\": \"[1] ... 消耗量 1.42 —\\n[2] ... 消耗量 1.42 —\\n[3] ... 计量单位：台、个 ... 按实际发生的维护数量计算\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题询问的是消耗量，回答完整提供了数值（1.42）、来源（安装配电换流设备）、单位（台/个）及适用场景，覆盖了所有必要信息。未遗漏关键条件或步骤。\",\n    \"evidence\": \"[1] ... 消耗量 1.42 —\\n[3] ... 计量单位：台、个 ... 按实际发生的维护数量计算\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个引用编号均准确对应实际上下文片段：[1]对应第310页数据，[2]对应第283页数据，[3]对应第148页关于计量单位的说明，[4]未被使用但无误用。引用编号与内容严格匹配。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n... 消耗量 1.42 — WH33109001 ...\\n[2] 来源：电信基础设施维护规程.pdf\\n引用标签：[2]\\n... 消耗量 1.42 — WH23126001 ...\\n[3] 来源：电信基础设施维护规程.pdf\\n引用标签：[3]\\n... 计量单位：台、个 ... 按实际发生的维护数量计算\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实类问题，且上下文中有清晰答案，无需拒答。模型正确回答，不涉及拒答行为。\",\n    \"evidence\": \"上下文存在明确数值1.42，问题可回答\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881476,
+    "id": "chatcmpl-2bc78ab7-acd9-9148-a213-88fbf7cfb768",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 855,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3744,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4599
+    }
+  },
+  "usage_known": true
+}

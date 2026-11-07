@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:12.522829+08:00",
+  "conservative_cost_yuan": 0.00070875,
+  "error": null,
+  "latency_ms": 1077.6325999759138,
+  "list_price_estimate_yuan": 0.00055575,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 提升用户满意度需注重服务礼仪与沟通技巧。[1]  \n2. 安装交付应按规范操作，确保设备安装牢固、美观。[2]  \n3. 完工后需向用户详细说明设备使用及故障申告流程。[2]  \n4. 用户端设备安装须严格遵循技术规范和交付标准。[2]  \n5. 优先处理重大、重复或高价值用户投诉以提升体验。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881091,
+    "id": "chatcmpl-b4512f09-bcde-9be1-939e-dc6c7e3feea6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2685,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2787
+    }
+  },
+  "usage_known": true
+}

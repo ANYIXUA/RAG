@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:18.681463+08:00",
+  "conservative_cost_yuan": 0.0007715999999999999,
+  "error": null,
+  "latency_ms": 1782.1922998409718,
+  "list_price_estimate_yuan": 0.0005900999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检索上下文未提及不同品牌智慧家庭产品价格差异信息。[1][2][3]  \n2. 无相关文档说明品牌与价格之间的关联性。[1][2][3]  \n3. 未提供任何关于产品定价策略或品牌间价格对比的内容。[1][2][3]  \n4. 无法确认是否存在价格差异，需补充具体信息。[1][2][3]  \n5. 建议转人工或提供具体产品型号以获取准确信息。[1][2][3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881036,
+    "id": "chatcmpl-b77200b5-f9ca-98cc-995e-1f977e0aa4f2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2724,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2845
+    }
+  },
+  "usage_known": true
+}

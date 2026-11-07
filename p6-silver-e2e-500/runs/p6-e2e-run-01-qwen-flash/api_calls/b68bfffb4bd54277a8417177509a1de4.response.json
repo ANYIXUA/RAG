@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:31.707040+08:00",
+  "conservative_cost_yuan": 0.00230865,
+  "error": null,
+  "latency_ms": 5212.94269990176,
+  "list_price_estimate_yuan": 0.00142815,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际回答中明确指出四角塔中心整体垂直偏差≤1/1500，与上下文[1]内容完全一致，且该信息是问题所问的直接答案。其他类型铁塔的允许值虽非问题焦点，但作为补充信息合理，未造成误导。\",\n    \"evidence\": \"上下文[1]：'四角塔垂直度测量 铁塔中心整体垂直偏差≤1/1500 半年'\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每条事实均在上下文[1]中找到对应支持，且引用编号正确。例如，四角塔、单管塔、拉线塔、三管塔的允许值均有原文依据，无虚构或编造内容。\",\n    \"evidence\": \"上下文[1]：'四角塔垂直度测量 铁塔中心整体垂直偏差≤1/1500 半年'；'单管塔/景观塔中心整体垂直偏差应≤全塔高度的1/750'；'拉线塔中心整体垂直偏差≤塔高1/750'；'三管塔中心整体垂直偏差≤塔高的1/1500'\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问铁塔中心整体垂直偏差的允许值，而回答中准确给出了四角塔的标准（即核心答案），并补充说明了其他类型铁塔的差异，覆盖了所有相关情形，未遗漏关键条件。\",\n    \"evidence\": \"上下文[1]完整包含各类铁塔的垂直偏差标准\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均指向上下文[1]，且该片段确实支持每一项陈述。尽管多个事实来自同一来源，但引用方式符合规则，未出现错误引用或自创编号。\",\n    \"evidence\": \"所有引用[1]均对应上下文[1]，其内容涵盖四角塔、单管塔、拉线塔、三管塔的垂直偏差要求\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为可回答的精确事实类问题，且上下文中有明确答案，无需拒答。模型已正确作答，因此不适用拒答行为评分。\",\n    \"evidence\": \"问题可答，上下文提供充分信息\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881286,
+    "id": "chatcmpl-bad7557b-14ad-90e7-a58b-16c3e4ee52c4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 587,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3651,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4238
+    }
+  },
+  "usage_known": true
+}

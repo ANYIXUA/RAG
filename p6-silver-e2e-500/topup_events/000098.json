@@ -1,0 +1,55 @@
+{
+  "previous_sha256": "a8453cf553ab1bb5d3539419f869e9af797df1c30aa3370daba85b57a051e812",
+  "record": {
+    "batch": 47,
+    "candidates": [
+      {
+        "answer": "半年",
+        "evidence": [
+          {
+            "excerpt": "半年 基础回弹均值必须符合设计要求。",
+            "passage_id": "14596d4e75ad163dd5bfc2e2"
+          }
+        ],
+        "question": "铁塔基础回弹均值必须符合设计要求，这个要求的周期是多久？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0481",
+          "expected_behavior": "answer",
+          "generation_batch": 47,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271153,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "铁塔基础回弹均值必须符合设计要求，这个要求的周期是多久？",
+          "question_type": "exact_fact",
+          "reference_answer": "半年",
+          "source_chunk_ids": [
+            "14596d4e75ad163dd5bfc2e2"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "14596d4e75ad163dd5bfc2e2",
+              "excerpt": "半年 基础回弹均值必须符合设计要求。"
+            }
+          ],
+          "source_page": 53,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      }
+    ],
+    "event": "result"
+  }
+}

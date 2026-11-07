@@ -1,0 +1,345 @@
+{
+  "pilot": "P5-Benchmark-01",
+  "label": "run1",
+  "case_count": 28,
+  "k_values": [
+    1,
+    3,
+    5,
+    10
+  ],
+  "max_k": 10,
+  "retrieval_top_k": 20,
+  "metrics": {
+    "bm25_only": {
+      "method_key": "A",
+      "description": "BM25 关键词检索（生产候选池）",
+      "mode": "bm25",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 28,
+      "hit@1": 0.75,
+      "hit@3": 0.892857,
+      "hit@5": 0.892857,
+      "hit@10": 0.964286,
+      "mrr@10": 0.826531,
+      "ndcg@10": 0.860083,
+      "recall@10": 0.964286,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 14.464,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 1029.14,
+      "latency_p95_ms": 2371.965,
+      "latency_mean_ms": 1125.474,
+      "required_evidence_case_count": 0,
+      "required_evidence_coverage@10": null
+    },
+    "vector_only": {
+      "method_key": "B",
+      "description": "向量（余弦）检索",
+      "mode": "semantic",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 28,
+      "hit@1": 0.75,
+      "hit@3": 1.0,
+      "hit@5": 1.0,
+      "hit@10": 1.0,
+      "mrr@10": 0.863095,
+      "ndcg@10": 0.89838,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 104.163,
+      "latency_p95_ms": 296.992,
+      "latency_mean_ms": 144.444,
+      "required_evidence_case_count": 0,
+      "required_evidence_coverage@10": null
+    },
+    "hybrid": {
+      "method_key": "C",
+      "description": "BM25 + 向量加权融合",
+      "mode": "hybrid",
+      "rerank_applied": false,
+      "supplementary": false,
+      "case_count": 28,
+      "hit@1": 0.821429,
+      "hit@3": 0.964286,
+      "hit@5": 0.964286,
+      "hit@10": 1.0,
+      "mrr@10": 0.89881,
+      "ndcg@10": 0.924283,
+      "recall@10": 1.0,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 644.411,
+      "latency_p95_ms": 1930.462,
+      "latency_mean_ms": 874.276,
+      "required_evidence_case_count": 0,
+      "required_evidence_coverage@10": null
+    },
+    "hybrid_rerank": {
+      "method_key": "D",
+      "description": "混合检索 + Cross-Encoder 重排",
+      "mode": "hybrid",
+      "rerank_applied": true,
+      "supplementary": false,
+      "case_count": 28,
+      "hit@1": 0.607143,
+      "hit@3": 0.821429,
+      "hit@5": 0.821429,
+      "hit@10": 0.964286,
+      "mrr@10": 0.734906,
+      "ndcg@10": 0.79014,
+      "recall@10": 0.964286,
+      "no_result_rate": 0.0,
+      "avg_retrieved": 20.0,
+      "mrr@10_missing_truncated": "首个相关 Chunk 未进入 Top10 记 0",
+      "latency_p50_ms": 5922.934,
+      "latency_p95_ms": 8727.751,
+      "latency_mean_ms": 6250.672,
+      "required_evidence_case_count": 0,
+      "required_evidence_coverage@10": null
+    }
+  },
+  "supplementary_metrics": {},
+  "deltas": {
+    "vector_only_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "hit@3": {
+        "absolute": 0.107143,
+        "relative_percent": 12.0
+      },
+      "hit@5": {
+        "absolute": 0.107143,
+        "relative_percent": 12.0
+      },
+      "hit@10": {
+        "absolute": 0.035714,
+        "relative_percent": 3.704
+      },
+      "mrr@10": {
+        "absolute": 0.036564,
+        "relative_percent": 4.424
+      },
+      "ndcg@10": {
+        "absolute": 0.038297,
+        "relative_percent": 4.453
+      },
+      "recall@10": {
+        "absolute": 0.035714,
+        "relative_percent": 3.704
+      },
+      "latency_p50_ms": {
+        "absolute": -924.977,
+        "relative_percent": -89.879
+      },
+      "latency_p95_ms": {
+        "absolute": -2074.973,
+        "relative_percent": -87.479
+      }
+    },
+    "hybrid_vs_bm25_only": {
+      "hit@1": {
+        "absolute": 0.071429,
+        "relative_percent": 9.524
+      },
+      "hit@3": {
+        "absolute": 0.071429,
+        "relative_percent": 8.0
+      },
+      "hit@5": {
+        "absolute": 0.071429,
+        "relative_percent": 8.0
+      },
+      "hit@10": {
+        "absolute": 0.035714,
+        "relative_percent": 3.704
+      },
+      "mrr@10": {
+        "absolute": 0.072279,
+        "relative_percent": 8.745
+      },
+      "ndcg@10": {
+        "absolute": 0.0642,
+        "relative_percent": 7.464
+      },
+      "recall@10": {
+        "absolute": 0.035714,
+        "relative_percent": 3.704
+      },
+      "latency_p50_ms": {
+        "absolute": -384.729,
+        "relative_percent": -37.384
+      },
+      "latency_p95_ms": {
+        "absolute": -441.503,
+        "relative_percent": -18.613
+      }
+    },
+    "hybrid_rerank_vs_bm25_only": {
+      "hit@1": {
+        "absolute": -0.142857,
+        "relative_percent": -19.048
+      },
+      "hit@3": {
+        "absolute": -0.071428,
+        "relative_percent": -8.0
+      },
+      "hit@5": {
+        "absolute": -0.071428,
+        "relative_percent": -8.0
+      },
+      "hit@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "mrr@10": {
+        "absolute": -0.091625,
+        "relative_percent": -11.085
+      },
+      "ndcg@10": {
+        "absolute": -0.069943,
+        "relative_percent": -8.132
+      },
+      "recall@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "latency_p50_ms": {
+        "absolute": 4893.794,
+        "relative_percent": 475.523
+      },
+      "latency_p95_ms": {
+        "absolute": 6355.786,
+        "relative_percent": 267.954
+      }
+    },
+    "hybrid_rerank_vs_hybrid": {
+      "hit@1": {
+        "absolute": -0.214286,
+        "relative_percent": -26.087
+      },
+      "hit@3": {
+        "absolute": -0.142857,
+        "relative_percent": -14.815
+      },
+      "hit@5": {
+        "absolute": -0.142857,
+        "relative_percent": -14.815
+      },
+      "hit@10": {
+        "absolute": -0.035714,
+        "relative_percent": -3.571
+      },
+      "mrr@10": {
+        "absolute": -0.163904,
+        "relative_percent": -18.236
+      },
+      "ndcg@10": {
+        "absolute": -0.134143,
+        "relative_percent": -14.513
+      },
+      "recall@10": {
+        "absolute": -0.035714,
+        "relative_percent": -3.571
+      },
+      "latency_p50_ms": {
+        "absolute": 5278.523,
+        "relative_percent": 819.124
+      },
+      "latency_p95_ms": {
+        "absolute": 6797.289,
+        "relative_percent": 352.107
+      }
+    },
+    "bm25_only_vs_vector_only": {
+      "hit@1": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "hit@3": {
+        "absolute": -0.107143,
+        "relative_percent": -10.714
+      },
+      "hit@5": {
+        "absolute": -0.107143,
+        "relative_percent": -10.714
+      },
+      "hit@10": {
+        "absolute": -0.035714,
+        "relative_percent": -3.571
+      },
+      "mrr@10": {
+        "absolute": -0.036564,
+        "relative_percent": -4.236
+      },
+      "ndcg@10": {
+        "absolute": -0.038297,
+        "relative_percent": -4.263
+      },
+      "recall@10": {
+        "absolute": -0.035714,
+        "relative_percent": -3.571
+      },
+      "latency_p50_ms": {
+        "absolute": 924.977,
+        "relative_percent": 888.009
+      },
+      "latency_p95_ms": {
+        "absolute": 2074.973,
+        "relative_percent": 698.663
+      }
+    },
+    "hybrid_vs_vector_only": {
+      "hit@1": {
+        "absolute": 0.071429,
+        "relative_percent": 9.524
+      },
+      "hit@3": {
+        "absolute": -0.035714,
+        "relative_percent": -3.571
+      },
+      "hit@5": {
+        "absolute": -0.035714,
+        "relative_percent": -3.571
+      },
+      "hit@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "mrr@10": {
+        "absolute": 0.035715,
+        "relative_percent": 4.138
+      },
+      "ndcg@10": {
+        "absolute": 0.025903,
+        "relative_percent": 2.883
+      },
+      "recall@10": {
+        "absolute": 0.0,
+        "relative_percent": 0.0
+      },
+      "latency_p50_ms": {
+        "absolute": 540.248,
+        "relative_percent": 518.656
+      },
+      "latency_p95_ms": {
+        "absolute": 1633.47,
+        "relative_percent": 550.005
+      }
+    }
+  },
+  "active_methods": [
+    "bm25_only",
+    "vector_only",
+    "hybrid",
+    "hybrid_rerank"
+  ],
+  "unavailable_methods": []
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:01.233785+08:00",
+  "conservative_cost_yuan": 0.0014019000000000002,
+  "error": null,
+  "latency_ms": 3655.802199849859,
+  "list_price_estimate_yuan": 0.0009743999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确指向和家亲APP与网络质量统计功能\",\n    \"evidence\": \"和家亲APP提供家庭全光组网终端的用户操控界面\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"全光组网终端支持网络质量统计，可查看各设备连接状态\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖信号分析、设备状态、信道跳转等关键点\",\n    \"evidence\": \"5GHz频段支持自动信道选择和遇干扰时信道跳转\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源完全匹配\",\n    \"evidence\": \"3.2.4. 和家亲APP 提供家庭全光组网终端的用户操控界面\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881917,
+    "id": "chatcmpl-c13e06ea-63ed-9461-afd9-b4175f22f6c2",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 285,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3646,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3931
+    }
+  },
+  "usage_known": true
+}

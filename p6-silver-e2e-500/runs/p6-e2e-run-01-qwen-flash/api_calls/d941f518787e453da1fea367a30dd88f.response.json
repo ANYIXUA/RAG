@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:11.919561+08:00",
+  "conservative_cost_yuan": 0.00145425,
+  "error": null,
+  "latency_ms": 2538.2774001918733,
+  "list_price_estimate_yuan": 0.00102375,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖淤泥清理、抽水等核心操作\",\n    \"evidence\": \"人孔内抽水，重新绑扎、整理光缆在人孔内的走线排列\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"及时更换井盖、井框，井号油漆，描字，清理井内淤泥、杂物\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有关键维护步骤\",\n    \"evidence\": \"清洗管孔、人孔内抽水；人手孔井面杂物清理\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"1、及时更换井盖、井框，井号油漆，描字，清理井内淤泥、杂物\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881929,
+    "id": "chatcmpl-062bcf3e-7bb3-9d37-80d1-01281d7646a0",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 287,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3955,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4242
+    }
+  },
+  "usage_known": true
+}

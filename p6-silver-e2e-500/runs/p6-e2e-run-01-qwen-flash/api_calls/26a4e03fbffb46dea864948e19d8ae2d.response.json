@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:40.010803+08:00",
+  "conservative_cost_yuan": 0.0007053,
+  "error": null,
+  "latency_ms": 1107.7467000577599,
+  "list_price_estimate_yuan": 0.0005612999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 架空光缆徒步巡回每月不得少于1次。[2]  \n2. 暴风雨后或有外力影响时应立即巡回。[2]  \n3. 巡回周期为1～2次/周，不得漏巡。[2]  \n4. 外力施工现场需按需随工监督。[2]  \n5. 每月需按时提交巡回原始记录。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880878,
+    "id": "chatcmpl-41c94af0-b169-9310-b078-b2f5c137a1c6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 96,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2782,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2878
+    }
+  },
+  "usage_known": true
+}

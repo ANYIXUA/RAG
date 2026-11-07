@@ -1,0 +1,83 @@
+{
+  "previous_sha256": "b8b6c8d839a8a217563945b1a2c2ed0d27d509847c4ecfdd345faed103dd5f96",
+  "record": {
+    "batch": 41,
+    "candidates": [
+      {
+        "answer": "半年内执行塔体构件连接处无锈蚀检查，铁塔基础回弹均值需符合设计要求。",
+        "evidence": [
+          {
+            "excerpt": "半年 基础回弹均值必须符合设计要求。",
+            "passage_id": "14596d4e75ad163dd5bfc2e2"
+          },
+          {
+            "excerpt": "塔体构件齐全，各部件连接牢固、无锈蚀。",
+            "passage_id": "85a662e14c735b039ce0bda4"
+          }
+        ],
+        "question": "铁塔基础回弹均值需满足设计要求，同时塔体构件连接处应无锈蚀，这些要求在什么情况下需执行？",
+        "question_type": "multi_condition"
+      },
+      {
+        "answer": "季度内执行机房内外环境整洁和走线架与爬梯部件连接牢固的维护要求。",
+        "evidence": [
+          {
+            "excerpt": "机房内外环境整洁，机房及院墙外2 米内无杂物、杂草及易燃物。",
+            "passage_id": "14596d4e75ad163dd5bfc2e2"
+          },
+          {
+            "excerpt": "走线架与爬梯构件齐全，各部件连接牢靠无松动、蚀。",
+            "passage_id": "85a662e14c735b039ce0bda4"
+          }
+        ],
+        "question": "机房内外环境需保持整洁，且走线架与爬梯部件连接牢固，这些维护要求在什么周期内执行？",
+        "question_type": "multi_condition"
+      }
+    ],
+    "decisions": [
+      {
+        "case": {
+          "case_id": "p6s-0500",
+          "expected_behavior": "answer",
+          "generation_batch": 41,
+          "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+          "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+          "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "generation_seed": 20271147,
+          "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+          "label_type": "silver",
+          "prompt_version": "p6-silver-generate-v1",
+          "question": "铁塔基础回弹均值需满足设计要求，同时塔体构件连接处应无锈蚀，这些要求在什么情况下需执行？",
+          "question_type": "multi_condition",
+          "reference_answer": "半年内执行塔体构件连接处无锈蚀检查，铁塔基础回弹均值需符合设计要求。",
+          "source_chunk_ids": [
+            "14596d4e75ad163dd5bfc2e2",
+            "85a662e14c735b039ce0bda4"
+          ],
+          "source_document": [
+            "电信基础设施维护规程.pdf"
+          ],
+          "source_evidence": [
+            {
+              "chunk_id": "14596d4e75ad163dd5bfc2e2",
+              "excerpt": "半年 基础回弹均值必须符合设计要求。"
+            },
+            {
+              "chunk_id": "85a662e14c735b039ce0bda4",
+              "excerpt": "塔体构件齐全，各部件连接牢固、无锈蚀。"
+            }
+          ],
+          "source_page": 54,
+          "topup_version": "p6-silver-topup-v1"
+        },
+        "reason": null,
+        "status": "accepted"
+      },
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

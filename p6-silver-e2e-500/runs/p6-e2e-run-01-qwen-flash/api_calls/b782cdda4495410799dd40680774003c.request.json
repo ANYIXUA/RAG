@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:54.446173+08:00",
+  "input_token_upper_bound": 1196,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0461"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "最近做设备维护，账单里头那个安全费用是怎么算的，具体比例多少？ 终端设备 设备信息 设备状态 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "b782cdda4495410799dd40680774003c",
+  "reserved_yuan": 0.000598
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:42.606804+08:00",
+  "conservative_cost_yuan": 0.0008803499999999999,
+  "error": null,
+  "latency_ms": 1652.0809999201447,
+  "list_price_estimate_yuan": 0.0006613499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH23115062安装多系统合路器（POI）落地式综合单价为729.60元。[1]  \n2. 该单价包含人工、企业管理费及利润等费用。[1]  \n3. 项目编码WH23115062对应的是落地式安装。[1]  \n4. 与壁挂式（WH23115063）和嵌入式（WH23115064）价格不同。[1]  \n5. 综合单价单位为“台”或“个”，按实际安装数量计价。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881060,
+    "id": "chatcmpl-6f9aa20f-cbf7-9e0f-b4b9-5b2e6b4899e3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 146,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2949,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3095
+    }
+  },
+  "usage_known": true
+}

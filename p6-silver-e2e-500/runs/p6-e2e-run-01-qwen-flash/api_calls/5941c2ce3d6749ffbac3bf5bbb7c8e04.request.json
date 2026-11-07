@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:19:24.926884+08:00",
+  "input_token_upper_bound": 1130,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0429"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "电杆接高装置安装时，双槽钢的固定流程是什么？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "5941c2ce3d6749ffbac3bf5bbb7c8e04",
+  "reserved_yuan": 0.000565
+}

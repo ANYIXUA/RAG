@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:29.411071+08:00",
+  "conservative_cost_yuan": 0.0013721999999999999,
+  "error": null,
+  "latency_ms": 2164.5094000268728,
+  "list_price_estimate_yuan": 0.0009431999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文支持提升满意度的措施\",\n    \"evidence\": \"要对施工的经济性、安全性以及将来维护的便捷性和用户满意度进行综合判断。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"安装交付应按规范操作，确保设备安装牢固、美观。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖关键提升点且无遗漏\",\n    \"evidence\": \"完工后需向用户详细说明设备使用及故障申告流程。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配准确\",\n    \"evidence\": \"优先处理重大、重复或高价值用户投诉以提升体验。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_consistent\",\n    \"content_aligned_with_context\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882007,
+    "id": "chatcmpl-a69afdf8-99dc-977f-a2b4-d5234c090c42",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 286,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3428,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3714
+    }
+  },
+  "usage_known": true
+}

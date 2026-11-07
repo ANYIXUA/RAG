@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:59.962010+08:00",
+  "conservative_cost_yuan": 0.00136905,
+  "error": null,
+  "latency_ms": 2557.6742000412196,
+  "list_price_estimate_yuan": 0.00095205,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"内容与上下文一致，覆盖关键测试项\",\n    \"evidence\": \"备用业务通道须完成15分钟无误码测试。[2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应来源支持\",\n    \"evidence\": \"直流工作电压变动范围（标准电压-48V） -40V～-57V 季度\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有周期性测试要求\",\n    \"evidence\": \"表6.6.3.1 有线设备定期测试内容及要求\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"备用业务通道须完成15分钟无误码测试。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881797,
+    "id": "chatcmpl-8d2601a5-d371-9fcb-81d2-a20299290cbb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 278,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3567,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3845
+    }
+  },
+  "usage_known": true
+}

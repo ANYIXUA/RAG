@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:11.309222+08:00",
+  "conservative_cost_yuan": 0.0007989,
+  "error": null,
+  "latency_ms": 1387.8729999996722,
+  "list_price_estimate_yuan": 0.0006189,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 直埋光缆与市外大树之间平行时最小净距为2米。[1]  \n2. 该数据来源于《电信基础设施维护规程》第345页表D.0.4。[1]  \n3. 交越时无具体要求，仅标注为“-”。[1]  \n4. 市内、村镇大树的净距为0.75米，与市外大树不同。[1]  \n5. 维护时应严格遵循规程中规定的距离标准。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881089,
+    "id": "chatcmpl-ffc10c75-c6bb-960a-acb4-dc061022b076",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 120,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2926,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3046
+    }
+  },
+  "usage_known": true
+}

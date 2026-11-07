@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:22.483194+08:00",
+  "conservative_cost_yuan": 0.00140085,
+  "error": null,
+  "latency_ms": 2691.7348001152277,
+  "list_price_estimate_yuan": 0.00096435,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出费率20%\",\n    \"evidence\": \"CS00010 特殊地区维护作业增加费 表-04 人工费合计 20\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"特殊地区维护作业增加费 表-04 人工费合计 20\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖费率、适用范围、计算基础\",\n    \"evidence\": \"措施项目费=∑〔人工费×费率 费率〕\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"CS00010 特殊地区维护作业增加费 表-04 人工费合计 20\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881699,
+    "id": "chatcmpl-1fbe21bd-429d-9309-8407-e24e226343a7",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 291,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3519,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3810
+    }
+  },
+  "usage_known": true
+}

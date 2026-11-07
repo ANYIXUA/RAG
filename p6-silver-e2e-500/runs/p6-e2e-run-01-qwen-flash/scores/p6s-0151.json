@@ -1,0 +1,48 @@
+{
+  "answer_correctness": {
+    "evidence": "WH11004002 山区 36.01 24.43 6.69 4.89 0.21 —",
+    "reason": "混淆车辆与徒步巡回",
+    "score": 0
+  },
+  "case_id": "p6s-0151",
+  "citation_correctness": {
+    "evidence": "WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —",
+    "reason": "引用[2]不支持该句",
+    "score": 0
+  },
+  "completeness": {
+    "evidence": "WH11004002 山区 36.01 24.43 6.69 4.89 0.21 —",
+    "reason": "遗漏关键条件，部分正确",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH11003003 山区 108.02 73.29 20.08 14.66 0.64 —",
+    "reason": "人工费与利润来源错误",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_task_type",
+    "misattribution_of_cost_data"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "722218848f254cc3a1010a82977953e7",
+  "judge_attempts": 3,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答题，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError",
+    "ValueError"
+  ],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

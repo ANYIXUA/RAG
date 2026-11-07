@@ -1,0 +1,14 @@
+# Preserve evaluation evidence bytes and the historical SHA-256 manifests.
+/outputs/p4-gold-completion-01/** -text
+/p3-pilot-01/** -text
+/p3-pilot-02/** -text
+/p4-gold-completion-01/** -text
+/p5-benchmark-01/** -text
+/p6-silver-e2e-500/** -text
+/p7-rag-final-audit-01/** -text
+/storage/evaluation/** -text
+/evaluation-publication-20261107/** -text
+/data/*.pdf -text
+/data/retrieval_eval.* -text
+/reports/retrieval_eval_*.json -text
+/retrieval_eval_20261103_134741.json -text

@@ -1,0 +1,210 @@
+{
+ "checks": {
+  "zip_integrity": {
+   "pass": true,
+   "detail": "zip ok, 11 entries"
+  },
+  "sheet_name_same": {
+   "pass": true,
+   "detail": "['候选审核']"
+  },
+  "dims_same": {
+   "pass": true,
+   "detail": "src=A1:M61 dst=A1:M61"
+  },
+  "candidate_count_57": {
+   "pass": true,
+   "detail": "rows 5..61 candidate_id non-null: 57; max_row=61"
+  },
+  "candidate_ids_match_source": {
+   "pass": true,
+   "detail": "jsonl=57; set_equal=True; row_order_equal=False"
+  },
+  "diff_only_allowed_cells": {
+   "pass": true,
+   "detail": "allowed diffs: 19; forbidden diffs: 0"
+  },
+  "planned_edit_count": {
+   "pass": true,
+   "detail": "actual allowed diffs = 19 (expect 19 = 9H + 3I + 7J)"
+  },
+  "question_answer_chunkids_unchanged": {
+   "pass": true,
+   "detail": ""
+  },
+  "F_all_pending_review": {
+   "pass": true,
+   "detail": "draft=True source=True"
+  },
+  "G_all_human_placeholder_unchanged": {
+   "pass": true,
+   "detail": ""
+  },
+  "H12_nonempty": {
+   "pass": true,
+   "detail": "r5=修订：题面未区分场景。原表备注“; r6=修订：未限定“测试”作业、项目编; r7=建议保留：封面明示规范全称“中国; r8=修订：需锚定表号 7.2（实操技; r9=建议保留：原文 4.3.4.8 ; r10=修订：答案应精确到编码“4-04; r11=修订：题面必须限定二维码所属产品; r12=建议驳回; r13=修订：答案应直接给数值“50℃”; r14=建议驳回; r15=建议驳回; r16=修订：问题问“知识类别”，答案“"
+  },
+  "J_7_revisions_nonempty": {
+   "pass": true,
+   "detail": "rows [5, 6, 8, 10, 11, 13, 16]"
+  },
+  "J_untouched_rows_still_empty": {
+   "pass": true,
+   "detail": ""
+  },
+  "I_3_rejections_nonempty": {
+   "pass": true,
+   "detail": "rows [12, 14, 15]"
+  },
+  "I_untouched_rows_still_empty": {
+   "pass": true,
+   "detail": ""
+  },
+  "reject_H_unchanged": {
+   "pass": true,
+   "detail": ""
+  },
+  "other_45_rows_and_header_unchanged": {
+   "pass": true,
+   "detail": ""
+  },
+  "review_xlsx_untouched": {
+   "pass": true,
+   "detail": ""
+  }
+ },
+ "b12_rows": [
+  {
+   "row": 5,
+   "batch_id": "B01",
+   "candidate_id": "sha256:9631dde730749e95e2c74da24726dd1d8e743b1242d189ac76034732a01fa5e9",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": true,
+   "row_height": 351.0
+  },
+  {
+   "row": 6,
+   "batch_id": "B02",
+   "candidate_id": "sha256:6858125cbf5e8170a757c8a812aca9d1a9b2dd23347c59d5061af9a7c0d982f0",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": true,
+   "row_height": 418.5
+  },
+  {
+   "row": 7,
+   "batch_id": "B03",
+   "candidate_id": "sha256:31d42a216450391763336ebbd7b38604cb50a3557831669e5b3371e63ef477ed",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": false,
+   "row_height": 202.5
+  },
+  {
+   "row": 8,
+   "batch_id": "B04",
+   "candidate_id": "sha256:4d263ebb839f347941da0bd9c9d0c11533925443e6a26519593ad7628f6c29e6",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": true,
+   "row_height": 364.5
+  },
+  {
+   "row": 9,
+   "batch_id": "B05",
+   "candidate_id": "sha256:e3783223e572063f0a3df106a6c1c6084c99e5f2943b788dc72a6996cb96b2bf",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": false,
+   "row_height": 216.0
+  },
+  {
+   "row": 10,
+   "batch_id": "B06",
+   "candidate_id": "sha256:bfd1eea2e2dfb6cd0dbda8053b95cae3aee6dc526998a08e1da1ee5458570a41",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": true,
+   "row_height": 418.5
+  },
+  {
+   "row": 11,
+   "batch_id": "B07",
+   "candidate_id": "sha256:50354083653ee2bf6b5811362051fffcabfb7895978e5d6d0004c77ad21b0622",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": true,
+   "row_height": 540.0
+  },
+  {
+   "row": 12,
+   "batch_id": "B08",
+   "candidate_id": "sha256:d5ab4e3c5473589238491da686184e9c651ecdbf317776b9454bc222b49ff81a",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": true,
+   "J_nonempty": false,
+   "row_height": 607.5
+  },
+  {
+   "row": 13,
+   "batch_id": "B09",
+   "candidate_id": "sha256:8d8e0f5cbd56fd6adb9ba5e09728cc911d24345d7a41f15ec0eaddc37717d1c8",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": true,
+   "row_height": 378.0
+  },
+  {
+   "row": 14,
+   "batch_id": "B10",
+   "candidate_id": "sha256:b503d526e513f66d71916de151812a19403e51bbfd81956c88dee63adda7814a",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": true,
+   "J_nonempty": false,
+   "row_height": 661.5
+  },
+  {
+   "row": 15,
+   "batch_id": "B11",
+   "candidate_id": "sha256:de1dd6ecf011fd92f5cbef969545f045b067fbc353123e327f2b8ce04527a0d3",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": true,
+   "J_nonempty": false,
+   "row_height": 796.5
+  },
+  {
+   "row": 16,
+   "batch_id": "B12",
+   "candidate_id": "sha256:70dc300fbcd568ccd4324dd4c6a93d6e438266da789c7865f0400d0c64547d24",
+   "F": "pending_review",
+   "G": "human",
+   "H_nonempty": true,
+   "I_nonempty": false,
+   "J_nonempty": true,
+   "row_height": 729.0
+  }
+ ]
+}

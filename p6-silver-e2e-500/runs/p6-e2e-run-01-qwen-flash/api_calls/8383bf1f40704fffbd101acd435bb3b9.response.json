@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:00.921670+08:00",
+  "conservative_cost_yuan": 0.0007594500000000001,
+  "error": null,
+  "latency_ms": 1386.7119001224637,
+  "list_price_estimate_yuan": 0.0005914500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 光路由最大物理分光比不低于1:8。[1]  \n2. 无源光分路器推荐支持1:5（75:25）分光。[2]  \n3. 有源光分路器推荐支持1:5（85:15）分光。[2]  \n4. 光路由上行链路最大损耗不超过18dB。[3]  \n5. 光路由需支持至少连接4个光路由。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880839,
+    "id": "chatcmpl-90ef1d6a-cb35-9574-b063-aabaa5668fdf",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2823,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2935
+    }
+  },
+  "usage_known": true
+}

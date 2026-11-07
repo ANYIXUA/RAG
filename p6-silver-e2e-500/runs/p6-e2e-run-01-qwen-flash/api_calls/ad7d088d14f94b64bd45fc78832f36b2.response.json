@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:28.691883+08:00",
+  "conservative_cost_yuan": 0.0007965,
+  "error": null,
+  "latency_ms": 1219.2445998080075,
+  "list_price_estimate_yuan": 0.000624,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH11008维护项目中，直埋光缆日常检修的计量单位为千米²次。[1]  \n2. 该计量单位适用于平原、城区、丘陵及山区等不同地貌。[4]  \n3. 计量依据为合同约定的维护周期与实际发生次数。[4]  \n4. 工作内容包括培土、清除杂物、扶正标石等。[1]  \n5. 与架空、管道光缆检修计量单位一致。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880927,
+    "id": "chatcmpl-d9dfd9fa-b72a-93bb-8128-8089c874c910",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 115,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3010,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3125
+    }
+  },
+  "usage_known": true
+}

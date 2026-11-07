@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：1、检查箱体安装是否牢固，箱盖、门锁是否完好；",
+    "reason": "完全匹配参考证据内容",
+    "score": 1
+  },
+  "case_id": "p6s-0268",
+  "citation_correctness": {
+    "evidence": "检查箱体安装是否牢固，箱盖、门锁是否完好。[1]",
+    "reason": "引用编号与上下文一致且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "检查线缆标识是否齐全准确；",
+    "reason": "覆盖所有关键检查点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查电源电压、指示灯是否正常，箱门是否密封，风扇是否正常、散热是否良好；",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "6aa7caf07c93450abfb9e63b5d5d8c19",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

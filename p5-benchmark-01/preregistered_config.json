@@ -1,0 +1,233 @@
+{
+  "retrieval": {
+    "implementation": "rag_app.indexing.vector_store.PostgresVectorStore.search",
+    "vector_store_provider": "postgresql",
+    "collection_name": "default",
+    "retrieval_top_k": 20,
+    "retrieval_candidate_k": 20,
+    "evaluation_k_values": [
+      1,
+      3,
+      5,
+      10
+    ],
+    "evaluation_max_k": 10,
+    "truncation_rule": "先按生产排序取前 retrieval_top_k 条，再按评估 K 截断；截断只丢尾部，不重排、不补位。",
+    "fusion_algorithm": "加权线性融合：score = semantic_weight/sum_weight * cosine + bm25_weight/sum_weight * max_normalized_bm25；非 RRF、非排名倒数融合。",
+    "fusion_parameters": {
+      "semantic_weight": 0.7,
+      "bm25_weight": 0.3,
+      "normalized_by": "BM25 / maximum BM25 over authorized merged input records; original normalization implementation unchanged"
+    },
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75,
+      "tokenizer": "rag_app.core.text_utils.tokenize_for_keyword_search（ASCII 词 + 中文二字组）"
+    },
+    "filters": {
+      "min_similarity_score": 0.05,
+      "relative_score_threshold": 0.35,
+      "applied_to": "四组完全相同"
+    },
+    "query_rewriting": "未启用：四组都直接用 Gold 原句做 query 文本与查询向量，以隔离查询改写/意图路由的影响。",
+    "tenant_id": null,
+    "permission_tags": null,
+    "candidate_pool_before": "semantic top-N 与 keyword(ILIKE) top-N 的并集，N = retrieval_candidate_k",
+    "candidate_pool": "all unique query tokens ILIKE OR without early LIMIT; existing authorization then BM25 Top20; union with semantic Top20 for hybrid"
+  },
+  "rerank": {
+    "provider": "cross-encoder",
+    "model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+    "candidate_count": 20,
+    "status": {
+      "requested": true,
+      "available": true,
+      "reason": null,
+      "model_name": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "resolved_model_name_or_path": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1",
+      "hf_snapshot_revisions": [
+        "1427fd652930e4ba29e8149678df786c240d8825"
+      ]
+    }
+  },
+  "models": {
+    "embedding_provider": "openai",
+    "embedding_model": "text-embedding-v4",
+    "embedding_dimension": 1024,
+    "embedding_endpoint": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+    "chat_model_unused": "qwen-turbo",
+    "rerank_model": "cross-encoder/mmarco-mMiniLMv2-L12-H384-v1"
+  },
+  "environment": {
+    "packages": {
+      "python": "3.12.14",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "psycopg": "3.3.4",
+      "torch": "2.15.0+cpu",
+      "sentence_transformers": "6.2.0",
+      "transformers": "5.22.1",
+      "openai": "2.41.1"
+    },
+    "config_fingerprint": "a79ed9000b6114da",
+    "config_sources": [
+      "D:\\AgentAIProgect\\RAG\\config\\api.json",
+      "D:\\AgentAIProgect\\RAG\\config\\knowledge.json",
+      "D:\\AgentAIProgect\\RAG\\config\\model.json",
+      "D:\\AgentAIProgect\\RAG\\config\\retrieval.json",
+      "D:\\AgentAIProgect\\RAG\\config\\storage.json"
+    ],
+    "dsn_redacted": "postgresql://rag:***@127.0.0.1:15432/rag",
+    "seed": 0,
+    "randomness": "检索排序为确定性打分（无采样）；重排为 CPU 前向推理，无 dropout；已固定 random.seed 与 PYTHONHASHSEED，结果不受随机性影响。"
+  },
+  "benchmark": "P5-Benchmark-01",
+  "gold_total": 50,
+  "development": 22,
+  "holdout": 28,
+  "metrics_denominator": 28,
+  "methods": [
+    {
+      "key": "A",
+      "name": "bm25_only",
+      "mode": "bm25",
+      "rerank": false,
+      "supplementary": false,
+      "description": "BM25 关键词检索（生产候选池）"
+    },
+    {
+      "key": "B",
+      "name": "vector_only",
+      "mode": "semantic",
+      "rerank": false,
+      "supplementary": false,
+      "description": "向量（余弦）检索"
+    },
+    {
+      "key": "C",
+      "name": "hybrid",
+      "mode": "hybrid",
+      "rerank": false,
+      "supplementary": false,
+      "description": "BM25 + 向量加权融合"
+    },
+    {
+      "key": "D",
+      "name": "hybrid_rerank",
+      "mode": "hybrid",
+      "rerank": true,
+      "supplementary": false,
+      "description": "混合检索 + Cross-Encoder 重排"
+    }
+  ],
+  "packages": {
+    "python": "3.12.14",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "psycopg": "3.3.4",
+    "torch": "2.15.0+cpu",
+    "sentence_transformers": "6.2.0",
+    "transformers": "5.22.1",
+    "openai": "2.41.1"
+  },
+  "input_code_hashes": {
+    "rag_app/api.py": "c0235d7775c8ccad65f2efa7b64452c0081cc968334f6bb12482bc7af8108251",
+    "rag_app/cli.py": "cb1401ca28f0b010ac813c8f03c73e2ab951aa95bf791d67b868aa015de5ffc2",
+    "rag_app/prompt_templates.py": "0962259928623b2e410b3acfc5abed7762e42d31c684e4852853d1cf41129511",
+    "rag_app/public_contract.py": "2d250293ad9992b715894a3341c7420da217a3c9365254a5e31f541156b9b82b",
+    "rag_app/rag.py": "0d8311eac98d5219b854570edc3b26120ee027674c4204e18fc274211aa46aa4",
+    "rag_app/streaming.py": "77bc01549d3bbf0c1db6e2b5414efc2d6b9960d417c2d11f0dcc3d391e2b8df8",
+    "rag_app/version.py": "e8f1fd17e2368d1bf1719e88abef4ba954da599b6dfc20fd9cc88b5fc38379e0",
+    "rag_app/__init__.py": "b9185986493e9d3b1db98fcc19f1edd945e80ee5706ec9be22bf08e2b6b098af",
+    "rag_app/core/config.py": "e5f45c18b0d3aeb0b9f0dcf9a1d8095f0c67317544b48322fdff239664824009",
+    "rag_app/core/error_codes.py": "4074167647a4d985844fe24eb0ed55cbacc62e46577c8dccd9c457f5e9168d05",
+    "rag_app/core/models.py": "f892a287377be286f86b017fb2691ab0d06255fe811b8b41c78419938790f0f0",
+    "rag_app/core/text_utils.py": "38bf029df1049ad1dccb17fdd09b5b560e24062f75e68cdec157f8b239613d47",
+    "rag_app/core/__init__.py": "6d4716d39241fd3b5c0c02b3c8a0c139e323da89216ca434356023e4b27f0862",
+    "rag_app/eval_dataset/candidates.py": "daf8f8b13c1f020c26ccaaba2a47fb3f7aecb8bff62619bef48135c031d5bf0c",
+    "rag_app/eval_dataset/corpus.py": "61932767e050e4c0b420f4060ac9554da19486e817733c0b15bef408b19ec0aa",
+    "rag_app/eval_dataset/coverage.py": "25b0939a425d93577d23bc2ce858d111538a24c39254b5adbfa1158255af0bbe",
+    "rag_app/eval_dataset/ollama.py": "fb1b8e5b0ee4dc49ab910c8e168737bced821b5f72c6f81d57b24a09f411c127",
+    "rag_app/eval_dataset/schemas.py": "f7bf62cfc5514968aaac7932f2c9f77460db420e995034e468516b37bfbd0e35",
+    "rag_app/eval_dataset/__init__.py": "5708f59638de828b8e5d3d6fdd349e27f8918a25172cba201a3a587a2e181447",
+    "rag_app/indexing/chunking.py": "f87ef479c10dbc30761eb282a6fdf2e7e223741dc20b511d2109eae2c5c96892",
+    "rag_app/indexing/embeddings.py": "e05a43f7bb94aff5f98e0d2bed433eec108e3323f71f456fedcaaa84b0f7098f",
+    "rag_app/indexing/offline.py": "1c9aecce749f466987027ef9fabb8588c9b389990658b8e095e3955bbbf1483b",
+    "rag_app/indexing/vector_store.py": "caa94cb3b311e374035db69d1ea3ff1c0c8abed29f71c0b3a69cda1934811040",
+    "rag_app/indexing/__init__.py": "50ccb088c091f06a8b34cec1761f69930d6a98926f6ebfd2ee8f498af9393d6d",
+    "rag_app/ingestion/deepdoc_adapter.py": "e1d626edb93aca2c1e8ec38af01a5479f0de990f116b0da5283530db51df77c2",
+    "rag_app/ingestion/governance.py": "fec580a99270efa206266e1ab12c398568aa0ae011b0042e79f3b1757e810444",
+    "rag_app/ingestion/loaders.py": "a6ffcfcc39c85f563466019b93c7c177ce5531a16d597df5023445907a309a19",
+    "rag_app/ingestion/mineru_adapter.py": "6528812101c5b4704a0e510d95b340c527ed71c4a7ac389118b0b918282c1f83",
+    "rag_app/ingestion/parsing.py": "c01cf6d51c1d3b1a11dcdb9eb82fcb96e1a45eb3a6a802d16437fc5dcc293bdf",
+    "rag_app/ingestion/__init__.py": "9d4f5db0d711a3f3dd4dd54cb85274637aabfc1512cf6df632d902af427525f6",
+    "rag_app/operations/evaluation.py": "f32a9afb6f8e35fa62502b3c1a8417eb444a81b4035fba846821ff36c42da20b",
+    "rag_app/operations/feedback_memory.py": "7c4661f74d582f52050333e17d1d1d5b2facb52488f691f9a726104d6897c7ab",
+    "rag_app/operations/knowledge_lifecycle.py": "103547bd7b439f6da38a6baf3a3fe5cbbbb1a140798d91064276573ec46b2eaa",
+    "rag_app/operations/ops.py": "da7e8a4558c742af902236dc1ad4d8459443b24eec91b9e82fe4d75c7d7cb65e",
+    "rag_app/operations/retrieval_metrics.py": "213915f91a01287cd5e76391f3d453eb2540bef99e361ff51cc3834200b58b4f",
+    "rag_app/operations/__init__.py": "99013150ef9ff663c0d820c36f13f2e033b29c437785aec0cf1635a4cc9c41e3",
+    "rag_app/retrieval/answer_memory.py": "68a6622477974190d872e6e9e1132876e4afd17ddc81d7719fd5525c973b3fca",
+    "rag_app/retrieval/dialogue.py": "4e3f0e90dd732774d427439a51e7d694a4253edd2beb8c0a4b94e57ba7815b6d",
+    "rag_app/retrieval/llm.py": "fead779d43bc087a1470492e28fed3f96ba8dfacbe627e4bdd50c8a05bfa79d5",
+    "rag_app/retrieval/online.py": "5a0ef8a12c267b61016c2025c63d85f2b89b96f68bd947b817afe6ea16b3c18a",
+    "rag_app/retrieval/query.py": "bc73336eda0162736929bad4dc4b460b7779c1539b4c8885109ca5f7673e1f12",
+    "rag_app/retrieval/rerank.py": "fc42cc739548243042c31ed23652df35b685d141c451464266a1b95150581bd3",
+    "rag_app/retrieval/__init__.py": "081dc2c54cbfe5fb1713a80cd4a197816c92dc8306ed3e84189b180fcc992585",
+    "rag_app/tools/order_status.py": "8cbb749eedf112f88efe8468a18e8879b82368fc20111d2df8afed8720f2188d",
+    "rag_app/tools/__init__.py": "a9b3c161c24d4310a091e161f754137e8f1eadb94ff23e5f9995f03e67653984",
+    "p3-pilot-01/analyze.py": "68eff8e2f1601a83d478ff3a681957bce20831cdab2176b7278a90df40834c09",
+    "p3-pilot-01/build_gold_bundle.py": "60c566797760213fc9c940a1b7b0abdaf8edfc6735eda540b5d3ea0ab56cf30a",
+    "p3-pilot-01/run_pilot.py": "cfecb77c04a0ce8f7c7ae5436193401691aa0571a3be81e26129de9b95861ee0",
+    "p3-pilot-01/verify_repeatability.py": "233d74c6c261964c0cd1d16f23601cf17a25db7f29f2752328b56da36f378a4c",
+    "p3-pilot-01/_scratch/debug_bm25.py": "be88302597c5d7807e1e05c5fa9a785e8edd01679a4282e0798e548c07d8da74",
+    "p3-pilot-01/_scratch/probe_db.py": "0ff0971a01cea0d0fce6564b7476a2786feb0b055cab5c782ccb975c61b2fcfa",
+    "p3-pilot-02/audit_rerank.py": "8d4f8d786cb9adeddfbc4140d00df6eb77ef1e92ec1a6077eae4c98a0eb311eb",
+    "p3-pilot-02/probe_candidates.py": "9819bd4c7cdf42f5307a2f765926c226fc1b4b969cc674ba4bab4b9fc5c34064",
+    "p3-pilot-02/run_comparison.py": "e3ef4313b6ef1fa1759ca46f6cfbbbe4c476051d71ba5fea7044649e3c4ffefa",
+    "p3-pilot-02/summarize.py": "405beefbb0075db538b7ba974ea2ed45b34eaa01bd73c82d6dcda9cc4ca3b1a7",
+    "p3-pilot-02/verify_runs.py": "15746641ccf0b8c9498f5d65d93ceebebf27644eb7c8d730452725d7849c77e8",
+    "p3-pilot-02/baseline/vector_store_before.py": "cd4704bb89ceb94a0c21ed85e4d2d8cac4bd3177a99d13a25aef9fcae15a7d3d",
+    "p3-pilot-02/baseline/vector_store_entry_draft.py": "9f3b820841996765de59fd1e6d30cade4304e9eb4185fc1b7d8d5526b8ddec20",
+    "p3-pilot-02/_scratch/probe_candidates.py": "5233ee300e40b8b21332b73dd93f2cac14101b0387d930adedab9a1b3d929b5a",
+    "p3-pilot-02/_scratch/sim_two_stage.py": "545235cd624aa8e069e0cc0944e21f89aa2036aa9a31bd01c270c1d6dcae2a88",
+    "p4-gold-completion-01/signed-final-20261105-v1/benchmark_preflight_pending.md": "e55192f031ebabfaa1e6352ecd48943d933e882730da7bb7400a80564907f8c7",
+    "p4-gold-completion-01/signed-final-20261105-v1/candidate_proposal_gold_lineage.json": "96ddfc7d217ec6a0813b067aed55efc022f5ab677d0e7a78b99fb2b5e039cd3f",
+    "p4-gold-completion-01/signed-final-20261105-v1/development_22_role_manifest.json": "b9fee23b98bac75278eca24514f245cd8960913c44868dca65916a37c3235016",
+    "p4-gold-completion-01/signed-final-20261105-v1/freeze_manifest.json": "fee4bf556ea7ce44a77cc15833b6adb76813322340655a2ab2947b5e8f470f5a",
+    "p4-gold-completion-01/signed-final-20261105-v1/human_metadata_confirmation.json": "1052a762a0c2e232c8252a0ee4fb662f798ec30fc93bbbbc26299ff3128f2ac5",
+    "p4-gold-completion-01/signed-final-20261105-v1/human_signoff_receipt_46.jsonl": "582df67a7246041b69e01f5f99a302e7bc70ecacbdab77375e18851657991973",
+    "p4-gold-completion-01/signed-final-20261105-v1/nonprimary_dispositions_18.json": "89e7e9fe836e5d73ad41e9390d346f3373c8837a8e448bfffb5e3b2f5bad5174",
+    "p4-gold-completion-01/signed-final-20261105-v1/retrieval_gold_holdout_28.jsonl": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c",
+    "p4-gold-completion-01/signed-final-20261105-v1/retrieval_gold_holdout_metadata.json": "aabb8d81b3d29031bed87bf821c1a3c759044d286347cb4dff62d2e5770636d7",
+    "p4-gold-completion-01/signed-final-20261105-v1/signoff_archive_report.md": "f589cb6656446e6942b583211f0c630f5300618e7d3b581851cfe973cfeb0509",
+    "p4-gold-completion-01/signed-final-20261105-v1/source_integrity.json": "53a58fbc4e0e1db5e5899e223beb09a6046dc7e14a7e57935e9817bb75f9da75",
+    "p4-gold-completion-01/signed-final-20261105-v1/validation.json": "aa7727967b12bb92043a3d9b0aa8810c9303fa563d93becf439fe3d5885c17b1",
+    "p4-gold-completion-01/signed-final-20261105-v1/validation.md": "8c5be4328d2936596b5941066b4d80290d20e9eaef43e9e1059f44f8a7154c51",
+    "p4-gold-completion-01/signed-final-20261105-v1/audit/reviewed_source.xlsx": "69209e555b9e70f396ce93551d48257b914eb8544bf3f9215bf77906ea0cae20",
+    "p5-benchmark-01/run_benchmark.py": "f2b64ba908fc23851baa749095d645746b41aa32dd207956b1eb7020a1c7f417"
+  },
+  "database_equivalence": {
+    "database_active_chunks": 447,
+    "corpus_chunks": 447,
+    "id_sets_equal": true,
+    "only_in_database": [],
+    "only_in_corpus": [],
+    "text_sha256_mismatches": [],
+    "text_sha256_mismatch_count": 0,
+    "consistent": true
+  },
+  "git_head": "7810bfb54d43a1e5ffb4b6428bd30c0b4b0161a5",
+  "embedding_revision": "Provider exposes text-embedding-v4 alias, no immutable weight revision; exact returned vectors archived. No stronger version guarantee claimed.",
+  "latency_protocol": "Serial query-major A/B/C/D; one non-Gold warmup per method; CPU rerank; excludes embedding, model load, DB initialization. Warm cache, no parallel probes. p50/p95 linear interpolation; 28 timings/method. Not end-to-end or controlled performance benchmark.",
+  "failure_policy": "Any unavailable method or infrastructure exception aborts official run; no dropped queries or denominator changes.",
+  "query_rewriting": false,
+  "intent_routing": false,
+  "seed": 0,
+  "rerank_max_length": 512,
+  "rerank_activation": "Identity",
+  "run_order": [
+    "run1",
+    "run2"
+  ],
+  "reporting_run": "run1 fixed in advance; run2 consistency only",
+  "tuning_allowed": false
+}

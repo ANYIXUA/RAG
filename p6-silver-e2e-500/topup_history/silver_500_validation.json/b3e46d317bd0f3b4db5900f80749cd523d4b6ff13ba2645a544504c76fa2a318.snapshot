@@ -1,0 +1,53 @@
+{
+  "baseline_byte_prefix_preserved": true,
+  "baseline_manifest_sha256": "fb66898d13209f92aa2091e25c9a119b0d33f36dec1fbde2f297d4f71e807e74",
+  "baseline_preserved": true,
+  "baseline_sha256": {
+    "D:\\AgentAIProgect\\RAG\\p4-gold-completion-01\\signed-final-20261105-v1\\retrieval_gold_holdout_28.jsonl": "dd9b5a9e33809d283393077b4f074bf702f661c140bc891db05453c87414496c",
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\corpus\\p1-20261104-v2\\corpus.jsonl": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-04\\retrieval_gold_batch01_9.jsonl": "0ee8bbcd963f09c9b300209e8f1edcd93eb27ece1a077af877a37473568ec73a",
+    "D:\\AgentAIProgect\\RAG\\storage\\evaluation\\outputs\\01a1a5b7-cbe4-70e3-b1a7-cddfd5378f1f\\p2-gold-06\\retrieval_gold_batch02_13.jsonl": "5bfc8df96edd9574954fdb70c874a1fae186b3f442f077dcf92b478f9d103db9",
+    "p3-pilot-01\\pilot_config.json": "d7a60b553eb6388eb32bb48617546749e79e6ee18f857366055af1dfa3ceb2bc",
+    "p6-silver-e2e-500\\generate_silver.py": "e828ba082ed197e021259077e8d9042c480d72761315b1907aee6da3a6938d06",
+    "p6-silver-e2e-500\\generation_raw.jsonl": "435735956a3d748f8c9e61c677b7a7f7647bc56132e886ff4fd6fe2be446b9d9",
+    "p6-silver-e2e-500\\generation_raw_debug.jsonl": "ecf942c50335c427dbc7d56eea729f3b6d98703c118f8b07001a9d92848428a0",
+    "p6-silver-e2e-500\\generation_summary.json": "dc532f0068b8df297f39b9ba8be019116d3c7d4373d4e5dac7ef53eb2c695250",
+    "p6-silver-e2e-500\\silver_build_summary.json": "d2037dae1951b360469f0435156f46e727d59d452c59da5d689c3e47111cf73c",
+    "p6-silver-e2e-500\\silver_cases.jsonl": "ce4a5d9b42ac3786e049ac331047150245b8431745badfd75512fb0119e5346f"
+  },
+  "by_type": {
+    "colloquial": 50,
+    "exact_fact": 200,
+    "multi_condition": 100,
+    "procedure": 100,
+    "unanswerable": 50
+  },
+  "checks": [
+    "exact_total_500",
+    "strict_type_quotas",
+    "original_466_fields_and_ids",
+    "unique_sequential_ids",
+    "nonempty_questions",
+    "original_evidence_validation",
+    "chunk_ids_exist",
+    "source_document_page_consistency",
+    "multi_two_distinct_chunks",
+    "verbatim_quotes_original_whitespace_rules",
+    "gold_and_silver_similarity_0.80",
+    "same_evidence_answer_similarity_0.60",
+    "generation_provenance"
+  ],
+  "errors": [],
+  "final_sha256": "8663045a24eaaf125c95ea461038db16578c61babef97ccccb105627d3dc42b9",
+  "human_signoff": "not_performed",
+  "jsonl_valid": true,
+  "quality_risks": [
+    "Unanswerability has only passed the original automated token overlap screen; corpus-wide semantic answerability and human review remain pending.",
+    "Automated evidence checks do not establish full semantic entailment or two-chunk reasoning."
+  ],
+  "rag_e2e": "not_run",
+  "status": "passed",
+  "topup_raw_sha256": "81b6246a7fbdc748d30d60d5b31c4caec473bbce3154bedc3d6ac0baa70cb8fb",
+  "topup_script_sha256": "9871e0a0753611427a955b59081d93ed2a6f7797717bceaae2585a0a91521044",
+  "total": 500
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "如埋深超过0.5 米，则每加深30 厘米按2 个计算",
+    "reason": "正确引用上下文，信息准确",
+    "score": 1
+  },
+  "case_id": "p6s-0257",
+  "citation_correctness": {
+    "evidence": "WH12031002 流水 128.98 87.50 23.98 17.50 消耗量 0.5 0.5",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "注：本子目适用于人手孔埋深小于等于0.5 米场景",
+    "reason": "覆盖问题所有条件与步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH12031002 流水 128.98 87.50 23.98 17.50 消耗量 0.5 0.5",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "df1a3044285b4341949776bf1b447f1b",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

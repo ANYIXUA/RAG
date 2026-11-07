@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:58.120196+08:00",
+  "conservative_cost_yuan": 0.0007344,
+  "error": null,
+  "latency_ms": 1567.3885000869632,
+  "list_price_estimate_yuan": 0.0005664,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 嵌入式全光组网终端表面温度上限为65℃。[1]  \n2. 该要求适用于室温25±2℃环境条件。[1]  \n3. 非嵌入式终端温度上限为50℃，与嵌入式不同。[1]  \n4. 温度要求出自中国移动智慧家庭全光组网产品技术规范。[1]  \n5. 设备在该温度下应保证无业务中断或性能下降。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880896,
+    "id": "chatcmpl-788ae25a-d979-924e-8ee2-2c0a37b07546",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2656,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2768
+    }
+  },
+  "usage_known": true
+}

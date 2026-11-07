@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:56.806923+08:00",
+  "conservative_cost_yuan": 0.00070545,
+  "error": null,
+  "latency_ms": 1144.0653998870403,
+  "list_price_estimate_yuan": 0.00054945,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安全生产费按维护总费用的1.5%计算。[1]  \n2. 计算基数包括作业费、材料费、机械费等。[1]  \n3. 材料及备品备件费应包含发包人提供的部分。[1]  \n4. 安全生产费用于防护用具购置与安全措施落实。[1]  \n5. 该比例依据《电信基础设施维护规程》规定。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881195,
+    "id": "chatcmpl-a2b33441-13a0-93b8-b219-a011dcc5f6fd",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2623,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2727
+    }
+  },
+  "usage_known": true
+}

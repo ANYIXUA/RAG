@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:40.278993+08:00",
+  "conservative_cost_yuan": 0.0007165499999999999,
+  "error": null,
+  "latency_ms": 1402.9702998232096,
+  "list_price_estimate_yuan": 0.0005620499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 入户光缆敷设应做到安全、牢固、隐蔽、美观。[3]  \n2. 施工后需用户签署完工确认单并记录光衰减值。[3]  \n3. 应按终端安装指导手册规范操作设备安装。[3]  \n4. 需综合考虑经济性、安全性及后期维护便捷性。[3]  \n5. 敷设过程须遵守装维作业安全操作规范。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880878,
+    "id": "chatcmpl-e04be70c-74f6-9711-b13c-d7e5249e4723",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 103,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2717,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2820
+    }
+  },
+  "usage_known": true
+}

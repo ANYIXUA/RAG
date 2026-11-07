@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:04.948245+08:00",
+  "conservative_cost_yuan": 0.0009085499999999999,
+  "error": null,
+  "latency_ms": 1651.6969001386315,
+  "list_price_estimate_yuan": 0.00067455,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 96芯以下光缆性能测试综合单价为272.22元/段·次。[3]  \n2. 直埋光缆金属护套对地绝缘电阻测试综合单价为120.03元/条千米·次。[1]  \n3. 测试工作内容包括技术指标测试、记录、资料整理与分析等。[1][2]  \n4. 计量单位分别为“段·次”和“条千米·次”，按实际发生次数计算。[2]  \n5. 以上价格依据《电信基础设施维护规程》表10.2.3.1与表10.2.3.3。[3][1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881143,
+    "id": "chatcmpl-8b99641c-3af1-9ddf-b9f1-9ed9c8c89bdb",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 156,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2937,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3093
+    }
+  },
+  "usage_known": true
+}

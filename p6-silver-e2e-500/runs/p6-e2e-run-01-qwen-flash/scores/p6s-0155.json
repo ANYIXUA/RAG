@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23115038 智慧灯杆（视频监控杆）15m 以 下 826.27 516.42 154.93 154.93 4.53",
+    "reason": "上下文明确支持826.27元",
+    "score": 1
+  },
+  "case_id": "p6s-0155",
+  "citation_correctness": {
+    "evidence": "WH23115038 智慧灯杆（视频监控杆）15m 以 下 826.27 516.42 154.93 154.93 4.53",
+    "reason": "[1]对应实际来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23115038 智慧灯杆（视频监控杆）15m 以 下 826.27 516.42 154.93 154.93 4.53",
+    "reason": "覆盖费用、标准、适用范围",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23115038 智慧灯杆（视频监控杆）15m 以 下 826.27 516.42 154.93 154.93 4.53",
+    "reason": "每项事实均来自上下文",
+    "score": 1
+  },
+  "flags": [
+    "multiple_references_used"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "fd8583f2197e4db6bdde338b62e7063a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

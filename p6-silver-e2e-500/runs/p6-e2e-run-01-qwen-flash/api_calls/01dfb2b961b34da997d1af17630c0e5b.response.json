@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:16.684593+08:00",
+  "conservative_cost_yuan": 0.00175425,
+  "error": null,
+  "latency_ms": 3246.977699920535,
+  "list_price_estimate_yuan": 0.00117825,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"参考证据支持单价136.80元\",\n    \"evidence\": \"WH21102009 山区 136.80 85.50 25.65 25.65 0.75 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"WH21102009 山区 136.80 85.50 25.65 25.65 0.75 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖价格、工日、内容等关键点\",\n    \"evidence\": \"WH21102009 山区 136.80 85.50 25.65 25.65 0.75 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持句意\",\n    \"evidence\": \"WH21102009 山区 136.80 85.50 25.65 25.65 0.75 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882113,
+    "id": "chatcmpl-c3e07fb6-63b5-9dc5-b154-163a91cfc814",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 384,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4015,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4399
+    }
+  },
+  "usage_known": true
+}

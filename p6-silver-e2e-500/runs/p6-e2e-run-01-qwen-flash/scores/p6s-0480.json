@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0480",
+  "citation_correctness": {
+    "evidence": "服务能力如沟通、交付技巧纳入绩效评价维度。[2]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "不同职级（初级/中级/高级）的考核权重分配不同。[2]",
+    "reason": "遗漏绩效流程制定方法，仅列维度",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "绩效评估应基于理论知识与实操技能两部分考核。[2]",
+    "reason": "所有事实均来自上下文且可验证",
+    "score": 1
+  },
+  "flags": [
+    "partial_completeness",
+    "overgeneralization"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "58b9c593c9b54170af7b7082a506fc9a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "非拒答场景，无需评分",
+    "score": null
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

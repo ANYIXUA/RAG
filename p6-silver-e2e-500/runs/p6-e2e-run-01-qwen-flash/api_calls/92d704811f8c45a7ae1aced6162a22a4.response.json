@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:22.525156+08:00",
+  "conservative_cost_yuan": 0.0007175999999999999,
+  "error": null,
+  "latency_ms": 1453.7661001086235,
+  "list_price_estimate_yuan": 0.0005615999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 重大节日或活动期间通信保障需增加特殊通信保障费。[1]  \n2. 该费用用于重大节日、活动及事件期间的通信保障与应急演练。[2]  \n3. 特殊通信保障费费率标准为1.5%。[1]  \n4. 费用按实际发生情况计列，不固定金额。[2]  \n5. 属于措施项目费范畴，依据规程计价。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881161,
+    "id": "chatcmpl-ee002504-195c-969e-9a3d-ae6f1d01e5f3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 104,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2704,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2808
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "挖坑，埋设地锚、安装拉线、收紧拉线，回填夯实，做中、上把，安装警示保护装置，清理现场等。",
+    "reason": "上下文明确支持修复步骤",
+    "score": 1
+  },
+  "case_id": "p6s-0316",
+  "citation_correctness": {
+    "evidence": "若地锚松动，可考虑制作新横木地锚加固。[3]",
+    "reason": "引用编号与上下文匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "回填后需夯实，并做中、上把处理。[2]",
+    "reason": "覆盖了关键修复步骤",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "应挖坑并埋设地锚，确保拉线稳固。[2]",
+    "reason": "每项事实均有对应来源支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "bc89a4321e7d4a929dd3fa8cf034b053",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "colloquial",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

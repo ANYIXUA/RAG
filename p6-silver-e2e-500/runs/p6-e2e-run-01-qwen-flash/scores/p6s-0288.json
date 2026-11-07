@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "1 维护分项作业费 1.1 表—03 合计",
+    "reason": "答案错误，应为表—03",
+    "score": 0
+  },
+  "case_id": "p6s-0288",
+  "citation_correctness": {
+    "evidence": "[2] 1 维护分项作业费 1.1 表—03 合计",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "1 维护分项作业费 1.1 表—03 合计",
+    "reason": "部分回答但遗漏关键信息",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "1 维护分项作业费 1.1 表—03 合计",
+    "reason": "事实与上下文矛盾",
+    "score": 0
+  },
+  "flags": [
+    "incorrect_table_reference",
+    "contradiction_with_context"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "864601b78da54f5aa9978fee86cfbce5",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答题，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:05.809427+08:00",
+  "conservative_cost_yuan": 0.00083325,
+  "error": null,
+  "latency_ms": 1477.7993999887258,
+  "list_price_estimate_yuan": 0.00063225,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 吊顶式机房通用空调的消耗量为1.45台·次。[1]  \n2. 该数据来源于《电信基础设施维护规程》第311页表10.4.3.10。[1]  \n3. 消耗量单位为“台·次”，适用于安装与调试作业。[1]  \n4. 与壁挂式（1.20）和立式（1.75）相比，吊顶式消耗量居中。[1]  \n5. 信息一致出现在第284页相同表格中。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880844,
+    "id": "chatcmpl-90a23c31-494b-9297-a194-0a18339093d3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 134,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2875,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3009
+    }
+  },
+  "usage_known": true
+}

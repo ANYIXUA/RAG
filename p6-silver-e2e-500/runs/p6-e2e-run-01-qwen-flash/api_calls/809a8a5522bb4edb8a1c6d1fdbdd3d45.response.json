@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:12.359553+08:00",
+  "conservative_cost_yuan": 0.0013908,
+  "error": null,
+  "latency_ms": 2928.3716999925673,
+  "list_price_estimate_yuan": 0.0009767999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确列出固定流程\",\n    \"evidence\": \"1.绑扎 2 安装 3.固定 4.清理现场\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"1.绑扎 2 安装 3.固定 4.清理现场\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖安装、绑扎、固定等关键步骤\",\n    \"evidence\": \"1.绑扎 2 安装 3.固定 4.清理现场\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"1.绑扎 2 安装 3.固定 4.清理现场\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882109,
+    "id": "chatcmpl-13857a27-26c9-9a9c-856e-949a08e89433",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 276,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3752,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4028
+    }
+  },
+  "usage_known": true
+}

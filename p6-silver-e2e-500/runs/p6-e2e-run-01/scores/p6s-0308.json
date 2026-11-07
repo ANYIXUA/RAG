@@ -1,0 +1,7 @@
+{
+  "case_id": "p6s-0308",
+  "judge_invoked": false,
+  "question_type": "exact_fact",
+  "reason": "No successful real LLM answer; no judge invocation",
+  "score_state": "not_run_pending_execution"
+}

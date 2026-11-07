@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:14.677081+08:00",
+  "conservative_cost_yuan": 0.00156225,
+  "error": null,
+  "latency_ms": 3436.366999987513,
+  "list_price_estimate_yuan": 0.00104325,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"综合单价24.57元与上下文一致。\",\n    \"evidence\": \"WH12018001 更换吊线保护装置 24.57 16.67 4.57 3.33\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"WH12018001 更换吊线保护装置 24.57 16.67 4.57 3.33\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、单位、编码及工作内容。\",\n    \"evidence\": \"计量单位：米 维护分项作业 项目编码 项目名称 综合单价 （元）\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源片段。\",\n    \"evidence\": \"WH12018001 更换吊线保护装置 24.57 16.67 4.57 3.33\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882171,
+    "id": "chatcmpl-b59e32fc-f9cd-9b84-930b-99f3a60c0fea",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 346,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3495,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3841
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "机房、铁塔、院墙、护网外内部以及周边一米杂草、杂物集中清除等。",
+    "reason": "上下文明确支持清理范围与对象",
+    "score": 1
+  },
+  "case_id": "p6s-0298",
+  "citation_correctness": {
+    "evidence": "清理范围包括机房、铁塔、院墙及护网内外周边一米内杂草杂物。[1]",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "应按规程要求清除外部环境中的杂草与障碍物。[4]",
+    "reason": "覆盖所有关键步骤与条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "作业对象涵盖一体化机房（方舱）及一体化机柜类型。[2]",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "fd52f530526a4eef80b29ab2d1853ead",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

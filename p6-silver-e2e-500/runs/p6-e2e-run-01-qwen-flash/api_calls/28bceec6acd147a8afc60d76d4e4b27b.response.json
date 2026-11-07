@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:45.083671+08:00",
+  "conservative_cost_yuan": 0.0007902,
+  "error": null,
+  "latency_ms": 1530.596800148487,
+  "list_price_estimate_yuan": 0.0005877,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 丘陵城区架空杆路日常检修技工人工费为30.00元/工日。[1]  \n2. 该费用对应项目编码WH11011002，计量单位为千米²次。[1]  \n3. 综合单价为44.22元，其中技工人工费占30.00元。[1]  \n4. 与架空光缆日常检修在丘陵城区的费用一致。[2]  \n5. 该标准依据《电信基础设施维护规程》第182页规定。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881183,
+    "id": "chatcmpl-61065839-df84-9fea-97e5-115c99d14d91",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 135,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2568,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2703
+    }
+  },
+  "usage_known": true
+}

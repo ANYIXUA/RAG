@@ -1,0 +1,46 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23115032 铁塔20m 以上每增加1m 14.59 9.12 2.74 2.74 0.08",
+    "reason": "上下文明确支持材料费用为14.59元",
+    "score": 1
+  },
+  "case_id": "p6s-0156",
+  "citation_correctness": {
+    "evidence": "WH23115032 铁塔20m 以上每增加1m 14.59 9.12 2.74 2.74 0.08",
+    "reason": "引用编号与上下文来源一致",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23115032 铁塔20m 以上每增加1m 14.59 9.12 2.74 2.74 0.08",
+    "reason": "涵盖问题所需全部条件",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23115032 铁塔20m 以上每增加1m 14.59 9.12 2.74 2.74 0.08",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "correct_reference_match",
+    "consistent_citation",
+    "complete_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "4a50924ec5874bf4a04e5031e796918e",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "multi_condition",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

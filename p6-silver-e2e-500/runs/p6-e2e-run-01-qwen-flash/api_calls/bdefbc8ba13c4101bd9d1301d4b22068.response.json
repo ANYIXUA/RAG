@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:45.734938+08:00",
+  "conservative_cost_yuan": 0.0007723499999999999,
+  "error": null,
+  "latency_ms": 1647.7254999335855,
+  "list_price_estimate_yuan": 0.0005953499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 冬雨季维护作业增加费指防冻、保温、防雨防滑等措施及工效降低所增费用。[1]  \n2. 室内作业项目不计此项费用。[1]  \n3. 费率按2.5%计取，计算基础为人工费合计。[3]  \n4. 该费用属于措施项目费，需按实计列。[1]  \n5. 具体金额依据人工费×费率（2.5%）计算得出。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881004,
+    "id": "chatcmpl-2364f39d-bea2-9589-95a6-cf42e18199cf",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 118,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2789,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2907
+    }
+  },
+  "usage_known": true
+}

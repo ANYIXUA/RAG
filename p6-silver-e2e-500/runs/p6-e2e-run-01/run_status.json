@@ -1,0 +1,16 @@
+{
+  "additional_health_probe_failed": true,
+  "at": "2026-11-05T20:06:08.927831+08:00",
+  "budget_cap_yuan": 20,
+  "cause_scope": "Current configured qwen-turbo is not callable for this account; retirement evidence exists; not an answer-quality result",
+  "formal_batch_started": false,
+  "http_429_generation_attempts": 30,
+  "model_changed": false,
+  "model_inventory_contains_exact_qwen_turbo": false,
+  "pending_cases": 490,
+  "real_judge_invocations": 0,
+  "smoke_attempted": 10,
+  "smoke_failed": 10,
+  "smoke_success": 0,
+  "status": "blocked_model_unavailable"
+}

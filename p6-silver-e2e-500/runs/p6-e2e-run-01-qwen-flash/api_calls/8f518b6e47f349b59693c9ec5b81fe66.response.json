@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:14.194639+08:00",
+  "conservative_cost_yuan": 0.0014419499999999998,
+  "error": null,
+  "latency_ms": 2350.87600001134,
+  "list_price_estimate_yuan": 0.0009964499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，涵盖关键知识\",\n    \"evidence\": \"4.3.1 物联网基础知识 4.3.2 计算机网络基础知识\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"4.3.1 能设置网关的接入业务 4.3.2 能处理网关的常见故障\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题所需全部知识要点\",\n    \"evidence\": \"4.3.1 物联网基础知识 4.3.2 计算机网络基础知识\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配\",\n    \"evidence\": \"[2] 4.3.1 物联网基础知识 4.3.2 计算机网络基础知识\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881751,
+    "id": "chatcmpl-7779b30f-fb04-937c-8a51-dd917a096e15",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 297,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3673,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3970
+    }
+  },
+  "usage_known": true
+}

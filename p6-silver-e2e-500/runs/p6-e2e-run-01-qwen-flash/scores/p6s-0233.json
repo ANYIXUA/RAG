@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "特殊地区维护作业增加费 指在原始森林地区、海拔2000 米以上（含2000 米）的高海拔地区、化工区、核工业区、沙漠地区、山区无人值守站等特殊地区维护作业时所需增加的费用。",
+    "reason": "答案与上下文一致，准确引用费率和计算方式。",
+    "score": 1
+  },
+  "case_id": "p6s-0233",
+  "citation_correctness": {
+    "evidence": "CS00010 特殊地区维护作业增加费 表-04 人工费合计 20",
+    "reason": "引用编号与上下文片段匹配且支持对应语句。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "特殊地区维护作业增加费 指在原始森林地区、海拔2000 米以上（含2000 米）的高海拔地区、化工区、核工业区、沙漠地区、山区无人值守站等特殊地区维护作业时所需增加的费用。",
+    "reason": "涵盖计算方法、适用范围、依据来源，无遗漏。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "特殊地区维护作业增加费 指在原始森林地区、海拔2000 米以上（含2000 米）的高海拔地区、化工区、核工业区、沙漠地区、山区无人值守站等特殊地区维护作业时所需增加的费用。",
+    "reason": "每项事实均有对应上下文支持，无编造。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "1d7e164dfe794727a28735903dd53799",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

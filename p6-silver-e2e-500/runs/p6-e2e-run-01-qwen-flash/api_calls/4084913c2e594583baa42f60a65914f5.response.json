@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:12.192990+08:00",
+  "conservative_cost_yuan": 0.001572,
+  "error": null,
+  "latency_ms": 3194.9729998596013,
+  "list_price_estimate_yuan": 0.0010785,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 0,\n    \"reason\": \"项目编码应为WH12029001，非WH12029\",\n    \"evidence\": \"WH12029001 更换井盖 54.17\"\n  },\n  \"faithfulness\": {\n    \"score\": 0,\n    \"reason\": \"将WH12029误作项目编码\",\n    \"evidence\": \"WH12029 更换井盖 工作内容：清理、回收旧井盖\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"部分回答但核心信息错误\",\n    \"evidence\": \"WH12029001 更换井盖 54.17\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[1]支持WH12029，但不支持主结论\",\n    \"evidence\": \"WH12029 更换井盖 工作内容：清理、回收旧井盖\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"incorrect_project_code\",\n    \"misattribution_of_code\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881989,
+    "id": "chatcmpl-abb4f32f-6dd6-9597-a6c2-86f552aeb51d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 329,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3900,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4229
+    }
+  },
+  "usage_known": true
+}

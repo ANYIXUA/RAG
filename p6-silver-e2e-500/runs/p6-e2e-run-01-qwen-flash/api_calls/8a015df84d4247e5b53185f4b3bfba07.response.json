@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:44.822905+08:00",
+  "conservative_cost_yuan": 0.00171825,
+  "error": null,
+  "latency_ms": 2961.9784001260996,
+  "list_price_estimate_yuan": 0.00114975,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出山区单价93.02元\",\n    \"evidence\": \"WH21111009 山区 93.02 58.14 17.44 17.44 0.51 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH21111009 山区 93.02 58.14 17.44 17.44 0.51 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖单价、场景、编码及来源\",\n    \"evidence\": \"WH21111009 山区 93.02 58.14 17.44 17.44 0.51 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用[1]准确对应相关段落\",\n    \"evidence\": \"WH21111009 山区 93.02 58.14 17.44 17.44 0.51 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882021,
+    "id": "chatcmpl-c4bed33a-cd6c-918e-be8b-61266d87f820",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 379,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3875,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4254
+    }
+  },
+  "usage_known": true
+}

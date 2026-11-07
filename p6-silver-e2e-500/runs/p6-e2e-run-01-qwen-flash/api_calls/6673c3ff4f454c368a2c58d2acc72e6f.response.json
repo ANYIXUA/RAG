@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:27.379396+08:00",
+  "conservative_cost_yuan": 0.0007723499999999999,
+  "error": null,
+  "latency_ms": 1208.9178999885917,
+  "list_price_estimate_yuan": 0.0006148499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 需检查铁塔主体结构及附属设施、铁塔基础、防雷接地装置。[1]  \n2. 附属设施包括防雷接地装置和紧固连接线缆。[2]  \n3. 巡检还应清理铁塔周边环境卫生。[1]  \n4. 需检查铁塔基础与防雷接地装置状态。[2]  \n5. 重点检查附属设备运行情况及连接线缆紧固性。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881106,
+    "id": "chatcmpl-5819e29a-b6fc-95d9-87ab-cea92f5b0f60",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 105,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3049,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3154
+    }
+  },
+  "usage_known": true
+}

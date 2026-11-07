@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:36.228149+08:00",
+  "conservative_cost_yuan": 0.00074415,
+  "error": null,
+  "latency_ms": 1238.8347999658436,
+  "list_price_estimate_yuan": 0.00059415,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 墙面防水作业内容为使用室内防水涂料对墙面进行简易处理。[1]  \n2. 顶面防水使用防水卷材进行简易防水处理。[1]  \n3. 地面墙面防水的计量单位为平方米²次。[1]  \n4. 墙面防水属于机房土建零星维修项目之一。[3]  \n5. 作业内容包含墙面及地面的防水处理。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881055,
+    "id": "chatcmpl-00bca9fe-fca7-942d-9fed-f2ebcc8705da",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 100,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2961,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3061
+    }
+  },
+  "usage_known": true
+}

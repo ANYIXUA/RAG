@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:44.576206+08:00",
+  "conservative_cost_yuan": 0.0013180499999999999,
+  "error": null,
+  "latency_ms": 2954.2290000244975,
+  "list_price_estimate_yuan": 0.0009175499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"问题未在上下文明确回答\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"员工绩效评估应基于技能掌握程度，如故障处理能力。[1]\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏绩效评估维度的完整说明\",\n    \"evidence\": \"服务能力如交付、沟通、销售技巧需纳入绩效评价。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致\",\n    \"evidence\": \"[1] 来源：智慧家庭装维工程与管理职业技能等级标准.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": 0,\n    \"reason\": \"应拒答但未明确表示不知\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"unanswerable_question\",\n    \"overclaiming\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882141,
+    "id": "chatcmpl-a4cf4ae4-3af8-9977-8bb3-cc9492ffd6fc",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 267,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3447,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3714
+    }
+  },
+  "usage_known": true
+}

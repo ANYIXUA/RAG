@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:59.119965+08:00",
+  "conservative_cost_yuan": 0.00079725,
+  "error": null,
+  "latency_ms": 1478.010600199923,
+  "list_price_estimate_yuan": 0.00061725,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 电杆根部护桩综合单价在丘陵地区乘以1.2倍。[1]  \n2. 卡盘、底盘综合单价在丘陵地区乘以1.2倍。[2]  \n3. 丘陵地区适用的调整系数为1.2倍，与城区一致。[1][2]  \n4. 该系数适用于平原以外的非山区地形。[1][2]  \n5. 山区则需乘以1.5倍，高于丘陵地区标准。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881197,
+    "id": "chatcmpl-b37635b3-2743-99b2-9dec-cead3c7838c9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 120,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2915,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3035
+    }
+  },
+  "usage_known": true
+}

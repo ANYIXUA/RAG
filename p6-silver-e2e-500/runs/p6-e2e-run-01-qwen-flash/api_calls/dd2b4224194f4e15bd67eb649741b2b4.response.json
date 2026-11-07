@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:16:06.723362+08:00",
+  "conservative_cost_yuan": 0.00067365,
+  "error": null,
+  "latency_ms": 1418.164099799469,
+  "list_price_estimate_yuan": 0.00052065,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 皮远端射频模块可通过网线POE方式供电，无需市电。[1]  \n2. 安装时仅需连接网线，无需额外布设电线。[1]  \n3. POE供电可实现无市电环境下的稳定运行。[1]  \n4. 该模块设计支持即插即用的无电安装模式。[1]  \n5. 适用于无电源点场景的快速部署。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880965,
+    "id": "chatcmpl-72854dc2-ac71-9cae-9430-5e833d782423",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 102,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2451,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2553
+    }
+  },
+  "usage_known": true
+}

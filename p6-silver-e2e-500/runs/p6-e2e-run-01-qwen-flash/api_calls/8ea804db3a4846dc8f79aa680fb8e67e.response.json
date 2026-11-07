@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:21.541869+08:00",
+  "conservative_cost_yuan": 0.0007892999999999999,
+  "error": null,
+  "latency_ms": 1560.8000000938773,
+  "list_price_estimate_yuan": 0.0006077999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 四角塔垂直度测试周期为半年。[1]  \n2. 单管塔/景观塔垂直度偏差≤全塔高度的1/750。[1]  \n3. 三管塔节段垂直度偏差≤节高的1/1000。[1]  \n4. 拉线塔垂直度偏差≤塔高1/750。[1]  \n5. 层间垂直度要求：每段上下层中心线偏差≤层间高/1500。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881040,
+    "id": "chatcmpl-aa364e20-5008-9cab-993a-f352ae19615e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 121,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2842,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2963
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "6.4 小型局站有线设备维护项目接收",
+    "reason": "正确指出6.4章节",
+    "score": 1
+  },
+  "case_id": "p6s-0190",
+  "citation_correctness": {
+    "evidence": "6.4 小型局站有线设备维护项目接收",
+    "reason": "引用[1]对应实际来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "6.4 小型局站有线设备维护项目接收",
+    "reason": "涵盖问题核心信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "6.4 小型局站有线设备维护项目接收",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "828bf1b925f44d7688e480a7ab1a8b26",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "可回答题，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

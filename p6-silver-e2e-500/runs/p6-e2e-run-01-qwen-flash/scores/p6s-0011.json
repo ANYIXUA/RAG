@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "WH23117002 圆柱形 899.23 562.02 168.61 168.61 4.93",
+    "reason": "实际LLM上下文[1]明确列出圆柱形天线罩的综合单价为899.23元，与问题完全匹配，且该信息在原文中直接可查。",
+    "score": 1
+  },
+  "case_id": "p6s-0011",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第273页\n定位信息：273\n... WH23117002 圆柱形 899.23 ...",
+    "reason": "所有引用编号[1]均正确对应上下文片段[1]，且该片段包含所陈述的所有事实，引用位置和内容一致。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "WH23117002 圆柱形 899.23 562.02 168.61 168.61 4.93",
+    "reason": "问题仅询问综合单价，回答已准确提供该数值，并补充了相关属性（编码、单位、费用构成、适用场景），覆盖了所有必要信息，未遗漏关键条件。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "WH23117002 圆柱形 899.23 562.02 168.61 168.61 4.93",
+    "reason": "回答中的每一项事实（单价、项目编码、计量单位、费用构成、适用场景）均能在上下文[1]中找到对应支持，无虚构或夸大。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "e8d725db89dc457c9bd95ca45958c4fe",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "无",
+    "reason": "问题属于可回答的精确事实类问题，且上下文中有明确答案，因此无需拒答。模型正常作答，符合要求。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "060d45bdaacdbdb9236cd3154515ddefcaba16dd923f8b54eaef3e52be7c852b",
+  "record": {
+    "batch": 6,
+    "candidates": [
+      {
+        "answer": "2134.08元",
+        "evidence": [
+          {
+            "excerpt": "WH23116001 调测基站系统 3 个扇区以下 2134.08 1333.80 400.14 400.14 消耗量 11.70 —",
+            "passage_id": "74a531a7af4a27cd02a5f285"
+          }
+        ],
+        "question": "一个扇区以下的调测基站系统综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "899.23元",
+        "evidence": [
+          {
+            "excerpt": "WH23117002 圆柱形 899.23 562.02 168.61 168.61 4.93",
+            "passage_id": "bef916c05037ab582ba1a745"
+          }
+        ],
+        "question": "圆柱形天线罩的安装美化综合单价是多少元？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "820.80元",
+        "evidence": [
+          {
+            "excerpt": "WH23117019 路灯型高度1800mm 以上 820.80 513.00 153.90 153.90 4.50",
+            "passage_id": "db85cd8d317a59c32679393f"
+          }
+        ],
+        "question": "路灯型高度1800mm以上的安装美化天线综合单价是多少元？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

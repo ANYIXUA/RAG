@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:35:38.722209+08:00",
+  "conservative_cost_yuan": 0.0015586500000000002,
+  "error": null,
+  "latency_ms": 2827.8655998874456,
+  "list_price_estimate_yuan": 0.00109065,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0473工日存在解析歧义\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 0.5,\n    \"reason\": \"线缆连接描述矛盾，部分支持\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏线缆连接作业明确说明\",\n    \"evidence\": \"1、安装电源分配架（柜）、箱：开箱检验、清洁搬运、安装固定、线缆连接、清理现场；\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0,\n    \"reason\": \"引用[1]未支持线缆连接不包含\",\n    \"evidence\": \"工作内容：开箱检验、清洁搬运、划线定位、固定箱体、安装内部配件、清理现场等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答题，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"medium\",\n  \"hallucination_suspected\": true,\n  \"flags\": [\n    \"contradictory_facts\",\n    \"misattribution\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882135,
+    "id": "chatcmpl-3bf5a444-8a53-9df5-83ed-0b210972b0e4",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 312,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4151,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4463
+    }
+  },
+  "usage_known": true
+}

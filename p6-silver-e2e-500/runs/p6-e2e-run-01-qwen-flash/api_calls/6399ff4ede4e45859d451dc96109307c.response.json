@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:07.657712+08:00",
+  "conservative_cost_yuan": 0.0007100999999999999,
+  "error": null,
+  "latency_ms": 1097.524099983275,
+  "list_price_estimate_yuan": 0.0005615999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 提升智慧家庭用户满意度需掌握智能家居组网及场景设置能力。[1]  \n2. 应具备基础网络故障处理与智能组网优化技能。[2]  \n3. 服务过程中需展示专业服务礼仪与沟通技巧。[2]  \n4. 能够进行无线局域网信号检测与覆盖优化。[3]  \n5. 熟悉物联网接入及常见网关故障处理方法。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881146,
+    "id": "chatcmpl-6c9ac265-5c26-9be0-8893-8b66e9886cc9",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 99,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2754,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2853
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:13:59.393900+08:00",
+  "conservative_cost_yuan": 0.0006418499999999999,
+  "error": null,
+  "latency_ms": 922.3639001138508,
+  "list_price_estimate_yuan": 0.0005308499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. Wi-Fi 7光网关的2.4GHz频段支持802.11be标准。[1]  \n2. 该频段配置为2×2天线模式。[1]  \n3. 802.11be即Wi-Fi 7，是当前最新无线标准。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880838,
+    "id": "chatcmpl-412586a6-a699-9ed4-88e2-b7cc361c9148",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 74,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2799,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2873
+    }
+  },
+  "usage_known": true
+}

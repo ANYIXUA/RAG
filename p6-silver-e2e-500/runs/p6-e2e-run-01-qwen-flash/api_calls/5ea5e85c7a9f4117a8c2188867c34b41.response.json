@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:38.594091+08:00",
+  "conservative_cost_yuan": 0.0007839,
+  "error": null,
+  "latency_ms": 1474.7589998878539,
+  "list_price_estimate_yuan": 0.0006129,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 一体化壁挂式开关电源设备安装综合单价为747.84元/台。[1]  \n2. 安装工作包含开箱检验、划线定位、安装固定等流程。[1]  \n3. 该费用已包含人工、企业管理费及利润。[1]  \n4. 项目编码为WH33108003，计量单位为台。[1]  \n5. 适用于机房内壁挂式电源设备的安装施工。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881057,
+    "id": "chatcmpl-9b274c3e-e396-9861-9b89-329c085b78bf",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 114,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2946,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3060
+    }
+  },
+  "usage_known": true
+}

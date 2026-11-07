@@ -1,0 +1,10 @@
+{
+  "pilot": "P3-Pilot-02",
+  "variant": "before",
+  "implementation_path": "p3-pilot-02/baseline/vector_store_before.py",
+  "implementation_sha256": "cd4704bb89ceb94a0c21ed85e4d2d8cac4bd3177a99d13a25aef9fcae15a7d3d",
+  "query_vectors_sha256": "2eead8c09347b3ed31df3774b3a53a33ead5fec93275a2fd4062f144988cc062",
+  "protected_files_verified_before_and_after": 161,
+  "candidate_generation": "original first 12 tokens, priority DESC / updated_at DESC LIMIT 20",
+  "configuration_note": "run_config.json is the original evaluator configuration; only candidate_generation above differs for fixed runs"
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:33:41.834801+08:00",
+  "conservative_cost_yuan": 0.0014029499999999998,
+  "error": null,
+  "latency_ms": 2491.0828000865877,
+  "list_price_estimate_yuan": 0.00098445,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确列出操作步骤\",\n    \"evidence\": \"工作内容：放电、充电，测量记录，清洁整理等。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应引用支持\",\n    \"evidence\": \"放电、充电，测量记录，清洁整理等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖放电、充电、测量、整理\",\n    \"evidence\": \"工作内容：放电、充电，测量记录，清洁整理等。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"工作内容：放电、充电，测量记录，清洁整理等。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_consistent\",\n    \"content_aligned\",\n    \"complete_steps\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882019,
+    "id": "chatcmpl-a3f13521-1a50-9015-82ee-b4ffadc74145",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 279,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3773,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4052
+    }
+  },
+  "usage_known": true
+}

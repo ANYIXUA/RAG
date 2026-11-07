@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0496",
+  "citation_correctness": {
+    "evidence": "[1]对应第9页内容",
+    "reason": "引用编号与来源匹配",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "包含无法回答、原因、建议",
+    "reason": "覆盖拒答必要要素",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "所有结论均基于检索内容，无编造",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "correct_no_answer"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "5a778865ec244b0aae26736dc0f51a89",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "建议补充具体产品型号或品牌信息，或转人工咨询",
+    "reason": "正确拒答并提示补充",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

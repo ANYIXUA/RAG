@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:28.162939+08:00",
+  "conservative_cost_yuan": 0.00143865,
+  "error": null,
+  "latency_ms": 2960.278799990192,
+  "list_price_estimate_yuan": 0.00100215,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确支持半年和特殊天气后执行\",\n    \"evidence\": \"半年 基础回弹均值必须符合设计要求。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"塔体构件齐全，各部件连接牢固、无锈蚀。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖所有条件与执行场景\",\n    \"evidence\": \"特殊天气后应对塔身轴线、基础及所有节点作全面观测检查。\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文匹配且支持内容\",\n    \"evidence\": \"[2] 塔体构件齐全，各部件连接牢固、无锈蚀。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"multi_condition_comprehensive\",\n    \"correct_citation\",\n    \"explicit_timing\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882185,
+    "id": "chatcmpl-c34f7825-b178-9a1a-b7dd-66f6215291ad",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 291,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3771,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4062
+    }
+  },
+  "usage_known": true
+}

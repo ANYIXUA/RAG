@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:55.896226+08:00",
+  "conservative_cost_yuan": 0.0007323,
+  "error": null,
+  "latency_ms": 1517.1213999856263,
+  "list_price_estimate_yuan": 0.0005583,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 信息通信光缆线路维护障碍抢修流程图位于第340页。[1]  \n2. 该流程图收录于《电信基础设施维护规程》的附录B中。[1]  \n3. 第339页为突发事件处理流程图，与抢修流程图不同。[3]  \n4. 第26页提及抢修流程制定要求，但未包含流程图。[2]  \n5. 第19页为总则内容，不涉及流程图位置。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880894,
+    "id": "chatcmpl-4022cd78-064b-9ee7-b655-f43021283397",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 116,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2562,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2678
+    }
+  },
+  "usage_known": true
+}

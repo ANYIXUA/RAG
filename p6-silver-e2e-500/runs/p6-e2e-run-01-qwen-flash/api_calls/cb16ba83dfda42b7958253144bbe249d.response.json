@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:36.070909+08:00",
+  "conservative_cost_yuan": 0.0013250999999999998,
+  "error": null,
+  "latency_ms": 2994.5821999572217,
+  "list_price_estimate_yuan": 0.0009261,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确指出费用未明确，需按实际数量计算。\",\n    \"evidence\": \"相关安装调试项目按实际发生数量计算费用。[2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"设备调测涉及线缆、接地等规范检查，需现场实施。[3]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖费用估算关键点，无遗漏。\",\n    \"evidence\": \"具体收费需根据维护数量及实际工作量确定。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源一致且支持内容。\",\n    \"evidence\": \"建议联系专业人员评估并报价。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881893,
+    "id": "chatcmpl-f9bdb95e-d08f-9196-8c68-f7aff57b833e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 266,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3514,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3780
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "消耗量 0.36 —",
+    "reason": "上下文明确给出0.36工日",
+    "score": 1
+  },
+  "case_id": "p6s-0069",
+  "citation_correctness": {
+    "evidence": "消耗量 0.36 —",
+    "reason": "引用编号与上下文匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "消耗量 0.36 —",
+    "reason": "涵盖问题所需全部关键信息",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "消耗量 0.36 —",
+    "reason": "每项事实均有对应上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "71de1fcfb46c4a71a5a28c43c21d7b13",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

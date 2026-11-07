@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:22:26.972135+08:00",
+  "conservative_cost_yuan": 0.00218625,
+  "error": null,
+  "latency_ms": 6438.340299995616,
+  "list_price_estimate_yuan": 0.00137025,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文中的[1]引用明确指出WH23102003（架顶式）的综合单价为109.44元，与问题直接对应，且该信息在原文中清晰可查。\",\n    \"evidence\": \"WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中每一项事实（如单价、工序、计量单位、人工费占比、项目编码）均能在上下文[1]中找到直接支持，无虚构或夸大。\",\n    \"evidence\": \"WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答涵盖了问题所需的核心信息：综合单价、相关工序、计量单位、人工费比例及项目编码，未遗漏关键条件或步骤。\",\n    \"evidence\": \"WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有陈述均正确引用了来源[1]，且每条引用内容均与对应句子一致，引用编号准确匹配上下文片段。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第251页\\n定位信息：251\\n... WH23102003 架顶式 109.44 68.40 20.52 20.52 0.60\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题为明确的精确事实查询，上下文中有完整答案，无需拒答。此维度不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881340,
+    "id": "chatcmpl-ac77e960-8628-936b-8b16-689dcd809b97",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 544,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3695,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 4239
+    }
+  },
+  "usage_known": true
+}

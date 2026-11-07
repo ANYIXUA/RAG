@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:36:27.566266+08:00",
+  "conservative_cost_yuan": 0.00126525,
+  "error": null,
+  "latency_ms": 2369.387799873948,
+  "list_price_estimate_yuan": 0.00088875,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答基于上下文准确提取关键点\",\n    \"evidence\": \"全光组网终端包含光网关和光路由端两大类\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"支持使用WPS或DPP功能\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖设备选择核心要素\",\n    \"evidence\": \"推荐使用和家亲APP进行统一控制与状态监控\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致且支持内容\",\n    \"evidence\": \"和家亲APP接收平台推送的家庭组网终端上报信息\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"非拒答场景，无需评估\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882185,
+    "id": "chatcmpl-b4329080-22d0-9ac5-8511-5679ce5ea339",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 251,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3415,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3666
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:28:34.537767+08:00",
+  "conservative_cost_yuan": 0.0014068499999999999,
+  "error": null,
+  "latency_ms": 2757.7343999873847,
+  "list_price_estimate_yuan": 0.00097485,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0085的114工日存在解析歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有事实均来自上下文且一致\",\n    \"evidence\": \"WH34103002 电费代缴 站·次 次 31.01 19.38 5.81 5.81 0.17 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所需关键信息\",\n    \"evidence\": \"消耗量在维护作业清单中明确标注为“次”。[1]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881711,
+    "id": "chatcmpl-b09b2e44-197f-9c6c-b46a-7f4783c18a71",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 288,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3619,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3907
+    }
+  },
+  "usage_known": true
+}

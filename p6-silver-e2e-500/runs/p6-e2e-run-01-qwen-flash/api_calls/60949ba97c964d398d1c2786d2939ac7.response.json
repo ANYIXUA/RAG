@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:38.317241+08:00",
+  "conservative_cost_yuan": 0.0007810499999999999,
+  "error": null,
+  "latency_ms": 1628.879299852997,
+  "list_price_estimate_yuan": 0.00060105,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 故障抢修应按准备、到达基站、抢修、确认恢复、清理现场等流程操作。[1]  \n2. 天馈系线系统故障抢修属于WH24102编码下的维护项目。[2]  \n3. 抢修时需检查天线、射频电缆、接地等附属设施是否异常。[3]  \n4. 遇重大故障或安全隐患须及时请示报告。[3]  \n5. 抢修完成后应登记并办理备件交接手续。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881116,
+    "id": "chatcmpl-ee51c8b2-a41f-9e28-9457-fda125d67a29",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 120,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2807,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2927
+    }
+  },
+  "usage_known": true
+}

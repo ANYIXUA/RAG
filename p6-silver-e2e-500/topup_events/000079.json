@@ -1,0 +1,30 @@
+{
+  "previous_sha256": "7195cd06f85fb96bc771fbd0160fa20d96d711b1a844af24e6f49439e86c1da7",
+  "record": {
+    "batch": 39,
+    "candidates": [
+      {
+        "answer": "禁止发包人又要求承包人与另一个或多个咨询人重复核对维护项目结算。",
+        "evidence": [
+          {
+            "excerpt": "同一维护项目结算核对完成，发、承包双方签字确认后，禁止发包人又要求承包人与另一个或多个咨询人重复核对维护项目结算。",
+            "passage_id": "847ed8afec9fe78a708ad65f"
+          },
+          {
+            "excerpt": "8.5.1.1 封面： a） 工作量清单：封—1； b） 招标控制价：封—2； c） 投标总价：封—3； d） 维护费用结算总价：封—4。",
+            "passage_id": "ee399b4631c332fa2e834a3b"
+          }
+        ],
+        "question": "在维护项目结算核对完成后，发包人是否可以要求承包人与另一咨询人重复核对结算？",
+        "question_type": "multi_condition"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "excerpt_not_verbatim",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "previous_sha256": "035a52a68a69d22a86269d4e36d5d8f67ed5e80d6cbcd06976e448e23addbad3",
+  "record": {
+    "batch": 22,
+    "candidates": [
+      {
+        "answer": "1.42",
+        "evidence": [
+          {
+            "excerpt": "WH33109001 安装配电换流设备 壁挂式交流配电箱 259.01 161.88 48.56 48.56 消耗量 1.42 —",
+            "passage_id": "36e3ca9051c2b34c98aa9fca"
+          }
+        ],
+        "question": "壁挂式交流配电箱的消耗量是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "1.75",
+        "evidence": [
+          {
+            "excerpt": "WH33110002 立式 319.20 199.50 59.85 59.85 1.75 —",
+            "passage_id": "a59c4ba1c34979638feb45c2"
+          }
+        ],
+        "question": "立式通用空调的消耗量是多少？",
+        "question_type": "exact_fact"
+      },
+      {
+        "answer": "0.50",
+        "evidence": [
+          {
+            "excerpt": "WH33111002 温湿、烟感、水浸监控单元 91.20 57.00 17.10 17.10 0.50 —",
+            "passage_id": "bd3f6dadfe0d04f74ad28895"
+          }
+        ],
+        "question": "温湿、烟感、水浸监控单元的消耗量是多少？",
+        "question_type": "exact_fact"
+      }
+    ],
+    "decisions": [
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      },
+      {
+        "reason": "duplicate_silver",
+        "status": "rejected"
+      }
+    ],
+    "event": "result"
+  }
+}

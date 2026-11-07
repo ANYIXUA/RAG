@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:04.482346+08:00",
+  "conservative_cost_yuan": 0.0007325999999999999,
+  "error": null,
+  "latency_ms": 1673.2451000716537,
+  "list_price_estimate_yuan": 0.0005435999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 故障抢修的消耗量为114.00工日/次。[1]  \n2. 管道类故障抢通消耗量为5.71工日/处。[3]  \n3. 架空类故障抢通消耗量为7.62工日/处。[3]  \n4. 直埋类故障抢通消耗量为7.62工日/处。[3]  \n5. 天馈系统故障抢修消耗量为0.86工日/次。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881202,
+    "id": "chatcmpl-67092e5e-91f0-9175-ad5a-e3d64b19583f",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 126,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2364,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2490
+    }
+  },
+  "usage_known": true
+}

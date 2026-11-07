@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:59.649454+08:00",
+  "conservative_cost_yuan": 0.0007488,
+  "error": null,
+  "latency_ms": 1253.2663999591023,
+  "list_price_estimate_yuan": 0.0005882999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 标志牌歪斜应立即扶正或更换，确保标识醒目。[3]  \n2. 标志牌周围50厘米内杂草需及时清除，保持整洁。[3]  \n3. 应按周期开展徒步巡回，发现异常及时上报处理。[2]  \n4. 维护工作可结合徒步巡回进行，确保无遗漏。[3]  \n5. 外力施工或恶劣天气后应加强巡查，防范隐患。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881138,
+    "id": "chatcmpl-3a028458-585d-9428-afcf-1ce248dae99e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 107,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2852,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2959
+    }
+  },
+  "usage_known": true
+}

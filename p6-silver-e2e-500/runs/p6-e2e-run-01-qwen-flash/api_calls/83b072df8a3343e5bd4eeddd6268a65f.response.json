@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:03.340847+08:00",
+  "conservative_cost_yuan": 0.0013166999999999999,
+  "error": null,
+  "latency_ms": 2176.6921998932958,
+  "list_price_estimate_yuan": 0.0009296999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"答案与上下文一致，信息准确。\",\n    \"evidence\": \"Wi-Fi 7 光网关产品编码为52、53\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"Wi-Fi 7 光路由产品编码为62、63\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖问题所有条件与步骤。\",\n    \"evidence\": \"设备编码需在二维码中通过productname字段配置\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配且支持内容。\",\n    \"evidence\": \"productname: 产品名称码，2位阿拉伯数字\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881741,
+    "id": "chatcmpl-a5c29b48-aea9-9348-be9e-a416fdeabd93",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 258,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3618,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3876
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:46.392605+08:00",
+  "conservative_cost_yuan": 0.0007518,
+  "error": null,
+  "latency_ms": 1294.1201999783516,
+  "list_price_estimate_yuan": 0.0005838,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 工作内容应列示在“维护分项作业清单综合单价分析表”中。[1]  \n2. 表格中“工作内容”为必填项，需明确描述具体作业内容。[1]  \n3. 工作内容应与项目特征、维护分项作业名称一致。[2]  \n4. 编制时应依据总说明中的维护工作内容填写。[3]  \n5. 未填写视为费用已包含在其他单价中。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881185,
+    "id": "chatcmpl-5a407a73-b177-969f-99ee-baf225c5482c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2772,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2884
+    }
+  },
+  "usage_known": true
+}

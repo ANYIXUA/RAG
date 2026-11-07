@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:52.140546+08:00",
+  "conservative_cost_yuan": 0.00236925,
+  "error": null,
+  "latency_ms": 5545.108600053936,
+  "list_price_estimate_yuan": 0.00147525,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确列出WH23119004（室外、铁塔）安装无线局域网接入点（AP）设备的综合单价为182.40元，与silver_reference一致，且该信息在原文中直接可查。\",\n    \"evidence\": \"WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"所有陈述均能在上下文[1]中找到直接支持：综合单价182.40元、包含安装与调测、计量单位为套、人工费114.00元、项目编码WH23119004，每项事实均有对应原文依据。\",\n    \"evidence\": \"WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"回答完整覆盖了问题所需的核心信息：综合单价、工作内容、计量单位、人工费用及项目编码，未遗漏关键条件或步骤。\",\n    \"evidence\": \"WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个关键结论后均正确标注引用编号[1]，且该编号对应上下文片段[1]，其中包含全部所述信息，引用准确无误。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第276页\\n定位信息：276\\n... WH23119004 室外、铁塔 182.40 114.00 34.20 34.20 1.00\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的exact_fact类型，且上下文中有明确答案，无需拒答。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881306,
+    "id": "chatcmpl-af81b7e2-70c2-902e-b6c8-6097da1df0f1",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 596,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3875,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4471
+    }
+  },
+  "usage_known": true
+}

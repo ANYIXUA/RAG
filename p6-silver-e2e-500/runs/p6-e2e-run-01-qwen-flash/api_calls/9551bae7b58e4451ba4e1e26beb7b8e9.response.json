@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:26.036046+08:00",
+  "conservative_cost_yuan": 0.00133065,
+  "error": null,
+  "latency_ms": 2556.283300044015,
+  "list_price_estimate_yuan": 0.00093615,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"正确引用费率与计算基础\",\n    \"evidence\": \"维护干扰费按人工费的5.0%计取。[2]\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"维护干扰费按人工费的5.0%计取。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖计算方法与适用场景\",\n    \"evidence\": \"维护干扰费适用于受交通管制、人流密集等影响的作业。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"维护干扰费按人工费的5.0%计取。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881883,
+    "id": "chatcmpl-47834870-f9c2-9199-b985-5830d8fab769",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 263,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3611,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3874
+    }
+  },
+  "usage_known": true
+}

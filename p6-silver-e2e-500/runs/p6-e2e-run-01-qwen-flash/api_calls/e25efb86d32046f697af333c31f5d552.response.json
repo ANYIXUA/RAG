@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:44.848206+08:00",
+  "conservative_cost_yuan": 0.00074445,
+  "error": null,
+  "latency_ms": 1225.7167000789195,
+  "list_price_estimate_yuan": 0.00058995,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 山区铅酸电池巡检综合单价为27.36元/组·次。[1]  \n2. 该价格适用于铅酸电池在山区的巡检工作。[1]  \n3. 工作内容包括检查表面、连接线、电压及温度等。[1]  \n4. 单价已包含人工、管理费及利润。[1]  \n5. 计量单位为“组·次”。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880943,
+    "id": "chatcmpl-4cdb407b-62ed-90b6-ac4f-b94f89ec401d",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 103,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2903,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3006
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:45.269444+08:00",
+  "conservative_cost_yuan": 0.00075015,
+  "error": null,
+  "latency_ms": 1286.1770000308752,
+  "list_price_estimate_yuan": 0.00058215,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护分项作业工作量清单应包含项目编码、名称、特征、计量单位和工作量。[1]  \n2. 项目编码由WH加八位数字组成，前五位按附录规定设置。[1]  \n3. 工作量需依据附录规定的计算规则进行确定。[1]  \n4. 项目名称应结合实际维护项目情况确定。[1]  \n5. 项目特征应按附录描述并结合现场实际填写。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881184,
+    "id": "chatcmpl-44141d95-e93d-99b0-ac07-d58525626586",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 112,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2761,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2873
+    }
+  },
+  "usage_known": true
+}

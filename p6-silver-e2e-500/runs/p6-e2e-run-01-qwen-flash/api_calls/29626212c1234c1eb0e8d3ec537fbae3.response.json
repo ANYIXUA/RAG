@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:08.381854+08:00",
+  "conservative_cost_yuan": 0.00068505,
+  "error": null,
+  "latency_ms": 1014.1946000512689,
+  "list_price_estimate_yuan": 0.00055005,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 运维团队应掌握智能家居组网及场景设置技能。[1]  \n2. 提升智能组网故障处理能力可增强用户满意度。[2]  \n3. 优化无线局域网覆盖能改善用户体验。[3]  \n4. 熟悉物联网接入业务设置有助于产品推广。[2]  \n5. 通过销售与沟通技巧提升用户转化率。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881027,
+    "id": "chatcmpl-bbade685-e43c-9ea4-a08c-781414209488",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 90,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2767,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2857
+    }
+  },
+  "usage_known": true
+}

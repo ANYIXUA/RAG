@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:14.835885+08:00",
+  "conservative_cost_yuan": 0.0008604,
+  "error": null,
+  "latency_ms": 1627.971300156787,
+  "list_price_estimate_yuan": 0.0006564,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 室外布放控制信号线人工费为54.72元/十米条，含人工费34.20元。[1]  \n2. 安装室外接地排人工费为100.32元/套，对应0.88工日。[2]  \n3. 两项工作需分别计价，无合并人工费标准。[1][2]  \n4. 人工费按项目编码独立计算，不包含在其他工序中。[2]  \n5. 未提供同时施工的综合人工费率，无法合并计算。[1][2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881153,
+    "id": "chatcmpl-774d29dc-2f63-9edf-a9d4-cc108bffa0af",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 136,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3016,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3152
+    }
+  },
+  "usage_known": true
+}

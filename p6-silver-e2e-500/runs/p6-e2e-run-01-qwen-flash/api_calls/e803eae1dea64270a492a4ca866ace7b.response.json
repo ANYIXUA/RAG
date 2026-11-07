@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:50.765475+08:00",
+  "conservative_cost_yuan": 0.0025548000000000003,
+  "error": null,
+  "latency_ms": 5785.307300044224,
+  "list_price_estimate_yuan": 0.0015302999999999998,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际上下文[1]明确指出山区UPS巡检带电池的消耗量为0.30，与回答一致。该数据来自第235页表10.3.1.9，且在原文中直接可查。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第235页\\n定位信息：235\\n... WH21109003 山区 54.72 34.20 10.26 10.26 0.30 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实均能在实际上下文[1]中找到支持。例如，0.30的数值、单位‘台·次’、包含电池检查等均在原文中明确列出。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第235页\\n定位信息：235\\n... WH21109003 山区 54.72 34.20 10.26 10.26 0.30 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题询问的是‘山区不间断电源（UPS）巡检带电池的消耗量’，回答完整提供了数值0.30、单位‘台·次’、来源页码及项目区分说明，覆盖了所有必要信息点。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第235页\\n定位信息：235\\n... WH21109003 山区 54.72 34.20 10.26 10.26 0.30 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应到上下文片段[1]，且该片段确实支持所陈述的事实。未出现无来源或错误引用。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第235页\\n定位信息：235\\n... WH21109003 山区 54.72 34.20 10.26 10.26 0.30 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的精确事实类问题，且上下文中有明确答案，因此无需拒答。模型正确回答，不适用此维度。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881425,
+    "id": "chatcmpl-f5600f5d-d871-9741-9f10-6ab2556502ee",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 683,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3372,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4055
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,40 @@
+{
+  "previous_sha256": "1626b9e8b00e388c84e6f8fd44c892dc0913f4a5de9552cb7a6e11e924317002",
+  "record": {
+    "batch": 5,
+    "case": {
+      "case_id": "p6s-0470",
+      "expected_behavior": "answer",
+      "generation_batch": 5,
+      "generation_corpus_sha256": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+      "generation_model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+      "generation_model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "generation_seed": 20271111,
+      "generation_version": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+      "label_type": "silver",
+      "prompt_version": "p6-silver-generate-v1",
+      "question": "防护接地装置地线电阻ρ＞500时的测试记录周期是多久？",
+      "question_type": "exact_fact",
+      "reference_answer": "记录",
+      "source_chunk_ids": [
+        "e3cf39da121b2a8bcc3179f0"
+      ],
+      "source_document": [
+        "电信基础设施维护规程.pdf"
+      ],
+      "source_evidence": [
+        {
+          "chunk_id": "e3cf39da121b2a8bcc3179f0",
+          "excerpt": "100＜ρ≤500 记录 ρ＞500 记录"
+        }
+      ],
+      "source_page": 32,
+      "topup_version": "p6-silver-topup-v1"
+    },
+    "event": "semantic_rejection",
+    "human_signoff": "not_performed",
+    "published_sha256": "8663045a24eaaf125c95ea461038db16578c61babef97ccccb105627d3dc42b9",
+    "reason": "period_question_answered_with_record_marker",
+    "reviewer": "automated_agent_inspection"
+  }
+}

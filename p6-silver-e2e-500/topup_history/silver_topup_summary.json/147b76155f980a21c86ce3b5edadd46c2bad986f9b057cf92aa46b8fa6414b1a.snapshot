@@ -1,0 +1,51 @@
+{
+  "attempted_batches": 15,
+  "baseline_count": 466,
+  "by_type": {
+    "colloquial": 50,
+    "exact_fact": 194,
+    "multi_condition": 99,
+    "procedure": 96,
+    "unanswerable": 45
+  },
+  "deduplication_rate": 0.4444444444444444,
+  "deduplication_rate_denominator": "all returned incremental candidates",
+  "duplicates_rejected": 20,
+  "final_count": 484,
+  "interrupted_batches": [],
+  "max_batches": 200,
+  "model": "ollama/qwen3:4b-instruct-2507-q4_K_M",
+  "model_digest": "0edcdef34593eac1aa2be9c7d06c432dcf81945adca5eca2f27662c18f168ba0",
+  "model_errors": {},
+  "new_accepted": 18,
+  "new_candidates": 45,
+  "prompt_version": "p6-silver-generate-v1",
+  "raw_sha256": "aff47686c8ab4f0f54aca1e4c2d99573b04120187ceb1ca35680970c416189ab",
+  "rejected": 27,
+  "rejections": {
+    "bad_excerpt_length": 1,
+    "duplicate_evidence_answer": 1,
+    "duplicate_silver": 19,
+    "excerpt_not_verbatim": 3,
+    "not_a_question": 3
+  },
+  "seed": 20261106,
+  "shortfall": {
+    "colloquial": 0,
+    "exact_fact": 6,
+    "multi_condition": 1,
+    "procedure": 4,
+    "unanswerable": 5
+  },
+  "status": "incomplete",
+  "targets": {
+    "colloquial": 50,
+    "exact_fact": 200,
+    "multi_condition": 100,
+    "procedure": 100,
+    "unanswerable": 50
+  },
+  "topup_version": "p6-silver-topup-v1",
+  "unanswerable_pending_verification": 45,
+  "unanswerable_quality_risk": "Unanswerability has only passed the original automated token overlap screen; corpus-wide semantic answerability and human review remain pending."
+}

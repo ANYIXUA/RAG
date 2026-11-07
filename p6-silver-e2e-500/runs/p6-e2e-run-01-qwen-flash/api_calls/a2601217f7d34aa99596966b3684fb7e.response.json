@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:14:28.609873+08:00",
+  "conservative_cost_yuan": 0.0007550999999999999,
+  "error": null,
+  "latency_ms": 1185.6930998619646,
+  "list_price_estimate_yuan": 0.0005916,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 暂列金额明细表编号为表—09—1。[2]  \n2. 该表属于“其他项目清单”中的组成部分。[2]  \n3. 表—09—1用于列示暂列金额的明细内容。[4]  \n4. 编号规则依据《电信基础设施维护规程》第8.5.1.8条。[2]  \n5. 此表由招标人填写，投标人需计入投标总价。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880867,
+    "id": "chatcmpl-49bf96d9-9fe0-924b-b31f-d8811af06b93",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 109,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2854,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2963
+    }
+  },
+  "usage_known": true
+}

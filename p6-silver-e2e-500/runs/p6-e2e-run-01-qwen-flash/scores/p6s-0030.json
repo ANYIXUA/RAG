@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第233页\n定位信息：233\n... WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —",
+    "reason": "实际LLM上下文[1]明确列出WH21107002（平原、丘陵）的技工人工费为13.68元，与silver_reference一致，且该信息可直接从原文提取，无歧义。",
+    "score": 1
+  },
+  "case_id": "p6s-0030",
+  "citation_correctness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第233页\n定位信息：233\n... WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —",
+    "reason": "所有关键结论均正确标注引用来源[1]，且每条引用均对应实际上下文片段中的具体信息，引用编号与内容严格匹配。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第233页\n定位信息：233\n... WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —",
+    "reason": "问题仅询问技工人工费金额，回答准确给出13.68元，并补充了相关项目编码、综合单价和工作内容作为背景支持，未遗漏必要条件或步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第233页\n定位信息：233\n... WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\n... 工作内容：检查清洁开关电源设备外观；检查调整设备运行参数，检查紧固电源线连接；检查防雷保护设备运行情况；清洁整流模块等。",
+    "reason": "回答中每一项事实均在实际上下文[1]中得到支持。例如技工人工费13.68元、项目编码WH21107002、综合单价21.89元、工作内容等均有对应原文依据。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "964919e9c09f4574a881df86fcb366c4",
+  "judge_attempts": 2,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "无",
+    "reason": "问题属于可回答的exact_fact类型，且上下文存在明确答案，无需拒答，因此该维度不适用。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [
+    "ValueError"
+  ],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:18:18.306314+08:00",
+  "conservative_cost_yuan": 0.00081,
+  "error": null,
+  "latency_ms": 1429.4286000076681,
+  "list_price_estimate_yuan": 0.000618,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 安装室内综合柜(架)作业内容包括开箱检验、清洁搬运、安装固定、线缆连接及清理现场。[1]  \n2. 管道敷设方式下低压供电线路检查项目包括检查导线、接地装置、标志及清理沿线环境。[2]  \n3. 检查需做好巡查记录并按周期执行。[2]  \n4. 作业前应确认设备状态与安装方式（落地式/墙嵌式）。[1]  \n5. 所有操作须遵循维护工作量计算规则。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881096,
+    "id": "chatcmpl-1f64a7bd-1501-9363-b3c7-9478cc275483",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 128,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2840,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2968
+    }
+  },
+  "usage_known": true
+}

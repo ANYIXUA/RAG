@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:17:27.408319+08:00",
+  "input_token_upper_bound": 1118,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0291"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "如何设置智慧家庭中的语音助手唤醒词？ 业务说明 知识库 常见问题"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "cf5795a6bfd04303942c0281219598e5",
+  "reserved_yuan": 0.000559
+}

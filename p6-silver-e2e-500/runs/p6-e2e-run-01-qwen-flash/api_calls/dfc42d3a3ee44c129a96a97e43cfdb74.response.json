@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:25.252424+08:00",
+  "conservative_cost_yuan": 0.000732,
+  "error": null,
+  "latency_ms": 1083.0613998696208,
+  "list_price_estimate_yuan": 0.0005655,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 选择设备需基于全屋智能综合布线与网络拓扑知识。[1]  \n2. 优先考虑支持EasyMeshTM的光网关与光路由组合。[3]  \n3. 设备应具备Wi-Fi质量分析及组网诊断功能。[3]  \n4. 推荐使用和家亲APP进行统一控制与状态监控。[3]  \n5. 确保设备符合《Multi-AP_Specification R2》互操作规范。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881224,
+    "id": "chatcmpl-f4051cd1-477b-9257-ac16-a14bf87acc75",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 111,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2660,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2771
+    }
+  },
+  "usage_known": true
+}

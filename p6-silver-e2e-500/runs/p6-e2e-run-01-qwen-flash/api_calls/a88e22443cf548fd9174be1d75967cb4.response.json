@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:12:16.984402+08:00",
+  "conservative_cost_yuan": 0.0007099500000000001,
+  "error": null,
+  "latency_ms": 1050.3899999894202,
+  "list_price_estimate_yuan": 0.0005659500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 新装放大器和分路器需进行开箱检验与清理搬运。[1]  \n2. 安装后应进行加固、通电调测及功率测试。[1]  \n3. 需做好设备标记并清理现场。[1]  \n4. 施工须符合光纤到户施工及验收规范。[3]  \n5. 作业过程应遵守装维安全操作规范。[3]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880735,
+    "id": "chatcmpl-9772870a-b866-9062-b5fb-9d533f005be6",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 96,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2813,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2909
+    }
+  },
+  "usage_known": true
+}

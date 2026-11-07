@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:32:36.786886+08:00",
+  "conservative_cost_yuan": 0.0014802,
+  "error": null,
+  "latency_ms": 3880.9569000732154,
+  "list_price_estimate_yuan": 0.0009852,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"回答与上下文一致，无错误信息。\",\n    \"evidence\": \"全光组网终端之间应通过《Multi-AP_Specification R2》规范实现EasyMeshTM要求的网络拓扑、漫游、频段切换、角色选择等功能\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持。\",\n    \"evidence\": \"光网关应承担Controller角色，用于家庭Wi-Fi网络的覆盖和回传链路的控制逻辑策略\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键互联机制，无遗漏必要步骤。\",\n    \"evidence\": \"使用和家亲APP绑定终端并操控设备，实现统一管理。[2]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与上下文来源匹配且支持对应语句。\",\n    \"evidence\": \"支持WPS或DPP功能，简化设备快速入网与连接。[2]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可答，无需拒答。\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"correct_citation\",\n    \"complete_response\",\n    \"faithful_to_context\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881952,
+    "id": "chatcmpl-acec98e2-0593-9007-9d94-60646498f45e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 330,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3268,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 3598
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,480 @@
+{
+  "case_id": "p6s-0331",
+  "question": "打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？",
+  "answer": "1. 打穿混凝土墙洞的人工费为23.94元。[2]  \n2. 企业管理费为7.18元。[2]  \n3. 该费用对应项目编码WH23110009。[2]  \n4. 工作内容包括确定位置、打穿墙洞、抹水泥等。[2]  \n5. 计量单位为“个”。[2]",
+  "silver_reference_answer": "人工费14.32元，企业管理费3.92元",
+  "silver_source_evidence": [
+    {
+      "chunk_id": "2ec236820167f2d1a720a4a9",
+      "excerpt": "维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 管理费(元) (含规费) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH34103001 资产盘点/工程随工验收/资 源录入 工日 182.40 114.00 34.20 34.20 消耗量 1.00 — WH34103002 电费代缴 站·次 次 31.01 19.38 5.81 5.81 0.17 — WH34103003 站址业主维系 站·次 次 38.30 23.94 7.18 7.18 0.21 —"
+    },
+    {
+      "chunk_id": "8e1400dd2cd2445aebdca350",
+      "excerpt": "维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41101001 打穿楼墙洞 砖墙 13.60 9.23 2.53 1.85 消耗量 0.08 — WH41101002 混凝土墙 21.10 14.32 3.92 2.86 消耗量 0.13"
+    }
+  ],
+  "original_score": {
+    "answer_correctness": {
+      "evidence": "WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21",
+      "reason": "引用[2]中混凝土墙洞为38.30元，非14.32元",
+      "score": 0
+    },
+    "case_id": "p6s-0331",
+    "citation_correctness": {
+      "evidence": "WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21",
+      "reason": "引用编号与来源匹配",
+      "score": 1
+    },
+    "completeness": {
+      "evidence": "WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21",
+      "reason": "覆盖所有必要信息",
+      "score": 1
+    },
+    "confidence": "high",
+    "correctness_excluded": false,
+    "faithfulness": {
+      "evidence": "WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21",
+      "reason": "人工费与企业管理费数据错误",
+      "score": 0
+    },
+    "flags": [
+      "incorrect_cost_data",
+      "misaligned_reference"
+    ],
+    "hallucination_suspected": true,
+    "judge_api_call_id": "e7a09f37ba40404f8f3e0afcf630e1b1",
+    "judge_attempts": 1,
+    "judge_model": "qwen-flash",
+    "judge_same_model_as_generation": true,
+    "needs_human_review": false,
+    "no_answer_behavior": {
+      "evidence": "",
+      "reason": "问题可回答",
+      "score": null
+    },
+    "no_answer_provisional": false,
+    "prior_errors": [],
+    "question_type": "multi_condition",
+    "score_state": "success",
+    "self_evaluation_bias": true
+  },
+  "original_diagnostic": {
+    "actual_prompt_chars": 3712,
+    "case_id": "p6s-0331",
+    "citation_index_and_context_valid_count": 5,
+    "citation_index_valid_count": 5,
+    "citation_markers": [
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "context_verification": "full normalized Silver quotation in actual rendered request; absence does not rule out alternative support",
+    "diagnosis_is_exploratory": true,
+    "primary_failure_bucket": "1_retrieval_evidence_miss",
+    "question_type": "multi_condition",
+    "reference_all_quotes_in_actual_prompt": false,
+    "reference_all_retrieved": false,
+    "reference_chunk_ids": [
+      "2ec236820167f2d1a720a4a9",
+      "8e1400dd2cd2445aebdca350"
+    ],
+    "reference_quote_context_hit_ids": [
+      "8e1400dd2cd2445aebdca350"
+    ],
+    "retrieved_chunk_ids": [
+      "3d3eb164235efb301e727bfd",
+      "755703e2be3f7e101dd7eccc",
+      "8e1400dd2cd2445aebdca350",
+      "fe0efc14933cd5d787519744"
+    ],
+    "unanswerable_provisional": false
+  },
+  "actual_generation_api_call_id": "325eea4b50fe451697d26e8364f1de71",
+  "actual_generation_prompt": "# 角色与记忆\n你是一台专门的“装维业务知识问答助手”。\n\n# 核心原则（严格遵守）\n1. **限定范围：** 只能基于提供的检索上下文回答问题，若上下文中没有答案，必须明确说明不知道，并提示补充信息或转人工，严禁凭空编造。\n2. **字数限制：** 回答必须控制在 5 条要点以内，且每条要点不得超过 40 个字。\n3. **精准引用：** 回答中的每个关键结论，必须使用如 [1]、[2] 的编号在文末或句末注明来源。引用编号只能来源于提供的上下文片段，不得自创。\n\n# 正确示例 (Good Case)\n【输入】\n用户问题：光猫红灯闪烁怎么处理？\n检索上下文：[1]光猫红灯闪烁通常因为光缆断或光功率低。[2]应先检查尾纤是否插紧。[3]若无法恢复，需上报系统转人工派发修障单。\n\n【输出】\n1. 光猫红灯闪烁通常是光缆断或光功率过低导致。[1]\n2. 处置时应首先检查尾纤是否已经插紧。[2]\n3. 若检查后仍无法恢复，请明确上报系统转人工处理。[3]\n\n# 避坑检查（模型自检项）\n- 严禁出现无引用编号的结论。\n- 严禁出现诸如“您可以尝试重启”等上下文中不存在的盲猜建议。\n---\n# 待处理任务\n\n【用户原始问题】\n打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？\n\n【增强上下文】\n\"\"\"\n请求ID：a7df33f43e944a99ace175cecc0497db\n会话ID：p6-e2e-run01-qwen-flash-p6s-0331-attempt1\n租户ID：未指定\n用户ID：未指定\n权限标签：未指定\n用户原始问题：打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？\n归一化查询：打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？\n是否跟进问答：否\n上下文改写查询：打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？\n上下文关键术语：无\n改写查询：打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？\n检索查询：打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？ 业务说明 知识库 常见问题\n同义词扩展：无\n语义扩展：业务说明, 知识库, 常见问题\n识别意图：general_knowledge\n\n会话历史摘要：\n无\n\n工具调用结果：\n无\n\n检索到的相关文档：\n[1] 来源：电信基础设施维护规程.pdf\n引用标签：[1]\n标题：第326页\n定位信息：326\n综合分：0.775718\n召回综合分：0.775718\n重排分：无\n语义分：0.688756\nBM25 原始分：40.210744\nBM25 归一化分：0.978630\n内容：章节：电信基础设施维护规程 > 第326页 页码：326 T/CAICI XXXX—XXXX 320 10.5 宽带安装和维护工作量清单项目综合单价指标 10.5.1 宽带安装项目综合单价指标 表10.5.1.1 WH41101 打穿楼墙洞 工作内容：确定位置、打穿墙洞、抹水泥等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41101001 打穿楼墙洞 砖墙 13.60 9.23 2.53 1.85 消耗量 0.08 — WH41101002 混凝土墙 21.10 14.32 3.92 2.86 消耗量 0.13\n\n[2] 来源：电信基础设施维护规程.pdf\n引用标签：[2]\n标题：第260页\n定位信息：260\n综合分：0.694730\n召回综合分：0.694730\n重排分：无\n语义分：0.563900\nBM25 原始分：41.088822\nBM25 归一化分：1.000000\n内容：章节：电信基础设施维护规程 > 第260页 页码：260 T/CAICI XXXX—XXXX 254 表10.3.3.10 WH23110 安装防护及加固设施 工作内容：1、安装抗震加固设施：量裁、预制加固件、划线定位、安装； 2、安装加固吊挂、支撑铁架：开箱检验、清洁搬运、安装、加固、清理现场； 3、安装馈线密封窗：开箱检验、清洁搬运、安装加固、密封处理、清理现场； 4、开挖、打穿楼墙洞：确定位置、开挖或打穿墙洞、抹水泥恢复； 5、封堵电缆洞：制作防火隔板、封堵等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23110001 安装防护及加固 设施 抗震机座制作安装 288.19 180.12 54.04 54.04 消耗量 1.58 — WH23110002 房柱加固 136.80 85.50 25.65 25.65 0.75 — WH23110003 安装加固吊装 69.31 43.32 13.00 13.00 0.38 WH23110004 支撑铁架 111.26 69.54 20.86 20.86 0.61 WH23110005 馈线密封窗安装 259.01 161.88 48.56 48.56 1.42 WH23110006 馈线窗封堵 136.80 85.50 25.65 25.65 0.75 WH23110007 开挖墙洞 273.60 171.00 51.30 51.30 1.50 WH23110008 打穿砖墙墙洞 20.06 12.54 3.76 3.76 0.11 WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21\n\n[3] 来源：电信基础设施维护规程.pdf\n引用标签：[3]\n标题：第151页\n定位信息：151\n综合分：0.611732\n召回综合分：0.611732\n重排分：无\n语义分：0.561218\nBM25 原始分：29.978408\nBM25 归一化分：0.729600\n内容：章节：电信基础设施维护规程 > 第151页 页码：151 T/CAICI XXXX—XXXX 145 WH34102 故障抢修 抢修准备、到达机房、故障 抢修、业务恢复确认、清理 现场，返回驻地。 WH34103 其他工作 资产盘点、工程 随工验收、资源 录入/代缴电费/ 站址业主维系 资产盘点、工程随工验收、 资源录入。 代缴电费：抄表、缴费、电 费分析。 站址业主维系:业主满意度 调查。 8.6.4 宽带安装和维护工作量清单项目和计算规则（ 编码 WH40000 ） 8.6.4.1 宽带安装项目 宽带安装项目。维护工作量清单项目设置及工作量计算规则，应按表8.6.4.1 的规定执行。 表8.6.4.1 宽带安装项目（编码：WH411） 项目编码 维护分项作业名称 项目特征 计量单位 维护工作量计算规则 维护工作（操作）内容 WH41101 打穿楼墙洞 砖墙、混凝土 墙 个 1.确定位置 2.打穿墙洞 3.抹水泥等 WH41102 打穿楼层洞 个 不区分材料和结构类型， 按实计列 1.确定位置 2.打穿楼板洞 3.上下抹平等 WH41103 敷设塑料线槽 十米 不区分线槽宽度，按实计 列 1.线槽检查 2.测位 3.安装线槽、挫锐等 WH41104 敷设塑料波纹管 十米 不区分管材直径，按实计 列 1.管材检查 2.测位 3.安装固定等 WH41105 敷设硬质PVC 管 十米 不区分管材直径，按实计 列 1.管材检查 2.配管 3.挫管内口\n\n[4] 来源：电信基础设施维护规程.pdf\n引用标签：[4]\n标题：第327页\n定位信息：327\n综合分：0.542271\n召回综合分：0.542271\n重排分：无\n语义分：0.610508\nBM25 原始分：15.739161\nBM25 归一化分：0.383052\n内容：章节：电信基础设施维护规程 > 第327页 页码：327 T/CAICI XXXX—XXXX 321 表10.5.1.2 WH41102 打穿楼层洞 工作内容：确定位置、打穿楼板洞、上下抹平等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41102001 打穿楼层洞 32.31 21.92 6.01 4.38 消耗量 0.19 — 表10.5.1.3 WH41103 敷设塑料线槽 工作内容：线槽检查、测位、安装线槽、挫锐等。 计量单位：十米 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41103001 敷设塑料线槽 64.65 43.86 12.02 8.77 消耗量 0.38 — 注：不区分线槽宽度，按实计列。\n\"\"\"",
+  "actual_source_labels": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "sources": [
+    {
+      "index": 1,
+      "chunk_id": "8e1400dd2cd2445aebdca350",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 326,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 258,
+      "text": "章节：电信基础设施维护规程 > 第326页 页码：326 T/CAICI XXXX—XXXX 320 10.5 宽带安装和维护工作量清单项目综合单价指标 10.5.1 宽带安装项目综合单价指标 表10.5.1.1 WH41101 打穿楼墙洞 工作内容：确定位置、打穿墙洞、抹水泥等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41101001 打穿楼墙洞 砖墙 13.60 9.23 2.53 1.85 消耗量 0.08 — WH41101002 混凝土墙 21.10 14.32 3.92 2.86 消耗量 0.13"
+    },
+    {
+      "index": 2,
+      "chunk_id": "fe0efc14933cd5d787519744",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 260,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 445,
+      "text": "章节：电信基础设施维护规程 > 第260页 页码：260 T/CAICI XXXX—XXXX 254 表10.3.3.10 WH23110 安装防护及加固设施 工作内容：1、安装抗震加固设施：量裁、预制加固件、划线定位、安装； 2、安装加固吊挂、支撑铁架：开箱检验、清洁搬运、安装、加固、清理现场； 3、安装馈线密封窗：开箱检验、清洁搬运、安装加固、密封处理、清理现场； 4、开挖、打穿楼墙洞：确定位置、开挖或打穿墙洞、抹水泥恢复； 5、封堵电缆洞：制作防火隔板、封堵等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23110001 安装防护及加固 设施 抗震机座制作安装 288.19 180.12 54.04 54.04 消耗量 1.58 — WH23110002 房柱加固 136.80 85.50 25.65 25.65 0.75 — WH23110003 安装加固吊装 69.31 43.32 13.00 13.00 0.38 WH23110004 支撑铁架 111.26 69.54 20.86 20.86 0.61 WH23110005 馈线密封窗安装 259.01 161.88 48.56 48.56 1.42 WH23110006 馈线窗封堵 136.80 85.50 25.65 25.65 0.75 WH23110007 开挖墙洞 273.60 171.00 51.30 51.30 1.50 WH23110008 打穿砖墙墙洞 20.06 12.54 3.76 3.76 0.11 WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21"
+    },
+    {
+      "index": 3,
+      "chunk_id": "3d3eb164235efb301e727bfd",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 151,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 116,
+      "text": "章节：电信基础设施维护规程 > 第151页 页码：151 T/CAICI XXXX—XXXX 145 WH34102 故障抢修 抢修准备、到达机房、故障 抢修、业务恢复确认、清理 现场，返回驻地。 WH34103 其他工作 资产盘点、工程 随工验收、资源 录入/代缴电费/ 站址业主维系 资产盘点、工程随工验收、 资源录入。 代缴电费：抄表、缴费、电 费分析。 站址业主维系:业主满意度 调查。 8.6.4 宽带安装和维护工作量清单项目和计算规则（ 编码 WH40000 ） 8.6.4.1 宽带安装项目 宽带安装项目。维护工作量清单项目设置及工作量计算规则，应按表8.6.4.1 的规定执行。 表8.6.4.1 宽带安装项目（编码：WH411） 项目编码 维护分项作业名称 项目特征 计量单位 维护工作量计算规则 维护工作（操作）内容 WH41101 打穿楼墙洞 砖墙、混凝土 墙 个 1.确定位置 2.打穿墙洞 3.抹水泥等 WH41102 打穿楼层洞 个 不区分材料和结构类型， 按实计列 1.确定位置 2.打穿楼板洞 3.上下抹平等 WH41103 敷设塑料线槽 十米 不区分线槽宽度，按实计 列 1.线槽检查 2.测位 3.安装线槽、挫锐等 WH41104 敷设塑料波纹管 十米 不区分管材直径，按实计 列 1.管材检查 2.测位 3.安装固定等 WH41105 敷设硬质PVC 管 十米 不区分管材直径，按实计 列 1.管材检查 2.配管 3.挫管内口"
+    },
+    {
+      "index": 4,
+      "chunk_id": "755703e2be3f7e101dd7eccc",
+      "document": "电信基础设施维护规程.pdf",
+      "page": 327,
+      "present_label_in_actual_prompt": true,
+      "full_source_text_in_actual_prompt": true,
+      "frozen_corpus_exists": true,
+      "frozen_corpus_line": 215,
+      "text": "章节：电信基础设施维护规程 > 第327页 页码：327 T/CAICI XXXX—XXXX 321 表10.5.1.2 WH41102 打穿楼层洞 工作内容：确定位置、打穿楼板洞、上下抹平等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41102001 打穿楼层洞 32.31 21.92 6.01 4.38 消耗量 0.19 — 表10.5.1.3 WH41103 敷设塑料线槽 工作内容：线槽检查、测位、安装线槽、挫锐等。 计量单位：十米 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41103001 敷设塑料线槽 64.65 43.86 12.02 8.77 消耗量 0.38 — 注：不区分线槽宽度，按实计列。"
+    }
+  ],
+  "retrieval_observation_summary": [
+    {
+      "kind": "search",
+      "request": {
+        "bm25_weight": 0.3,
+        "candidate_k": 20,
+        "keyword_weight": 0.3,
+        "min_score": 0.05,
+        "mode": "hybrid",
+        "permission_tags": [],
+        "query_text": "打穿混凝土墙洞的作业，其人工费和企业管理费分别是多少？ 业务说明 知识库 常见问题",
+        "relative_score_threshold": 0.35,
+        "semantic_weight": 0.7,
+        "tenant_id": null,
+        "top_k": 4
+      },
+      "results": [
+        {
+          "bm25_score": 40.21074371283525,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "8e1400dd2cd2445aebdca350",
+            "metadata": {
+              "block_id": "blk_f1e8038bfe8aecc5a03b",
+              "block_index": 325,
+              "block_type": "paragraph",
+              "business_module": "通用知识",
+              "chunk_index": 325,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 52,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第326页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_c4203bdcc584f5d2a33b",
+              "page_number": 326,
+              "page_warning_codes": [
+                "bordered_table_detected"
+              ],
+              "parent_block_id": "blk_39b0e7e8df5128a4ae3c",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_39b0e7e8df5128a4ae3c",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第326页"
+              ],
+              "section_title": "第326页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_f1e8038bfe8aecc5a03b"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第326页 页码：326 T/CAICI XXXX—XXXX 320 10.5 宽带安装和维护工作量清单项目综合单价指标 10.5.1 宽带安装项目综合单价指标 表10.5.1.1 WH41101 打穿楼墙洞 工作内容：确定位置、打穿墙洞、抹水泥等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41101001 打穿楼墙洞 砖墙 13.60 9.23 2.53 1.85 消耗量 0.08 — WH41101002 混凝土墙 21.10 14.32 3.92 2.86 消耗量 0.13"
+          },
+          "keyword_score": 0.9786297518052305,
+          "normalized_bm25_score": 0.9786297518052305,
+          "rerank_score": null,
+          "retrieval_score": 0.7757182013403667,
+          "score": 0.7757182013403667,
+          "semantic_score": 0.6887561082839966
+        },
+        {
+          "bm25_score": 41.088822037814055,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "fe0efc14933cd5d787519744",
+            "metadata": {
+              "block_id": "blk_296187ca3e20e0791d08",
+              "block_index": 259,
+              "block_type": "paragraph",
+              "business_module": "通用知识",
+              "chunk_index": 259,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected",
+                "semi_structured_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 102,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第260页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_36e8701d1c1fa4da4f1b",
+              "page_number": 260,
+              "page_warning_codes": [
+                "bordered_table_detected",
+                "semi_structured_table_detected"
+              ],
+              "parent_block_id": "blk_90a470f61805b7b8a211",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_90a470f61805b7b8a211",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第260页"
+              ],
+              "section_title": "第260页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_296187ca3e20e0791d08"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第260页 页码：260 T/CAICI XXXX—XXXX 254 表10.3.3.10 WH23110 安装防护及加固设施 工作内容：1、安装抗震加固设施：量裁、预制加固件、划线定位、安装； 2、安装加固吊挂、支撑铁架：开箱检验、清洁搬运、安装、加固、清理现场； 3、安装馈线密封窗：开箱检验、清洁搬运、安装加固、密封处理、清理现场； 4、开挖、打穿楼墙洞：确定位置、开挖或打穿墙洞、抹水泥恢复； 5、封堵电缆洞：制作防火隔板、封堵等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH23110001 安装防护及加固 设施 抗震机座制作安装 288.19 180.12 54.04 54.04 消耗量 1.58 — WH23110002 房柱加固 136.80 85.50 25.65 25.65 0.75 — WH23110003 安装加固吊装 69.31 43.32 13.00 13.00 0.38 WH23110004 支撑铁架 111.26 69.54 20.86 20.86 0.61 WH23110005 馈线密封窗安装 259.01 161.88 48.56 48.56 1.42 WH23110006 馈线窗封堵 136.80 85.50 25.65 25.65 0.75 WH23110007 开挖墙洞 273.60 171.00 51.30 51.30 1.50 WH23110008 打穿砖墙墙洞 20.06 12.54 3.76 3.76 0.11 WH23110009 打穿混凝土墙洞 38.30 23.94 7.18 7.18 0.21"
+          },
+          "keyword_score": 1.0,
+          "normalized_bm25_score": 1.0,
+          "rerank_score": null,
+          "retrieval_score": 0.694729823502326,
+          "score": 0.694729823502326,
+          "semantic_score": 0.5638997478604657
+        },
+        {
+          "bm25_score": 29.97840821803031,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "3d3eb164235efb301e727bfd",
+            "metadata": {
+              "block_id": "blk_fec8a6a7555f5e904548",
+              "block_index": 150,
+              "block_type": "paragraph",
+              "business_module": "通用知识",
+              "chunk_index": 150,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected",
+                "semi_structured_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 82,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第151页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_a8c07d455eaf4f0a241f",
+              "page_number": 151,
+              "page_warning_codes": [
+                "bordered_table_detected",
+                "semi_structured_table_detected"
+              ],
+              "parent_block_id": "blk_0c72c156b3b43966358d",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_0c72c156b3b43966358d",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第151页"
+              ],
+              "section_title": "第151页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_fec8a6a7555f5e904548"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第151页 页码：151 T/CAICI XXXX—XXXX 145 WH34102 故障抢修 抢修准备、到达机房、故障 抢修、业务恢复确认、清理 现场，返回驻地。 WH34103 其他工作 资产盘点、工程 随工验收、资源 录入/代缴电费/ 站址业主维系 资产盘点、工程随工验收、 资源录入。 代缴电费：抄表、缴费、电 费分析。 站址业主维系:业主满意度 调查。 8.6.4 宽带安装和维护工作量清单项目和计算规则（ 编码 WH40000 ） 8.6.4.1 宽带安装项目 宽带安装项目。维护工作量清单项目设置及工作量计算规则，应按表8.6.4.1 的规定执行。 表8.6.4.1 宽带安装项目（编码：WH411） 项目编码 维护分项作业名称 项目特征 计量单位 维护工作量计算规则 维护工作（操作）内容 WH41101 打穿楼墙洞 砖墙、混凝土 墙 个 1.确定位置 2.打穿墙洞 3.抹水泥等 WH41102 打穿楼层洞 个 不区分材料和结构类型， 按实计列 1.确定位置 2.打穿楼板洞 3.上下抹平等 WH41103 敷设塑料线槽 十米 不区分线槽宽度，按实计 列 1.线槽检查 2.测位 3.安装线槽、挫锐等 WH41104 敷设塑料波纹管 十米 不区分管材直径，按实计 列 1.管材检查 2.测位 3.安装固定等 WH41105 敷设硬质PVC 管 十米 不区分管材直径，按实计 列 1.管材检查 2.配管 3.挫管内口"
+          },
+          "keyword_score": 0.7296000890568528,
+          "normalized_bm25_score": 0.7296000890568528,
+          "rerank_score": null,
+          "retrieval_score": 0.6117323626723282,
+          "score": 0.6117323626723282,
+          "semantic_score": 0.5612176227932463
+        },
+        {
+          "bm25_score": 15.739161271236586,
+          "chunk": {
+            "document_id": "c8588238d99d4079e1ec6101",
+            "id": "755703e2be3f7e101dd7eccc",
+            "metadata": {
+              "block_id": "blk_4ea10a520eb41b7333aa",
+              "block_index": 326,
+              "block_type": "paragraph",
+              "business_module": "通用知识",
+              "chunk_index": 326,
+              "chunk_parse_quality_status": "parsed_with_warning",
+              "chunk_parse_warning_codes": [
+                "bordered_table_detected",
+                "semi_structured_table_detected"
+              ],
+              "content_hash": "8ae9b63d869002c1950aaf1192e44b0b876ccb9d927154f35e8c48bcd24094bb",
+              "detected_codes": [],
+              "document_ocr_page_count": 0,
+              "document_ocr_status": "not_required",
+              "document_parse_quality_status": "parsed_with_warning",
+              "document_parse_warning_count": 7,
+              "end_unit": 72,
+              "error_codes": [],
+              "extension": ".pdf",
+              "filename": "电信基础设施维护规程.pdf",
+              "governance_source": "default_curated_policy",
+              "heading_path": [
+                "电信基础设施维护规程",
+                "第327页"
+              ],
+              "knowledge_status": "approved",
+              "media_type": "pdf",
+              "next_block_id": "blk_f931e4e9be11708bcaef",
+              "page_number": 327,
+              "page_warning_codes": [
+                "bordered_table_detected",
+                "semi_structured_table_detected"
+              ],
+              "parent_block_id": "blk_c4203bdcc584f5d2a33b",
+              "parser_name": "pdf",
+              "parser_strategy": "pymupdf_text_with_page_quality_report",
+              "parser_version": "document-parser-v7",
+              "permission_tags": [
+                "public"
+              ],
+              "previous_block_id": "blk_c4203bdcc584f5d2a33b",
+              "review_status": "approved",
+              "section_path": [
+                "电信基础设施维护规程",
+                "第327页"
+              ],
+              "section_title": "第327页",
+              "source": "电信基础设施维护规程.pdf",
+              "source_block_ids": [
+                "blk_4ea10a520eb41b7333aa"
+              ],
+              "source_path": "/app/data/电信基础设施维护规程.pdf",
+              "source_type": "manual",
+              "split_index": 0,
+              "start_unit": 0,
+              "table_parse_applied": false,
+              "table_parse_skip_reason": "block_type_is_paragraph",
+              "table_parse_status": "skipped",
+              "table_parser_route": "deepdoc",
+              "tenant_id": "default",
+              "title": "电信基础设施维护规程",
+              "version_id": "v_8ae9b63d869002c1"
+            },
+            "text": "章节：电信基础设施维护规程 > 第327页 页码：327 T/CAICI XXXX—XXXX 321 表10.5.1.2 WH41102 打穿楼层洞 工作内容：确定位置、打穿楼板洞、上下抹平等。 计量单位：个 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41102001 打穿楼层洞 32.31 21.92 6.01 4.38 消耗量 0.19 — 表10.5.1.3 WH41103 敷设塑料线槽 工作内容：线槽检查、测位、安装线槽、挫锐等。 计量单位：十米 维护分项作业 项目编码 项目名称 综合单价 （元） 其中 名称 人工 人工费(元) 企业管理费(元) 利润(元) 技工 普工 单位 工日 单价(元) 114.00 61.00 WH41103001 敷设塑料线槽 64.65 43.86 12.02 8.77 消耗量 0.38 — 注：不区分线槽宽度，按实计列。"
+          },
+          "keyword_score": 0.383052141449853,
+          "normalized_bm25_score": 0.383052141449853,
+          "rerank_score": null,
+          "retrieval_score": 0.5422713848894847,
+          "score": 0.5422713848894847,
+          "semantic_score": 0.6105082035064697
+        }
+      ]
+    }
+  ],
+  "trace_path": "p6-silver-e2e-500/runs/p6-e2e-run-01-qwen-flash/cases/p6s-0331.json",
+  "trace_sha256": "ba95b5918aee4fe35116a7e91532a015b0837612cc6b990ccca99f0869938c0d"
+}

@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:10.757218+08:00",
+  "conservative_cost_yuan": 0.00123285,
+  "error": null,
+  "latency_ms": 2501.434300094843,
+  "list_price_estimate_yuan": 0.0008698499999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": null,\n    \"reason\": \"p6s-0379工日歧义，无法判断\",\n    \"evidence\": \"\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"智能组网及物联网知识为职业技能考核内容。[2]\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖问题核心要素\",\n    \"evidence\": \"设备装维与故障处理能力影响岗位绩效评估。[3]\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源一致\",\n    \"evidence\": \"服务交付与沟通技巧与业务运维挂钩。[3]\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"非拒答场景，无需评分\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882048,
+    "id": "chatcmpl-ceb3b4bd-331a-94e0-99a9-36815942d822",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 242,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3379,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3621
+    }
+  },
+  "usage_known": true
+}

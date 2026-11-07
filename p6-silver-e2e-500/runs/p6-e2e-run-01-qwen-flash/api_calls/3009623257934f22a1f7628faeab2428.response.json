@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:21:39.579685+08:00",
+  "conservative_cost_yuan": 0.00328515,
+  "error": null,
+  "latency_ms": 8044.1329998429865,
+  "list_price_estimate_yuan": 0.00191715,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文[3]明确指出蓄电池内阻测试的维护指标为‘符合厂家要求’，与实际回答一致。该信息直接来源于第56页的表5.6.3.2，且无矛盾或歧义。\",\n    \"evidence\": \"[3] 来源：电信基础设施维护规程.pdf\\n引用标签：[3]\\n标题：第56页\\n定位信息：56\\n综合分：0.720732\\n召回综合分：0.720732\\n重排分：无\\n语义分：0.616125\\nBM25 原始分：32.024221\\nBM25 归一化分：0.964813\\n内容：... 3 蓄电池内阻测试 符合厂家要求 ...\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每一条事实均在上下文中找到对应来源支持：\\n- 第1条‘符合厂家要求’来自[3]；\\n- 第2条关于测试周期未明确说明，是基于[3]中未提供周期信息的合理推断；\\n- 第3条属于电源系统定期测试项目，由[3]中‘电源系统定期测试内容和指标’部分支持；\\n- 第4条仪器使用包括蓄电池内阻测试仪或电导测试仪，来自[4]中‘动环 电池内阻（电导）测试仪 台’和‘动环 蓄电池内阻测试仪’；\\n- 第5条WH22103004项目编码对应[1]中的表格项。所有陈述均有原文依据。\",\n    \"evidence\": \"[3] ... 3 蓄电池内阻测试 符合厂家要求 ...\\n[4] ... 动环 电池内阻（电导）测试仪 台\\n动环 蓄电池内阻测试仪\\n[1] WH22103004 内阻测试 （未变） 市区 23.71 14.82 4.45 4.45 0.13 —\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题询问的是‘维护指标’，核心答案已准确给出‘符合厂家要求’，并补充了相关背景信息（如测试所属类别、使用工具、项目编码），虽未提及测试周期，但因上下文未提供，属正常缺失，不构成遗漏。整体回答覆盖了问题所需关键点。\",\n    \"evidence\": \"[3] ... 3 蓄电池内阻测试 符合厂家要求 ...\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"每个引用编号均正确对应其来源片段：\\n- [3] 对应第56页内容，支持‘维护指标’；\\n- [3] 同样支持测试属于电源系统项目；\\n- [4] 支持测试仪器信息；\\n- [1] 支持项目编码信息。引用编号与上下文匹配，且所支持内容与句子一致。\",\n    \"evidence\": \"[3] ... 3 蓄电池内阻测试 符合厂家要求 ...\\n[4] ... 动环 电池内阻（电导）测试仪 台\\n动环 蓄电池内阻测试仪\\n[1] WH22103004 内阻测试 （未变） 市区 23.71 14.82 4.45 4.45 0.13 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，且模型已给出有效回答，无需拒答。因此该项不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881291,
+    "id": "chatcmpl-5f5ffcd9-c0a7-9f57-84ec-3e6aae48f40e",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 912,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3661,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4573
+    }
+  },
+  "usage_known": true
+}

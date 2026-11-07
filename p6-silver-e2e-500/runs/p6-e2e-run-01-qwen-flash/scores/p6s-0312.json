@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0312",
+  "citation_correctness": {
+    "evidence": "装维服务计划需掌握光纤到户、物联网等新兴业务运维技能。[1]",
+    "reason": "引用与内容无关",
+    "score": 0
+  },
+  "completeness": {
+    "evidence": "装维服务计划需掌握光纤到户、物联网等新兴业务运维技能。[1]",
+    "reason": "未拒答且内容不相关",
+    "score": 0
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "装维服务计划需掌握光纤到户、物联网等新兴业务运维技能。[1]",
+    "reason": "事实超出上下文范围",
+    "score": 0
+  },
+  "flags": [
+    "unanswerable_question",
+    "overconfident_response"
+  ],
+  "hallucination_suspected": true,
+  "judge_api_call_id": "bc79084f9eb549b68474612ca75e254d",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未提供市场趋势对齐信息，但未编造",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

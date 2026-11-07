@@ -1,0 +1,32 @@
+test_bm25_scores_all_literal_matches_before_topk_and_authorization (tests.test_keyword_candidates.KeywordCandidatesTest.test_bm25_scores_all_literal_matches_before_topk_and_authorization) ... FAIL
+test_empty_query_returns_no_candidates (tests.test_keyword_candidates.KeywordCandidatesTest.test_empty_query_returns_no_candidates) ... ok
+test_literal_predicate_includes_discriminating_term_after_token12 (tests.test_keyword_candidates.KeywordCandidatesTest.test_literal_predicate_includes_discriminating_term_after_token12) ... FAIL
+
+======================================================================
+FAIL: test_bm25_scores_all_literal_matches_before_topk_and_authorization (tests.test_keyword_candidates.KeywordCandidatesTest.test_bm25_scores_all_literal_matches_before_topk_and_authorization)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AgentAIProgect\RAG\tests\test_keyword_candidates.py", line 47, in test_bm25_scores_all_literal_matches_before_topk_and_authorization
+    self.assertEqual([r.chunk.id for r in results], ['target'])
+AssertionError: Lists differ: [] != ['target']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'target'
+
+- []
++ ['target']
+
+======================================================================
+FAIL: test_literal_predicate_includes_discriminating_term_after_token12 (tests.test_keyword_candidates.KeywordCandidatesTest.test_literal_predicate_includes_discriminating_term_after_token12)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\AgentAIProgect\RAG\tests\test_keyword_candidates.py", line 70, in test_literal_predicate_includes_discriminating_term_after_token12
+    self.assertIn('%needle%', params)
+AssertionError: '%needle%' not found in ('test-collection', '%one%', '%two%', '%three%', '%four%', '%five%', '%six%', '%seven%', '%eight%', '%nine%', '%ten%', '%eleven%', '%twelve%', 20)
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.020s
+
+FAILED (failures=2)
+Expected original-baseline failures confirmed: 2

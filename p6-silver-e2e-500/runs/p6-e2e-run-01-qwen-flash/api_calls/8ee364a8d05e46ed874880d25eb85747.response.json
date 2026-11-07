@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:34:08.216091+08:00",
+  "conservative_cost_yuan": 0.0013606500000000001,
+  "error": null,
+  "latency_ms": 2457.104500150308,
+  "list_price_estimate_yuan": 0.00096465,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"覆盖油和接线检查核心要求\",\n    \"evidence\": \"检查变压器油质、油面；检查接线柱及绝缘套管\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"断电外观检查、接线柱及绝缘套管瓷瓶检查更换\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"涵盖关键检查步骤\",\n    \"evidence\": \"检查变压器油质、油面；检查接线柱及绝缘套管\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号与来源匹配\",\n    \"evidence\": \"[1] 断电外观检查、接线柱及绝缘套管瓷瓶检查更换\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793882045,
+    "id": "chatcmpl-6db21450-b369-9f42-9ef3-250f4acfda7b",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 264,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3791,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4055
+    }
+  },
+  "usage_known": true
+}

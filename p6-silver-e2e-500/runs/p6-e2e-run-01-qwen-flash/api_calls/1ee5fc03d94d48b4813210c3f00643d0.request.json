@@ -1,0 +1,20 @@
+{
+  "at": "2026-11-05T20:16:09.024798+08:00",
+  "input_token_upper_bound": 1225,
+  "kind": "embedding",
+  "metadata": {
+    "attempt": 1,
+    "case_id": "p6s-0195"
+  },
+  "output_token_upper_bound": 0,
+  "request": {
+    "dimensions": 1024,
+    "input": [
+      "当用户反馈交互式网络电视无法正常播放时，如何结合故障处理能力与网络基础技术进行排查？ 故障原因 排查步骤 处理步骤 解决办法 现场处理建议"
+    ],
+    "model": "text-embedding-v4",
+    "timeout": 3.0
+  },
+  "request_id": "1ee5fc03d94d48b4813210c3f00643d0",
+  "reserved_yuan": 0.0006125
+}

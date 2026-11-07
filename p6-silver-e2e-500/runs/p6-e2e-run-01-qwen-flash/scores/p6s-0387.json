@@ -1,0 +1,44 @@
+{
+  "answer_correctness": {
+    "evidence": "工作内容：检查清洁开关电源设备外观；检查调整设备运行参数，检查紧固电源线连接；检查防雷保护设备运行情况；清洁整流模块等。",
+    "reason": "与上下文一致，覆盖全部关键操作。",
+    "score": 1
+  },
+  "case_id": "p6s-0387",
+  "citation_correctness": {
+    "evidence": "检查电源线接头的防腐处理；检查标签标识等。",
+    "reason": "第5点引用[2]但内容不匹配。",
+    "score": 0.5
+  },
+  "completeness": {
+    "evidence": "检查清洁开关电源设备外观；检查调整设备运行参数，检查紧固电源线连接；检查防雷保护设备运行情况；清洁整流模块等。",
+    "reason": "涵盖所有必要巡检操作。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "检查调整设备运行参数，检查紧固电源线连接。",
+    "reason": "每项事实均有对应上下文支持。",
+    "score": 1
+  },
+  "flags": [
+    "citation_mismatch"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "b4d65de881144158a1baec3ca03829a6",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "procedure",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

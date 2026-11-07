@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:31:45.778624+08:00",
+  "conservative_cost_yuan": 0.00141975,
+  "error": null,
+  "latency_ms": 2868.7160999979824,
+  "list_price_estimate_yuan": 0.00098025,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"准确对应材料费计列规则\",\n    \"evidence\": \"材料及备品备件购置费是指为保证电信基础设施正常运行购置材料及备品备件的费用。\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有上下文支持\",\n    \"evidence\": \"工具用具使用费包含在措施项目费中，按项计取。\"\n  },\n  \"completeness\": {\n    \"score\": 0.5,\n    \"reason\": \"遗漏部分费用构成说明\",\n    \"evidence\": \"维护预算汇总表 表格列：项目名称：；第；页；共；页\"\n  },\n  \"citation_correctness\": {\n    \"score\": 0.5,\n    \"reason\": \"引用[8]未在上下文中出现\",\n    \"evidence\": \"工具用具使用费包含在措施项目费中，按项计取。\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": [\n    \"citation_mismatch\"\n  ]\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881902,
+    "id": "chatcmpl-31c61800-59ae-93a9-bb2b-566c602175b8",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 293,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3605,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3898
+    }
+  },
+  "usage_known": true
+}

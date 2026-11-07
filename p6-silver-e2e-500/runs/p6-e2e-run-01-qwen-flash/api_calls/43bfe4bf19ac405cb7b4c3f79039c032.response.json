@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:15:40.813657+08:00",
+  "conservative_cost_yuan": 0.000705,
+  "error": null,
+  "latency_ms": 1225.9347001090646,
+  "list_price_estimate_yuan": 0.0005595,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 定期测试应按半年周期进行直流工作电压检测。[2]  \n2. 备用光接口性能需按设备规范指标测试。[2]  \n3. 备用业务通道须完成15分钟无误码测试。[2]  \n4. 电源系统直流电压变动范围每季度测试一次。[2]  \n5. 蓄电池及锂电池浮充电压应符合厂家要求。[2]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793880939,
+    "id": "chatcmpl-5ba97de2-54c1-9c43-b8ac-98471b70ceea",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 97,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2760,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 2857
+    }
+  },
+  "usage_known": true
+}

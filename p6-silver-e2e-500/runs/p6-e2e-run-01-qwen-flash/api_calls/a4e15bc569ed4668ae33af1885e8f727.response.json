@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:20:10.823893+08:00",
+  "conservative_cost_yuan": 0.0007280999999999999,
+  "error": null,
+  "latency_ms": 1324.356800178066,
+  "list_price_estimate_yuan": 0.0005810999999999999,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 维护作业生产用车的吨位为1.5吨。[1]  \n2. 该车辆信息出现在《电信基础设施维护规程》第162页。[1]  \n3. 车辆型号为1.5t，用于维护作业生产。[1]  \n4. 该车型属于维护作业专用生产用车。[1]  \n5. 未提及其它吨位规格的生产用车。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881209,
+    "id": "chatcmpl-93e09d60-8700-95f4-a421-7c110ac4d7c3",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 98,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2894,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 2992
+    }
+  },
+  "usage_known": true
+}

@@ -1,0 +1,28 @@
+{
+  "budget_conservative_yuan": 1.4827180500000015,
+  "case_ids_exactly_match_frozen500": true,
+  "client_verification_date": "2026-11-06",
+  "commit_or_push_performed": false,
+  "data_database_consistency": true,
+  "holdout_executed": false,
+  "human_accuracy_verified": false,
+  "human_checklist40_blank_signoffs": true,
+  "judge_requests_max_per_case": 3,
+  "judge_slots_unique": true,
+  "protected_input_code_prompt_config_checks": {
+    "code_sha256": true,
+    "prompt_sha256": true,
+    "runtime_config_sha256": true
+  },
+  "rag_execution_success": 500,
+  "rag_generation_parameters_unchanged": true,
+  "scoring_failures": 10,
+  "scoring_success": 490,
+  "silver_sha256": "03f7955b144e31081c778f533322ff68b560459f60ab94bb9699b2ea7a35c410",
+  "source_texts_match_frozen_chunks": true,
+  "status": "passed",
+  "tests": "40 passed, one third-party deprecation warning",
+  "trace_and_model_provenance_verified": 500,
+  "unanswerable_provisional_and_ambiguous_reference_exclusion": true,
+  "zero_history_contamination": true
+}

@@ -1,0 +1,16 @@
+{
+  "dependency_repair": {
+    "installed_version": "8.1.0",
+    "package": "redis",
+    "production_code_changed": false,
+    "reason": "Declared pyproject dependency absent from project venv; real conversation memory initialization failed before model calls"
+  },
+  "packages": {
+    "openai": "2.41.1",
+    "psycopg": "3.3.4",
+    "pytest": "9.2.0",
+    "redis": "8.1.0"
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]"
+}

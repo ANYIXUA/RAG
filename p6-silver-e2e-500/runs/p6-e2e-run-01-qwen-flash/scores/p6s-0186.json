@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "GB 50312 综合布线系统工程验收规范",
+    "reason": "引用GB 50312与上下文一致",
+    "score": 1
+  },
+  "case_id": "p6s-0186",
+  "citation_correctness": {
+    "evidence": "GB 50312 综合布线系统工程验收规范",
+    "reason": "引用编号对应实际来源",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "GB 50312 综合布线系统工程验收规范",
+    "reason": "涵盖问题所有关键点",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "GB 50312 综合布线系统工程验收规范",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "6959c916db104ff7a31a1290052f684d",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "问题可回答，无需拒答",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

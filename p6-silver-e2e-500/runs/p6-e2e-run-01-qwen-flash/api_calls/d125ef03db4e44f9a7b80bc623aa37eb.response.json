@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:29:11.814198+08:00",
+  "conservative_cost_yuan": 0.0020103,
+  "error": null,
+  "latency_ms": 4115.659800125286,
+  "list_price_estimate_yuan": 0.0013143,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"上下文明确给出31078.35元\",\n    \"evidence\": \"WH12021006 坚石（爆破） 31078.35 21084.36 5777.11 4216.87 31.68 286.44\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"每项事实均有对应上下文支持\",\n    \"evidence\": \"WH12021006 坚石（爆破） 31078.35 21084.36 5777.11 4216.87 31.68 286.44\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"完整覆盖问题所需信息\",\n    \"evidence\": \"WH12021006 坚石（爆破） 31078.35 21084.36 5777.11 4216.87 31.68 286.44\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"引用编号[1]准确对应来源\",\n    \"evidence\": \"WH12021006 坚石（爆破） 31078.35 21084.36 5777.11 4216.87 31.68 286.44\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题可回答，无需拒答\",\n    \"evidence\": \"\"\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881747,
+    "id": "chatcmpl-66f49239-706f-9811-8500-c721a2627157",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 464,
+      "completion_tokens_details": null,
+      "prompt_tokens": 4122,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4586
+    }
+  },
+  "usage_known": true
+}

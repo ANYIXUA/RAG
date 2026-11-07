@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:19:51.654874+08:00",
+  "conservative_cost_yuan": 0.00083115,
+  "error": null,
+  "latency_ms": 1444.7408998385072,
+  "list_price_estimate_yuan": 0.00063465,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. 检查变压器周边环境，清理杂物杂草，确保无影响安全运行的障碍物。[4]  \n2. 观察变压器外观，确认大盖螺丝齐全、无渗油，散热管完整无脏污变形。[4]  \n3. 检查安全警示牌是否完整，标识标签清晰无缺失。[4]  \n4. 确认变压器周围无易燃物，环境整洁，符合安全距离要求。[3]  \n5. 检查引线接头及电缆区域，无发热、松动或异常痕迹。[4]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881190,
+    "id": "chatcmpl-5fcd7471-eff9-9298-aae9-55e4413bda2c",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 131,
+      "completion_tokens_details": null,
+      "prompt_tokens": 2921,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3052
+    }
+  },
+  "usage_known": true
+}

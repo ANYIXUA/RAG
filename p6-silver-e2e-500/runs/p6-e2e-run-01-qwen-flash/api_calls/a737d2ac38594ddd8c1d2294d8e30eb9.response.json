@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:17:42.735593+08:00",
+  "conservative_cost_yuan": 0.00080145,
+  "error": null,
+  "latency_ms": 1380.1913000643253,
+  "list_price_estimate_yuan": 0.0006304500000000001,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "1. WH23116004联网调测扇区的综合单价为895.58元。[1]  \n2. 该单价包含人工费、企业管理费及利润。[1]  \n3. 计量单位为“扇区”。[1]  \n4. 项目编码WH23116004对应“联网调测”工作内容。[1]  \n5. 综合单价基于表10.3.3.16数据。[1]",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881061,
+    "id": "chatcmpl-b78a486e-feb0-980d-9ad7-a2b24a50f82a",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 114,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3063,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 256
+      },
+      "total_tokens": 3177
+    }
+  },
+  "usage_known": true
+}

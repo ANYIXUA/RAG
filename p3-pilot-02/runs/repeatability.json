@@ -1,0 +1,77 @@
+{
+  "run_a": "p3-pilot-02\\runs\\fixed1",
+  "run_b": "p3-pilot-02\\runs\\fixed2",
+  "records_run_a": 110,
+  "records_run_b": 110,
+  "missing_in_b": [],
+  "missing_in_a": [],
+  "canonical_digest_run_a": "65b233d7652123b7d7e7bc2989c9b20f1828c22a720f01905064f6b8ae8b4e3b",
+  "canonical_digest_run_b": "65b233d7652123b7d7e7bc2989c9b20f1828c22a720f01905064f6b8ae8b4e3b",
+  "rankings_identical": true,
+  "differing_records": [],
+  "differing_record_count": 0,
+  "metric_blocks": [
+    {
+      "method": "bm25_only",
+      "identical": true,
+      "differences": {},
+      "latency_run_a": [
+        999.741,
+        3634.631
+      ],
+      "latency_run_b": [
+        494.155,
+        841.619
+      ]
+    },
+    {
+      "method": "hybrid",
+      "identical": true,
+      "differences": {},
+      "latency_run_a": [
+        878.542,
+        2067.057
+      ],
+      "latency_run_b": [
+        437.39,
+        675.652
+      ]
+    },
+    {
+      "method": "hybrid_rerank",
+      "identical": true,
+      "differences": {},
+      "latency_run_a": [
+        8191.042,
+        50021.201
+      ],
+      "latency_run_b": [
+        4382.754,
+        7760.894
+      ]
+    },
+    {
+      "method": "vector_only",
+      "identical": true,
+      "differences": {},
+      "latency_run_a": [
+        153.3,
+        298.471
+      ],
+      "latency_run_b": [
+        74.308,
+        194.043
+      ]
+    }
+  ],
+  "metrics_identical_excluding_latency": true,
+  "gold_case_ids_match": true,
+  "corpus_sha256_run_a": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+  "corpus_sha256_run_b": "5995ee6be2871ee7c553ce5fe2f3002a7938dbffedf0ec2b8fed28af8107f4d6",
+  "corpus_hash_match": true,
+  "gold_sources_hash_match": true,
+  "config_fingerprint_run_a": "a79ed9000b6114da",
+  "config_fingerprint_run_b": "a79ed9000b6114da",
+  "shared_query_vectors_sha256": "2eead8c09347b3ed31df3774b3a53a33ead5fec93275a2fd4062f144988cc062",
+  "supplementary_metrics_identical_excluding_latency": true
+}

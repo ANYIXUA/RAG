@@ -1,0 +1,45 @@
+{
+  "answer_correctness": {
+    "evidence": "",
+    "reason": "Unanswerable label not human verified",
+    "score": null
+  },
+  "case_id": "p6s-0277",
+  "citation_correctness": {
+    "evidence": "应掌握无线局域网覆盖优化与带宽指标调整技术 [2]",
+    "reason": "引用编号与来源匹配且支持内容",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "掌握无线局域网覆盖优化与带宽指标调整技术 [2]",
+    "reason": "部分覆盖但未完整回应推广策略",
+    "score": 0.5
+  },
+  "confidence": "high",
+  "correctness_excluded": true,
+  "faithfulness": {
+    "evidence": "能对家居智能组网进行设计 [2]",
+    "reason": "每项事实均有上下文支持",
+    "score": 1
+  },
+  "flags": [
+    "unanswerable_question",
+    "partial_response"
+  ],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "a97b163649ed4efcbc0d6a6d5ef35705",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": true,
+  "no_answer_behavior": {
+    "evidence": "",
+    "reason": "未强行编造，符合拒答要求",
+    "score": 1
+  },
+  "no_answer_provisional": true,
+  "prior_errors": [],
+  "question_type": "unanswerable",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}

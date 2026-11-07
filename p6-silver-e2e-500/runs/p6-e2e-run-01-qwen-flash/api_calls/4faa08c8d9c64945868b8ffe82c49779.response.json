@@ -1,0 +1,43 @@
+{
+  "at": "2026-11-05T20:23:39.085764+08:00",
+  "conservative_cost_yuan": 0.00275385,
+  "error": null,
+  "latency_ms": 6957.787299994379,
+  "list_price_estimate_yuan": 0.00165285,
+  "response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "annotations": null,
+          "audio": null,
+          "content": "{\n  \"answer_correctness\": {\n    \"score\": 1,\n    \"reason\": \"实际LLM上下文[1]明确列出WH21107002（平原、丘陵地区）的技工人工费为13.68元，与silver_reference一致，且该信息在原文中直接可查。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第233页\\n定位信息：233\\n... WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"faithfulness\": {\n    \"score\": 1,\n    \"reason\": \"回答中的每一项事实（如13.68元、项目编码WH21107002、综合单价21.89元、工作内容等）均能在上下文[1]中找到对应支持，无虚构或夸大。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第233页\\n定位信息：233\\n... WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\\n... 工作内容：检查清洁开关电源设备外观；检查调整设备运行参数，检查紧固电源线连接；检查防雷保护设备运行情况；清洁整流模块等。\"\n  },\n  \"completeness\": {\n    \"score\": 1,\n    \"reason\": \"问题仅询问技工人工费金额，回答准确给出13.68元，并补充了相关项目编码、综合单价和工作内容作为背景支持，未遗漏必要条件或步骤。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第233页\\n定位信息：233\\n... WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"citation_correctness\": {\n    \"score\": 1,\n    \"reason\": \"所有引用编号[1]均正确对应到上下文片段[1]，且该片段确实支持所陈述的每一条事实，引用位置准确，无错引或漏引。\",\n    \"evidence\": \"[1] 来源：电信基础设施维护规程.pdf\\n引用标签：[1]\\n标题：第233页\\n定位信息：233\\n... WH21107002 平原、丘陵 21.89 13.68 4.10 4.10 0.12 —\"\n  },\n  \"no_answer_behavior\": {\n    \"score\": null,\n    \"reason\": \"问题属于可回答的exact_fact类型，且上下文中有明确答案，无需拒答，因此该维度不适用。\",\n    \"evidence\": null\n  },\n  \"confidence\": \"high\",\n  \"hallucination_suspected\": false,\n  \"flags\": []\n}",
+          "function_call": null,
+          "refusal": null,
+          "role": "assistant",
+          "tool_calls": null
+        }
+      }
+    ],
+    "created": 1793881412,
+    "id": "chatcmpl-4e6eadbb-5d46-925e-b27d-f7c4fe23be91",
+    "model": "qwen-flash",
+    "moderation": null,
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 734,
+      "completion_tokens_details": null,
+      "prompt_tokens": 3679,
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": 0
+      },
+      "total_tokens": 4413
+    }
+  },
+  "usage_known": true
+}

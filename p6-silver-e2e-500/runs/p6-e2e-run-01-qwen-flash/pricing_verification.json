@@ -1,0 +1,14 @@
+{
+  "actual_billed_cost_available": false,
+  "chat_input_yuan_per_million": 0.15,
+  "chat_output_yuan_per_million": 1.5,
+  "checked_date": "2026-11-05",
+  "embedding_input_yuan_per_million": 0.5,
+  "estimation_policy": "Use all prompt tokens at list price, ignoring possible cached-input discounts/free quotas; uncertain/aborted requests retain conservative reservations",
+  "input_tier": "0<Token<=128K; actual run requests much smaller",
+  "model": "qwen-flash",
+  "price_source": "https://help.aliyun.com/zh/model-studio/model-pricing",
+  "prior_model_calls_counted_toward_cap": true,
+  "public_alias_mapping": "Official pricing page states qwen-flash currently equivalent in capability to qwen-flash-2025-07-28; returned API model is alias only, no immutable weight digest exposed",
+  "region": "China mainland configured dashscope.aliyuncs.com"
+}

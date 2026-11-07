@@ -1,0 +1,42 @@
+{
+  "answer_correctness": {
+    "evidence": "[1] 来源：中国移动智慧家庭全光组网产品技术规范V2.0.0.pdf\n引用标签：[1]\n标题：第15页\n定位信息：15\n综合分：0.725016\n召回综合分：0.725016\n重排分：无\n语义分：0.607166\nBM25 原始分：49.439056\nBM25 归一化分：1.000000\n内容：... 用户 侧接 口 网络 接口 1 个光口 最大物理分光比不低于支持1:8 ...",
+    "reason": "实际LLM上下文[1]明确指出'最大物理分光比不低于支持1:8'，与问题'光路由的最大物理分光比不低于多少？'直接对应，且回答中准确陈述了该事实。银参考虽表述略有不同，但核心信息一致，不影响正确性判断。",
+    "score": 1
+  },
+  "case_id": "p6s-0042",
+  "citation_correctness": {
+    "evidence": "source_index_mapping: [{\"index\": 1, \"chunk_id\": \"e69ef87cafd302938c765e20\"}, {\"index\": 2, \"chunk_id\": \"13b449a7300569643ee21bd4\"}, {\"index\": 3, \"chunk_id\": \"acbdb12c2a62c12fe9787ef7\"}, {\"index\": 4, \"chunk_id\": \"66e41c6a6dbb49b77fb123f2\"}]",
+    "reason": "每个引用编号均准确对应实际上下文片段：[1]对应第1条事实，[2]对应第2、3条，[3]对应第4条，[2]再次用于第5条。引用编号与chunk_id匹配，且来源内容支持所陈述事实。",
+    "score": 1
+  },
+  "completeness": {
+    "evidence": "问题聚焦于'最大物理分光比不低于多少'，回答中第一条即精准回应此点，其余信息为补充说明，不构成冗余或缺失。",
+    "reason": "问题仅询问光路由的最大物理分光比下限，回答中第一条已完整覆盖该核心信息。其余条目虽为相关扩展信息，但未偏离问题主干，且符合字数限制要求。未遗漏必要条件或步骤。",
+    "score": 1
+  },
+  "confidence": "high",
+  "correctness_excluded": false,
+  "faithfulness": {
+    "evidence": "[1] ... 最大物理分光比不低于支持1:8 ... [2] ... 推荐支持1:5（75:25）分光 ... 推荐支持1:5（85:15）分光 ... 至少支持连接4个光路由 ... [3] ... 最大光链路损耗不超过18dB ...",
+    "reason": "每条回答中的事实均在实际上下文中得到支持：第1条对应[1]中的'最大物理分光比不低于支持1:8'；第2、3条分别对应[2]中关于无源和有源光分路器的推荐分光比；第4条对应[3]中'最大光链路损耗不超过18dB'；第5条对应[2]中'至少支持连接4个光路由'。所有陈述均有对应来源且无额外编造。",
+    "score": 1
+  },
+  "flags": [],
+  "hallucination_suspected": false,
+  "judge_api_call_id": "dd60519f313d4d54a02b01795030a90a",
+  "judge_attempts": 1,
+  "judge_model": "qwen-flash",
+  "judge_same_model_as_generation": true,
+  "needs_human_review": false,
+  "no_answer_behavior": {
+    "evidence": "上下文[1]提供明确答案，模型未拒绝回答，符合预期行为。",
+    "reason": "问题属于可回答的exact_fact类型，且上下文中有明确答案，因此无需拒答。模型正常作答，行为合理。",
+    "score": null
+  },
+  "no_answer_provisional": false,
+  "prior_errors": [],
+  "question_type": "exact_fact",
+  "score_state": "success",
+  "self_evaluation_bias": true
+}
