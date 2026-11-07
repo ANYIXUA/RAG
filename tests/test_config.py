@@ -338,6 +338,28 @@ class SettingsConfigTest(unittest.TestCase):
         self.assertFalse(settings.feedback_promotion_auto_build)
         self.assertTrue(settings.feedback_promotion_auto_activate)
 
+    def test_from_env_reads_dify_sync_settings(self) -> None:
+        with TemporaryDirectory() as temp_dir:
+            with patch.dict(
+                os.environ,
+                {
+                    "OPENAI_API_KEY": "test-key",
+                    "RAG_OPS_POSTGRES_DSN": "postgresql://rag:pwd@localhost:5432/rag",
+                    "RAG_ORDER_STATUS_TOOL_ENABLED": "false",
+                    "RAG_DIFY_API_BASE_URL": " https://dify.example.com/v1/ ",
+                    "RAG_DIFY_API_KEY": " dify-secret ",
+                    "RAG_DIFY_DATASET_ID": " dataset-123 ",
+                    "RAG_DIFY_SYNC_TIMEOUT_SECONDS": "45",
+                },
+                clear=True,
+            ):
+                settings = Settings.from_env(base_dir=Path(temp_dir))
+
+        self.assertEqual(settings.dify_api_base_url, "https://dify.example.com/v1")
+        self.assertEqual(settings.dify_api_key, "dify-secret")
+        self.assertEqual(settings.dify_dataset_id, "dataset-123")
+        self.assertEqual(settings.dify_sync_timeout_seconds, 45)
+
     def test_config_file_reads_answer_memory_settings(self) -> None:
         with TemporaryDirectory() as temp_dir:
             base_dir = Path(temp_dir)
